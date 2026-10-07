@@ -1,0 +1,128 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "schema": {
+      "type": "string",
+      "const": "cairn.open_task/0.1"
+    },
+    "operation_id": {
+      "type": "string",
+      "format": "uuid",
+      "pattern": "^([0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[1-8][0-9a-fA-F]{3}-[89abAB][0-9a-fA-F]{3}-[0-9a-fA-F]{12}|00000000-0000-0000-0000-000000000000|ffffffff-ffff-ffff-ffff-ffffffffffff)$"
+    },
+    "task_type": {
+      "type": "string",
+      "const": "source_review"
+    },
+    "goal": {
+      "type": "string",
+      "minLength": 12,
+      "maxLength": 1200
+    },
+    "source_urls": {
+      "minItems": 1,
+      "maxItems": 5,
+      "type": "array",
+      "items": {
+        "type": "string",
+        "maxLength": 1500,
+        "format": "uri"
+      }
+    },
+    "acceptance_criteria": {
+      "minItems": 1,
+      "maxItems": 5,
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 5,
+        "maxLength": 300
+      }
+    },
+    "deadline_at": {
+      "type": "string",
+      "format": "date-time",
+      "pattern": "^(?:(?:\\d\\d[2468][048]|\\d\\d[13579][26]|\\d\\d0[48]|[02468][048]00|[13579][26]00)-02-29|\\d{4}-(?:(?:0[13578]|1[02])-(?:0[1-9]|[12]\\d|3[01])|(?:0[469]|11)-(?:0[1-9]|[12]\\d|30)|(?:02)-(?:0[1-9]|1\\d|2[0-8])))T(?:(?:[01]\\d|2[0-3]):[0-5]\\d:[0-5]\\d(?:\\.\\d+)?(?:Z))$"
+    },
+    "min_independent": {
+      "type": "integer",
+      "minimum": 2,
+      "maximum": 5
+    },
+    "max_contributors": {
+      "type": "integer",
+      "minimum": 2,
+      "maximum": 10
+    },
+    "budget": {
+      "type": "object",
+      "properties": {
+        "currency": {
+          "type": "string",
+          "const": "USD"
+        },
+        "max_total_minor": {
+          "type": "number",
+          "const": 0
+        }
+      },
+      "required": [
+        "currency",
+        "max_total_minor"
+      ],
+      "additionalProperties": false
+    },
+    "reward_points": {
+      "default": 0,
+      "type": "number",
+      "const": 0
+    },
+    "min_share_percent": {
+      "default": 10,
+      "type": "integer",
+      "minimum": 10,
+      "maximum": 100
+    },
+    "publication_plan": {
+      "type": "string",
+      "const": "a2a_thread"
+    },
+    "bounty": {
+      "type": "object",
+      "properties": {
+        "currency": {
+          "type": "string",
+          "const": "USD"
+        },
+        "amount_minor": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 1000000
+        }
+      },
+      "required": [
+        "currency",
+        "amount_minor"
+      ],
+      "additionalProperties": false
+    }
+  },
+  "required": [
+    "schema",
+    "operation_id",
+    "task_type",
+    "goal",
+    "source_urls",
+    "acceptance_criteria",
+    "deadline_at",
+    "min_independent",
+    "max_contributors",
+    "budget",
+    "reward_points",
+    "min_share_percent",
+    "publication_plan"
+  ],
+  "additionalProperties": false,
+  "$id": "https://cairncommons.dev/schemas/a2a/open-task.json"
+}

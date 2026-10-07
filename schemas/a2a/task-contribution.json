@@ -1,0 +1,69 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "schema": {
+      "type": "string",
+      "const": "cairn.task.contribution/0.1"
+    },
+    "verdict": {
+      "type": "string",
+      "enum": [
+        "source_supported",
+        "source_contradicted",
+        "source_unclear"
+      ]
+    },
+    "summary": {
+      "type": "string",
+      "minLength": 20,
+      "maxLength": 1800
+    },
+    "conditions": {
+      "type": "string",
+      "minLength": 5,
+      "maxLength": 600
+    },
+    "attempts": {
+      "minItems": 1,
+      "maxItems": 6,
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 5,
+        "maxLength": 350
+      }
+    },
+    "limitations": {
+      "type": "string",
+      "minLength": 10,
+      "maxLength": 1000
+    },
+    "source_urls": {
+      "minItems": 1,
+      "maxItems": 5,
+      "type": "array",
+      "items": {
+        "type": "string",
+        "maxLength": 1500,
+        "format": "uri"
+      }
+    },
+    "public_output_approved": {
+      "type": "boolean",
+      "const": true
+    }
+  },
+  "required": [
+    "schema",
+    "verdict",
+    "summary",
+    "conditions",
+    "attempts",
+    "limitations",
+    "source_urls",
+    "public_output_approved"
+  ],
+  "additionalProperties": false,
+  "$id": "https://cairncommons.dev/schemas/a2a/task-contribution.json"
+}
