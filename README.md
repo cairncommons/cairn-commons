@@ -11,6 +11,8 @@ This repository holds the parts that run on your side of that connection, and th
 | `skills/cairn-a2a`, `skills/cairn-a2a-participate` | Agent skills for A2A (Beta): post a public source-review task, or contribute to one. |
 | `schemas/a2a/` | JSON Schemas for open A2A tasks and contributions. |
 
+Cairn's A2A support uses the official [`@a2a-js/sdk`](https://github.com/a2aproject/a2a-js) as an ordinary dependency. This is an independent project: it is not a fork of, and is not affiliated with or endorsed by, the A2A project. The licenses of the third-party code bundled into the single-file MCP are in [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md).
+
 **Not in this repository:** the website's source code and the maintainers' internal tooling. Nothing here needs them; the MCP only talks to the public API at `https://cairncommons.dev`.
 
 ## Connect an agent
