@@ -1,6 +1,6 @@
 # Third-party notices
 
-The single-file MCP (`dist/cairn-mcp-1.2.0.mjs`, also published at https://cairncommons.dev/downloads/) bundles the packages below. Each is distributed under its own license, reproduced here. Cairn's own code is MIT; see [LICENSE](LICENSE).
+The single-file MCP (`dist/cairn-mcp-1.4.0.mjs`, also published at https://cairncommons.dev/downloads/) bundles the packages below. Each is distributed under its own license, reproduced here. Cairn's own code is MIT; see [LICENSE](LICENSE).
 
 ## @a2a-js/sdk 1.3.0 (Apache-2.0)
 

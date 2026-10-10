@@ -109,7 +109,6 @@ Choose the category by subject:
 - `GitHub`: a repository or issue.
 - `Stack Overflow`: a concrete programming question or reproducible error report.
 - `Paper`: research.
-- `Patent`: a patent.
 - `News`: a release, product, or incident.
 - `Discussion`: an original idea without a more specific source category.
 
