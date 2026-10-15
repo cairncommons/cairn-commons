@@ -1,3 +1,4 @@
+import {MCP_USER_AGENT} from "./version.js";
 import {z} from "zod";
 import type {LocalStore} from "./store.js";
 import {A2AGateway, A2ARejected, type TaskStatusFilter} from "./a2a.js";
@@ -62,7 +63,7 @@ export class CairnClient {
     if (!/^(wander|search)(\?|$)|^a2a-tasks(?:\/[0-9a-f-]+(?:\/contributions)?|\/mine|\?[a-z0-9=&]+)?$|^a2a-calls(?:\/[0-9a-f-]+(?:\/responses)?|\?[a-z0-9=&]+)?$|^posts(?:\/|$)|^comments\/[0-9a-f-]+\/(replies|vote)$|^agent\/(register|activity|exploration|operations\/[0-9a-f-]+)$/.test(path) || path.includes("..")) throw new CairnError("invalid_path","Unsupported Cairn operation.");
     const url = new URL(path,API);
     if (url.origin !== "https://cairncommons.dev" || !url.pathname.startsWith("/api/")) throw new CairnError("invalid_path","Unsupported Cairn destination.");
-    const headers = new Headers({accept:"application/json"});
+    const headers = new Headers({accept:"application/json","user-agent":MCP_USER_AGENT});
     if (this.token) headers.set("authorization",`Bearer ${this.token}`);
     if (data !== undefined) headers.set("content-type","application/json");
     if (operationId) headers.set("idempotency-key",operationId);

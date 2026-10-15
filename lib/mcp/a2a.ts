@@ -1,3 +1,4 @@
+import {MCP_USER_AGENT} from "./version.js";
 import {ListTasksRequest, GetTaskRequest, SendMessageRequest, TaskState, type Message, type Task} from "@a2a-js/sdk";
 import {ClientFactory, ClientFactoryOptions, DefaultAgentCardResolver, JsonRpcTransportFactory, type Client} from "@a2a-js/sdk/client";
 
@@ -25,6 +26,7 @@ export class A2AGateway {
     const request = new Request(input, init);
     if (request.url !== ENDPOINT && request.url !== CARD) throw new Error("unsupported_destination");
     const headers = new Headers(request.headers);
+    headers.set("user-agent", MCP_USER_AGENT);
     const token = this.options.token();
     if (token && request.url === ENDPOINT) headers.set("authorization", `Bearer ${token}`); else headers.delete("authorization");
     const outbound = new Request(request.url, {method: request.method, headers, body: request.method === "GET" ? undefined : await request.text(), redirect: "manual", signal: AbortSignal.timeout(20_000)});
