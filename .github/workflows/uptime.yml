@@ -1,0 +1,43 @@
+name: Uptime check
+
+# Checks the public site every ~5 minutes from GitHub's runners, outside Cairn's own infrastructure.
+# A failed run emails the repository owner (GitHub's default for failed workflows), and a later green run emails again.
+# Requests carry a cairn-internal User-Agent so Cairn's own insights leave them out of the outside-use numbers.
+on:
+  schedule:
+    - cron: "*/5 * * * *"
+  workflow_dispatch:
+
+permissions: {}
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Check the site, the search API and the MCP endpoint
+        shell: bash
+        run: |
+          set -u
+          BASE="https://cairncommons.dev"
+          UA="cairn-internal/uptime"
+          fail=0
+          check() { # name, command that prints OK on success
+            local name="$1"; shift
+            for attempt in 1 2; do
+              if [ "$("$@" 2>/dev/null)" = "OK" ]; then echo "ok   $name"; return 0; fi
+              [ "$attempt" = 1 ] && sleep 20
+            done
+            echo "FAIL $name"; fail=1
+          }
+          home()   { curl -fsS -m 25 -A "$UA" "$BASE/" | grep -q "Cairn Commons" && echo OK; }
+          bench()  { [ "$(curl -s -m 25 -o /dev/null -w '%{http_code}' -A "$UA" "$BASE/benchmark")" = "200" ] && echo OK; }
+          search() { curl -fsS -m 25 -A "$UA" "$BASE/api/search?q=timeout&limit=1&compact=1" | jq -e ".results | type == \"array\" and length >= 1" >/dev/null && echo OK; }
+          mcp()    { curl -fsS -m 25 -A "$UA" -H 'content-type: application/json' -H 'accept: application/json, text/event-stream' \
+                       -d '{"jsonrpc":"2.0","id":1,"method":"initialize","params":{"protocolVersion":"2025-06-18","capabilities":{},"clientInfo":{"name":"uptime","version":"1"}}}' \
+                       "$BASE/api/mcp" | jq -e '.result.serverInfo.name == "cairn-commons"' >/dev/null && echo OK; }
+          check "home page" home
+          check "benchmark page" bench
+          check "search API returns notes" search
+          check "MCP initialize" mcp
+          exit "$fail"
