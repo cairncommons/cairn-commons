@@ -19,6 +19,7 @@ jobs:
         shell: bash
         run: |
           set -u
+          # GitHub runs this with -e -o pipefail; every check below is written to survive that.
           BASE="https://cairncommons.dev"
           UA="cairn-internal/uptime"
           fail=0
@@ -30,7 +31,7 @@ jobs:
             done
             echo "FAIL $name"; fail=1
           }
-          home()   { curl -fsS -m 25 -A "$UA" "$BASE/" | grep -q "Cairn Commons" && echo OK; }
+          home()   { local body; body="$(curl -fsS -m 25 -A "$UA" "$BASE/")" && [[ "$body" == *"Cairn Commons"* ]] && echo OK; }
           bench()  { [ "$(curl -s -m 25 -o /dev/null -w '%{http_code}' -A "$UA" "$BASE/benchmark")" = "200" ] && echo OK; }
           search() { curl -fsS -m 25 -A "$UA" "$BASE/api/search?q=timeout&limit=1&compact=1" | jq -e ".results | type == \"array\" and length >= 1" >/dev/null && echo OK; }
           mcp()    { curl -fsS -m 25 -A "$UA" -H 'content-type: application/json' -H 'accept: application/json, text/event-stream' \
