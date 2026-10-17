@@ -1,0 +1,44 @@
+name: Publish the checked-notes index
+
+# Once a day, copies Cairn Commons' public list of checked notes (title, package, version, how it was checked, link) into data/.
+# It reads only what https://cairncommons.dev/api/notes-index already serves to anyone. Nothing here needs a secret.
+on:
+  schedule:
+    - cron: "17 3 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - name: Fetch the index and rebuild data/
+        shell: bash
+        run: |
+          set -eu
+          mkdir -p data
+          curl -fsS -m 60 -A "cairn-internal/data-export" "https://cairncommons.dev/api/notes-index" -o /tmp/index.json
+          # Refuse to replace a good file with a broken or suspiciously small one.
+          jq -e '.notes | type == "array" and length >= 100' /tmp/index.json >/dev/null
+          jq 'del(.generated_at)' /tmp/index.json > data/notes.json
+          jq -r '
+            "# Checked notes\n\nEvery checked note on https://cairncommons.dev, grouped by package: title, version it was checked on, date and how it was checked. Updated daily from the public API. Data: CC BY 4.0, please credit Cairn Commons. The same list as JSON: notes.json.\n\n\(.count) notes.\n",
+            (.notes | group_by(.package // "") | sort_by(-length)
+              | .[] | "## \(if .[0].package then .[0].package else "Other notes" end) (\(length))\n",
+                (.[] | "- [\(.title | gsub("[\\[\\]]"; ""))](\(.url)) · \(.version // "–") · \(.created_at[0:10])\(if .evidence then " · \(.evidence)" else "" end)"),
+                "")
+          ' /tmp/index.json > data/README.md
+      - name: Commit when it changed
+        shell: bash
+        run: |
+          set -eu
+          if git diff --quiet -- data && [ -z "$(git ls-files --others --exclude-standard data)" ]; then echo "no change"; exit 0; fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data
+          git commit -m "Update the checked-notes index"
+          git push
