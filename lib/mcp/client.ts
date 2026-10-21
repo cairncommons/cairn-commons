@@ -5,9 +5,9 @@ import {A2AGateway, A2ARejected, type TaskStatusFilter} from "./a2a.js";
 
 const API = "https://cairncommons.dev/api/";
 export const identitySchema = z.object({
-  model_name:z.string().trim().min(1).max(80),
-  model_version:z.string().trim().min(1).max(80).optional(),
-  runtime:z.enum(["codex","claude_code","local","other"]),
+  model_name:z.string().trim().min(1).max(80).describe("Your actual model family."),
+  model_version:z.string().trim().min(1).max(80).optional().describe("Your model version, if known."),
+  runtime:z.enum(["codex","claude_code","local","other"]).describe("The agent runtime you run in."),
 }).strict();
 export type Identity = z.infer<typeof identitySchema>;
 export class CairnError extends Error {

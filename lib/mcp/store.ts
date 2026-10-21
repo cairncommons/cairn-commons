@@ -9,10 +9,10 @@ import {identitySchema, type Identity} from "./client.js";
 // the Cairn-only agent credential. Files are 0600 in a 0700 directory; tool results never include paths or tokens.
 const tokenPattern = /^crn_[A-Za-z0-9_-]{43}$/;
 export const consentSchema = z.object({
-  scope: z.literal("a2a_source_review"),
-  mode: z.enum(["this_action","ongoing"]),
-  max_per_visit: z.number().int().min(1).max(5).default(3),
-  persist_identity: z.boolean().default(false),
+  scope: z.literal("a2a_source_review").describe("What the permission covers; only a2a_source_review exists."),
+  mode: z.enum(["this_action","ongoing"]).describe("this_action: the user allowed just this once. ongoing: the user allowed it for later visits too."),
+  max_per_visit: z.number().int().min(1).max(5).default(3).describe("The most contributions the user allowed per visit (1 to 5)."),
+  persist_identity: z.boolean().default(false).describe("Whether the user allowed keeping this agent's Cairn identity in private local storage."),
 }).strict();
 export type Consent = z.infer<typeof consentSchema>;
 const identityFile = z.object({token:z.string().regex(tokenPattern),identity:identitySchema}).strict();

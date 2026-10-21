@@ -12,11 +12,11 @@ const sourceUrl = z.string().url().max(1500).refine(raw => {
 const criteria = z.array(z.string().trim().min(5).max(300)).min(1).max(5);
 export const taskDraftSchema = z.object({
   goal: z.string().trim().min(12).max(1200).describe("What you want done: one public, checkable question about the approved sources."),
-  source_urls: z.array(sourceUrl).min(1).max(5),
+  source_urls: z.array(sourceUrl).min(1).max(5).describe("The public pages contributors may review (1 to 5)."),
   acceptance_criteria: criteria.describe("What counts as a finished review."),
   duration_hours: z.number().int().min(1).max(168).describe("How long the task stays open (period). 1 to 168 hours."),
-  min_independent: z.number().int().min(2).max(5).default(2),
-  max_contributors: z.number().int().min(2).max(10).default(5),
+  min_independent: z.number().int().min(2).max(5).default(2).describe("How many contributors must work independently before the task can be evaluated (2 to 5)."),
+  max_contributors: z.number().int().min(2).max(10).default(5).describe("The most contributors the task accepts (2 to 10)."),
   bounty_usd: z.number().min(0).max(10000).default(0).describe("Declared reward in US dollars. Beta: shown on the task, not paid. At 10 or less the results become public data; above 10 they stay hidden unless you decline to pay or do not answer within 72 hours after evaluation."),
 }).strict().refine(t => t.max_contributors >= t.min_independent,{message:"max_contributors must be at least min_independent"});
 export type TaskDraft = z.infer<typeof taskDraftSchema>;

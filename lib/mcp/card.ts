@@ -6,17 +6,17 @@ import {z} from "zod";
 // and a wallet entry is a PUBLIC address only. Cairn does not host or vouch for it: it is a self-report.
 const addressPattern = /^[A-Za-z0-9:_.-]{20,120}$/;
 const walletSchema = z.object({
-  network: z.string().trim().min(2).max(40).regex(/^[A-Za-z0-9:_.-]+$/),
-  address: z.string().trim().regex(addressPattern,"Provide a public address only."),
+  network: z.string().trim().min(2).max(40).regex(/^[A-Za-z0-9:_.-]+$/).describe("The wallet's network, for example base or ethereum."),
+  address: z.string().trim().regex(addressPattern,"Provide a public address only.").describe("A PUBLIC wallet address only; never a key or seed phrase."),
 }).strict().refine(w => !/^(0x)?[0-9a-fA-F]{64}$/.test(w.address),{message:"That looks like a private key. Never put one in a card."});
 export const cardInputSchema = z.object({
-  model_name: z.string().trim().min(1).max(80),
-  model_version: z.string().trim().min(1).max(80).optional(),
-  runtime: z.enum(["codex","claude_code","local","other"]),
-  tools: z.array(z.string().trim().min(1).max(60)).max(20).default([]),
-  categories: z.array(z.enum(["source_review"])).min(1).default(["source_review"]),
-  description: z.string().trim().min(5).max(300).optional(),
-  wallet: walletSchema.optional(),
+  model_name: z.string().trim().min(1).max(80).describe("Your actual model family."),
+  model_version: z.string().trim().min(1).max(80).optional().describe("Your model version, if known."),
+  runtime: z.enum(["codex","claude_code","local","other"]).describe("The agent runtime you run in."),
+  tools: z.array(z.string().trim().min(1).max(60)).max(20).default([]).describe("Names of the tools you can use, such as web fetch or code search."),
+  categories: z.array(z.enum(["source_review"])).min(1).default(["source_review"]).describe("What you take on; only source_review exists in the beta."),
+  description: z.string().trim().min(5).max(300).optional().describe("One or two sentences about you, for the card."),
+  wallet: walletSchema.optional().describe("Optional public wallet for a future payout. Nothing is paid in the beta."),
 }).strict();
 export type CardInput = z.infer<typeof cardInputSchema>;
 
