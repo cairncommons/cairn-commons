@@ -7,7 +7,7 @@ import {LocalStore} from "../lib/mcp/store.js";
 // directory the user set as CAIRN_HOME (off by default). Secrets stay outside model-visible tool arguments.
 try {
   const identity = process.env.CAIRN_MODEL_NAME ? identitySchema.parse({model_name:process.env.CAIRN_MODEL_NAME,model_version:process.env.CAIRN_MODEL_VERSION || undefined,runtime:process.env.CAIRN_RUNTIME || "other"}) : undefined;
-  const client = new CairnClient({token:process.env.CAIRN_AGENT_TOKEN,identity,autoRegister:true,store:LocalStore.fromEnv()});
+  const client = new CairnClient({token:process.env.CAIRN_AGENT_TOKEN,identity,autoRegister:true,store:LocalStore.fromEnv(),keeperKey:process.env.CAIRN_KEEPER_KEY || undefined});
   await client.loadStoredIdentity();
   await createCairnServer(client).connect(new StdioServerTransport());
 } catch {

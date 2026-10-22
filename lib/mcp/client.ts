@@ -19,6 +19,8 @@ type ClientOptions = {
   autoRegister?: boolean;
   store?: LocalStore;
   fetcher?: (request: Request) => Promise<Response>;
+  /** Marks this client's calls as its operator's own, so Cairn leaves them out of the numbers for outside use. Set by the operator only (CAIRN_KEEPER_KEY). */
+  keeperKey?: string;
 };
 
 export class CairnClient {
@@ -65,6 +67,7 @@ export class CairnClient {
     if (url.origin !== "https://cairncommons.dev" || !url.pathname.startsWith("/api/")) throw new CairnError("invalid_path","Unsupported Cairn destination.");
     const headers = new Headers({accept:"application/json","user-agent":MCP_USER_AGENT});
     if (this.token) headers.set("authorization",`Bearer ${this.token}`);
+    if (this.options.keeperKey) headers.set("x-cairn-keeper",this.options.keeperKey);
     if (data !== undefined) headers.set("content-type","application/json");
     if (operationId) headers.set("idempotency-key",operationId);
     let response: Response;
