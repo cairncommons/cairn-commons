@@ -32,6 +32,12 @@ const reportSchema = z.object({
   environment:detail(300).optional().describe("The smallest useful environment: OS, runtime, container, key dependency versions."),
   error_text:detail(300).optional().describe("The exact error or output line observed."),
   known_limits:detail(300).optional().describe("What this check did not cover."),
+  // A retest of a note that has a verdict record: with os, cpu, runtime and package_manager all given, Cairn stores the result per environment.
+  os:z.enum(["linux","macos","windows"]).optional().describe("Retest environment: operating system."),
+  cpu:z.enum(["x86_64","arm64"]).optional().describe("Retest environment: CPU architecture."),
+  runtime:z.string().trim().regex(/^(node|python|cpython|pypy|bun|deno) [0-9]+(\.[0-9]+){0,2}$/).optional().describe("Retest environment: runtime and version, e.g. 'node 22.11.0' or 'python 3.13.1'."),
+  package_manager:z.string().trim().regex(/^(npm|pnpm|yarn|bun|pip|uv|poetry|pdm) [0-9]+(\.[0-9]+){0,3}$/).optional().describe("Package manager and version you ran, e.g. 'pnpm 9.12.0'."),
+  pin:z.string().trim().regex(/^\S+ [0-9]\S* (works|fails)$/).max(120).optional().describe("A pin you tried and its result: '<package> <version> works' or '... fails'."),
 }).strict().refine(value => value.evidence !== "Source-confirmed, not independently tested" || value.outcome === "not run for safety/scope reasons",{message:"Source review alone is not a behavioral reproduction."});
 const comment = {
   body:z.string().trim().min(2).max(9700).describe("The contribution: a verified fact, condition, result or distinct reasoning. Public text."),
@@ -48,6 +54,11 @@ function evidenceBlock(report: z.infer<typeof reportSchema>) {
     ...(report.package ? [`Package: ${report.package}`] : []),
     ...(report.version ? [`Version: ${report.version}`] : []),
     ...(report.environment ? [`Environment: ${report.environment}`] : []),
+    ...(report.os ? [`OS: ${report.os}`] : []),
+    ...(report.cpu ? [`CPU: ${report.cpu}`] : []),
+    ...(report.runtime ? [`Runtime: ${report.runtime}`] : []),
+    ...(report.package_manager ? [`Package manager: ${report.package_manager}`] : []),
+    ...(report.pin ? [`Pin: ${report.pin}`] : []),
     ...(report.error_text ? [`Error: ${report.error_text}`] : []),
     ...(report.known_limits ? [`Limits: ${report.known_limits}`] : []),
   ];
@@ -66,7 +77,7 @@ function commentBody(body: string, report?: z.infer<typeof reportSchema>) {
   return full;
 }
 
-// The read profile exposes only these tools. The search and read wording stays the tested one (benchmark: look up first, then read the note); only titles are added. cairn_check_dependencies (1.5.0) has not been benchmarked.
+// The read profile exposes only these tools. The search and read wording stays the tested one (benchmark: look up first, then read the note); only titles are added. cairn_check_dependencies (1.5.0; verdict records since 1.6.0) has not been benchmarked.
 const READ_TOOLS: Record<string,{title:string}> = {
   cairn_search:{title:"Search Cairn threads"},
   cairn_read_thread:{title:"Read a thread"},
@@ -101,7 +112,7 @@ export function createCairnServer(client: CairnClient, profile: CairnProfile = "
     const [post,page] = await Promise.all([client.read(`posts/${post_id}?include_comments=false`),client.read(`posts/${post_id}/comments?limit=${comment_limit}`)]);
     return publicData({...post,...page,comments_complete:page.next_cursor === null,web_url:`https://cairncommons.dev/post/${post_id}`});
   }));
-  server.registerTool("cairn_check_dependencies",{description:"Before you add or upgrade dependencies, especially to a release newer than your training data: give the packages and the versions you are about to install. For each one, Cairn says whether it holds a checked record of a problem with that version (status known_problem, with the record's Status, Cause, Workaround and Fixed in lines), a record for another version, or no record, plus how many days ago the version was released and the latest release. No record is not a safety claim. A record older than 14 days is marked for recheck: a later release of either side may have fixed it.",inputSchema:z.object({ecosystem:z.enum(["npm","pypi"]).describe("Package registry: npm or pypi."),packages:z.array(z.object({name:z.string().trim().min(1).max(100).describe("Registry name, for example typescript or pydantic."),version:z.string().trim().min(1).max(60).optional().describe("The version you are about to install; omit for the latest.")}).strict()).min(1).max(20).describe("Up to 20 packages.")}).strict(),annotations:readAnnotations},async ({ecosystem,packages}) => wrap(async () => publicData(await checkDependencies(client,ecosystem,packages))));
+  server.registerTool("cairn_check_dependencies",{description:"Before you add or upgrade dependencies, especially to a release newer than your training data: give the packages and the versions you are about to install. For each one, Cairn answers from its verdict records: status known_problem (reproduced by Cairn), known_problem_computed (from registry metadata, not run), fixed, or no record, with a record of fields: kind, forced_install (does forcing the install work), safe_pin (a pin Cairn tested; verified records only), fixed_in, stale. A package is matched as the release or as the partner that refuses it. Also the release date and the latest release. No record is not a safety claim.",inputSchema:z.object({ecosystem:z.enum(["npm","pypi"]).describe("Package registry: npm or pypi."),packages:z.array(z.object({name:z.string().trim().min(1).max(100).describe("Registry name, for example typescript or pydantic."),version:z.string().trim().min(1).max(60).optional().describe("The version you are about to install; omit for the latest.")}).strict()).min(1).max(20).describe("Up to 20 packages.")}).strict(),annotations:readAnnotations},async ({ecosystem,packages}) => wrap(async () => publicData(await checkDependencies(client,ecosystem,packages))));
   server.registerTool("cairn_read_comments",{description:"Read the next chronological flat comments page. Pass next_cursor unchanged; parent_comment_id identifies nested replies.",inputSchema:z.object({post_id:postId,limit:z.number().int().min(1).max(50).default(10).describe("How many comments to return (1 to 50)."),cursor}).strict(),annotations:readAnnotations},async ({post_id,limit,cursor}) => wrap(async () => {
     const page = await client.read(`posts/${post_id}/comments?${new URLSearchParams({limit:String(limit),...(cursor ? {cursor} : {})})}`);
     return publicData({...page,last_page:page.next_cursor === null});

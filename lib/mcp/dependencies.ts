@@ -58,10 +58,15 @@ export async function registryInfo(ecosystem: Ecosystem, name: string, version: 
   return {latest, version: v, released, exists: Boolean(doc), deprecated: doc?.deprecated || null};
 }
 
+type VerdictAnswer = {package: string; version: string | null; verdict: string; summary: string; records: Record<string, unknown>[]};
 type Note = {id: string; title: string; version?: string; version_match?: string; evidence_level?: string; outcome?: string; created_at?: string; web_url?: string; glance?: string};
 
 export async function checkDependencies(client: Reader, ecosystem: Ecosystem, packages: PackageAsk[], fetcher: Fetcher = fetch, now = new Date()) {
-  const rows = await Promise.all(packages.map(async (ask) => {
+  // The verdict records first (POST /api/verdicts' read form): structured fields per package, matched as the released side or as the partner.
+  const asked = new URLSearchParams({ecosystem});
+  for (const ask of packages) asked.append("p", ask.version ? `${ask.name}@${ask.version}` : ask.name);
+  const records = ((await client.read(`verdicts?${asked}`).catch(() => null))?.results as VerdictAnswer[] | undefined) ?? [];
+  const rows = await Promise.all(packages.map(async (ask, index) => {
     const params = new URLSearchParams({package: ask.name, compact: "1", limit: "5", ...(ask.version ? {version: ask.version} : {})});
     const [search, related, registry] = await Promise.all([
       client.read(`search?${params}`).catch(() => null),
@@ -83,13 +88,17 @@ export async function checkDependencies(client: Reader, ecosystem: Ecosystem, pa
     const releasedDays = registry?.released ? Math.floor((now.getTime() - Date.parse(registry.released)) / DAY) : null;
     const noteDays = lead?.created_at ? Math.floor((now.getTime() - Date.parse(lead.created_at)) / DAY) : null;
     const problem = Boolean(lead && evidence(lead) === 0);
-    const status = !lead ? "no_cairn_record"
+    const answer = records[index] && records[index].verdict !== "no_record" && Array.isArray(records[index].records) && records[index].records.length ? records[index] : null;
+    const status = answer ? answer.verdict
+      : !lead ? "no_cairn_record"
       : problem && lead.version_match === "same" ? "known_problem"
       : problem ? "known_problem_other_version"
       : evidence(lead) === 1 && lead.version_match === "same" ? "checked_no_problem_found"
       : "record_not_tested";
     const advice: string[] = [];
-    if (status === "known_problem") advice.push(`Known problem on ${ask.name} ${version}${verdict.workaround ? `; workaround: ${verdict.workaround}` : ""}${verdict.fixed_in && !/not established/i.test(verdict.fixed_in) ? `; fixed in: ${verdict.fixed_in}` : ""}.`);
+    // The record's sentence is built by Cairn from record fields (names, versions, listed words), not from a note's prose.
+    if (answer) advice.push(`Verdict record: ${answer.summary}`);
+    else if (status === "known_problem") advice.push(`Known problem on ${ask.name} ${version}${verdict.workaround ? `; workaround: ${verdict.workaround}` : ""}${verdict.fixed_in && !/not established/i.test(verdict.fixed_in) ? `; fixed in: ${verdict.fixed_in}` : ""}.`);
     if (status === "known_problem_other_version") advice.push(`Cairn has a problem record for ${ask.name} ${lead!.version ?? "another version"}, not ${version ?? "this version"}: read it and check whether it applies.`);
     if (status === "checked_no_problem_found") advice.push("A limited check found no problem; this is not a safety claim.");
     if (status === "record_not_tested") advice.push("Cairn has a record for this package that was not independently tested (source reading only, or another version): read it before relying on it.");
@@ -105,11 +114,11 @@ export async function checkDependencies(client: Reader, ecosystem: Ecosystem, pa
     if (registry?.latest && version && registry.latest !== version) advice.push(`Latest release is ${registry.latest}.`);
     return {
       package: ask.name, version, status, released: registry?.released ?? null, released_days_ago: releasedDays, latest: registry?.latest ?? null,
-      verdict, advice,
+      verdict, ...(answer ? {record: answer.records[0]} : {}), advice,
       notes: results.slice(0, 3).map((r) => ({title: r.title, version: r.version ?? null, version_match: r.version_match ?? null, evidence_level: r.evidence_level ?? null, outcome: r.outcome ?? null, checked: r.created_at ?? null, url: r.web_url ?? null})),
     };
   }));
-  const problems = rows.filter((r) => r.status === "known_problem").length;
+  const problems = rows.filter((r) => r.status === "known_problem" || r.status === "known_problem_computed").length;
   return {
     ecosystem,
     summary: problems ? `${problems} of ${rows.length} package(s) have a checked problem record for the version asked. Read the verdict and workaround before installing.` : `No checked problem record for the versions asked (${rows.length} package(s)). This is not a safety claim; after installing, check that nothing resolved older than you asked.`,
