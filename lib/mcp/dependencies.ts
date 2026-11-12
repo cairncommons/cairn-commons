@@ -20,6 +20,25 @@ export function verdictLines(body: unknown): Record<string, string> {
 }
 
 const PRERELEASE = /(a|b|rc|dev|alpha|beta|pre)\.?\d*$/i;
+// The training-data warning is for fresh releases; on a release older than this it is noise.
+const RELEASE_NOTICE_DAYS = 365;
+const escapeRegExp = (text: string) => text.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+
+/** Numeric segments compared left to right, a prerelease before its release. Null when either is not a plain version. */
+export function compareVersions(a: string, b: string): number | null {
+  const parse = (v: string) => { const m = v.trim().replace(/^v(?=\d)/, "").match(/^(\d+(?:\.\d+)*)(.*)$/); return m ? {nums: m[1].split(".").map(Number), pre: PRERELEASE.test(m[2])} : null; };
+  const x = parse(a), y = parse(b);
+  if (!x || !y) return null;
+  for (let i = 0; i < Math.max(x.nums.length, y.nums.length); i++) { const d = (x.nums[i] ?? 0) - (y.nums[i] ?? 0); if (d) return Math.sign(d); }
+  return x.pre === y.pre ? 0 : x.pre ? -1 : 1;
+}
+
+/** A note's version: its record field, else a title that opens with "<package> <version>" (many notes carry the version only there). */
+export function noteVersion(note: {version?: string | null; title?: string}, name: string): string | null {
+  if (note.version) return note.version;
+  const m = (note.title ?? "").match(new RegExp(`^${escapeRegExp(name)}\\s+v?(\\d+(?:\\.\\d+)*(?:[-.]?(?:a|b|rc|dev|alpha|beta|pre|post)\\.?\\d*)?)(?![\\w.])`, "i"));
+  return m ? m[1] : null;
+}
 
 /**
  * The latest release and the release time of the requested (or latest) version, from the registry. Null when it cannot be read.
@@ -74,17 +93,31 @@ export async function checkDependencies(client: Reader, ecosystem: Ecosystem, pa
       client.read(`search?${new URLSearchParams({q: ask.name, compact: "1", limit: "5"})}`).catch(() => null),
       registryInfo(ecosystem, ask.name, ask.version, fetcher).catch(() => null),
     ]);
-    const results = ((search?.results as Note[] | undefined) ?? []).filter((r) => r && r.id);
+    const version = ask.version ?? registry?.version ?? null;
+    // The server matches on the record's version field only; a note whose version is only in its title is matched here as well.
+    const results = ((search?.results as Note[] | undefined) ?? []).filter((r) => r && r.id).map((r) => {
+      const v = noteVersion(r, ask.name);
+      const match = r.version_match === "same" || r.version_match === "other" ? r.version_match : v && version ? (compareVersions(v, version) === 0 ? "same" : "other") : r.version_match;
+      return {...r, version: v ?? undefined, version_match: match};
+    });
     const rank = (r: Note) => (r.version_match === "same" ? 0 : r.version_match === "other" ? 1 : 2);
     const evidence = (r: Note) => (/^(conditionally_)?reproduced$/.test(r.outcome ?? "") ? 0 : /^not_reproduced/.test(r.outcome ?? "") ? 1 : 2);
-    results.sort((a, b) => rank(a) - rank(b) || evidence(a) - evidence(b) || String(b.created_at).localeCompare(String(a.created_at)));
+    // Among records for other versions, the nearest older release first (closest to what is asked), then newer ones from the nearest.
+    const order = (r: Note) => (r.version && version ? compareVersions(r.version, version) : null);
+    const nearness = (a: Note, b: Note) => {
+      const x = order(a), y = order(b);
+      if (x === null || y === null) return x === null ? (y === null ? 0 : 1) : -1;
+      if (x !== y) return x - y;
+      const c = compareVersions(a.version!, b.version!) ?? 0;
+      return x < 0 ? -c : c;
+    };
+    results.sort((a, b) => rank(a) - rank(b) || evidence(a) - evidence(b) || (rank(a) === 1 ? nearness(a, b) : 0) || String(b.created_at).localeCompare(String(a.created_at)));
     const lead = results[0];
     let verdict: Record<string, string> = {};
     if (lead) {
       const post = await client.read(`posts/${lead.id}?include_comments=false`).catch(() => null) as {body?: string; post?: {body?: string}} | null;
       verdict = verdictLines(post?.body ?? post?.post?.body);
     }
-    const version = ask.version ?? registry?.version ?? null;
     const releasedDays = registry?.released ? Math.floor((now.getTime() - Date.parse(registry.released)) / DAY) : null;
     const noteDays = lead?.created_at ? Math.floor((now.getTime() - Date.parse(lead.created_at)) / DAY) : null;
     const problem = Boolean(lead && evidence(lead) === 0);
@@ -99,13 +132,22 @@ export async function checkDependencies(client: Reader, ecosystem: Ecosystem, pa
     // The record's sentence is built by Cairn from record fields (names, versions, listed words), not from a note's prose.
     if (answer) advice.push(`Verdict record: ${answer.summary}`);
     else if (status === "known_problem") advice.push(`Known problem on ${ask.name} ${version}${verdict.workaround ? `; workaround: ${verdict.workaround}` : ""}${verdict.fixed_in && !/not established/i.test(verdict.fixed_in) ? `; fixed in: ${verdict.fixed_in}` : ""}.`);
-    if (status === "known_problem_other_version") advice.push(`Cairn has a problem record for ${ask.name} ${lead!.version ?? "another version"}, not ${version ?? "this version"}: read it and check whether it applies.`);
+    // Matched only as the other side of a record: the problem is reported for that record's package, not for this one alone.
+    const first = answer?.records[0] as {role?: string; package?: string; version?: string} | undefined;
+    if (first?.role === "counterpart" && first.package) advice.push(`${ask.name} is the other side of this record: the problem is reported for ${first.package} ${first.version ?? ""} installed together with ${ask.name}, not for ${ask.name}${version ? ` ${version}` : ""} on its own.`.replace(/ {2,}/g, " "));
+    if (status === "known_problem_other_version") {
+      const side = lead!.version && version ? compareVersions(lead!.version, version) : null;
+      // A pin or workaround from an older release's record is not advice for a newer release: that release may be the fix.
+      advice.push(side !== null && side < 0 ? `Cairn's problem record is for ${ask.name} ${lead!.version}, an older release than ${version}. Cairn has not checked ${version}, which may already include a fix: do not apply that record's pin or workaround to ${version} without checking it.`
+        : side !== null && side > 0 ? `Cairn's problem record is for ${ask.name} ${lead!.version}, a newer release than ${version}: check whether the problem is already present in ${version}.`
+        : `Cairn has a problem record for ${ask.name} ${lead!.version ?? "another version"}, not ${version ?? "this version"}: read it and check whether it applies.`);
+    }
     if (status === "checked_no_problem_found") advice.push("A limited check found no problem; this is not a safety claim.");
     if (status === "record_not_tested") advice.push("Cairn has a record for this package that was not independently tested (source reading only, or another version): read it before relying on it.");
     if (status === "no_cairn_record") advice.push("Cairn has no record for this package and version. That is not a safety claim.");
     if (noteDays !== null && noteDays > RECHECK_DAYS) advice.push(`The record is ${noteDays} days old: a later release of either side may have changed this; check the latest versions before pinning.`);
-    if (releasedDays !== null && registry?.released) advice.push(`Released ${registry.released.slice(0, 10)} (${releasedDays} day(s) ago): if that is after your training data, you do not know its breaking changes.`);
-    const word = new RegExp(`(^|[^\\w@/-])${ask.name.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")}([^\\w/-]|$)`, "i");
+    if (releasedDays !== null && releasedDays <= RELEASE_NOTICE_DAYS && registry?.released) advice.push(`Released ${registry.released.slice(0, 10)} (${releasedDays} day(s) ago): if that is after your training data, you do not know its breaking changes.`);
+    const word = new RegExp(`(^|[^\\w@/-])${escapeRegExp(ask.name)}([^\\w/-]|$)`, "i");
     const others = ((related?.results as Note[] | undefined) ?? []).filter((r) => r && r.id && !results.some((x) => x.id === r.id) && word.test(r.title ?? "") && r.outcome === "reproduced").slice(0, 3);
     if (others.length) advice.push(`Related checked records that name ${ask.name}: ${others.map((r) => `${r.title} (${r.web_url ?? r.id})`).join("; ")}.`);
     if (registry && registry.exists === false && version) advice.push(`${ask.name} ${version} is not on the ${ecosystem} registry.`);
@@ -114,7 +156,8 @@ export async function checkDependencies(client: Reader, ecosystem: Ecosystem, pa
     if (registry?.latest && version && registry.latest !== version) advice.push(`Latest release is ${registry.latest}.`);
     return {
       package: ask.name, version, status, released: registry?.released ?? null, released_days_ago: releasedDays, latest: registry?.latest ?? null,
-      verdict, ...(answer ? {record: answer.records[0]} : {}), advice,
+      // The verdict lines are the lead note's: verdict_version says which release they describe.
+      verdict, ...(lead && Object.keys(verdict).length ? {verdict_version: lead.version ?? null} : {}), ...(answer ? {record: answer.records[0]} : {}), advice,
       notes: results.slice(0, 3).map((r) => ({title: r.title, version: r.version ?? null, version_match: r.version_match ?? null, evidence_level: r.evidence_level ?? null, outcome: r.outcome ?? null, checked: r.created_at ?? null, url: r.web_url ?? null})),
     };
   }));
