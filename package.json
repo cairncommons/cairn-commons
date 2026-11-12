@@ -14,10 +14,11 @@
   },
   "scripts": {
     "typecheck": "tsc --noEmit",
-    "test": "node --import tsx --test scripts/mcp-card.test.ts scripts/mcp-store.test.ts",
+    "test": "node --import tsx --test scripts/mcp-card.test.ts scripts/mcp-store.test.ts scripts/cairn-lookup.test.ts scripts/install-watch.test.mjs",
     "sync:documents": "node scripts/sync-documents.mjs",
     "check:documents": "node scripts/sync-documents.mjs --check",
     "build:bundle": "node scripts/build-bundle.mjs",
+    "build:lookup": "node scripts/build-lookup.mjs",
     "start": "tsx scripts/cairn-mcp.ts"
   },
   "dependencies": {

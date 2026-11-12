@@ -11,5 +11,7 @@
     "esModuleInterop": true,
     "isolatedModules": true
   },
-  "include": ["lib/**/*.ts", "scripts/**/*.ts"]
+  "include": ["lib/**/*.ts", "scripts/**/*.ts"],
+  // The hook is plain JavaScript (no declarations); its test file imports it untyped and is run, not type-checked.
+  "exclude": ["scripts/cairn-lookup.test.ts"]
 }
